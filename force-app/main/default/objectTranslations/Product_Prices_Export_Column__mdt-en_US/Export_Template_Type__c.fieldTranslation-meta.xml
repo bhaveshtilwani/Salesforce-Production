@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Export Template Type --></label>
+    <name>Export_Template_Type__c</name>
+    <picklistValues>
+        <masterLabel>Contracted Price Export</masterLabel>
+        <translation><!-- Contracted Price Export --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Existing Product Update</masterLabel>
+        <translation><!-- Existing Product Update --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Product Creation</masterLabel>
+        <translation><!-- New Product Creation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
