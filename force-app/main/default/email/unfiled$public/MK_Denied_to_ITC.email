@@ -1,0 +1,13 @@
+Good day,
+
+The following Account has been flagged by MK DENIAL. Please review the details below and advise on how to proceed. 
+
+Name: {!Account.Name}
+Parent Account: {!Account.Parent_Name__c}
+Billing Address: {!Account.BillingAddress}
+City: {!Account.BillingCity}
+Country: {!Account.BillingCountry}
+Phone: {!Account.Phone}
+
+
+Thank you,
