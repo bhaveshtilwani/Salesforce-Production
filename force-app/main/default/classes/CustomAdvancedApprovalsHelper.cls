@@ -300,7 +300,7 @@ public static Map<String, Map<String, Map<Custom_Advanced_Approval_Field_Mapping
             String.isBlank(fieldMapping.Approval_Type__c)
         ) {
             continue;
-    }
+        }
 
         String approvalType = fieldMapping.Approval_Type__c;
         String requestedField = fieldMapping.Requested_Field_API_Name__c;
@@ -636,7 +636,7 @@ public static List<Approval_Custom__c> createCustomApprovalRecordsForSObjects(
     }
 
     return customApprovals;
-    }
+}
 
     public static List<Approval_Custom__c> buildApprovalCustomRecords(
         Set<SObject> records,
@@ -905,7 +905,7 @@ public static Approval_Custom__c createNewCustomApproval(
     }
 
     return result;
-    }
+}
 
     public static Boolean isFilterMatch(SObject sObj, sbaa__ApprovalCondition__c condition, sbaa__ApprovalRule__c rule) {
         Boolean result = false;
