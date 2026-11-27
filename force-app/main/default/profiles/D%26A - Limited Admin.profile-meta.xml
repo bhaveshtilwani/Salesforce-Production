@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>D%26A - Limited Admin</fullName>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <applicationVisibilities>
         <application>ADMIN</application>
         <default>false</default>
@@ -24952,6 +24952,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
+    <customMetadataTypeAccesses>
+        <enabled>true</enabled>
+        <name>dfsle__AuthProvider__mdt</name>
+    </customMetadataTypeAccesses>
     <customPermissions>
         <enabled>true</enabled>
         <name>APXTConga4__CSF1_Custom_Permission</name>
@@ -24964,14 +24968,11 @@
         <enabled>true</enabled>
         <name>SBQQ__HideGlobalHeader</name>
     </customPermissions>
-    <customMetadataTypeAccesses>
-        <enabled>true</enabled>
-        <name>dfsle__AuthProvider__mdt</name>
-    </customMetadataTypeAccesses>
     <customSettingAccesses>
         <enabled>true</enabled>
         <name>dfsle__EOS_Type__c</name>
     </customSettingAccesses>
+    <description n1:nil="true" />
     <fieldPermissions>
         <editable>true</editable>
         <field>APXTConga4__Composer_Host_Override__c.APXTConga4__Hostname__c</field>
@@ -73513,39 +73514,19 @@
         <layout>APXT_BPM__Scheduled_Conductor_History__c-APXT_BPM__Conga Conductor History Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Account-Account Admin View</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-AX Billerica</layout>
         <recordType>Account.Ax_Billerica</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Admin View</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Admin View</layout>
-        <recordType>Account.C2_Teledyne</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Admin View</layout>
-        <recordType>Account.Representative_LDGI</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Admin View</layout>
-        <recordType>Account.S4_Boulder</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Account Admin View</layout>
-        <recordType>Account.SAP_Noblelight</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-Business Name Account Layout</layout>
         <recordType>Account.Business_Account_Name</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-Copy of C1%2FC3%2FMK Account LayoutCFIN</layout>
-        <recordType>Account.SF</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Account-Lumen Data</layout>
-        <recordType>Account.QAD</recordType>
+        <layout>Account-Account Admin View</layout>
+        <recordType>Account.C2_Teledyne</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Account-M%26A Layout</layout>
@@ -73568,6 +73549,18 @@
         <recordType>Account.Prospect_Montreal_Customer</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Account-Lumen Data</layout>
+        <recordType>Account.QAD</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Admin View</layout>
+        <recordType>Account.Representative_LDGI</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Admin View</layout>
+        <recordType>Account.S4_Boulder</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Account-SAP ASIA</layout>
         <recordType>Account.SAP_Asia</recordType>
     </layoutAssignments>
@@ -73582,6 +73575,14 @@
     <layoutAssignments>
         <layout>Account-SAP NA SalemMIA</layout>
         <recordType>Account.SAP_NA_Salem_MIA</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Admin View</layout>
+        <recordType>Account.SAP_Noblelight</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Copy of C1%2FC3%2FMK Account LayoutCFIN</layout>
+        <recordType>Account.SF</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>AccountContactRelation-Account Contact Relationship Layout</layout>
@@ -73801,10 +73802,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Campaign-Campaign Layout</layout>
-        <recordType>Campaign.IDS_Campaign</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Campaign-D%26A Test Campaign</layout>
+        <layout>Campaign-Campaign Layout</layout>
+        <recordType>Campaign.IDS_Campaign</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CampaignMember-Campaign Member Page Layout</layout>
@@ -73813,12 +73814,11 @@
         <layout>CampaignMemberStatus-Campaign Member Status Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Acc Trial</layout>
-        <recordType>Case.ACCTrial</recordType>
+        <layout>Case-Excelitas Cases User Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Case Internal Support Admin Layout</layout>
-        <recordType>Case.SF_Case</recordType>
+        <layout>Case-Acc Trial</layout>
+        <recordType>Case.ACCTrial</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Customer Portal</layout>
@@ -73833,17 +73833,6 @@
         <recordType>Case.ETC_Case</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Excelitas Cases User Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Excelitas Cases User Layout</layout>
-        <recordType>Case.Sample_Loaner</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Excelitas Cases User Layout</layout>
-        <recordType>Case.Service</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Case-Pricelist Update</layout>
         <recordType>Case.Price_List_Update</recordType>
     </layoutAssignments>
@@ -73852,8 +73841,20 @@
         <recordType>Case.RMA_Request</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Case-Case Internal Support Admin Layout</layout>
+        <recordType>Case.SF_Case</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Case-SOX Order Compliance</layout>
         <recordType>Case.SOX_Order_Compliance</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Excelitas Cases User Layout</layout>
+        <recordType>Case.Sample_Loaner</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Excelitas Cases User Layout</layout>
+        <recordType>Case.Service</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Special Approval Layout</layout>
@@ -73906,19 +73907,19 @@
         <layout>ConsumptionSchedule-Consumption Schedule Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Contact-D%26A Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Contact-Contact Layout</layout>
         <recordType>Contact.Create_Contact</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Contact-D%26A Contact Layout</layout>
+        <layout>Contact-Sales Contact</layout>
+        <recordType>Contact.Inactive_Contact</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-Lumen Data</layout>
         <recordType>Contact.Lumen_Data</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contact-Sales Contact</layout>
-        <recordType>Contact.Inactive_Contact</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContactPointAddress-Contact Point Address Layout</layout>
@@ -74309,8 +74310,20 @@
         <layout>Opportunity-CPQ D%26A Opp Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Opportunity-Curing and Drying</layout>
+        <recordType>Opportunity.ALS</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-CPQ D%26A Opp Layout</layout>
         <recordType>Opportunity.Child_Design</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Excelitas 2017 Opp Layout</layout>
+        <recordType>Opportunity.Corp_Dev</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-D%26A 2023 Opp Layout</layout>
+        <recordType>Opportunity.D_A_Opportunity</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-CPQ D%26A Opp Layout</layout>
@@ -74321,28 +74334,12 @@
         <recordType>Opportunity.Design_w_Product</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Curing and Drying</layout>
-        <recordType>Opportunity.ALS</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-D%26A 2023 Opp Layout</layout>
-        <recordType>Opportunity.D_A_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-D%26A Excelitas 2017 Opp Layout</layout>
-        <recordType>Opportunity.Quote</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Excelitas 2017 Opp Layout</layout>
-        <recordType>Opportunity.Corp_Dev</recordType>
+        <layout>Opportunity-Lumen Data</layout>
+        <recordType>Opportunity.Lumen_Data</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Excelitas 2017 Opp Layout</layout>
         <recordType>Opportunity.NPI_Opportunity</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Lumen Data</layout>
-        <recordType>Opportunity.Lumen_Data</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Nobelight</layout>
@@ -74351,6 +74348,10 @@
     <layoutAssignments>
         <layout>Opportunity-Quick Quote</layout>
         <recordType>Opportunity.Quick_Quote</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-D%26A Excelitas 2017 Opp Layout</layout>
+        <recordType>Opportunity.Quote</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-RMA Opportunity Layout</layout>
@@ -74380,6 +74381,14 @@
         <recordType>Order.Ax_Billerica</recordType>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Order-QAD - LDGI</layout>
+        <recordType>Order.QAD_LDGI</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-SAP NA SalemMIABoulder</layout>
+        <recordType>Order.S4_Boulder</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Order-Order Layout</layout>
         <recordType>Order.SAP_Asia</recordType>
     </layoutAssignments>
@@ -74388,20 +74397,12 @@
         <recordType>Order.SAP_Germany</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Order-Order Layout</layout>
-        <recordType>Order.SAP_NA_Salem_MIA</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Order-QAD - LDGI</layout>
-        <recordType>Order.QAD_LDGI</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Order-SAP NA Montreal</layout>
         <recordType>Order.SAP_NA_Montreal</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Order-SAP NA SalemMIABoulder</layout>
-        <recordType>Order.S4_Boulder</recordType>
+        <layout>Order-Order Layout</layout>
+        <recordType>Order.SAP_NA_Salem_MIA</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OrderItem-Order Product Layout</layout>
@@ -74515,12 +74516,12 @@
         <layout>Product2-Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Product2-Product Layout</layout>
-        <recordType>Product2.Standard_Product</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Product2-SR Layout</layout>
         <recordType>Product2.Special_Request_SR</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Product Layout</layout>
+        <recordType>Product2.Standard_Product</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ProductConsumptionSchedule-Product Consumption Schedule Layout</layout>
@@ -75284,6 +75285,9 @@
         <layout>copado__Deployment_Task__c-copado__Deployment Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>copado__Deployment__c-copado__Deployment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>copado__Deployment__c-copado__Advanced %28Multi Step%29</layout>
         <recordType>copado__Deployment__c.copado__Advanced_multi_step</recordType>
     </layoutAssignments>
@@ -75294,9 +75298,6 @@
     <layoutAssignments>
         <layout>copado__Deployment__c-copado__Data Deployment</layout>
         <recordType>copado__Deployment__c.copado__Data_Deployment</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>copado__Deployment__c-copado__Deployment Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>copado__Deployment__c-copado__Metadata Deployment</layout>
@@ -75521,12 +75522,12 @@
         <layout>copado__Selenium_Test_Run__c-copado__Salesforce Selenium Test Run Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>copado__Selenium_Test_Run__c-copado__Salesforce Selenium Test Run Layout</layout>
-        <recordType>copado__Selenium_Test_Run__c.copado__Salesforce</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>copado__Selenium_Test_Run__c-copado__Web App Selenium Test Run Layout</layout>
         <recordType>copado__Selenium_Test_Run__c.copado__Generic_Web_Application</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>copado__Selenium_Test_Run__c-copado__Salesforce Selenium Test Run Layout</layout>
+        <recordType>copado__Selenium_Test_Run__c.copado__Salesforce</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>copado__Selenium_Test_Suite__c-copado__Selenium Test Suite Layout</layout>
@@ -76022,6 +76023,7 @@
     <layoutAssignments>
         <layout>trailheadapp__User_Trailmix__c-trailheadapp__User Trailmix Layout</layout>
     </layoutAssignments>
+    <loginHours n1:nil="true" />
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
