@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>IsActive</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Column_Label__c</field>
+        <value xsi:type="xsd:string">IsActive</value>
+    </values>
+    <values>
+        <field>Column_Order__c</field>
+        <value xsi:type="xsd:double">28.0</value>
+    </values>
+    <values>
+        <field>Excel_Formula__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Export_Template_Type__c</field>
+        <value xsi:type="xsd:string">Existing Product Update</value>
+    </values>
+    <values>
+        <field>Header_Color__c</field>
+        <value xsi:type="xsd:string">FFD7E4BD</value>
+    </values>
+    <values>
+        <field>Header_Row_1__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Source_Field_Path__c</field>
+        <value xsi:type="xsd:string">IsActive</value>
+    </values>
+    <values>
+        <field>Source_Object__c</field>
+        <value xsi:type="xsd:string">Product2</value>
+    </values>
+    <values>
+        <field>is_editable__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

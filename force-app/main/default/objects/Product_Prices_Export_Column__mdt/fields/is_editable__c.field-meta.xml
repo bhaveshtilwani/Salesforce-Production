@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>is_editable__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>for making the field editable or non editable in export</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>is editable</label>
+    <type>Checkbox</type>
+</CustomField>

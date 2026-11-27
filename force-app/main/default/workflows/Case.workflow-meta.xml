@@ -683,6 +683,25 @@
         <template>JC_ALL/Price_List_Case_Updated</template>
     </alerts>
     <alerts>
+        <fullName>Product_Price_Case_Created</fullName>
+        <description>Product Price Case Created</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>akshay.dukare@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>consult.psonare@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pooja.chauhan@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Product_price_approval_Case_created</template>
+    </alerts>
+    <alerts>
         <fullName>REO_Case_Created_Notification</fullName>
         <ccEmails>Thomas.Legrand@excelitas.com</ccEmails>
         <description>REO Case Created Notification</description>
@@ -757,6 +776,44 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Approval_Request/SOX_Compliance_Request_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_when_the_product_price_approval_is_approved</fullName>
+        <description>Send Email when the product price approval is approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>akshay.dukare@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>consult.psonare@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pooja.chauhan@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Approval_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Sends_email_when_the_product_pricre_approval_is_rejected</fullName>
+        <description>Sends email when the product pricre approval is rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>akshay.dukare@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>consult.psonare@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pooja.chauhan@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Approval_Rejected</template>
     </alerts>
     <alerts>
         <fullName>Sox_Approval_Sent</fullName>
