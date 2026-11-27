@@ -1,0 +1,78 @@
+<messaging:emailTemplate subject="Approval Requested - Case {!relatedTo.Case__r.CaseNumber}"
+    recipientType="User"
+    relatedToType="sbaa__Approval__c">
+
+    <messaging:htmlEmailBody >
+        <html>
+            <body style="font-family: Arial, sans-serif; color: #333333;">
+
+                <!-- Required Advanced Approvals ID: keep this first -->
+                <p style="color:white; font-size:1px;">
+                    <apex:outputText value="{!relatedTo.Id}"/>
+                </p>
+
+                <p>Hello,</p>
+
+                <p>
+                    A Case has been submitted for your approval.
+                    Please review the details below and take the appropriate action.
+                </p>
+
+                <h3>Case Details</h3>
+
+                <table border="1"
+                       cellpadding="8"
+                       cellspacing="0"
+                       style="border-collapse:collapse; width:100%;">
+
+                    <tr>
+                        <td><b>Case Number</b></td>
+                        <td>
+                            <apex:outputText value="{!relatedTo.Case__r.CaseNumber}"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Case Subject</b></td>
+                        <td>
+                            <apex:outputText value="{!relatedTo.Case__r.Subject}"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Product Line</b></td>
+                        <td>
+                            <apex:outputText value="{!relatedTo.Case__r.Product_Line_Text__c}"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Case Owner</b></td>
+                        <td>
+                            <apex:outputText value="{!relatedTo.Case__r.Owner.Name}"/>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <p>
+                    <apex:outputLink value="/{!relatedTo.Case__r.Id}">
+                        Open Case in Salesforce
+                    </apex:outputLink>
+                </p>
+
+                <p>
+                    Please review the Case and approve or reject the request
+                    according to the applicable business requirements.
+                </p>
+
+                <p>
+                    Thank you,<br/>
+                    Salesforce Approval Notifications
+                </p>
+
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+
+</messaging:emailTemplate>
