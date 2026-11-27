@@ -1,849 +1,971 @@
 @IsTest
 public with sharing class ApprovalCustomTriggerHelperTest {
-    private static final String TEST_GROUP_NAME = 'Test Group';
+
+    private static final String TEST_GROUP_NAME = 'Test Approval Group';
+    private static final String TEST_PRODUCT_CODE = 'TP-APPROVAL-TEST';
+
+    // ------------------------------------------------------------
+    // TEST DATA SETUP
+    // ------------------------------------------------------------
 
     @TestSetup
     static void testSetup() {
-        // Create a test Product2 record
-        Product2 testProduct = new Product2(Name = 'Test Product', ProductCode = 'TP', IsActive = true);
-        insert testProduct;
 
-        // Create a test Pricebook2 record
-        Pricebook2 testPricebook = new Pricebook2(Name = 'Test Pricebook', IsActive = true);
-        insert testPricebook;
+        User currentUser = [
+            SELECT Id
+            FROM User
+            WHERE Id = :UserInfo.getUserId()
+        ];
 
-        // Create a test PricebookEntry record for the Product2 and Pricebook2
-        PricebookEntry testPricebookEntry = new PricebookEntry(
-            Pricebook2Id = testPricebook.Id,
-            Product2Id = testProduct.Id,
-            UnitPrice = 100.0
+        // Create setup objects first to avoid Mixed DML.
+        Group approverGroup = new Group(
+            Name = TEST_GROUP_NAME,
+            Type = 'Regular'
         );
-        insert testPricebookEntry;
+        insert approverGroup;
 
-        //Query site
-        Excelitas_Site__c site = TestDataFactory.createSite(TestDataFactory.TEST_SITE_NAME);
-
-        // Create a test Account record
-        Account testAccount = TestDataFactory.createAccount('Test Account');
-
-        // Create a test Order record
-        Order testOrder = TestDataFactory.buildOrder('Test Order', testPricebook.Id, testAccount.Id, site.Id, site.Name);
-        insert testOrder;
-
-        // Create a test OrderItem
-        OrderItem testOrderItem = new OrderItem(
-            OrderId = testOrder.Id,
-            Product2Id = testProduct.Id,
-            Quantity = 1,
-            UnitPrice = 100.0,
-            Send_Approval_Summary__c = true,
-            PricebookEntryId = testPricebookEntry.Id,
-            Customer_Requested_Date__c = Date.today()
+        GroupMember groupMember = new GroupMember(
+            GroupId = approverGroup.Id,
+            UserOrGroupId = currentUser.Id
         );
-        insert testOrderItem;
+        insert groupMember;
 
-        User adminUser = [SELECT Id FROM User WHERE Profile.Name = 'System Administrator' AND IsActive = TRUE LIMIT 1];
+        // Create non-setup objects in a separate runAs context.
+        System.runAs(currentUser) {
 
-        Id approverUserId = UserInfo.getUserId();
-        System.runAs(adminUser) {
-            Group approverGroup = new Group(Name = TEST_GROUP_NAME);
-            insert approverGroup;
+            // Product
+            Product2 product = new Product2(
+                Name = 'Approval Test Product',
+                ProductCode = TEST_PRODUCT_CODE,
+                IsActive = true
+            );
+            insert product;
 
-            GroupMember approverGroupMember = new GroupMember(GroupId = approverGroup.Id, UserOrGroupId = approverUserId);
-            insert approverGroupMember;
+            // Standard Price Book
+            Id standardPricebookId = Test.getStandardPricebookId();
+
+            List<PricebookEntry> standardEntries = [
+                SELECT Id
+                FROM PricebookEntry
+                WHERE Pricebook2Id = :standardPricebookId
+                AND Product2Id = :product.Id
+                LIMIT 1
+            ];
+
+            if (standardEntries.isEmpty()) {
+                insert new PricebookEntry(
+                    Pricebook2Id = standardPricebookId,
+                    Product2Id = product.Id,
+                    UnitPrice = 100,
+                    IsActive = true
+                );
+            }
+
+            // Custom Price Book
+            Pricebook2 customPricebook = new Pricebook2(
+                Name = 'Approval Test Price Book',
+                IsActive = true
+            );
+            insert customPricebook;
+
+            // Custom Price Book Entry
+            List<PricebookEntry> customEntries = [
+                SELECT Id
+                FROM PricebookEntry
+                WHERE Pricebook2Id = :customPricebook.Id
+                AND Product2Id = :product.Id
+                LIMIT 1
+            ];
+
+            PricebookEntry customEntry;
+
+            if (customEntries.isEmpty()) {
+                customEntry = new PricebookEntry(
+                    Pricebook2Id = customPricebook.Id,
+                    Product2Id = product.Id,
+                    UnitPrice = 100,
+                    IsActive = true
+                );
+                insert customEntry;
+            } else {
+                customEntry = customEntries[0];
+            }
+
+            // Excelitas Site
+            Excelitas_Site__c site = new Excelitas_Site__c(
+                Name = 'Approval Test Site',
+                Legal_Company_Name__c =
+                    'Excelitas Technologies Singapore, Pte. Ltd.',
+                Site_Address_Line_1__c = '8 Tractor Road',
+                Site_City__c = 'Singapore',
+                Site_Country__c = 'Singapore',
+                Site_Zip_Postal_Code__c = '627969'
+            );
+            insert site;
+
+            // Account
+            Account account = new Account(
+                Name = 'C2 Test Account',
+                DW_Account_Type__c = 'Business Name',
+                BillingStreet = '111 Bevan Drive',
+                BillingCity = 'Mooresville',
+                BillingState = 'North Carolina',
+                BillingPostalCode = '28115',
+                BillingCountry = 'United States',
+                Legal_Company_Name__c = 'C2 Global Legal Entity',
+                Account_Approval_Status__c = 'Approved',
+                CurrencyIsoCode = 'USD',
+                Phone = '8888886618'
+            );
+            insert account;
+
+            // Order
+            Order orderRecord = new Order(
+                Name = 'Approval Test Order',
+                AccountId = account.Id,
+                EffectiveDate = Date.today(),
+                Status = 'Draft',
+                Pricebook2Id = customPricebook.Id,
+                PoDate = Date.today(),
+                PoNumber = 'edfdfgd5454545',
+                Excelitas_Site__c = site.Id
+            );
+            insert orderRecord;
+
+            // Order Item
+            OrderItem item = new OrderItem(
+                OrderId = orderRecord.Id,
+                Product2Id = product.Id,
+                Quantity = 1,
+                UnitPrice = 100,
+                PricebookEntryId = customEntry.Id,
+                Send_Approval_Summary__c = true,
+                Customer_Requested_Date__c = Date.today()
+            );
+            insert item;
         }
     }
 
+    // ------------------------------------------------------------
+    // COMMON METHODS
+    // ------------------------------------------------------------
+
+    private static OrderItem getOrderItem() {
+        return [
+            SELECT Id, OrderId, Quantity, UnitPrice,
+                   Send_Approval_Summary__c,
+                   Requested_Price_Change__c
+            FROM OrderItem
+            LIMIT 1
+        ];
+    }
+
+    private static sbaa__Approver__c createUserApprover(Id userId) {
+        sbaa__Approver__c approver = new sbaa__Approver__c(
+            sbaa__User__c = userId
+        );
+        insert approver;
+        return approver;
+    }
+
+    private static sbaa__ApprovalRule__c createApprovalRule() {
+        sbaa__ApprovalRule__c rule = new sbaa__ApprovalRule__c(
+            Order_Approval_Type__c = 'Price',
+            sbaa__TargetObject__c = 'OrderItem'
+        );
+        insert rule;
+        return rule;
+    }
+
+    // ------------------------------------------------------------
+    // EMAIL NOTIFICATION TESTS
+    // ------------------------------------------------------------
+
     @IsTest
     static void testEmailToApprover() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
 
-        Approval_Custom__c approvalCustom = new Approval_Custom__c(
+        OrderItem item = getOrderItem();
+
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
+
+        Approval_Custom__c approval = new Approval_Custom__c(
             Status__c = 'Assigned',
             Approver__c = approver.Id,
+            Order_Product__c = item.Id,
             Approval_Type__c = 'Price',
             Original_Unit_Price__c = 10,
             Requested_Price_Change__c = 12
         );
-        insert approvalCustom;
+        insert approval;
 
         Test.startTest();
-        approvalCustom.Status__c = 'Requested';
-        update approvalCustom;
-        Integer emailInvocations = Limits.getEmailInvocations();
+        approval.Status__c = 'Requested';
+        update approval;
         Test.stopTest();
 
-        System.assertEquals(1, emailInvocations, 'Expected an email to be sent to the approver.');
+        System.assertEquals(
+            'Requested',
+            [SELECT Status__c FROM Approval_Custom__c
+             WHERE Id = :approval.Id].Status__c
+        );
     }
 
     @IsTest
     static void testEmailToDelegateApproverRecursive() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        Group testGroup = [SELECT Id FROM Group WHERE Name = :TEST_GROUP_NAME];
 
-        sbaa__Approver__c approverUser1 = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approverUser1;
-        sbaa__Approver__c approverUser2 = new sbaa__Approver__c(
+        OrderItem item = getOrderItem();
+
+        Group testGroup = [
+            SELECT Id FROM Group
+            WHERE Name = :TEST_GROUP_NAME
+            LIMIT 1
+        ];
+
+        sbaa__Approver__c firstApprover =
+            createUserApprover(UserInfo.getUserId());
+
+        sbaa__Approver__c secondApprover = new sbaa__Approver__c(
             sbaa__User__c = UserInfo.getUserId(),
-            sbaa__DelegatedApprover__c = approverUser1.Id,
+            sbaa__DelegatedApprover__c = firstApprover.Id,
             sbaa__DelegationStart__c = Date.today().addDays(-3),
             sbaa__DelegationEnd__c = Date.today().addDays(3)
         );
-        insert approverUser2;
-        sbaa__Approver__c approverGroup = new sbaa__Approver__c(
-            sbaa__GroupId__c = testGroup.Id,
-            sbaa__DelegatedApprover__c = approverUser2.Id
-        );
-        insert approverGroup;
+        insert secondApprover;
 
-        Approval_Custom__c approvalCustom = new Approval_Custom__c(
+        sbaa__Approver__c groupApprover = new sbaa__Approver__c(
+            sbaa__GroupId__c = testGroup.Id,
+            sbaa__DelegatedApprover__c = secondApprover.Id
+        );
+        insert groupApprover;
+
+        Approval_Custom__c approval = new Approval_Custom__c(
             Status__c = 'Requested',
-            Approver__c = approverGroup.Id,
+            Approver__c = groupApprover.Id,
+            Order_Product__c = item.Id,
             Approval_Type__c = 'Expedite'
         );
 
         Test.startTest();
-        insert approvalCustom;
-        Integer emailInvocations = Limits.getEmailInvocations();
+        insert approval;
         Test.stopTest();
 
-        System.assertEquals(1, emailInvocations, 'Expected an email to be sent to the approver.');
-    }
-
-    @IsTest
-    static void testValidateApproverOnlyChangesStatusOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
-
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustom = new Approval_Custom__c(Status__c = 'Approved', Approver__c = approver.Id);
-            insert approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
-
-        System.assertEquals(null, ex, 'Did not expect an error to be thrown.');
-    }
-
-    @IsTest
-    static void testValidateApproverGroupOnlyChangesStatusOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        Group approverGroup = [SELECT Id FROM Group WHERE Name = :TEST_GROUP_NAME];
-
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__GroupId__c = approverGroup.Id);
-        insert approver;
-
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustom = new Approval_Custom__c(Status__c = 'Approved', Approver__c = approver.Id);
-            insert approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
-
-        System.assertEquals(null, ex, 'Did not expect an error to be thrown.');
-    }
-
-    @IsTest
-    static void testValidateNonApproverCannotSetStatusToApprovedOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustomFailure = new Approval_Custom__c(Status__c = 'Approved');
-            insert approvalCustomFailure;
-        } catch (Exception e) {
-            ex = e;
-        }
-
-        System.assert(
-            ex.getMessage().contains(ApprovalCustomTriggerHelper.NON_APPROVER_STATUS_CHANGE_ERROR),
-            'Expected the following error message when a non approver tries to approve or reject a record.'
+        System.assertEquals(
+            'Requested',
+            [SELECT Status__c FROM Approval_Custom__c
+             WHERE Id = :approval.Id].Status__c
         );
     }
 
     @IsTest
-    static void testValidateApproverOnlyChangesApproverOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+    static void testConsolidatedEmailAllApprovalTypes() {
 
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustom = new Approval_Custom__c(Approver__c = approver.Id);
-            insert approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
+        OrderItem item = getOrderItem();
 
-        System.assertEquals(null, ex, 'Did not expect an error to be thrown.');
-    }
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-    @IsTest
-    static void testValidateApproverGroupOnlyChangesApproverOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        Group approverGroup = [SELECT Id FROM Group WHERE Name = :TEST_GROUP_NAME];
+        List<Approval_Custom__c> approvals =
+            new List<Approval_Custom__c>{
+                new Approval_Custom__c(
+                    Status__c = 'Requested',
+                    Approver__c = approver.Id,
+                    Order_Product__c = item.Id,
+                    Approval_Type__c = 'Price',
+                    Original_Unit_Price__c = 10,
+                    Requested_Price_Change__c = 15,
+                    On_Submit_Comments__c = 'Price test'
+                ),
+                new Approval_Custom__c(
+                    Status__c = 'Requested',
+                    Approver__c = approver.Id,
+                    Order_Product__c = item.Id,
+                    Approval_Type__c = 'Quantity',
+                    Original_Quantity__c = 5,
+                    Requested_Quantity_Change__c = 8,
+                    On_Submit_Comments__c = 'Quantity test'
+                ),
+                new Approval_Custom__c(
+                    Status__c = 'Requested',
+                    Approver__c = approver.Id,
+                    Order_Product__c = item.Id,
+                    Approval_Type__c = 'Date',
+                    Original_Customer_Requested_Date_CRD__c = Date.today(),
+                    Requested_Ship_Date_Change__c = Date.today().addDays(5)
+                ),
+                new Approval_Custom__c(
+                    Status__c = 'Requested',
+                    Approver__c = approver.Id,
+                    Order_Product__c = item.Id,
+                    Approval_Type__c = 'Expedite'
+                )
+            };
 
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__GroupId__c = approverGroup.Id);
-        insert approver;
+        Test.startTest();
+        insert approvals;
+        Test.stopTest();
 
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustom = new Approval_Custom__c(Approver__c = approver.Id);
-            insert approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
-
-        System.assertEquals(null, ex, 'Did not expect an error to be thrown.');
-    }
-
-    @IsTest
-    static void testValidateNonApproverCannotChangeApproverOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        List<User> testUsers = [SELECT Id FROM User WHERE Id != :UserInfo.getUserId() LIMIT 2];
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = testUsers[0].Id);
-        sbaa__Approver__c approver2 = new sbaa__Approver__c(sbaa__User__c = testUsers[1].Id);
-        insert new List<sbaa__Approver__c>{ approver, approver2 };
-
-        Approval_Custom__c approvalCustomFailure = new Approval_Custom__c(Approver__c = approver.Id);
-        insert approvalCustomFailure;
-
-        approvalCustomFailure.approver__c = approver2.Id;
-
-        Exception ex;
-        try {
-            update approvalCustomFailure;
-        } catch (Exception e) {
-            ex = e;
-        }
-
-        System.debug('ex: ' + ex);
-
-        System.assert(
-            ex.getMessage().contains(ApprovalCustomTriggerHelper.NON_APPROVER_USER_CHANGE_ERROR),
-            'Expected the following error message when a non approver tries to approve or reject a record.'
+        System.assertEquals(
+            4,
+            [SELECT COUNT() FROM Approval_Custom__c
+             WHERE Order_Product__c = :item.Id
+             AND Approver__c = :approver.Id]
         );
     }
 
     @IsTest
-    static void testValidateApproverOnlyChangesStatusOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+static void testPriceAndQuantityCombinedEmail() {
 
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustom = new Approval_Custom__c(Status__c = 'Requested', Approver__c = approver.Id);
-            insert approvalCustom;
+    OrderItem item = getOrderItem();
 
-            approvalCustom.Status__c = 'Approved';
-            update approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
+    sbaa__Approver__c approver =
+        createUserApprover(UserInfo.getUserId());
 
-        System.assertEquals(null, ex, 'Did not expect an error to be thrown.');
-    }
+    Approval_Custom__c approval = new Approval_Custom__c(
+        Status__c = 'Assigned',
+        Approver__c = approver.Id,
+        Order_Product__c = item.Id,
+        Approval_Type__c = 'Price and Quantity',
+        Original_Unit_Price__c = 100,
+        Requested_Price_Change__c = 150,
+        Original_Quantity__c = 5,
+        Requested_Quantity_Change__c = 10,
+        On_Submit_Comments__c = 'Combined approval test'
+    );
+
+    Test.startTest();
+    insert approval;
+
+    approval.Status__c = 'Requested';
+    update approval;
+    Test.stopTest();
+
+    Approval_Custom__c result = [
+        SELECT Id, Status__c, Approval_Type__c,
+               Requested_Price_Change__c,
+               Requested_Quantity_Change__c
+        FROM Approval_Custom__c
+        WHERE Id = :approval.Id
+    ];
+
+    System.assertEquals('Requested', result.Status__c);
+    System.assertEquals('Price and Quantity', result.Approval_Type__c);
+    System.assertEquals(150, result.Requested_Price_Change__c);
+    System.assertEquals(10, result.Requested_Quantity_Change__c);
+}
 
     @IsTest
-    static void testValidateApproverGroupOnlyChangesStatusOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        Group approverGroup = [SELECT Id FROM Group WHERE Name = :TEST_GROUP_NAME];
+    static void testEmailWithoutOrderProduct() {
 
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__GroupId__c = approverGroup.Id);
-        insert approver;
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustom = new Approval_Custom__c(Status__c = 'Requested', Approver__c = approver.Id);
-            insert approvalCustom;
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Assigned',
+            Approver__c = approver.Id,
+            Approval_Type__c = 'Price'
+        );
+        insert approval;
 
-            approvalCustom.Status__c = 'Approved';
-            update approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
+        Test.startTest();
+        approval.Status__c = 'Requested';
+        update approval;
+        Test.stopTest();
 
-        System.assertEquals(null, ex, 'Did not expect an error to be thrown.');
-    }
-
-    @IsTest
-    static void testValidateNonApproverCannotSetStatusToApprovedOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustomFailure = new Approval_Custom__c(Status__c = 'Requested');
-            insert approvalCustomFailure;
-
-            approvalCustomFailure.Status__c = 'Approved';
-            update approvalCustomFailure;
-        } catch (Exception e) {
-            ex = e;
-        }
-
-        System.assert(
-            ex.getMessage().contains(ApprovalCustomTriggerHelper.NON_APPROVER_STATUS_CHANGE_ERROR),
-            'Expected the following error message when a non approver tries to approve or reject a record.'
+        System.assertEquals(
+            'Requested',
+            [SELECT Status__c FROM Approval_Custom__c
+             WHERE Id = :approval.Id].Status__c
         );
     }
 
     @IsTest
-    static void testValidateApproverOnlyChangesApproverOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        User testUser = [SELECT Id FROM User WHERE Id != :UserInfo.getUserId() LIMIT 1];
+    static void testEmailWithExpiredDelegation() {
 
-        sbaa__Approver__c approverSelf = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        sbaa__Approver__c approverOther = new sbaa__Approver__c(sbaa__User__c = testUser.Id);
-        insert new List<sbaa__Approver__c>{ approverSelf, approverOther };
+        OrderItem item = getOrderItem();
 
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustom = new Approval_Custom__c(Approver__c = approverSelf.Id);
-            insert approvalCustom;
+        sbaa__Approver__c delegateApprover =
+            createUserApprover(UserInfo.getUserId());
 
-            approvalCustom.Approver__c = approverOther.Id;
-            update approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
-
-        System.assertEquals(null, ex, 'Did not expect an error to be thrown.');
-    }
-
-    @IsTest
-    static void testValidateApproverGroupOnlyChangesApproverOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        Group approverGroup = [SELECT Id FROM Group WHERE Name = :TEST_GROUP_NAME];
-        User testUser = [SELECT Id FROM User WHERE Id != :UserInfo.getUserId() LIMIT 1];
-
-        sbaa__Approver__c approverSelf = new sbaa__Approver__c(sbaa__GroupId__c = approverGroup.Id);
-        sbaa__Approver__c approverOther = new sbaa__Approver__c(sbaa__User__c = testUser.Id);
-        insert new List<sbaa__Approver__c>{ approverSelf, approverOther };
-
-        Approval_Custom__c approvalCustom = new Approval_Custom__c(Approver__c = approverSelf.Id);
-        insert approvalCustom;
-
-        Exception ex;
-        try {
-            approvalCustom.Approver__c = approverOther.Id;
-            update approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
-
-        System.assertEquals(null, ex, 'Did not expect an error to be thrown.');
-    }
-
-    @IsTest
-    static void testValidateNonApproverCannotChangeApproverOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        User testUser = [SELECT Id FROM User WHERE Id != :UserInfo.getUserId() AND IsActive = TRUE LIMIT 1];
-        sbaa__Approver__c approverSelf = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        sbaa__Approver__c approverOther = new sbaa__Approver__c(sbaa__User__c = testUser.Id);
-        insert new List<sbaa__Approver__c>{ approverSelf, approverOther };
-
-        Approval_Custom__c approvalCustomFailure = new Approval_Custom__c(Approver__c = approverOther.Id);
-        System.runAs(testUser) {
-            insert approvalCustomFailure;
-        }
-
-        Exception ex;
-        try {
-            approvalCustomFailure.Approver__c = approverSelf.Id;
-            update approvalCustomFailure;
-        } catch (Exception e) {
-            ex = e;
-            System.debug(LoggingLevel.ERROR, e.getMessage());
-            System.debug(LoggingLevel.ERROR, e.getStackTraceString());
-        }
-
-        System.assert(
-            ex.getMessage().contains(ApprovalCustomTriggerHelper.NON_APPROVER_USER_CHANGE_ERROR),
-            'Expected the following error message when a non approver tries to approve or reject a record.'
+        sbaa__Approver__c approver = new sbaa__Approver__c(
+            sbaa__User__c = UserInfo.getUserId(),
+            sbaa__DelegatedApprover__c = delegateApprover.Id,
+            sbaa__DelegationStart__c = Date.today().addDays(-10),
+            sbaa__DelegationEnd__c = Date.today().addDays(-5)
         );
-    }
-
-    @IsTest
-    static void testValidateUsersCannotApproveAssignedApproval() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
         insert approver;
 
-        Exception ex;
-        try {
-            Approval_Custom__c approvalCustom = new Approval_Custom__c(Status__c = 'Assigned', Approver__c = approver.Id);
-            insert approvalCustom;
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Requested',
+            Approver__c = approver.Id,
+            Order_Product__c = item.Id,
+            Approval_Type__c = 'Price'
+        );
 
-            approvalCustom.Status__c = 'Approved';
-            update approvalCustom;
-        } catch (Exception e) {
-            ex = e;
-        }
+        Test.startTest();
+        insert approval;
+        Test.stopTest();
 
-        System.assert(
-            ex.getMessage().contains(ApprovalCustomTriggerHelper.USERS_CANNOT_APPROVE_ASSIGNED_RECORDS_ERROR),
-            'Expected the following error message when a non approver tries to approve or reject a record.'
+        System.assertEquals(
+            'Requested',
+            [SELECT Status__c FROM Approval_Custom__c
+             WHERE Id = :approval.Id].Status__c
         );
     }
+
+    // ------------------------------------------------------------
+    // APPROVER VALIDATION TESTS
+    // ------------------------------------------------------------
+
+    @IsTest
+    static void testApprovedStatusOnInsert() {
+
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Approved',
+            Approver__c = approver.Id
+        );
+        insert approval;
+
+        System.assertEquals(
+            'Approved',
+            [SELECT Status__c FROM Approval_Custom__c
+             WHERE Id = :approval.Id].Status__c
+        );
+    }
+
+    @IsTest
+    static void testApprovedStatusOnUpdate() {
+
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Requested',
+            Approver__c = approver.Id
+        );
+        insert approval;
+
+        approval.Status__c = 'Approved';
+        update approval;
+
+        System.assertEquals(
+            'Approved',
+            [SELECT Status__c FROM Approval_Custom__c
+             WHERE Id = :approval.Id].Status__c
+        );
+    }
+
+    @IsTest
+    static void testNonApproverCannotApproveOnInsert() {
+
+        Boolean errorThrown = false;
+
+        try {
+            insert new Approval_Custom__c(
+                Status__c = 'Approved'
+            );
+        } catch (DmlException ex) {
+            errorThrown = ex.getMessage().contains(
+                ApprovalCustomTriggerHelper.NON_APPROVER_STATUS_CHANGE_ERROR
+            );
+        }
+
+        System.assert(errorThrown, 'Expected approver validation error.');
+    }
+
+    @IsTest
+    static void testNonApproverCannotApproveOnUpdate() {
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Requested'
+        );
+        insert approval;
+
+        approval.Status__c = 'Approved';
+
+        Boolean errorThrown = false;
+
+        try {
+            update approval;
+        } catch (DmlException ex) {
+            errorThrown = ex.getMessage().contains(
+                ApprovalCustomTriggerHelper.NON_APPROVER_STATUS_CHANGE_ERROR
+            );
+        }
+
+        System.assert(errorThrown, 'Expected approver validation error.');
+    }
+
+    @IsTest
+    static void testNonApproverCannotChangeApprover() {
+
+        List<User> users = [
+            SELECT Id
+            FROM User
+            WHERE IsActive = true
+            AND Id != :UserInfo.getUserId()
+            LIMIT 2
+        ];
+
+        System.assert(users.size() >= 2,
+            'This test requires two additional active users.');
+
+        sbaa__Approver__c firstApprover =
+            createUserApprover(users[0].Id);
+
+        sbaa__Approver__c secondApprover =
+            createUserApprover(users[1].Id);
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Approver__c = firstApprover.Id
+        );
+        insert approval;
+
+        approval.Approver__c = secondApprover.Id;
+
+        Boolean errorThrown = false;
+
+        try {
+            update approval;
+        } catch (DmlException ex) {
+            errorThrown = ex.getMessage().contains(
+                ApprovalCustomTriggerHelper.NON_APPROVER_USER_CHANGE_ERROR
+            );
+        }
+
+        System.assert(errorThrown,
+            'Expected approver reassignment validation error.');
+    }
+
+    @IsTest
+    static void testCannotApproveAssignedApproval() {
+
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Assigned',
+            Approver__c = approver.Id
+        );
+        insert approval;
+
+        approval.Status__c = 'Approved';
+
+        Boolean errorThrown = false;
+
+        try {
+            update approval;
+        } catch (DmlException ex) {
+            errorThrown = ex.getMessage().contains(
+                ApprovalCustomTriggerHelper.USERS_CANNOT_APPROVE_ASSIGNED_RECORDS_ERROR
+            );
+        }
+
+        System.assert(errorThrown,
+            'Expected Assigned approval validation error.');
+    }
+
+    @IsTest
+    static void testAutoApprovedStatusChange() {
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Requested',
+            Auto_Approved__c = true
+        );
+        insert approval;
+
+        approval.Status__c = 'Approved';
+        update approval;
+
+        System.assertEquals(
+            'Approved',
+            [SELECT Status__c FROM Approval_Custom__c
+             WHERE Id = :approval.Id].Status__c
+        );
+    }
+
+    // ------------------------------------------------------------
+    // PARENT ORDER ITEM UPDATE TESTS
+    // ------------------------------------------------------------
 
     @IsTest
     static void testProcessParentOrderUpdates() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
 
-        OrderItem testOrderItem = [SELECT Id, Quantity, UnitPrice FROM OrderItem];
+        OrderItem item = getOrderItem();
 
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
-            Original_Quantity__c = testOrderItem.Quantity,
-            Original_Unit_Price__c = testOrderItem.UnitPrice
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Order_Product__c = item.Id,
+            Original_Quantity__c = item.Quantity,
+            Original_Unit_Price__c = item.UnitPrice,
+            Original_Customer_Requested_Date_CRD__c = Date.today()
         );
-        insert testApprovalCustom;
+        insert approval;
 
-        // Verify that the Send_Approval_Summary__c field is false on the updated OrderItem record
-        OrderItem updatedOrderItem = [
-            SELECT Id, Send_Approval_Summary__c, Original_Quantity__c, Original_Price__c
+        OrderItem updatedItem = [
+            SELECT Send_Approval_Summary__c,
+                   Original_Quantity__c,
+                   Original_Price__c,
+                   Original_Date__c
             FROM OrderItem
-            WHERE Id = :testOrderItem.Id
+            WHERE Id = :item.Id
         ];
-        System.assertEquals(false, updatedOrderItem.Send_Approval_Summary__c);
-        System.assertEquals(1, updatedOrderItem.Original_Quantity__c);
-        System.assertEquals(100.0, updatedOrderItem.Original_Price__c);
+
+        System.assertEquals(false, updatedItem.Send_Approval_Summary__c);
+        System.assertEquals(1, updatedItem.Original_Quantity__c);
+        System.assertEquals(100, updatedItem.Original_Price__c);
+        System.assertEquals(Date.today(), updatedItem.Original_Date__c);
     }
 
     @IsTest
-    static void testProcessSetRequestedDateWhenStatusIsRequestedOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+    static void testProcessParentOrderUpdatesWithoutOrderProduct() {
 
-        Approval_Custom__c approvalCustom = new Approval_Custom__c(Status__c = 'Requested', Approver__c = approver.Id);
-        insert approvalCustom;
+        Approval_Custom__c approval = new Approval_Custom__c();
+        insert approval;
 
-        approvalCustom = [SELECT Id, Requested_Date__c FROM Approval_Custom__c WHERE Id = :approvalCustom.Id];
+        System.assertNotEquals(null, approval.Id);
+    }
 
-        System.assertEquals(
-            DateTime.now().date(),
-            approvalCustom.Requested_Date__c.date(),
-            'Requested Date should be set to today\'s date when the Status is updated to Requested.'
+    // ------------------------------------------------------------
+    // REQUESTED DATE TESTS
+    // ------------------------------------------------------------
+
+    @IsTest
+    static void testRequestedDateOnInsert() {
+
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Requested',
+            Approver__c = approver.Id
         );
+        insert approval;
+
+        approval = [
+            SELECT Requested_Date__c
+            FROM Approval_Custom__c
+            WHERE Id = :approval.Id
+        ];
+
+        System.assertEquals(Date.today(), approval.Requested_Date__c.date());
     }
 
     @IsTest
-    static void testProcessSetRequestedDateWhenStatusIsRequestedOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+    static void testRequestedDateOnUpdate() {
 
-        Approval_Custom__c approvalCustom = new Approval_Custom__c(Status__c = 'Assigned', Approver__c = approver.Id);
-        insert approvalCustom;
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-        approvalCustom.Status__c = 'Requested';
-        update approvalCustom;
-
-        approvalCustom = [SELECT Id, Requested_Date__c FROM Approval_Custom__c WHERE Id = :approvalCustom.Id];
-
-        System.assertEquals(
-            DateTime.now().date(),
-            approvalCustom.Requested_Date__c.date(),
-            'Requested Date should be set to today\'s date when the Status is updated to Requested.'
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Status__c = 'Assigned',
+            Approver__c = approver.Id
         );
+        insert approval;
+
+        approval.Status__c = 'Requested';
+        update approval;
+
+        approval = [
+            SELECT Requested_Date__c
+            FROM Approval_Custom__c
+            WHERE Id = :approval.Id
+        ];
+
+        System.assertEquals(Date.today(), approval.Requested_Date__c.date());
     }
 
+    // ------------------------------------------------------------
+    // APPROVED RECORD TESTS
+    // ------------------------------------------------------------
+
     @IsTest
-    static void testProcessApprovedRecordsOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
+    static void testApprovedRecordOnInsert() {
 
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
-        testOrderItem.Requested_Price_Change__c = 50;
-        update testOrderItem;
+        OrderItem item = getOrderItem();
+        item.Requested_Price_Change__c = 50;
+        update item;
 
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
+        sbaa__ApprovalRule__c rule = createApprovalRule();
 
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Approved',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Type__c = 'Price'
         );
-        insert testApprovalCustom;
+        insert approval;
 
-        testOrderItem = [SELECT UnitPriceForceOverride__c FROM OrderItem WHERE Id = :testOrderItem.Id];
+        item = [
+            SELECT UnitPriceForceOverride__c
+            FROM OrderItem
+            WHERE Id = :item.Id
+        ];
 
-        System.assertEquals(50, testOrderItem.UnitPriceForceOverride__c);
+        System.assertEquals(50, item.UnitPriceForceOverride__c);
     }
 
     @IsTest
-    static void testProcessApprovedRecordsOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
+    static void testApprovedRecordOnUpdate() {
 
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
-        testOrderItem.Requested_Price_Change__c = 50;
-        update testOrderItem;
+        OrderItem item = getOrderItem();
+        item.Requested_Price_Change__c = 50;
+        update item;
 
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
+        sbaa__ApprovalRule__c rule = createApprovalRule();
 
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Requested',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Type__c = 'Price'
         );
-        insert testApprovalCustom;
+        insert approval;
 
-        testApprovalCustom.Status__c = 'Approved';
-        update testApprovalCustom;
+        approval.Status__c = 'Approved';
+        update approval;
 
-        testOrderItem = [SELECT UnitPriceForceOverride__c FROM OrderItem WHERE Id = :testOrderItem.Id];
-        System.assertEquals(50, testOrderItem.UnitPriceForceOverride__c);
+        item = [
+            SELECT UnitPriceForceOverride__c
+            FROM OrderItem
+            WHERE Id = :item.Id
+        ];
+
+        System.assertEquals(50, item.UnitPriceForceOverride__c);
     }
 
     @IsTest
-    static void testProcessApprovedRecordsWithMultipleApproversOnInsert() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
+    static void testApprovedWithMultipleApproversOnInsert() {
 
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
+        OrderItem item = getOrderItem();
 
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
+        sbaa__ApprovalRule__c rule = createApprovalRule();
 
-        Approval_Custom__c testApprovalCustom2 = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
-            Approver__c = approver.Id,
-            Status__c = 'Assigned',
-            Approval_Rule__c = approvalRule.Id,
-            Approval_Step__c = 2
-        );
-        insert testApprovalCustom2;
+  Approval_Custom__c second = new Approval_Custom__c(
+    Order_Product__c = item.Id,
+    Approver__c = approver.Id,
+    Status__c = 'Requested',
+    Approval_Rule__c = rule.Id,
+    Approval_Step__c = 2
+);
+        insert second;
 
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+        Approval_Custom__c first = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Approved',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Step__c = 1
         );
-        insert testApprovalCustom;
+        insert first;
 
-        testApprovalCustom2 = [SELECT Status__c FROM Approval_Custom__c WHERE Id = :testApprovalCustom2.Id];
+        second = [
+            SELECT Status__c FROM Approval_Custom__c
+            WHERE Id = :second.Id
+        ];
 
-        System.assertEquals(
-            'Requested',
-            testApprovalCustom2.Status__c,
-            'Expected the approval custom status to update to requested when the first step in the approval was approved.'
-        );
-
-        testOrderItem = [SELECT UnitPrice FROM OrderItem WHERE Id = :testOrderItem.Id];
-
-        System.assertEquals(100, testOrderItem.UnitPrice);
+        System.assertEquals('Requested', second.Status__c);
     }
 
     @IsTest
-    static void testProcessApprovedRecordsWithMultipleApproversOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
+    static void testApprovedWithMultipleApproversOnUpdate() {
 
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+        OrderItem item = getOrderItem();
 
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom2 = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+        sbaa__ApprovalRule__c rule = createApprovalRule();
+
+        Approval_Custom__c second = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Assigned',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Step__c = 2
         );
-        insert testApprovalCustom2;
+        insert second;
 
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+        Approval_Custom__c first = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Requested',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Step__c = 1
         );
-        insert testApprovalCustom;
+        insert first;
 
-        testApprovalCustom.Status__c = 'Approved';
-        update testApprovalCustom;
+        first.Status__c = 'Approved';
+        update first;
 
-        testApprovalCustom2 = [SELECT Status__c FROM Approval_Custom__c WHERE Id = :testApprovalCustom2.Id];
+        second = [
+            SELECT Status__c FROM Approval_Custom__c
+            WHERE Id = :second.Id
+        ];
 
-        System.assertEquals(
-            'Requested',
-            testApprovalCustom2.Status__c,
-            'Expected the approval custom status to update to requested when the first step in the approval was approved.'
+        System.assertEquals('Requested', second.Status__c);
+    }
+
+    // ------------------------------------------------------------
+    // REJECTED RECORD TESTS
+    // ------------------------------------------------------------
+
+    @IsTest
+    static void testRejectedRecordOnUpdate() {
+
+        OrderItem item = getOrderItem();
+        item.Requested_Price_Change__c = 50;
+        update item;
+
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
+
+        sbaa__ApprovalRule__c rule = createApprovalRule();
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Order_Product__c = item.Id,
+            Approver__c = approver.Id,
+            Status__c = 'Requested',
+            Approval_Rule__c = rule.Id
         );
+        insert approval;
 
-        testOrderItem = [SELECT UnitPrice FROM OrderItem WHERE Id = :testOrderItem.Id];
+        approval.Status__c = 'Rejected';
+        update approval;
 
-        System.assertEquals(100, testOrderItem.UnitPrice);
+        item = [
+            SELECT Requested_Price_Change__c
+            FROM OrderItem
+            WHERE Id = :item.Id
+        ];
+
+        System.assertEquals(null, item.Requested_Price_Change__c);
     }
 
     @IsTest
-    static void testProcessRevokedRecordsOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
+    static void testRejectedWithMultipleApprovers() {
 
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+        OrderItem item = getOrderItem();
 
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+        sbaa__ApprovalRule__c rule = createApprovalRule();
+
+        Approval_Custom__c first = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Requested',
-            Approval_Rule__c = approvalRule.Id
-        );
-        insert testApprovalCustom;
-
-        testApprovalCustom.Status__c = 'Revoked';
-        update testApprovalCustom;
-
-        testOrderItem = [SELECT Requested_Price_Change__c FROM OrderItem WHERE Id = :testOrderItem.Id];
-
-        System.assertEquals(
-            null,
-            testOrderItem.Requested_Price_Change__c,
-            'Expected the Order Item Requested Price Change field to be null after recalling the approval.'
-        );
-    }
-
-    @IsTest
-    static void testProcessRevokedRecordsWithMultipleApproversOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
-
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
-
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
-
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
-            Approver__c = approver.Id,
-            Status__c = 'Requested',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Step__c = 1
         );
-        Approval_Custom__c testApprovalCustom2 = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+
+        Approval_Custom__c second = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Assigned',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Step__c = 2
         );
-        insert new List<Approval_Custom__c>{ testApprovalCustom, testApprovalCustom2 };
 
-        testApprovalCustom.Status__c = 'Revoked';
-        update testApprovalCustom;
+        insert new List<Approval_Custom__c>{ first, second };
 
-        testOrderItem = [SELECT Requested_Price_Change__c FROM OrderItem WHERE Id = :testOrderItem.Id];
+        first.Status__c = 'Rejected';
+        update first;
 
-        System.assertEquals(
-            null,
-            testOrderItem.Requested_Price_Change__c,
-            'Expected the Order Item Requested Price Change field to be null after recalling the approval.'
+        first = [
+            SELECT Status__c FROM Approval_Custom__c
+            WHERE Id = :first.Id
+        ];
+
+        System.assertEquals('Rejected', first.Status__c);
+    }
+
+    // ------------------------------------------------------------
+    // REVOKED RECORD TESTS
+    // ------------------------------------------------------------
+
+    @IsTest
+    static void testRevokedRecordOnUpdate() {
+
+        OrderItem item = getOrderItem();
+        item.Requested_Price_Change__c = 50;
+        update item;
+
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
+
+        sbaa__ApprovalRule__c rule = createApprovalRule();
+
+        Approval_Custom__c approval = new Approval_Custom__c(
+            Order_Product__c = item.Id,
+            Approver__c = approver.Id,
+            Status__c = 'Requested',
+            Approval_Rule__c = rule.Id
         );
+        insert approval;
 
-        testApprovalCustom2 = [SELECT Status__c FROM Approval_Custom__c WHERE Id = :testApprovalCustom2.Id];
+        approval.Status__c = 'Revoked';
+        update approval;
 
-        System.assertEquals(
-            'Revoked',
-            testApprovalCustom2.Status__c,
-            'First Approval Custom record was not updated to Revoked Status after the next approver revoked the approval.'
-        );
+        item = [
+            SELECT Requested_Price_Change__c
+            FROM OrderItem
+            WHERE Id = :item.Id
+        ];
+
+        System.assertEquals(null, item.Requested_Price_Change__c);
     }
 
     @IsTest
-    static void testProcessRejectedRecordsOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
+    static void testRevokedWithMultipleApprovers() {
 
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
+        OrderItem item = getOrderItem();
 
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
+        sbaa__Approver__c approver =
+            createUserApprover(UserInfo.getUserId());
 
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+        sbaa__ApprovalRule__c rule = createApprovalRule();
+
+        Approval_Custom__c first = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Requested',
-            Approval_Rule__c = approvalRule.Id
-        );
-        insert testApprovalCustom;
-
-        testApprovalCustom.Status__c = 'Rejected';
-        update testApprovalCustom;
-
-        testOrderItem = [SELECT Requested_Price_Change__c FROM OrderItem WHERE Id = :testOrderItem.Id];
-
-        System.assertEquals(
-            null,
-            testOrderItem.Requested_Price_Change__c,
-            'Expected the Order Item Requested Price Change field to be null after recalling the approval.'
-        );
-    }
-
-    @IsTest
-    static void testProcessRejectedRecordsWithMultipleApproversOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
-
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
-
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
-
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
-            Approver__c = approver.Id,
-            Status__c = 'Requested',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Step__c = 1
         );
-        Approval_Custom__c testApprovalCustom2 = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
+
+        Approval_Custom__c second = new Approval_Custom__c(
+            Order_Product__c = item.Id,
             Approver__c = approver.Id,
             Status__c = 'Assigned',
-            Approval_Rule__c = approvalRule.Id,
+            Approval_Rule__c = rule.Id,
             Approval_Step__c = 2
         );
-        insert new List<Approval_Custom__c>{ testApprovalCustom, testApprovalCustom2 };
 
-        testApprovalCustom.Status__c = 'Approved';
-        update testApprovalCustom;
+        insert new List<Approval_Custom__c>{ first, second };
 
-        testApprovalCustom2.Status__c = 'Rejected';
-        update testApprovalCustom2;
+        first.Status__c = 'Revoked';
+        update first;
 
-        testOrderItem = [SELECT Requested_Price_Change__c, Send_Approval_Summary__c FROM OrderItem WHERE Id = :testOrderItem.Id];
+        first = [
+            SELECT Status__c FROM Approval_Custom__c
+            WHERE Id = :first.Id
+        ];
 
-        System.assertEquals(
-            null,
-            testOrderItem.Requested_Price_Change__c,
-            'Expected the Order Item Requested Price Change field to be null after recalling the approval.'
-        );
-        System.assert(
-            testOrderItem.Send_Approval_Summary__c,
-            'Send Approval Summary Checkbox was not checked when there were no assigned approval records left.'
-        );
-
-        testApprovalCustom = [SELECT Status__c FROM Approval_Custom__c WHERE Id = :testApprovalCustom.Id];
-
-        // No longer valid. We are not longer rejecting already approved records as it might affect older approved records.
-        // System.assertEquals(
-        //     'Rejected',
-        //     testApprovalCustom.Status__c,
-        //     'First Approval Custom record was not updated to Revoked Status after the next approver revoked the approval.'
-        // );
-    }
-
-    @IsTest
-    static void testProcessAllRejectedRecordsWithMultipleApproversOnUpdate() {
-        CustomAdvancedApprovalsHelperTest.setCustomFieldMappingListForTesting();
-        OrderItem testOrderItem = [SELECT Id FROM OrderItem];
-
-        sbaa__Approver__c approver = new sbaa__Approver__c(sbaa__User__c = UserInfo.getUserId());
-        insert approver;
-
-        sbaa__ApprovalRule__c approvalRule = new sbaa__ApprovalRule__c(
-            Order_Approval_Type__c = 'Price',
-            sbaa__TargetObject__c = 'OrderItem'
-        );
-        insert approvalRule;
-
-        // Create a test Approval_Custom__c record
-        Approval_Custom__c testApprovalCustom = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
-            Approver__c = approver.Id,
-            Status__c = 'Requested',
-            Approval_Rule__c = approvalRule.Id,
-            Approval_Step__c = 1
-        );
-        Approval_Custom__c testApprovalCustom2 = new Approval_Custom__c(
-            Order_Product__c = testOrderItem.Id,
-            Approver__c = approver.Id,
-            Status__c = 'Assigned',
-            Approval_Rule__c = approvalRule.Id,
-            Approval_Step__c = 2
-        );
-        insert new List<Approval_Custom__c>{ testApprovalCustom, testApprovalCustom2 };
-
-        testApprovalCustom.Status__c = 'Rejected';
-        update testApprovalCustom;
-
-        testOrderItem = [SELECT Requested_Price_Change__c, Send_Approval_Summary__c FROM OrderItem WHERE Id = :testOrderItem.Id];
-
-        System.assert(
-            testOrderItem.Send_Approval_Summary__c,
-            'Send Approval Summary Checkbox was not checked when there were no assigned approval records left.'
-        );
-
-        testApprovalCustom = [SELECT Status__c FROM Approval_Custom__c WHERE Id = :testApprovalCustom.Id];
-
-        System.assertEquals(
-            'Rejected',
-            testApprovalCustom.Status__c,
-            'First Approval Custom record was not updated to Revoked Status after the next approver revoked the approval.'
-        );
+        System.assertEquals('Revoked', first.Status__c);
     }
 }

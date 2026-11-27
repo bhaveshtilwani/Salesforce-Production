@@ -323,7 +323,7 @@ public with sharing class ApprovalCustomTriggerHelper {
 
         Map<Id, OrderItem> orderItemsMap = new Map<Id, OrderItem>(
             [
-                SELECT Id, Order.ERP_Sales_Order_Number__c, Order.Account_Name__c, ERP_Line__c, Product_SKU__c, Product_Name__c
+                SELECT Id, Order.Requester_mail__c, Order.ERP_Sales_Order_Number__c, Order.Account_Name__c, ERP_Line__c, Product_SKU__c, Product_Name__c
                 FROM OrderItem
                 WHERE Id IN :orderItemIds
             ]
@@ -334,7 +334,14 @@ public with sharing class ApprovalCustomTriggerHelper {
         for (Approval_Custom__c approvalCustom : approvalToApproverMap.keySet()) {
             List<String> approverEmails = approvalsEmailMap.get(approvalCustom.Id);
             OrderItem orderItem = orderItemsMap.get(approvalCustom.Order_Product__c);
-
+            
+            if (orderItem != null && String.isNotBlank(orderItem.Order.Requester_mail__c)) {
+            String requesterEmail = orderItem.Order.Requester_mail__c.trim();
+            if (!approverEmails.contains(requesterEmail)) {
+            approverEmails.add(requesterEmail);
+            }
+            }
+            
             if (approverEmails == null || approverEmails.isEmpty()) {
                 continue;
             }
@@ -363,7 +370,7 @@ public with sharing class ApprovalCustomTriggerHelper {
         return currentApprover;
     }
 
-    private static Messaging.SingleEmailMessage buildEmail(
+   /* private static Messaging.SingleEmailMessage buildEmail(
         Approval_Custom__c approvalCustom,
         List<String> approverEmails,
         OrderItem orderItem
@@ -476,5 +483,160 @@ public with sharing class ApprovalCustomTriggerHelper {
         email.setHtmlBody(htmlBody);
 
         return email;
+    }*/
+    
+private static Messaging.SingleEmailMessage buildEmail(
+    Approval_Custom__c approvalCustom,
+    List<String> approverEmails,
+    OrderItem orderItem
+) {
+    Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
+
+    email.setToAddresses(approverEmails);
+    email.setSubject('An Approval has been Assigned to You');
+
+    String salesforceUrl = URL.getSalesforceBaseUrl().toExternalForm();
+
+    String orderItemUrl = approvalCustom.Order_Product__c != null
+        ? salesforceUrl + '/' + approvalCustom.Order_Product__c
+        : salesforceUrl;
+
+    String approvalUrl = salesforceUrl + '/' + approvalCustom.Id;
+
+    String approvalType = approvalCustom.Approval_Type__c;
+
+    String approvalComment = approvalCustom.On_Submit_Comments__c != null
+        ? approvalCustom.On_Submit_Comments__c
+        : '';
+
+    String oldValue = '';
+    String newValue = '';
+    String valueDifference = '';
+    String approvalInformation = '';
+
+    if (approvalType == 'Price and Quantity') {
+        Decimal oldPrice = approvalCustom.Original_Unit_Price__c != null
+            ? approvalCustom.Original_Unit_Price__c
+            : 0;
+
+        Decimal newPrice = approvalCustom.Requested_Price_Change__c != null
+            ? approvalCustom.Requested_Price_Change__c
+            : 0;
+
+        Decimal oldQuantity = approvalCustom.Original_Quantity__c != null
+            ? approvalCustom.Original_Quantity__c
+            : 0;
+
+        Decimal newQuantity = approvalCustom.Requested_Quantity_Change__c != null
+            ? approvalCustom.Requested_Quantity_Change__c
+            : 0;
+
+        approvalInformation =
+            '<p><strong>Approval Type:</strong> Price and Quantity</p>' +
+            '<p><strong>Comment:</strong> ' + approvalComment + '</p>' +
+
+            '<h3>Price Change</h3>' +
+            '<p><strong>Old Price:</strong> ' + String.valueOf(oldPrice) + '</p>' +
+            '<p><strong>Requested Price:</strong> ' + String.valueOf(newPrice) + '</p>' +
+            '<p><strong>Price Difference:</strong> ' +
+            String.valueOf(newPrice - oldPrice) + '</p>' +
+
+            '<h3>Quantity Change</h3>' +
+            '<p><strong>Old Quantity:</strong> ' + String.valueOf(oldQuantity) + '</p>' +
+            '<p><strong>Requested Quantity:</strong> ' + String.valueOf(newQuantity) + '</p>' +
+            '<p><strong>Quantity Difference:</strong> ' +
+            String.valueOf(newQuantity - oldQuantity) + '</p>';
+
+    } else {
+        if (approvalType == 'Price') {
+            Decimal oldPrice = approvalCustom.Original_Unit_Price__c != null
+                ? approvalCustom.Original_Unit_Price__c
+                : 0;
+
+            Decimal newPrice = approvalCustom.Requested_Price_Change__c != null
+                ? approvalCustom.Requested_Price_Change__c
+                : 0;
+
+            oldValue = String.valueOf(oldPrice);
+            newValue = String.valueOf(newPrice);
+            valueDifference = String.valueOf(newPrice - oldPrice);
+
+        } else if (approvalType == 'Quantity') {
+            Decimal oldQuantity = approvalCustom.Original_Quantity__c != null
+                ? approvalCustom.Original_Quantity__c
+                : 0;
+
+            Decimal newQuantity = approvalCustom.Requested_Quantity_Change__c != null
+                ? approvalCustom.Requested_Quantity_Change__c
+                : 0;
+
+            oldValue = String.valueOf(oldQuantity);
+            newValue = String.valueOf(newQuantity);
+            valueDifference = String.valueOf(newQuantity - oldQuantity);
+
+        } else if (approvalType == 'Date') {
+            oldValue = approvalCustom.Original_Customer_Requested_Date_CRD__c != null
+                ? approvalCustom.Original_Customer_Requested_Date_CRD__c.format()
+                : null;
+
+            newValue = approvalCustom.Requested_Ship_Date_Change__c != null
+                ? approvalCustom.Requested_Ship_Date_Change__c.format()
+                : null;
+
+        } else if (approvalType == 'Expedite') {
+            oldValue = 'false';
+            newValue = 'true';
+        }
+
+        approvalInformation =
+            '<p><strong>Approval Type:</strong> ' + approvalType + '</p>' +
+            '<p><strong>Comment:</strong> ' + approvalComment + '</p>' +
+            '<p><strong>Old value:</strong> ' + oldValue + '</p>' +
+            '<p><strong>New value:</strong> ' + newValue + '</p>' +
+            (
+                approvalType == 'Price' || approvalType == 'Quantity'
+                ? '<p><strong>Value difference:</strong> ' + valueDifference + '</p>'
+                : ''
+            );
     }
+
+    String orderInformation = '';
+
+    if (orderItem != null) {
+        orderInformation =
+            '<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse;">' +
+            '<tr><th colspan="2" style="text-align: center;">Order Product Information</th></tr>' +
+            '<tr><td>ERP Order Number</td><td>' +
+            orderItem.Order.ERP_Sales_Order_Number__c +
+            '</td></tr>' +
+            '<tr><td>ERP Order Line</td><td>' +
+            orderItem.ERP_Line__c +
+            '</td></tr>' +
+            '<tr><td>Product Name</td><td>' +
+            orderItem.Product_Name__c +
+            '</td></tr>' +
+            '<tr><td>Account Name</td><td>' +
+            orderItem.Order.Account_Name__c +
+            '</td></tr>' +
+            '</table>';
+    }
+
+    String htmlBody =
+        '<body>' +
+        '<p>You have been assigned the approval request <a href="' +
+        approvalUrl +
+        '">' +
+        approvalCustom.Name +
+        '</a> for <a href="' +
+        orderItemUrl +
+        '">Order Product</a>.</p>' +
+        orderInformation +
+        approvalInformation +
+        '</body>';
+
+    email.setHtmlBody(htmlBody);
+
+    return email;  
+}
+
 }

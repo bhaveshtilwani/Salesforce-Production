@@ -22,6 +22,11 @@
                 <label>Annual_Sales_at_Account_Name__c</label>
             </value>
             <value>
+                <fullName>Business_Unit__c</fullName>
+                <default>false</default>
+                <label>Business_Unit__c</label>
+            </value>
+            <value>
                 <fullName>Cancellation__c</fullName>
                 <default>false</default>
                 <label>Cancellation__c</label>
@@ -52,11 +57,6 @@
                 <label>Excelitas_Product_Family__c</label>
             </value>
             <value>
-                <fullName>Excelitas_Site_Country__c</fullName>
-                <default>false</default>
-                <label>Excelitas_Site_Country__c</label>
-            </value>
-            <value>
                 <fullName>Expedite_Amount__c</fullName>
                 <default>false</default>
                 <label>Expedite_Amount__c</label>
@@ -65,6 +65,11 @@
                 <fullName>Internal_Change_Req__c</fullName>
                 <default>false</default>
                 <label>Internal_Change_Req__c</label>
+            </value>
+            <value>
+                <fullName>Manager_Equals_TeamVP__c</fullName>
+                <default>false</default>
+                <label>Manager_Equals_TeamVP__c</label>
             </value>
             <value>
                 <fullName>Name</fullName>
@@ -97,9 +102,39 @@
                 <label>Primary_Product_Segment__c</label>
             </value>
             <value>
+                <fullName>Primary_Sub_Family__c</fullName>
+                <default>false</default>
+                <label>Primary_Sub_Family__c</label>
+            </value>
+            <value>
                 <fullName>Probability</fullName>
                 <default>false</default>
                 <label>Probability</label>
+            </value>
+            <value>
+                <fullName>Product_Family__c</fullName>
+                <default>false</default>
+                <label>Product_Family__c</label>
+            </value>
+            <value>
+                <fullName>Product_Line__c</fullName>
+                <default>false</default>
+                <label>Product_Line__c</label>
+            </value>
+            <value>
+                <fullName>Product_Line_Text__c</fullName>
+                <default>false</default>
+                <label>Product_Line_Text__c</label>
+            </value>
+            <value>
+                <fullName>Product_sub_Family_Text__c</fullName>
+                <default>false</default>
+                <label>Product_sub_Family_Text__c</label>
+            </value>
+            <value>
+                <fullName>ProductFamily_Site__c</fullName>
+                <default>false</default>
+                <label>ProductFamily_Site__c</label>
             </value>
             <value>
                 <fullName>RecordTypeName__c</fullName>
