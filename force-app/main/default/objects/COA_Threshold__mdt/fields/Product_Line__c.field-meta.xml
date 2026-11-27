@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Product Line</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Advanced Sensor Optics</fullName>
+                <default>true</default>
+                <label>Advanced Sensor Optics</label>
+            </value>
+            <value>
+                <fullName>Aerial &amp; Laser</fullName>
+                <default>false</default>
+                <label>Aerial &amp; Laser</label>
+            </value>
+            <value>
+                <fullName>Aerial Imaging &amp; Laser Optics</fullName>
+                <default>false</default>
+                <label>Aerial Imaging &amp; Laser Optics</label>
+            </value>
+            <value>
+                <fullName>Analytical</fullName>
+                <default>false</default>
+                <label>Analytical</label>
+            </value>
+            <value>
+                <fullName>Biomedical Light Engines</fullName>
+                <default>false</default>
+                <label>Biomedical Light Engines</label>
+            </value>
+            <value>
+                <fullName>Camera Systems</fullName>
+                <default>false</default>
+                <label>Camera Systems</label>
+            </value>
+            <value>
+                <fullName>Catalog and Other</fullName>
+                <default>false</default>
+                <label>Catalog and Other</label>
+            </value>
+            <value>
+                <fullName>Cermax</fullName>
+                <default>false</default>
+                <label>Cermax</label>
+            </value>
+            <value>
+                <fullName>CS Line</fullName>
+                <default>false</default>
+                <label>CS Line</label>
+            </value>
+            <value>
+                <fullName>Curing LED - Noblelight</fullName>
+                <default>false</default>
+                <label>Curing LED - Noblelight</label>
+            </value>
+            <value>
+                <fullName>Curing LED Phoseon</fullName>
+                <default>false</default>
+                <label>Curing LED Phoseon</label>
+            </value>
+            <value>
+                <fullName>Curing Omnicure</fullName>
+                <default>false</default>
+                <label>Curing Omnicure</label>
+            </value>
+            <value>
+                <fullName>Customized Systems - Noblelight</fullName>
+                <default>false</default>
+                <label>Customized Systems - Noblelight</label>
+            </value>
+            <value>
+                <fullName>Disinfection - Noblelight</fullName>
+                <default>false</default>
+                <label>Disinfection - Noblelight</label>
+            </value>
+            <value>
+                <fullName>Energetic Systems</fullName>
+                <default>false</default>
+                <label>Energetic Systems</label>
+            </value>
+            <value>
+                <fullName>Fibers &amp; Components</fullName>
+                <default>false</default>
+                <label>Fibers &amp; Components</label>
+            </value>
+            <value>
+                <fullName>Flash</fullName>
+                <default>false</default>
+                <label>Flash</label>
+            </value>
+            <value>
+                <fullName>Freq Stds and Switches</fullName>
+                <default>false</default>
+                <label>Freq Stds and Switches</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>HeNe Lasers</fullName>
+                <default>false</default>
+                <label>HeNe Lasers</label>
+            </value>
+            <value>
+                <fullName>High NA EUV Lithography</fullName>
+                <default>false</default>
+                <label>High NA EUV Lithography</label>
+            </value>
+            <value>
+                <fullName>High Performance</fullName>
+                <default>false</default>
+                <label>High Performance</label>
+            </value>
+            <value>
+                <fullName>High Voltage Power</fullName>
+                <default>false</default>
+                <label>High Voltage Power</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing - Noblelight</fullName>
+                <default>false</default>
+                <label>Industrial Curing - Noblelight</label>
+            </value>
+            <value>
+                <fullName>Land Equipment</fullName>
+                <default>false</default>
+                <label>Land Equipment</label>
+            </value>
+            <value>
+                <fullName>Laser Engines</fullName>
+                <default>false</default>
+                <label>Laser Engines</label>
+            </value>
+            <value>
+                <fullName>Laser Technology</fullName>
+                <default>false</default>
+                <label>Laser Technology</label>
+            </value>
+            <value>
+                <fullName>Lightsources</fullName>
+                <default>false</default>
+                <label>Lightsources</label>
+            </value>
+            <value>
+                <fullName>Lithography</fullName>
+                <default>false</default>
+                <label>Lithography</label>
+            </value>
+            <value>
+                <fullName>Metrology</fullName>
+                <default>false</default>
+                <label>Metrology</label>
+            </value>
+            <value>
+                <fullName>Metrology &amp; Inspection</fullName>
+                <default>false</default>
+                <label>Metrology &amp; Inspection</label>
+            </value>
+            <value>
+                <fullName>Metrology and Inspection Boulder</fullName>
+                <default>false</default>
+                <label>Metrology and Inspection Boulder</label>
+            </value>
+            <value>
+                <fullName>Metrology and Inspection Goettingen</fullName>
+                <default>false</default>
+                <label>Metrology and Inspection Goettingen</label>
+            </value>
+            <value>
+                <fullName>Microwave</fullName>
+                <default>false</default>
+                <label>Microwave</label>
+            </value>
+            <value>
+                <fullName>Microwave - Noblelight</fullName>
+                <default>false</default>
+                <label>Microwave - Noblelight</label>
+            </value>
+            <value>
+                <fullName>Modules &amp; Objectives</fullName>
+                <default>false</default>
+                <label>Modules &amp; Objectives</label>
+            </value>
+            <value>
+                <fullName>Noblelight Other - Noblelight</fullName>
+                <default>false</default>
+                <label>Noblelight Other - Noblelight</label>
+            </value>
+            <value>
+                <fullName>Optical Inspection</fullName>
+                <default>false</default>
+                <label>Optical Inspection</label>
+            </value>
+            <value>
+                <fullName>Optical Systems</fullName>
+                <default>false</default>
+                <label>Optical Systems</label>
+            </value>
+            <value>
+                <fullName>Optics &amp; Imaging</fullName>
+                <default>false</default>
+                <label>Optics &amp; Imaging</label>
+            </value>
+            <value>
+                <fullName>Optics &amp; Imaging Systems</fullName>
+                <default>false</default>
+                <label>Optics &amp; Imaging Systems</label>
+            </value>
+            <value>
+                <fullName>Optronics Platforms</fullName>
+                <default>false</default>
+                <label>Optronics Platforms</label>
+            </value>
+            <value>
+                <fullName>Other Line</fullName>
+                <default>false</default>
+                <label>Other Line</label>
+            </value>
+            <value>
+                <fullName>Photodiodes</fullName>
+                <default>false</default>
+                <label>Photodiodes</label>
+            </value>
+            <value>
+                <fullName>Precision Optics</fullName>
+                <default>false</default>
+                <label>Precision Optics</label>
+            </value>
+            <value>
+                <fullName>Precision Optics Boulder</fullName>
+                <default>false</default>
+                <label>Precision Optics Boulder</label>
+            </value>
+            <value>
+                <fullName>Precision Optics Singapore</fullName>
+                <default>false</default>
+                <label>Precision Optics Singapore</label>
+            </value>
+            <value>
+                <fullName>Precision Optronics</fullName>
+                <default>false</default>
+                <label>Precision Optronics</label>
+            </value>
+            <value>
+                <fullName>Precision Sensors</fullName>
+                <default>false</default>
+                <label>Precision Sensors</label>
+            </value>
+            <value>
+                <fullName>Pyroelectric Sensors</fullName>
+                <default>false</default>
+                <label>Pyroelectric Sensors</label>
+            </value>
+            <value>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+                <label>Semiconductor</label>
+            </value>
+            <value>
+                <fullName>Semiconductor Boulder</fullName>
+                <default>false</default>
+                <label>Semiconductor Boulder</label>
+            </value>
+            <value>
+                <fullName>Semiconductor Singapore</fullName>
+                <default>false</default>
+                <label>Semiconductor Singapore</label>
+            </value>
+            <value>
+                <fullName>Solid State Lighting Solutions</fullName>
+                <default>false</default>
+                <label>Solid State Lighting Solutions</label>
+            </value>
+            <value>
+                <fullName>Solidtron</fullName>
+                <default>false</default>
+                <label>Solidtron</label>
+            </value>
+            <value>
+                <fullName>SPCM</fullName>
+                <default>false</default>
+                <label>SPCM</label>
+            </value>
+            <value>
+                <fullName>Thermal Processing - Noblelight</fullName>
+                <default>false</default>
+                <label>Thermal Processing - Noblelight</label>
+            </value>
+            <value>
+                <fullName>Thermopile</fullName>
+                <default>false</default>
+                <label>Thermopile</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

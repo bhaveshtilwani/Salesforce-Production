@@ -5,7 +5,7 @@
     <decisions>
         <name>Are_There_Nirvana_Lines</name>
         <label>Are There Nirvana Lines?</label>
-        <locationX>264</locationX>
+        <locationX>512</locationX>
         <locationY>1079</locationY>
         <defaultConnector>
             <targetReference>Insert_Excelitas_Site_Country</targetReference>
@@ -31,7 +31,7 @@
         <description>Check Integration details - Send Quote line to SAP BTP Process</description>
         <name>Check_Integration_Details</name>
         <label>Check Integration Details</label>
-        <locationX>330</locationX>
+        <locationX>578</locationX>
         <locationY>1919</locationY>
         <defaultConnector>
             <targetReference>Clear_Quote_Approved_Check</targetReference>
@@ -82,13 +82,6 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Record.ERP_Sales_Order_Information__c</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
             <connector>
                 <targetReference>Clear_Integration_Details_on_creation</targetReference>
             </connector>
@@ -99,7 +92,7 @@
         <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
         <name>If_Bypass_Enabled</name>
         <label>If Bypass Enabled?</label>
-        <locationX>176</locationX>
+        <locationX>424</locationX>
         <locationY>431</locationY>
         <defaultConnector>
             <targetReference>New_or_changed_Excelitas_site_field</targetReference>
@@ -115,6 +108,9 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>END_ELEMENT_5</targetReference>
+            </connector>
             <label>If Enabled</label>
         </rules>
     </decisions>
@@ -122,7 +118,7 @@
         <description>Used to Check QuoteLine is with Product Where Controlled for Export is there or not</description>
         <name>Is_Controlled_for_Export</name>
         <label>Is Controlled for Export ?</label>
-        <locationX>550</locationX>
+        <locationX>798</locationX>
         <locationY>2459</locationY>
         <defaultConnector>
             <targetReference>Quote_Line_ITC_Approval</targetReference>
@@ -148,7 +144,7 @@
         <description>Triggers when the record is new or when the Excelitas Site field on the Quote Line changes.</description>
         <name>New_or_changed_Excelitas_site_field</name>
         <label>New or changed Excelitas site field</label>
-        <locationX>550</locationX>
+        <locationX>798</locationX>
         <locationY>539</locationY>
         <defaultConnector>
             <targetReference>QuoteLine_Creation_Process</targetReference>
@@ -174,8 +170,11 @@
         <description>Checks if the related Quote’s Approval Status is Approved, Quote Approved on the Quote Line is True, and the Quote Approved field has changed. If all are true, the Flow proceeds.</description>
         <name>Quote_is_Approved</name>
         <label>Quote is Approved</label>
-        <locationX>550</locationX>
+        <locationX>798</locationX>
         <locationY>3155</locationY>
+        <defaultConnector>
+            <targetReference>END_ELEMENT_6</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>FALSE_Quote is Approved</defaultConnectorLabel>
         <rules>
             <name>TRUE_Quote_is_Approved</name>
@@ -211,7 +210,7 @@
         <description>Checks if ITC Status on the Quote Line equals ITC Rejected or Needs ITC Approval. If true, the Flow proceeds.</description>
         <name>Quote_Line_ITC_Approval</name>
         <label>Quote Line ITC Approval</label>
-        <locationX>550</locationX>
+        <locationX>798</locationX>
         <locationY>2807</locationY>
         <defaultConnector>
             <targetReference>Quote_is_Approved</targetReference>
@@ -244,7 +243,7 @@
         <description>Used to Check Cloned With related Process</description>
         <name>QuoteLine_Creation_Process</name>
         <label>QuoteLine Creation Process</label>
-        <locationX>550</locationX>
+        <locationX>798</locationX>
         <locationY>1811</locationY>
         <defaultConnector>
             <targetReference>Is_Controlled_for_Export</targetReference>
@@ -274,6 +273,26 @@
         </rules>
     </decisions>
     <description>Flow is used to provide functionality for Quote Lines during creation or cloning and allowing the lines to follow the standard quote process.</description>
+    <ends>
+        <name>END_ELEMENT_5</name>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+    </ends>
+    <ends>
+        <name>END_ELEMENT_6</name>
+        <locationX>1062</locationX>
+        <locationY>3263</locationY>
+    </ends>
+    <ends>
+        <name>END_ELEMENT_7</name>
+        <locationX>820</locationX>
+        <locationY>1595</locationY>
+    </ends>
+    <ends>
+        <name>END_ELEMENT_8</name>
+        <locationX>534</locationX>
+        <locationY>3371</locationY>
+    </ends>
     <environments>Default</environments>
     <formulas>
         <name>Excelitas_Site_Country_Text</name>
@@ -308,8 +327,11 @@
         <description>It Creates Flow Error Logs Records</description>
         <name>Create_Flow_Error_Logs_Records</name>
         <label>Create Flow Error Logs Records</label>
-        <locationX>572</locationX>
+        <locationX>820</locationX>
         <locationY>1487</locationY>
+        <connector>
+            <targetReference>END_ELEMENT_7</targetReference>
+        </connector>
         <inputAssignments>
             <field>Error_Message__c</field>
             <value>
@@ -347,7 +369,7 @@
         <description>This record determines whether bypassing standard validations or logic is permitted.</description>
         <name>Get_Bypass_Record</name>
         <label>Get Bypass Record</label>
-        <locationX>176</locationX>
+        <locationX>424</locationX>
         <locationY>323</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -372,7 +394,7 @@
     <recordLookups>
         <name>Get_ESG_L_D_site</name>
         <label>Get ESG L&amp;D site</label>
-        <locationX>264</locationX>
+        <locationX>512</locationX>
         <locationY>647</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -393,7 +415,7 @@
     <recordLookups>
         <name>Get_ESG_Optics_site</name>
         <label>Get ESG Optics site</label>
-        <locationX>264</locationX>
+        <locationX>512</locationX>
         <locationY>755</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -414,7 +436,7 @@
     <recordLookups>
         <name>get_Nirvana_Quote_Lines</name>
         <label>get Nirvana Quote Lines</label>
-        <locationX>264</locationX>
+        <locationX>512</locationX>
         <locationY>971</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -456,7 +478,7 @@
     <recordLookups>
         <name>Get_Shenzhen_site</name>
         <label>Get Shenzhen site</label>
-        <locationX>264</locationX>
+        <locationX>512</locationX>
         <locationY>863</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -478,8 +500,11 @@
         <description>Set approved unit prices (1–5) from corresponding Net Price and Price fields.</description>
         <name>Approved_values</name>
         <label>Approved values</label>
-        <locationX>286</locationX>
+        <locationX>534</locationX>
         <locationY>3263</locationY>
+        <connector>
+            <targetReference>END_ELEMENT_8</targetReference>
+        </connector>
         <faultConnector>
             <isGoTo>true</isGoTo>
             <targetReference>Create_Flow_Error_Logs_Records</targetReference>
@@ -520,7 +545,7 @@
         <description>If any Integration details present make them blank like Draft Mode</description>
         <name>Clear_Integration_Details_on_creation</name>
         <label>Clear Integration Details on creation</label>
-        <locationX>66</locationX>
+        <locationX>314</locationX>
         <locationY>2027</locationY>
         <connector>
             <targetReference>Clear_Quote_Approved_Check</targetReference>
@@ -537,12 +562,6 @@
         </inputAssignments>
         <inputAssignments>
             <field>ERP_Quote_Number__c</field>
-        </inputAssignments>
-        <inputAssignments>
-            <field>ERP_Sales_Order_Information__c</field>
-            <value>
-                <stringValue></stringValue>
-            </value>
         </inputAssignments>
         <inputAssignments>
             <field>ERP_Status__c</field>
@@ -568,11 +587,17 @@
         <description>Clear Quote Approved Check</description>
         <name>Clear_Quote_Approved_Check</name>
         <label>Clear Quote Approved Checkbox</label>
-        <locationX>330</locationX>
+        <locationX>578</locationX>
         <locationY>2267</locationY>
         <connector>
             <targetReference>Is_Controlled_for_Export</targetReference>
         </connector>
+        <inputAssignments>
+            <field>Forecasted_Gross_Margin__c</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Next_Approval_Step_for_Margin__c</field>
+        </inputAssignments>
         <inputAssignments>
             <field>Pre_Nirvana_QL_Sync_to_ERP__c</field>
             <value>
@@ -591,7 +616,7 @@
         <description>Updates Quote Line records by setting Excelitas Site Country to the country of the related Excelitas Site if it is not blank; otherwise, sets it to null.</description>
         <name>Insert_Excelitas_Site_Country</name>
         <label>Insert Excelitas Site Country</label>
-        <locationX>264</locationX>
+        <locationX>512</locationX>
         <locationY>1379</locationY>
         <connector>
             <targetReference>QuoteLine_Creation_Process</targetReference>
@@ -611,7 +636,7 @@
         <description>Updates Quote Line records by setting PM Approved to False.</description>
         <name>PM_Cannot_Approve_the_Line</name>
         <label>PM Cannot Approve the Line</label>
-        <locationX>286</locationX>
+        <locationX>534</locationX>
         <locationY>2915</locationY>
         <connector>
             <targetReference>Quote_is_Approved</targetReference>
@@ -632,7 +657,7 @@
         <description>If QuoteLine have Prod where Controlled for Export is there then update ITC Status</description>
         <name>Update_ITC_Status</name>
         <label>Update ITC Status</label>
-        <locationX>286</locationX>
+        <locationX>534</locationX>
         <locationY>2567</locationY>
         <connector>
             <targetReference>Quote_Line_ITC_Approval</targetReference>
@@ -652,7 +677,7 @@
     <recordUpdates>
         <name>Update_Quote_Header</name>
         <label>Update Quote Header</label>
-        <locationX>132</locationX>
+        <locationX>380</locationX>
         <locationY>1187</locationY>
         <connector>
             <targetReference>Insert_Excelitas_Site_Country</targetReference>
@@ -666,7 +691,7 @@
         <inputReference>$Record.SBQQ__Quote__r</inputReference>
     </recordUpdates>
     <start>
-        <locationX>50</locationX>
+        <locationX>298</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Bypass_Record</targetReference>
