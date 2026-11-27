@@ -79,6 +79,13 @@
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
+            <conditions>
+                <leftValueReference>Get_C2_Owner.Owner.Profile_Name__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MDM</stringValue>
+                </rightValue>
+            </conditions>
             <connector>
                 <targetReference>Update_C2_Owner</targetReference>
             </connector>
@@ -261,5 +268,4 @@
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
-    <triggerOrder>400</triggerOrder>
 </Flow>
