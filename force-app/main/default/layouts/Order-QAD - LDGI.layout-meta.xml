@@ -12,7 +12,6 @@
     <excludeButtons>Deactivate</excludeButtons>
     <excludeButtons>DeepCloneAction</excludeButtons>
     <excludeButtons>Delete</excludeButtons>
-    <excludeButtons>GenerateKnowledge</excludeButtons>
     <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>PrintableView</excludeButtons>
     <excludeButtons>Share</excludeButtons>
@@ -215,6 +214,14 @@
                 <behavior>Readonly</behavior>
                 <field>Taxable_Not_For_Vertex__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SBQQ__Quote__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>QuoteId</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -335,14 +342,6 @@
                 <behavior>Edit</behavior>
                 <field>Freight_Amount__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Fuel_Surcharge__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Fuel_Surcharge_Amount__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -394,6 +393,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Rep_Account_Namelookup__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Campaign_Promo__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -690,9 +693,6 @@
         <fields>Total_Invoiced__c</fields>
         <fields>Non_Inventory__c</fields>
         <relatedList>RelatedOrderItemList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
