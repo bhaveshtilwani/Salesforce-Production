@@ -2,14 +2,27 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>63.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Gross_Margin_Required_per_Quote_Line</name>
+        <label>Gross Margin Required per Quote Line</label>
+        <locationX>578</locationX>
+        <locationY>827</locationY>
+        <connector>
+            <targetReference>END_ELEMENT_4</targetReference>
+        </connector>
+        <customErrorMessages>
+            <errorMessage>Please ensure that Gross Margin is populated for each Quote Line before approving this Approval.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
     <decisions>
         <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
         <name>If_Bypass_Enabled</name>
         <label>If Bypass Enabled?</label>
-        <locationX>176</locationX>
+        <locationX>358</locationX>
         <locationY>395</locationY>
         <defaultConnector>
-            <targetReference>Insert_Time_Stamp_of_Requested</targetReference>
+            <targetReference>Status_is_Requested_Or_Approved</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -22,10 +35,112 @@
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>END_ELEMENT_3</targetReference>
+            </connector>
             <label>If Enabled</label>
         </rules>
     </decisions>
+    <decisions>
+        <name>Lines_Without_GM_And_Approver_is_PM</name>
+        <label>Lines Without GM And Approver is PM</label>
+        <locationX>710</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>END_ELEMENT_4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_non_GM_Lines</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.sbaa__Rule__r.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>PM</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Quote__r.Has_Bypass_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Gross_Margin_Required_per_Quote_Line</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status_is_Requested_Or_Approved</name>
+        <label>Status is Requested Or Approved</label>
+        <locationX>666</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>END_ELEMENT_6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Reuested</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sbaa__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Requested</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Insert_Time_Stamp_of_Requested</targetReference>
+            </connector>
+            <label>Reuested</label>
+        </rules>
+        <rules>
+            <name>Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sbaa__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_non_GM_Lines</targetReference>
+            </connector>
+            <label>Approved</label>
+        </rules>
+    </decisions>
     <description>It checks if the &apos;Approval Status&apos; is changed to &quot;Requested&quot; when met Updates the &apos;Requested Date&apos; to &quot;Now&quot;.</description>
+    <ends>
+        <name>END_ELEMENT_3</name>
+        <locationX>50</locationX>
+        <locationY>503</locationY>
+    </ends>
+    <ends>
+        <name>END_ELEMENT_4</name>
+        <locationX>710</locationX>
+        <locationY>1019</locationY>
+    </ends>
+    <ends>
+        <name>END_ELEMENT_5</name>
+        <locationX>314</locationX>
+        <locationY>719</locationY>
+    </ends>
+    <ends>
+        <name>END_ELEMENT_6</name>
+        <locationX>1018</locationX>
+        <locationY>611</locationY>
+    </ends>
     <environments>Default</environments>
     <formulas>
         <name>UpdatetoNow</name>
@@ -51,7 +166,7 @@
         <description>This record determines whether bypassing standard validations or logic is permitted.</description>
         <name>Get_Bypass_Record</name>
         <label>Get Bypass Record</label>
-        <locationX>176</locationX>
+        <locationX>358</locationX>
         <locationY>287</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -69,12 +184,50 @@
         <object>Flow_Bypass__mdt</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordLookups>
+        <name>Get_non_GM_Lines</name>
+        <label>Get non GM Lines</label>
+        <locationX>710</locationX>
+        <locationY>611</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Lines_Without_GM_And_Approver_is_PM</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Quote__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Quote__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>PKI_Product_Family__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.sbaa__ApprovalChain__r.Name</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Forecasted_Gross_Margin__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SBQQ__QuoteLine__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordUpdates>
         <description>Checks if the Approval Status is changed to &apos;Requested when met Updates the Requested Date to Now</description>
         <name>Insert_Time_Stamp_of_Requested</name>
         <label>Insert Time Stamp of Requested</label>
-        <locationX>308</locationX>
-        <locationY>503</locationY>
+        <locationX>314</locationX>
+        <locationY>611</locationY>
+        <connector>
+            <targetReference>END_ELEMENT_5</targetReference>
+        </connector>
         <inputAssignments>
             <field>Requested_Date__c</field>
             <value>
@@ -84,7 +237,7 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>50</locationX>
+        <locationX>232</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Bypass_Record</targetReference>
@@ -95,13 +248,6 @@
             <operator>IsChanged</operator>
             <value>
                 <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>sbaa__Status__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Requested</stringValue>
             </value>
         </filters>
         <object>sbaa__Approval__c</object>
