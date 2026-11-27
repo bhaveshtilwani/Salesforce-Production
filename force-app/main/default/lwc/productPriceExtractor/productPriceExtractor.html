@@ -1,0 +1,160 @@
+<template>
+    <lightning-card title="Product Price Extractor" icon-name="standard:product">
+        <div class="slds-p-around_medium">
+            <div class="slds-grid slds-wrap slds-gutters">
+                <!-- STANDARD PRICE LIST: existing filters and actions -->
+                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-2">
+                    <section class="slds-box slds-theme_default slds-height_full">
+                        <div class="slds-m-bottom_medium">
+                            <h2 class="slds-text-heading_medium">Standard Price List</h2>
+                            <p class="slds-text-body_small slds-text-color_weak">Export the standard product price list template.</p>
+                        </div>
+
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning-combobox
+                                    label="Business Unit"
+                                    value={businessUnit}
+                                    options={businessUnitOptions}
+                                    onchange={handleBusinessUnit}>
+                                </lightning-combobox>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning-combobox
+                                    label="Product Line"
+                                    value={productFamily}
+                                    options={productFamilyOptions}
+                                    onchange={handleProductFamily}
+                                    disabled={isProductFamilyDisabled}>
+                                </lightning-combobox>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1">
+                                <lightning-combobox
+                                    label="Product Sub Family"
+                                    value={productSubFamily}
+                                    options={productSubFamilyOptions}
+                                    onchange={handleProductSubFamily}
+                                    disabled={isSubFamilyDisabled}>
+                                </lightning-combobox>
+                            </div>
+                        </div>
+
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-grid_vertical-align-center">
+                            <div class="slds-col slds-grow-none slds-m-bottom_x-small">
+                                <lightning-button
+                                    label="Clear Filters"
+                                    onclick={handleClear}
+                                    disabled={isLoading}>
+                                </lightning-button>
+                            </div>
+                            <div class="slds-col slds-grow-none slds-m-bottom_x-small">
+                                <lightning-button
+                                    label="Export Standard Price List Template"
+                                    variant="success"
+                                    onclick={handleExport}
+                                    disabled={isLoading}>
+                                </lightning-button>
+                            </div>
+                        </div>
+
+                        <template lwc:if={hasSearched}>
+                            <div class="slds-m-top_medium">
+                                <p class="slds-m-bottom_small">Preview records: {recordCount}</p>
+                                <lightning-datatable
+                                    key-field="previewKey"
+                                    data={rows}
+                                    columns={previewColumns}
+                                    hide-checkbox-column>
+                                </lightning-datatable>
+                            </div>
+                        </template>
+                    </section>
+                </div>
+
+                <!-- CUSTOMER-SPECIFIC PRICE LIST: C2 Account filter -->
+                <div class="slds-col slds-size_1-of-1 slds-large-size_1-of-2">
+                    <section class="slds-box slds-theme_default slds-height_full">
+                        <div class="slds-m-bottom_medium">
+                            <h2 class="slds-text-heading_medium">Customer-Specific Price List</h2>
+                            <p class="slds-text-body_small slds-text-color_weak">Export contracted prices associated with a C2 Account.</p>
+                        </div>
+
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label" for="c2-account-search">C2 Account</label>
+                            <div class="slds-form-element__control">
+                                <div class="slds-combobox_container">
+                                    <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open"
+                                         role="combobox" aria-expanded={isC2AccountDropdownOpen} aria-haspopup="listbox">
+                                        <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left" role="none">
+                                            <lightning-icon icon-name="standard:account" size="x-small" class="slds-input__icon slds-input__icon_left"></lightning-icon>
+                                            <input id="c2-account-search"
+                                                   class="slds-input slds-combobox__input"
+                                                   type="text"
+                                                   value={c2AccountSearchTerm}
+                                                   placeholder="Search C2 Accounts by name..."
+                                                   autocomplete="off"
+                                                   oninput={handleC2AccountSearch}
+                                                   onfocus={handleC2AccountInputFocus}
+                                                   aria-autocomplete="list" />
+                                        </div>
+                                        <template lwc:if={isC2AccountDropdownOpen}>
+                                            <div class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid" role="listbox">
+                                                <template lwc:if={c2AccountOptions.length}>
+                                                    <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                                        <template for:each={c2AccountOptions} for:item="account">
+                                                            <li key={account.value} role="presentation" class="slds-listbox__item">
+                                                                <button type="button"
+                                                                        class="slds-listbox__option slds-listbox__option_entity slds-media slds-media_small slds-media_center"
+                                                                        role="option"
+                                                                        data-account-id={account.value}
+                                                                        data-account-name={account.label}
+                                                                        onclick={handleC2AccountSelect}>
+                                                                    <span class="slds-media__figure">
+                                                                        <lightning-icon icon-name="standard:account" size="small"></lightning-icon>
+                                                                    </span>
+                                                                    <span class="slds-media__body">
+                                                                        <span class="slds-listbox__option-text slds-listbox__option-text_entity">{account.label}</span>
+                                                                    </span>
+                                                                </button>
+                                                            </li>
+                                                        </template>
+                                                    </ul>
+                                                </template>
+                                                <template lwc:else>
+                                                    <div class="slds-p-around_small slds-text-color_weak">No matching Business Name accounts found.</div>
+                                                </template>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-grid_vertical-align-center">
+                            <div class="slds-col slds-grow-none slds-m-bottom_x-small">
+                                <lightning-button
+                                    label="Clear Selection"
+                                    onclick={handleClearC2Account}
+                                    disabled={isLoading}>
+                                </lightning-button>
+                            </div>
+                            <div class="slds-col slds-grow-none slds-m-bottom_x-small">
+                                <lightning-button
+                                    label="Export Customer-Specific Price List"
+                                    title="Export contracted prices for the selected C2 Account"
+                                    variant="success"
+                                    onclick={handleExportContractedPrices}
+                                    disabled={isLoading}>
+                                </lightning-button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <template lwc:if={isLoading}>
+                <lightning-spinner alternative-text="Processing"></lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>
