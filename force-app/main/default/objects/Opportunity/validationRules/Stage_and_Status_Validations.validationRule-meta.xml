@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_and_Status_Validations</fullName>
+    <active>false</active>
+    <description>As long as Stage = 1-5, Status = Open.
+Owner should be able to update Status from Open to one of the other 3.
+Once Status is updated from Open, the Stage should get fixed and no longer be editable.</description>
+    <errorConditionFormula>AND(
+    $RecordType.DeveloperName != &quot;Excelitas_Sales_Opportunity&quot;,
+    ISCHANGED(StageName),
+    Opportunity_Status__c &lt;&gt; &quot;Open&quot;
+)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Opportunity Status needs to be Open to change the Opportunity Stage</errorMessage>
+</ValidationRule>

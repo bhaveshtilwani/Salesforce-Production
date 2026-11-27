@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Customer_Type__c</fullName>
+    <inlineHelpText>Select “Existing” if we have running business with this customer in this Division, or “New” if we do not</inlineHelpText>
     <label>Customer Type</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
@@ -23,6 +24,16 @@
                 <fullName>Field Account</fullName>
                 <default>false</default>
                 <label>Field Account</label>
+            </value>
+            <value>
+                <fullName>Existing customer</fullName>
+                <default>false</default>
+                <label>Existing customer</label>
+            </value>
+            <value>
+                <fullName>New customer</fullName>
+                <default>false</default>
+                <label>New customer</label>
             </value>
         </valueSetDefinition>
     </valueSet>

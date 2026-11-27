@@ -32,7 +32,7 @@
         <inputAssignments>
             <field>Amount</field>
             <value>
-                <elementReference>$Record.Full_Production_Annual_Value__c</elementReference>
+                <elementReference>$Record.Expected_Revenue__c</elementReference>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>
@@ -45,7 +45,7 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Full_Production_Annual_Value__c</field>
+            <field>Expected_Revenue__c</field>
             <operator>GreaterThan</operator>
             <value>
                 <numberValue>0.0</numberValue>
