@@ -1,4 +1,9 @@
-trigger CaseAssignment on Case (after update) {
+trigger CaseAssignment on Case (after update, before insert) {
+
+    if (Trigger.isBefore && Trigger.isInsert) {
+        CaseTriggerHandler.updateProductLine(Trigger.new);
+    }
+
     List<Case> caseList = new List<Case>();
 
     if(Trigger.isAfter && Trigger.isUpdate){
@@ -13,4 +18,4 @@ trigger CaseAssignment on Case (after update) {
     Database.DMLOptions dmo = new Database.DMLOptions();
     dmo.assignmentRuleHeader.useDefaultRule = true;
     Database.update(caseList, dmo);
-    }
+}

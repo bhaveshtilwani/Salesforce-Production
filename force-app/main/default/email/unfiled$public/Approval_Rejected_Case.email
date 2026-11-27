@@ -1,0 +1,64 @@
+<messaging:emailTemplate subject="Approval Rejected - Case {!relatedTo.Case__r.CaseNumber}"
+    recipientType="User"
+    relatedToType="sbaa__Approval__c">
+
+    <messaging:htmlEmailBody >
+        <html>
+        <body style="font-family: Arial, sans-serif; color: #333333;">
+
+            {!relatedTo.Id}
+
+            <p>Hello,</p>
+
+            <p>
+                The Case submitted for approval has been
+                <strong>rejected</strong>. Please review the
+                details below and take the appropriate action.
+            </p>
+
+            <h2>Case Details</h2>
+
+            <table border="1" cellpadding="8" cellspacing="0"
+                   style="border-collapse: collapse; width: 100%;">
+
+                <tr>
+                    <td><strong>Case Number</strong></td>
+                    <td>{!relatedTo.Case__r.CaseNumber}</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Case Subject</strong></td>
+                    <td>{!relatedTo.Case__r.Subject}</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Product Line</strong></td>
+                    <td>{!relatedTo.Case__r.Product_Line_Text__c}</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Case Owner</strong></td>
+                    <td>{!relatedTo.Case__r.Owner.Name}</td>
+                </tr>
+
+            </table>
+
+            <p>
+                <a href="{!LEFT($Api.Partner_Server_URL_600,
+                    FIND('/services', $Api.Partner_Server_URL_600))}{!relatedTo.Case__c}">
+                    Open Case in Salesforce
+                </a>
+            </p>
+
+            <p>
+                Please review the request and make any necessary
+                changes before submitting it for approval again.
+            </p>
+
+            <p>Thank you.</p>
+
+        </body>
+        </html>
+    </messaging:htmlEmailBody>
+
+</messaging:emailTemplate>
