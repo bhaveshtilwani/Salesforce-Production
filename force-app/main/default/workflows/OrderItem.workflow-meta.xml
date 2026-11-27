@@ -16,6 +16,10 @@
         <description>Order Product - Notification</description>
         <protected>false</protected>
         <recipients>
+            <field>Requester_Mail_Id__c</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
             <type>owner</type>
         </recipients>
         <recipients>
@@ -43,6 +47,10 @@
         <fullName>Order_Product_Rejected_Notification</fullName>
         <description>Order Product - Rejected Notification</description>
         <protected>false</protected>
+        <recipients>
+            <field>Requester_Mail_Id__c</field>
+            <type>email</type>
+        </recipients>
         <recipients>
             <type>owner</type>
         </recipients>
