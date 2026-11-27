@@ -22,7 +22,7 @@
                     {!HTMLENCODE(siteById[site].Site_Country__c)}
                 </block>
 <!-- BP and ERP ID -->
-                <apex:outputPanel layout="none"
+ <apex:outputPanel layout="none"
             rendered="{!
                 LEN(siteBPNumberBySite[site]) > 0 ||
                 LEN(siteERPIdBySite[site]) > 0
@@ -38,18 +38,23 @@
             </block>
         
         </apex:outputPanel>
-        
-        <apex:outputPanel layout="none"
-            rendered="{!LEN(siteERPIdBySite[site]) > 0}">
-        
-            <block font-size="9px">
-                <inline text-decoration="underline" font-weight="bold">
-                    ERP ID:
-                </inline>
-                {!HTMLENCODE(siteERPIdBySite[site])}
-            </block>
-        
-        </apex:outputPanel>
+<!-- ERP QUOTE NUMBER -->    
+    <apex:outputPanel layout="none"
+    rendered="{!LEN(siteERPQuoteNumberBySite[site]) > 0}">
+
+    <block font-size="9px">
+        <inline text-decoration="underline" font-weight="bold">
+            ERP Quote Number:
+        </inline>
+        {!HTMLENCODE(siteERPQuoteNumberBySite[site])}
+    </block>
+
+</apex:outputPanel>
+                    
+<apex:outputPanel rendered="{!NOT(ISBLANK(quoteLinesBySite[site][0].ERP_Quote_Number__c))}">
+    <b>ERP Quote Number:</b>
+    <apex:outputText value="{!quoteLinesBySite[site][0].ERP_Quote_Number__c}"/>
+</apex:outputPanel>
                 </apex:outputPanel>
                 <!-- ORDER INSTRUCTIONS -->
               <block font-size="9px">
@@ -151,7 +156,7 @@
                     </block>
                 </apex:outputPanel>
                 <!-- QUOTE LINES -->
-                <block font-size="9px" margin-top="5mm">
+              <block font-size="9px" margin-top="5mm">
                     <table 
                         table-layout="fixed" 
                         width="100%" 
@@ -320,27 +325,7 @@
                                                     <table-row 
                                                         background-color="#EEFDDB"
                                                         keep-together.within-column="always">
-                                                        <table-cell border-width="1px" border-style="solid">
-                                                            <block text-align="center" font-size="9px" font-weight="bold">
-                                                                MOQ
-                                                            </block>
-                                                        </table-cell>
-                                                        <table-cell border-width="1px" border-style="solid">
-                                                            <block text-align="center" font-size="9px" wrap-option="wrap">
-                                                                {!lines.MOQ__c}
-                                                            </block>
-                                                        </table-cell>
-                                                        <table-cell border-width="1px" border-style="solid">
-                                                            <block text-align="center" font-size="9px" font-weight="bold">
-                                                                MPQ
-                                                            </block>
-                                                        </table-cell>
-                                                        <table-cell border-width="1px" border-style="solid">
-                                                            <block text-align="center" font-size="9px" wrap-option="wrap">
-                                                                {!lines.MPQ__c}
-                                                            </block>
-                                                        </table-cell>
-                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <table-cell border-width="1px" border-style="solid">
                                                             <block text-align="center" font-size="9px" font-weight="bold">
                                                                 HTC
                                                             </block>
@@ -363,15 +348,17 @@
                                                     </table-row>
                                                 </table-body>
                                             </table>
-                                            <!-- Quantity / Pricing -->
+
+                                      <!-- Quantity / Pricing -->
                                             <table 
                                                 table-layout="fixed"
                                                 width="100%"
                                                 border-color="#000000">
-                                                <table-column column-width="30%" />
-                                                <table-column column-width="30%" />
-                                                <table-column column-width="15%" />
+                                                <table-column column-width="20%" />
+                                                <table-column column-width="20%" />
                                                 <table-column column-width="25%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="20%" />
                                            <table-body>
                                                     <table-row background-color="#EEFDDB">
                                                         <table-cell border-width="1px" border-style="solid">
@@ -379,16 +366,25 @@
                                                                 Quantity
                                                             </block>
                                                         </table-cell>
+                                                    
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                MOQ
+                                                            </block>
+                                                        </table-cell>
+                                                    
                                                         <table-cell border-width="1px" border-style="solid">
                                                             <block text-align="center" font-size="9px" font-weight="bold">
                                                                 Unit Price
                                                             </block>
                                                         </table-cell>
+                                                    
                                                         <table-cell border-width="1px" border-style="solid">
                                                             <block text-align="center" font-size="9px" font-weight="bold">
                                                                 Line Total
                                                             </block>
                                                         </table-cell>
+                                                    
                                                         <table-cell border-width="1px" border-style="solid">
                                                             <block text-align="center" font-size="9px" font-weight="bold">
                                                                 Lead Time
@@ -396,76 +392,111 @@
                                                         </table-cell>
                                                     </table-row>
                                                     <apex:variable var="rowcount" value="{!0}" />
-                                                    <apex:repeat var="options" value="{!lineQuantities[lines]}">
-                                                        <table-row 
-                                                            background-color="#EEFDDB"
-                                                            keep-together.within-column="always">
-                                                            <table-cell border-width="1px" border-style="solid">
-                                                                <block 
-                                                                    text-align="center"
-                                                                    font-size="9px"
-                                                                    wrap-option="wrap">
-                                                                    <apex:outputText value="{0,number,###,##0.0}">
-                                                                        <apex:param value="{!options}" />
-                                                                    </apex:outputText>
-                                                                </block>
-                                                            </table-cell>
-                                                            <table-cell border-width="1px" border-style="solid">
-                                                                <block 
-                                                                    text-align="center"
-                                                                    font-size="9px"
-                                                                    wrap-option="wrap">
-                                                                    {!IF(
-                                                                        q.CurrencyIsoCode == 'USD',
-                                                                        '$',
-                                                                        q.CurrencyIsoCode
-                                                                    )}
-                                                                    <apex:outputText rendered="{!unitPriceByQuantity[lines][options] > 3}"
-                                                                        value=" {0, number, ###,##0.00}">
-                                                                        <apex:param value="{!unitPriceByQuantity[lines][options]}" />
-                                                                    </apex:outputText>
-                                                                    <apex:outputText rendered="{!unitPriceByQuantity[lines][options] <= 3}"
-                                                                        value=" {0, number, ###,##0.000}">
-                                                                        <apex:param value="{!unitPriceByQuantity[lines][options]}" />
-                                                                    </apex:outputText>
-                                                                </block>
-                                                            </table-cell>
-                                                            <table-cell border-width="1px" border-style="solid">
-                                                                <block 
-                                                                    text-align="right"
-                                                                    font-size="9px"
-                                                                    wrap-option="wrap">
-                                                                    {!IF(
-                                                                        q.CurrencyIsoCode == 'USD',
-                                                                        '$',
-                                                                        q.CurrencyIsoCode
-                                                                    )}
-                                                                    <apex:outputText value=" {0, number, ###,##0.00}">
-                                                                        <apex:param value="{!totalPriceByQuantity[lines][options]}" />
-                                                                    </apex:outputText>
-                                                                </block>
-                                                            </table-cell>
-                                                            <apex:outputPanel layout="none"
-                                                                rendered="{!rowcount == 0}">
-                                                                <table-cell 
-                                                                    number-rows-spanned="{!lineQuantitiesSize[lines]}"
-                                                                    border-width="1px"
-                                                                    border-style="solid">
-                                                                    <block 
-                                                                        text-align="center"
-                                                                        font-size="9px"
-                                                                        wrap-option="wrap">
-                                                                        {!IF(
-                                                                            ISBLANK(lines.Standard_Lead_Time__c),
-                                                                            ' ',
-                                                                            HTMLENCODE(lines.Standard_Lead_Time__c) & ' wks. Subject to change.'
-                                                                        )}
-                                                                    </block>
-                                                                </table-cell>
-                                                            </apex:outputPanel>
-                                                        </table-row>
-                                                        <apex:variable var="rowcount"
-                                                            value="{!rowcount + 1}" />
+                                                  <apex:variable var="rowcount" value="{!0}" />
+
+<apex:repeat var="options" value="{!lineQuantities[lines]}">
+<table-row 
+        background-color="#EEFDDB"
+        keep-together.within-column="always">
+
+        <!-- QUANTITY -->
+        <table-cell border-width="1px" border-style="solid">
+            <block 
+                text-align="center"
+                font-size="9px"
+                wrap-option="wrap">
+                <apex:outputText value="{0, number, ###,###}">
+                    <apex:param value="{!options}" />
+                </apex:outputText>
+            </block>
+        </table-cell>
+
+        <!-- MOQ -->
+        <table-cell border-width="1px" border-style="solid">
+            <block 
+                text-align="center"
+                font-size="9px"
+                wrap-option="wrap">
+                <apex:outputText value="{0, number, ###,###}">
+                    <apex:param value="{!lineMOQs[lines][rowcount]}" />
+                </apex:outputText>
+            </block>
+        </table-cell>
+
+        <!-- UNIT PRICE -->
+        <table-cell border-width="1px" border-style="solid">
+            <block 
+                text-align="center"
+                font-size="9px"
+                wrap-option="wrap">
+                {!IF(
+                    q.CurrencyIsoCode == 'USD',
+                    '$',
+                    q.CurrencyIsoCode
+                )}
+
+                <apex:outputText rendered="{!unitPriceByQuantity[lines][options] > 3}"
+                    value=" {0, number, ###,##0.00}">
+                    <apex:param value="{!unitPriceByQuantity[lines][options]}" />
+                </apex:outputText>
+
+                <apex:outputText rendered="{!unitPriceByQuantity[lines][options] <= 3}"
+                    value=" {0, number, ###,##0.000}">
+                    <apex:param value="{!unitPriceByQuantity[lines][options]}" />
+                </apex:outputText>
+            </block>
+        </table-cell>
+
+        <!-- LINE TOTAL -->
+        <table-cell border-width="1px" border-style="solid">
+            <block 
+                text-align="right"
+                font-size="9px"
+                wrap-option="wrap">
+                {!IF(
+                    q.CurrencyIsoCode == 'USD',
+                    '$',
+                    q.CurrencyIsoCode
+                )}
+
+                <apex:outputText value=" {0, number, ###,##0.00}">
+                    <apex:param value="{!totalPriceByQuantity[lines][options]}" />
+                </apex:outputText>
+            </block>
+        </table-cell>
+
+        <!-- LEAD TIME -->
+        <apex:outputPanel layout="none"
+            rendered="{!rowcount == 0}">
+
+            <table-cell 
+                number-rows-spanned="{!lineQuantitiesSize[lines]}"
+                border-width="1px"
+                border-style="solid">
+
+                <block 
+                    text-align="center"
+                    font-size="9px"
+                    wrap-option="wrap">
+
+                    {!IF(
+                        ISBLANK(lines.Standard_Lead_Time__c),
+                        ' ',
+                        HTMLENCODE(lines.Standard_Lead_Time__c) & 
+                        ' wks. Subject to change.'
+                    )}
+
+                </block>
+            </table-cell>
+
+        </apex:outputPanel>
+
+    </table-row>
+
+    <apex:variable var="rowcount"
+        value="{!rowcount + 1}" />
+
+
                                                     </apex:repeat>
                                                     <!-- Comments -->
                                                     <table-row 
