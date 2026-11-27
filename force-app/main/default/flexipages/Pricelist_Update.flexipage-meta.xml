@@ -4,19 +4,65 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>CustomButton.Case.Submit_for_Approval</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Open</rightValue>
+                                </criteria>
+                            </visibilityRule>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Case.Preview_Approval</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Global.NewEvent</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Global.NewTask</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Global.LogACall</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>ChangeOwnerOne</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Delete</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Global.NewCase</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.Case.SendWithDocuSign</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsInNative</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSlackAction</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -65,6 +111,26 @@
                 <identifier>RecordSubjectField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Product_Line_Text__c</fieldItem>
+                <identifier>RecordSegment__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Product_sub_Family_Text__c</fieldItem>
+                <identifier>RecordProduct_sub_Family_Text__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-dd82e83b-d377-42b0-b087-c711cb178f33</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -87,6 +153,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Status</fieldItem>
                 <identifier>RecordStatusField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.ApprovalStatus__c</fieldItem>
+                <identifier>RecordApprovalStatus_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-559307fc-9860-44d9-b824-a63bcf26a67f</name>
