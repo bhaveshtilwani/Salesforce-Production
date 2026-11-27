@@ -5,66 +5,6 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>actionNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>CustomButton.Order.Submit_for_Approval</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Order.Schedule_Lines</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!Record.Site__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Montreal</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Order.Order_Syncback</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!Record.Site__c}</leftValue>
-                                    <operator>EQUAL</operator>
-                                    <rightValue>Boulder</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Order.Sync_to_ERP_Action</value>
-                            <visibilityRule>
-                                <booleanFilter>1 AND 2</booleanFilter>
-                                <criteria>
-                                    <leftValue>{!Record.SFDC_Integration_Status__c}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>In Progress</rightValue>
-                                </criteria>
-                                <criteria>
-                                    <leftValue>{!Record.SFDC_Integration_Status__c}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>In Process</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Edit</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>CustomButton.Order.Conga_Composer_Order_Confirmation_2</value>
-                            <visibilityRule>
-                                <criteria>
-                                    <leftValue>{!Record.Site__c}</leftValue>
-                                    <operator>NE</operator>
-                                    <rightValue>Toronto</rightValue>
-                                </criteria>
-                            </visibilityRule>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>CustomButton.Order.Interco_Order</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Order.OVT_or_PIT</value>
-                        </valueListItems>
-                    </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>collapsed</name>
@@ -80,6 +20,10 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSlackAction</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
