@@ -182,7 +182,7 @@
         <ruleEntry>
             <assignedTo>corina.kukla@excelitas.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
             <criteriaItems>
                 <field>Lead.End_Market__c</field>
                 <operation>equals</operation>
@@ -217,11 +217,6 @@
                 <field>Lead.Country</field>
                 <operation>contains</operation>
                 <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Country</field>
-                <operation>contains</operation>
-                <value>Reunion</value>
             </criteriaItems>
             <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
         </ruleEntry>
@@ -311,7 +306,7 @@
         <ruleEntry>
             <assignedTo>Leads_Queue_Semi_EMEA</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
             <criteriaItems>
                 <field>Lead.Product_Line__c</field>
                 <operation>equals</operation>
@@ -347,11 +342,6 @@
                 <operation>contains</operation>
                 <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
             </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Country</field>
-                <operation>contains</operation>
-                <value>Reunion</value>
-            </criteriaItems>
             <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
         </ruleEntry>
         <ruleEntry>
@@ -367,7 +357,7 @@
         <ruleEntry>
             <assignedTo>Leads_Queue_ALS_Phoseon_EMEA</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
             <criteriaItems>
                 <field>Lead.Product_Family__c</field>
                 <operation>contains</operation>
@@ -402,11 +392,6 @@
                 <field>Lead.Country</field>
                 <operation>contains</operation>
                 <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Country</field>
-                <operation>contains</operation>
-                <value>Reunion</value>
             </criteriaItems>
             <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
         </ruleEntry>
@@ -443,7 +428,7 @@
             <criteriaItems>
                 <field>Lead.Product_Family__c</field>
                 <operation>equals</operation>
-                <value>Laser Engines</value>
+                <value>Advanced Laser Systems</value>
             </criteriaItems>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -584,7 +569,7 @@
         <ruleEntry>
             <assignedTo>Leads_Queue_AIS_EMEA</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9)</booleanFilter>
+            <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
             <criteriaItems>
                 <field>Lead.Product_Line__c</field>
                 <operation>equals</operation>
@@ -625,21 +610,16 @@
                 <operation>equals</operation>
                 <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
             </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Country</field>
-                <operation>contains</operation>
-                <value>Reunion</value>
-            </criteriaItems>
             <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>christine.iannuccilli@excelitas.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <booleanFilter>((1 OR 5) AND (2 OR 3 OR 4))</booleanFilter>
+            <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
             <criteriaItems>
                 <field>Lead.Product_Line__c</field>
                 <operation>contains</operation>
-                <value>Plasma Light Sources BU</value>
+                <value>Life Sciences</value>
             </criteriaItems>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -656,21 +636,16 @@
                 <operation>equals</operation>
                 <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
             </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Product_Line__c</field>
-                <operation>contains</operation>
-                <value>Solutions BU</value>
-            </criteriaItems>
             <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>jameslim@excelitas.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <booleanFilter>((1 OR 6) AND (2 OR 3 OR 4 OR 5))</booleanFilter>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
             <criteriaItems>
                 <field>Lead.Product_Line__c</field>
                 <operation>contains</operation>
-                <value>Plasma Light Sources BU</value>
+                <value>Life Sciences</value>
             </criteriaItems>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -692,21 +667,16 @@
                 <operation>equals</operation>
                 <value>Vanuatu,Vietnam,Wallis and Futuna</value>
             </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Product_Line__c</field>
-                <operation>contains</operation>
-                <value>Solutions BU</value>
-            </criteriaItems>
             <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>Leads_Queue_LSM_EMEA</assignedTo>
             <assignedToType>Queue</assignedToType>
-            <booleanFilter>((1 OR 8) AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 9))</booleanFilter>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
             <criteriaItems>
                 <field>Lead.Product_Line__c</field>
                 <operation>contains</operation>
-                <value>Plasma Light Sources BU</value>
+                <value>Life Sciences</value>
             </criteriaItems>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -737,16 +707,6 @@
                 <field>Lead.Country</field>
                 <operation>equals</operation>
                 <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Product_Line__c</field>
-                <operation>contains</operation>
-                <value>Solutions BU</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Country</field>
-                <operation>contains</operation>
-                <value>Reunion</value>
             </criteriaItems>
             <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
         </ruleEntry>
@@ -805,7 +765,7 @@
         <ruleEntry>
             <assignedTo>gina.gonzalez@excelitas.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12))</booleanFilter>
+            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11))</booleanFilter>
             <criteriaItems>
                 <field>Lead.Product_Family__c</field>
                 <operation>contains</operation>
@@ -860,11 +820,6 @@
                 <field>Lead.Country</field>
                 <operation>contains</operation>
                 <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
-            </criteriaItems>
-            <criteriaItems>
-                <field>Lead.Country</field>
-                <operation>contains</operation>
-                <value>Reunion</value>
             </criteriaItems>
             <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
         </ruleEntry>
@@ -1261,6 +1216,7 @@
         <ruleEntry>
             <assignedTo>Leads_Queue_Semi_Asia</assignedTo>
             <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5))</booleanFilter>
             <criteriaItems>
                 <field>Lead.Product_Line__c</field>
                 <operation>contains</operation>
