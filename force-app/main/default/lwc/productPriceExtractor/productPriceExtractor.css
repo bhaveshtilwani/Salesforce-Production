@@ -1,0 +1,11 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.button-container lightning-button {
+    flex: 0 0 auto;
+}
