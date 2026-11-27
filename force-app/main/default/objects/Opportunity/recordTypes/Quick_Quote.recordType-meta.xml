@@ -3,7 +3,7 @@
     <fullName>Quick_Quote</fullName>
     <active>true</active>
     <businessProcess>Quick Quote</businessProcess>
-    <description>Quick Quote – Turns or running business. No design in effort OR Used for Agreement and Credit/Debit Process</description>
+    <description>Secondary Record Type that can be used for Low Value (&lt;$50k), Book Ship Opportunities OR for Credit /Debit process</description>
     <label>Quick Quote</label>
     <picklistValues>
         <picklist>Account_Classification__c</picklist>
@@ -2255,6 +2255,53 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Expected_1st_Yr_of_Full_Rate_Production__c</picklist>
+        <values>
+            <fullName>2026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2027</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2028</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2029</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2031</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2032</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2033</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2034</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2035</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2036</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Follow_on_order__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -3601,6 +3648,17 @@
         </values>
         <values>
             <fullName>Shield</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_or_Existing_Product__c</picklist>
+        <values>
+            <fullName>Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
             <default>false</default>
         </values>
     </picklistValues>

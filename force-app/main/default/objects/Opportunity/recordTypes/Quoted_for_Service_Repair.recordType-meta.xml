@@ -3,6 +3,7 @@
     <fullName>Quoted_for_Service_Repair</fullName>
     <active>true</active>
     <businessProcess>Other</businessProcess>
+    <description>Opportunities related to the repair, calibration or servicing of returned products</description>
     <label>Service / Repair</label>
     <picklistValues>
         <picklist>Account_Classification__c</picklist>
@@ -2622,6 +2623,53 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Expected_1st_Yr_of_Full_Rate_Production__c</picklist>
+        <values>
+            <fullName>2026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2027</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2028</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2029</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2031</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2032</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2033</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2034</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2035</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2036</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Follow_on_order__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -3728,6 +3776,17 @@
         </values>
         <values>
             <fullName>Shield</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>New_or_Existing_Product__c</picklist>
+        <values>
+            <fullName>Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
             <default>false</default>
         </values>
     </picklistValues>
