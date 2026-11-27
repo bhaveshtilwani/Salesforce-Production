@@ -900,78 +900,6 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>C3-Customer Service</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>C3-Customer Service</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>Mark-User New</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>Mark-User New</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>Operations Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>Operations Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>S4-BDM Lightning CPQ</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>S4-BDM Lightning CPQ</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>Nobelightopp</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
@@ -1660,22 +1588,6 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.Representative_LDGI</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ProductPageCPQ_Admin</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ProductPageCPQ_Admin</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
@@ -4455,14 +4367,6 @@
         <profile>P1-Product VP</profile>
     </profileActionOverrides>
     <profileActionOverrides>
-        <actionName>Tab</actionName>
-        <content>PM_PL_Home</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
         <actionName>View</actionName>
         <content>Lead_Record_Page3</content>
         <formFactor>Large</formFactor>
@@ -4617,7 +4521,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Quote_Record_Page_New</content>
+        <content>Quote_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
         <type>Flexipage</type>
@@ -4625,7 +4529,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Quote_Record_Page_New</content>
+        <content>Quote_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
         <type>Flexipage</type>
@@ -11850,22 +11754,6 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>ProductPageCPQ_Admin</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Operations Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ProductPageCPQ_Admin</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Operations Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>CFIN_Account_Lightning_Page</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
@@ -11989,42 +11877,6 @@
         <recordType>Account.SAP_NA_Salem_MIA</recordType>
         <type>Flexipage</type>
         <profile>Operations Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ProductPageCPQ_Admin</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>ProductPageCPQ_Admin</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Standard_Product</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Special_Request_SR</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Product_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Special_Request_SR</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -12594,154 +12446,107 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Contact_Record_Page4</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Create_Contact</recordType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Contact_Record_Page4</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Contact</pageOrSobjectType>
-        <recordType>Contact.Create_Contact</recordType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Account_Record_Page8</content>
+        <content>LDGI_QAD_ACCOUNT</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Business_Account_Name</recordType>
+        <recordType>Account.QAD</recordType>
         <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
+        <profile>S4-BDM Lightning CPQ</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Account_Record_Page8</content>
+        <content>LDGI_QAD_ACCOUNT</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Business_Account_Name</recordType>
+        <recordType>Account.QAD</recordType>
         <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
+        <profile>S4-BDM Lightning CPQ</profile>
     </profileActionOverrides>
     <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Lead_Record_Page3</content>
+        <actionName>Tab</actionName>
+        <content>PM_PL_Home</content>
         <formFactor>Large</formFactor>
-        <pageOrSobjectType>Lead</pageOrSobjectType>
-        <recordType>Lead.Commercial_Lead</recordType>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>P3-Product Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>PM_PL_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Operations Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.SAP_Order_Confirmation</recordType>
         <type>Flexipage</type>
         <profile>P3-Product Manager</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>ALS_Opportunity</content>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.SAP_Order_Confirmation</recordType>
+        <type>Flexipage</type>
+        <profile>P3-Product Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SAP_Order_COnfirmation</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>OrderItem</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>P3-Product Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SAP_Order_COnfirmation</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>OrderItem</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>P3-Product Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Excelitas_Sales_Layout</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.ALS</recordType>
+        <recordType>Opportunity.Excelitas_Sales_Opportunity</recordType>
         <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
+        <profile>Operations Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>ALS_Opportunity</content>
+        <content>Excelitas_Sales_Layout</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.ALS</recordType>
+        <recordType>Opportunity.Excelitas_Sales_Opportunity</recordType>
         <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
+        <profile>Operations Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Prospect_Record_Page</content>
+        <content>Excelitas_Sales_Layout</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.NPI_Opportunity</recordType>
+        <recordType>Opportunity.Excelitas_Sales_Opportunity</recordType>
         <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Prospect_Record_Page</content>
+        <content>Excelitas_Sales_Layout</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.NPI_Opportunity</recordType>
+        <recordType>Opportunity.Excelitas_Sales_Opportunity</recordType>
         <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Customer_Portal</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Case</pageOrSobjectType>
-        <recordType>Case.Customer_Portal_Request</recordType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Customer_Portal</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Case</pageOrSobjectType>
-        <recordType>Case.Customer_Portal_Request</recordType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Acc_Trial</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Case</pageOrSobjectType>
-        <recordType>Case.ACCTrial</recordType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Acc_Trial</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Case</pageOrSobjectType>
-        <recordType>Case.ACCTrial</recordType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Demo_Case</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Case</pageOrSobjectType>
-        <recordType>Case.Demo_Case</recordType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Demo_Case</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Case</pageOrSobjectType>
-        <recordType>Case.Demo_Case</recordType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Quote_Record_Page_New</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>P1-Product VP</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Quote_Record_Page_New</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>P3-Product Manager</profile>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Lead</tabs>
