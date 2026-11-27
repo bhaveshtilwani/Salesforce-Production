@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Excelitas_Sales_Opportunity</fullName>
+    <active>true</active>
+    <businessProcess>Excelitas Sales Process</businessProcess>
+    <description>Primary Record Type that all Sales Divisions can use to load Run Rate Opportunities (RRO) or New Business Opportunities (NBO)</description>
+    <label>Excelitas Sales Opportunity</label>
+</RecordType>
