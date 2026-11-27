@@ -1,0 +1,30 @@
+<messaging:emailTemplate subject="APPROVED: {!relatedTo.Order.OrderNumber}" recipientType="User" relatedToType="OrderItem">
+    <messaging:htmlEmailBody >
+        <body style="font-family: 'Trebuchet MS'">
+             The order line for your Order {!relatedTo.Order.Name} had been approved:
+            <br/>
+            <br/>
+             <b>Order: </b><a href="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Order.Id}">{!relatedTo.Order.OrderNumber}</a>
+            <br/>
+            <b>Order Line: </b> {!relatedTo.OrderItemNumber}
+            <br/>
+            <b>Account: </b> {!relatedTo.Order.Account_Name__c}
+            <br/>
+            <b>Excelitas Product Family: </b> {!relatedTo.Excelitas_Product_Family__c}
+            <br/>
+            <b>Product Name: </b> {!relatedTo.Product_Name__c}
+            <br/>
+            <br/>
+            <b>FINAL VALUES</b>
+            <br/>
+            <b>{!IF(NOT(ISBLANK(relatedTo.Original_Date__c)), "Original Customer Requested Date (CRD):", "")}</b> {!relatedTo.Original_Date__c} <b>{!IF(NOT(ISBLANK(relatedTo.Original_Date__c)), "  -  New ", "")}Customer Requested Date (CRD): </b> {!relatedTo.Customer_Requested_Date__c}
+            <br/>
+            <b>{!IF(NOT(ISBLANK(relatedTo.Original_Quantity__c)), "Original Quantity:", "")} </b> {!relatedTo.Original_Quantity__c} <b>{!IF(NOT(ISBLANK(relatedTo.Original_Quantity__c)), "  -  New ", "")}Quantity: </b> {!relatedTo.Real_Quantity__c}
+            <br/>
+            <b>{!IF(NOT(ISBLANK(relatedTo.Original_Price__c)), "Original Unit Price:", "")} </b> {!relatedTo.Original_Price__c} <b>{!IF(NOT(ISBLANK(relatedTo.Original_Price__c)), "  -  New :", "")}Unit Price: </b> {!relatedTo.UnitPrice}    
+            <br/>
+            <b>Total Price: </b> {!relatedTo.TotalPrice}  
+            <br/>
+        </body>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>
