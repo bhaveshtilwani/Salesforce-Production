@@ -238,7 +238,7 @@ public with sharing class CustomAdvancedApprovalsHelper {
         return Database.query(soqlString);
     }
 
-    public static Map<String, Map<String, Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>>> getRecordsByApprovalMapping(
+    /*public static Map<String, Map<String, Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>>> getRecordsByApprovalMapping(
         List<Custom_Advanced_Approval_Field_Mapping__mdt> approvalFieldMappings,
         List<SObject> submittedRecords
     ) {
@@ -284,7 +284,81 @@ public with sharing class CustomAdvancedApprovalsHelper {
         }
 
         return result;
+    }*/
+public static Map<String, Map<String, Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>>> getRecordsByApprovalMapping(
+    List<Custom_Advanced_Approval_Field_Mapping__mdt> approvalFieldMappings,
+    List<SObject> submittedRecords
+) {
+    Map<String, Map<String, Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>>> result =
+        new Map<String, Map<String, Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>>>();
+
+    Map<String, Set<String>> requestedFieldsByApprovalTypeMap = new Map<String, Set<String>>();
+
+    for (Custom_Advanced_Approval_Field_Mapping__mdt fieldMapping : approvalFieldMappings) {
+        if (
+            String.isBlank(fieldMapping.Requested_Field_API_Name__c) ||
+            String.isBlank(fieldMapping.Approval_Type__c)
+        ) {
+            continue;
     }
+
+        String approvalType = fieldMapping.Approval_Type__c;
+        String requestedField = fieldMapping.Requested_Field_API_Name__c;
+
+        if (!requestedFieldsByApprovalTypeMap.containsKey(approvalType)) {
+            requestedFieldsByApprovalTypeMap.put(approvalType, new Set<String>());
+        }
+
+        requestedFieldsByApprovalTypeMap.get(approvalType).add(requestedField);
+
+        // Price and Quantity is allowed to have two requested fields.
+        if (
+            approvalType != 'Price and Quantity' &&
+            requestedFieldsByApprovalTypeMap.get(approvalType).size() > 1
+        ) {
+            throwAuraException(
+                String.format(
+                    DUPLICATE_FIELD_MAPPING_ERROR,
+                    new List<String>{ approvalType }
+                )
+            );
+        }
+
+        for (SObject sObj : submittedRecords) {
+            Object fieldValue = sObj.get(requestedField);
+
+            if (fieldValue == null || fieldValue == false) {
+                continue;
+            }
+
+            if (!result.containsKey(requestedField)) {
+                result.put(
+                    requestedField,
+                    new Map<String, Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>>()
+                );
+            }
+
+            if (!result.get(requestedField).containsKey(approvalType)) {
+                result.get(requestedField).put(
+                    approvalType,
+                    new Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>()
+                );
+            }
+
+            if (!result.get(requestedField).get(approvalType).containsKey(fieldMapping)) {
+                result.get(requestedField).get(approvalType).put(
+                    fieldMapping,
+                    new Set<SObject>()
+                );
+            }
+
+            result.get(requestedField).get(approvalType).get(fieldMapping).add(sObj);
+        }
+    }
+
+    return result;
+}
+
 
     public static List<sbaa__ApprovalRule__c> getApprovalRulesWithConditionsByApprovalTypeAndSObjectType(SObjectType sObjType) {
         return new List<sbaa__ApprovalRule__c>(
@@ -339,7 +413,7 @@ public with sharing class CustomAdvancedApprovalsHelper {
         }
     }
 
-    public static List<Approval_Custom__c> createCustomApprovalRecordsForSObjects(
+    /*public static List<Approval_Custom__c> createCustomApprovalRecordsForSObjects(
         Map<String, Map<String, Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>>> submittedRecordsByApprovalMapping,
         Map<String, List<sbaa__ApprovalRule__c>> approvalRulesByTypeMap,
         String comments
@@ -374,6 +448,194 @@ public with sharing class CustomAdvancedApprovalsHelper {
             }
         }
         return customApprovals;
+    }*/
+
+public static List<Approval_Custom__c> createCustomApprovalRecordsForSObjects(
+    Map<String, Map<String, Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>>>> submittedRecordsByApprovalMapping,
+    Map<String, List<sbaa__ApprovalRule__c>> approvalRulesByTypeMap,
+    String comments
+) {
+    List<Approval_Custom__c> customApprovals = new List<Approval_Custom__c>();
+
+    final String COMBINED_TYPE = 'Price and Quantity';
+    final String PRICE_FIELD = 'Requested_Price_Change__c';
+    final String QUANTITY_FIELD = 'Requested_Quantity_Change__c';
+
+    Custom_Advanced_Approval_Field_Mapping__mdt priceMapping;
+    Custom_Advanced_Approval_Field_Mapping__mdt quantityMapping;
+
+    Map<Id, SObject> priceRecordsById = new Map<Id, SObject>();
+    Map<Id, SObject> quantityRecordsById = new Map<Id, SObject>();
+
+    // Find Price mapping and records.
+    if (
+        submittedRecordsByApprovalMapping.containsKey(PRICE_FIELD) &&
+        submittedRecordsByApprovalMapping.get(PRICE_FIELD).containsKey(COMBINED_TYPE)
+    ) {
+        Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>> priceMappings =
+            submittedRecordsByApprovalMapping.get(PRICE_FIELD).get(COMBINED_TYPE);
+
+        for (Custom_Advanced_Approval_Field_Mapping__mdt mapping : priceMappings.keySet()) {
+            if (
+                mapping.Is_Original_Value__c &&
+                mapping.Target_Field_API_Name__c == 'UnitPrice'
+            ) {
+                priceMapping = mapping;
+
+                for (SObject record : priceMappings.get(mapping)) {
+                    priceRecordsById.put((Id) record.get('Id'), record);
+                }
+
+                break;
+            }
+        }
+    }
+
+    // Find Quantity mapping and records.
+    if (
+        submittedRecordsByApprovalMapping.containsKey(QUANTITY_FIELD) &&
+        submittedRecordsByApprovalMapping.get(QUANTITY_FIELD).containsKey(COMBINED_TYPE)
+    ) {
+        Map<Custom_Advanced_Approval_Field_Mapping__mdt, Set<SObject>> quantityMappings =
+            submittedRecordsByApprovalMapping.get(QUANTITY_FIELD).get(COMBINED_TYPE);
+
+        for (Custom_Advanced_Approval_Field_Mapping__mdt mapping : quantityMappings.keySet()) {
+            if (
+                mapping.Is_Original_Value__c &&
+                mapping.Target_Field_API_Name__c == 'Quantity'
+            ) {
+                quantityMapping = mapping;
+
+                for (SObject record : quantityMappings.get(mapping)) {
+                    quantityRecordsById.put((Id) record.get('Id'), record);
+                }
+
+                break;
+            }
+        }
+    }
+
+    // Identify Order Items having BOTH Price and Quantity requests.
+    Set<Id> combinedRecordIds = new Set<Id>();
+    Set<SObject> combinedRecords = new Set<SObject>();
+
+    for (Id recordId : priceRecordsById.keySet()) {
+        if (quantityRecordsById.containsKey(recordId)) {
+            combinedRecordIds.add(recordId);
+            combinedRecords.add(priceRecordsById.get(recordId));
+        }
+    }
+
+    // Create ONE approval for each Order Item with both changes.
+    if (!combinedRecords.isEmpty()) {
+        if (priceMapping == null || quantityMapping == null) {
+            throwAuraException(
+                'Price and Quantity approval mappings are missing or incorrectly configured.'
+            );
+        }
+
+        List<sbaa__ApprovalRule__c> combinedRules =
+            approvalRulesByTypeMap.get(COMBINED_TYPE);
+
+        validateRecordListIsNotEmpty(
+            combinedRules,
+            'Approval Rules are not setup for the Price and Quantity Approval Type.'
+        );
+
+        List<Approval_Custom__c> combinedApprovals = buildApprovalCustomRecords(
+            combinedRecords,
+            combinedRules,
+            PRICE_FIELD,
+            priceMapping,
+            comments
+        );
+
+        // Populate both requested values and both original values
+        // on the same Approval_Custom__c record.
+        for (Approval_Custom__c approval : combinedApprovals) {
+            SObject orderItem = priceRecordsById.get(approval.Order_Product__c);
+
+            approval.Approval_Type__c = COMBINED_TYPE;
+
+            approval.Requested_Price_Change__c =
+                (Decimal) orderItem.get(PRICE_FIELD);
+
+            approval.Requested_Quantity_Change__c =
+                (Decimal) orderItem.get(QUANTITY_FIELD);
+
+            approval.Original_Unit_Price__c =
+                (Decimal) orderItem.get('UnitPrice');
+
+            approval.Original_Quantity__c =
+                (Decimal) orderItem.get('Quantity');
+        }
+
+        customApprovals.addAll(combinedApprovals);
+    }
+
+    // Process all other approval mappings normally.
+    // Skip records already processed as combined Price and Quantity approvals.
+    for (String requestedField : submittedRecordsByApprovalMapping.keySet()) {
+        for (String orderApprovalType :
+            submittedRecordsByApprovalMapping.get(requestedField).keySet()
+        ) {
+            for (
+                Custom_Advanced_Approval_Field_Mapping__mdt fieldMapping :
+                submittedRecordsByApprovalMapping.get(requestedField)
+                    .get(orderApprovalType).keySet()
+            ) {
+                if (!fieldMapping.Is_Original_Value__c) {
+                    continue;
+                }
+
+                Set<SObject> recordsToBuild = new Set<SObject>();
+
+                Set<SObject> records =
+                    submittedRecordsByApprovalMapping.get(requestedField)
+                        .get(orderApprovalType).get(fieldMapping);
+
+                for (SObject record : records) {
+                    Id recordId = (Id) record.get('Id');
+
+                    if (
+                        orderApprovalType == COMBINED_TYPE &&
+                        combinedRecordIds.contains(recordId)
+                    ) {
+                        continue;
+                    }
+
+                    recordsToBuild.add(record);
+                }
+
+                if (recordsToBuild.isEmpty()) {
+                    continue;
+                }
+
+                List<sbaa__ApprovalRule__c> approvalRules =
+                    approvalRulesByTypeMap.get(orderApprovalType);
+
+                validateRecordListIsNotEmpty(
+                    approvalRules,
+                    'Approval Rules are not setup for the ' +
+                    orderApprovalType +
+                    ' Approval Type, which has been configured in the Field Mapping Metadata.'
+                );
+
+                List<Approval_Custom__c> newApprovals =
+                    buildApprovalCustomRecords(
+                        recordsToBuild,
+                        approvalRules,
+                        requestedField,
+                        fieldMapping,
+                        comments
+                    );
+
+                customApprovals.addAll(newApprovals);
+            }
+        }
+    }
+
+    return customApprovals;
     }
 
     public static List<Approval_Custom__c> buildApprovalCustomRecords(
@@ -511,7 +773,7 @@ public with sharing class CustomAdvancedApprovalsHelper {
         return autoApproval;
     }
 
-    public static Approval_Custom__c createNewCustomApproval(
+   /* public static Approval_Custom__c createNewCustomApproval(
         SObject sObj,
         sbaa__ApprovalRule__c approvalRule,
         String requestedField,
@@ -562,6 +824,87 @@ public with sharing class CustomAdvancedApprovalsHelper {
         }
 
         return result;
+    }*/
+
+public static Approval_Custom__c createNewCustomApproval(
+    SObject sObj,
+    sbaa__ApprovalRule__c approvalRule,
+    String requestedField,
+    Custom_Advanced_Approval_Field_Mapping__mdt fieldMapping,
+    String comments
+) {
+    Approval_Custom__c result = new Approval_Custom__c();
+
+    SObjectField approvalCustomRequestedField =
+        result.getSObjectType().getDescribe().fields.getMap().get(requestedField);
+
+    SObjectType sObjType = sObj.getSObjectType();
+    Map<String, SObjectField> fieldMap =
+        sObjType.getDescribe().fields.getMap();
+
+    SObjectField sObjRequestedField = fieldMap.get(requestedField);
+    SObjectField sObjTargetField =
+        fieldMap.get(fieldMapping.Target_Field_API_Name__c);
+
+    result.Approval_Chain__c = approvalRule?.sbaa__ApprovalChain__c;
+    result.Approval_Rule__c = approvalRule?.Id;
+    result.Approval_Step__c = approvalRule?.sbaa__ApprovalStep__c;
+    result.Order_Product__c = (Id) sObj.get('Id');
+    result.Approver__c = approvalRule?.sbaa__Approver__c;
+    result.Approval_Type__c = fieldMapping.Approval_Type__c;
+    result.On_Submit_Comments__c = comments;
+
+    if (fieldMapping.Approval_Type__c == 'Expedite') {
+        return result;
+    }
+
+    if (approvalCustomRequestedField == null) {
+        throwAuraException(
+            'Could not locate the Requested Field for the Approval Custom Record: ' +
+            requestedField
+        );
+    }
+
+    if (sObjRequestedField == null) {
+        throwAuraException(
+            'Could not locate the Requested Field for the SObject Type: ' +
+            sObjType + '.' + requestedField
+        );
+    }
+
+    result.put(
+        approvalCustomRequestedField,
+        sObj.get(sObjRequestedField)
+    );
+
+    if (sObjTargetField == null) {
+        throwAuraException(
+            'Could not locate the Target Field for the SObject Type: ' +
+            sObjType + '.' + fieldMapping.Target_Field_API_Name__c
+        );
+    }
+
+    if (fieldMapping.Approval_Type__c == 'Date') {
+        result.Original_Customer_Requested_Date_CRD__c =
+            (Date) sObj.get(sObjTargetField);
+
+    } else if (fieldMapping.Approval_Type__c == 'Price') {
+        result.Original_Unit_Price__c =
+            (Decimal) sObj.get(sObjTargetField);
+
+    } else if (fieldMapping.Approval_Type__c == 'Quantity') {
+        result.Original_Quantity__c =
+            (Decimal) sObj.get(sObjTargetField);
+
+    } else if (fieldMapping.Approval_Type__c == 'Price and Quantity') {
+        result.Original_Unit_Price__c =
+            (Decimal) sObj.get('UnitPrice');
+
+        result.Original_Quantity__c =
+            (Decimal) sObj.get('Quantity');
+    }
+
+    return result;
     }
 
     public static Boolean isFilterMatch(SObject sObj, sbaa__ApprovalCondition__c condition, sbaa__ApprovalRule__c rule) {
@@ -782,4 +1125,28 @@ public with sharing class CustomAdvancedApprovalsHelper {
     public static void throwInvalidOperatorError(String operator, String fieldType) {
         throwAuraException('Operator value of "' + operator + '" is not a valid operator for a ' + fieldType + '.');
     }
+    
+    
+public static void recallOrderItemApproval(Id orderItemId) {
+
+    if (orderItemId == null) {
+        return;
+    }
+
+    List<Approval_Custom__c> approvalsToRecall = [
+        SELECT Id, Status__c
+        FROM Approval_Custom__c
+        WHERE Order_Product__c = :orderItemId
+          AND Status__c IN ('Requested', 'Assigned')
+    ];
+
+    for (Approval_Custom__c approval : approvalsToRecall) {
+        approval.Status__c = 'Revoked';
+    }
+
+    if (!approvalsToRecall.isEmpty()) {
+        update approvalsToRecall;
+    }
+}
+
 }
