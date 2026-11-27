@@ -1,0 +1,7 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <aura:attribute name="recordId" type="string" />
+    <aura:attribute name="message" type="String"/>
+    <aura:attribute name="obj" type="String"/>
+    <aura:registerEvent name="oSelectedMessageEvent" type="c:sendMessageToVFPageEVT"/>
+    <c:orderItemSplitQuantity recordId="{!v.recordId}" onshowtoast="{!c.showtoastmessage}" onnavigate="{!c.navigatetoobject}"></c:orderItemSplitQuantity>
+</aura:component>

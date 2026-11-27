@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>St_Louis_ZBIL_Alert</name>
+        <label>St Louis ZBIL Alert</label>
+        <locationX>876</locationX>
+        <locationY>146</locationY>
+        <actionName>Account.St_Louis_ZBIL_Partner_Function_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Account.St_Louis_ZBIL_Partner_Function_Notification</nameSegment>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>ZBIL_Found</name>
+        <label>ZBIL Found</label>
+        <locationX>694</locationX>
+        <locationY>147</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_ZBIL_PF</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>St_Louis_ZBIL_Alert</targetReference>
+            </connector>
+            <label>Not Found</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>St Louis - ZBIL Email Alert {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>St Louis - ZBIL Email Alert</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_ZBIL_PF</name>
+        <label>Get ZBIL PF</label>
+        <locationX>551</locationX>
+        <locationY>145</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ZBIL_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Partner_Function_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>a433t000001IPbzAAG</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Partner_Function__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>76</locationX>
+        <locationY>36</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>St Louis</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold-to party (OPSL) - 0001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Client_Side_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Check_ZBIL</name>
+            <connector>
+                <targetReference>Get_ZBIL_PF</targetReference>
+            </connector>
+            <label>Check ZBIL</label>
+            <offsetNumber>15</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>LastModifiedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>Body</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Your Sold To Account {!$Record.Name} needs to have a 0003 Payer Function. Please update. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If you haven&apos;t created one, please do. Upon successful sync, update your Sold To&apos;s Payer Partner Function with it.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Link: https://excelitas--produat.sandbox.lightning.force.com/lightning/r/Partner_Function__c/{!Get_ZBIL_PF.Id}/view?ws=%2Flightning%2Fr%2FAccount%2F{!$Record.Id}%2Fview&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subject</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;{!$Record.Name} ({!$Record.Client_Side_ID__c}) needs a 0003 Payer Function&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

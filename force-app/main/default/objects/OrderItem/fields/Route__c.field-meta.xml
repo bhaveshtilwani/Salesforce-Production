@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Route__c</fullName>
+    <label>Route</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Northern Route</fullName>
+                <default>false</default>
+                <label>Northern Route</label>
+            </value>
+            <value>
+                <fullName>Southern Route</fullName>
+                <default>false</default>
+                <label>Southern Route</label>
+            </value>
+            <value>
+                <fullName>Eastern Route</fullName>
+                <default>false</default>
+                <label>Eastern Route</label>
+            </value>
+            <value>
+                <fullName>Western Route</fullName>
+                <default>false</default>
+                <label>Western Route</label>
+            </value>
+            <value>
+                <fullName>North-south Route</fullName>
+                <default>false</default>
+                <label>North-south Route</label>
+            </value>
+            <value>
+                <fullName>South-north Route</fullName>
+                <default>false</default>
+                <label>South-north Route</label>
+            </value>
+            <value>
+                <fullName>East-west Route</fullName>
+                <default>false</default>
+                <label>East-west Route</label>
+            </value>
+            <value>
+                <fullName>West-east Route</fullName>
+                <default>false</default>
+                <label>West-east Route</label>
+            </value>
+            <value>
+                <fullName>DHL Second Day Delivery</fullName>
+                <default>false</default>
+                <label>DHL Second Day Delivery</label>
+            </value>
+            <value>
+                <fullName>DHL Express</fullName>
+                <default>false</default>
+                <label>DHL Express</label>
+            </value>
+            <value>
+                <fullName>DHL Ground</fullName>
+                <default>false</default>
+                <label>DHL Ground</label>
+            </value>
+            <value>
+                <fullName>Federal Express 2 Day</fullName>
+                <default>false</default>
+                <label>Federal Express 2 Day</label>
+            </value>
+            <value>
+                <fullName>Federal Express First Overnight (8 AM)</fullName>
+                <default>false</default>
+                <label>Federal Express First Overnight (8 AM)</label>
+            </value>
+            <value>
+                <fullName>Federal Express Ground</fullName>
+                <default>false</default>
+                <label>Federal Express Ground</label>
+            </value>
+            <value>
+                <fullName>Federal Express Priority</fullName>
+                <default>false</default>
+                <label>Federal Express Priority</label>
+            </value>
+            <value>
+                <fullName>Federal Express Saturday Delivery</fullName>
+                <default>false</default>
+                <label>Federal Express Saturday Delivery</label>
+            </value>
+            <value>
+                <fullName>Federal Express Saver</fullName>
+                <default>false</default>
+                <label>Federal Express Saver</label>
+            </value>
+            <value>
+                <fullName>Federal Express Standard</fullName>
+                <default>false</default>
+                <label>Federal Express Standard</label>
+            </value>
+            <value>
+                <fullName>Opto Global</fullName>
+                <default>false</default>
+                <label>Opto Global</label>
+            </value>
+            <value>
+                <fullName>Opto Global HAZ</fullName>
+                <default>false</default>
+                <label>Opto Global HAZ</label>
+            </value>
+            <value>
+                <fullName>Hand Carry</fullName>
+                <default>false</default>
+                <label>Hand Carry</label>
+            </value>
+            <value>
+                <fullName>Special Instructions</fullName>
+                <default>false</default>
+                <label>Special Instructions</label>
+            </value>
+            <value>
+                <fullName>TNT</fullName>
+                <default>false</default>
+                <label>TNT</label>
+            </value>
+            <value>
+                <fullName>UPS Air Saver Delivery</fullName>
+                <default>false</default>
+                <label>UPS Air Saver Delivery</label>
+            </value>
+            <value>
+                <fullName>UPS BLUE</fullName>
+                <default>false</default>
+                <label>UPS BLUE</label>
+            </value>
+            <value>
+                <fullName>UPS Consolidated</fullName>
+                <default>false</default>
+                <label>UPS Consolidated</label>
+            </value>
+            <value>
+                <fullName>UPS Early Dely 8AM</fullName>
+                <default>false</default>
+                <label>UPS Early Dely 8AM</label>
+            </value>
+            <value>
+                <fullName>UPS Ground</fullName>
+                <default>false</default>
+                <label>UPS Ground</label>
+            </value>
+            <value>
+                <fullName>UPS International Standard</fullName>
+                <default>false</default>
+                <label>UPS International Standard</label>
+            </value>
+            <value>
+                <fullName>UPS ORANGE</fullName>
+                <default>false</default>
+                <label>UPS ORANGE</label>
+            </value>
+            <value>
+                <fullName>UPS RED</fullName>
+                <default>false</default>
+                <label>UPS RED</label>
+            </value>
+            <value>
+                <fullName>UPS Saturday Delivery</fullName>
+                <default>false</default>
+                <label>UPS Saturday Delivery</label>
+            </value>
+            <value>
+                <fullName>UPS Worldwide Express Saver (Intl)</fullName>
+                <default>false</default>
+                <label>UPS Worldwide Express Saver (Intl)</label>
+            </value>
+            <value>
+                <fullName>UPS WorldWide Expedite</fullName>
+                <default>false</default>
+                <label>UPS WorldWide Expedite</label>
+            </value>
+            <value>
+                <fullName>by AIR</fullName>
+                <default>false</default>
+                <label>by AIR</label>
+            </value>
+            <value>
+                <fullName>Air Parcel Post</fullName>
+                <default>false</default>
+                <label>Air Parcel Post</label>
+            </value>
+            <value>
+                <fullName>Collected by Customer</fullName>
+                <default>false</default>
+                <label>Collected by Customer</label>
+            </value>
+            <value>
+                <fullName>Courier Services</fullName>
+                <default>false</default>
+                <label>Courier Services</label>
+            </value>
+            <value>
+                <fullName>Courier - DHL</fullName>
+                <default>false</default>
+                <label>Courier - DHL</label>
+            </value>
+            <value>
+                <fullName>Courier - FedEx</fullName>
+                <default>false</default>
+                <label>Courier - FedEx</label>
+            </value>
+            <value>
+                <fullName>PKI Global</fullName>
+                <default>false</default>
+                <label>PKI Global</label>
+            </value>
+            <value>
+                <fullName>LH Express</fullName>
+                <default>false</default>
+                <label>LH Express</label>
+            </value>
+            <value>
+                <fullName>LH Express1</fullName>
+                <default>false</default>
+                <label>LH Express1</label>
+            </value>
+            <value>
+                <fullName>by MAIL</fullName>
+                <default>false</default>
+                <label>by MAIL</label>
+            </value>
+            <value>
+                <fullName>by Sea</fullName>
+                <default>false</default>
+                <label>by Sea</label>
+            </value>
+            <value>
+                <fullName>Speedpost</fullName>
+                <default>false</default>
+                <label>Speedpost</label>
+            </value>
+            <value>
+                <fullName>Swift Rider</fullName>
+                <default>false</default>
+                <label>Swift Rider</label>
+            </value>
+            <value>
+                <fullName>Courier - TNT</fullName>
+                <default>false</default>
+                <label>Courier - TNT</label>
+            </value>
+            <value>
+                <fullName>by Truck</fullName>
+                <default>false</default>
+                <label>by Truck</label>
+            </value>
+            <value>
+                <fullName>Courier - UPS</fullName>
+                <default>false</default>
+                <label>Courier - UPS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

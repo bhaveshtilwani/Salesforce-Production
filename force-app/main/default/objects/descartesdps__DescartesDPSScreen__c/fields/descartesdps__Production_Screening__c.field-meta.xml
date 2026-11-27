@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>descartesdps__Production_Screening__c</fullName>
+    <deprecated>false</deprecated>
+    <formula>IF(ISPICKVAL(descartesdps__Screening_Environment__c,&apos;DPSProductionSettings&apos;), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Production Screening</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

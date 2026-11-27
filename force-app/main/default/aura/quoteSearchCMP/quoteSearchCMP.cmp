@@ -1,0 +1,12 @@
+<!--
+  @description       : This Component is called from view Quote Search page from Quote search tab
+  @author            : Jade Global
+  @last modified on  : 02-18-2021
+  @last modified by  : Jade Global
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   02-18-2021   Jade Global   Initial Version
+-->
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:appHostable">
+<c:quoteSearch></c:quoteSearch>
+</aura:component>

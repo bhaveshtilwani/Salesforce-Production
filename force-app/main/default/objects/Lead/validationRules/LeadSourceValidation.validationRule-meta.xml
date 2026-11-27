@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadSourceValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISCHANGED( LeadSource ),
+    OwnerId &lt;&gt; $User.Id,
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+    $Profile.Name &lt;&gt; &quot;B2BMA Integration User&quot;,
+    $Profile.Name &lt;&gt; &quot;C3-Customer Service - Pardot&quot;  
+)</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>You are not allowed to Update the LeadSource. Only Record Owner/System Admin can able to Update.</errorMessage>
+</ValidationRule>

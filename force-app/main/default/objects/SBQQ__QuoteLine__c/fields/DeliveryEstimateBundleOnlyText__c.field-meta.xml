@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeliveryEstimateBundleOnlyText__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*IF(SBQQ__Bundle__c||Not_Bundled__c,TEXT(TODAY()+DeliveryEstimateWeeks__c*7) &amp; BR() &amp; BR() &amp; &quot;(if a PO is received by &quot; &amp; TEXT(TODAY()+7) &amp; &quot;)&quot;,NULL)*/ 
+
+IF(SBQQ__Bundle__c||Not_Bundled__c,&quot;Up to &quot; &amp; TEXT(DeliveryEstimateWeeks__c)&amp;&quot; wks&quot;,NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Delivery Estimate Bundle Only Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

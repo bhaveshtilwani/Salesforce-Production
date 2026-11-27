@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Billing Block for Invoice --></label>
+    <name>Billing_Block_for_Invoice__c</name>
+    <picklistValues>
+        <masterLabel>Acct Correction Blk</masterLabel>
+        <translation><!-- Acct Correction Blk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill StL via her SO</masterLabel>
+        <translation><!-- Bill StL via her SO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calculation Missing</masterLabel>
+        <translation><!-- Calculation Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check Credit Memo</masterLabel>
+        <translation><!-- Check Credit Memo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check Day Rate (00)</masterLabel>
+        <translation><!-- Check Day Rate (00) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check Debit Memo</masterLabel>
+        <translation><!-- Check Debit Memo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check Terms of Dlv</masterLabel>
+        <translation><!-- Check Terms of Dlv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check Terms of Paymt</masterLabel>
+        <translation><!-- Check Terms of Paymt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comply Confirm Missing</masterLabel>
+        <translation><!-- Comply Confirm Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cov.Qty&lt;Document Qty (94)</masterLabel>
+        <translation><!-- Cov.Qty&lt;Document Qty (94) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coverage w/o Fxd Rte (93)</masterLabel>
+        <translation><!-- Coverage w/o Fxd Rte (93) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coverage w/o Key Dte (92)</masterLabel>
+        <translation><!-- Coverage w/o Key Dte (92) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Care Review</masterLabel>
+        <translation><!-- Customer Care Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demo Billing Block</masterLabel>
+        <translation><!-- Demo Billing Block --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Down Payment</masterLabel>
+        <translation><!-- Down Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NF Rate Det. Error (91)</masterLabel>
+        <translation><!-- NF Rate Det. Error (91) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No GI/GR Posting (96)</masterLabel>
+        <translation><!-- No GI/GR Posting (96) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price Chg. Approval (30)</masterLabel>
+        <translation><!-- Price Chg. Approval (30) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prices Incomplete</masterLabel>
+        <translation><!-- Prices Incomplete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rte Conversion Error (95)</masterLabel>
+        <translation><!-- Rte Conversion Error (95) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

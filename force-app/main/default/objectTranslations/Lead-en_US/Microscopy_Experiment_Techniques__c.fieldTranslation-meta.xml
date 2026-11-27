@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Microscopy Experiment Techniques --></label>
+    <name>Microscopy_Experiment_Techniques__c</name>
+    <picklistValues>
+        <masterLabel>Comparative</masterLabel>
+        <translation><!-- Comparative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confocal</masterLabel>
+        <translation><!-- Confocal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FISH</masterLabel>
+        <translation><!-- FISH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLIM</masterLabel>
+        <translation><!-- FLIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRAP</masterLabel>
+        <translation><!-- FRAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRET</masterLabel>
+        <translation><!-- FRET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High speed acquisition</masterLabel>
+        <translation><!-- High speed acquisition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Live cell, vital stain</masterLabel>
+        <translation><!-- Live cell, vital stain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantitative</masterLabel>
+        <translation><!-- Quantitative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ratiometric</masterLabel>
+        <translation><!-- Ratiometric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stained and fixed</masterLabel>
+        <translation><!-- Stained and fixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TIRF</masterLabel>
+        <translation><!-- TIRF --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

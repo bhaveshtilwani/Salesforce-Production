@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MontrealPlanning_Order_Approvals_Pending</fullName>
+    <columns>NAME</columns>
+    <columns>Requested_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>Order_Number__c</columns>
+    <columns>Order_Line_Number__c</columns>
+    <columns>Product_Name__c</columns>
+    <columns>Order_Approval_Type__c</columns>
+    <columns>Business_Account_Name__c</columns>
+    <columns>Order_Line_Quantity__c</columns>
+    <columns>Requested_Quantity_Change__c</columns>
+    <columns>Original_Customer_Requested_Date_CRD__c</columns>
+    <columns>Requested_Ship_Date_Change__c</columns>
+    <columns>Approver__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Requested</value>
+    </filters>
+    <filters>
+        <field>Approval_Rule__c</field>
+        <operation>contains</operation>
+        <value>operations</value>
+    </filters>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>Montreal</value>
+    </filters>
+    <label>MontrealPlanning Order Approvals Pending</label>
+</ListView>

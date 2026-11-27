@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- RMA Disposition Code --></help>
+    <label><!-- Disposition Code --></label>
+    <name>Disposition_Code__c</name>
+    <picklistValues>
+        <masterLabel>CrdtOnly</masterLabel>
+        <translation><!-- CrdtOnly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit</masterLabel>
+        <translation><!-- Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investigat</masterLabel>
+        <translation><!-- Investigat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RefRep</masterLabel>
+        <translation><!-- RefRep --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reject</masterLabel>
+        <translation><!-- Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RepCredit</masterLabel>
+        <translation><!-- RepCredit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RepFS</masterLabel>
+        <translation><!-- RepFS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ReplCrdt</masterLabel>
+        <translation><!-- ReplCrdt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ReplScrp</masterLabel>
+        <translation><!-- ReplScrp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ReturnInv</masterLabel>
+        <translation><!-- ReturnInv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrap</masterLabel>
+        <translation><!-- Scrap --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OCD_Update_Flag__c</fullName>
+    <description>Need to set a flag that says the order is created (IE ERP ID is filled) and if the OCD data is still 2040 then Boolean is FALSE. IF OCD &lt;&gt; 2040 then Boolean is TRUE.  Boomi will then not update the first data with the OCD date.
+•	Boomi team to update the logics in Boomi.</description>
+    <formula>AND(ERP_Sales_Order_Number__c &lt;&gt;&quot;&quot;, OCD_Text__c &lt;&gt;&quot;2040-12-29&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OCD Update Flag</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

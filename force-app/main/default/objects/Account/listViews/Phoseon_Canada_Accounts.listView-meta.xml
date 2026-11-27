@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phoseon_Canada_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>Address_1__c</columns>
+    <columns>PERSON_LAST_NAME__c</columns>
+    <columns>PERSON_FIRST_NAME__c</columns>
+    <columns>Email__c</columns>
+    <columns>PKI_Opportunities__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_TeamNEW__c</field>
+        <operation>equals</operation>
+        <value>Industrial Curing Worldwide</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_COUNTRY_CODE</field>
+        <operation>equals</operation>
+        <value>CA</value>
+    </filters>
+    <label>Phoseon Canada Accounts</label>
+</ListView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Block_for_Invoice__c</fullName>
+    <label>Billing Block for Invoice</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>a3h3t00000EZYtQAAX</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>a3h3t00000EZYtQAAX</label>
+            </value>
+            <value>
+                <fullName>Acct Correction Blk</fullName>
+                <default>false</default>
+                <label>Acct Correction Blk</label>
+            </value>
+            <value>
+                <fullName>Bill StL via her SO</fullName>
+                <default>false</default>
+                <label>Bill StL via her SO</label>
+            </value>
+            <value>
+                <fullName>Calculation Missing</fullName>
+                <default>false</default>
+                <label>Calculation Missing</label>
+            </value>
+            <value>
+                <fullName>Check Credit Memo</fullName>
+                <default>false</default>
+                <label>Check Credit Memo</label>
+            </value>
+            <value>
+                <fullName>Check Day Rate (00)</fullName>
+                <default>false</default>
+                <label>Check Day Rate (00)</label>
+            </value>
+            <value>
+                <fullName>Check Debit Memo</fullName>
+                <default>false</default>
+                <label>Check Debit Memo</label>
+            </value>
+            <value>
+                <fullName>Check Terms of Dlv</fullName>
+                <default>false</default>
+                <label>Check Terms of Dlv</label>
+            </value>
+            <value>
+                <fullName>Check Terms of Paymt</fullName>
+                <default>false</default>
+                <label>Check Terms of Paymt</label>
+            </value>
+            <value>
+                <fullName>Comply Confirm Missing</fullName>
+                <default>false</default>
+                <label>Comply Confirm Missing</label>
+            </value>
+            <value>
+                <fullName>Cov.Qty&lt;Document Qty (94)</fullName>
+                <default>false</default>
+                <label>Cov.Qty&lt;Document Qty (94)</label>
+            </value>
+            <value>
+                <fullName>Coverage w/o Fxd Rte (93)</fullName>
+                <default>false</default>
+                <label>Coverage w/o Fxd Rte (93)</label>
+            </value>
+            <value>
+                <fullName>Coverage w/o Key Dte (92)</fullName>
+                <default>false</default>
+                <label>Coverage w/o Key Dte (92)</label>
+            </value>
+            <value>
+                <fullName>Customer Care Review</fullName>
+                <default>false</default>
+                <label>Customer Care Review</label>
+            </value>
+            <value>
+                <fullName>Demo Billing Block</fullName>
+                <default>false</default>
+                <label>Demo Billing Block</label>
+            </value>
+            <value>
+                <fullName>Down Payment</fullName>
+                <default>false</default>
+                <label>Down Payment</label>
+            </value>
+            <value>
+                <fullName>NF Rate Det. Error (91)</fullName>
+                <default>false</default>
+                <label>NF Rate Det. Error (91)</label>
+            </value>
+            <value>
+                <fullName>No GI/GR Posting (96)</fullName>
+                <default>false</default>
+                <label>No GI/GR Posting (96)</label>
+            </value>
+            <value>
+                <fullName>Price Chg. Approval (30)</fullName>
+                <default>false</default>
+                <label>Price Chg. Approval (30)</label>
+            </value>
+            <value>
+                <fullName>Prices Incomplete</fullName>
+                <default>false</default>
+                <label>Prices Incomplete</label>
+            </value>
+            <value>
+                <fullName>Rte Conversion Error (95)</fullName>
+                <default>false</default>
+                <label>Rte Conversion Error (95)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Market Sub-Segment --></label>
+    <name>Market_Sub_Segment__c</name>
+    <picklistValues>
+        <masterLabel>Adhesives/Chemicals</masterLabel>
+        <translation><!-- Adhesives/Chemicals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical Instrumentation</masterLabel>
+        <translation><!-- Analytical Instrumentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automated Assembly</masterLabel>
+        <translation><!-- Automated Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive</masterLabel>
+        <translation><!-- Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation/Space</masterLabel>
+        <translation><!-- Aviation/Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biomedical</masterLabel>
+        <translation><!-- Biomedical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blue-Ray DVD</masterLabel>
+        <translation><!-- Blue-Ray DVD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bluetooth headsets</masterLabel>
+        <translation><!-- Bluetooth headsets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCM (Compact Camera Module)</masterLabel>
+        <translation><!-- CCM (Compact Camera Module) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibration</masterLabel>
+        <translation><!-- Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannula/Needle Assembly</masterLabel>
+        <translation><!-- Cannula/Needle Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catheters</masterLabel>
+        <translation><!-- Catheters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cellular Manipulation</masterLabel>
+        <translation><!-- Cellular Manipulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DSC/Rheology</masterLabel>
+        <translation><!-- DSC/Rheology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense</masterLabel>
+        <translation><!-- Defense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Printing</masterLabel>
+        <translation><!-- Digital Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Display</masterLabel>
+        <translation><!-- Display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor</masterLabel>
+        <translation><!-- Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic Contract Manufacturers</masterLabel>
+        <translation><!-- Electronic Contract Manufacturers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic Encoders</masterLabel>
+        <translation><!-- Electronic Encoders --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronics</masterLabel>
+        <translation><!-- Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrophysiology</masterLabel>
+        <translation><!-- Electrophysiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment Manufacturers</masterLabel>
+        <translation><!-- Equipment Manufacturers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ex Distributor</masterLabel>
+        <translation><!-- Ex Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fiber Coating</masterLabel>
+        <translation><!-- Fiber Coating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fiber Optics</masterLabel>
+        <translation><!-- Fiber Optics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Cure - Multiple Pass</masterLabel>
+        <translation><!-- Full Cure - Multiple Pass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Cure - Single Pass-Labels</masterLabel>
+        <translation><!-- Full Cure - Single Pass-Labels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Cure - Single Pass-Marking &amp; Coding</masterLabel>
+        <translation><!-- Full Cure - Single Pass-Marking &amp; Coding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General</masterLabel>
+        <translation><!-- General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Bonding</masterLabel>
+        <translation><!-- General Bonding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Fluorescence</masterLabel>
+        <translation><!-- General Fluorescence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glass Bonding</masterLabel>
+        <translation><!-- Glass Bonding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HDD/Storage Device</masterLabel>
+        <translation><!-- HDD/Storage Device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hearing Aid Assembly</masterLabel>
+        <translation><!-- Hearing Aid Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heart Surgery Device</masterLabel>
+        <translation><!-- Heart Surgery Device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Illumination</masterLabel>
+        <translation><!-- Illumination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial</masterLabel>
+        <translation><!-- Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ink-Jet Cartridge</masterLabel>
+        <translation><!-- Ink-Jet Cartridge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insulin Pens</masterLabel>
+        <translation><!-- Insulin Pens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCD/LCM displays (COG,COF)</masterLabel>
+        <translation><!-- LCD/LCM displays (COG,COF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laser Device</masterLabel>
+        <translation><!-- Laser Device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Life Sciences (Burleigh)</masterLabel>
+        <translation><!-- Life Sciences (Burleigh) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Live Cell Fluorescence</masterLabel>
+        <translation><!-- Live Cell Fluorescence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical</masterLabel>
+        <translation><!-- Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Contract Manufacturers</masterLabel>
+        <translation><!-- Medical Contract Manufacturers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Instruments</masterLabel>
+        <translation><!-- Medical Instruments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical/Endoscopes</masterLabel>
+        <translation><!-- Medical/Endoscopes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mems</masterLabel>
+        <translation><!-- Mems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Micromanipulation</masterLabel>
+        <translation><!-- Micromanipulation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobile Phone – Microspeaker</masterLabel>
+        <translation><!-- Mobile Phone – Microspeaker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor Winding/Balancing</masterLabel>
+        <translation><!-- Motor Winding/Balancing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OLED</masterLabel>
+        <translation><!-- OLED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPU (Optical Pick Up)</masterLabel>
+        <translation><!-- OPU (Optical Pick Up) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optical</masterLabel>
+        <translation><!-- Optical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optical Lens</masterLabel>
+        <translation><!-- Optical Lens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optical Lens Assembly</masterLabel>
+        <translation><!-- Optical Lens Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optical Switch</masterLabel>
+        <translation><!-- Optical Switch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optical/Contact Lens Assembly</masterLabel>
+        <translation><!-- Optical/Contact Lens Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optoelectronics</masterLabel>
+        <translation><!-- Optoelectronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optogenetics</masterLabel>
+        <translation><!-- Optogenetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Otoscope</masterLabel>
+        <translation><!-- Otoscope --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oxygen Masks</masterLabel>
+        <translation><!-- Oxygen Masks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCB Assembly</masterLabel>
+        <translation><!-- PCB Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology</masterLabel>
+        <translation><!-- Pathology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photo-Resist</masterLabel>
+        <translation><!-- Photo-Resist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pinning - Single Pass</masterLabel>
+        <translation><!-- Pinning - Single Pass --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plastics (ie. Injection Moulding)</masterLabel>
+        <translation><!-- Plastics (ie. Injection Moulding) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantitative Microscopy</masterLabel>
+        <translation><!-- Quantitative Microscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R&amp;D</masterLabel>
+        <translation><!-- R&amp;D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research</masterLabel>
+        <translation><!-- Research --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research &amp; Development</masterLabel>
+        <translation><!-- Research &amp; Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reseller</masterLabel>
+        <translation><!-- Reseller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Representative</masterLabel>
+        <translation><!-- Sales Representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensors</masterLabel>
+        <translation><!-- Sensors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speakers</masterLabel>
+        <translation><!-- Speakers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stent</masterLabel>
+        <translation><!-- Stent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stereolithography</masterLabel>
+        <translation><!-- Stereolithography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suppliers</masterLabel>
+        <translation><!-- Suppliers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgical Instruments</masterLabel>
+        <translation><!-- Surgical Instruments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TOSA/ROSA</masterLabel>
+        <translation><!-- TOSA/ROSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecom</masterLabel>
+        <translation><!-- Telecom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tube Sets/IV/Fluid Delivery</masterLabel>
+        <translation><!-- Tube Sets/IV/Fluid Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University</masterLabel>
+        <translation><!-- University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VCSELS</masterLabel>
+        <translation><!-- VCSELS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WDM Modules</masterLabel>
+        <translation><!-- WDM Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Windshield</masterLabel>
+        <translation><!-- Windshield --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

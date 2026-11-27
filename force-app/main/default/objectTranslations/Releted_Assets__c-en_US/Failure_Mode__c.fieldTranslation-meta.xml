@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Failure Mode --></label>
+    <name>Failure_Mode__c</name>
+    <picklistValues>
+        <masterLabel>Customer Service Request</masterLabel>
+        <translation><!-- Customer Service Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damage</masterLabel>
+        <translation><!-- Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drift - Calibration</masterLabel>
+        <translation><!-- Drift - Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E1 Error</masterLabel>
+        <translation><!-- E1 Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FTI (Failure to Ignite)</masterLabel>
+        <translation><!-- FTI (Failure to Ignite) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Functional Failure</masterLabel>
+        <translation><!-- Functional Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISI4000 Upgrade</masterLabel>
+        <translation><!-- ISI4000 Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LG Failure</masterLabel>
+        <translation><!-- LG Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Extinguish</masterLabel>
+        <translation><!-- Light Source - Extinguish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Low Output</masterLabel>
+        <translation><!-- Light Source - Low Output --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Non Passive Failure</masterLabel>
+        <translation><!-- Light Source - Non Passive Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material / Part Incorrect</masterLabel>
+        <translation><!-- Material / Part Incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Parts</masterLabel>
+        <translation><!-- Missing Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA Not applicable</masterLabel>
+        <translation><!-- NA Not applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Fault Found</masterLabel>
+        <translation><!-- No Fault Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled &amp; Preventative Maintenance</masterLabel>
+        <translation><!-- Scheduled &amp; Preventative Maintenance --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

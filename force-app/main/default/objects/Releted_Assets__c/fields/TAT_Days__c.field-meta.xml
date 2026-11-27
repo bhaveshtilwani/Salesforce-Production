@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TAT_Days__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    TEXT(RMA_Case_Resolution__c) = &quot;Repair SR&quot;,
+    40,
+
+IF(
+    OR(
+        TEXT(RMA_Case_Resolution__c) = &quot;Calibrate Transfer Standard NCB&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Calibrate SR&quot;
+    ),
+    10,
+
+IF(
+    OR(
+        TEXT(RMA_Case_Resolution__c) = &quot;Calibrate and Repair&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;No fault found - send back and invoice&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Repair and invoice&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Repair NCB&quot;
+    ),
+    5,
+
+IF(
+    OR(
+        TEXT(RMA_Case_Resolution__c) = &quot;Beyond repair - Customer to scrap&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Beyond repair - Receive product to scrap/recycle and invoice&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Beyond repair - Replace under warranty&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Beyond repair - scrap/recycle and invoice&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Beyond repair - scrap/recycle without invoice&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Beyond repair - send back and invoice&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Calibrate&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Correct product delivered - Receive and credit on receipt of replacement order&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Correct product delivered - Receive and credit possible if replacement order sent&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Credit only&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Evaluation&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Receive and credit&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Receive and credit; re-activate original order&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Receive and replace&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Receive product to scrap / recycle and invoice&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Repair under 90 day warranty&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Repair under extended warranty (Disti only)&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Repair under warranty&quot;,
+        TEXT(RMA_Case_Resolution__c) = &quot;Trade in&quot;
+    ),
+    3,
+
+0
+))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TAT Days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

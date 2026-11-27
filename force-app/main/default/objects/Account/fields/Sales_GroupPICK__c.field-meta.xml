@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_GroupPICK__c</fullName>
+    <label>Sales Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>100</fullName>
+                <default>false</default>
+                <label>100 - NA Direct</label>
+            </value>
+            <value>
+                <fullName>110</fullName>
+                <default>false</default>
+                <label>110</label>
+            </value>
+            <value>
+                <fullName>120</fullName>
+                <default>false</default>
+                <label>120</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <label>200 - NA West Griot Group</label>
+            </value>
+            <value>
+                <fullName>201</fullName>
+                <default>false</default>
+                <label>201 - MAX TECH SALES-IL,WI</label>
+            </value>
+            <value>
+                <fullName>202</fullName>
+                <default>false</default>
+                <label>202 - Pacer Component USA</label>
+            </value>
+            <value>
+                <fullName>203</fullName>
+                <default>false</default>
+                <label>203 - MAXTECH;OH,IN,KY,WV</label>
+            </value>
+            <value>
+                <fullName>206</fullName>
+                <default>false</default>
+                <label>206 - Ciontek</label>
+            </value>
+            <value>
+                <fullName>210</fullName>
+                <default>false</default>
+                <label>210 - C.W.Beach Company-NY</label>
+            </value>
+            <value>
+                <fullName>211</fullName>
+                <default>false</default>
+                <label>211 - MACINNIS; MA,CT,VT</label>
+            </value>
+            <value>
+                <fullName>212</fullName>
+                <default>false</default>
+                <label>212 - S.States Mktg</label>
+            </value>
+            <value>
+                <fullName>214</fullName>
+                <default>false</default>
+                <label>214 - RepTek</label>
+            </value>
+            <value>
+                <fullName>221</fullName>
+                <default>false</default>
+                <label>221 - KMA Consulting; BR</label>
+            </value>
+            <value>
+                <fullName>250</fullName>
+                <default>false</default>
+                <label>250 - NA House Accounts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

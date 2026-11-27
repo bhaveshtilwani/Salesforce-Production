@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>HIGH (Immed. contact)</fullName>
+        <default>false</default>
+        <label>HIGH (Immed. contact)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MEDIUM (3 mo. contact)</fullName>
+        <default>false</default>
+        <label>MEDIUM (3 mo. contact)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>LOW (Future mktg)</fullName>
+        <default>false</default>
+        <label>LOW (Future mktg)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dead</fullName>
+        <default>false</default>
+        <label>Dead</label>
+    </standardValue>
+</StandardValueSet>

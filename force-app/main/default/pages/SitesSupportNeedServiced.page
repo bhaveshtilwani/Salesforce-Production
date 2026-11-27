@@ -1,0 +1,156 @@
+<apex:page controller="SitesSupportNeedServiced" showHeader="false" sidebar="false">
+    <apex:includeScript value="{!URLFOR($Resource.jquery, '/js/jquery-1.6.2.min.js')}"/>
+    <apex:Stylesheet value="{!URLFOR($Resource.Styles2)}"/>
+
+    <style type="text/css">
+    #helpSerialNumberImages {
+        position:absolute;
+        display:block;
+        text-align:center;
+        top:450px
+    }
+    </style>
+
+    <apex:image url="http://www.ldgi-omnicure.com/images/bg-logo.jpg" alt="Lumen Dynamics Group Inc. | Putting you in control. Formerly EXFO Life Sciences and Industrial Division." rendered="false"/>
+
+    <apex:outputPanel id="dmessage">
+        <apex:pageMessages />{!dmessage}
+    </apex:outputPanel>
+    <apex:form >
+        <apex:pageBlock id="supportPanel" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Submit" action="{!submit}" reRender="dmessage,supportPanel" oncomplete="if({!isSaved}){window.top.location.href='http://www.excelitas.com/Pages/Contact/Service-Request-Thank-You.aspx';}else{window.scrollTo(0,0);}"/>
+                <apex:commandButton value="Reset" action="{!reset}" reRender="dmessage,supportPanel" immediate="true" oncomplete="window.scrollTo(0,0);"/>
+<!-- Updated Thank you page link 2014-07-30 per Ada - BG
+                <apex:commandButton value="Submit" action="{!submit}" reRender="dmessage,supportPanel" oncomplete="if({!isSaved}){window.top.location.href='http://www.ldgi.com/contact-service-thankyou.php';}else{window.scrollTo(0,0);}"/>
+                <apex:commandButton value="Reset" action="{!reset}" reRender="dmessage,supportPanel" immediate="true" oncomplete="window.scrollTo(0,0);"/>
+-->
+
+
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="I Need My Equipment Serviced" columns="1">
+                <apex:inputField value="{!caseInput.Sites_First_Name__c}" required="true"/>
+                <apex:inputField value="{!caseInput.Sites_Last_Name__c}" required="true"/>            
+                <apex:inputField value="{!caseInput.Sites_Company_Name__c}" required="true"/>            
+                 <!-- <apex:inputField value="{!caseInput.Sites_Title__c}"/>-->
+                <apex:inputField value="{!caseInput.Sites_Tel_Number__c}" required="true"/>
+                <apex:inputField value="{!caseInput.Sites_Email__c}" required="true"/>
+       <!--         <apex:inputField value="{!caseInput.Software_Update_Requested__c}" required="false"/>  -->
+
+                -&nbsp;
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="federalTaxId" value="Federal Tax ID (IRS) Number" />
+                    <apex:outputPanel >
+                        <apex:inputText id="federalTaxId" value="{!taxId1}" maxlength="2"/>
+                        -&nbsp;
+                        <apex:inputText value="{!taxId2}" maxlength="7"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+ <!-- BG 2012-06-25 per ticket 2455                 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="SWUpdate" value="Would you like your Software updated?"/>
+                    <apex:inputField id="SWUpdate" value="{!caseInput.Software_Update_Requested__c}" required="false"/>
+                </apex:pageBlockSectionItem> -->
+           </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Ship to Address" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="shipToStreet" value="Street"/>
+                    <apex:inputField id="shipToStreet" value="{!caseInput.Ship_To_Address__c}" required="true" style="width:30%;"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="shipToCity" value="City"/>
+                    <apex:inputField id="shipToCity" value="{!caseInput.Shipping_City__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="shipToState" value="State/Prov"/>
+                    <apex:inputField id="shipToState" value="{!caseInput.Shipping_State_Province__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="shipToPostalCode" value="Postal/Zip Code"/>
+                    <apex:inputField id="shipToPostalCode" value="{!caseInput.Shipping_Zip_Postal_Code__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="shipToCountry" value="Country"/>
+                    <apex:inputField id="shipToCountry" value="{!caseInput.Shipping_Country__c}" required="true"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Products" columns="1">
+            <apex:outputPanel id="products" style="width:"><apex:actionRegion >
+                <apex:variable var="i" value="{!0}"/>
+                <apex:pageBlockTable value="{!productLineItems}" var="p">
+                    <apex:column styleClass="actionColumn">
+                        <apex:commandLink value="X" action="{!removeProduct}" styleClass="actionLink" reRender="products" status="productStatus">
+                            <apex:param name="i" value="{!i}"/>
+                        </apex:commandLink>
+                    </apex:column>                                
+                    <apex:column headerValue="Product Line" width="1%">
+                        <apex:selectList value="{!p.relatedAsset.Product_Line__c}" size="1">
+                            <apex:selectOption itemLabel="Please Select" itemValue="-"/>
+                            <apex:selectOptions value="{!productLineOptions}"/>
+                            <apex:actionSupport action="{!selectProductLine}" event="onchange" reRender="products" status="productStatus">
+                                <apex:param name="i" value="{!i}"/>
+                            </apex:actionSupport>
+                        </apex:selectList>
+                    </apex:column>
+ 
+                    <apex:column headerValue="Model/Part" width="50%">
+                        <apex:selectList value="{!p.relatedAsset.Model_Part__c}" size="1" style="width:100%">
+                            <apex:selectOption itemLabel="Please Select" itemValue="-"/>
+                            <apex:selectOptions value="{!p.partOptions}"/>
+                        </apex:selectList>
+                    </apex:column>
+ 
+                     <apex:column headerValue="Quantity" width="1%">
+                        <apex:inputField value="{!p.relatedAsset.Quantity__c}" style="width:80%;"/>
+                    </apex:column>
+                    <apex:column width="1%">
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                Serial Number&nbsp;
+                                <apex:outputLink onclick="return false;"><span class="helpLink"><img id="helpSerialNumber" src="/s.gif" alt="Help" class="helpIcon" title="Help"/></span></apex:outputLink>
+                                <div id="helpSerialNumberImages">
+                                    <apex:image value="{!URLFOR($Resource.serialNumber)}"/>
+                                </div>
+    
+                                <script type="text/javascript">
+                                $(function() {
+                                    $("#helpSerialNumber").hover(
+                                      function () {
+                                        $("#helpSerialNumberImages").show();
+                                      },
+                                      function () {
+                                        $("#helpSerialNumberImages").hide();
+                                      }
+                                    );
+                                });
+                                $("#helpSerialNumberImages").hide();
+                                </script>
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <apex:inputText value="{!p.relatedAsset.Serial_Number__c}"/>
+                      </apex:column>
+                    <apex:column headerValue="Reason For Return" width="1%">
+                        <apex:inputField value="{!p.relatedAsset.Reason_For_Return__c}"/>
+                    </apex:column>
+                    <apex:column headerValue="Specifics/Details For 'Other'">
+                        <apex:inputField value="{!p.relatedAsset.Other_Reason__c}" style="width:92%;"/>
+                        <apex:variable var="i" value="{!i+1}"/>
+                    </apex:column>
+                    <apex:facet name="footer">
+                        <apex:outputPanel >
+                            <apex:commandLink value="Add More" action="{!addProduct}" reRender="products" status="productStatus"/>
+                            <span style="float:right;padding-right:5px;">
+                                <apex:actionStatus id="productStatus" startText="Refreshing . . ."/>
+                            </span>
+                        </apex:outputPanel>
+                    </apex:facet>
+                </apex:pageBlockTable>
+            </apex:actionRegion></apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <script>$( ".error" ).parents( "tr" ).find("label").addClass("errorLabel");</script>
+</apex:page>

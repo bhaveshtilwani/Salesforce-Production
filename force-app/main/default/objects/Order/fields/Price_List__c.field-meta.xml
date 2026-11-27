@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_List__c</fullName>
+    <label>Price List</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(01) OEM Price List</fullName>
+                <default>false</default>
+                <label>(01) OEM Price List</label>
+            </value>
+            <value>
+                <fullName>(02) Distributor Net List</fullName>
+                <default>false</default>
+                <label>(02) Distributor Net List</label>
+            </value>
+            <value>
+                <fullName>(11) Agricultral</fullName>
+                <default>false</default>
+                <label>(11) Agricultral</label>
+            </value>
+            <value>
+                <fullName>(12) Audio</fullName>
+                <default>false</default>
+                <label>(12) Audio</label>
+            </value>
+            <value>
+                <fullName>(13) Automotive</fullName>
+                <default>false</default>
+                <label>(13) Automotive</label>
+            </value>
+            <value>
+                <fullName>(14) Bar Code</fullName>
+                <default>false</default>
+                <label>(14) Bar Code</label>
+            </value>
+            <value>
+                <fullName>(15) Business Machine</fullName>
+                <default>false</default>
+                <label>(15) Business Machine</label>
+            </value>
+            <value>
+                <fullName>(16) Commercial</fullName>
+                <default>false</default>
+                <label>(16) Commercial</label>
+            </value>
+            <value>
+                <fullName>(17) Computer &amp; Periphera</fullName>
+                <default>false</default>
+                <label>(17) Computer &amp; Periphera</label>
+            </value>
+            <value>
+                <fullName>(18) Consumer Products</fullName>
+                <default>false</default>
+                <label>(18) Consumer Products</label>
+            </value>
+            <value>
+                <fullName>(19) Distributor</fullName>
+                <default>false</default>
+                <label>(19) Distributor</label>
+            </value>
+            <value>
+                <fullName>(20) Encoders</fullName>
+                <default>false</default>
+                <label>(20) Encoders</label>
+            </value>
+            <value>
+                <fullName>(21) Industrial Ctrl - G</fullName>
+                <default>false</default>
+                <label>(21) Industrial Ctrl - G</label>
+            </value>
+            <value>
+                <fullName>(22) Industrial</fullName>
+                <default>false</default>
+                <label>(22) Industrial</label>
+            </value>
+            <value>
+                <fullName>(23) Lighting</fullName>
+                <default>false</default>
+                <label>(23) Lighting</label>
+            </value>
+            <value>
+                <fullName>(24) Medical</fullName>
+                <default>false</default>
+                <label>(24) Medical</label>
+            </value>
+            <value>
+                <fullName>(25) Other</fullName>
+                <default>false</default>
+                <label>(25) Other</label>
+            </value>
+            <value>
+                <fullName>(26) Photograpic</fullName>
+                <default>false</default>
+                <label>(26) Photograpic</label>
+            </value>
+            <value>
+                <fullName>(27) Security/Smoke Dete</fullName>
+                <default>false</default>
+                <label>(27) Security/Smoke Dete</label>
+            </value>
+            <value>
+                <fullName>(28) X Ray Detection</fullName>
+                <default>false</default>
+                <label>(28) X Ray Detection</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(01) OEM Price List</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(02) Distributor Net List</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(11) Agricultral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(12) Audio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(13) Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(14) Bar Code</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(15) Business Machine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(16) Commercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(17) Computer &amp; Periphera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(18) Consumer Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(19) Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(20) Encoders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(21) Industrial Ctrl - G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(22) Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(23) Lighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(24) Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(25) Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(26) Photograpic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(27) Security/Smoke Dete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(28) X Ray Detection</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

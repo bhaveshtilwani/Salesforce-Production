@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Shipped_Required</fullName>
+    <active>true</active>
+    <description>When there is valid Actual_delivery_date then Status should be &apos;Shipped&apos;</description>
+    <errorConditionFormula>AND
+(
+ NOT( ISNULL( Actual_Delivery_Date__c ) ) , 
+
+OR (  ISPICKVAL( Status__c , &quot;Requested&quot;),
+           ISPICKVAL( Status__c , &quot;Approved&quot;),
+          ISPICKVAL( Status__c , &quot;Declined&quot;),
+           ISPICKVAL( Status__c , &quot;Reopened&quot;),
+            ISPICKVAL( Status__c , &quot;Closed&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Status should be shipped,Purchased or Returned for valid Actual delivery date</errorMessage>
+</ValidationRule>

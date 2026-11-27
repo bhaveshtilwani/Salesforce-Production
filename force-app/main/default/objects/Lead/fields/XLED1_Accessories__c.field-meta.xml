@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>XLED1_Accessories__c</fullName>
+    <label>XLED1 Accessories</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Touch Screen Controller</fullName>
+                <default>false</default>
+                <label>Touch Screen Controller</label>
+            </value>
+            <value>
+                <fullName>UVA (360-380nm)</fullName>
+                <default>false</default>
+                <label>UVA (360-380nm)</label>
+            </value>
+            <value>
+                <fullName>UVX (375-400nm)</fullName>
+                <default>false</default>
+                <label>UVX (375-400nm)</label>
+            </value>
+            <value>
+                <fullName>UVV (390-415nm)</fullName>
+                <default>false</default>
+                <label>UVV (390-415nm)</label>
+            </value>
+            <value>
+                <fullName>BLX (430-465nm)</fullName>
+                <default>false</default>
+                <label>BLX (430-465nm)</label>
+            </value>
+            <value>
+                <fullName>BDX (450-495nm)</fullName>
+                <default>false</default>
+                <label>BDX (450-495nm)</label>
+            </value>
+            <value>
+                <fullName>BGX (505-545nm)</fullName>
+                <default>false</default>
+                <label>BGX (505-545nm)</label>
+            </value>
+            <value>
+                <fullName>RLX (615-655nm)</fullName>
+                <default>false</default>
+                <label>RLX (615-655nm)</label>
+            </value>
+            <value>
+                <fullName>RDX (660-675nm)</fullName>
+                <default>false</default>
+                <label>RDX (660-675nm)</label>
+            </value>
+            <value>
+                <fullName>IRX (710-750nm)</fullName>
+                <default>false</default>
+                <label>IRX (710-750nm)</label>
+            </value>
+            <value>
+                <fullName>Dichroic - 380nm</fullName>
+                <default>false</default>
+                <label>Dichroic - 380nm</label>
+            </value>
+            <value>
+                <fullName>Dichroic - 409nm</fullName>
+                <default>false</default>
+                <label>Dichroic - 409nm</label>
+            </value>
+            <value>
+                <fullName>Dichroic - 416nm</fullName>
+                <default>false</default>
+                <label>Dichroic - 416nm</label>
+            </value>
+            <value>
+                <fullName>Dichroic - 458nm</fullName>
+                <default>false</default>
+                <label>Dichroic - 458nm</label>
+            </value>
+            <value>
+                <fullName>Dichroic - 495nm</fullName>
+                <default>false</default>
+                <label>Dichroic - 495nm</label>
+            </value>
+            <value>
+                <fullName>Dichroic - 538nm</fullName>
+                <default>false</default>
+                <label>Dichroic - 538nm</label>
+            </value>
+            <value>
+                <fullName>Dichroic - 605nm</fullName>
+                <default>false</default>
+                <label>Dichroic - 605nm</label>
+            </value>
+            <value>
+                <fullName>Dichroic - 660nm</fullName>
+                <default>false</default>
+                <label>Dichroic - 660nm</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

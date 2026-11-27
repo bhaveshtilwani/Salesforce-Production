@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Term_Is_Not_Required</fullName>
+    <active>false</active>
+    <description>Payment term is not required for Montreal order type DR, CR</description>
+    <errorConditionFormula>AND(ISPICKVAL(Site__c, &quot;Montreal&quot;),ISPICKVAL(SFDC_Integration_Status__c, &apos;In Progress&apos;),
+ISPICKVAL( Order_Type__c , &quot;Credit Memo Request&quot;)
+&amp;&amp; NOT( ISBLANK(PaymentTerm__c )))
+||
+AND(ISPICKVAL(Site__c, &quot;Montreal&quot;),ISPICKVAL(SFDC_Integration_Status__c, &apos;In Progress&apos;),
+ISPICKVAL( Order_Type__c , &quot;Debit Memo/Bill only Request&quot;)
+&amp;&amp; NOT( ISBLANK(PaymentTerm__c )))</errorConditionFormula>
+    <errorDisplayField>PaymentTerm__c</errorDisplayField>
+    <errorMessage>Payment term is not required for selected Site and Order Type combination.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Company_Name__c</fullName>
+    <description>With the decommission of D&amp;B, creation of this field to allow users entering a proper Legal Company name that appears on the Quote Document.  This name is pulled from the Quoted Account. If this name is incorrect, click on the account name above and edit the field &quot;Legal Company Name&quot;.</description>
+    <externalId>false</externalId>
+    <formula>SBQQ__Account__r.Legal_Company_Name__c</formula>
+    <inlineHelpText>This name is pulled from the Quoted Account. If this name is incorrect, click on the account name above and edit the field &quot;Legal Company Name&quot;.</inlineHelpText>
+    <label>Legal Company Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

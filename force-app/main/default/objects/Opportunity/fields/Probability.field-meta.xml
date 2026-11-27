@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability</fullName>
+    <inlineHelpText>Percentage of estimated confidence in closing the Prospect. The Probability value is always updated by a change in the Stage value. This does not need to be tied to stage - please independently enter</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+</CustomField>

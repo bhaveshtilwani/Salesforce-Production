@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Service path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Resolution__c</fieldNames>
+        <fieldNames>Resolution_Type__c</fieldNames>
+        <fieldNames>Resolution_Remarks__c</fieldNames>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Waiting_For__c</fieldNames>
+        <picklistValueName>Commercial Processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>Case_Subtype__c</fieldNames>
+        <fieldNames>Product_SubfamilyNL__c</fieldNames>
+        <picklistValueName>Coordination</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>Subject</fieldNames>
+        <fieldNames>TR__c</fieldNames>
+        <fieldNames>Customer_Reference__c</fieldNames>
+        <picklistValueName>Data Collection</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Resolution__c</fieldNames>
+        <fieldNames>Resolution_Type__c</fieldNames>
+        <fieldNames>Resolution_Remarks__c</fieldNames>
+        <fieldNames>Disposition_Goods__c</fieldNames>
+        <picklistValueName>Final Processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>SAP_ERP_Account__c</fieldNames>
+        <fieldNames>SAP_Notification__c</fieldNames>
+        <fieldNames>Waiting_For__c</fieldNames>
+        <picklistValueName>Technical Evaluation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Waiting_For__c</fieldNames>
+        <fieldNames>SAP_Notification_Status__c</fieldNames>
+        <picklistValueName>Technical Processing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Waiting_For__c</fieldNames>
+        <picklistValueName>Waiting for details</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Service</recordTypeName>
+</PathAssistant>

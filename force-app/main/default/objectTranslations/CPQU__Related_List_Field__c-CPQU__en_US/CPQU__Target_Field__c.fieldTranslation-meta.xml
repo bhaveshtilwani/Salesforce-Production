@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Target Field --></label>
+    <name>CPQU__Target_Field__c</name>
+    <picklistValues>
+        <masterLabel>Id</masterLabel>
+        <translation><!-- Id --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Name</masterLabel>
+        <translation><!-- Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__CustomerTotal__c</masterLabel>
+        <translation><!-- SBQQ__CustomerTotal__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Group__c</masterLabel>
+        <translation><!-- SBQQ__Group__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__ListPrice__c</masterLabel>
+        <translation><!-- SBQQ__ListPrice__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__NetTotal__c</masterLabel>
+        <translation><!-- SBQQ__NetTotal__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Number__c</masterLabel>
+        <translation><!-- SBQQ__Number__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__ProductName__c</masterLabel>
+        <translation><!-- SBQQ__ProductName__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Product__c</masterLabel>
+        <translation><!-- SBQQ__Product__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Quantity__c</masterLabel>
+        <translation><!-- SBQQ__Quantity__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

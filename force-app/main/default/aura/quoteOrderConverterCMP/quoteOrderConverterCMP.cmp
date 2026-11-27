@@ -1,0 +1,36 @@
+<!--
+  @description       : This Component is called from Quote/Order Converter button from Quote Search page
+  @author            : Jade Global
+  @last modified on  : 02-18-2021
+  @last modified by  : Jade Global
+  Modifications Log
+  Ver   Date         Author        Modification
+  1.0   02-18-2021   Jade Global   Initial Version
+-->
+<aura:component implements="lightning:isUrlAddressable,force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute type="list" name="quoteResult" />
+    <aura:attribute type="String" name="orderType" />
+    <aura:attribute type="String" name="orderNumber" />
+    <aura:attribute type="String" name="searchAcctId" />
+    <aura:attribute type="String" name="searchAccName" />
+    <aura:attribute type="Boolean" name="isUnquoted" />
+    <aura:attribute type="String" name="site" />
+    <aura:attribute type="Boolean" name="isRedirected" />
+    <aura:attribute type="Boolean" name="isRendered" default="false" />
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.reInit}" />
+    
+    <aura:handler name="init" value="this" action="{!c.doInit}" />
+    <aura:html tag="style">
+        .lstDropList .slds-dropdown-trigger_click .slds-dropdown{
+            
+            position:relative;
+            overflow: initial;
+            max-height:7rem;
+            overflow-y:auto;
+        }
+    </aura:html>
+    <aura:if  isTrue="{!v.isRendered}">
+        <c:quoteOrderSearch quoteResult="{!v.quoteResult}" site="{!v.site}" siteId="{!v.siteId}" orderType="{!v.orderType}" orderNumber="{!v.orderNumber}" isUnquoted="{!v.isUnquoted}" searchAcctId="{!v.searchAcctId}" searchAccName="{!v.searchAccName}" isRedirected="{!v.isRedirected}"/>
+    </aura:if>
+    
+</aura:component>

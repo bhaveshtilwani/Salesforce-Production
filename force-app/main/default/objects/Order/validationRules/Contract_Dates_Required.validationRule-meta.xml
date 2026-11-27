@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Dates_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL( Order_Type__c , &quot;Contract Creation&quot;),
+ISPICKVAL( Order_Type__c , &quot;Qty Contract&quot;)),
+OR(
+ISBLANK( Contract_Start_Date__c ),
+ISBLANK(  Contract_End_Date__c )))</errorConditionFormula>
+    <errorMessage>Contract Dates required.</errorMessage>
+</ValidationRule>

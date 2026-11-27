@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Subtype__c</fullName>
+    <label>Case Subtype</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>With Return Shipment</fullName>
+                <default>false</default>
+                <label>With Return Shipment</label>
+            </value>
+            <value>
+                <fullName>W/O Return Shipment</fullName>
+                <default>false</default>
+                <label>W/O Return Shipment</label>
+            </value>
+            <value>
+                <fullName>Repair in House</fullName>
+                <default>false</default>
+                <label>Repair in House</label>
+            </value>
+            <value>
+                <fullName>Field Visit</fullName>
+                <default>false</default>
+                <label>Field Visit</label>
+            </value>
+            <value>
+                <fullName>Technical Support</fullName>
+                <default>false</default>
+                <label>Technical Support</label>
+            </value>
+            <value>
+                <fullName>External Repair</fullName>
+                <default>false</default>
+                <label>External Repair</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

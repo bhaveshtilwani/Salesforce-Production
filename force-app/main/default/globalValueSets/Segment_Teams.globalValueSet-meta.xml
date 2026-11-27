@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Industrial Team</fullName>
+        <default>false</default>
+        <label>Advanced Industrial Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Science &amp; Semiconductor Team</fullName>
+        <default>false</default>
+        <label>Life Science &amp; Semiconductor Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Excelitas Channel Team</fullName>
+        <default>false</default>
+        <label>Excelitas Channel Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Team</fullName>
+        <default>false</default>
+        <label>Corporate Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Unassigned Team</fullName>
+        <default>false</default>
+        <label>Unassigned Team</label>
+    </customValue>
+    <customValue>
+        <fullName>MedTech &amp; Semiconductor Team</fullName>
+        <default>false</default>
+        <label>MedTech &amp; Semiconductor Team</label>
+    </customValue>
+    <description>Segment Teams - Anaplan New Team</description>
+    <masterLabel>Segment Teams</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

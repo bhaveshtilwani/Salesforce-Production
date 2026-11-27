@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEF_as_Usage_or_Remove_EUS</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISPICKVAL ( Usage__c, &quot;(DEF) Defence&quot;)),
+
+OR(
+NOT(ISBLANK( EUS_Expiry_Date__c )),
+NOT(ISBLANK( EUS_Quantity__c )))
+)</errorConditionFormula>
+    <errorDisplayField>Usage__c</errorDisplayField>
+    <errorMessage>Indicate (DEF) Defence otherwise, remove EUS Expiry Date and EUS Quantity values</errorMessage>
+</ValidationRule>

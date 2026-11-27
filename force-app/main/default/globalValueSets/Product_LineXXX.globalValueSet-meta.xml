@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Electronic Systems</fullName>
+        <default>false</default>
+        <label>Advanced Electronic Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Imaging Systems</fullName>
+        <default>false</default>
+        <label>Advanced Imaging Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Optronics</fullName>
+        <default>false</default>
+        <label>Advanced Optronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomedical Imaging</fullName>
+        <default>false</default>
+        <label>Biomedical Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>High Voltage Power</fullName>
+        <default>false</default>
+        <label>High Voltage Power</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Systems &amp; Optics</fullName>
+        <default>false</default>
+        <label>Industrial Systems &amp; Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>IR Sensing</fullName>
+        <default>false</default>
+        <label>IR Sensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Land Equipment</fullName>
+        <default>false</default>
+        <label>Land Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser Technology</fullName>
+        <default>false</default>
+        <label>Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Line CS</fullName>
+        <default>false</default>
+        <label>Other Line CS</label>
+    </customValue>
+    <customValue>
+        <fullName>Photon Detection</fullName>
+        <default>false</default>
+        <label>Photon Detection</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma Lighting</fullName>
+        <default>false</default>
+        <label>Plasma Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor</fullName>
+        <default>false</default>
+        <label>Semiconductor</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid State Technologies</fullName>
+        <default>false</default>
+        <label>Solid State Technologies</label>
+    </customValue>
+    <customValue>
+        <fullName>UNKNOWN LINE</fullName>
+        <default>false</default>
+        <label>UNKNOWN LINE</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Mil/Aero/Gov</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mil/Aero/Gov</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotech</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biotech</label>
+    </customValue>
+    <customValue>
+        <fullName>Sensors</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sensors</label>
+    </customValue>
+    <customValue>
+        <fullName>Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>UV and Microscopy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UV and Microscopy</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomed-Laser</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biomed-Laser</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Semicon-Inspection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semicon-Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>HIDL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HIDL</label>
+    </customValue>
+    <customValue>
+        <fullName>(1-10)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>(1-10)</label>
+    </customValue>
+    <customValue>
+        <fullName>SSL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSL</label>
+    </customValue>
+    <customValue>
+        <fullName>Disco Medical Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Disco Medical Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>CPM and IT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CPM and IT</label>
+    </customValue>
+    <customValue>
+        <fullName>(11-25)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>(11-25)</label>
+    </customValue>
+    <customValue>
+        <fullName>(26-100)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>(26-100)</label>
+    </customValue>
+    <customValue>
+        <fullName>(10-99)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>(10-99)</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomedical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biomedical</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics and Laser Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics and Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Photonic Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Photonic Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid State Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Solid State Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>UV &amp; Microscopy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UV &amp; Microscopy</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics &amp; Laser Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics &amp; Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>CPM &amp; IT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CPM &amp; IT</label>
+    </customValue>
+    <customValue>
+        <fullName>CPM &amp; IT &amp; PC</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CPM &amp; IT &amp; PC</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Laser Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Laser Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomedical Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biomedical Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Consumer Electronics</label>
+    </customValue>
+    <masterLabel>Product LineXXX</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

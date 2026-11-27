@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Storage Location</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Storage_Location__c.Site__c</field>
+            <operation>contains</operation>
+            <valueField>$Source.Site__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Storage_Location__c</referenceTo>
+    <relationshipLabel>Order Creation Lines</relationshipLabel>
+    <relationshipName>Order_Creation_Lines</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

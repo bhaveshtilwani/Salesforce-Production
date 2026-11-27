@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Type__c</fullName>
+    <label>Application Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adhesive</fullName>
+                <default>false</default>
+                <label>Adhesive</label>
+            </value>
+            <value>
+                <fullName>Ink</fullName>
+                <default>false</default>
+                <label>Ink</label>
+            </value>
+            <value>
+                <fullName>Coating</fullName>
+                <default>false</default>
+                <label>Coating</label>
+            </value>
+            <value>
+                <fullName>Potting</fullName>
+                <default>false</default>
+                <label>Potting</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>High Temperature</fullName>
+                <default>false</default>
+                <label>High Temperature</label>
+            </value>
+            <value>
+                <fullName>Clean Room</fullName>
+                <default>false</default>
+                <label>Clean Room</label>
+            </value>
+            <value>
+                <fullName>Vacuum</fullName>
+                <default>false</default>
+                <label>Vacuum</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

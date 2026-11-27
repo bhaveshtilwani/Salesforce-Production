@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Code_Description__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Inspection_Code__c,
+&apos;AS01 - ASSY-Defective Part&apos;, &apos;A part non-conformity which interferes with the parts the assembly and/or performance in a final assembly or sub-assembly.&apos;,
+&apos;AS02 - ASSY-Misaligned&apos;, &apos;Assembled part is incorrectly placed and/or aligned into an assembly or sub-assembly.&apos;,
+&apos;AS03 - ASSY-Missing Part&apos;, &apos;Missing part found in an inspection step after completion of a defined set of processes.&apos;,
+&apos;AS04 - ASSY-No Optical Contact&apos;, &apos;Optical conact bonding of an assembly or sub-assembly has failed.&apos;,
+&apos;AS06 - ASSY-Wrong Part&apos;, &apos;Wrong part assembled into an assembly or sub-assembly.&apos;,
+&apos;AS10 - ASSY-ER&apos;, &apos;Extinction ratio incorrect.&apos;,
+&apos;AS11 - ASSY-CONTACT FAIL - DIG&apos;, &apos;Contact failure due to digs.&apos;,
+&apos;AS12 - ASSY-CONTACT FAIL - DECONTACT DAMAGE&apos;, &apos;Contact failure due to decontact damage.&apos;,
+&apos;AS13 - ASSY-CONTACT FAIL - ER&apos;, &apos;Contact failure due to extinction ratio.&apos;,
+&apos;AS14 - ASSY-CONTACT FAIL - FOD&apos;, &apos;Contact failure due to FOD.&apos;,
+&apos;AS15 - ASSY-CONTACT FAIL - SCRATCH&apos;, &apos;Contact failure due to scratches.&apos;,
+&apos;AS16 - ASSY-CONTACT FAIL - SURFACE FIGURE&apos;, &apos;Contact failure due to surface figure.&apos;,
+&apos;AS17 - ASSY-Incomplete Bonding&apos;, &apos;Bonding or optical contacting could not be completed or does not conform to specification.&apos;,
+&apos;AS18 - ASSY-Corrosion&apos;, &apos;A surface deterioration on a metal due to an atomic interaction with air or a fluid.&apos;,
+&apos;AS19 - ASSY-Plating or Passivation Defect&apos;, &apos;Any non-conformity related to plating or passivation or anodization which could included non-uniformity, pitting, cracking, contamination, blistering, oxidation, etc.&apos;,
+    null
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Inspection Code Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LED_Heads__c</fullName>
+    <label>LED Heads</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>125mm x 12mm OD 365nm</fullName>
+                <default>false</default>
+                <label>125mm x 12mm OD 365nm</label>
+            </value>
+            <value>
+                <fullName>125mm x 12mm OD 385nm</fullName>
+                <default>false</default>
+                <label>125mm x 12mm OD 385nm</label>
+            </value>
+            <value>
+                <fullName>125mm x 12mm OD 400nm</fullName>
+                <default>false</default>
+                <label>125mm x 12mm OD 400nm</label>
+            </value>
+            <value>
+                <fullName>55mm x 12mm OD 365nm</fullName>
+                <default>false</default>
+                <label>55mm x 12mm OD 365nm</label>
+            </value>
+            <value>
+                <fullName>55mm x 12mm OD 385nm</fullName>
+                <default>false</default>
+                <label>55mm x 12mm OD 385nm</label>
+            </value>
+            <value>
+                <fullName>55mm x 12mm OD 400nm</fullName>
+                <default>false</default>
+                <label>55mm x 12mm OD 400nm</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

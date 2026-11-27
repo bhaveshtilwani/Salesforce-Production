@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Team_Required_for_C2</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+ ISPICKVAL(DW_Account_Type__c , &quot;Business Name&quot;),
+ ISPICKVAL(Sales_TeamNEW__c, &quot;&quot;),
+OR(
+ ISPICKVAL($User.Sales_TeamNEW__c,&quot;&quot;),
+ ISPICKVAL($User.Sales_TeamNEW__c,&quot;Unknown Team&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Sales_TeamNEW__c</errorDisplayField>
+    <errorMessage>Enter Sales Team</errorMessage>
+</ValidationRule>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Sub_Team__c</fullName>
+    <description>Match the Sales Sub Team with Heir in the API in Leads/Accounts</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Sales Sub Team</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AIS Americas Sub Team</fullName>
+                <default>true</default>
+                <label>AIS Americas Sub Team</label>
+            </value>
+            <value>
+                <fullName>AIS Asia Sub Team</fullName>
+                <default>false</default>
+                <label>AIS Asia Sub Team</label>
+            </value>
+            <value>
+                <fullName>AIS EMEA Sub Team</fullName>
+                <default>false</default>
+                <label>AIS EMEA Sub Team</label>
+            </value>
+            <value>
+                <fullName>ALS OEM Americas Disinfection</fullName>
+                <default>false</default>
+                <label>ALS OEM Americas Disinfection</label>
+            </value>
+            <value>
+                <fullName>ALS OEM Americas Printing &amp; Wood</fullName>
+                <default>false</default>
+                <label>ALS OEM Americas Printing &amp; Wood</label>
+            </value>
+            <value>
+                <fullName>ALS OEM Americas Industrial</fullName>
+                <default>false</default>
+                <label>ALS OEM Americas Industrial</label>
+            </value>
+            <value>
+                <fullName>ALS OEM China</fullName>
+                <default>false</default>
+                <label>ALS OEM China</label>
+            </value>
+            <value>
+                <fullName>ALS OEM Korea</fullName>
+                <default>false</default>
+                <label>ALS OEM Korea</label>
+            </value>
+            <value>
+                <fullName>ALS OEM Taiwan</fullName>
+                <default>false</default>
+                <label>ALS OEM Taiwan</label>
+            </value>
+            <value>
+                <fullName>ALS OEM India</fullName>
+                <default>false</default>
+                <label>ALS OEM India</label>
+            </value>
+            <value>
+                <fullName>ALS OEM Japan</fullName>
+                <default>false</default>
+                <label>ALS OEM Japan</label>
+            </value>
+            <value>
+                <fullName>ALS OEM EMEA Disinfection</fullName>
+                <default>false</default>
+                <label>ALS OEM EMEA Disinfection</label>
+            </value>
+            <value>
+                <fullName>ALS OEM EMEA Printing &amp; Wood</fullName>
+                <default>false</default>
+                <label>ALS OEM EMEA Printing &amp; Wood</label>
+            </value>
+            <value>
+                <fullName>ALS OEM EMEA Industrial</fullName>
+                <default>false</default>
+                <label>ALS OEM EMEA Industrial</label>
+            </value>
+            <value>
+                <fullName>ALS Channel Americas Sub Team</fullName>
+                <default>false</default>
+                <label>ALS Channel Americas Sub Team</label>
+            </value>
+            <value>
+                <fullName>ALS Channel Asia Sub Team</fullName>
+                <default>false</default>
+                <label>ALS Channel Asia Sub Team</label>
+            </value>
+            <value>
+                <fullName>ALS Channel EMEA Sub Team</fullName>
+                <default>false</default>
+                <label>ALS Channel EMEA Sub Team</label>
+            </value>
+            <value>
+                <fullName>IOA Americas Sub Team</fullName>
+                <default>false</default>
+                <label>IOA Americas Sub Team</label>
+            </value>
+            <value>
+                <fullName>IOA Asia Sub Team</fullName>
+                <default>false</default>
+                <label>IOA Asia Sub Team</label>
+            </value>
+            <value>
+                <fullName>IOA EMEA Sub Team</fullName>
+                <default>false</default>
+                <label>IOA EMEA Sub Team</label>
+            </value>
+            <value>
+                <fullName>Semi Americas Sub Team</fullName>
+                <default>false</default>
+                <label>Semi Americas Sub Team</label>
+            </value>
+            <value>
+                <fullName>Semi Asia Sub Team</fullName>
+                <default>false</default>
+                <label>Semi Asia Sub Team</label>
+            </value>
+            <value>
+                <fullName>Semi EMEA Sub Team</fullName>
+                <default>false</default>
+                <label>Semi EMEA Sub Team</label>
+            </value>
+            <value>
+                <fullName>PM Americas</fullName>
+                <default>false</default>
+                <label>PM Americas</label>
+            </value>
+            <value>
+                <fullName>PM EMEA Technical Sales</fullName>
+                <default>false</default>
+                <label>PM EMEA Technical Sales</label>
+            </value>
+            <value>
+                <fullName>PM EMEA</fullName>
+                <default>false</default>
+                <label>PM EMEA</label>
+            </value>
+            <value>
+                <fullName>PM Asia</fullName>
+                <default>false</default>
+                <label>PM Asia</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS Americas Sub Team</fullName>
+                <default>false</default>
+                <label>M&amp;LS Americas Sub Team</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS China</fullName>
+                <default>false</default>
+                <label>M&amp;LS China</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS SE Asia, Australia, India</fullName>
+                <default>false</default>
+                <label>M&amp;LS SE Asia, Australia, India</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS Japan</fullName>
+                <default>false</default>
+                <label>M&amp;LS Japan</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS Korea</fullName>
+                <default>false</default>
+                <label>M&amp;LS Korea</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS EMEA 1</fullName>
+                <default>false</default>
+                <label>M&amp;LS EMEA 1</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS EMEA 2</fullName>
+                <default>false</default>
+                <label>M&amp;LS EMEA 2</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS EMEA 3</fullName>
+                <default>false</default>
+                <label>M&amp;LS EMEA 3</label>
+            </value>
+            <value>
+                <fullName>Channel Americas Sub Team</fullName>
+                <default>false</default>
+                <label>Channel Americas Sub Team</label>
+            </value>
+            <value>
+                <fullName>Channel Asia Sub Team</fullName>
+                <default>false</default>
+                <label>Channel Asia Sub Team</label>
+            </value>
+            <value>
+                <fullName>Channel EMEA Sub Team</fullName>
+                <default>false</default>
+                <label>Channel EMEA Sub Team</label>
+            </value>
+            <value>
+                <fullName>Corporate Sub-Team</fullName>
+                <default>false</default>
+                <label>Corporate Sub-Team</label>
+            </value>
+            <value>
+                <fullName>Unassigned Sales</fullName>
+                <default>false</default>
+                <label>Unassigned Sales</label>
+            </value>
+            <value>
+                <fullName>PM China</fullName>
+                <default>false</default>
+                <label>PM China</label>
+            </value>
+            <value>
+                <fullName>PM Japan</fullName>
+                <default>false</default>
+                <label>PM Japan</label>
+            </value>
+            <value>
+                <fullName>PM Korea</fullName>
+                <default>false</default>
+                <label>PM Korea</label>
+            </value>
+            <value>
+                <fullName>PM SE Asia, Australia, India</fullName>
+                <default>false</default>
+                <label>PM SE Asia, Australia, India</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

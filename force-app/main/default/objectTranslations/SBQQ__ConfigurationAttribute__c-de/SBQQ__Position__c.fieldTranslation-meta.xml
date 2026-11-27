@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Geben Sie die Position dieses Attributs an. Bei &quot;&quot;Oben&quot;&quot; wird es oberhalb der Optionen dargestellt, bei &quot;&quot;Unten&quot;&quot; unterhalb.&quot;</help>
+    <label><!-- Position --></label>
+    <name>SBQQ__Position__c</name>
+    <picklistValues>
+        <masterLabel>Bottom</masterLabel>
+        <translation>Unten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top</masterLabel>
+        <translation>Oben</translation>
+    </picklistValues>
+</CustomFieldTranslation>

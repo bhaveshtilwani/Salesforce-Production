@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunities_for_Harry</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>Opportunity_Number__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_Region_TeamHIER__c</field>
+        <operation>equals</operation>
+        <value>Semi Asia,LSM Asia</value>
+    </filters>
+    <label>Opportunities for Harry Xu</label>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QAD_Bill_to_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>New fields created to allow Opportunity Account field to be mapped to Sold to Name</description>
+    <inlineHelpText>This is the name of the company paying the bill. It may not match the Customer which the items were sold to.
+This field will default to the Sold to Name if left blank.</inlineHelpText>
+    <label>Bill to Name</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.LUMEN_PICKLIST_RECORD_TYPE__c</field>
+            <operation>notEqual</operation>
+            <value>Ship To Account</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Orders (Bill to Name)</relationshipLabel>
+    <relationshipName>Orders8</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

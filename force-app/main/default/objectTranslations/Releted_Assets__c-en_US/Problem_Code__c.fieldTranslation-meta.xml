@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Problem Code --></label>
+    <name>Problem_Code__c</name>
+    <picklistValues>
+        <masterLabel>Admin Customer Order Error</masterLabel>
+        <translation><!-- Admin Customer Order Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Engineering Error</masterLabel>
+        <translation><!-- Admin Engineering Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Finance Error</masterLabel>
+        <translation><!-- Admin Finance Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Marketing Error</masterLabel>
+        <translation><!-- Admin Marketing Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Operation Error</masterLabel>
+        <translation><!-- Admin Operation Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Order Entry Error</masterLabel>
+        <translation><!-- Admin Order Entry Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Product Man Error</masterLabel>
+        <translation><!-- Admin Product Man Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Quality error</masterLabel>
+        <translation><!-- Admin Quality error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin SR Team Error</masterLabel>
+        <translation><!-- Admin SR Team Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Sales Error</masterLabel>
+        <translation><!-- Admin Sales Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Shipping Damage</masterLabel>
+        <translation><!-- Admin Shipping Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Shipping Error</masterLabel>
+        <translation><!-- Admin Shipping Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Shipping Error Singapore</masterLabel>
+        <translation><!-- Admin Shipping Error Singapore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Singapore. Order Entry Error</masterLabel>
+        <translation><!-- Admin Singapore. Order Entry Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Tech Support Error</masterLabel>
+        <translation><!-- Admin Tech Support Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Application Support</masterLabel>
+        <translation><!-- Application Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibration</masterLabel>
+        <translation><!-- Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibration and Repair</masterLabel>
+        <translation><!-- Calibration and Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Cancelled</masterLabel>
+        <translation><!-- Call Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint</masterLabel>
+        <translation><!-- Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment</masterLabel>
+        <translation><!-- Consignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Feedback about Product</masterLabel>
+        <translation><!-- Customer Feedback about Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demo Feedback</masterLabel>
+        <translation><!-- Demo Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Issue</masterLabel>
+        <translation><!-- Environmental Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluate - Does Not Meet Specifications</masterLabel>
+        <translation><!-- Evaluate - Does Not Meet Specifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Education</masterLabel>
+        <translation><!-- General Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information Request</masterLabel>
+        <translation><!-- Information Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead sent to Sales</masterLabel>
+        <translation><!-- Lead sent to Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loaned Demo</masterLabel>
+        <translation><!-- Loaned Demo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manuals</masterLabel>
+        <translation><!-- Manuals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA Not applicable</masterLabel>
+        <translation><!-- NA Not applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Negative Feedback</masterLabel>
+        <translation><!-- Negative Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opened in Error</masterLabel>
+        <translation><!-- Opened in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of Box Failure</masterLabel>
+        <translation><!-- Out of Box Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Positive Feedback</masterLabel>
+        <translation><!-- Positive Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recycling</masterLabel>
+        <translation><!-- Recycling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return for Credit</masterLabel>
+        <translation><!-- Return for Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return of Consignment</masterLabel>
+        <translation><!-- Return of Consignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return of Demo</masterLabel>
+        <translation><!-- Return of Demo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return of Loaner</masterLabel>
+        <translation><!-- Return of Loaner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR Related Issue</masterLabel>
+        <translation><!-- SR Related Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled Maintenance</masterLabel>
+        <translation><!-- Scheduled Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scorecard Failed</masterLabel>
+        <translation><!-- Scorecard Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scorecard Passed</masterLabel>
+        <translation><!-- Scorecard Passed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Center Repai</masterLabel>
+        <translation><!-- Service Center Repai --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Centre Calibration</masterLabel>
+        <translation><!-- Service Centre Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Centre Calibration and Repair</masterLabel>
+        <translation><!-- Service Centre Calibration and Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Centre Repair</masterLabel>
+        <translation><!-- Service Centre Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade In - Trade Up/ TS Lead</masterLabel>
+        <translation><!-- Trade In - Trade Up/ TS Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade In Previous Unit needed repair/ TS Lead</masterLabel>
+        <translation><!-- Trade In Previous Unit needed repair/ TS Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade in - Trade Up Program</masterLabel>
+        <translation><!-- Trade in - Trade Up Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Does Not Power Up - Not Functional</masterLabel>
+        <translation><!-- Unit Does Not Power Up - Not Functional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade Required</masterLabel>
+        <translation><!-- Upgrade Required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

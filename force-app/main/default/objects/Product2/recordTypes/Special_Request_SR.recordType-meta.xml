@@ -1,0 +1,2192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Request_SR</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>New_Compact_Layout_2</compactLayoutAssignment>
+    <description>for SR process</description>
+    <label>Special Request (SR)</label>
+    <picklistValues>
+        <picklist>Account_Assignment_Grp_Material__c</picklist>
+        <values>
+            <fullName>01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Catalog_Lens_Type__c</picklist>
+        <values>
+            <fullName>Aspherical Condenser Lens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biconcave Lens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bioconvex Lens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cylindrical Lens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plano-Concave Lens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plano-Convex Lens</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Catalog_Option__c</picklist>
+        <values>
+            <fullName>Near Infrared Range - R %3C0%2E5%25 per surface AOI %3D 0 Deg λ %3D 725 - 1050nm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reflective Aluminum%C2%A0 RAL %28AL%29 - R %3E 85%25 AOI %3D 45 Deg λ %3D 400nm - 700nm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uncoated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIS-IR Silver mirror RAGV - R %3E96%25 0 Deg %3C AOI %3C 60 Deg λ %3D 500nm - 12μm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visible Range - R %3C0%2E5%25 per surface AOI %3D 0 Deg λ %3D 450 - 700nm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YAG Fundamental ARHS%3A R %3C0%2E2%25 per surface AOI %3D 0 Deg center wavelength 1064 nm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country_of_Origin__c</picklist>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Czech Rep%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EU Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latvia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malaysia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-EU Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philippines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switzerland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Division__c</picklist>
+        <values>
+            <fullName>Advanced Electronic Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Industrial Sensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Lighting Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense %26 Aerospace Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Optronics %26 Avionics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedTech %26 Life Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor Equipment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dual_Use_EU__c</picklist>
+        <values>
+            <fullName>V_EUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ohne Angabe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Excelitas_Selling_Site__c</picklist>
+        <values>
+            <fullName>Asslar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billerica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boulder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Covina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESG L%26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESG Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fremont</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goettingen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hamble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miamisburg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montreal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Munich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pfaffenhofen %28Elcos%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rochester</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shenzhen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St Louis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St%2E Louis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toronto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wiesbaden</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>P - series Linear Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Product</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>German_Munition_List__c</picklist>
+        <values>
+            <fullName>Ohne Angabe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V_ALT1A</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_Standard_Product_V2__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LDGI_Record_Type__c</picklist>
+        <values>
+            <fullName>Burleigh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cermax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excelerate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omnicure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X-Cite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Line_of_Business__c</picklist>
+        <values>
+            <fullName>Cermax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMNI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X-Cite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PKI_Product_FamilyXXX__c</picklist>
+        <values>
+            <fullName>Aerial %26 Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avionics and Space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biomedical Light Engines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camera Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog and Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cermax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing LED Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing LED Phoseon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energetic Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fibers %26 Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freq Stds and Switches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HeNe Lasers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Voltage Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Curing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Flash Shenzhen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Engines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lightsources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metrology %26 Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modules %26 Objectives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optics %26 Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Family CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pfl - Dsc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photodiodes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photoflash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pyroelectric Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid State Lighting Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solidtron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surv and Target Acq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermopile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNKNOWN FAMILY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV and Microscopy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PKI_Product_Family__c</picklist>
+        <values>
+            <fullName>Advanced Sensor Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerial %26 Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerial Imaging %26 Laser Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biomedical Light Engines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camera Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog and Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cermax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing LED - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing LED Phoseon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing Omnicure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customized Systems - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disinfection - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fibers %26 Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freq Stds and Switches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Voltage Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Curing - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Engines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lightsources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metrology %26 Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modules %26 Objectives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noblelight Other - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optics %26 Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optics %26 Imaging Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optronics Platforms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photodiodes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Optronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pyroelectric Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid State Lighting Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solidtron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Processing - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermopile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PKI_Product_LineXXX__c</picklist>
+        <values>
+            <fullName>Advanced Electronic Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Imaging Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Optronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biomedical Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Voltage Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR Sensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Systems %26 Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Line CS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photon Detection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plasma Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid State Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNKNOWN LINE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PKI_Product_Line__c</picklist>
+        <values>
+            <fullName>CS BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disinfection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holistic Lithography BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR Sensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imaging %26 Laser Systems BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Curing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Optronics %26 Avionics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metrology %26 Inspection BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photon Detection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plasma Light Sources BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solutions BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Processing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PKI_Product_SubFamily__c</picklist>
+        <values>
+            <fullName>%3E 1 Inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0400%2Fspcm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accessory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Endoscopy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Imaging Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerial Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytical Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytical Light Sources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytical Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Applied Microscopy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Array Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avionics and Space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biophotonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCD Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCD Defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEV %3E 1 Inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEV Large Cermax Lamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEV Large Cermax Modules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEV Modules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEV RAW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEV Video Cermax-Gen 3 1%2E4 Inch Lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEV WIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEV XHP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COTS Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camera Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carsan Power Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cathode pills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Detectors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Components - Fibers%26Comp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Components - Opt%26Img</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crystal Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing LED Phoseon Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dental Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depot Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dermatology Treatment Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Detector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E%2EIR COMPONENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E%2EIR CUSTOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E%2EIR RAW%2FSEMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E%2EIR SYSTEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED COMPONENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED CUSTOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED RAW%2FSEMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED SYSTEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrooptics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Espros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL - Flash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLASH COMP%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLASH OTHERS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLASH RAW%2FSEMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLASH SYSTEMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FOI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fibers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FireEdge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FireFlex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FireFly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FireJet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FireLine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FirePower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FlexTower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flexray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gen 3 Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glass%2FCeramic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground Vehicles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HCA %E2%80%93 AA %E2%80%93 Lamp Material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HNG ZZ-HNG Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hcl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HeNe Laser Heads%5CSystems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HeNe Laser Power Supplies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HeNe Laser Tubes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heatsinks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heimann</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hene Laser Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heraeus not assigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Performance Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Performance Defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Voltage Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hvp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Image Tubes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ipl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KeyLight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KeyPro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LED COMPONENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LED CUSTOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LED Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LED OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LED RAW%2FSEMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LED SYSTEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LED Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lamp Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser %26 Fibers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lasers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lasers and Fibers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levelsensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LiTa Detectors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linear Beacons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAGL IR Source</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAGL Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAGL Space Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAGL WIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOTS Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MVS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MW COMPONENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MW CUSTOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MW OTHER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MW RAW%2FSEMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MW SYSTEMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metrology %26 Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave bulbs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mini-Cermax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missile Warning %26 Targeting Sys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modular Vessel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multipoint Device</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nexus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nexustower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMNICURE Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMNICURE System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OP - Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPT COMPONENTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPT RAW%2FSEMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPT SYSTEMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omnicure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ophthalmology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ops Munich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ops Regen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opto Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optronics Platforms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Optical Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHOSEON Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHOSEON System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHS Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHS Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHS System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PID DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PID RF Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PID RF Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photodiode Arrays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photodiodes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photonics Flash - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Supply %26 Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Optics Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulsed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pulsed Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quartz Linear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SF MAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SO Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SiPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solder seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soldier - Man Portable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid State Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid State Switches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surgical Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surv and Target Acq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surveillance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TECHNICAL SERVICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TO Packages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tactical Missiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecom%2FFFM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trigger Coil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trigger Transformer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U Tube %28%2B H 3rd Gen%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNKNOWN SUBFAMILY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vaconics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vactec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X-Cite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X-Ray Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XWarranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yieldstar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yieldstar - Lightsources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yieldstar - Mod%26Obj</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Plant__c</picklist>
+        <values>
+            <fullName>%282000%29 Excelitas Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%283000%29 Excelitas Tech%2E Philippines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28IND1%29 PT%2E Excelitas Tech%2E Batam - IND1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28IND3%29 PT%2E Excelitas Tech%2E Batam - IND3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SGP1%29 Excelitas Tech%2E Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SGP3%29 SG-Optics Operating Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SZN1%29 Excelitas Tech%2E Shenzhen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AssetAmendmentBehavior__c</picklist>
+        <values>
+            <fullName>Allow Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Default</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AssetConversion__c</picklist>
+        <values>
+            <fullName>One per quote line</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>One per unit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BillingFrequency__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiannual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BillingType__c</picklist>
+        <values>
+            <fullName>Advance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrears</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BlockPricingField__c</picklist>
+        <values>
+            <fullName>Quantity</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ChargeType__c</picklist>
+        <values>
+            <fullName>One-Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationEvent__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationFieldSet__c</picklist>
+        <values>
+            <fullName>OptionConfiguration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationType__c</picklist>
+        <values>
+            <fullName>Allowed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disabled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__CustomerCommunityAvailability__c</picklist>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only when already owned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__DefaultPricingTable__c</picklist>
+        <values>
+            <fullName>Segmented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__DynamicPricingConstraint__c</picklist>
+        <values>
+            <fullName>List price is maximum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List price is minimum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__GenerateContractedPrice__c</picklist>
+        <values>
+            <fullName>Discount Schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Generate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__OptionLayout__c</picklist>
+        <values>
+            <fullName>Sections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tabs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wizard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__OptionSelectionMethod__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Click</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__PricingMethod__c</picklist>
+        <values>
+            <fullName>Block</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Percent Of Total</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionBase__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Net</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionCategory__c</picklist>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionPricing__c</picklist>
+        <values>
+            <fullName>Fixed Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Percent Of Total</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionType__c</picklist>
+        <values>
+            <fullName>Evergreen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One-time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Renewable%2FEvergreen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__TermDiscountLevel__c</picklist>
+        <values>
+            <fullName>Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SR_Status__c</picklist>
+        <values>
+            <fullName>Activate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approval Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deactivated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SR_Type__c</picklist>
+        <values>
+            <fullName>SR-Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR-NRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR-NRE Tooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR-Prototype</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR-Regulatory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR-System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR-Testing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segment__c</picklist>
+        <values>
+            <fullName>Advanced Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Segment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense %26 Aerospace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedTech %26 Semiconductor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>WebProductLineLDGI__c</picklist>
+        <values>
+            <fullName>Light Guide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omnicure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X-Cite</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DUNNS_Record_Type__c</fullName>
+    <description>Based on Dunns Number the records are identified as Parent/Child/Single Site
+
+Parent ---DUNS_NUM = [GlobalUltiDUNS_NUM]
+Child records where DUNS_NUM &lt;&gt; [GlobalUltiDUNS_NUM] AND GlobalUltiDUNS_NUM &lt;&gt; &apos;&apos;
+Single site records where DUNS_NUM &lt;&gt; &apos;&apos; AND ( GlobalUltiDUNS_NUM = &apos;&apos; or GlobalUltiDUNS_NUM is NULL)</description>
+    <externalId>false</externalId>
+    <label>DUNNS Record Type</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

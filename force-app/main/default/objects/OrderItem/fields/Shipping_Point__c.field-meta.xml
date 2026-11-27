@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Point__c</fullName>
+    <label>Shipping Point</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ROP</fullName>
+                <default>false</default>
+                <label>ROP</label>
+            </value>
+            <value>
+                <fullName>LPD Göttingen</fullName>
+                <default>false</default>
+                <label>LPD Göttingen</label>
+            </value>
+            <value>
+                <fullName>LINOS Regen</fullName>
+                <default>false</default>
+                <label>LINOS Regen</label>
+            </value>
+            <value>
+                <fullName>Excelitas Wiesbaden</fullName>
+                <default>false</default>
+                <label>Excelitas Wiesbaden</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Hamble</fullName>
+                <default>false</default>
+                <label>Qioptiq Hamble</label>
+            </value>
+            <value>
+                <fullName>(2000) General St Louis</fullName>
+                <default>false</default>
+                <label>(2000) General St Louis</label>
+            </value>
+            <value>
+                <fullName>(2999) Dumpy (administrative)</fullName>
+                <default>false</default>
+                <label>(2999) Dumpy (administrative)</label>
+            </value>
+            <value>
+                <fullName>(3000) General Manila</fullName>
+                <default>false</default>
+                <label>(3000) General Manila</label>
+            </value>
+            <value>
+                <fullName>(CMN1) Manila (for 3rd party)</fullName>
+                <default>false</default>
+                <label>(CMN1) Manila (for 3rd party)</label>
+            </value>
+            <value>
+                <fullName>(CPM1) CPM</fullName>
+                <default>false</default>
+                <label>(CPM1) CPM</label>
+            </value>
+            <value>
+                <fullName>(DS) Direct Ship Manila</fullName>
+                <default>false</default>
+                <label>(DS) Direct Ship Manila</label>
+            </value>
+            <value>
+                <fullName>(EURO) Europe Direct Manila</fullName>
+                <default>false</default>
+                <label>(EURO) Europe Direct Manila</label>
+            </value>
+            <value>
+                <fullName>(HK01) Consign. HK To Customer</fullName>
+                <default>false</default>
+                <label>(HK01) Consign. HK To Customer</label>
+            </value>
+            <value>
+                <fullName>(ILC1) ILC1</fullName>
+                <default>false</default>
+                <label>(ILC1) ILC1</label>
+            </value>
+            <value>
+                <fullName>(IND1) Batam</fullName>
+                <default>false</default>
+                <label>(IND1) Batam</label>
+            </value>
+            <value>
+                <fullName>(IND3) Batam - Lot 209</fullName>
+                <default>false</default>
+                <label>(IND3) Batam - Lot 209</label>
+            </value>
+            <value>
+                <fullName>(INSG) Batam Via Singapore</fullName>
+                <default>false</default>
+                <label>(INSG) Batam Via Singapore</label>
+            </value>
+            <value>
+                <fullName>(ORC1) ORC</fullName>
+                <default>false</default>
+                <label>(ORC1) ORC</label>
+            </value>
+            <value>
+                <fullName>(SCHN) Shenzhen (for 3rd party)</fullName>
+                <default>false</default>
+                <label>(SCHN) Shenzhen (for 3rd party)</label>
+            </value>
+            <value>
+                <fullName>(SGP1) Singapore - Ayer Rajah</fullName>
+                <default>false</default>
+                <label>(SGP1) Singapore - Ayer Rajah</label>
+            </value>
+            <value>
+                <fullName>(SGP3) Singapore - Tractor Road</fullName>
+                <default>false</default>
+                <label>(SGP3) Singapore - Tractor Road</label>
+            </value>
+            <value>
+                <fullName>(SGSL) SG-Tractor Road (for Yusen)</fullName>
+                <default>false</default>
+                <label>(SGSL) SG-Tractor Road (for Yusen)</label>
+            </value>
+            <value>
+                <fullName>(SLM1) Salem</fullName>
+                <default>false</default>
+                <label>(SLM1) Salem</label>
+            </value>
+            <value>
+                <fullName>(SZSL) Shenzhen (for Yusen)</fullName>
+                <default>false</default>
+                <label>(SZSL) Shenzhen (for Yusen)</label>
+            </value>
+            <value>
+                <fullName>(TPS1) TPS</fullName>
+                <default>false</default>
+                <label>(TPS1) TPS</label>
+            </value>
+            <value>
+                <fullName>(UPS) 8UPS Freight</fullName>
+                <default>false</default>
+                <label>(UPS) 8UPS Freight</label>
+            </value>
+            <value>
+                <fullName>(USAD) USA Direct/RTS/Autoban Ma</fullName>
+                <default>false</default>
+                <label>(USAD) USA Direct/RTS/Autoban Ma</label>
+            </value>
+            <value>
+                <fullName>(VOT1) Voltarc</fullName>
+                <default>false</default>
+                <label>(VOT1) Voltarc</label>
+            </value>
+            <value>
+                <fullName>(WSZN) Wearnes HK Manufacturing</fullName>
+                <default>false</default>
+                <label>(WSZN) Wearnes HK Manufacturing</label>
+            </value>
+            <value>
+                <fullName>(YH01) Consign. YCH To Customer</fullName>
+                <default>false</default>
+                <label>(YH01) Consign. YCH To Customer</label>
+            </value>
+            <value>
+                <fullName>General Vaudreuil</fullName>
+                <default>false</default>
+                <label>General Vaudreuil</label>
+            </value>
+            <value>
+                <fullName>Opto Miamisburg</fullName>
+                <default>false</default>
+                <label>Opto Miamisburg</label>
+            </value>
+            <value>
+                <fullName>Opto Salem</fullName>
+                <default>false</default>
+                <label>Opto Salem</label>
+            </value>
+            <value>
+                <fullName>Salem Returns</fullName>
+                <default>false</default>
+                <label>Salem Returns</label>
+            </value>
+            <value>
+                <fullName>(SZN1) PerkinElmer</fullName>
+                <default>false</default>
+                <label>(SZN1) PerkinElmer</label>
+            </value>
+            <value>
+                <fullName>(0400) Excelitas Wiesbaden</fullName>
+                <default>false</default>
+                <label>(0400) Excelitas Wiesbaden</label>
+            </value>
+            <value>
+                <fullName>Boulder (1003)</fullName>
+                <default>false</default>
+                <label>Boulder (1003)</label>
+            </value>
+            <value>
+                <fullName>General Vaudreuil (C000)</fullName>
+                <default>false</default>
+                <label>General Vaudreuil (C000)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(IND1) Batam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(IND3) Batam - Lot 209</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(INSG) Batam Via Singapore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(SGP1) Singapore - Ayer Rajah</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(SGP3) Singapore - Tractor Road</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(SGSL) SG-Tractor Road (for Yusen)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(2000) General St Louis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(2999) Dumpy (administrative)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(3000) General Manila</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(CMN1) Manila (for 3rd party)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(CPM1) CPM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(DS) Direct Ship Manila</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(EURO) Europe Direct Manila</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(HK01) Consign. HK To Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ILC1) ILC1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ORC1) ORC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(SCHN) Shenzhen (for 3rd party)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(SLM1) Salem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(SZSL) Shenzhen (for Yusen)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(TPS1) TPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(UPS) 8UPS Freight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(USAD) USA Direct/RTS/Autoban Ma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(VOT1) Voltarc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(WSZN) Wearnes HK Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(YH01) Consign. YCH To Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>ROP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>LPD Göttingen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>LINOS Regen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <valueName>Qioptiq Hamble</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <valueName>Opto Miamisburg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>General Vaudreuil (C000)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <valueName>Opto Salem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <valueName>Salem Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(0400) Excelitas Wiesbaden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Boulder (1003)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

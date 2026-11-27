@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason --></label>
+    <name>Reason__c</name>
+    <picklistValues>
+        <masterLabel>General Support</masterLabel>
+        <translation><!-- General Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation><!-- N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product</masterLabel>
+        <translation><!-- Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsiveness</masterLabel>
+        <translation><!-- Responsiveness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return RMA process</masterLabel>
+        <translation><!-- Return RMA process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping</masterLabel>
+        <translation><!-- Shipping --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical / Design support</masterLabel>
+        <translation><!-- Technical / Design support --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

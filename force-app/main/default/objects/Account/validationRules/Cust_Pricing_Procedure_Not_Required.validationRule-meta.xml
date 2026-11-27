@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cust_Pricing_Procedure_Not_Required</fullName>
+    <active>false</active>
+    <description>Asia 
+0002 and ZBIL</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP Asia&quot;, OR(ISPICKVAL( Account_Group__c , &quot;Ship-to party - 0002&quot;), (ISPICKVAL( Account_Group__c , &quot;Billing email address - ZBIL&quot;)))
+&amp;&amp; NOT(ISPICKVAL(Customer_Pricing_Procedure__c, &quot;&quot;)))</errorConditionFormula>
+    <errorDisplayField>Customer_Pricing_Procedure__c</errorDisplayField>
+    <errorMessage>Customer Pricing Procedure not Required for Selected Account Group</errorMessage>
+</ValidationRule>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Reason__c</fullName>
+    <label>Case Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliance_Documents</fullName>
+                <default>false</default>
+                <label>Compliance Documents</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Carrier damaged package</fullName>
+                <default>false</default>
+                <label>Carrier damaged package</label>
+            </value>
+            <value>
+                <fullName>Carrier delivered to wrong consignee</fullName>
+                <default>false</default>
+                <label>Carrier delivered to wrong consignee</label>
+            </value>
+            <value>
+                <fullName>Carrier guidelines not followed</fullName>
+                <default>false</default>
+                <label>Carrier guidelines not followed</label>
+            </value>
+            <value>
+                <fullName>Catalogue/Brochure information incorrect/unclear</fullName>
+                <default>false</default>
+                <label>Catalogue/Brochure information incorrect/unclear</label>
+            </value>
+            <value>
+                <fullName>Customer can&apos;t order via web / has technical issues</fullName>
+                <default>false</default>
+                <label>Customer can&apos;t order via web / has technical issues</label>
+            </value>
+            <value>
+                <fullName>Customer doesn&apos;t easily find the information on company website</fullName>
+                <default>false</default>
+                <label>Customer doesn&apos;t easily find the information on company website</label>
+            </value>
+            <value>
+                <fullName>Collections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>Compliment</fullName>
+                <default>false</default>
+                <label>Compliment</label>
+            </value>
+            <value>
+                <fullName>Conflict Minerals document copies</fullName>
+                <default>false</default>
+                <label>Conflict Minerals document copies</label>
+            </value>
+            <value>
+                <fullName>Datasheet request</fullName>
+                <default>false</default>
+                <label>Datasheet request</label>
+            </value>
+            <value>
+                <fullName>Early delivery compared to CRD</fullName>
+                <default>false</default>
+                <label>Early delivery compared to CRD</label>
+            </value>
+            <value>
+                <fullName>Existing Return status request</fullName>
+                <default>false</default>
+                <label>Existing Return status request</label>
+            </value>
+            <value>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+                <label>Feedback</label>
+            </value>
+            <value>
+                <fullName>Follow up existing order status</fullName>
+                <default>false</default>
+                <label>Follow up existing order status</label>
+            </value>
+            <value>
+                <fullName>Internal Request - Various</fullName>
+                <default>false</default>
+                <label>Internal Request - Various</label>
+            </value>
+            <value>
+                <fullName>Incorrect batch size</fullName>
+                <default>false</default>
+                <label>Incorrect batch size</label>
+            </value>
+            <value>
+                <fullName>Incorrect carrier or forwarder used</fullName>
+                <default>false</default>
+                <label>Incorrect carrier or forwarder used</label>
+            </value>
+            <value>
+                <fullName>Incorrect shipping papers</fullName>
+                <default>false</default>
+                <label>Incorrect shipping papers</label>
+            </value>
+            <value>
+                <fullName>ITC / Trade Compliance related</fullName>
+                <default>false</default>
+                <label>ITC / Trade Compliance related</label>
+            </value>
+            <value>
+                <fullName>Lead Time</fullName>
+                <default>false</default>
+                <label>Lead Time</label>
+            </value>
+            <value>
+                <fullName>Lack of product knowledge</fullName>
+                <default>false</default>
+                <label>Lack of product knowledge</label>
+            </value>
+            <value>
+                <fullName>Long leadtime</fullName>
+                <default>false</default>
+                <label>Long leadtime</label>
+            </value>
+            <value>
+                <fullName>Missing CoO/CoC</fullName>
+                <default>false</default>
+                <label>Missing CoO/CoC</label>
+            </value>
+            <value>
+                <fullName>Missing custom invoice</fullName>
+                <default>false</default>
+                <label>Missing custom invoice</label>
+            </value>
+            <value>
+                <fullName>Missing delivery papers</fullName>
+                <default>false</default>
+                <label>Missing delivery papers</label>
+            </value>
+            <value>
+                <fullName>MOQ too high</fullName>
+                <default>false</default>
+                <label>MOQ too high</label>
+            </value>
+            <value>
+                <fullName>No pre-alert on delivery advance or delay against CSD</fullName>
+                <default>false</default>
+                <label>No pre-alert on delivery advance or delay against CSD</label>
+            </value>
+            <value>
+                <fullName>No reply on WEB request</fullName>
+                <default>false</default>
+                <label>No reply on WEB request</label>
+            </value>
+            <value>
+                <fullName>No response to query</fullName>
+                <default>false</default>
+                <label>No response to query</label>
+            </value>
+            <value>
+                <fullName>New order submission</fullName>
+                <default>false</default>
+                <label>New order submission</label>
+            </value>
+            <value>
+                <fullName>New quote request</fullName>
+                <default>false</default>
+                <label>New quote request</label>
+            </value>
+            <value>
+                <fullName>New Return request</fullName>
+                <default>false</default>
+                <label>New Return request</label>
+            </value>
+            <value>
+                <fullName>New Business</fullName>
+                <default>false</default>
+                <label>New Business</label>
+            </value>
+            <value>
+                <fullName>New Branch</fullName>
+                <default>false</default>
+                <label>New Branch</label>
+            </value>
+            <value>
+                <fullName>New Contract</fullName>
+                <default>false</default>
+                <label>New Contract</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Order Confirmation</fullName>
+                <default>false</default>
+                <label>Order Confirmation</label>
+            </value>
+            <value>
+                <fullName>Problem</fullName>
+                <default>false</default>
+                <label>Problem</label>
+            </value>
+            <value>
+                <fullName>Pull-In</fullName>
+                <default>false</default>
+                <label>Pull-In</label>
+            </value>
+            <value>
+                <fullName>Push-Out</fullName>
+                <default>false</default>
+                <label>Push-Out</label>
+            </value>
+            <value>
+                <fullName>Packing policy from customer not compliant</fullName>
+                <default>false</default>
+                <label>Packing policy from customer not compliant</label>
+            </value>
+            <value>
+                <fullName>Price too high</fullName>
+                <default>false</default>
+                <label>Price too high</label>
+            </value>
+            <value>
+                <fullName>Product EOL</fullName>
+                <default>false</default>
+                <label>Product EOL</label>
+            </value>
+            <value>
+                <fullName>Question</fullName>
+                <default>false</default>
+                <label>Question</label>
+            </value>
+            <value>
+                <fullName>Quote status request</fullName>
+                <default>false</default>
+                <label>Quote status request</label>
+            </value>
+            <value>
+                <fullName>Quote still valid/ extensions</fullName>
+                <default>false</default>
+                <label>Quote still valid/ extensions</label>
+            </value>
+            <value>
+                <fullName>RoHs Certificate request</fullName>
+                <default>false</default>
+                <label>RoHs Certificate request</label>
+            </value>
+            <value>
+                <fullName>Response time too long</fullName>
+                <default>false</default>
+                <label>Response time too long</label>
+            </value>
+            <value>
+                <fullName>Sample request</fullName>
+                <default>false</default>
+                <label>Sample request</label>
+            </value>
+            <value>
+                <fullName>Shipping documents copy request</fullName>
+                <default>false</default>
+                <label>Shipping documents copy request</label>
+            </value>
+            <value>
+                <fullName>Stock check</fullName>
+                <default>false</default>
+                <label>Stock check</label>
+            </value>
+            <value>
+                <fullName>Safety stock not met</fullName>
+                <default>false</default>
+                <label>Safety stock not met</label>
+            </value>
+            <value>
+                <fullName>Shipment delivered to wrong destination</fullName>
+                <default>false</default>
+                <label>Shipment delivered to wrong destination</label>
+            </value>
+            <value>
+                <fullName>Shipping instruction not followed</fullName>
+                <default>false</default>
+                <label>Shipping instruction not followed</label>
+            </value>
+            <value>
+                <fullName>Technical Support</fullName>
+                <default>false</default>
+                <label>Technical Support</label>
+            </value>
+            <value>
+                <fullName>Unfavorable Incoterm</fullName>
+                <default>false</default>
+                <label>Unfavorable Incoterm</label>
+            </value>
+            <value>
+                <fullName>Website not detailed regarding specifications</fullName>
+                <default>false</default>
+                <label>Website not detailed regarding specifications</label>
+            </value>
+            <value>
+                <fullName>Wrong freight charge</fullName>
+                <default>false</default>
+                <label>Wrong freight charge</label>
+            </value>
+            <value>
+                <fullName>Wrong product received</fullName>
+                <default>false</default>
+                <label>Wrong product received</label>
+            </value>
+            <value>
+                <fullName>Wrong quantity received/ short shipment</fullName>
+                <default>false</default>
+                <label>Wrong quantity received/ short shipment</label>
+            </value>
+            <value>
+                <fullName>Customer Portal Request</fullName>
+                <default>false</default>
+                <label>Customer Portal Request</label>
+            </value>
+            <value>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+                <label>Customer Request</label>
+            </value>
+            <value>
+                <fullName>Internal Request</fullName>
+                <default>false</default>
+                <label>Internal Request</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>WEB Related</controllingFieldValue>
+            <valueName>Customer can&apos;t order via web / has technical issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WEB Related</controllingFieldValue>
+            <valueName>Customer doesn&apos;t easily find the information on company website</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WEB Related</controllingFieldValue>
+            <valueName>No reply on WEB request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WEB Related</controllingFieldValue>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <controllingFieldValue>General Complaint/Compliment</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WEB Related</controllingFieldValue>
+            <valueName>Website not detailed regarding specifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <controllingFieldValue>Customer Inventory Terms</controllingFieldValue>
+            <controllingFieldValue>Commission Approval Request (COMAR)</controllingFieldValue>
+            <controllingFieldValue>Freight Absorption Request</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>Customer Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <controllingFieldValue>Customer Inventory Terms</controllingFieldValue>
+            <controllingFieldValue>Commission Approval Request (COMAR)</controllingFieldValue>
+            <controllingFieldValue>Freight Absorption Request</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>Internal Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SalesForce Admin Feedback</controllingFieldValue>
+            <controllingFieldValue>General Complaint/Compliment</controllingFieldValue>
+            <valueName>Complaint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SalesForce Admin Feedback</controllingFieldValue>
+            <controllingFieldValue>General Complaint/Compliment</controllingFieldValue>
+            <valueName>Compliment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Portal Request</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Customer Portal Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Compliance_Documents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Conflict Minerals document copies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Datasheet request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>ITC / Trade Compliance related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Return</controllingFieldValue>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>RoHs Certificate request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <controllingFieldValue>Return</controllingFieldValue>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Technical Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return</controllingFieldValue>
+            <valueName>Existing Return status request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return</controllingFieldValue>
+            <valueName>New Return request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Follow up existing order status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Lead Time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Long leadtime</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>MOQ too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Order Confirmation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Price too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Product EOL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Quote status request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Quote still valid/ extensions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Sample request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Stock check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Safety stock not met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order &amp; Offer Administration</controllingFieldValue>
+            <valueName>Unfavorable Incoterm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Carrier damaged package</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Carrier delivered to wrong consignee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Carrier guidelines not followed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Early delivery compared to CRD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Incorrect batch size</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Incorrect carrier or forwarder used</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Incorrect shipping papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Missing CoO/CoC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Missing custom invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Missing delivery papers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>No pre-alert on delivery advance or delay against CSD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Packing policy from customer not compliant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Shipment delivered to wrong destination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Shipping instruction not followed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Wrong freight charge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Wrong product received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Logistics</controllingFieldValue>
+            <valueName>Wrong quantity received/ short shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Complaint/Compliment</controllingFieldValue>
+            <valueName>Catalogue/Brochure information incorrect/unclear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Complaint/Compliment</controllingFieldValue>
+            <valueName>Lack of product knowledge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Complaint/Compliment</controllingFieldValue>
+            <valueName>No response to query</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Complaint/Compliment</controllingFieldValue>
+            <valueName>Response time too long</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

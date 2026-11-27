@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Bypass Non Nirvana Accounts refernce on QL</description>
+        <name>Bypass_Non_Nirvana_Accounts</name>
+        <label>Bypass Non Nirvana Accounts</label>
+        <locationX>275</locationX>
+        <locationY>1043</locationY>
+        <defaultConnector>
+            <targetReference>Update_Quotelines_with_Cust_ERP_ID_and_Target_BP_No</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Bypass_Acc_Record_Type</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Fetch_Business_Name_Accounts_Childs.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Account_Record_Type_SAP_Noblelight.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Fetch_Business_Name_Accounts_Childs.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Account_Record_Type_QAD.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <label>Bypass Acc Record Type</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check Quote have Bussiness Name Account Only</description>
+        <name>Check_Quote_have_Bussiness_Name_Account_Only</name>
+        <label>Check Quote have Bussiness Name Account Only?</label>
+        <locationX>473</locationX>
+        <locationY>611</locationY>
+        <defaultConnectorLabel>Not Have C2 Account</defaultConnectorLabel>
+        <rules>
+            <name>Have_C2_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Quote_Header_Details.SBQQ__Account__r.DW_Account_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Business Name</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Fetch_Business_Name_Accounts_Childs</targetReference>
+            </connector>
+            <label>HaveC2AccountcheckChild</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
+        <name>If_Bypass_Enabled</name>
+        <label>If Bypass Enabled?</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Get_Quote_Header_Details</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Enabled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Is Enabled</label>
+        </rules>
+    </decisions>
+    <description>This process updates Quote Lines associated with existing customers (Prospect and Matured) by maintaining accurate customer reference details. The update is triggered when relevant customer information changes, ensuring Quote Lines remain consistent with the latest customer data for downstream processing and integrations.(Without C3 Reference and bypass for Noblelight and QAD) Updated as Per Sold to Account Groups</description>
+    <environments>Default</environments>
+    <interviewLabel>Customer Reference Update on Quote Lines – Existing Customers {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Customer Reference Populate on Quote Lines – Existing Customers</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Fetch Business Name Accounts Childs</description>
+        <name>Fetch_Business_Name_Accounts_Childs</name>
+        <label>Fetch Business Name Accounts Childs</label>
+        <locationX>275</locationX>
+        <locationY>719</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Account_Record_Type_SAP_Noblelight</targetReference>
+        </connector>
+        <filterLogic>1 AND ((2 AND 4 ) OR (3 AND ( 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 12 OR 13 OR 14 OR 15 OR 16 ))) AND 11 AND 17 AND 18</filterLogic>
+        <filters>
+            <field>ParentId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SBQQ__Quote__r.SBQQ__Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>DW_Account_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Prospect Customer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DW_Account_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer Name</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Prospect Customer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold to - H001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold to - W001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold To/Ship To - 0001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold-to party (OPSL) - 0001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold-to party - ZCUS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer-Sold To Role</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Excelitas_Site_Lookup__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Excelitas_Site__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer int number assgnmnt - DEBI</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QioDebitoren Europäische Union - DEEU</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>End Customers - ZEND</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold To - P001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Bill To - 0001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Target_BP_Number__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Client_Side_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Bypass Account Reference when Account Record Type is Noblelight or QAD</description>
+        <name>Get_Account_Record_Type_QAD</name>
+        <label>Get Account Record Type(QAD)</label>
+        <locationX>275</locationX>
+        <locationY>935</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Bypass_Non_Nirvana_Accounts</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Account</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QAD</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Bypass Account Reference when Account Record Type is Noblelight or QAD</description>
+        <name>Get_Account_Record_Type_SAP_Noblelight</name>
+        <label>Get Account Record Type(SAP_Noblelight)</label>
+        <locationX>275</locationX>
+        <locationY>827</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Account_Record_Type_QAD</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Account</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SAP_Noblelight</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>This record determines whether bypassing standard validations or logic is permitted.</description>
+        <name>Get_Bypass_Record</name>
+        <label>Get Bypass Record</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_Bypass_Enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Quote_Line_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Quote Header Details</description>
+        <name>Get_Quote_Header_Details</name>
+        <label>Get Quote Header Details</label>
+        <locationX>473</locationX>
+        <locationY>503</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Quote_have_Bussiness_Name_Account_Only</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SBQQ__Quote__r.SBQQ__Account__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SBQQ__Quote__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update Quotelines with Cust ERP ID and Target BP No</description>
+        <name>Update_Quotelines_with_Cust_ERP_ID_and_Target_BP_No</name>
+        <label>Update Quotelines with Cust ERP ID and Target BP No</label>
+        <locationX>407</locationX>
+        <locationY>1151</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Excelitas_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Fetch_Business_Name_Accounts_Childs.Excelitas_Site_Lookup__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Customer_ERP_ID__c</field>
+            <value>
+                <elementReference>Fetch_Business_Name_Accounts_Childs.Client_Side_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Target_BP_Number__c</field>
+            <value>
+                <elementReference>Fetch_Business_Name_Accounts_Childs.Target_BP_Number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Excelitas_Site__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Customer_ERP_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>SBQQ__QuoteLine__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

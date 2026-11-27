@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>German_Munition_List__c</fullName>
+    <description>German Munition List for defense products</description>
+    <label>German Munition List</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ohne Angabe</fullName>
+                <default>false</default>
+                <label>Ohne Angabe</label>
+            </value>
+            <value>
+                <fullName>V_ALT1A</fullName>
+                <default>false</default>
+                <label>V_ALT1A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

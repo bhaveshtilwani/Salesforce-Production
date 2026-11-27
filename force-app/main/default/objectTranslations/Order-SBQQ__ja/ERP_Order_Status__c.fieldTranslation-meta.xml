@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ERP Order Status --></label>
+    <name>ERP_Order_Status__c</name>
+    <picklistValues>
+        <masterLabel>Accepted but on Hold in QAD</masterLabel>
+        <translation><!-- Accepted but on Hold in QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accepted into QAD</masterLabel>
+        <translation><!-- Accepted into QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Revised PO</masterLabel>
+        <translation><!-- Awaiting Revised PO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled</masterLabel>
+        <translation><!-- Canceled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Debooking</masterLabel>
+        <translation><!-- Closed Debooking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Duplicate</masterLabel>
+        <translation><!-- Closed Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Lost</masterLabel>
+        <translation><!-- Closed Lost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed QC call off done- deleted</masterLabel>
+        <translation><!-- Closed QC call off done- deleted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completely Processed</masterLabel>
+        <translation><!-- Completely Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confirm Shipment Info</masterLabel>
+        <translation><!-- Confirm Shipment Info --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Card Check</masterLabel>
+        <translation><!-- Credit Card Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Hold</masterLabel>
+        <translation><!-- Credit Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Hold</masterLabel>
+        <translation><!-- Customer Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivered</masterLabel>
+        <translation><!-- Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Draft</masterLabel>
+        <translation><!-- Draft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hold - Other</masterLabel>
+        <translation><!-- Hold - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Process</masterLabel>
+        <translation><!-- In Process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoiced</masterLabel>
+        <translation><!-- Invoiced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Letter of Credit</masterLabel>
+        <translation><!-- Letter of Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Submitted to QAD Yet (CS &amp; TS)</masterLabel>
+        <translation><!-- Not Submitted to QAD Yet (CS &amp; TS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Yet Processed</masterLabel>
+        <translation><!-- Not Yet Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Order</masterLabel>
+        <translation><!-- Open Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opened in Error</masterLabel>
+        <translation><!-- Opened in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Completed</masterLabel>
+        <translation><!-- Order Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order In Progress</masterLabel>
+        <translation><!-- Order In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Part Number Hold</masterLabel>
+        <translation><!-- Part Number Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Processed</masterLabel>
+        <translation><!-- Partially Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Clarifications of Discount</masterLabel>
+        <translation><!-- Pending Clarifications of Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Place Holder only for Operations</masterLabel>
+        <translation><!-- Place Holder only for Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prepaid</masterLabel>
+        <translation><!-- Prepaid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing Issue</masterLabel>
+        <translation><!-- Pricing Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Sent</masterLabel>
+        <translation><!-- Quote Sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stop Ship</masterLabel>
+        <translation><!-- Stop Ship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit to QAD</masterLabel>
+        <translation><!-- Submit to QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit to QADDEV</masterLabel>
+        <translation><!-- Submit to QADDEV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submitted for Approval</masterLabel>
+        <translation><!-- Submitted for Approval --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax Hold</masterLabel>
+        <translation><!-- Tax Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Update QAD</masterLabel>
+        <translation><!-- Update QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Info from Customer</masterLabel>
+        <translation><!-- Waiting for Info from Customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

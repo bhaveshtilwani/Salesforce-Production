@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQU__Generate_Renewal_Quote_Days_Before_End__c</fullName>
+    <defaultValue>30</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Specifies how many days before the end of the contract should we auto generate the renewal Quote.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Specifies how many days before the end of the contract should we auto generate the renewal Quote.</inlineHelpText>
+    <label>Generate Renewal Quote ? Days Before End</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

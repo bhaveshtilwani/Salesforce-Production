@@ -1,0 +1,60 @@
+<!--
+    @description       : This Order Line Split Quantity LWC is called from Order Product page
+    @author            : Jade Global
+    @last modified on  : 08-26-2024
+    @last modified by  : Ricardo Carrera
+    Modifications Log
+    Ver   Date         Author             Modification
+    1.0   02-18-2021   Jade Global        Initial Version
+    2.0   08-26-2024   Ricardo Carrera    New functionality to make the component independent
+    3.0   01-29-2025   Ricardo Carrera    Allow user to select line number
+-->
+<template>
+    <template lwc:if={showSpinner}>
+        <div class="spinnerContainer">
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </div>
+    </template>
+    <header class="slds-modal__header">
+        <h2 class="slds-modal__title slds-hyphenate slds-text-heading_small"><strong>Split Quantity</strong></h2>
+    </header>
+    <div class="slds-modal__content slds-var-p-around_large" id="modal-content-id-1">
+        <div class="slds-size_9-of-12 slds-align_absolute-center slds-var-m-bottom_medium">
+            <lightning-card title="Original Order Line">
+                <div class="slds-var-p-horizontal_xx-small slds-grid slds-wrap">
+                    <template for:each={orderFieldsToDisplay} for:item="field">
+                        <div class="slds-col slds-size_1-of-2" key={field.fieldName}>
+                            <div class="slds-var-m-around_small">
+                                <div class="slds-text-title">{field.label}</div>
+                                <div>{field.value}</div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </lightning-card>
+        </div>
+        <div class="slds-size_6-of-12 slds-align_absolute-center">
+            <lightning-input
+                type="number"
+                name="Quantity"
+                label="Enter New Quantity"
+                placeholder="New quantity should be less than the original quantity"
+                onchange={handleQuantityChange}
+                class="slds-size_6-of-12 slds-var-p-horizontal_small"
+                required
+            ></lightning-input>
+            <lightning-input
+                type="number"
+                name="Line Number"
+                label="Enter New Line Number"
+                placeholder="Leave blank to use the next available line number"
+                onchange={handleLineNumberChange}
+                class="slds-size_6-of-12 slds-var-p-horizontal_small"
+            ></lightning-input>
+        </div>
+    </div>
+    <footer class="slds-modal__footer">
+        <button class="slds-button slds-button_brand" onclick={handleSplitQuantity}><label>Split Quantity</label></button>
+        <button class="slds-button slds-button_text-destructive" onclick={handleCancel}><label>Cancel</label></button>
+    </footer>
+</template>

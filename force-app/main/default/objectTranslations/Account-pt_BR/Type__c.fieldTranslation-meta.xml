@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the start of the ERP customer ID for Toronto QAD --></help>
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>EO</masterLabel>
+        <translation><!-- EO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EU</masterLabel>
+        <translation><!-- EU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EX</masterLabel>
+        <translation><!-- EX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ</masterLabel>
+        <translation><!-- ZZ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

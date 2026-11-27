@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RMA_Case_Reason__c</fullName>
+    <label>RMA Case Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Calibration</fullName>
+                <default>false</default>
+                <label>Calibration</label>
+            </value>
+            <value>
+                <fullName>Consignment Return</fullName>
+                <default>false</default>
+                <label>Consignment Return</label>
+            </value>
+            <value>
+                <fullName>Damaged product delivered</fullName>
+                <default>false</default>
+                <label>Damaged product delivered</label>
+            </value>
+            <value>
+                <fullName>Evaluation</fullName>
+                <default>false</default>
+                <label>Evaluation</label>
+            </value>
+            <value>
+                <fullName>Faulty product delivered</fullName>
+                <default>false</default>
+                <label>Faulty product delivered</label>
+            </value>
+            <value>
+                <fullName>Loaner / demo return</fullName>
+                <default>false</default>
+                <label>Loaner / demo return</label>
+            </value>
+            <value>
+                <fullName>Product delivered too early</fullName>
+                <default>false</default>
+                <label>Product delivered too early</label>
+            </value>
+            <value>
+                <fullName>Product no longer working as it should</fullName>
+                <default>false</default>
+                <label>Product no longer working as it should</label>
+            </value>
+            <value>
+                <fullName>Request from customer to scrap / recycle the product for them</fullName>
+                <default>false</default>
+                <label>Request from customer to scrap / recycle the product for them</label>
+            </value>
+            <value>
+                <fullName>Upgrade</fullName>
+                <default>false</default>
+                <label>Upgrade</label>
+            </value>
+            <value>
+                <fullName>Wrong product delivered</fullName>
+                <default>false</default>
+                <label>Wrong product delivered</label>
+            </value>
+            <value>
+                <fullName>Wrong quantity delivered</fullName>
+                <default>false</default>
+                <label>Wrong quantity delivered</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

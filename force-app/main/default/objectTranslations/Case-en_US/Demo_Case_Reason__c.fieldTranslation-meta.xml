@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Reason --></label>
+    <name>Demo_Case_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Demo Feedback</masterLabel>
+        <translation><!-- Demo Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loaned Demo</masterLabel>
+        <translation><!-- Loaned Demo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opened in Error</masterLabel>
+        <translation><!-- Opened in Error --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tax Classification --></label>
+    <name>Tax_Classification__c</name>
+    <picklistValues>
+        <masterLabel>0 - Exempt</masterLabel>
+        <translation><!-- 0 - Exempt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>0 - Output Tax at 0%</masterLabel>
+        <translation><!-- 0 - Output Tax at 0% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 - Liable PST+GST Taxes</masterLabel>
+        <translation><!-- 1 - Liable PST+GST Taxes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 - Output Tax (std)</masterLabel>
+        <translation><!-- 5 - Output Tax (std) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6 - Output Tax 8%</masterLabel>
+        <translation><!-- 6 - Output Tax 8% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 - Output Tax 9%</masterLabel>
+        <translation><!-- 7 - Output Tax 9% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9 - No Tax-Out of scope</masterLabel>
+        <translation><!-- 9 - No Tax-Out of scope --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E - export Vat 0% sales</masterLabel>
+        <translation><!-- E - export Vat 0% sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R - Domestic Vat13,6%</masterLabel>
+        <translation><!-- R - Domestic Vat13,6% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y - XT 7%</masterLabel>
+        <translation><!-- Y - XT 7% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z - No Tax-Outofscope-XT</masterLabel>
+        <translation><!-- Z - No Tax-Outofscope-XT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

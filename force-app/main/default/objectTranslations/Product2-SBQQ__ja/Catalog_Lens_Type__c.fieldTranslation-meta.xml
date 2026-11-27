@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Catalog Lens Type --></label>
+    <name>Catalog_Lens_Type__c</name>
+    <picklistValues>
+        <masterLabel>Aspherical Condenser Lens</masterLabel>
+        <translation><!-- Aspherical Condenser Lens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biconcave Lens</masterLabel>
+        <translation><!-- Biconcave Lens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bioconvex Lens</masterLabel>
+        <translation><!-- Bioconvex Lens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cylindrical Lens</masterLabel>
+        <translation><!-- Cylindrical Lens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plano-Concave Lens</masterLabel>
+        <translation><!-- Plano-Concave Lens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plano-Convex Lens</masterLabel>
+        <translation><!-- Plano-Convex Lens --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

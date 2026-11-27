@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Selection --></label>
+    <name>Product_Selection__c</name>
+    <picklistValues>
+        <masterLabel>All</masterLabel>
+        <translation><!-- All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order</masterLabel>
+        <translation><!-- Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Only</masterLabel>
+        <translation><!-- Quote Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote or Unquoted</masterLabel>
+        <translation><!-- Quote or Unquoted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unquoted Only</masterLabel>
+        <translation><!-- Unquoted Only --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

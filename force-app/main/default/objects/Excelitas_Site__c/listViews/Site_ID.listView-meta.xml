@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_ID</fullName>
+    <columns>NAME</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>Customer_Group__c</columns>
+    <columns>Sales_District__c</columns>
+    <columns>Sales_Group__c</columns>
+    <columns>Sales_Office__c</columns>
+    <columns>Price_List_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Site + ID</label>
+    <sharedTo>
+        <group>Administrators</group>
+        <group>Commercial_Account_Notification</group>
+    </sharedTo>
+</ListView>

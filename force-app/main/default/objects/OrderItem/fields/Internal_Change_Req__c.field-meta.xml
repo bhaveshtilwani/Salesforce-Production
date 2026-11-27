@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Change_Req__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Tick box to identify that this is an internal order change request not coming from the customer.</description>
+    <inlineHelpText>Change request from operations, not the customer.</inlineHelpText>
+    <label>Internal Change Req</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

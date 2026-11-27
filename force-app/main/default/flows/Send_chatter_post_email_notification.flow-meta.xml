@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_custom_bell_Icon_notification_to_the_group_members</name>
+        <label>Send custom bell Icon notification to the group members</label>
+        <locationX>50</locationX>
+        <locationY>1655</locationY>
+        <actionName>customNotificationAction</actionName>
+        <actionType>customNotificationAction</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>customNotifTypeId</name>
+            <value>
+                <elementReference>Get_Custom_Notification_Type.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recipientIds</name>
+            <value>
+                <elementReference>recipientIds</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>title</name>
+            <value>
+                <stringValue>Your group is tagged</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>body</name>
+            <value>
+                <elementReference>NotificationTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>targetId</name>
+            <value>
+                <elementReference>$Record.ParentId</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>customNotificationAction</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <description>This element sends mail to the give email address of the group</description>
+        <name>send_Mail_to_group_email</name>
+        <label>send Mail to group email</label>
+        <locationX>138</locationX>
+        <locationY>1187</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Copy_1_of_Recipient_Ids</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>DL-EU-GOE-Sales_Semi_EMEA@excelitas.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>You group is tagged in a chatter</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Copy_1_of_Recipient_Ids</name>
+        <label>Recipient Ids 1</label>
+        <locationX>138</locationX>
+        <locationY>1295</locationY>
+        <assignmentItems>
+            <assignToReference>recipientIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Get_Users_From_Member_Ids.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_over_collaboration_group_members</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Copy_2_of_Recipient_Ids</name>
+        <label>Recipient Ids 2</label>
+        <locationX>666</locationX>
+        <locationY>1079</locationY>
+        <assignmentItems>
+            <assignToReference>recipientIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Get_Users_From_Member_Ids.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_over_collaboration_group_members</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Group_Name_mention_check</name>
+        <label>Group Name mention check</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_the_feedBody_contains_group_name</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>checkFeedItemBody</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Collaboration_Group_Records</targetReference>
+            </connector>
+            <label>If the feedBody contains group name</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_FeedItem_created_by_a_group_members</name>
+        <label>Is FeedItem created by a group members?</label>
+        <locationX>600</locationX>
+        <locationY>971</locationY>
+        <defaultConnector>
+            <targetReference>Loop_over_collaboration_group_members</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_created_by_group_member</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CreatedById</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Users_From_Member_Ids.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_groupMembers_Name_is_Karsten_Fischer</targetReference>
+            </connector>
+            <label>If created by group member</label>
+        </rules>
+        <rules>
+            <name>If_not_created_by_group_member</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CreatedById</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Users_From_Member_Ids.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Recipient_Ids</targetReference>
+            </connector>
+            <label>If not created by group member</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_groupMembers_Name_is_Karsten_Fischer</name>
+        <label>Is groupMembers Name is Karsten Fischer</label>
+        <locationX>270</locationX>
+        <locationY>1079</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IF_the_member_is_Karsten</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy:User.FirstName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Karsten</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy:User.LastName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Fischer</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>send_Mail_to_group_email</targetReference>
+            </connector>
+            <label>IF the member is Karsten</label>
+        </rules>
+    </decisions>
+    <description>To send the email and bell notifications to group members when the group is mentioned in the chatter post</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>checkFeedItemBody</name>
+        <dataType>Boolean</dataType>
+        <expression>CONTAINS({!$Record.Body}, &apos;@Sales EMEA&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>SanititzedFeedItemBody</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(SUBSTITUTE({!$Record.Body}, &quot;&lt;p&gt;&quot;, &quot;&quot;), &quot;&lt;/p&gt;&quot;, &quot;&quot;)</expression>
+    </formulas>
+    <interviewLabel>Chatter post email notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send chatter post email notification</label>
+    <loops>
+        <description>This element loops over all the fetched group members of the queried group</description>
+        <name>Loop_over_collaboration_group_members</name>
+        <label>Loop over collaboration group members</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <collectionReference>Membersofcollaborationgroup</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Get_Users_From_Member_Ids</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Send_custom_bell_Icon_notification_to_the_group_members</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This element is used for getting all the members of the queries group</description>
+        <name>Get_Collaboration_Group_Members</name>
+        <label>Get Collaboration Group Members</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_over_collaboration_group_members</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CollaborationGroupId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fetchedGroups.Id</elementReference>
+            </value>
+        </filters>
+        <object>CollaborationGroupMember</object>
+        <outputReference>Membersofcollaborationgroup</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>MemberId</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>element used for getting the collaboration group records</description>
+        <name>Get_Collaboration_Group_Records</name>
+        <label>Get Collaboration Group Records</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Collaboration_Group_Members</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sales EMEA GOE</stringValue>
+            </value>
+        </filters>
+        <object>CollaborationGroup</object>
+        <outputReference>fetchedGroups</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>This element is used to get the custom notification type id</description>
+        <name>Get_Custom_Notification_Type</name>
+        <label>Get Custom Notification Type</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Group_Name_mention_check</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Chatter_Group_Notification</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CustomNotificationType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Users_From_Member_Ids</name>
+        <label>Get Users From Member Ids</label>
+        <locationX>600</locationX>
+        <locationY>863</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_FeedItem_created_by_a_group_members</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_over_collaboration_group_members.MemberId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Custom_Notification_Type</targetReference>
+        </connector>
+        <object>FeedItem</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>This is an email template that is sent to an email</description>
+        <name>EmailTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello,
+
+Your group has been tagged in a chatter post. 
+
+Message: {!SanititzedFeedItemBody}
+
+Please click the link to go to the record directly:  https://excelitas--implprt4.sandbox.my.salesforce.com/{!$Record.ParentId}
+
+Thank you!</text>
+    </textTemplates>
+    <textTemplates>
+        <name>NotificationTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Hello,
+Your group has been tagged in a chatter post. Please click here to go to the record directly.
+Thank you!</text>
+    </textTemplates>
+    <textTemplates>
+        <name>PostEmailnotification</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello Testing&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>EmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>EmailAddresses</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>emails</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>fetchedGroups</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>CollaborationGroup</objectType>
+    </variables>
+    <variables>
+        <name>groupId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>GroupMembersCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>CollaborationGroupMember</objectType>
+    </variables>
+    <variables>
+        <name>Membersofcollaborationgroup</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>CollaborationGroupMember</objectType>
+    </variables>
+    <variables>
+        <name>RecipientId</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recipientIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

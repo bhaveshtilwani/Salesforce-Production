@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubApplication__c</fullName>
+    <label>SubApplication</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Automated Test Equipment</fullName>
+                <default>false</default>
+                <label>Automated Test Equipment</label>
+            </value>
+            <value>
+                <fullName>Ballistic Missile</fullName>
+                <default>false</default>
+                <label>Ballistic Missile</label>
+            </value>
+            <value>
+                <fullName>Commercial HuD</fullName>
+                <default>false</default>
+                <label>Commercial HuD</label>
+            </value>
+            <value>
+                <fullName>Countermeasure</fullName>
+                <default>false</default>
+                <label>Countermeasure</label>
+            </value>
+            <value>
+                <fullName>Fuze</fullName>
+                <default>false</default>
+                <label>Fuze</label>
+            </value>
+            <value>
+                <fullName>Gas Turbine Engine</fullName>
+                <default>false</default>
+                <label>Gas Turbine Engine</label>
+            </value>
+            <value>
+                <fullName>GPS</fullName>
+                <default>false</default>
+                <label>GPS</label>
+            </value>
+            <value>
+                <fullName>Ground Vehicle</fullName>
+                <default>false</default>
+                <label>Ground Vehicle</label>
+            </value>
+            <value>
+                <fullName>HEL</fullName>
+                <default>false</default>
+                <label>HEL</label>
+            </value>
+            <value>
+                <fullName>Helmet Mounted Display</fullName>
+                <default>false</default>
+                <label>Helmet Mounted Display</label>
+            </value>
+            <value>
+                <fullName>HH Surveillance</fullName>
+                <default>false</default>
+                <label>HH Surveillance</label>
+            </value>
+            <value>
+                <fullName>Lasercom</fullName>
+                <default>false</default>
+                <label>Lasercom</label>
+            </value>
+            <value>
+                <fullName>Laser Range Finding</fullName>
+                <default>false</default>
+                <label>Laser Range Finding</label>
+            </value>
+            <value>
+                <fullName>Laser Warning</fullName>
+                <default>false</default>
+                <label>Laser Warning</label>
+            </value>
+            <value>
+                <fullName>Military HuD</fullName>
+                <default>false</default>
+                <label>Military HuD</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Missile Defense System</fullName>
+                <default>false</default>
+                <label>Missile Defense System</label>
+            </value>
+            <value>
+                <fullName>Missile Warning &amp; Targeting</fullName>
+                <default>false</default>
+                <label>Missile Warning &amp; Targeting</label>
+            </value>
+            <value>
+                <fullName>Night Vision Goggles</fullName>
+                <default>false</default>
+                <label>Night Vision Goggles</label>
+            </value>
+            <value>
+                <fullName>Power Grid Crowbar</fullName>
+                <default>false</default>
+                <label>Power Grid Crowbar</label>
+            </value>
+            <value>
+                <fullName>Precision Guided Munition</fullName>
+                <default>false</default>
+                <label>Precision Guided Munition</label>
+            </value>
+            <value>
+                <fullName>Proximity Sensing</fullName>
+                <default>false</default>
+                <label>Proximity Sensing</label>
+            </value>
+            <value>
+                <fullName>Pulsed Power</fullName>
+                <default>false</default>
+                <label>Pulsed Power</label>
+            </value>
+            <value>
+                <fullName>Radar</fullName>
+                <default>false</default>
+                <label>Radar</label>
+            </value>
+            <value>
+                <fullName>Satellite</fullName>
+                <default>false</default>
+                <label>Satellite</label>
+            </value>
+            <value>
+                <fullName>Simulation</fullName>
+                <default>false</default>
+                <label>Simulation</label>
+            </value>
+            <value>
+                <fullName>Soldier Systems</fullName>
+                <default>false</default>
+                <label>Soldier Systems</label>
+            </value>
+            <value>
+                <fullName>Sonar</fullName>
+                <default>false</default>
+                <label>Sonar</label>
+            </value>
+            <value>
+                <fullName>Surveillance</fullName>
+                <default>false</default>
+                <label>Surveillance</label>
+            </value>
+            <value>
+                <fullName>Tactical Missile</fullName>
+                <default>false</default>
+                <label>Tactical Missile</label>
+            </value>
+            <value>
+                <fullName>Target Acquisition</fullName>
+                <default>false</default>
+                <label>Target Acquisition</label>
+            </value>
+            <value>
+                <fullName>Technology</fullName>
+                <default>false</default>
+                <label>Technology</label>
+            </value>
+            <value>
+                <fullName>Through Life Support</fullName>
+                <default>false</default>
+                <label>Through Life Support</label>
+            </value>
+            <value>
+                <fullName>Weapon Sights</fullName>
+                <default>false</default>
+                <label>Weapon Sights</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Location_Required</fullName>
+    <active>true</active>
+    <description>Location required for negative quantiles in Toronto</description>
+    <errorConditionFormula>AND(
+ISBLANK( Storage_Location__c ),
+ISPICKVAL( Site__c , &quot;Toronto&quot;),
+ Quantity__c &lt;0)</errorConditionFormula>
+    <errorMessage>Location is required for Negative Quantities</errorMessage>
+</ValidationRule>

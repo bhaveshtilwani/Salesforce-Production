@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Batam</description>
+        <name>ERP_Site_Batam</name>
+        <label>ERP Site = Batam</label>
+        <locationX>4631</locationX>
+        <locationY>2231</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_PCO_Kelheim</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site = Batam</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Batam</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Batam</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_Batam</targetReference>
+            </connector>
+            <label>TRUE_ERP Site = Batam</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Asslar</description>
+        <name>ERP_Site_Equals_to_Asslar</name>
+        <label>ERP Site Equals to Asslar</label>
+        <locationX>2551</locationX>
+        <locationY>1367</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Boulder</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Asslar</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Asslar</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Asslar</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_Asslar</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Asslar</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Billerica</description>
+        <name>ERP_Site_Equals_to_Billerica</name>
+        <label>ERP Site Equals to Billerica</label>
+        <locationX>439</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Goettingen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Billerica</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Billerica</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Billerica</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_site_Billerica</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Billerica</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Boulder</description>
+        <name>ERP_Site_Equals_to_Boulder</name>
+        <label>ERP Site Equals to Boulder</label>
+        <locationX>2815</locationX>
+        <locationY>1475</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_ESG</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Boulder</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Boulder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Boulder</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_Boulder</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Boulder</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to ESG L&amp;D</description>
+        <name>ERP_Site_Equals_to_ESG</name>
+        <label>ERP Site Equals to ESG L&amp;D</label>
+        <locationX>3079</locationX>
+        <locationY>1583</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_ESG_Optics</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to ESG</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_ESG_L_D</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ESG L&amp;D</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_ESG_L_D</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to ESG L&amp;D</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to QSG</description>
+        <name>ERP_Site_Equals_to_ESG_Optics</name>
+        <label>ERP Site Equals to ESG Optics</label>
+        <locationX>3342</locationX>
+        <locationY>1691</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Shenzhen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to QSG</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_ESG_Optics</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ESG Optics</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_ESG_Optics</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to ESG Optics</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Goettingen</description>
+        <name>ERP_Site_Equals_to_Goettingen</name>
+        <label>ERP Site Equals to Goettingen</label>
+        <locationX>703</locationX>
+        <locationY>611</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Hamble</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Goettingen</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Goettingen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Goettingen</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Site_Goettingen_Rec</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Goettingen</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Hamble</description>
+        <name>ERP_Site_Equals_to_Hamble</name>
+        <label>ERP Site Equals to Hamble</label>
+        <locationX>967</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Miamisburg</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Hamble</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Hamble</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hamble</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_Hamble_Rec</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Hamble</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Miamisburg</description>
+        <name>ERP_Site_Equals_to_Miamisburg</name>
+        <label>ERP Site Equals to Miamisburg</label>
+        <locationX>1231</locationX>
+        <locationY>827</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Montreal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Miamisburg</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Miamisburg</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Miamisburg</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Miamisburg</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Miamisburg</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Montreal</description>
+        <name>ERP_Site_Equals_to_Montreal</name>
+        <label>ERP Site Equals to Montreal</label>
+        <locationX>1495</locationX>
+        <locationY>935</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Munich</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Montreal</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Montreal</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Montreal</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Montreal</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Montreal</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Munich</description>
+        <name>ERP_Site_Equals_to_Munich</name>
+        <label>ERP Site Equals to Munich</label>
+        <locationX>1759</locationX>
+        <locationY>1043</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Salem</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Munich</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Munich</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Munich</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Munich</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Munich</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Salem</description>
+        <name>ERP_Site_Equals_to_Salem</name>
+        <label>ERP Site Equals to Salem</label>
+        <locationX>2023</locationX>
+        <locationY>1151</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Wiesbaden</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Salem</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Salem</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Salem</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_of_Salem</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Salem</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Shenzhen</description>
+        <name>ERP_Site_Equals_to_Shenzhen</name>
+        <label>ERP Site Equals to Shenzhen</label>
+        <locationX>3605</locationX>
+        <locationY>1799</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_St_Louis</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Shenzhen</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Shenzhen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Shenzhen</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_Shenzhen</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Shenzhen</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to St Louis</description>
+        <name>ERP_Site_Equals_to_St_Louis</name>
+        <label>ERP Site Equals to St Louis</label>
+        <locationX>3867</locationX>
+        <locationY>1907</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Toronto</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to St Louis</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_St_Louis</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>St Louis</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_St_Louis</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to St Louis</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Toronto</description>
+        <name>ERP_Site_Equals_to_Toronto</name>
+        <label>ERP Site Equals to Toronto</label>
+        <locationX>4127</locationX>
+        <locationY>2015</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Manila</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Toronto</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Toronto</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Toronto</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_Toronto</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Toronto</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Wiesbaden</description>
+        <name>ERP_Site_Equals_to_Wiesbaden</name>
+        <label>ERP Site Equals to Wiesbaden</label>
+        <locationX>2287</locationX>
+        <locationY>1259</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Asslar</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site Equals to Wiesbaden</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Equals_to_Wiesbaden</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Wiesbaden</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_of_Wiesbaden</targetReference>
+            </connector>
+            <label>TRUE_ERP Site Equals to Wiesbaden</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether ERP site is Equals to Manila</description>
+        <name>ERP_Site_Manila</name>
+        <label>ERP Site = Manila</label>
+        <locationX>4383</locationX>
+        <locationY>2123</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Batam</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Site = Manila</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Site_Manila</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Manila</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_Manila</targetReference>
+            </connector>
+            <label>TRUE_ERP Site = Manila</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ERP_Site_Noblelight</name>
+        <label>ERP Site = Noblelight</label>
+        <locationX>5060</locationX>
+        <locationY>2447</locationY>
+        <defaultConnectorLabel>No action</defaultConnectorLabel>
+        <rules>
+            <name>True_ERP_Site_Noblelight</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Noblelight</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_Noblelight</targetReference>
+            </connector>
+            <label>True ERP Site = Noblelight</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ERP_Site_PCO_Kelheim</name>
+        <label>ERP Site = PCO Kelheim</label>
+        <locationX>4862</locationX>
+        <locationY>2339</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Noblelight</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>False ERP = PCO Kelheim</defaultConnectorLabel>
+        <rules>
+            <name>True_ERP_Site_PCO_Kelheim</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PCO Kelheim</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Records_Of_PCO_Kelehim</targetReference>
+            </connector>
+            <label>True ERP Site = PCO Kelheim</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios.</description>
+        <name>Is_Bypass_Enabled</name>
+        <label>Is Bypass Enabled?</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Site_Equals_to_Billerica</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Enabled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>If Enabled</label>
+        </rules>
+    </decisions>
+    <description>Sets &apos;Excelitas Site&apos; based on Account’s &quot;ERP Site&quot;</description>
+    <environments>Default</environments>
+    <interviewLabel>Populate ERP site value to {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Populate ERP site value to</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This record determines whether bypassing standard validations or logic is permitted.</description>
+        <name>Get_Bypass_Record</name>
+        <label>Get Bypass Record</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Bypass_Enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Account_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Billerica</description>
+        <name>Get_Excelitas_site_Billerica</name>
+        <label>Get Excelitas site Billerica</label>
+        <locationX>176</locationX>
+        <locationY>611</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Billerica</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Billerica</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Goettingen</description>
+        <name>Get_Excelitas_Site_Goettingen_Rec</name>
+        <label>Get Excelitas Site Goettingen Rec</label>
+        <locationX>440</locationX>
+        <locationY>719</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Goettingen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Goettingen</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is ESG Optics</description>
+        <name>Get_Records_ESG_Optics</name>
+        <label>Get Records ESG Optics</label>
+        <locationX>3080</locationX>
+        <locationY>1799</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_ESG_Optics</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ESG Optics</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Miamisburg</description>
+        <name>Get_Records_Miamisburg</name>
+        <label>Get Records Miamisburg</label>
+        <locationX>968</locationX>
+        <locationY>935</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Miamisburg</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Miamisburg</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Montreal</description>
+        <name>Get_Records_Montreal</name>
+        <label>Get Records Montreal</label>
+        <locationX>1232</locationX>
+        <locationY>1043</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Montreal</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Montreal</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Munich</description>
+        <name>Get_Records_Munich</name>
+        <label>Get Records Munich</label>
+        <locationX>1496</locationX>
+        <locationY>1151</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Munich</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Munich</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Asslar</description>
+        <name>Get_Records_Of_Asslar</name>
+        <label>Get Records Of Asslar</label>
+        <locationX>2288</locationX>
+        <locationY>1475</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Asslar</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Asslar</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Batam</description>
+        <name>Get_Records_Of_Batam</name>
+        <label>Get Records Of Batam</label>
+        <locationX>4400</locationX>
+        <locationY>2339</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Excelitas_Site_Batam</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Batam</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Boulder</description>
+        <name>Get_Records_Of_Boulder</name>
+        <label>Get Records Of Boulder</label>
+        <locationX>2552</locationX>
+        <locationY>1583</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Boulder</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Boulder</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is ESG L&amp;D</description>
+        <name>Get_Records_Of_ESG_L_D</name>
+        <label>Get Records Of ESG L&amp;D</label>
+        <locationX>2816</locationX>
+        <locationY>1691</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_ESG_L_D</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ESG L&amp;D</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Hamble</description>
+        <name>Get_Records_Of_Hamble_Rec</name>
+        <label>Get Records Of Hamble Rec</label>
+        <locationX>704</locationX>
+        <locationY>827</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Hamble</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Hamble</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Manila</description>
+        <name>Get_Records_Of_Manila</name>
+        <label>Get Records Of Manila</label>
+        <locationX>4136</locationX>
+        <locationY>2231</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Excelitas_Site_Manila</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Manila</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Batam</description>
+        <name>Get_Records_Of_Noblelight</name>
+        <label>Get Records Of Noblelight</label>
+        <locationX>4928</locationX>
+        <locationY>2555</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Excelitas_Site_Noblelight</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Noblelight</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Batam</description>
+        <name>Get_Records_Of_PCO_Kelehim</name>
+        <label>Get Records Of PCO Kelehim</label>
+        <locationX>4664</locationX>
+        <locationY>2447</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Excelitas_Site_PCO_Kelheim</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PCO Kelheim</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Salem</description>
+        <name>Get_Records_of_Salem</name>
+        <label>Get Records of Salem</label>
+        <locationX>1760</locationX>
+        <locationY>1259</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Salem</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Salem</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Shenzhen</description>
+        <name>Get_Records_Of_Shenzhen</name>
+        <label>Get Records Of Shenzhen</label>
+        <locationX>3344</locationX>
+        <locationY>1907</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Shenzhen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Shenzhen</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is St Louis</description>
+        <name>Get_Records_Of_St_Louis</name>
+        <label>Get Records Of St Louis</label>
+        <locationX>3608</locationX>
+        <locationY>2015</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_St_Louis</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>St Louis</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Toronto</description>
+        <name>Get_Records_Of_Toronto</name>
+        <label>Get Records Of Toronto</label>
+        <locationX>3872</locationX>
+        <locationY>2123</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Toronto</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Toronto</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get Excelitas site which is Wiesbaden</description>
+        <name>Get_Records_of_Wiesbaden</name>
+        <label>Get Records of Wiesbaden</label>
+        <locationX>2024</locationX>
+        <locationY>1367</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Populate_Excelitas_Site_to_Wiesbaden</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Wiesbaden</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Batam&apos;, set Excelitas Site to the Batam</description>
+        <name>Excelitas_Site_Batam</name>
+        <label>Excelitas Site = Batam</label>
+        <locationX>4400</locationX>
+        <locationY>2447</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_Batam.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Manila&apos;, set Excelitas Site to the Manila</description>
+        <name>Excelitas_Site_Manila</name>
+        <label>Excelitas Site = Manila</label>
+        <locationX>4136</locationX>
+        <locationY>2339</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_Manila.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Batam&apos;, set Excelitas Site to the Batam</description>
+        <name>Excelitas_Site_Noblelight</name>
+        <label>Excelitas Site = Noblelight</label>
+        <locationX>4928</locationX>
+        <locationY>2663</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_Noblelight.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Batam&apos;, set Excelitas Site to the Batam</description>
+        <name>Excelitas_Site_PCO_Kelheim</name>
+        <label>Excelitas Site = PCO Kelheim</label>
+        <locationX>4664</locationX>
+        <locationY>2555</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_PCO_Kelehim.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Asslar&apos;, set Excelitas Site to the Asslar</description>
+        <name>Populate_Excelitas_Site_to_Asslar</name>
+        <label>Populate Excelitas Site to Asslar</label>
+        <locationX>2288</locationX>
+        <locationY>1583</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_Asslar.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Billerica&apos;, set Excelitas Site to the Billerica</description>
+        <name>Populate_Excelitas_Site_to_Billerica</name>
+        <label>Populate Excelitas Site to Billerica</label>
+        <locationX>176</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Excelitas_site_Billerica.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Boulder&apos;, set Excelitas Site to the Boulder</description>
+        <name>Populate_Excelitas_Site_to_Boulder</name>
+        <label>Populate Excelitas Site to Boulder</label>
+        <locationX>2552</locationX>
+        <locationY>1691</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_Boulder.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;ESG L&amp;D&apos;, set Excelitas Site to the ESG L&amp;D</description>
+        <name>Populate_Excelitas_Site_to_ESG_L_D</name>
+        <label>Populate Excelitas Site to ESG L&amp;D</label>
+        <locationX>2816</locationX>
+        <locationY>1799</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_ESG_L_D.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;ESG Optics&apos;, set Excelitas Site to the ESG Optics</description>
+        <name>Populate_Excelitas_Site_to_ESG_Optics</name>
+        <label>Populate Excelitas Site to ESG Optics</label>
+        <locationX>3080</locationX>
+        <locationY>1907</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_ESG_Optics.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Goettingen&apos;, set Excelitas Site to the Goettingen</description>
+        <name>Populate_Excelitas_Site_to_Goettingen</name>
+        <label>Populate Excelitas Site to Goettingen</label>
+        <locationX>440</locationX>
+        <locationY>827</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Site_Goettingen_Rec.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Hamble&apos;, set Excelitas Site to the Hamble</description>
+        <name>Populate_Excelitas_Site_to_Hamble</name>
+        <label>Populate Excelitas Site to Hamble</label>
+        <locationX>704</locationX>
+        <locationY>935</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_Hamble_Rec.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Miamisburg&apos;, set Excelitas Site to the Miamisburg</description>
+        <name>Populate_Excelitas_Site_to_Miamisburg</name>
+        <label>Populate Excelitas Site to Miamisburg</label>
+        <locationX>968</locationX>
+        <locationY>1043</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Miamisburg.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Montreal&apos;, set Excelitas Site to the Montreal</description>
+        <name>Populate_Excelitas_Site_to_Montreal</name>
+        <label>Populate Excelitas Site to Montreal</label>
+        <locationX>1232</locationX>
+        <locationY>1151</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Montreal.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Munich&apos;, set Excelitas Site to the Munich</description>
+        <name>Populate_Excelitas_Site_to_Munich</name>
+        <label>Populate Excelitas Site to Munich</label>
+        <locationX>1496</locationX>
+        <locationY>1259</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Munich.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Salem&apos;, set Excelitas Site to the Salem</description>
+        <name>Populate_Excelitas_Site_to_Salem</name>
+        <label>Populate Excelitas Site to Salem</label>
+        <locationX>1760</locationX>
+        <locationY>1367</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_of_Salem.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Shenzhen&apos;, set Excelitas Site to the Shenzhen</description>
+        <name>Populate_Excelitas_Site_to_Shenzhen</name>
+        <label>Populate Excelitas Site to Shenzhen</label>
+        <locationX>3344</locationX>
+        <locationY>2015</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_Shenzhen.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;St Louis&apos;, set Excelitas Site to the St Louis</description>
+        <name>Populate_Excelitas_Site_to_St_Louis</name>
+        <label>Populate Excelitas Site to St Louis</label>
+        <locationX>3608</locationX>
+        <locationY>2123</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_St_Louis.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Toronto&apos;, set Excelitas Site to the Toronto</description>
+        <name>Populate_Excelitas_Site_to_Toronto</name>
+        <label>Populate Excelitas Site to Toronto</label>
+        <locationX>3872</locationX>
+        <locationY>2231</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_Of_Toronto.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Account&apos;s ERP Site is &apos;Wiesbaden&apos;, set Excelitas Site to the Wiesbaden</description>
+        <name>Populate_Excelitas_Site_to_Wiesbaden</name>
+        <label>Populate Excelitas Site to  Wiesbaden</label>
+        <locationX>2024</locationX>
+        <locationY>1475</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_Records_of_Wiesbaden.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_Record</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

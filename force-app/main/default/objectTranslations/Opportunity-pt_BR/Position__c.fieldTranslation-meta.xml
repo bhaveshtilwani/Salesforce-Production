@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What is ETC&apos;s position relative to this opportunity? --></help>
+    <label><!-- Position? --></label>
+    <name>Position__c</name>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation><!-- Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Actively trying to enter this market</masterLabel>
+        <translation><!-- Actively trying to enter this market --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Go-To</masterLabel>
+        <translation><!-- Go-To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Late Comm</masterLabel>
+        <translation><!-- Late Comm --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

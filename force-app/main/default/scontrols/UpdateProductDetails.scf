@@ -1,0 +1,202 @@
+<html> 
+<head> 
+<script type="text/javascript"> 
+<!-- 
+
+// Default to true so user will have to confirm if they try to close window 
+
+var userClose = true; 
+
+// If we are programmatically closing the window, set flag so user is not asked to confirm 
+function closeWindow()
+{ 
+	userClose = false; 
+	window.close(); 
+} 
+
+// Perform query and calculations, if successful, refresh Opp and close popup 
+
+function onLoad() 
+{ 
+	if (getVoiceUnits() == true) 
+	{ 
+window.parent.parent.location.replace("https://na1.salesforce.com/{!PKIQuotes_ID}");
+		closeWindow(); 
+	} 
+	else 
+	{ 
+		// Close popup without refreshing Opp 
+		closeWindow(); 
+	} 
+} // onLoad() 
+
+// Triggered when the window close event is triggered 
+
+function onBeforeUnload() 
+{ 
+	// Check to see if user initiated the close or if we tried to close it due to script completion 
+	if (userClose) 
+	{ 
+		event.returnValue = "salesforce.com is currently updating total amount for this Quote. If you close this window, the calculation may not complete. Please click 'Cancel' to allow update to complete."; 
+	} 
+} 
+
+function onBlur() 
+{ 
+	self.focus(); 
+	return false; 
+} 
+
+function getVoiceUnits()
+{ 
+
+try
+	{ 
+	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); 
+	} 
+catch(e)
+	{ 
+	err = e.message; 
+	alert(err); 
+	return false; 
+	} 
+
+var url = "{!API_Enterprise_Server_URL_70}"; 
+//var url = "https://na1.salesforce.com/services/Soap/u/7.0"; 
+
+xmlhttp.Open("POST",url,false); 
+xmlhttp.setRequestHeader("Content-Type","text/xml"); 
+xmlhttp.setRequestHeader("soapAction","update"); 
+
+// Create an XML doc to use for reading our query results 
+
+// Use appropriate progID for system/browser 
+try{xmlDoc = new ActiveXObject("MSxml2.xmldom" )}catch(e){err=e.message} 
+try{xmlDoc = new ActiveXObject("Microsoft.xmldom")}catch(e){err=e.message} 
+try{xmlDoc = new ActiveXObject("MSxml.xmldom" )}catch(e){err=e.message} 
+try{xmlDoc = new ActiveXObject("MSxml3.xmldom" )}catch(e){err=e.message} 
+if(!xmlDoc){ alert(err); return ;} 
+xmlDoc.async="false"; 
+
+// The product code for which we want to tally quantities var targetProductCode = "Voice Units"; 
+
+// Get line items associated with the current Opportunity ID 
+var xmlLineItemQuery = "<?xml version='1.0' encoding='UTF-8' ?>" + '<soapenv:Envelope ' + 'xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" ' + 'xmlns:xsd="http://www.w3.org/2001/XMLSchema" '+ 'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+ 
+'<soapenv:Header>'+ 
+'<ns1:SessionHeader ' + 
+'soapenv:mustUnderstand="0" '+ 
+'xmlns:ns1="SforceService">'+ 
+'<ns2:sessionId ' + 
+'xmlns:ns2="urn:enterprise.soap.sforce.com">{!API_Session_ID}'+ 
+'</ns2:sessionId>'+ 
+' </ns1:SessionHeader>'+ 
+'<ns3:QueryOptions soapenv:mustUnderstand="0" ' + 'xmlns:ns3="SoapService">' + '</ns3:QueryOptions>'+ '</soapenv:Header>'+ '<soapenv:Body>' + '<query xmlns="urn:enterprise.soap.sforce.com">'+ 
+'<queryString>select Total_Price__c from Part__c ' + ' where PKIQuotes__c=' + "'{!PKIQUOTES_ID}'</queryString>" + '</query>' + '</soapenv:Body>'+ '</soapenv:Envelope>'; 
+
+xmlhttp.Send(xmlLineItemQuery); 
+var sq = xmlhttp.status; 
+
+if ( sq == 200) 
+{ 
+			//alert(xmlhttp.responseText);  //ALERT 1
+			//var xml = xmlhttp.responseXml.xml; 
+
+			xmlDoc.loadXML(xmlhttp.responseXml.xml); 
+
+			var  tSize = xmlDoc.getElementsByTagName("sf:Total_Price__c") ; 
+			var  currentTotalPrice   = 0;
+			  for (var i = 0; i<tSize.length; i++)
+						{
+						var fPrice  =  parseFloat(xmlDoc.getElementsByTagName("sf:Total_Price__c")[i].firstChild.nodeValue) ; 
+						currentTotalPrice   = currentTotalPrice + fPrice;
+						}
+						//alert(currentTotalPrice); // ALERT 2
+} //for loop 
+
+//Update to populate 'Total_Amount__c'
+try{xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");} 
+catch(e){return false;} 
+
+xmlhttp.Open("POST",url,false); 
+xmlhttp.setRequestHeader("Content-Type","text/xml"); 
+xmlhttp.setRequestHeader("soapAction","update"); 
+
+var xmlUpdateOpp = "<?xml version='1.0' encoding='UTF-8' ?>" + 
+'<soapenv:Envelope ' + 
+'xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" ' + 
+'xmlns:xsd="http://www.w3.org/2001/XMLSchema" '+ 
+'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+ 
+'<soapenv:Header>'+ 
+'<ns1:SessionHeader ' + 
+'soapenv:mustUnderstand="0" '+ 
+'xmlns:ns1="SforceService">'+ 
+'<ns2:sessionId' + 
+' xmlns:ns2="urn:enterprise.soap.sforce.com">{!API_Session_ID}'+ 
+'</ns2:sessionId>'+ 
+' </ns1:SessionHeader>'+ 
+'</soapenv:Header>'+ 
+'<soapenv:Body>' + 
+'<update xmlns="urn:enterprise.soap.sforce.com">'+ 
+'<sObjects xsi:type="ns3:PKIQuotes__c" '+ 
+'xmlns:ns3="urn:sobject.enterprise.soap.sforce.com">'+ 
+'<ns3:Id>{!PKIQuotes_ID}' + 
+'</ns3:Id>'+ 
+'<ns3:Total_Amount__c>'+currentTotalPrice+ 
+'</ns3:Total_Amount__c>'+ 
+'</sObjects>' + 
+'</update>' + 
+'</soapenv:Body>'+ 
+'</soapenv:Envelope>'; 
+
+//alert(xmlUpdateOpp);
+
+xmlhttp.Send(xmlUpdateOpp); 
+
+//alert(xmlhttp.responseText); 
+
+var sq = xmlhttp.status; 
+if ( sq == 200)
+		{ 
+				return true; 
+		} 
+		else
+		{ 
+				alert('ERROR: HTTP Status - ' + sq);  //ALERT 3
+				return false; 
+		} 
+}
+getVoiceUnits() ;
+--> 
+
+</script> 
+<title>Updating Total Amount</title> 
+<link href="/css/ie_global.css" rel="stylesheet" type="text/css"> 
+<link href="/css/ie_navigation.css" rel="stylesheet" type="text/css"> 
+</head> 
+<body bgcolor="#FFFFFF" onBlur="onBlur();"> 
+
+<center> 
+<br> 
+<table width="100%"> 
+<tr> 
+	<td align=center> 
+		<span class="moduleTitle">Updating Total Amount ... Please Wait</span> 
+	</td>
+ </tr> 
+ 
+ <tr> 
+	<td>&nbsp;</td>
+ </tr> 
+ 
+ <tr> 
+	<td align=center> <img src="/img/waiting_dots.gif" border="0" width=156 height=34> </td>
+</tr>
+</table> 
+</center> 
+<script type="text/javascript"> 
+
+	setTimeout("onLoad();",200); 
+
+	</script>
+</body> 
+</html>

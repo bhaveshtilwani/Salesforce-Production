@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Destination__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>The Account where the related Asset record will be attached</inlineHelpText>
+    <label>Asset Destination</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>There is no Accounts Record Types available for this search (Complimenter, Direct Customer, Internal Account, Large Distributor, OEM and Integrator, Private Label, Representative, Small Distributor).</errorMessage>
+        <filterItems>
+            <field>Account.LUMEN_PICKLIST_RECORD_TYPE__c</field>
+            <operation>equals</operation>
+            <value>Complimenter, Direct Customer, House Account, Internal Account, Large Distributor, OEM and Integrator, Private Label, Representative, Small Distributor</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Orders (Asset Destination)</relationshipLabel>
+    <relationshipName>Orders5</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

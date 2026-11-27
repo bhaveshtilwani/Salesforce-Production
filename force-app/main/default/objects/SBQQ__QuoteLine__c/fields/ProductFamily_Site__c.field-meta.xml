@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductFamily_Site__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( TEXT(SBQQ__Product__r.PKI_Product_Family__c )) , 
+	IF( ISBLANK( TEXT(SBQQ__Product__r.PKI_Product_FamilyXXX__c )) , TEXT(PKI_Product_Family__c), 	
+	TEXT(SBQQ__Product__r.PKI_Product_FamilyXXX__c ) ),  
+TEXT(SBQQ__Product__r.PKI_Product_Family__c ) )
+&amp; &quot;--&quot; &amp;
+CASE( TRIM(Excelitas_Site__r.Name), &apos;ESG Optics&apos;, Excelitas_Site_Country__c, 
+&apos;ESG L&amp;D&apos;, Excelitas_Site_Country__c,
+&apos;Manila&apos;, Excelitas_Site_Country__c,
+&apos;Batam&apos;, Excelitas_Site_Country__c,
+Excelitas_Site__r.Name)</formula>
+    <label>ProductFamily-Site</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

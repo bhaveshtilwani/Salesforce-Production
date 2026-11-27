@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Nachschlageabfrage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Nachschlageabfragen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Nachschlageabfrage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Nachschlageabfragen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Nachschlageabfrage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Nachschlageabfragen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Nachschlageabfrage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Nachschlageabfragen</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nummer der Nachschlageabfrage</nameFieldLabel>
+    <validationRules>
+        <errorMessage>&quot;Das Testen von Konfigurationsattributen wird nur fÃ¼r Nachschlageabfragen unterstÃ¼tzt, die mit Produktregeln verknÃ¼pft sind.&quot;</errorMessage>
+        <name>SBQQ__Configuration_Attribute_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Weisen Sie ein Nachschlageobjekt fÃ¼r die Produktregel zu, bevor Sie eine Nachschlageabfrage erstellen.&quot;</errorMessage>
+        <name>SBQQ__LookupObjectMustExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Getesteter Wert muss bei &quot;&quot;Ãœbereinstimmungstyp = Statischer Wert&quot;&quot; angegeben werden. &quot;&quot;Getestetes Objekt&quot;&quot; und &quot;&quot;Getestetes Feld&quot;&quot; mÃ¼ssen bei &quot;&quot;Ãœbereinstimmungstyp = Feldwert&quot;&quot; festgelegt werden.&quot;&quot;Getestetes Konfigurationsattribut&quot;&quot; muss angegeben werden, wenn &quot;&quot;Ãœbereinstimmungstyp = Konfigurationsattribut&quot;&quot; ist.&quot;</errorMessage>
+        <name>SBQQ__Match_Type_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

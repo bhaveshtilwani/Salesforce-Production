@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Extended_ERP_Site__c</fullName>
+    <description>Site the customer will be extended to</description>
+    <inlineHelpText>Site the customer will be extended to</inlineHelpText>
+    <label>Extended ERP Site</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ERP_Site</valueSetName>
+    </valueSet>
+</CustomField>

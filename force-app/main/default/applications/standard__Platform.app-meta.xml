@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Quote_Approval__c</tabs>
+    <tabs>Account_2__c</tabs>
+    <tabs>Account_BBB__c</tabs>
+    <tabs>sbaa__ApprovalCondition__c</tabs>
+    <tabs>SBQQ__QuoteLine__c</tabs>
+    <tabs>sbaa__Approval__c</tabs>
+    <tabs>Customer_Group__c</tabs>
+    <tabs>Mode_of_delivery__c</tabs>
+    <tabs>Dunning_Clerk__c</tabs>
+    <tabs>Shipping_Company__c</tabs>
+    <tabs>Export_Classification__c</tabs>
+    <tabs>Item_Condition_Type__c</tabs>
+    <tabs>WBS_Element__c</tabs>
+    <tabs>Special_Instruction__c</tabs>
+    <tabs>Trip_Report__c</tabs>
+    <tabs>Invoice__c</tabs>
+    <tabs>Log_Customer_Requests__c</tabs>
+    <tabs>Revenue_Recognition_Mapping__c</tabs>
+</CustomApplication>

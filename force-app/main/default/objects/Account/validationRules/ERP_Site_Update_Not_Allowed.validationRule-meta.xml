@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP_Site_Update_Not_Allowed</fullName>
+    <active>true</active>
+    <description>ERP Site can&apos;t be changed if ERP ID has been generated.</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( Client_Side_ID__c )),
+RecordTypeId &lt;&gt; &quot;012Qp000003Mpa2&quot;,
+$User.Alias &lt;&gt; &quot;sconn&quot;,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+ISCHANGED(  ERP_Site__c ))</errorConditionFormula>
+    <errorDisplayField>ERP_Site__c</errorDisplayField>
+    <errorMessage>ERP ID has been generated, ERP Site edit is not allowed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__All</fullName>
+    <columns>NAME</columns>
+    <columns>SBQQ__Account__c</columns>
+    <columns>SBQQ__Opportunity2__c</columns>
+    <columns>SBQQ__Type__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <columns>SBQQ__Primary__c</columns>
+    <columns>Max_Quote_Value__c</columns>
+    <columns>SBQQ__NetAmount__c</columns>
+    <columns>SBQQ__Status__c</columns>
+    <columns>SBQQ__ExpirationDate__c</columns>
+    <columns>Created_By_Name__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

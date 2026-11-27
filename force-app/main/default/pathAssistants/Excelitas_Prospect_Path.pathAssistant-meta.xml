@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Excelitas Prospect Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Segment__c</fieldNames>
+        <fieldNames>Division__c</fieldNames>
+        <picklistValueName>1 - Opportunity Validation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Business_Unit__c</fieldNames>
+        <fieldNames>Product_LineGlobal__c</fieldNames>
+        <fieldNames>Application_Picklist__c</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <picklistValueName>2 - Requirement Definition/Technical Evl</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Summary_Status__c</fieldNames>
+        <picklistValueName>3 - Technical Qualification/Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Full_Production_Annual_Value__c</fieldNames>
+        <fieldNames>Full_Production_Value_Range__c</fieldNames>
+        <fieldNames>Revenue_Forecast_Year_1__c</fieldNames>
+        <fieldNames>Revenue_Forecast_Year_2__c</fieldNames>
+        <fieldNames>Revenue_Forecast_Year_3__c</fieldNames>
+        <picklistValueName>4 - Commercial Negotiation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Product_1__c</fieldNames>
+        <info>&lt;p&gt;Please ensure the product is as close to the &amp;quot;real&amp;quot; product number as possible. (This will be used for NPI tracking in Anaplan)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>5 - Business Award – Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Product_1__c</fieldNames>
+        <info>&lt;p&gt;Please ensure the product is as close to the &amp;quot;real&amp;quot; product number as possible. (This will be used for NPI tracking in Anaplan)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>6 - Production Order on Backlog</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Closed_Other_Explanation__c</fieldNames>
+        <info>&lt;p&gt;Please enter reason in the Closed &amp;quot;Other&amp;quot; Explanation&lt;/p&gt;</info>
+        <picklistValueName>Closed &quot;Other&quot;</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Closed_Lost_Explanation__c</fieldNames>
+        <info>&lt;p&gt;Please enter reason in the Closed Lost Explanation&lt;/p&gt;</info>
+        <picklistValueName>Closed Lost</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>NPI_Opportunity</recordTypeName>
+</PathAssistant>

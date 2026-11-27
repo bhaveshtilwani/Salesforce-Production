@@ -1,0 +1,24 @@
+<apex:page standardController="Order_Creation__c">
+    <apex:form >
+        <apex:pageBlock title="Account Selection">
+            
+            <!-- View field -->
+            <apex:pageBlockSection title="Sold To Account" columns="1">
+                <apex:outputField value="{!Order_Creation__c.Sold_To_Account__c}" label="Sold To Account"/>
+            </apex:pageBlockSection>
+            
+            <!-- Edit fields -->
+            <apex:pageBlockSection title="For Input" columns="1">
+                <apex:inputField value="{!Order_Creation__c.Ship_To_Account__c}" label="Ship To Account"/>
+                <apex:inputField value="{!Order_Creation__c.Bill_To_AccountLDGI__c}" label="Bill To Account"/>
+            </apex:pageBlockSection>
+            
+            <!-- Standard save and cancel -->
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!save}" value="Save" />
+                <apex:commandButton action="{!cancel}" value="Cancel" />
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

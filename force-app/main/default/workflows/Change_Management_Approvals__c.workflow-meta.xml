@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alert_Business_User</fullName>
+        <description>Alert Business User</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>Business_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/SFDC_Change_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Alert_Strategic</fullName>
+        <description>Alert Strategic</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>Final_Strategic_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/SFDC_Change_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Approved_for_Deployment</fullName>
+        <description>Approved for Deployment</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>consult.btilwani@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>danica.martin@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jo.patron@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>josh.cragan@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/SFDC_Change_Request_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Approver_Rejected</fullName>
+        <description>Change Approver Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Admin_Developer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Technical_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/SFDC_Change_Request_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Change_Deployed</fullName>
+        <description>Change Deployed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>consult.btilwani@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>danica.martin@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>Admin_Developer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Business_User__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Final_Strategic_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Technical_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/SFDC_Change_Request_Deployed</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Business_Approved</fullName>
+        <field>Business_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Business Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Business_Rejected</fullName>
+        <field>Business_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Business Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Business_User_in_Approval</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>In Approval - Business</literalValue>
+        <name>Business User in Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Approved</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Rejected</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_in_In_Apporval</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>In Approval</literalValue>
+        <name>Status in In Apporval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Strategic_Approved</fullName>
+        <field>Strategic_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Strategic Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Strategic_In_Approval</fullName>
+        <field>Approval_Status__c</field>
+        <literalValue>In Approval - Strategic</literalValue>
+        <name>Strategic In Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Strategic_Rejected</fullName>
+        <field>Strategic_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Strategic Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Technical_Approved</fullName>
+        <field>Technical_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Technical Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Technical_Declined</fullName>
+        <field>Technical_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Technical Declined</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

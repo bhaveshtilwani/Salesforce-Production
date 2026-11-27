@@ -1,0 +1,85 @@
+.rr-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: inherit;
+}
+
+.rr-table th,
+.rr-table td {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e5ee;
+    font-size: 0.85rem;
+    vertical-align: middle;
+}
+
+.rr-table th {
+    font-weight: 600;
+    color: #3e3e3c;
+    background: #f3f3f3;
+}
+
+.rr-link {
+    color: #0070d2;
+    text-decoration: none;
+    font-weight: 600;
+}
+.rr-link:hover,
+.rr-link:focus {
+    text-decoration: underline;
+}
+
+/* ── Result pill ─────────────────────────────────────────────────────── */
+.result-pill {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.result-badge {
+    margin-left: 0.4rem;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.08);
+    color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Blue — Point in Time */
+.result-pit {
+    background-color: #0070d2;
+    color: #ffffff;
+}
+
+/* Green — Over Time */
+.result-ot {
+    background-color: #2e844a;
+    color: #ffffff;
+}
+
+/* Amber — NRE */
+.result-nre {
+    background-color: #f4bc25;
+    color: #1c1c1c;
+}
+
+/* Yellow-green — Service */
+.result-service {
+    background-color: #8bc34a;
+    color: #1c1c1c;
+}
+
+/* Yellow warning — invalid combination */
+.result-mismatch {
+    background-color: #fff3cd;
+    color: #7d5a00;
+    border: 1px solid #e6a817;
+}

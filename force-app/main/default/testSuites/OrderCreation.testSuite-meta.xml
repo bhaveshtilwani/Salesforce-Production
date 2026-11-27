@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>ConvertToOrderActionControllerTest</testClassName>
+    <testClassName>CreateStandardMappingControllerTest</testClassName>
+    <testClassName>CurrencyFXTest</testClassName>
+    <testClassName>Order_TriggersHandlerTest</testClassName>
+    <testClassName>OrderCreationControllerTest</testClassName>
+    <testClassName>OrderLineCreationTriggerTest</testClassName>
+    <testClassName>OrderTriggerHelperTest</testClassName>
+    <testClassName>OrderTypeAndSiteFilteringTest</testClassName>
+    <testClassName>ProductSelectionFilterControllerTest</testClassName>
+    <testClassName>ProductSelectionObjectTest</testClassName>
+    <testClassName>ProductSelectionTableControllerTest</testClassName>
+    <testClassName>ProductSelectionTileEditPopUpTest</testClassName>
+    <testClassName>ProductSelectionTileWrapperTest</testClassName>
+    <testClassName>QuoteValidityTest</testClassName>
+    <testClassName>TriggerHandlerTest</testClassName>
+</ApexTestSuite>

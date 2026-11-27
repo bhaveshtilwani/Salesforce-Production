@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Sites where to display the field. If this field is empty, all the sites will display the field. If the field has a value, only the sites specified will dsiplay --></help>
+    <label><!-- Enabled Sites --></label>
+    <name>Enabled_Sites__c</name>
+</CustomFieldTranslation>

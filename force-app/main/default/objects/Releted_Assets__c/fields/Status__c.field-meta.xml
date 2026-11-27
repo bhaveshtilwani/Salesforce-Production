@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>With Customer</fullName>
+                <default>false</default>
+                <label>With Customer</label>
+            </value>
+            <value>
+                <fullName>With Customer Service</fullName>
+                <default>false</default>
+                <label>With Customer Service</label>
+            </value>
+            <value>
+                <fullName>With Tech Support</fullName>
+                <default>false</default>
+                <label>With Tech Support</label>
+            </value>
+            <value>
+                <fullName>With Quality</fullName>
+                <default>false</default>
+                <label>With Quality</label>
+            </value>
+            <value>
+                <fullName>With Production</fullName>
+                <default>false</default>
+                <label>With Production</label>
+            </value>
+            <value>
+                <fullName>On Hold - Customer</fullName>
+                <default>false</default>
+                <label>On Hold - Customer</label>
+            </value>
+            <value>
+                <fullName>On Hold - Internal</fullName>
+                <default>false</default>
+                <label>On Hold - Internal</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Closed - Not Received</fullName>
+                <default>false</default>
+                <label>Closed - Not Received</label>
+            </value>
+            <value>
+                <fullName>Closed - Opened in Error</fullName>
+                <default>false</default>
+                <label>Closed - Opened in Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

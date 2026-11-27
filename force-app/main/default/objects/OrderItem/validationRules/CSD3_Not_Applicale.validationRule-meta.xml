@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSD3_Not_Applicale</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Site__c , &quot;Wiesbaden&quot;)
+&amp;&amp; NOT(ISBLANK(   CSD3__c   ))) ||
+AND(ISPICKVAL(Site__c , &quot;Hamble&quot;)
+&amp;&amp; NOT(ISBLANK( CSD3__c ))) ||
+AND(ISPICKVAL(Site__c , &quot;Munich&quot;)
+&amp;&amp; NOT(ISBLANK( CSD3__c )))</errorConditionFormula>
+    <errorDisplayField>CSD3__c</errorDisplayField>
+    <errorMessage>CSD3 is Not Applicable for selected Site.</errorMessage>
+</ValidationRule>

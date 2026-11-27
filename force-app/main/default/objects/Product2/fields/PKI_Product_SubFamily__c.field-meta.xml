@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PKI_Product_SubFamily__c</fullName>
+    <label>Excelitas Product SubFamily</label>
+    <required>false</required>
+    <securityClassification>Restricted</securityClassification>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PKI_Product_Family__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Product_Sub_Family</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Singapore</controllingFieldValue>
+            <controllingFieldValue>Semiconductor</controllingFieldValue>
+            <valueName>Semiconductor Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Voltage Power</controllingFieldValue>
+            <controllingFieldValue>Optical Inspection</controllingFieldValue>
+            <controllingFieldValue>Laser Technology</controllingFieldValue>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Catalog and Other</controllingFieldValue>
+            <controllingFieldValue>Semiconductor</controllingFieldValue>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Biomedical Light Engines</controllingFieldValue>
+            <controllingFieldValue>Solid State Lighting Solutions</controllingFieldValue>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Voltage Power</controllingFieldValue>
+            <controllingFieldValue>Metrology &amp; Inspection</controllingFieldValue>
+            <valueName>High Voltage Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Voltage Power</controllingFieldValue>
+            <valueName>Hvp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Inspection</controllingFieldValue>
+            <valueName>Optem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Inspection</controllingFieldValue>
+            <controllingFieldValue>Optics &amp; Imaging</controllingFieldValue>
+            <controllingFieldValue>Metrology &amp; Inspection</controllingFieldValue>
+            <valueName>Vision Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser Technology</controllingFieldValue>
+            <valueName>Crystal Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser Technology</controllingFieldValue>
+            <valueName>Lasers and Fibers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <controllingFieldValue>Aerial &amp; Laser</controllingFieldValue>
+            <valueName>Laser Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <controllingFieldValue>Aerial &amp; Laser</controllingFieldValue>
+            <valueName>LMP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <controllingFieldValue>Laser Engines</controllingFieldValue>
+            <valueName>Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <valueName>Medical Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Micro Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <valueName>Ops Munich</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <valueName>Ops Regen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <valueName>Optical Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <valueName>Other Optical Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optics</controllingFieldValue>
+            <valueName>Photo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Analytical Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Analytical Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <valueName>E.IR CUSTOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>FLASH RAW/SEMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Hcl</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Heraeus not assigned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>HNG ZZ-HNG Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Medical Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>MVS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>NRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>OP - Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <valueName>OPT COMPONENTS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <valueName>OPT RAW/SEMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <valueName>OPT SYSTEMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>PID DC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>PID RF Auto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>PID RF Manual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <valueName>0400/spcm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <valueName>SiPM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <valueName>SPCM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>CCD Commercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>CCD Defense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Espros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>High Performance Commercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>High Performance Defense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <valueName>Ceramic Detectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <valueName>LiTa Detectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Opto Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>E.IR COMPONENT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <valueName>E.IR RAW/SEMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <valueName>ED COMPONENT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <valueName>ED CUSTOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <valueName>ED RAW/SEMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <valueName>ED SYSTEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <valueName>LED SYSTEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <valueName>MW COMPONENT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <valueName>MW OTHER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <valueName>SO Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <valueName>TECHNICAL SERVICE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>FLASH COMP.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>FL - Flash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <valueName>HCA – AA – Lamp Material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <valueName>LED COMPONENT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <valueName>LED CUSTOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <valueName>LED OTHER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <valueName>LED RAW/SEMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <valueName>MW CUSTOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED - Noblelight</controllingFieldValue>
+            <valueName>MW RAW/SEMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <valueName>MW SYSTEMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <valueName>PHS Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave - Noblelight</controllingFieldValue>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <valueName>PHS System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Catalog and Other</controllingFieldValue>
+            <valueName>Catalog</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Camera Systems</controllingFieldValue>
+            <valueName>Advanced Imaging Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <valueName>E.IR SYSTEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermal Processing - Noblelight</controllingFieldValue>
+            <valueName>PHS COMPONENTS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser Engines</controllingFieldValue>
+            <valueName>Freight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser Engines</controllingFieldValue>
+            <valueName>NIR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser Engines</controllingFieldValue>
+            <valueName>Telecom/FFM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Biomedical Light Engines</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>KeyLight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Biomedical Light Engines</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>KeyPro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Biomedical Light Engines</controllingFieldValue>
+            <valueName>X-Cite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solid State Lighting Solutions</controllingFieldValue>
+            <valueName>LED Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solid State Lighting Solutions</controllingFieldValue>
+            <valueName>LED Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Advanced Endoscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Biophotonics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Dental Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Dermatology Treatment Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Laser &amp; Fibers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Ophthalmology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Surgical Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>X-Ray Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave</controllingFieldValue>
+            <valueName>Microwave bulbs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Microwave</controllingFieldValue>
+            <valueName>Microwave systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aerial &amp; Laser</controllingFieldValue>
+            <valueName>Aerial Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aerial &amp; Laser</controllingFieldValue>
+            <valueName>CT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aerial &amp; Laser</controllingFieldValue>
+            <controllingFieldValue>Fibers &amp; Components</controllingFieldValue>
+            <valueName>Electrooptics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Aerial &amp; Laser</controllingFieldValue>
+            <valueName>Lasers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fibers &amp; Components</controllingFieldValue>
+            <controllingFieldValue>Optics &amp; Imaging</controllingFieldValue>
+            <controllingFieldValue>Metrology &amp; Inspection</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fibers &amp; Components</controllingFieldValue>
+            <valueName>Components - Fibers&amp;Comp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fibers &amp; Components</controllingFieldValue>
+            <valueName>Fibers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fibers &amp; Components</controllingFieldValue>
+            <controllingFieldValue>Modules &amp; Objectives</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lightsources</controllingFieldValue>
+            <controllingFieldValue>Modules &amp; Objectives</controllingFieldValue>
+            <valueName>Levelsensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lightsources</controllingFieldValue>
+            <valueName>Yieldstar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lightsources</controllingFieldValue>
+            <valueName>Yieldstar - Lightsources</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modules &amp; Objectives</controllingFieldValue>
+            <controllingFieldValue>Metrology &amp; Inspection</controllingFieldValue>
+            <valueName>Camera Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modules &amp; Objectives</controllingFieldValue>
+            <valueName>EUV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modules &amp; Objectives</controllingFieldValue>
+            <valueName>Flexray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modules &amp; Objectives</controllingFieldValue>
+            <valueName>Modular Vessel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modules &amp; Objectives</controllingFieldValue>
+            <valueName>Yieldstar - Mod&amp;Obj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>Modules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Photodiode Arrays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Photodiodes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Array Module</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Detector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Module</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>Accessory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>Controller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <valueName>Curing LED Phoseon Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>FireEdge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>FireFlex</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>FireFly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>FireJet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>FireLine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>FirePower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>FlexTower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>Nexus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <valueName>Nexustower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <valueName>PHS Custom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>SF MAX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing LED Phoseon</controllingFieldValue>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>XWarranty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Sensor Optics</controllingFieldValue>
+            <controllingFieldValue>Precision Optronics</controllingFieldValue>
+            <valueName>Avionics and Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Sensor Optics</controllingFieldValue>
+            <controllingFieldValue>Optronics Platforms</controllingFieldValue>
+            <valueName>Defense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optronics Platforms</controllingFieldValue>
+            <valueName>Optronics Platforms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optronics Platforms</controllingFieldValue>
+            <controllingFieldValue>Precision Optronics</controllingFieldValue>
+            <valueName>Soldier - Man Portable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optronics Platforms</controllingFieldValue>
+            <controllingFieldValue>Precision Optronics</controllingFieldValue>
+            <valueName>Surveillance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optronics</controllingFieldValue>
+            <valueName>Ground Vehicles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optronics</controllingFieldValue>
+            <valueName>Missile Warning &amp; Targeting Sys</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Optronics</controllingFieldValue>
+            <valueName>Tactical Missiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Sensors</controllingFieldValue>
+            <valueName>Defense Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optics &amp; Imaging</controllingFieldValue>
+            <valueName>Analytical Light Sources</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optics &amp; Imaging</controllingFieldValue>
+            <controllingFieldValue>Metrology &amp; Inspection</controllingFieldValue>
+            <valueName>Applied Microscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Optics &amp; Imaging</controllingFieldValue>
+            <valueName>Components - Opt&amp;Img</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <valueName>Contracts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <valueName>Switches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metrology &amp; Inspection</controllingFieldValue>
+            <valueName>Analytical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metrology &amp; Inspection</controllingFieldValue>
+            <valueName>Metrology &amp; Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metrology &amp; Inspection</controllingFieldValue>
+            <valueName>Solid State Lighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>Omni</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>Omnicure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Curing Omnicure</controllingFieldValue>
+            <valueName>Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Land Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Aida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Cathode pills</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>CW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>FLASH OTHERS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>FLASH SYSTEMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>HPG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Ipl</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Linear Beacons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Photonics Flash - Noblelight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Pulsed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Quartz Linear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>RAW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Solder seal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Special Tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Trigger Coil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Trigger Transformer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>U Tube (+ H 3rd Gen)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>WIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Pulsed Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Solid State Switches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>&gt; 1 Inch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>1 inch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>Carsan Power Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>CEV &gt; 1 Inch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>CEV Large Cermax Lamps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>CEV Large Cermax Modules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>CEV Modules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>CEV RAW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>CEV Video Cermax-Gen 3 1.4 Inch Lamp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>CEV WIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>CEV XHP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>FOI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>Gen 3 Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>Lamp Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>MAGL IR Source</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>MAGL Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>MAGL Space Lighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>MAGL WIP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>Mini-Cermax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>Power Supply &amp; Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cermax</controllingFieldValue>
+            <valueName>Vaconics</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

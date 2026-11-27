@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Access to Orders object and Order Products (order lines)</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LDGI Order access</label>
+</PermissionSet>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>ERP_SO_Number</name>
+        <label>ERP SO Number</label>
+        <locationX>769</locationX>
+        <locationY>277</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>with_SO_Number</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Order_Product__r.Order.ERP_Sales_Order_Number__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sync_Order</targetReference>
+            </connector>
+            <label>with SO Number</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>System_Admin</name>
+        <label>System Admin</label>
+        <locationX>564</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Non_Admin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Profile.Id</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>00e30000000e7Mv</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ERP_SO_Number</targetReference>
+            </connector>
+            <label>Non-Admin</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>NOWFformula</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <interviewLabel>Order {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Order in Progress - Item Texts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Sync_Order</name>
+        <label>Sync Order</label>
+        <locationX>1085</locationX>
+        <locationY>382</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Order_Product__r.OrderId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AutomationBypassDateTime__c</field>
+            <value>
+                <elementReference>NOWFformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SFDC_Integration_Status__c</field>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Order</object>
+    </recordUpdates>
+    <start>
+        <locationX>149</locationX>
+        <locationY>89</locationY>
+        <connector>
+            <targetReference>System_Admin</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LastModifiedById</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>0057X0000031NKNQA2</stringValue>
+            </value>
+        </filters>
+        <object>Order_Item_Text__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

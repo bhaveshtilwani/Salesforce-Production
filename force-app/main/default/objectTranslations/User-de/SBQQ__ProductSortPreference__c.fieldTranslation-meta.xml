@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;WÃ¤hlen Sie &quot;&quot;Gefolgt&quot;&quot; aus, um Produkte, denen Sie in Chatter folgen, beim HinzufÃ¼gen zum Angebot vor anderen Produkten anzuzeigen.&quot;</help>
+    <label><!-- Product Sort Preference --></label>
+    <name>SBQQ__ProductSortPreference__c</name>
+    <picklistValues>
+        <masterLabel>Followed</masterLabel>
+        <translation>Gefolgt</translation>
+    </picklistValues>
+</CustomFieldTranslation>

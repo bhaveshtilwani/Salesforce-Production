@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sold_to_cannot_be_created</fullName>
+    <active>false</active>
+    <description>This Validation will restrict users from creating sold to customers from salesforce in New Nirvana Process. This will be deactivated once the ship to, bill to, payer process goes live in SAP.</description>
+    <errorConditionFormula>AND(
+    $User.Alias &lt;&gt; &quot;sconn&quot;,
+    OR(
+        ISPICKVAL(Account_Group__c, &quot;Sold to - W001&quot;),
+        ISPICKVAL(Account_Group__c, &quot;Sold to - H001&quot;),
+        ISPICKVAL(Account_Group__c, &quot;Sold-to party (OPSL) - 0001&quot;),
+        ISPICKVAL(Account_Group__c, &quot;Sold-to party - ZCUS&quot;),
+        ISPICKVAL(Account_Group__c, &quot;Customer-Sold To Role&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>The sold to customer creation process in New Nirvana is moved to SAP. Please Mature Sold to customer in Fiori.</errorMessage>
+</ValidationRule>

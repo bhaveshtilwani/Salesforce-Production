@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Give all access related to Case - Move Asset, Site, Demo Case</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>LDGI All Case Access Group</label>
+    <permissionSets>Asset_Move_Asset_Access</permissionSets>
+    <permissionSets>Case_Demo_Case_Access</permissionSets>
+    <permissionSets>Website_Site_Support_ServiceAccess</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

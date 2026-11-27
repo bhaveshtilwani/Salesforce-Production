@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Delivery_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+Contact_Confirmed_Receipt__c = TRUE,
+ISNULL( Actual_Delivery_Date__c ))</errorConditionFormula>
+    <errorDisplayField>Actual_Delivery_Date__c</errorDisplayField>
+    <errorMessage>Please indicate the date.</errorMessage>
+</ValidationRule>

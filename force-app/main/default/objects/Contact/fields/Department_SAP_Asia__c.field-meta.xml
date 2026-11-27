@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department_SAP_Asia__c</fullName>
+    <label>Department (SAP Asia)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Managing Director (0001)</fullName>
+                <default>false</default>
+                <label>Managing Director (0001)</label>
+            </value>
+            <value>
+                <fullName>Purchasing (0002)</fullName>
+                <default>false</default>
+                <label>Purchasing (0002)</label>
+            </value>
+            <value>
+                <fullName>Sales (0003)</fullName>
+                <default>false</default>
+                <label>Sales (0003)</label>
+            </value>
+            <value>
+                <fullName>Organization (0004)</fullName>
+                <default>false</default>
+                <label>Organization (0004)</label>
+            </value>
+            <value>
+                <fullName>Administration (0005)</fullName>
+                <default>false</default>
+                <label>Administration (0005)</label>
+            </value>
+            <value>
+                <fullName>Production (0006)</fullName>
+                <default>false</default>
+                <label>Production (0006)</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance (0007)</fullName>
+                <default>false</default>
+                <label>Quality Assurance (0007)</label>
+            </value>
+            <value>
+                <fullName>Secretaries (0008)</fullName>
+                <default>false</default>
+                <label>Secretaries (0008)</label>
+            </value>
+            <value>
+                <fullName>Financial Department (0009)</fullName>
+                <default>false</default>
+                <label>Financial Department (0009)</label>
+            </value>
+            <value>
+                <fullName>Legal Department (0010)</fullName>
+                <default>false</default>
+                <label>Legal Department (0010)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

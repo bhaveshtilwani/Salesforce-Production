@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Category_Not_Applicable</fullName>
+    <active>false</active>
+    <errorConditionFormula>Boulder_Item_Category_NA__c = TRUE</errorConditionFormula>
+    <errorDisplayField>Item_Category__c</errorDisplayField>
+    <errorMessage>Item Category Not Applicable for Order Type</errorMessage>
+</ValidationRule>

@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Customer Part Edit: CPNID-20070111-57 ~ Salesforce - Enterprise Edition</title><link  href="/sCSS/8.0/1171411121000/Theme2/default/elements.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css" /><link  href="/sCSS/8.0/1171411121000/Theme2/default/common.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css" /><link  href="/css/assistive.css" media="aural,braille,embossed" rel="stylesheet" type="text/css" /><link  href="/sCSS/8.0/1172529222000/Theme2/00D300000000W1h/00530000000eIBV/dCustom.css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" type="text/css" /><script type="text/javascript" src="/js/functions.js"></script>
+<script  src="/dJS/en/1170289429000/library.js" type="text/javascript"></script><script type="text/javascript" src="/js/setup.js"></script>
+<script type="text/javascript" src="/js/roletreenode.js"></script>
+<script type="text/javascript" src="/desktop/desktopAjax.js"></script>
+<script  type="text/javascript">window.sfdcPage = new EditPage();</script><link rel="shortcut icon" href="https://na3.salesforce.com/favicon.ico" />
+</head><body onLoad="if (this.bodyOnLoad) bodyOnLoad();" onBeforeUnload="if (this.bodyOnBeforeUnload) bodyOnBeforeUnload();" onUnload="if (this.bodyOnUnload) bodyOnUnload();" onResize="if (this.bodyOnUnload) bodyOnUnload();" onFocus="if (this.bodyOnFocus) bodyOnFocus();" class="account  editPage"><iframe title="blank - ignore" name="div_submit" id="div_submit" src="/s.gif" style="display:none;visibility:hidden;width:0px;height:0px" frameborder="0"></iframe>
+<!-- Main Body Starts Here -->
+
+
+<form name="sessiontimeout">
+<input type="hidden" id="pageLoaded" value="0">
+<input type="hidden" id="timeoutText" value="For security reasons, your Salesforce session is about to time out.&lt;br&gt;&lt;br&gt;What would you like to do?" />
+<input type="hidden" id="continueButton" value="Continue Working" />
+<input type="hidden" id="logoutButton" value="Logout" />
+<input type="hidden" id="doTimeoutLocation" value="https://www.salesforce.com/login.jsp?ec=301&startURL=%2Fpage%2Ftimeoutrefresh.jsp" />
+<input type="hidden" id="doNotTimeoutLocation" value="/page/timeoutrefresh.jsp" />
+</form>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    var secondsLeftValue = 5078;
+    var secondsPopupValue = 5048;
+    function setSecondsLeft(t) {
+        secondsLeftValue = t;
+    }
+    function setSecondsPopup(t) {
+        secondsPopupValue = t;
+    }
+    function startSessionTimer() {
+        var p = document.getElementById('pageLoaded');
+        if (p) {
+            if (p.value == '0') {
+                p.value = '1';
+                schedulePopup(5048);
+                
+            }
+        }
+    }
+
+
+    function schedulePopup(t) {
+        setTimeout("alertTimeout()", t*1000);
+    }
+    function doLogout() {
+        window.location = '/secur/logout.jsp';
+    }
+    var alertWindow = null;
+    function alertTimeout() {
+
+        alertWindow = window.open('/page/timeoutwarn.jsp', "_blank", 'width=300,height=200,location=no,dependent=no,resizable=no,toolbar=no,status=no,directories=no,menubar=no,scrollbars=0', false);
+        document.body.onfocus = alertFocus;
+    }
+    function alertFocus() {
+        if (alertWindow) {
+            if (!alertWindow.closed) {
+                alertWindow.focus();
+            } else {
+                alertWindow = null;
+                document.body.onfocus = closePopup;
+            }
+        }
+    }
+
+</script>
+
+
+<a href="#skiplink"><img src="/s.gif" height='1' width='1' alt="Skip Navigation" class="skiplink" title="Skip Navigation"></a><div class="bPageHeader" id="AppBodyHeader"><table class="phHeader" border="0" cellspacing="0" cellpadding="0"><tr><td class="left"><img src="/img/sfa_logo_w07.gif" alt="Salesforce SFA" width="222" height="55" title="Salesforce SFA" /><img src="/s.gif" alt="" width="1" height="1" class="spacer" title="" /></td>
+<td class="right"><form  action="/home/home.jsp" id="sbtabset" method="GET" name="sbtabset" onsubmit="if (window.ffInAlert) { return false; }" ><div class="multiforce"><span class="navLinks"><a href="/ui/setup/Setup">Setup</a><span  class="pBullet">&#8226;</span><a href="javascript:openPopupFocusEscapePounds('/help/doc/user_ed.jsp?showSplash=true', 'Help', 700, 600, 'width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no', false, false);" title="Help & Training (New Window)">Help &amp; Training</a><span  class="pBullet">&#8226;</span><a href="/secur/logout.jsp">Logout</a></span><div id="toolbar"><a href="https://www.salesforce.com/appexchange" target="_blank"><img src="/img/appExchange145x32.gif" alt="Visit the Appexchange" width="145" height="32" title="Visit the Appexchange" /></a>
+<!-- TabSet drop down -->
+<select  class="tabsets" id="tsid" name="tsid" title="Applications"><option value="02u300000000A7v" selected>Sales</option>
+<option value="02u3000000013p3">Project/Issue Management</option>
+
+<option value="02u3000000016Ty">Quotes</option>
+<option value="02u3000000019lb">Campaigner for Salesforce</option>
+<option value="02u300000000L0k">SampleLoaner</option>
+<option value="02u300000000RRX">InternalSupport</option>
+<option value="02u500000001R5T">Print Anything</option>
+<option value="AppExchange">Add Apps...</option>
+</select><script  type="text/javascript">new AppforcePicker('https://www.salesforce.com/appexchange', document.getElementById('tsid'))</script></div></div></form></td>
+</tr>
+</table>
+<table class="tabsNewBar" border="0" cellspacing="0" cellpadding="0"><tr><td><div class="tabNavigation"><table  class="tab" border="0" cellpadding="0" cellspacing="0" id="tabBar"><tr><td nowrap="nowrap"><div><a href="/home/home.jsp" title="Home Tab">Home</a></div></td><td nowrap="nowrap"><div><a href="/00Q/o" title="Leads Tab">Leads</a></div></td><td class="currentTab primaryPalette" nowrap="nowrap"><div><a href="/001/o" title="Accounts Tab - Selected">Accounts</a></div></td><td nowrap="nowrap"><div><a href="/003/o" title="Contacts Tab">Contacts</a></div></td><td nowrap="nowrap"><div><a href="/006/o" title="Prospects Tab">Prospects</a></div></td><td nowrap="nowrap"><div><a href="/a00/o" title="Sample/Loaner Tab">Sample/Loaner</a></div></td><td nowrap="nowrap"><div><a href="/00O/o" title="Reports Tab">Reports</a></div></td><td nowrap="nowrap"><div><a href="/015/o" title="Documents Tab">Documents</a></div></td><td nowrap="nowrap"><div><a href="/01Z/o" title="Dashboards Tab">Dashboards</a></div></td><td nowrap="nowrap"><div><a href="/servlet/servlet.Integration?lid=01r500000005K3g&ic=1" title="Lead Creation Tab">Lead Creation</a></div></td><td class="last" nowrap="nowrap"><div><a href="/home/showAllTabs.jsp">&nbsp;<img src="/s.gif" alt="All Tabs"  class="allTabsArrow" title="All Tabs">&nbsp;</a></div></td></tr>
+
+</table></div></td></tr><tr class="newBar"><td><ul class="primaryPalette" id="newEntityList"><li class="first"><a href="/00U/e?who_id=00130000005fSzX&retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC" class="event"><img src="/s.gif" alt="" width="1" height="1" class="mruIcon" title="" />Event</a></li><li><a href="/00T/e?who_id=00130000005fSzX&retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC" class="task"><img src="/s.gif" alt="" width="1" height="1" class="mruIcon" title="" />Task</a></li><li><a href="/00Q/e?retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC" class="lead"><img src="/s.gif" alt="Lead"  class="mruIcon" title="Lead">Lead</a></li><li><a href="/setup/ui/recordtypeselect.jsp?ent=Account&retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC&save_new_url=%2F001%2Fe%3FretURL%3D%252Fa0K50000000fniC%252Fe%253FretURL%253D%25252Fa0K50000000fniC" class="account"><img src="/s.gif" alt="Account"  class="mruIcon" title="Account">Account</a></li><li><a href="/003/e?retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC" class="contact"><img src="/s.gif" alt="Contact"  class="mruIcon" title="Contact">Contact</a></li><li><a href="/006/e?retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC" class="opportunity"><img src="/s.gif" alt="Opportunity"  class="mruIcon" title="Opportunity">Prospect</a></li><li><a href="/a00/e?retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC" class="custom22"><img src="/s.gif" alt="Sample/Loaner"  class="mruIcon" title="Sample/Loaner">Sample/Loaner</a></li><li><a href="/rpt/reportwizard.jsp?retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC" class="report"><img src="/s.gif" alt="Report"  class="mruIcon" title="Report">Report</a></li><li><a href="/p/doc/DocumentUploadUi?retURL=%2Fa0K50000000fniC%2Fe%3FretURL%3D%252Fa0K50000000fniC" class="document"><img src="/s.gif" alt="Document"  class="mruIcon" title="Document">Document</a></li></ul>
+</td></tr></table></div><div class="bodyDiv"><div id="sidebarDiv"><div class="indicator" id="pinIndicator"></div><div class="indicator" id="pinIndicator2"></div><div class="pinBox" id="handle">&nbsp;</div><div class="sidebarInner"><form  action="/srch/advsearchresults.jsp" id="sbsearch" method="GET" name="sbsearch" onsubmit="if (window.ffInAlert) { return false; }" ><input type="hidden" name="searchType" id="searchType" value="1" /><div class="mSearch"><div class="header"><h2>Search</h2></div><div class='body'><input  class="searchTextBox" id="sbstr" maxlength="80" name="sbstr" size="21" title="Search" type="text" /><input value=" Go! "  class="btn" name="search" title="Go!" type="submit" /></div><div class="footer"><a href="/srch/advsearch.jsp" onclick="document.getElementById('sbsearch').action='/srch/advsearch.jsp';document.getElementById('sbsearch').submit(); return false;">Advanced Search...</a></div></div></form><div class="mCreateNew"><div id="newEntityTarget"></div></div><div class="mRecentItem"><div class="header"><h2>Recent Items</h2></div><div class="body"><a href="/00130000005fSzX" class="account" accesskey="1" title="[Alt+1]"><img src="/s.gif" alt="Account"  class="mruIcon" title="Account"><span  class="mruText">NEOPT Corporation</span></a></div><div class="body"><a href="/00650000008Y3xQ" class="opportunity" accesskey="2" title="[Alt+2]"><img src="/s.gif" alt="Opportunity"  class="mruIcon" title="Opportunity"><span  class="mruText">Tomar - oil rig lighting system</span></a></div><div class="body"><a href="/00130000005fW8N" class="account" accesskey="3" title="[Alt+3]"><img src="/s.gif" alt="Account"  class="mruIcon" title="Account"><span  class="mruText">TOMAR ELECTRONICS</span></a></div><div class="body"><a href="/00130000005fXjp" class="account" accesskey="4" title="[Alt+4]"><img src="/s.gif" alt="Account"  class="mruIcon" title="Account"><span  class="mruText">X-RITE</span></a></div><div class="body"><a href="/a0050000007YwnE" class="custom22" accesskey="5" title="[Alt+5]"><img src="/s.gif" alt="Sample/Loaner"  class="mruIcon" title="Sample/Loaner"><span  class="mruText">SL200702261796</span></a></div><div class="body"><a href="/a0050000007ZaUW" class="custom22" accesskey="6" title="[Alt+6]"><img src="/s.gif" alt="Sample/Loaner"  class="mruIcon" title="Sample/Loaner"><span  class="mruText">SL200703061839</span></a></div><div class="body"><a href="/00130000006eOdW" class="account" accesskey="7" title="[Alt+7]"><img src="/s.gif" alt="Account"  class="mruIcon" title="Account"><span  class="mruText">Benchmark Electronics Inc</span></a></div><div class="body"><a href="/00130000005fSA5" class="account" accesskey="8" title="[Alt+8]"><img src="/s.gif" alt="Account"  class="mruIcon" title="Account"><span  class="mruText">TELEDYNE  ISCO INC</span></a></div><div class="body"><a href="/00130000005fWrK" class="account" accesskey="9" title="[Alt+9]"><img src="/s.gif" alt="Account"  class="mruIcon" title="Account"><span  class="mruText">STAR SENSOR SERVICES</span></a></div><div class="body"><a href="/00130000005fWWx" class="account" accesskey="0" title="[Alt+0]"><img src="/s.gif" alt="Account"  class="mruIcon" title="Account"><span  class="mruText">SLME - ARK PLANT</span></a></div></div><div class="mRecycle"><div class="body"><a href="/setup/own/undeleter.jsp"><img src="/img/icon/sm_recycle.gif" alt="Recycle Bin" width="26" height="19" align="absmiddle" title="Recycle Bin" /><span  class="recycleText">Recycle Bin</span></a></div></div></div></div><table class="outer" width="100%" id="bodyTable" border="0" cellspacing="0" cellpadding="0">
+
+<!-- Start page content table -->
+<tr><td class="oRight" id="bodyCell">
+<!-- Start page content -->
+<a name="skiplink"><img src="/s.gif" height='1' width='1' alt="Content Starts Here" class="skiplink" title="Content Starts Here"></a><div class="bPageTitle"><div class="ptBody secondaryPalette"><div class="content"><img src="/s.gif" alt="Account"  class="pageTitleIcon" title="Account"><h1 class="pageType">Customer Part Edit<span  class="titleSeparatingColon">:</span></h1><h2 class="pageDescription"> CPNID-20070111-57</h2><div class="blank">&nbsp;</div></div><div class="links"><a href="javascript:openPopupFocusEscapePounds('/help/doc/user_ed.jsp?loc=help&target=co_edit.htm&section=CustomObjects&showSplash=true', 'Help', 700, 600, 'width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no', false, false);" title="Help for this Page (New Window)"><span  class="helpLink">Help for this Page</span><img src="/s.gif" alt=""  class="helpImage" title=""></a></div></div><div class="ptBreadcrumb"></div></div><script type="text/javascript">
+</script>
+<form  action="/a0K50000000fniC/e" id="editPage" method="post" name="editPage" onsubmit="if (window.ffInAlert) { return false; }" ><input type="hidden" name="cancelURL" id="cancelURL" value="/a0K50000000fniC" /><input type="hidden" name="id" id="id" value="a0K50000000fniC" /><input type="hidden" name="retURL" id="retURL" value="/a0K50000000fniC" /><input type="hidden" name="save_new_url" id="save_new_url" value="/a0K/e?retURL=%2Fa0K50000000fniC" /><div class="bPageBlock bEditBlock secondaryPalette" id="ep"><div class="pbHeader"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" /><h2 class="mainTitle">Customer Part Edit</h2></td><td class="pbButton"><input value=" Save "  class="btn" type="submit" title="Save" name="save" /> <input value="Save & New"  class="btn" type="submit" title="Save &amp; New" name="save_new" /> <input value="Cancel"  class="btn" type="submit" title="Cancel" name="cancel" /></td></tr>
+</table></div><div class="pbBody"><div class="pbSubheader first tertiaryPalette" id="head_1_ep"><h3>Information<span  class="titleSeparatingColon">:</span></h3></div><div class="pbSubsection"><table  class="detailList" border="0" cellpadding="0" cellspacing="0"><tr><td class="labelCol last">CPID</td><td class="dataCol col02 last">CPNID-20070111-57</td><td class="labelCol empty last">&nbsp;</td><td class="dataCol empty last">&nbsp;</td></tr>
+
+</table></div><div class="pbSubheader tertiaryPalette" id="head_2_ep"><h3>Customer Information<span  class="titleSeparatingColon">:</span></h3></div><div class="pbSubsection"><table  class="detailList" border="0" cellpadding="0" cellspacing="0"><tr><td class="labelCol last">Part Cust Name</td><td class="dataCol col02 last">NEOPT Corporation</td><td class="labelCol last"><label for="00N50000001VwH1">Cust Original ID</label></td><td class="dataCol last"><input  id="00N50000001VwH1" maxlength="50" name="00N50000001VwH1" size="20" tabindex="1" type="text" value="NOK010" /></td></tr>
+</table></div><div class="pbSubheader tertiaryPalette" id="head_3_ep"><h3>Part Details<span  class="titleSeparatingColon">:</span></h3></div><div class="pbSubsection"><table  class="detailList" border="0" cellpadding="0" cellspacing="0"><tr><td class="labelCol"><label for="CF00N50000001X3vP">Product Number</label></td><td class="dataCol col02"><input type="hidden" name="CF00N50000001X3vP_lkid" id="CF00N50000001X3vP_lkid" value="01t50000000Ulxt" /><input type="hidden" name="CF00N50000001X3vP_lkold" id="CF00N50000001X3vP_lkold" value="L8168" /><input type="hidden" name="CF00N50000001X3vP_lktp" id="CF00N50000001X3vP_lktp" value="01t" /><input type="hidden" name="CF00N50000001X3vP_lspf" id="CF00N50000001X3vP_lspf" value="0" /><input type="hidden" name="CF00N50000001X3vP_mod" id="CF00N50000001X3vP_mod" value="0" /><span class="lookupInput"><input  id="CF00N50000001X3vP" maxlength="80" name="CF00N50000001X3vP" onchange="document.getElementById('CF00N50000001X3vP_lkid').value='';document.getElementById('CF00N50000001X3vP_mod').value='1';" size="20" tabindex="2" type="text" value="L8168" /><a href="JavaScript: openLookup('/_ui/common/data/LookupPage?lkfm=editPage&lknm=CF00N50000001X3vP&lktp=' + document.getElementById('CF00N50000001X3vP_lktp').value,670,document.getElementById('CF00N50000001X3vP_mod').value,'&lksrch=' + escapeUTF(document.getElementById('CF00N50000001X3vP').value),'maxw')" id="CF00N50000001X3vP_lkwgt" onclick="setLastMousePosition(event)" tabindex="2" title="Product Number Lookup (New Window)"><img src="/s.gif" alt="Product Number Lookup (New Window)"  class="lookupPopup" title="Product Number Lookup (New Window)"></a></span></td><td class="labelCol"><label for="00N50000001Un7P">Product Line</label></td><td class="dataCol"><input  id="00N50000001Un7P" maxlength="25" name="00N50000001Un7P" size="20" tabindex="3" type="text" value="Industrial" /></td></tr>
+<tr><td class="labelCol"><label for="00N50000001Um8R">Part Description</label></td><td class="dataCol col02"><input  id="00N50000001Um8R" maxlength="50" name="00N50000001Um8R" size="20" tabindex="4" type="text" value="FLASHLAMP, XENON, ROD SEAL FLUID COOLED" /></td><td class="labelCol"><label for="00N50000001Un7U">Product Family</label></td><td class="dataCol"><input  id="00N50000001Un7U" maxlength="25" name="00N50000001Un7U" size="20" tabindex="5" type="text" value="Photonics Flash" /></td></tr>
+<tr><td class="labelCol"><label for="00N50000001UnWN">Selling Site</label></td><td class="dataCol col02"><input  id="00N50000001UnWN" maxlength="30" name="00N50000001UnWN" size="20" tabindex="6" type="text" value="Fremont" /></td><td class="labelCol"><label for="00N50000001Un7Q">Product Sub Family</label></td><td class="dataCol"><input  id="00N50000001Un7Q" maxlength="50" name="00N50000001Un7Q" size="20" tabindex="7" type="text" value="Pulsed" /></td></tr>
+
+<tr><td class="labelCol empty last">&nbsp;</td><td class="dataCol col02 empty last">&nbsp;</td><td class="labelCol last"><label for="00N50000001Un4B">Sales Rep</label></td><td class="dataCol last"><input  id="00N50000001Un4B" maxlength="50" name="00N50000001Un4B" size="20" tabindex="8" type="text" value="Toshiya Imaeda (IL)" /></td></tr>
+</table></div></div><div class="pbBottomButtons"><table  border="0" cellpadding="0" cellspacing="0"><tr><td class="pbTitle"><img src="/s.gif" alt="" width="1" height="1" class="minWidth" title="" />&nbsp;</td><td class="pbButtonb"><input value=" Save "  class="btn" name="save" tabindex="9" title="Save" type="submit" /> <input value="Save & New"  class="btn" name="save_new" tabindex="10" title="Save &amp; New" type="submit" /> <input value="Cancel"  class="btn" name="cancel" tabindex="11" title="Cancel" type="submit" /></td></tr>
+</table></div><div class="pbFooter secondaryPalette"><div class="bg"></div></div></div></form>
+
+
+<!-- Body events -->
+<script type="text/javascript">
+function bodyOnLoad() {
+	setFocusOnLoad();
+	if (typeof(startSessionTimer)!='undefined') {startSessionTimer(); };
+	if (typeof(ActivityReminder)!='undefined') {ActivityReminder.initialize([], false, false);};
+	if ((window.sfdcPage) && (sfdcPage.executeOnloadQueue)){sfdcPage.executeOnloadQueue();};
+	TurnOnBackgroundImageCache();
+}
+
+function bodyOnBeforeUnload() {
+}
+
+function bodyOnFocus() {
+	closePopup();
+	setCookie('TabSet','02u300000000A7v');
+}
+
+function bodyOnUnload() {
+}
+
+function bodyOnUnload() {
+}
+</script>
+
+
+<!-- End page content -->
+</td>
+</tr>
+</table>
+
+</div><script  type="text/javascript">if (document.getElementById('sidebarDiv')){ Sidebar.prototype.theSidebar = new Sidebar(document.getElementById('sidebarDiv'), 'Create New...', false);}</script><div class="bPageFooter noTableFooter"><div class="body"><A HREF="/home/home.jsp">Home</A> |
+<A HREF="/00Q/o">Leads</A> |
+<A HREF="/001/o">Accounts</A> |
+<A HREF="/003/o">Contacts</A> |
+<A HREF="/006/o">Prospects</A> |
+<A HREF="/a00/o">Sample/Loaner</A> |
+
+<A HREF="/00O/o">Reports</A> |
+<A HREF="/015/o">Documents</A> |
+<A HREF="/01Z/o">Dashboards</A> |
+<A HREF="/servlet/servlet.Integration?lid=01r500000005K3g&ic=1">Lead Creation</A> |
+<A HREF="/home/showAllTabs.jsp">All Tabs</A></div><div class="footer">Copyright &copy; 2000-2007 salesforce.com, inc. All rights reserved.&nbsp;|&nbsp;<a href="javascript:openPopupFocus('http://www.salesforce.com/us/statements.jsp?src=app&file=privacy&edition=enterprise', '_blank', 550, 350, 'width=550,height=350,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, true);" class="footer" title="Privacy Statement (New Window)">Privacy Statement</a>&nbsp;|&nbsp;<a href="javascript:openPopupFocus('http://www.salesforce.com/us/statements.jsp?src=app&file=security&edition=enterprise', '_blank', 550, 350, 'width=550,height=350,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, true);" class="footer" title="Security Statement (New Window)">Security Statement</a>&nbsp;|&nbsp;<a href="javascript:openPopupFocus('http://www.salesforce.com/us/statements.jsp?src=app&file=terms&edition=enterprise', '_blank', 550, 350, 'width=550,height=350,resizable=yes,toolbar=no,status=no,scrollbars=yes,menubar=no,directories=no,location=no,dependant=no', false, true);" class="footer" title="Terms of Use (New Window)">Terms of Use</a>&nbsp;|&nbsp;<a href="javascript:openPopupFocusEscapePounds('/help/doc/user_ed.jsp?loc=help&target=accessibility_overview.htm&section=accessibility&showSplash=true', 'Help', 700, 600, 'width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no', false, false);" title="Accessibility (New Window)">Accessibility</a><br/></div></div></body></html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RMA Status --></label>
+    <name>RMA__c</name>
+    <picklistValues>
+        <masterLabel>Action Completed - In transit from Germany</masterLabel>
+        <translation><!-- Action Completed - In transit from Germany --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action Completed - Ready to Ship Back to Customer</masterLabel>
+        <translation><!-- Action Completed - Ready to Ship Back to Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action in Progress</masterLabel>
+        <translation><!-- Action in Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feedback Requested</masterLabel>
+        <translation><!-- Feedback Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection Complete - In Transit to Germany</masterLabel>
+        <translation><!-- Inspection Complete - In Transit to Germany --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection Shows No Fault - Ready to Ship Back to Customer</masterLabel>
+        <translation><!-- Inspection Shows No Fault - Ready to Ship Back to Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection complete - pending action</masterLabel>
+        <translation><!-- Inspection complete - pending action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection from Germany Complete - Ready to Ship Back to Customer</masterLabel>
+        <translation><!-- Inspection from Germany Complete - Ready to Ship Back to Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Item(s) Received</masterLabel>
+        <translation><!-- Item(s) Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Receipt of Product from Customer</masterLabel>
+        <translation><!-- Pending Receipt of Product from Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Received from Customer - Pending Inspection</masterLabel>
+        <translation><!-- Product Received from Customer - Pending Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Received from Germany - Pending Inspection</masterLabel>
+        <translation><!-- Product Received from Germany - Pending Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Accepted - Pending Action</masterLabel>
+        <translation><!-- Quote Accepted - Pending Action --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote Declined - In Transit from Germany</masterLabel>
+        <translation><!-- Quote Declined - In Transit from Germany --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quoted Customer - Pending Response</masterLabel>
+        <translation><!-- Quoted Customer - Pending Response --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waiting for Customer Reply</masterLabel>
+        <translation><!-- Waiting for Customer Reply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Customer</masterLabel>
+        <translation><!-- With Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Customer Service</masterLabel>
+        <translation><!-- With Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Quality</masterLabel>
+        <translation><!-- With Quality --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working</masterLabel>
+        <translation><!-- Working --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

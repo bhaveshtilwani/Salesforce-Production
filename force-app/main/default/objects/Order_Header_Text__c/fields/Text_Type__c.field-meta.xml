@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Text_Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Text Type</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Text_Type__c.Order_Item_Text__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </filterItems>
+        <filterItems>
+            <field>Text_Type__c.Order_Text_ID__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Text_Type__c</referenceTo>
+    <relationshipLabel>Order Header Texts</relationshipLabel>
+    <relationshipName>Order_Header_Texts</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Process Type I: Creation/Insert
+Process Type U: Update
+Process Type D: Delete -->
+    </help>
+    <label><!-- Process Type --></label>
+    <name>Process_Type__c</name>
+    <picklistValues>
+        <masterLabel>D</masterLabel>
+        <translation><!-- D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I</masterLabel>
+        <translation><!-- I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U</masterLabel>
+        <translation><!-- U --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

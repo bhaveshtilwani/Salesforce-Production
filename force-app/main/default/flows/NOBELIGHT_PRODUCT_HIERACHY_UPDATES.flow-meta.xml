@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_RT_is_Valid</name>
+        <label>Check RT is Valid</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Rt_is_Nobelight_and_ProdSubfamily_Selected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Recordtype.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.RecordTypeId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_2</targetReference>
+            </connector>
+            <label>If Rt is Nobelight and ProdSubfamily Selected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_2</name>
+        <label>Check ProsSubfamily -&gt; populate PH</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Product_sub_Family</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ED COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ED System</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ED Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PH_Disinfection_Noblelight</targetReference>
+            </connector>
+            <label>Product sub Family - ED</label>
+        </rules>
+        <rules>
+            <name>Product_sub_Family_LED</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LED COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LED Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LED COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PH_CuringLED_Noblelight</targetReference>
+            </connector>
+            <label>Product sub Family - LED</label>
+        </rules>
+        <rules>
+            <name>Product_sub_Family_MW</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MW COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MW System</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MW Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PH_Microwave_Noblelight</targetReference>
+            </connector>
+            <label>Product sub Family - MW</label>
+        </rules>
+        <rules>
+            <name>Product_sub_Family_EIR</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>E.IR COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EIR System</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EIR Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PH_Thermal_Processing_Noblelight</targetReference>
+            </connector>
+            <label>Product sub Family - EIR</label>
+        </rules>
+        <rules>
+            <name>Product_sub_Family_OPT</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPT COMPONENTS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPT Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPT System</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PH_Analytical</targetReference>
+            </connector>
+            <label>Product sub Family - OPT</label>
+        </rules>
+        <rules>
+            <name>Product_sub_Family_FLASH</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FLASH COMP.</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FLASH Custom.</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FLASH system.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PH_Flash</targetReference>
+            </connector>
+            <label>Product sub Family - FLASH</label>
+        </rules>
+        <rules>
+            <name>Product_sub_Family_OMNICURE</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OMNICURE COMPONENTS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OMNICURE Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OMNICURE System</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PH_Curing_Omnicure</targetReference>
+            </connector>
+            <label>Product sub Family - OMNICURE</label>
+        </rules>
+        <rules>
+            <name>Product_sub_Family_PHOSEON</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PHOSEON COMPONENTS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PHOSEON Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PHOSEON System</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PH_Curing_LED_Phoseon</targetReference>
+            </connector>
+            <label>Product sub Family - PHOSEON</label>
+        </rules>
+    </decisions>
+    <description>Updated Nobelight Prod Hierarchy On Opp</description>
+    <environments>Default</environments>
+    <interviewLabel>NOBELIGHT PRODUCT HIERACHY UPDATES {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>NOBELIGHT PRODUCT HIERACHY UPDATES</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Recordtype</name>
+        <label>Get Recordtype</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_RT_is_Valid</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Opportunity</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Noblelight</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>PH_Analytical</name>
+        <label>PH -Analytical</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Business_Unit__c</field>
+            <value>
+                <stringValue>Plasma Light Sources</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Division__c</field>
+            <value>
+                <stringValue>MedTech &amp; Life Sciences</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_LineGlobal__c</field>
+            <value>
+                <stringValue>Analytical</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_SubFamily__c</field>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment__c</field>
+            <value>
+                <stringValue>MedTech &amp; Semiconductor</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PH_Curing_LED_Phoseon</name>
+        <label>PH - Curing LED Phoseon</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Business_Unit__c</field>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Division__c</field>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_LineGlobal__c</field>
+            <value>
+                <stringValue>Curing LED Phoseon</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_SubFamily__c</field>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment__c</field>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PH_Curing_Omnicure</name>
+        <label>PH - Curing Omnicure</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Business_Unit__c</field>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Division__c</field>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_LineGlobal__c</field>
+            <value>
+                <stringValue>Curing Omnicure</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_SubFamily__c</field>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment__c</field>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PH_CuringLED_Noblelight</name>
+        <label>PH - Curing LED - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Business_Unit__c</field>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Division__c</field>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_LineGlobal__c</field>
+            <value>
+                <stringValue>Curing LED - Noblelight</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_SubFamily__c</field>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment__c</field>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PH_Disinfection_Noblelight</name>
+        <label>PH - Disinfection - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Business_Unit__c</field>
+            <value>
+                <stringValue>Disinfection</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Division__c</field>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_LineGlobal__c</field>
+            <value>
+                <stringValue>Disinfection - Noblelight</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_SubFamily__c</field>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment__c</field>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PH_Flash</name>
+        <label>PH - Flash</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Business_Unit__c</field>
+            <value>
+                <stringValue>Plasma Light Sources</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Division__c</field>
+            <value>
+                <stringValue>MedTech &amp; Life Sciences</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_LineGlobal__c</field>
+            <value>
+                <stringValue>Flash</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_SubFamily__c</field>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment__c</field>
+            <value>
+                <stringValue>MedTech &amp; Semiconductor</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PH_Microwave_Noblelight</name>
+        <label>PH - Microwave- Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Business_Unit__c</field>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Division__c</field>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_LineGlobal__c</field>
+            <value>
+                <stringValue>Microwave - Noblelight</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_SubFamily__c</field>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment__c</field>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PH_Thermal_Processing_Noblelight</name>
+        <label>PH -Thermal Processing - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Business_Unit__c</field>
+            <value>
+                <stringValue>Thermal Processing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Division__c</field>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_LineGlobal__c</field>
+            <value>
+                <stringValue>Thermal Processing - Noblelight</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_SubFamily__c</field>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Segment__c</field>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Recordtype</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

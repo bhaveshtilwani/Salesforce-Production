@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Revenue Recognition Table</masterLabel>
+    <description>Per-Quote-Line table: clickable line, product, editable Custom vs Standard picklist, live Revenue Recognition Type per row.</description>
+
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+
+            <!-- Generic SObject type so this works with any Quote Line-type object -->
+            <propertyType
+                name="T"
+                extends="SObject"
+                label="Quote Line Object"
+                description="The object your quote line collection is built from, e.g. SBQQ__QuoteLine__c"
+            />
+
+            <!-- ── The grid data ─────────────────────────────────────────────────── -->
+            <property
+                name="quoteLines"
+                type="{T[]}"
+                label="Quote Lines"
+                description="Record collection variable from a Get Records element (Quote Lines for this Quote)."
+                role="inputOnly"
+            />
+
+            <!-- ── Field mapping (so this never needs a code change per org) ───────── -->
+            <property
+                name="quoteLineObjectApiName"
+                type="String"
+                label="Quote Line Object API Name"
+                description="e.g. SBQQ__QuoteLine__c"
+                default="SBQQ__QuoteLine__c"
+                role="inputOnly"
+            />
+            <property
+                name="customVsStandardFieldApiName"
+                type="String"
+                label="Custom vs Standard Field API Name"
+                description="The picklist field API name on the Quote Line object."
+                default="Custom_vs_Standard__c"
+                role="inputOnly"
+            />
+            <property
+                name="productNameFieldApiName"
+                type="String"
+                label="Product Name Field API Name"
+                description="A text/formula field on the Quote Line holding the related Product's name (relationship fields can't be traversed generically)."
+                default="Product_Name__c"
+                role="inputOnly"
+            />
+            <property
+                name="revenueRecognitionTypeFieldApiName"
+                type="String"
+                label="Revenue Recognition Type Field API Name"
+                description="Field on the Quote Line that stores the saved/computed result, e.g. Revenue_Recognition_Type__c"
+                default="Revenue_Recognition_Type__c"
+                role="inputOnly"
+            />
+            <property
+                name="productTypeFieldApiName"
+                type="String"
+                label="Product Type Field API Name (Quote Line)"
+                description="Field on the Quote Line that stores the Revenue Category answer, e.g. Revenue_Type__c. Leave blank to skip saving it per line."
+                default="Revenue_Type__c"
+                role="inputOnly"
+            />
+            <property
+                name="agreementTypeFieldApiName"
+                type="String"
+                label="Agreement Type Field API Name (Quote Line)"
+                description="Field on the Quote Line that stores the Agreement Type answer. Leave blank to skip saving it per line."
+                role="inputOnly"
+            />
+            <property
+                name="rrtUpdateFieldApiName"
+                type="String"
+                label="RRT Update Source Field API Name (Quote Line)"
+                description="Picklist field that flags whether the saved Revenue Recognition Type came from history (Automatic) or a person (Manual). Used to decide when to warn before overwriting. Leave blank to disable the confirmation warning entirely."
+                default="RRT_Update__c"
+                role="inputOnly"
+            />
+            <property
+                name="rightToCostFieldApiName"
+                type="String"
+                label="Right to Cost Field API Name (Quote Line)"
+                description="Field on the Quote Line that stores the Right to Cost + Profit Upon Cancellation answer. Leave blank to skip saving it per line."
+                role="inputOnly"
+            />
+
+            <!-- ── Header-level answers (still one value for the whole Quote) ──────── -->
+            <property
+                name="Product_Type"
+                type="String"
+                label="Product Type (Revenue Category)"
+                description="Maps to Flow variable: Product_Type. Bind the header screen component's own value to this SAME variable (not a separate one) so a cancelled override can push the reverted value back to it. Requires the screen to be reactive."
+            />
+            <property
+                name="Agreement_Type"
+                type="String"
+                label="Agreement Type"
+                description="Maps to Flow variable: Agreement_Type. Bind the header screen component's own value to this SAME variable so a cancelled override can push the reverted value back to it. Requires the screen to be reactive."
+            />
+            <property
+                name="Right_to_Cost_Profit_Upon_Cancellation"
+                type="String"
+                label="Right to Cost + Profit Upon Cancellation"
+                description="Maps to Flow variable: Right_to_Cost_Profit_Upon_Cancellation. Bind the header screen component's own value to this SAME variable so a cancelled override can push the reverted value back to it. Requires the screen to be reactive."
+            />
+            <property
+                name="MSA_LTSA_Reference"
+                type="String"
+                label="MSA / LTSA Reference"
+                description="Maps to Flow variable: MSA_LTSA_Reference (or Get_Existing_Quote.MSA_LTSA_Reference__c). Used only to also save this value onto each Quote Line."
+                role="inputOnly"
+            />
+
+            <!-- ── Quote Line field mapping for MSA/LTSA (agreement type + right to cost mappings already declared above) ─ -->
+            <property
+                name="msaLtsaFieldApiName"
+                type="String"
+                label="MSA / LTSA Reference Field API Name (Quote Line)"
+                description="Field on the Quote Line that stores the MSA / LTSA Reference. Leave blank to skip saving it per line."
+                role="inputOnly"
+            />
+            <property
+                name="quoteLineProductIdFieldApiName"
+                type="String"
+                label="Product Lookup Field API Name (Quote Line) [Unused]"
+                description="No longer used by the component (product-based Custom vs Standard defaulting was removed). Kept only so older Flow versions that still reference it can deploy."
+                role="inputOnly"
+            />
+            <property
+                name="productObjectApiName"
+                type="String"
+                label="Product Object API Name [Unused]"
+                description="No longer used by the component. Kept only so older Flow versions that still reference it can deploy."
+                role="inputOnly"
+            />
+            <property
+                name="productIsStandardFieldApiName"
+                type="String"
+                label="Is Standard Field API Name (Product) [Unused]"
+                description="No longer used by the component. Kept only so older Flow versions that still reference it can deploy."
+                role="inputOnly"
+            />
+            <property
+                name="cvsSourceFieldApiName"
+                type="String"
+                label="Custom vs Standard Source Field API Name (Quote Line) [Unused]"
+                description="No longer used by the component. Kept only so older Flow versions that still reference it can deploy."
+                role="inputOnly"
+            />
+
+            <!-- ── Output back to the flow ─────────────────────────────────────────── -->
+            <property
+                name="editedQuoteLines"
+                type="{T[]}"
+                label="Quote Lines to Save"
+                description="Every Quote Line row, each stamped with Custom vs Standard, computed Revenue Recognition Type, and the mapped header answers. Feed this into an Update Records element."
+                role="outputOnly"
+            />
+            <property
+                name="hasInvalidRows"
+                type="Boolean"
+                label="Has Invalid Rows"
+                description="True if any row is an invalid combination. Also enforced by built-in Next/Finish validation."
+                role="outputOnly"
+            />
+            <property
+                name="hasManualOverride"
+                type="Boolean"
+                label="Has Manual Override"
+                description="True if any row's value differs from what was loaded (a real change happened this session). Use this to flag the parent Quote as Manual when any of its lines changed."
+                role="outputOnly"
+            />
+
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>descartesdps__Match_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Match Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Is</fullName>
+                <default>true</default>
+                <label>Is</label>
+            </value>
+            <value>
+                <fullName>Is Similar</fullName>
+                <default>false</default>
+                <label>Is Similar</label>
+            </value>
+            <value>
+                <fullName>Contains</fullName>
+                <default>false</default>
+                <label>Contains</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

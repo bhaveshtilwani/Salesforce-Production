@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR_Comment_greater_75</fullName>
+    <active>true</active>
+    <description>Copy from LDGI Quote VR
+Transaction Comment cannot be &gt; 75 Characters each</description>
+    <errorConditionFormula>AND(ISPICKVAL(Site__c, &apos;Toronto&apos;), 
+OR(LEN(Transaction_Order_Comments__c) &gt; 255, LEN(Transaction_Order_Comments_2__c) &gt; 75,
+LEN(Transaction_Order_Comments_3__c) &gt; 75,
+LEN(Transaction_Order_Comments_4__c) &gt; 75))</errorConditionFormula>
+    <errorMessage>Transaction Order Comment fields cannot be &gt; 75 Characters
+Split comment so that each comment field is no more than 75 characters</errorMessage>
+</ValidationRule>

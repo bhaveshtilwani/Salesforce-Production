@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Block_All_Sales_Areas__c</fullName>
+    <label>Order Block - All Sales Areas</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ERP_Site__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Overall Block (01)</fullName>
+                <default>false</default>
+                <label>Overall Block (01)</label>
+            </value>
+            <value>
+                <fullName>All Free of Charge (02)</fullName>
+                <default>false</default>
+                <label>All Free of Charge (02)</label>
+            </value>
+            <value>
+                <fullName>Test Block (03)</fullName>
+                <default>false</default>
+                <label>Test Block (03)</label>
+            </value>
+            <value>
+                <fullName>test e (99)</fullName>
+                <default>false</default>
+                <label>test e (99)</label>
+            </value>
+            <value>
+                <fullName>General Order Block (01)</fullName>
+                <default>false</default>
+                <label>General Order Block (01)</label>
+            </value>
+            <value>
+                <fullName>Credit Limit Block (02)</fullName>
+                <default>false</default>
+                <label>Credit Limit Block (02)</label>
+            </value>
+            <value>
+                <fullName>Compliance (Z1)</fullName>
+                <default>false</default>
+                <label>Compliance (Z1)</label>
+            </value>
+            <value>
+                <fullName>Overall Block (Y1)</fullName>
+                <default>false</default>
+                <label>Overall Block (Y1)</label>
+            </value>
+            <value>
+                <fullName>Test Block (Y3)</fullName>
+                <default>false</default>
+                <label>Test Block (Y3)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Overall Block (01)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>All Free of Charge (02)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Test Block (03)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>test e (99)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>General Order Block (01)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Credit Limit Block (02)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Compliance (Z1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Overall Block (Y1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Test Block (Y3)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

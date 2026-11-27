@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Excelitas Lead Path 2</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Product_Line__c</fieldNames>
+        <fieldNames>Product_Family__c</fieldNames>
+        <fieldNames>Product_Sub_Family__c</fieldNames>
+        <fieldNames>Application__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Update Product information and application.​&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Contacted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status</fieldNames>
+        <fieldNames>pi__comments__c</fieldNames>
+        <fieldNames>Notes__c</fieldNames>
+        <info>&lt;p&gt;If the Lead is in Open Status, please reach out to the lead based on Pardot Comment or Notes.&lt;/p&gt;&lt;p&gt;Change Lead Status to Contacted or other relevant status.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Open</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Please ensure that you affiliate this new Contact to an existing Account.&lt;/p&gt;&lt;p&gt;If the account does not exist at the time of the Prospect Creation, please create the new account.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualified - Converted</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Commercial_Lead</recordTypeName>
+</PathAssistant>

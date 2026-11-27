@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Industrial Sensing Sales</fullName>
+        <default>false</default>
+        <label>Advanced Industrial Sensing Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Lighting Systems Sales</fullName>
+        <default>false</default>
+        <label>Advanced Lighting Systems Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrated Optronics &amp; Avionics Sales</fullName>
+        <default>false</default>
+        <label>Integrated Optronics &amp; Avionics Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor Equipment Sales</fullName>
+        <default>false</default>
+        <label>Semiconductor Equipment Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Sciences &amp; Medical Sales</fullName>
+        <default>false</default>
+        <label>Life Sciences &amp; Medical Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>WW Channel Sales</fullName>
+        <default>false</default>
+        <label>WW Channel Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Sales</fullName>
+        <default>false</default>
+        <label>Corporate Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Unassigned Sales</fullName>
+        <default>false</default>
+        <label>Unassigned Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>MedTech &amp; Life Sciences Sales</fullName>
+        <default>false</default>
+        <label>MedTech &amp; Life Sciences Sales</label>
+    </customValue>
+    <description>Division Teams -&gt; Anaplan New Team</description>
+    <masterLabel>Division Teams</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

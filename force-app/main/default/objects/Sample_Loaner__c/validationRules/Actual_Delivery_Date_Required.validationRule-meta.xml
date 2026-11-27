@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Delivery_Date_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL(  Status__c  , &quot;Shipped&quot;),ISPICKVAL(  Status__c  , &quot;Purchased&quot;),ISPICKVAL(  Status__c  , &quot;Returned&quot;)) ,
+  ISNULL( Actual_Delivery_Date__c  ))</errorConditionFormula>
+    <errorDisplayField>Actual_Delivery_Date__c</errorDisplayField>
+    <errorMessage>&quot;Actual Delivery Date&quot; is required when Status is &quot;Shipped&quot; /&quot;Purchased&quot;/&quot;Returned&quot;</errorMessage>
+</ValidationRule>

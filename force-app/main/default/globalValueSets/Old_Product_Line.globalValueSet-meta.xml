@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Biomedical Imaging</fullName>
+        <default>false</default>
+        <label>Biomedical Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>CPM &amp; IT &amp; PC</fullName>
+        <default>false</default>
+        <label>CPM &amp; IT &amp; PC</label>
+    </customValue>
+    <customValue>
+        <fullName>High Voltage Power</fullName>
+        <default>false</default>
+        <label>High Voltage Power</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Systems &amp; Optics</fullName>
+        <default>false</default>
+        <label>Industrial Systems &amp; Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>IR Sensing</fullName>
+        <default>false</default>
+        <label>IR Sensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser Technology</fullName>
+        <default>false</default>
+        <label>Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Photon Detection</fullName>
+        <default>false</default>
+        <label>Photon Detection</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma Lighting</fullName>
+        <default>false</default>
+        <label>Plasma Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor</fullName>
+        <default>false</default>
+        <label>Semiconductor</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid State Technologies</fullName>
+        <default>false</default>
+        <label>Solid State Technologies</label>
+    </customValue>
+    <description>2021 Update</description>
+    <masterLabel>Old Product Line</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

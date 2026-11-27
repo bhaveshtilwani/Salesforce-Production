@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- CS Rep responsible for this account.  (This will not make the selected user the owner of the account) --></help>
+    <label><!-- Customer Support Rep --></label>
+    <name>Customer_Support_Rep__c</name>
+    <relationshipLabel><!-- Accounts --></relationshipLabel>
+</CustomFieldTranslation>

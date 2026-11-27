@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Area of Interest --></label>
+    <name>Area_of_Interest__c</name>
+    <picklistValues>
+        <masterLabel>Avionic HUDs</masterLabel>
+        <translation><!-- Avionic HUDs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BioPhotonics</masterLabel>
+        <translation><!-- BioPhotonics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C5iSR (GPS Clocks/RAFS)</masterLabel>
+        <translation><!-- C5iSR (GPS Clocks/RAFS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cameras - Industrial</masterLabel>
+        <translation><!-- Cameras - Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cameras – High-Speed</masterLabel>
+        <translation><!-- Cameras – High-Speed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cameras – Intensified</masterLabel>
+        <translation><!-- Cameras – Intensified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cameras – Scientific</masterLabel>
+        <translation><!-- Cameras – Scientific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cameras – Thermal MWIR/LWIR</masterLabel>
+        <translation><!-- Cameras – Thermal MWIR/LWIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Service</masterLabel>
+        <translation><!-- Customer Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense &amp; Aero - Sensors</masterLabel>
+        <translation><!-- Defense &amp; Aero - Sensors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense Through-Life Support</masterLabel>
+        <translation><!-- Defense Through-Life Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dental Imaging</masterLabel>
+        <translation><!-- Dental Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deuterium Lamps &amp; Systems</masterLabel>
+        <translation><!-- Deuterium Lamps &amp; Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dismounted Soldier Products</masterLabel>
+        <translation><!-- Dismounted Soldier Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energetics &amp; Ignition Safety</masterLabel>
+        <translation><!-- Energetics &amp; Ignition Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flashlamps</masterLabel>
+        <translation><!-- Flashlamps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fluorescence Illuminators - X-Cite</masterLabel>
+        <translation><!-- Fluorescence Illuminators - X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frequency Standards</masterLabel>
+        <translation><!-- Frequency Standards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Engergy Switching</masterLabel>
+        <translation><!-- High Engergy Switching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High-Voltage Power Supplies &amp; Capacitors</masterLabel>
+        <translation><!-- High-Voltage Power Supplies &amp; Capacitors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR Heating Emitters &amp; Systems</masterLabel>
+        <translation><!-- IR Heating Emitters &amp; Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR Sensors - Thermopile &amp; Pyroelectric</masterLabel>
+        <translation><!-- IR Sensors - Thermopile &amp; Pyroelectric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IREDs</masterLabel>
+        <translation><!-- IREDs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED Illumination</masterLabel>
+        <translation><!-- LED Illumination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laser Material Processing Optics/F-Theta Lenses</masterLabel>
+        <translation><!-- Laser Material Processing Optics/F-Theta Lenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lasers - Axsun OCT Swept</masterLabel>
+        <translation><!-- Lasers - Axsun OCT Swept --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lasers - Defense &amp; Aerospace</masterLabel>
+        <translation><!-- Lasers - Defense &amp; Aerospace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lasers - Emitters &amp; Pulsed Diodes</masterLabel>
+        <translation><!-- Lasers - Emitters &amp; Pulsed Diodes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lasers - OPO</masterLabel>
+        <translation><!-- Lasers - OPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lasers - REO HeNe</masterLabel>
+        <translation><!-- Lasers - REO HeNe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lasers - iFLEX Diode &amp; Fiber-Optic Delivery Systems</masterLabel>
+        <translation><!-- Lasers - iFLEX Diode &amp; Fiber-Optic Delivery Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine Vision &amp; Inspection Lenses</masterLabel>
+        <translation><!-- Machine Vision &amp; Inspection Lenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Magneto- and Electro-Optic Modules</masterLabel>
+        <translation><!-- Magneto- and Electro-Optic Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Imaging</masterLabel>
+        <translation><!-- Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Micro-Optics &amp; Endoscopy</masterLabel>
+        <translation><!-- Micro-Optics &amp; Endoscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmic Photonics</masterLabel>
+        <translation><!-- Ophthalmic Photonics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optem Lenses</masterLabel>
+        <translation><!-- Optem Lenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optics - Custom</masterLabel>
+        <translation><!-- Optics - Custom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OptoMechanics - LINOS</masterLabel>
+        <translation><!-- OptoMechanics - LINOS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optronics - Defense</masterLabel>
+        <translation><!-- Optronics - Defense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optronics - Vehicle</masterLabel>
+        <translation><!-- Optronics - Vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PID Lamps</masterLabel>
+        <translation><!-- PID Lamps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photonic Detectors - Photodiodes</masterLabel>
+        <translation><!-- Photonic Detectors - Photodiodes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pulsed Xenon Lighting - Analytical Instruments</masterLabel>
+        <translation><!-- Pulsed Xenon Lighting - Analytical Instruments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rodenstock Photographic Lenses</masterLabel>
+        <translation><!-- Rodenstock Photographic Lenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPCMs</masterLabel>
+        <translation><!-- SPCMs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semiconductor Optics and Imaging</masterLabel>
+        <translation><!-- Semiconductor Optics and Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Space Coverglass &amp; OSRs</masterLabel>
+        <translation><!-- Space Coverglass &amp; OSRs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Optical Elements &amp; Components</masterLabel>
+        <translation><!-- Standard Optical Elements &amp; Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surveillance &amp; Target Acquisition</masterLabel>
+        <translation><!-- Surveillance &amp; Target Acquisition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal Infrared Detectors</masterLabel>
+        <translation><!-- Thermal Infrared Detectors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV Curing Systems</masterLabel>
+        <translation><!-- UV Curing Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV Curing Systems - Noblelight</masterLabel>
+        <translation><!-- UV Curing Systems - Noblelight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV Curing Systems - OmniCure</masterLabel>
+        <translation><!-- UV Curing Systems - OmniCure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV Curing Systems - Phoseon</masterLabel>
+        <translation><!-- UV Curing Systems - Phoseon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVC Disinfection &amp; Oxidation Light Sources</masterLabel>
+        <translation><!-- UVC Disinfection &amp; Oxidation Light Sources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVC Disinfection Light Sources</masterLabel>
+        <translation><!-- UVC Disinfection Light Sources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X-ray Power Supplies and Integrated Sources</masterLabel>
+        <translation><!-- X-ray Power Supplies and Integrated Sources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Xenon Lighting - Cermax</masterLabel>
+        <translation><!-- Xenon Lighting - Cermax --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

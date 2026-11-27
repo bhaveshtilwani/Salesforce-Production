@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>90 Day Warranty Repair</masterLabel>
+        <translation><!-- 90 Day Warranty Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billable Repair</masterLabel>
+        <translation><!-- Billable Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibration</masterLabel>
+        <translation><!-- Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibration and Repair</masterLabel>
+        <translation><!-- Calibration and Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Return</masterLabel>
+        <translation><!-- Consignment Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit</masterLabel>
+        <translation><!-- Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluation</masterLabel>
+        <translation><!-- Evaluation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exchange / Replace</masterLabel>
+        <translation><!-- Exchange / Replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extended Warranty Repair Dist only</masterLabel>
+        <translation><!-- Extended Warranty Repair Dist only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loaner Return</masterLabel>
+        <translation><!-- Loaner Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Charge Billable</masterLabel>
+        <translation><!-- No Charge Billable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR Calibration</masterLabel>
+        <translation><!-- SR Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR Repair</masterLabel>
+        <translation><!-- SR Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrap / Recycling</masterLabel>
+        <translation><!-- Scrap / Recycling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade In</masterLabel>
+        <translation><!-- Trade In --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Standard Calibration NCB</masterLabel>
+        <translation><!-- Transfer Standard Calibration NCB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Repair</masterLabel>
+        <translation><!-- Warranty Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty Replace Part</masterLabel>
+        <translation><!-- Warranty Replace Part --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

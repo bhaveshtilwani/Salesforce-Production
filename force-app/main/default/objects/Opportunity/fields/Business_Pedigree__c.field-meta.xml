@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Pedigree__c</fullName>
+    <inlineHelpText>[Blue = SUSTAIN: PROTECT THE CORE = Existing legacy business or re-compete where we are incumbent] [Green = EXTEND: INCREASE SHARE = Selling existing product/capability to new Customer or selling additional product/capability to existing Customer] [Yellow = EXPAND: CREATE NEW MARKETS = Develop new product/capability]</inlineHelpText>
+    <label>Business Pedigree</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blue</fullName>
+                <default>false</default>
+                <label>Blue</label>
+            </value>
+            <value>
+                <fullName>Green</fullName>
+                <default>false</default>
+                <label>Green</label>
+            </value>
+            <value>
+                <fullName>Yellow</fullName>
+                <default>false</default>
+                <label>Yellow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

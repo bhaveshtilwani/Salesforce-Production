@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP_System__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(
+  ISPICKVAL( Site__c, &quot;Wiesbaden&quot; ),
+  ISPICKVAL( Site__c, &quot;Goettingen&quot; ),
+  ISPICKVAL( Site__c, &quot;Hamble&quot; ),
+  ISPICKVAL( Site__c, &quot;Munich&quot; )
+) , &quot;Germany&quot;, 
+IF( ISPICKVAL( Site__c, &quot;Billerica&quot; ) , &quot;Billerica&quot;, 
+IF( OR(
+  ISPICKVAL( Site__c, &quot;ESG&quot; ),
+  ISPICKVAL( Site__c, &quot;QSG&quot; ),
+  ISPICKVAL( Site__c, &quot;Shenzhen&quot; ),
+  ISPICKVAL( Site__c, &quot;St Louis&quot; )
+) , &quot;Asia&quot;, 
+IF( ISPICKVAL( Site__c, &quot;Montreal&quot;) , &quot;Montreal&quot;,
+IF( OR( 
+  ISPICKVAL( Site__c, &quot;Salem&quot; ),
+  ISPICKVAL( Site__c, &quot;Miamisburg&quot; )
+ ), &quot;Salem&quot;, &quot;NA&quot;
+)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ERP System</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

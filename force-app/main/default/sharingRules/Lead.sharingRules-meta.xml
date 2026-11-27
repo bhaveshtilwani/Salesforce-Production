@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>AIS_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>AIS Sales</label>
+        <sharedTo>
+            <group>AIS_Sales</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>AIS Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ALS_Channel</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ALS Channel</label>
+        <sharedTo>
+            <group>ALS_Channel</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>ALS Channel</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ALS_OEM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ALS OEM</label>
+        <sharedTo>
+            <group>ALS_OEM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>ALS OEM</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CS_leads_in_Americas</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CS leads in Americas</label>
+        <sharedTo>
+            <group>Customer_Service_Americas</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Territory__c</field>
+            <operation>equals</operation>
+            <value>AMERICAS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Area_of_Interest__c</field>
+            <operation>equals</operation>
+            <value>Customer Service</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CS_leads_in_Asia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CS leads in Asia</label>
+        <sharedTo>
+            <group>Customer_Service_Asia</group>
+        </sharedTo>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Area_of_Interest__c</field>
+            <operation>equals</operation>
+            <value>Customer Service</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Territory__c</field>
+            <operation>equals</operation>
+            <value>ASIA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>CS_leads_in_EMEA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CS leads in EMEA</label>
+        <sharedTo>
+            <group>Customer_Service_EMEA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Area_of_Interest__c</field>
+            <operation>equals</operation>
+            <value>Customer Service</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Territory__c</field>
+            <operation>equals</operation>
+            <value>EMEA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>D_A_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>D&amp;A Leads</label>
+        <sharedTo>
+            <group>D_A_Users</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>D&amp;A Lead</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Global_Semi_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Global Semi Sales</label>
+        <sharedTo>
+            <group>Global_Semi_Sales</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>Global Semi Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>IOA_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>IOA Sales</label>
+        <sharedTo>
+            <group>IOA_Sales</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>IOA Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>LSM_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>LSM Sales</label>
+        <sharedTo>
+            <group>LSM_Sales</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>LSM Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>M&amp;LS Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>PM_Team_AIS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PM Team AIS</label>
+        <sharedTo>
+            <group>Advanced_Imaging_Systems</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Advanced Imaging Systems</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Precision_Manufacturing_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Precision Manufacturing Sales</label>
+        <sharedTo>
+            <group>Precision_Manufacturing_Sales</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>Precision Manufacturing Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Advanced_Imaging_Systems</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Advanced Imaging Systems</label>
+        <sharedTo>
+            <group>Product_Advanced_Imaging_Systems</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Advanced Imaging Systems</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Advanced_Laser_Systems</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Advanced Laser Systems</label>
+        <sharedTo>
+            <group>Product_Advanced_Laser_Systems</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Advanced Laser Systems</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Aerial_Laser</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Aerial &amp; Laser</label>
+        <sharedTo>
+            <group>Product_Aerial_Laser</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Aerial &amp; Laser</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Analytical</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Analytical</label>
+        <sharedTo>
+            <group>Product_Analytical</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Analytical</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Biomedical_Lighting</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Biomedical Lighting</label>
+        <sharedTo>
+            <group>Product_Biomedical_Lighting</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Biomedical Lighting</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Biomedical_Systems</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Biomedical Systems</label>
+        <sharedTo>
+            <group>Product_Biomedical_Systems</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Biomedical Systems</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Catalog_and_Other</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Catalog and Other</label>
+        <sharedTo>
+            <group>Product_Catalog_and_Other</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Catalog and Other</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Cermax</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Cermax</label>
+        <sharedTo>
+            <group>Product_Cermax</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Cermax</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Customized_Systems_Noblelight</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Customized Systems - Noblelight</label>
+        <sharedTo>
+            <group>Product_Customized_Systems_Nobleligh</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Customized Systems - Noblelight</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Disinfection_Noblelight</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Disinfection - Noblelight</label>
+        <sharedTo>
+            <group>Product_Disinfection_Noblelight</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Disinfection - Noblelight</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Fibers_Components</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Fibers &amp; Components</label>
+        <sharedTo>
+            <group>Product_Fibers_Components</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Fibers &amp; Components</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_HeNe_Lasers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - HeNe Lasers</label>
+        <sharedTo>
+            <group>Product_HeNe_Lasers</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>HeNe Lasers</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_High_Performance</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - High Performance</label>
+        <sharedTo>
+            <group>Product_High_Performance</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>High Performance</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_High_Voltage_Power</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - High Voltage Power</label>
+        <sharedTo>
+            <group>Product_High_Voltage_Power</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>High Voltage Power</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Industrial_Curing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Industrial Curing</label>
+        <sharedTo>
+            <group>Product_Industrial_Curing</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Industrial Curing</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Industrial_Curing_Noblelight</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Industrial Curing - Noblelight</label>
+        <sharedTo>
+            <group>Product_Industrial_Curing_Noblelight</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Industrial Curing - Noblelight</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Industrial_Flash</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Industrial Flash</label>
+        <sharedTo>
+            <group>Product_Industrial_Flash</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Industrial Flash</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Laser_Technology</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Laser Technology</label>
+        <sharedTo>
+            <group>Product_Laser_Technology</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Laser Technology</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Lightsources</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Lightsources</label>
+        <sharedTo>
+            <group>Product_Lightsources</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Lightsources</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Medical_Imaging</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Medical Imaging</label>
+        <sharedTo>
+            <group>Product_Medical_Imaging</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Medical Imaging</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Metrology_Inspection</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Metrology &amp; Inspection</label>
+        <sharedTo>
+            <group>Product_Metrology_Inspection</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Metrology &amp; Inspection</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Microwave</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Microwave</label>
+        <sharedTo>
+            <group>Product_Microwave</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Microwave</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Microwave_Noblelight</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Microwave - Noblelight</label>
+        <sharedTo>
+            <group>Product_Microwave_Noblelight</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Microwave - Noblelight</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Modules_Objectives</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Modules &amp; Objectives</label>
+        <sharedTo>
+            <group>Product_Modules_Objectives</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Modules &amp; Objectives</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Optical_Inspection</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Optical Inspection</label>
+        <sharedTo>
+            <group>Product_Optical_Inspection</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Optical Inspection</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Optics_Imaging</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Optics &amp; Imaging</label>
+        <sharedTo>
+            <group>Product_Optics_Imaging</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Optics &amp; Imaging</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Photodiodes</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Photodiodes</label>
+        <sharedTo>
+            <group>Product_Photodiodes</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Photodiodes</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Precision_Optics</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Precision Optics</label>
+        <sharedTo>
+            <group>Product_Precision_Optics</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Precision Optics</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Pyroelectric_Sensors</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Pyroelectric Sensors</label>
+        <sharedTo>
+            <group>Product_Pyroelectric_Sensors</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Pyroelectric Sensors</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_SPCM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - SPCM</label>
+        <sharedTo>
+            <group>Product_SPCM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>SPCM</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Semiconductor</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Semiconductor</label>
+        <sharedTo>
+            <group>Product_Semiconductor</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Semiconductor</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Solid_State_Lighting</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Solid State Lighting</label>
+        <sharedTo>
+            <group>Product_Solid_State_Lighting</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Solid State Lighting</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Product_Thermopile</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Product - Thermopile</label>
+        <sharedTo>
+            <group>Product_Thermopile</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Product_Family__c</field>
+            <operation>equals</operation>
+            <value>Thermopile</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>WW_Channel</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>WW Channel</label>
+        <sharedTo>
+            <group>WW_Channel</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>WW Channel</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

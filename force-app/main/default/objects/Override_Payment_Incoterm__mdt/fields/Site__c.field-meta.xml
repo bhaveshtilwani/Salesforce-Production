@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Site</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>St Louis</fullName>
+                <default>true</default>
+                <label>St Louis</label>
+            </value>
+            <value>
+                <fullName>Goettingen</fullName>
+                <default>false</default>
+                <label>Goettingen</label>
+            </value>
+            <value>
+                <fullName>Montreal</fullName>
+                <default>false</default>
+                <label>Montreal</label>
+            </value>
+            <value>
+                <fullName>Munich</fullName>
+                <default>false</default>
+                <label>Munich</label>
+            </value>
+            <value>
+                <fullName>ESG Optics</fullName>
+                <default>false</default>
+                <label>ESG Optics</label>
+            </value>
+            <value>
+                <fullName>ESG L&amp;D</fullName>
+                <default>false</default>
+                <label>ESG L&amp;D</label>
+            </value>
+            <value>
+                <fullName>Shenzhen</fullName>
+                <default>false</default>
+                <label>Shenzhen</label>
+            </value>
+            <value>
+                <fullName>Boulder</fullName>
+                <default>false</default>
+                <label>Boulder</label>
+            </value>
+            <value>
+                <fullName>Wiesbaden</fullName>
+                <default>false</default>
+                <label>Wiesbaden</label>
+            </value>
+            <value>
+                <fullName>PCO Kelheim</fullName>
+                <default>false</default>
+                <label>PCO Kelheim</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

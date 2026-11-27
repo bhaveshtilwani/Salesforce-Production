@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SR_Note__c</fullName>
+    <inlineHelpText>Mention if discount should be applied to Sold to price. If don&apos;t know say so. Can add any other information want to give CS or Sales</inlineHelpText>
+    <label>SR Note</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

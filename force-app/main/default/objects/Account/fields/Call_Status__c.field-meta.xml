@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(&apos;/img/samples/light_&apos;+
+IF(TODAY()-LastActivityDate__c&lt;60,&apos;green&apos;,
+IF(TODAY()-LastActivityDate__c&lt;120,&apos;yellow&apos;,
+&apos;red&apos;))+&apos;.gif&apos;,&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Call Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

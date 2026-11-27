@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Desk --></label>
+        <name>sbaa__DealDesk</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Opportunity type for the ALS team --></description>
+        <label><!-- ALS --></label>
+        <name>ALS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Child Design --></label>
+        <name>Child_Design</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Mergers and Acquisitions --></description>
+        <label><!-- Corp Dev --></label>
+        <name>Corp_Dev</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Opportunity Record for Defense &amp; Aerospace --></description>
+        <label><!-- D&amp;A Opportunity --></label>
+        <name>D_A_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Design Opportunity --></label>
+        <name>Design_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Design w/ Product --></label>
+        <name>Design_w_Product</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lumen Data --></label>
+        <name>Lumen_Data</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Design in custom or standard product. --></description>
+        <label><!-- NPI Opportunity --></label>
+        <name>NPI_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Noblelight --></label>
+        <name>Noblelight</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Quick Quote – Turns or running business. No design in effort OR Used for Agreement and Credit/Debit Process --></description>
+        <label><!-- Quick Quote --></label>
+        <name>Quick_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Quote --></label>
+        <name>Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service / Repair --></label>
+        <name>Quoted_for_Service_Repair</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- For Semi Team to manage repeat Order and recurring Opportunities --></description>
+        <label><!-- Semi Opportunity --></label>
+        <name>Semi_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The Close Date cannot be in the past. Please update it to a current or future date. --></errorMessage>
+        <name>Close_Date_Not_Past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Hello, 
+Please note that the Closed Date of your Prospect cannot be in the past if the Prospect is Open.
+Correct the Close Date to date greater than TODAY. -->
+        </errorMessage>
+        <name>Closed_Date_Alert</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please complete Won/Lost/Closed Explanation Comments before updating the Stage. --></errorMessage>
+        <name>Closed_Lost_Comments_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select one or more reason from the “Closed Lost Explanation” field. --></errorMessage>
+        <name>Closed_Lost_Explanation_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a short description for the opportunity. (500 Characters max) --></errorMessage>
+        <name>Corp_Dev_Opp_Description_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_Company_Id_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Land Product Designation required. --></errorMessage>
+        <name>Land_Product_Designation_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Please fill the Product Hierarchy for NPI and Semi OPP
+- Segment
+- Division
+- Business Unit
+- Product Line -->
+        </errorMessage>
+        <name>Product_Hierarchy_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Please complete all value fields before advancing to Stage 2 on an NPI opportunity.
+- Full Production Annual Value
+- Revenue Forecast Year 1
+- Revenue Forecast Year 2
+- Revenue Forecast Year 3 -->
+        </errorMessage>
+        <name>Stage2_Fields_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unlisted Application can&apos;t be blank when Application field is &apos;Other&apos; or &apos;None&apos; --></errorMessage>
+        <name>Unlisted_Application_cannot_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unlisted Application Field must be blank. as Application field is filled in --></errorMessage>
+        <name>Unlisted_Application_must_be_blank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_New_Product --></label>
+        <name>Add_New_Product</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Composer_SP_Proposal --></label>
+        <name>Conga_Composer_Composer_SP_Proposal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Initiate_Cost_Review --></label>
+        <name>Conga_Composer_Initiate_Cost_Review</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_T190_Checklist --></label>
+        <name>Conga_Composer_T190_Checklist</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ConvertLineItemstoAssets --></label>
+        <name>ConvertLineItemstoAssets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateProposal --></label>
+        <name>GenerateProposal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateQuote --></label>
+        <name>GenerateQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- UpdateTermsandConditions --></label>
+        <name>UpdateTermsandConditions</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label>Prévisualiser les approbations</label>
+        <name>sbaa__PreviewApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label>Rappeler les approbations</label>
+        <name>sbaa__RecallApprovals</name>
+    </webLinks>
+    <webLinks>
+        <label>Renvoyer la requête</label>
+        <name>sbaa__ResendRequestEmail</name>
+    </webLinks>
+    <webLinks>
+        <label>Soumettre pour approbation</label>
+        <name>sbaa__SubmitForApproval</name>
+    </webLinks>
+</CustomObjectTranslation>

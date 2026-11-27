@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>条件に一致したときに更新する項目を選択します。</help>
+    <label><!-- Target Field --></label>
+    <name>SBQQ__Field__c</name>
+    <picklistValues>
+        <masterLabel>CPQU_ConversionRate__c</masterLabel>
+        <translation><!-- CPQU_ConversionRate__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comments__c</masterLabel>
+        <translation><!-- Comments__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact_PM_for_Price_From_Lookup_Object__c</masterLabel>
+        <translation><!-- Contact_PM_for_Price_From_Lookup_Object__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact_PM_for_Price__c</masterLabel>
+        <translation><!-- Contact_PM_for_Price__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Currency_to_USD_Conversion_Rate__c</masterLabel>
+        <translation><!-- Currency_to_USD_Conversion_Rate__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer_Material_Text__c</masterLabel>
+        <translation><!-- Customer_Material_Text__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer_Part__c</masterLabel>
+        <translation><!-- Customer_Part__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount (%)</masterLabel>
+        <translation>割引 (%)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount (Amt)</masterLabel>
+        <translation>割引 (金額)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ERP_Product_ID__c</masterLabel>
+        <translation><!-- ERP_Product_ID__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelitas_Site__c</masterLabel>
+        <translation><!-- Excelitas_Site__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Last_Price_Paid__c</masterLabel>
+        <translation><!-- Last_Price_Paid__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Last_Purchase_Date__c</masterLabel>
+        <translation><!-- Last_Purchase_Date__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Markup (%)</masterLabel>
+        <translation>マークアップ (%)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Markup (Amt)</masterLabel>
+        <translation>マークアップ (金額)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Max_Quote_Value__c</masterLabel>
+        <translation><!-- Max_Quote_Value__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No_Editable__c</masterLabel>
+        <translation><!-- No_Editable__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Old_List_Price_2__c</masterLabel>
+        <translation><!-- Old_List_Price_2__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Old_List_Price_3__c</masterLabel>
+        <translation><!-- Old_List_Price_3__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Old_List_Price_4__c</masterLabel>
+        <translation><!-- Old_List_Price_4__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Old_List_Price_5__c</masterLabel>
+        <translation><!-- Old_List_Price_5__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Old_List_Price__c</masterLabel>
+        <translation><!-- Old_List_Price__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original_Price_2__c</masterLabel>
+        <translation><!-- Original_Price_2__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original_Price_3__c</masterLabel>
+        <translation><!-- Original_Price_3__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original_Price_4__c</masterLabel>
+        <translation><!-- Original_Price_4__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Original_Price_5__c</masterLabel>
+        <translation><!-- Original_Price_5__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKI_Product_Family__c</masterLabel>
+        <translation><!-- PKI_Product_Family__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price_2__c</masterLabel>
+        <translation><!-- Price_2__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price_3__c</masterLabel>
+        <translation><!-- Price_3__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price_4__c</masterLabel>
+        <translation><!-- Price_4__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price_5__c</masterLabel>
+        <translation><!-- Price_5__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product_Name__c</masterLabel>
+        <translation><!-- Product_Name__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product_Price_Currency__c</masterLabel>
+        <translation><!-- Product_Price_Currency__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product_Price__c</masterLabel>
+        <translation><!-- Product_Price__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product_SKU__c</masterLabel>
+        <translation><!-- Product_SKU__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantity_2_Old__c</masterLabel>
+        <translation><!-- Quantity_2_Old__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantity_3_Old__c</masterLabel>
+        <translation><!-- Quantity_3_Old__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantity_4_Old__c</masterLabel>
+        <translation><!-- Quantity_4_Old__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantity_5_Old__c</masterLabel>
+        <translation><!-- Quantity_5_Old__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote_Conversion_Rate__c</masterLabel>
+        <translation><!-- Quote_Conversion_Rate__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__ListPrice__c</masterLabel>
+        <translation><!-- SBQQ__ListPrice__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__NetPrice__c</masterLabel>
+        <translation><!-- SBQQ__NetPrice__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__PriceEditable__c</masterLabel>
+        <translation><!-- SBQQ__PriceEditable__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Quantity__c</masterLabel>
+        <translation><!-- SBQQ__Quantity__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__SpecialPrice__c</masterLabel>
+        <translation><!-- SBQQ__SpecialPrice__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR_Lines_Count__c</masterLabel>
+        <translation><!-- SR_Lines_Count__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Toronto_Lines_Count__c</masterLabel>
+        <translation><!-- Toronto_Lines_Count__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Price</masterLabel>
+        <translation>単価</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VAT_Rate__c</masterLabel>
+        <translation><!-- VAT_Rate__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

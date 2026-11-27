@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Resets the exclusion flag before processing the next user.</description>
+        <name>Mark_Excluded</name>
+        <label>Mark Excluded</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>varExcluded</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Excluded_Profiles</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Stores the current user&apos;s Id before attempting deactivation so it can be referenced in fault handling if the update fails.</description>
+        <name>Store_Affected_User_Id</name>
+        <label>Store Affected User Id</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>varAffectedUserId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Records</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Continues processing only if the current user is not part of the exclusion list.</description>
+        <name>Deactivate_User</name>
+        <label>Deactivate User?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Skip</defaultConnectorLabel>
+        <rules>
+            <name>Deactivate</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varExcluded</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Store_Affected_User_Id</targetReference>
+            </connector>
+            <label>Deactivate</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks whether the user meets the 90-day inactivity criteria.</description>
+        <name>Inactive_More_Than_90_Days</name>
+        <label>Inactive More Than 90 Days?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Not Eligible</defaultConnectorLabel>
+        <rules>
+            <name>Eligible</name>
+            <conditionLogic>1 OR (2 AND 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LastLoginDate</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>NinetyDaysAgo</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LastLoginDate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CreatedDate</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <elementReference>NinetyDaysAgo</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excluded_Profiles</targetReference>
+            </connector>
+            <label>Eligible</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determines whether the current user&apos;s profile is included in the exclusion list.</description>
+        <name>Is_Excluded_Profile</name>
+        <label>Is Excluded Profile?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Excluded_Profiles</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Matched</defaultConnectorLabel>
+        <rules>
+            <name>Matched</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Profile.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>Loop_Excluded_Profiles.Label</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Mark_Excluded</targetReference>
+            </connector>
+            <label>Matched</label>
+        </rules>
+    </decisions>
+    <description>Runs weekly to identify active users who have been inactive for 90 or more days while excluding configured profiles.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>NinetyDaysAgo</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()-90</expression>
+    </formulas>
+    <interviewLabel>User Auto Deactivation - 90 Days Inactive {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>User Auto Deactivation - 90 Days Inactive</label>
+    <loops>
+        <description>Iterates through each exclusion record to compare the current user&apos;s profile against the configured exclusion list.</description>
+        <name>Loop_Excluded_Profiles</name>
+        <label>Loop Excluded Profiles</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_Excluded_Profiles</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Is_Excluded_Profile</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Deactivate_User</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Publishes a Platform Event containing user and error details to enable logging in a separate transaction and avoid Mixed DML.</description>
+        <name>Publish_User_Deactivation_Error_Event</name>
+        <label>Publish User Deactivation Error Event</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Affected_User__c</field>
+            <value>
+                <elementReference>varAffectedUserId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Attempted_On__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User_Deactivation_Error__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Retrieves all excluded profile names from Custom Metadata to prevent specified users from being automatically deactivated.</description>
+        <name>Get_Excluded_Profiles</name>
+        <label>Get Excluded Profiles</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Excluded_Profiles</targetReference>
+        </connector>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>User_Deactivation_Exclusion__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Deactivates the eligible user by setting the User record to inactive.</description>
+        <name>Update_Records</name>
+        <label>Update Records</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <faultConnector>
+            <targetReference>Publish_User_Deactivation_Error_Event</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>IsActive</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Inactive_More_Than_90_Days</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <maxBatchSize>50</maxBatchSize>
+        <object>User</object>
+        <schedule>
+            <dayOfMonthToRun>0</dayOfMonthToRun>
+            <frequency>Weekly</frequency>
+            <frequencyNumber>0</frequencyNumber>
+            <startDate>2026-08-10</startDate>
+            <startTime>00:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>varAffectedUserId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>varExcluded</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>

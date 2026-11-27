@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Marketing Permissions --></label>
+    <name>Marketing_Permissions__c</name>
+    <picklistValues>
+        <masterLabel>Annual Tradeshows</masterLabel>
+        <translation><!-- Annual Tradeshows --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email Campaigns</masterLabel>
+        <translation><!-- Email Campaigns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly Newsletter</masterLabel>
+        <translation><!-- Monthly Newsletter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partys</masterLabel>
+        <translation><!-- Partys --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

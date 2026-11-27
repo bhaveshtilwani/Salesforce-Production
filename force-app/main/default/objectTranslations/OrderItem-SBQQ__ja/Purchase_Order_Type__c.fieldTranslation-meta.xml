@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Purchase Order Type --></label>
+    <name>Purchase_Order_Type__c</name>
+    <picklistValues>
+        <masterLabel>ASAP - Deliver ASAP - (ASAP)</masterLabel>
+        <translation><!-- ASAP - Deliver ASAP - (ASAP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DFUE - By telecommunication - (DFUE)</masterLabel>
+        <translation><!-- DFUE - By telecommunication - (DFUE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INSP - Inspection Only - (INSP)</masterLabel>
+        <translation><!-- INSP - Inspection Only - (INSP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MUEN - Orally - (MUEN)</masterLabel>
+        <translation><!-- MUEN - Orally - (MUEN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRE - Non-Recurring Eng. - (NRE)</masterLabel>
+        <translation><!-- NRE - Non-Recurring Eng. - (NRE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SCHR - Written - (SCHR)</masterLabel>
+        <translation><!-- SCHR - Written - (SCHR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TELE - By telephone - (TELE)</masterLabel>
+        <translation><!-- TELE - By telephone - (TELE) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

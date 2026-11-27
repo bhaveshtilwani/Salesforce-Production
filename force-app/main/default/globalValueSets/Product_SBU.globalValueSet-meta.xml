@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Defense &amp; Aerospace</fullName>
+        <default>false</default>
+        <label>Defense &amp; Aerospace</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial</fullName>
+        <default>false</default>
+        <label>Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Detection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Detection</label>
+    </customValue>
+    <customValue>
+        <fullName>Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics</label>
+    </customValue>
+    <description>2021 Update</description>
+    <masterLabel>Product SBU</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

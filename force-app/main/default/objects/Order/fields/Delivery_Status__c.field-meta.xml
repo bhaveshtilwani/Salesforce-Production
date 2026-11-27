@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Status__c</fullName>
+    <label>Delivery Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not yet processed</fullName>
+                <default>false</default>
+                <label>Not yet processed</label>
+            </value>
+            <value>
+                <fullName>Partially processed</fullName>
+                <default>false</default>
+                <label>Partially processed</label>
+            </value>
+            <value>
+                <fullName>Completely processed</fullName>
+                <default>false</default>
+                <label>Completely processed</label>
+            </value>
+            <value>
+                <fullName>Not Delivered</fullName>
+                <default>false</default>
+                <label>Not Delivered</label>
+            </value>
+            <value>
+                <fullName>Partially Delivered</fullName>
+                <default>false</default>
+                <label>Partially Delivered</label>
+            </value>
+            <value>
+                <fullName>Fully Delivered</fullName>
+                <default>false</default>
+                <label>Fully Delivered</label>
+            </value>
+            <value>
+                <fullName>Not Relev. for Deliv</fullName>
+                <default>false</default>
+                <label>Not Relev. for Deliv</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

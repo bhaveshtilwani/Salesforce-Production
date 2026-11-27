@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Group__c</fullName>
+    <label>Price Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(00) No Agent</fullName>
+                <default>false</default>
+                <label>(00) No Agent</label>
+            </value>
+            <value>
+                <fullName>(01) Seraphim Eng.</fullName>
+                <default>false</default>
+                <label>(01) Seraphim Eng.</label>
+            </value>
+            <value>
+                <fullName>(02) Seraphim Co. Ltd.</fullName>
+                <default>false</default>
+                <label>(02) Seraphim Co. Ltd.</label>
+            </value>
+            <value>
+                <fullName>(03) Siemens Bangalore</fullName>
+                <default>false</default>
+                <label>(03) Siemens Bangalore</label>
+            </value>
+            <value>
+                <fullName>(04) CW Beach Co.</fullName>
+                <default>false</default>
+                <label>(04) CW Beach Co.</label>
+            </value>
+            <value>
+                <fullName>(05) NEopt</fullName>
+                <default>false</default>
+                <label>(05) NEopt</label>
+            </value>
+            <value>
+                <fullName>(06) B&amp;B Corporation</fullName>
+                <default>false</default>
+                <label>(06) B&amp;B Corporation</label>
+            </value>
+            <value>
+                <fullName>(07) EG&amp;G CRO Beijing</fullName>
+                <default>false</default>
+                <label>(07) EG&amp;G CRO Beijing</label>
+            </value>
+            <value>
+                <fullName>(08) Supaco</fullName>
+                <default>false</default>
+                <label>(08) Supaco</label>
+            </value>
+            <value>
+                <fullName>(11) Automotive</fullName>
+                <default>false</default>
+                <label>(11) Automotive</label>
+            </value>
+            <value>
+                <fullName>(12) Industrial</fullName>
+                <default>false</default>
+                <label>(12) Industrial</label>
+            </value>
+            <value>
+                <fullName>(13) Medical</fullName>
+                <default>false</default>
+                <label>(13) Medical</label>
+            </value>
+            <value>
+                <fullName>(14) Instruments</fullName>
+                <default>false</default>
+                <label>(14) Instruments</label>
+            </value>
+            <value>
+                <fullName>(15) Other</fullName>
+                <default>false</default>
+                <label>(15) Other</label>
+            </value>
+            <value>
+                <fullName>(16) US Distributor</fullName>
+                <default>false</default>
+                <label>(16) US Distributor</label>
+            </value>
+            <value>
+                <fullName>(17) Non-US Distributor</fullName>
+                <default>false</default>
+                <label>(17) Non-US Distributor</label>
+            </value>
+            <value>
+                <fullName>(18) Photocell-Automotive</fullName>
+                <default>false</default>
+                <label>(18) Photocell-Automotive</label>
+            </value>
+            <value>
+                <fullName>(19) Photocell-Misc</fullName>
+                <default>false</default>
+                <label>(19) Photocell-Misc</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(00) No Agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(01) Seraphim Eng.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(02) Seraphim Co. Ltd.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(03) Siemens Bangalore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(04) CW Beach Co.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(05) NEopt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(06) B&amp;B Corporation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(07) EG&amp;G CRO Beijing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(08) Supaco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(11) Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(12) Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(13) Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(14) Instruments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(15) Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(16) US Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(17) Non-US Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(18) Photocell-Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(19) Photocell-Misc</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

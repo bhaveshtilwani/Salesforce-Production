@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bahnhof__c</fullName>
+    <description>Freight Courier Account for Feki and Goettingen</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Freight Courier Account for Feki and Goettingen</inlineHelpText>
+    <label>Bahnhof</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

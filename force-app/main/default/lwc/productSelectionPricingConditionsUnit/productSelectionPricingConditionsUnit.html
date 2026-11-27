@@ -1,0 +1,30 @@
+<template>
+    <lightning-record-edit-form object-api-name="Pricing_Condition__c">
+        <div class="slds-grid slds-gutters slds-wrap slds-border_bottom">
+            <div class="slds-col slds-size_11-of-12">
+                <div class="slds-grid slds-wrap slds-var-m-vertical_medium">
+                    <template for:each={pricingConditions} for:item="field">
+                        <div key={field.Field_API_Name__c} class="slds-col slds-size_1-of-4">
+                            <lightning-input-field
+                                variant="standard"
+                                field-name={field.Field_API_Name__c}
+                                value={field.Value}
+                                onchange={handleSelectionChange}
+                                date-style="short"
+                            ></lightning-input-field>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-12 slds-align-middle">
+                <lightning-button-icon
+                    variant="container"
+                    icon-name="utility:delete"
+                    alternative-text="Delete"
+                    title="Delete"
+                    onclick={handleDelete}
+                ></lightning-button-icon>
+            </div>
+        </div>
+    </lightning-record-edit-form>
+</template>

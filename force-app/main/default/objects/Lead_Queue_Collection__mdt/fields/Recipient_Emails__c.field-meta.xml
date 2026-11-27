@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recipient_Emails__c</fullName>
+    <description>This will hold the email of the User under Queue</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Recipient Emails</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

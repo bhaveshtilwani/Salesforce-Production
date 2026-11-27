@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exempt_Product__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Tariff, Shipping, NRE, and exempt products are excluded from Energy Surcharge calculations and approval requirements.</description>
+    <label>Exempt Product</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

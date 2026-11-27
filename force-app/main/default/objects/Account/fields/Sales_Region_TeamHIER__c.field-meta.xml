@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Region_TeamHIER__c</fullName>
+    <label>Sales Region Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sales_TeamHIER__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Sales_Region_Team</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS Sales</controllingFieldValue>
+            <valueName>M&amp;LS Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS Sales</controllingFieldValue>
+            <valueName>M&amp;LS Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS Sales</controllingFieldValue>
+            <valueName>M&amp;LS EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AIS Sales</controllingFieldValue>
+            <valueName>AIS Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AIS Sales</controllingFieldValue>
+            <valueName>AIS Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AIS Sales</controllingFieldValue>
+            <valueName>AIS EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM</controllingFieldValue>
+            <valueName>ALS OEM Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM</controllingFieldValue>
+            <valueName>ALS OEM Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM</controllingFieldValue>
+            <valueName>ALS OEM EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS Channel</controllingFieldValue>
+            <valueName>ALS Channel Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS Channel</controllingFieldValue>
+            <valueName>ALS Channel Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS Channel</controllingFieldValue>
+            <valueName>ALS Channel EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IOA Sales</controllingFieldValue>
+            <valueName>IOA Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IOA Sales</controllingFieldValue>
+            <valueName>IOA Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IOA Sales</controllingFieldValue>
+            <valueName>IOA EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global Semi Sales</controllingFieldValue>
+            <valueName>Semi Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global Semi Sales</controllingFieldValue>
+            <valueName>Semi Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global Semi Sales</controllingFieldValue>
+            <valueName>Semi EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Sales</controllingFieldValue>
+            <valueName>Precision Manufacturing Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Sales</controllingFieldValue>
+            <valueName>Precision Manufacturing EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Sales</controllingFieldValue>
+            <valueName>Precision Manufacturing Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WW Channel</controllingFieldValue>
+            <valueName>Channel Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WW Channel</controllingFieldValue>
+            <valueName>Channel Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WW Channel</controllingFieldValue>
+            <valueName>Channel EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate Sales Team</controllingFieldValue>
+            <valueName>Corporate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unassigned Sales Team</controllingFieldValue>
+            <valueName>Unassigned Sales Sub Team</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

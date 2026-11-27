@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Semiconductor Singapore - Custom Part</label>
+    <protected>false</protected>
+    <values>
+        <field>Extra_Charge_Code__c</field>
+        <value xsi:type="xsd:string">MC-000000-13</value>
+    </values>
+    <values>
+        <field>NRE_Charges__c</field>
+        <value xsi:type="xsd:string">MC-000000-13</value>
+    </values>
+    <values>
+        <field>Product_Line__c</field>
+        <value xsi:type="xsd:string">Semiconductor Singapore</value>
+    </values>
+    <values>
+        <field>SAP_Material_Number__c</field>
+        <value xsi:type="xsd:string">SSLCP</value>
+    </values>
+</CustomMetadata>

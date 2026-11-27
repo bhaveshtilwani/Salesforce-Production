@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technician_1__c</fullName>
+    <label>Technician#1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA Not applicable</fullName>
+                <default>false</default>
+                <label>NA Not applicable</label>
+            </value>
+            <value>
+                <fullName>PR01 - Gaurang Dashi</fullName>
+                <default>false</default>
+                <label>PR01 - Gaurang Dashi</label>
+            </value>
+            <value>
+                <fullName>PR03 - David Vuong</fullName>
+                <default>false</default>
+                <label>PR03 - David Vuong</label>
+            </value>
+            <value>
+                <fullName>PR04 - Faris Gorges</fullName>
+                <default>false</default>
+                <label>PR04 - Faris Gorges</label>
+            </value>
+            <value>
+                <fullName>PR06 - Raymund Castro</fullName>
+                <default>false</default>
+                <label>PR06 - Raymund Castro</label>
+            </value>
+            <value>
+                <fullName>PR10 - Sunny Gu</fullName>
+                <default>false</default>
+                <label>PR10 - Sunny Gu</label>
+            </value>
+            <value>
+                <fullName>PR13 - Gowsala Ponnudurai</fullName>
+                <default>false</default>
+                <label>PR13 - Gowsala Ponnudurai</label>
+            </value>
+            <value>
+                <fullName>PR14 - Winston Qu</fullName>
+                <default>false</default>
+                <label>PR14 - Winston Qu</label>
+            </value>
+            <value>
+                <fullName>PR15 - Helen Guo</fullName>
+                <default>false</default>
+                <label>PR15 - Helen Guo</label>
+            </value>
+            <value>
+                <fullName>PR16 - Thanh Nguyen</fullName>
+                <default>false</default>
+                <label>PR16 - Thanh Nguyen</label>
+            </value>
+            <value>
+                <fullName>PR23 - Rajwinder Kaur</fullName>
+                <default>false</default>
+                <label>PR23 - Rajwinder Kaur</label>
+            </value>
+            <value>
+                <fullName>PR24 - Winnie Song</fullName>
+                <default>false</default>
+                <label>PR24 - Winnie Song</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

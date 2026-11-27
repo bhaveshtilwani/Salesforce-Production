@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dunning_Clerk_is_not_applicable</fullName>
+    <active>false</active>
+    <description>GER Accounts only</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP Germany&quot;,OR( ISPICKVAL( Account_Group__c ,  &quot;Ship To - W002&quot;),( ISPICKVAL( Account_Group__c ,  &quot;Ship To - H002&quot;)))
+&amp;&amp; NOT(ISBLANK(  Dunning_Clerk__c )))</errorConditionFormula>
+    <errorDisplayField>Dunning_Clerk__c</errorDisplayField>
+    <errorMessage>Dunning Clerk is not applicable for selected Account Group.</errorMessage>
+</ValidationRule>

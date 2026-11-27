@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Basic User Permissions</label>
+    <permissionSets>Contract_Legal</permissionSets>
+    <permissionSets>Email_Template_Builder</permissionSets>
+    <permissionSets>For_Special_Approval_Request</permissionSets>
+    <permissionSets>Lightning_Permission_Sets</permissionSets>
+    <permissionSets>MFA</permissionSets>
+    <permissionSets>Use_license_as_CRM_User</permissionSets>
+    <permissionSets>euCheckVat__EuCheckVat</permissionSets>
+    <permissionSets>force__CRMUserPsl</permissionSets>
+    <permissionSets>force__SalesCloudMobileUser</permissionSets>
+    <permissionSets>force__SalesCloudUnlimitedIncluded</permissionSets>
+    <permissionSets>force__SalesConsoleUser</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

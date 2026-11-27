@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>CPQU__CPQ_Contract_Status_Activated</fullName>
+        <field>Status</field>
+        <literalValue>Activated</literalValue>
+        <name>CPQU - Contract - Status = Activated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CPQU__Renewal_Forecast_True</fullName>
+        <field>SBQQ__RenewalForecast__c</field>
+        <literalValue>1</literalValue>
+        <name>CPQU - Renewal Forecast True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CPQU__Renewal_Quoted_True</fullName>
+        <field>SBQQ__RenewalQuoted__c</field>
+        <literalValue>1</literalValue>
+        <name>CPQU - Renewal Quoted True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CPQU__CPQU - Activated Contract %3D Renewal Quoted%2FForcast</fullName>
+        <actions>
+            <name>CPQU__Renewal_Forecast_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>CPQU__Renewal_Quoted_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Deprecated - 2018-10-26
+Replaced by timed Process Builders - CPQU - Contract (On Create) - Auto Renewals and CPQU - Contract (On Update) - Auto Renewals</description>
+        <formula>TEXT(Status) == &quot;Activated&quot; &amp;&amp;  $Setup.CPQU__Settings__c.CPQU__Auto_Generate_Renewal_Opportunity_Quote__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQU__CPQU - Contract - New Contract %3D Activated</fullName>
+        <active>false</active>
+        <description>Deprecated.
+Replaced by timed Process Builders - CPQU - Contract (On Create) - Auto Renewals</description>
+        <formula>False</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

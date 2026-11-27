@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applications__c</fullName>
+    <description>Please select Application(s) that apply to Account</description>
+    <inlineHelpText>Please select Application(s) that apply to Account</inlineHelpText>
+    <label>Applications</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adaptive Cruise Control</fullName>
+                <default>false</default>
+                <label>Adaptive Cruise Control</label>
+            </value>
+            <value>
+                <fullName>Adaptive Optics</fullName>
+                <default>false</default>
+                <label>Adaptive Optics</label>
+            </value>
+            <value>
+                <fullName>Aerial Photography</fullName>
+                <default>false</default>
+                <label>Aerial Photography</label>
+            </value>
+            <value>
+                <fullName>Air Conditioning</fullName>
+                <default>false</default>
+                <label>Air Conditioning</label>
+            </value>
+            <value>
+                <fullName>Ambient Light Sensing</fullName>
+                <default>false</default>
+                <label>Ambient Light Sensing</label>
+            </value>
+            <value>
+                <fullName>Analytical</fullName>
+                <default>false</default>
+                <label>Analytical</label>
+            </value>
+            <value>
+                <fullName>Architectural Lighting</fullName>
+                <default>false</default>
+                <label>Architectural Lighting</label>
+            </value>
+            <value>
+                <fullName>Artificial Intelligence</fullName>
+                <default>false</default>
+                <label>Artificial Intelligence</label>
+            </value>
+            <value>
+                <fullName>Asymmetrical Flow Field-Flow Fractionation</fullName>
+                <default>false</default>
+                <label>Asymmetrical Flow Field-Flow Fractionation</label>
+            </value>
+            <value>
+                <fullName>Audio Control</fullName>
+                <default>false</default>
+                <label>Audio Control</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Aviation Lighting</fullName>
+                <default>false</default>
+                <label>Aviation Lighting</label>
+            </value>
+            <value>
+                <fullName>Barcode Reader</fullName>
+                <default>false</default>
+                <label>Barcode Reader</label>
+            </value>
+            <value>
+                <fullName>Biotech Instrumentation</fullName>
+                <default>false</default>
+                <label>Biotech Instrumentation</label>
+            </value>
+            <value>
+                <fullName>Blood Analyzers and Immunoassay</fullName>
+                <default>false</default>
+                <label>Blood Analyzers and Immunoassay</label>
+            </value>
+            <value>
+                <fullName>Blood Temperature Measurement</fullName>
+                <default>false</default>
+                <label>Blood Temperature Measurement</label>
+            </value>
+            <value>
+                <fullName>Burner Control</fullName>
+                <default>false</default>
+                <label>Burner Control</label>
+            </value>
+            <value>
+                <fullName>Carbon Analysis</fullName>
+                <default>false</default>
+                <label>Carbon Analysis</label>
+            </value>
+            <value>
+                <fullName>Cargo Inspection</fullName>
+                <default>false</default>
+                <label>Cargo Inspection</label>
+            </value>
+            <value>
+                <fullName>Check Imaging</fullName>
+                <default>false</default>
+                <label>Check Imaging</label>
+            </value>
+            <value>
+                <fullName>Colorimetry</fullName>
+                <default>false</default>
+                <label>Colorimetry</label>
+            </value>
+            <value>
+                <fullName>Color Measurement</fullName>
+                <default>false</default>
+                <label>Color Measurement</label>
+            </value>
+            <value>
+                <fullName>Confocal Microscopy</fullName>
+                <default>false</default>
+                <label>Confocal Microscopy</label>
+            </value>
+            <value>
+                <fullName>Currency Validation</fullName>
+                <default>false</default>
+                <label>Currency Validation</label>
+            </value>
+            <value>
+                <fullName>Data Communication</fullName>
+                <default>false</default>
+                <label>Data Communication</label>
+            </value>
+            <value>
+                <fullName>Dental</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>DNA Sequencing</fullName>
+                <default>false</default>
+                <label>DNA Sequencing</label>
+            </value>
+            <value>
+                <fullName>Ear Thermometer</fullName>
+                <default>false</default>
+                <label>Ear Thermometer</label>
+            </value>
+            <value>
+                <fullName>Endoscopy</fullName>
+                <default>false</default>
+                <label>Endoscopy</label>
+            </value>
+            <value>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <label>Entertainment</label>
+            </value>
+            <value>
+                <fullName>Entertainment Lighting</fullName>
+                <default>false</default>
+                <label>Entertainment Lighting</label>
+            </value>
+            <value>
+                <fullName>Environmental Analytics</fullName>
+                <default>false</default>
+                <label>Environmental Analytics</label>
+            </value>
+            <value>
+                <fullName>Fiber Optic Temperature Measurement</fullName>
+                <default>false</default>
+                <label>Fiber Optic Temperature Measurement</label>
+            </value>
+            <value>
+                <fullName>Fiber Optic Test Equipment</fullName>
+                <default>false</default>
+                <label>Fiber Optic Test Equipment</label>
+            </value>
+            <value>
+                <fullName>Flow Cytometry / Cell Analysis</fullName>
+                <default>false</default>
+                <label>Flow Cytometry / Cell Analysis</label>
+            </value>
+            <value>
+                <fullName>Fluorescence &amp; Luminescence</fullName>
+                <default>false</default>
+                <label>Fluorescence &amp; Luminescence</label>
+            </value>
+            <value>
+                <fullName>Fluorimetry</fullName>
+                <default>false</default>
+                <label>Fluorimetry</label>
+            </value>
+            <value>
+                <fullName>Fog Detection</fullName>
+                <default>false</default>
+                <label>Fog Detection</label>
+            </value>
+            <value>
+                <fullName>Food/Grain Sorting</fullName>
+                <default>false</default>
+                <label>Food/Grain Sorting</label>
+            </value>
+            <value>
+                <fullName>Food Inspection</fullName>
+                <default>false</default>
+                <label>Food Inspection</label>
+            </value>
+            <value>
+                <fullName>Forehead Thermometer</fullName>
+                <default>false</default>
+                <label>Forehead Thermometer</label>
+            </value>
+            <value>
+                <fullName>Free Space Communication</fullName>
+                <default>false</default>
+                <label>Free Space Communication</label>
+            </value>
+            <value>
+                <fullName>Gas Detection</fullName>
+                <default>false</default>
+                <label>Gas Detection</label>
+            </value>
+            <value>
+                <fullName>Gas Detection and Analysis</fullName>
+                <default>false</default>
+                <label>Gas Detection and Analysis</label>
+            </value>
+            <value>
+                <fullName>Gene Sequencing</fullName>
+                <default>false</default>
+                <label>Gene Sequencing</label>
+            </value>
+            <value>
+                <fullName>Hazardous Area</fullName>
+                <default>false</default>
+                <label>Hazardous Area</label>
+            </value>
+            <value>
+                <fullName>HPLC</fullName>
+                <default>false</default>
+                <label>HPLC</label>
+            </value>
+            <value>
+                <fullName>Hyper Spectral</fullName>
+                <default>false</default>
+                <label>Hyper Spectral</label>
+            </value>
+            <value>
+                <fullName>Induction Heater</fullName>
+                <default>false</default>
+                <label>Induction Heater</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Industrial Imaging</fullName>
+                <default>false</default>
+                <label>Industrial Imaging</label>
+            </value>
+            <value>
+                <fullName>Intense Pulsed Light (IPL)</fullName>
+                <default>false</default>
+                <label>Intense Pulsed Light (IPL)</label>
+            </value>
+            <value>
+                <fullName>Intrusion Alarm</fullName>
+                <default>false</default>
+                <label>Intrusion Alarm</label>
+            </value>
+            <value>
+                <fullName>IR Illumination</fullName>
+                <default>false</default>
+                <label>IR Illumination</label>
+            </value>
+            <value>
+                <fullName>Laser Material Processing</fullName>
+                <default>false</default>
+                <label>Laser Material Processing</label>
+            </value>
+            <value>
+                <fullName>Light Meter</fullName>
+                <default>false</default>
+                <label>Light Meter</label>
+            </value>
+            <value>
+                <fullName>Light Switch</fullName>
+                <default>false</default>
+                <label>Light Switch</label>
+            </value>
+            <value>
+                <fullName>Low Resolution IR Imaging</fullName>
+                <default>false</default>
+                <label>Low Resolution IR Imaging</label>
+            </value>
+            <value>
+                <fullName>Luggage Inspection</fullName>
+                <default>false</default>
+                <label>Luggage Inspection</label>
+            </value>
+            <value>
+                <fullName>Machine Vision</fullName>
+                <default>false</default>
+                <label>Machine Vision</label>
+            </value>
+            <value>
+                <fullName>Mail Sorting</fullName>
+                <default>false</default>
+                <label>Mail Sorting</label>
+            </value>
+            <value>
+                <fullName>Mass Spectroscopy - ICP</fullName>
+                <default>false</default>
+                <label>Mass Spectroscopy - ICP</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Medical analytics</fullName>
+                <default>false</default>
+                <label>Medical analytics</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Medical Lighting</fullName>
+                <default>false</default>
+                <label>Medical Lighting</label>
+            </value>
+            <value>
+                <fullName>MicroPlate Readers</fullName>
+                <default>false</default>
+                <label>MicroPlate Readers</label>
+            </value>
+            <value>
+                <fullName>Microscope Power Meter</fullName>
+                <default>false</default>
+                <label>Microscope Power Meter</label>
+            </value>
+            <value>
+                <fullName>Microscopy</fullName>
+                <default>false</default>
+                <label>Microscopy</label>
+            </value>
+            <value>
+                <fullName>Microwave Oven</fullName>
+                <default>false</default>
+                <label>Microwave Oven</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>Military</label>
+            </value>
+            <value>
+                <fullName>Molecular Imaging</fullName>
+                <default>false</default>
+                <label>Molecular Imaging</label>
+            </value>
+            <value>
+                <fullName>Motion Detection</fullName>
+                <default>false</default>
+                <label>Motion Detection</label>
+            </value>
+            <value>
+                <fullName>Optical Switch</fullName>
+                <default>false</default>
+                <label>Optical Switch</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Particle Sizing and Counting</fullName>
+                <default>false</default>
+                <label>Particle Sizing and Counting</label>
+            </value>
+            <value>
+                <fullName>PCB Inspection</fullName>
+                <default>false</default>
+                <label>PCB Inspection</label>
+            </value>
+            <value>
+                <fullName>PCR</fullName>
+                <default>false</default>
+                <label>PCR</label>
+            </value>
+            <value>
+                <fullName>Photo</fullName>
+                <default>false</default>
+                <label>Photo</label>
+            </value>
+            <value>
+                <fullName>Portable Consumer Lighting</fullName>
+                <default>false</default>
+                <label>Portable Consumer Lighting</label>
+            </value>
+            <value>
+                <fullName>Presence Detection</fullName>
+                <default>false</default>
+                <label>Presence Detection</label>
+            </value>
+            <value>
+                <fullName>Printer/Copier</fullName>
+                <default>false</default>
+                <label>Printer/Copier</label>
+            </value>
+            <value>
+                <fullName>Professional Photography</fullName>
+                <default>false</default>
+                <label>Professional Photography</label>
+            </value>
+            <value>
+                <fullName>Proximity Light Switch</fullName>
+                <default>false</default>
+                <label>Proximity Light Switch</label>
+            </value>
+            <value>
+                <fullName>Pulse Oximetry</fullName>
+                <default>false</default>
+                <label>Pulse Oximetry</label>
+            </value>
+            <value>
+                <fullName>Quantum Cryptography</fullName>
+                <default>false</default>
+                <label>Quantum Cryptography</label>
+            </value>
+            <value>
+                <fullName>Radiation Detection</fullName>
+                <default>false</default>
+                <label>Radiation Detection</label>
+            </value>
+            <value>
+                <fullName>Range Finding</fullName>
+                <default>false</default>
+                <label>Range Finding</label>
+            </value>
+            <value>
+                <fullName>Remote Sensing</fullName>
+                <default>false</default>
+                <label>Remote Sensing</label>
+            </value>
+            <value>
+                <fullName>Remote Temperature Sensing</fullName>
+                <default>false</default>
+                <label>Remote Temperature Sensing</label>
+            </value>
+            <value>
+                <fullName>Retina Scanning</fullName>
+                <default>false</default>
+                <label>Retina Scanning</label>
+            </value>
+            <value>
+                <fullName>Safety Curtain</fullName>
+                <default>false</default>
+                <label>Safety Curtain</label>
+            </value>
+            <value>
+                <fullName>Scientific / R&amp;D</fullName>
+                <default>false</default>
+                <label>Scientific / R&amp;D</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Security Laser Scanner</fullName>
+                <default>false</default>
+                <label>Security Laser Scanner</label>
+            </value>
+            <value>
+                <fullName>Signal Lighting</fullName>
+                <default>false</default>
+                <label>Signal Lighting</label>
+            </value>
+            <value>
+                <fullName>Signs &amp; Displays</fullName>
+                <default>false</default>
+                <label>Signs &amp; Displays</label>
+            </value>
+            <value>
+                <fullName>Single Molecule Detection</fullName>
+                <default>false</default>
+                <label>Single Molecule Detection</label>
+            </value>
+            <value>
+                <fullName>Smoke Detection</fullName>
+                <default>false</default>
+                <label>Smoke Detection</label>
+            </value>
+            <value>
+                <fullName>Sparc Emmission Spectroscopy</fullName>
+                <default>false</default>
+                <label>Sparc Emmission Spectroscopy</label>
+            </value>
+            <value>
+                <fullName>Spectroscopy</fullName>
+                <default>false</default>
+                <label>Spectroscopy</label>
+            </value>
+            <value>
+                <fullName>Speed Gun</fullName>
+                <default>false</default>
+                <label>Speed Gun</label>
+            </value>
+            <value>
+                <fullName>Sunload and DRL Sensor</fullName>
+                <default>false</default>
+                <label>Sunload and DRL Sensor</label>
+            </value>
+            <value>
+                <fullName>Surveying Equipment</fullName>
+                <default>false</default>
+                <label>Surveying Equipment</label>
+            </value>
+            <value>
+                <fullName>Test Equipment</fullName>
+                <default>false</default>
+                <label>Test Equipment</label>
+            </value>
+            <value>
+                <fullName>Textile Inspection</fullName>
+                <default>false</default>
+                <label>Textile Inspection</label>
+            </value>
+            <value>
+                <fullName>Transportation/Obstruction Warning</fullName>
+                <default>false</default>
+                <label>Transportation/Obstruction Warning</label>
+            </value>
+            <value>
+                <fullName>Wafer Inspection</fullName>
+                <default>false</default>
+                <label>Wafer Inspection</label>
+            </value>
+            <value>
+                <fullName>Warning Beacons</fullName>
+                <default>false</default>
+                <label>Warning Beacons</label>
+            </value>
+            <value>
+                <fullName>Web Inspection</fullName>
+                <default>false</default>
+                <label>Web Inspection</label>
+            </value>
+            <value>
+                <fullName>X-Ray Detection</fullName>
+                <default>false</default>
+                <label>X-Ray Detection</label>
+            </value>
+            <value>
+                <fullName>Adhesion</fullName>
+                <default>false</default>
+                <label>Adhesion</label>
+            </value>
+            <value>
+                <fullName>Aesthetics</fullName>
+                <default>false</default>
+                <label>Aesthetics</label>
+            </value>
+            <value>
+                <fullName>Analog Printing</fullName>
+                <default>false</default>
+                <label>Analog Printing</label>
+            </value>
+            <value>
+                <fullName>Analysis, Diagnostics &amp; Detection</fullName>
+                <default>false</default>
+                <label>Analysis, Diagnostics &amp; Detection</label>
+            </value>
+            <value>
+                <fullName>Coatings</fullName>
+                <default>false</default>
+                <label>Coatings</label>
+            </value>
+            <value>
+                <fullName>Composites</fullName>
+                <default>false</default>
+                <label>Composites</label>
+            </value>
+            <value>
+                <fullName>Converting</fullName>
+                <default>false</default>
+                <label>Converting</label>
+            </value>
+            <value>
+                <fullName>Digital Printing</fullName>
+                <default>false</default>
+                <label>Digital Printing</label>
+            </value>
+            <value>
+                <fullName>Disinfection</fullName>
+                <default>false</default>
+                <label>Disinfection</label>
+            </value>
+            <value>
+                <fullName>Food Processing</fullName>
+                <default>false</default>
+                <label>Food Processing</label>
+            </value>
+            <value>
+                <fullName>Heating &amp; Drying</fullName>
+                <default>false</default>
+                <label>Heating &amp; Drying</label>
+            </value>
+            <value>
+                <fullName>Laser</fullName>
+                <default>false</default>
+                <label>Laser</label>
+            </value>
+            <value>
+                <fullName>Oxidation</fullName>
+                <default>false</default>
+                <label>Oxidation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

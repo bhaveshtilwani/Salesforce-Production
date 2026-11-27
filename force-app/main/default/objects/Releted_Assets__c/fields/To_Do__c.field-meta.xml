@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>To_Do__c</fullName>
+    <label>To Do</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Arrange return</fullName>
+                <default>false</default>
+                <label>Arrange return</label>
+            </value>
+            <value>
+                <fullName>Calibrate product</fullName>
+                <default>false</default>
+                <label>Calibrate product</label>
+            </value>
+            <value>
+                <fullName>Check if customer wants product back</fullName>
+                <default>false</default>
+                <label>Check if customer wants product back</label>
+            </value>
+            <value>
+                <fullName>Check if customer will scrap product themselves</fullName>
+                <default>false</default>
+                <label>Check if customer will scrap product themselves</label>
+            </value>
+            <value>
+                <fullName>Check if customer will send replacement order</fullName>
+                <default>false</default>
+                <label>Check if customer will send replacement order</label>
+            </value>
+            <value>
+                <fullName>Close case</fullName>
+                <default>false</default>
+                <label>Close case</label>
+            </value>
+            <value>
+                <fullName>Create billable outbound SO</fullName>
+                <default>false</default>
+                <label>Create billable outbound SO</label>
+            </value>
+            <value>
+                <fullName>Create non-billable outbound SO</fullName>
+                <default>false</default>
+                <label>Create non-billable outbound SO</label>
+            </value>
+            <value>
+                <fullName>Customer Hold</fullName>
+                <default>false</default>
+                <label>Customer Hold</label>
+            </value>
+            <value>
+                <fullName>Deliver part to Shipping</fullName>
+                <default>false</default>
+                <label>Deliver part to Shipping</label>
+            </value>
+            <value>
+                <fullName>Inspect returned product</fullName>
+                <default>false</default>
+                <label>Inspect returned product</label>
+            </value>
+            <value>
+                <fullName>Inspect Returned Product - Internal</fullName>
+                <default>false</default>
+                <label>Inspect Returned Product - Internal</label>
+            </value>
+            <value>
+                <fullName>Inspect Returned Product - Supplier</fullName>
+                <default>false</default>
+                <label>Inspect Returned Product - Supplier</label>
+            </value>
+            <value>
+                <fullName>Internal Hold</fullName>
+                <default>false</default>
+                <label>Internal Hold</label>
+            </value>
+            <value>
+                <fullName>Invoice &amp; close case</fullName>
+                <default>false</default>
+                <label>Invoice &amp; close case</label>
+            </value>
+            <value>
+                <fullName>Issue credit &amp; close case</fullName>
+                <default>false</default>
+                <label>Issue credit &amp; close case</label>
+            </value>
+            <value>
+                <fullName>Prepare Deviation Request</fullName>
+                <default>false</default>
+                <label>Prepare Deviation Request</label>
+            </value>
+            <value>
+                <fullName>Quote customer</fullName>
+                <default>false</default>
+                <label>Quote customer</label>
+            </value>
+            <value>
+                <fullName>Repair product</fullName>
+                <default>false</default>
+                <label>Repair product</label>
+            </value>
+            <value>
+                <fullName>Respond to question</fullName>
+                <default>false</default>
+                <label>Respond to question</label>
+            </value>
+            <value>
+                <fullName>Respond to quotation</fullName>
+                <default>false</default>
+                <label>Respond to quotation</label>
+            </value>
+            <value>
+                <fullName>Return product</fullName>
+                <default>false</default>
+                <label>Return product</label>
+            </value>
+            <value>
+                <fullName>Review case details</fullName>
+                <default>false</default>
+                <label>Review case details</label>
+            </value>
+            <value>
+                <fullName>Scrap/recycle product</fullName>
+                <default>false</default>
+                <label>Scrap/recycle product</label>
+            </value>
+            <value>
+                <fullName>Send order</fullName>
+                <default>false</default>
+                <label>Send order</label>
+            </value>
+            <value>
+                <fullName>Send replacement without invoice &amp; close case</fullName>
+                <default>false</default>
+                <label>Send replacement without invoice &amp; close case</label>
+            </value>
+            <value>
+                <fullName>Ship back with invoice &amp; close case</fullName>
+                <default>false</default>
+                <label>Ship back with invoice &amp; close case</label>
+            </value>
+            <value>
+                <fullName>Ship back without invoice &amp; close case</fullName>
+                <default>false</default>
+                <label>Ship back without invoice &amp; close case</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Arrange return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Check if customer wants product back</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Check if customer will scrap product themselves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Check if customer will send replacement order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Close case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Create billable outbound SO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Create non-billable outbound SO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Quality</controllingFieldValue>
+            <valueName>Inspect returned product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <valueName>Internal Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Invoice &amp; close case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Issue credit &amp; close case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Quote customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Send replacement without invoice &amp; close case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Ship back with invoice &amp; close case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Tech Support</controllingFieldValue>
+            <controllingFieldValue>With Customer Service</controllingFieldValue>
+            <valueName>Ship back without invoice &amp; close case</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Customer</controllingFieldValue>
+            <valueName>Customer Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Customer</controllingFieldValue>
+            <valueName>Respond to question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Customer</controllingFieldValue>
+            <valueName>Respond to quotation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Customer</controllingFieldValue>
+            <valueName>Return product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Customer</controllingFieldValue>
+            <valueName>Send order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Quality</controllingFieldValue>
+            <valueName>Deliver part to Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Quality</controllingFieldValue>
+            <valueName>Inspect Returned Product - Internal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Quality</controllingFieldValue>
+            <valueName>Inspect Returned Product - Supplier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Quality</controllingFieldValue>
+            <valueName>Prepare Deviation Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Quality</controllingFieldValue>
+            <valueName>Review case details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Production</controllingFieldValue>
+            <valueName>Calibrate product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Production</controllingFieldValue>
+            <valueName>Repair product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>With Production</controllingFieldValue>
+            <valueName>Scrap/recycle product</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

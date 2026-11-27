@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terms_Requested__c</fullName>
+    <label>Terms Requested</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit Card Payment</fullName>
+                <default>false</default>
+                <label>Credit Card Payment</label>
+            </value>
+            <value>
+                <fullName>100% Payment with Order</fullName>
+                <default>false</default>
+                <label>100% Payment with Order</label>
+            </value>
+            <value>
+                <fullName>100% Prior to Shipment</fullName>
+                <default>false</default>
+                <label>100% Prior to Shipment</label>
+            </value>
+            <value>
+                <fullName>100% Payment on Delivery (0 Days Net)</fullName>
+                <default>false</default>
+                <label>100% Payment on Delivery (0 Days Net)</label>
+            </value>
+            <value>
+                <fullName>14 Days Net</fullName>
+                <default>false</default>
+                <label>14 Days Net</label>
+            </value>
+            <value>
+                <fullName>14 Days 1%, 45 Days Net</fullName>
+                <default>false</default>
+                <label>14 Days 1%, 45 Days Net</label>
+            </value>
+            <value>
+                <fullName>14 Days 2%, 60 Days Net</fullName>
+                <default>false</default>
+                <label>14 Days 2%, 60 Days Net</label>
+            </value>
+            <value>
+                <fullName>30 Days Net</fullName>
+                <default>false</default>
+                <label>30 Days Net</label>
+            </value>
+            <value>
+                <fullName>30 Days 1%, 60 Days Net</fullName>
+                <default>false</default>
+                <label>30 Days 1%, 60 Days Net</label>
+            </value>
+            <value>
+                <fullName>30 Days EOM</fullName>
+                <default>false</default>
+                <label>30 Days EOM</label>
+            </value>
+            <value>
+                <fullName>45 Days Net</fullName>
+                <default>false</default>
+                <label>45 Days Net</label>
+            </value>
+            <value>
+                <fullName>45 Days EOM</fullName>
+                <default>false</default>
+                <label>45 Days EOM</label>
+            </value>
+            <value>
+                <fullName>60 Days Net</fullName>
+                <default>false</default>
+                <label>60 Days Net</label>
+            </value>
+            <value>
+                <fullName>75 Days Net</fullName>
+                <default>false</default>
+                <label>75 Days Net</label>
+            </value>
+            <value>
+                <fullName>90 Days Net</fullName>
+                <default>false</default>
+                <label>90 Days Net</label>
+            </value>
+            <value>
+                <fullName>Partial Downpayment</fullName>
+                <default>false</default>
+                <label>Partial Downpayment</label>
+            </value>
+            <value>
+                <fullName>EXW (Ex Works)</fullName>
+                <default>false</default>
+                <label>EXW (Ex Works)</label>
+            </value>
+            <value>
+                <fullName>FCA (Free Carrier)</fullName>
+                <default>false</default>
+                <label>FCA (Free Carrier)</label>
+            </value>
+            <value>
+                <fullName>CPT (Carriage Paid To)</fullName>
+                <default>false</default>
+                <label>CPT (Carriage Paid To)</label>
+            </value>
+            <value>
+                <fullName>CIP (Carriage and Insurance Paid To)</fullName>
+                <default>false</default>
+                <label>CIP (Carriage and Insurance Paid To)</label>
+            </value>
+            <value>
+                <fullName>DAP (Delivered at Place)</fullName>
+                <default>false</default>
+                <label>DAP (Delivered at Place)</label>
+            </value>
+            <value>
+                <fullName>DPU (Delivered at Place Unloaded)</fullName>
+                <default>false</default>
+                <label>DPU (Delivered at Place Unloaded)</label>
+            </value>
+            <value>
+                <fullName>DDP (Delivered Duty Paid)</fullName>
+                <default>false</default>
+                <label>DDP (Delivered Duty Paid)</label>
+            </value>
+            <value>
+                <fullName>FAS (Free Alongside Ship)</fullName>
+                <default>false</default>
+                <label>FAS (Free Alongside Ship)</label>
+            </value>
+            <value>
+                <fullName>FOB (Free on Board)</fullName>
+                <default>false</default>
+                <label>FOB (Free on Board)</label>
+            </value>
+            <value>
+                <fullName>CFR (Cost and Freight)</fullName>
+                <default>false</default>
+                <label>CFR (Cost and Freight)</label>
+            </value>
+            <value>
+                <fullName>CIF (Cost, Insurance and Freight)</fullName>
+                <default>false</default>
+                <label>CIF (Cost, Insurance and Freight)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>EXW (Ex Works)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>FCA (Free Carrier)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>CPT (Carriage Paid To)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>CIP (Carriage and Insurance Paid To)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>DAP (Delivered at Place)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>DPU (Delivered at Place Unloaded)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>DDP (Delivered Duty Paid)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>FAS (Free Alongside Ship)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>FOB (Free on Board)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>CFR (Cost and Freight)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>CIF (Cost, Insurance and Freight)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>Credit Card Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>100% Payment with Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>100% Prior to Shipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>100% Payment on Delivery (0 Days Net)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>14 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>14 Days 1%, 45 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>14 Days 2%, 60 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>30 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>30 Days 1%, 60 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>30 Days EOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>45 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>45 Days EOM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>60 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>75 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>90 Days Net</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>Partial Downpayment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

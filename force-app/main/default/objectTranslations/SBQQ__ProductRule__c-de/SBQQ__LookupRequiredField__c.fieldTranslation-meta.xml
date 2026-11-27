@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Feld im Nachschlageobjekt, das dem KontrollkÃ¤stchen &quot;&quot;Produktaktion erforderlich&quot;&quot; entspricht. Das Feld muss ein KontrollkÃ¤stchen sein.&quot;</help>
+    <label>&quot;Feld &quot;&quot;Nachschlagen erforderlich&quot;&quot;&quot;</label>
+    <name>SBQQ__LookupRequiredField__c</name>
+    <picklistValues>
+        <masterLabel>SBQQ__Required__c</masterLabel>
+        <translation>SBQQ__Required__c</translation>
+    </picklistValues>
+</CustomFieldTranslation>

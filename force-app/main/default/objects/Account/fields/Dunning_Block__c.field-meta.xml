@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dunning_Block__c</fullName>
+    <label>Dunning Block</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Account_Group__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Freed for dunning</fullName>
+                <default>false</default>
+                <label>Freed for dunning</label>
+            </value>
+            <value>
+                <fullName>Manual block reason</fullName>
+                <default>false</default>
+                <label>Manual block reason</label>
+            </value>
+            <value>
+                <fullName>manuelle Sperre wg. RMA/Retoure (Exc)</fullName>
+                <default>false</default>
+                <label>manuelle Sperre wg. RMA/Retoure (Exc)</label>
+            </value>
+            <value>
+                <fullName>manuelle sonstige Sperre (Exc)</fullName>
+                <default>false</default>
+                <label>manuelle sonstige Sperre (Exc)</label>
+            </value>
+            <value>
+                <fullName>Blocked by invoice verification</fullName>
+                <default>false</default>
+                <label>Blocked by invoice verification</label>
+            </value>
+            <value>
+                <fullName>gesperrt von Debitoren Inland</fullName>
+                <default>false</default>
+                <label>gesperrt von Debitoren Inland</label>
+            </value>
+            <value>
+                <fullName>gesperrt von Verkauf</fullName>
+                <default>false</default>
+                <label>gesperrt von Verkauf</label>
+            </value>
+            <value>
+                <fullName>gesperrt von Debitoren Ausland</fullName>
+                <default>false</default>
+                <label>gesperrt von Debitoren Ausland</label>
+            </value>
+            <value>
+                <fullName>wegen Vollstreckung gesperrt</fullName>
+                <default>false</default>
+                <label>wegen Vollstreckung gesperrt</label>
+            </value>
+            <value>
+                <fullName>E</fullName>
+                <default>false</default>
+                <label>E</label>
+            </value>
+            <value>
+                <fullName>Manual block reason A... (A)</fullName>
+                <default>false</default>
+                <label>Manual block reason A... (A)</label>
+            </value>
+            <value>
+                <fullName>Manual block reason B... (B)</fullName>
+                <default>false</default>
+                <label>Manual block reason B... (B)</label>
+            </value>
+            <value>
+                <fullName>Customer return (C)</fullName>
+                <default>false</default>
+                <label>Customer return (C)</label>
+            </value>
+            <value>
+                <fullName>Block reason H (H)</fullName>
+                <default>false</default>
+                <label>Block reason H (H)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>Freed for dunning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>Manual block reason</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>manuelle Sperre wg. RMA/Retoure (Exc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>manuelle sonstige Sperre (Exc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>Blocked by invoice verification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>gesperrt von Debitoren Inland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>gesperrt von Verkauf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>gesperrt von Debitoren Ausland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>wegen Vollstreckung gesperrt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>E</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>Manual block reason A... (A)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>Manual block reason B... (B)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>Customer return (C)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <valueName>Block reason H (H)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR_Comment_greater_75</fullName>
+    <active>true</active>
+    <description>Copy from LDGI VR</description>
+    <errorConditionFormula>AND( ISPICKVAL(ERP_Site__c, &apos;Toronto&apos;), OR(LEN(Transaction_Order_Comments__c)&gt;255,
+LEN(Transaction_Order_Comments2__c)&gt;75,
+LEN(Transaction_Order_Comments3__c)&gt;75,
+LEN(Transaction_Order_Comments4__c)&gt;75))</errorConditionFormula>
+    <errorMessage>Transaction Comments cannot be greater than 75 Characters each</errorMessage>
+</ValidationRule>

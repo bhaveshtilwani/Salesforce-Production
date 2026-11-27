@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_For_Sites_With_Related_Asset_Date_Case</name>
+        <label>Check For Sites With Related Asset Date &amp; Case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Toronto_Site_With_Check_Related_Asset_Date_Completed</name>
+            <conditionLogic>(1 AND 2 AND 3 AND 4 AND (5 OR (6 AND 7)))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Toronto</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>CalculateOriginalWED</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case_For_RMA_Request_Record</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsDateCompletedGreaterThanWED</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Asset__r.Product2.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Asset__r.Product2.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OBS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Asset__r.Product2.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Warranty_End_Date_For_Asset</targetReference>
+            </connector>
+            <label>Is Toronto Site With Check Related Asset Date Completed</label>
+        </rules>
+    </decisions>
+    <description>Avoid Asset gets updated when the product reference is inactive.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CalculatedWarrantyEndDate</name>
+        <dataType>Date</dataType>
+        <expression>ADDMONTHS({!$Record.SLA_Stop_2__c}, 3)</expression>
+    </formulas>
+    <formulas>
+        <description>Get the Original Warranty End Date based on the asset purchase date</description>
+        <name>CalculateOriginalWED</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.Asset__r.PurchaseDate} + 365</expression>
+    </formulas>
+    <formulas>
+        <description>Return True if today&apos;s date is already covered by the Warranty End Date.</description>
+        <name>IsDateCompletedGreaterThanWED</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+      ISBLANK({!$Record.Asset__r.UsageEndDate__c}), 
+      {!$Record.SLA_Stop_2__c} &gt; {!CalculateOriginalWED}, 
+      {!$Record.SLA_Stop_2__c} &gt; {!$Record.Asset__r.UsageEndDate__c}
+)</expression>
+    </formulas>
+    <interviewLabel>Warranty End Date Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Related Asset - Asset Warranty End Date Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Case_For_RMA_Request_Record</name>
+        <label>Get Case For RMA Request Record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_For_Sites_With_Related_Asset_Date_Case</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Case__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>RMA Request</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RMA_Case_Resolution__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Repair under warranty</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Warranty_End_Date_For_Asset</name>
+        <label>Update Warranty End Date For Asset</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>UsageEndDate__c</field>
+            <value>
+                <elementReference>CalculatedWarrantyEndDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Asset__r</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Case_For_RMA_Request_Record</targetReference>
+        </connector>
+        <filterFormula>AND(
+    NOT(ISBLANK({!$Record.SLA_Stop_2__c})),
+    OR(
+        ISBLANK({!$Record__Prior.SLA_Stop_2__c}),
+        {!$Record.SLA_Stop_2__c} &lt;&gt; {!$Record__Prior.SLA_Stop_2__c}
+    ),
+    NOT(ISBLANK({!$Record.Asset__c}))
+)</filterFormula>
+        <object>Releted_Assets__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

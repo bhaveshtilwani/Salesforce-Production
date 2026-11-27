@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QA_Site__c</fullName>
+    <label>Site</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fremont</fullName>
+                <default>false</default>
+                <label>Fremont</label>
+            </value>
+            <value>
+                <fullName>Singapore</fullName>
+                <default>false</default>
+                <label>Singapore</label>
+            </value>
+            <value>
+                <fullName>Santa Clara (aSi)</fullName>
+                <default>false</default>
+                <label>Santa Clara (aSi)</label>
+            </value>
+            <value>
+                <fullName>Shenzen</fullName>
+                <default>false</default>
+                <label>Shenzen</label>
+            </value>
+            <value>
+                <fullName>Germany</fullName>
+                <default>false</default>
+                <label>Germany</label>
+            </value>
+            <value>
+                <fullName>Salem</fullName>
+                <default>false</default>
+                <label>Salem</label>
+            </value>
+            <value>
+                <fullName>Cambridge</fullName>
+                <default>false</default>
+                <label>Cambridge</label>
+            </value>
+            <value>
+                <fullName>St. Louis</fullName>
+                <default>false</default>
+                <label>St. Louis</label>
+            </value>
+            <value>
+                <fullName>Covina</fullName>
+                <default>false</default>
+                <label>Covina</label>
+            </value>
+            <value>
+                <fullName>Canada</fullName>
+                <default>false</default>
+                <label>Canada</label>
+            </value>
+            <value>
+                <fullName>Santa Clara (Imaging)</fullName>
+                <default>false</default>
+                <label>Santa Clara (Imaging)</label>
+            </value>
+            <value>
+                <fullName>Manila</fullName>
+                <default>false</default>
+                <label>Manila</label>
+            </value>
+            <value>
+                <fullName>Pfaffenhofen (Elcos)</fullName>
+                <default>false</default>
+                <label>Pfaffenhofen (Elcos)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

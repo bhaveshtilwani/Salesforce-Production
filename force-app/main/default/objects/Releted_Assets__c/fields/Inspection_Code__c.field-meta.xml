@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspection_Code__c</fullName>
+    <description>Boulder</description>
+    <label>Inspection Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Inspection_Code_Prefix__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AS01 - ASSY-Defective Part</fullName>
+                <default>false</default>
+                <label>AS01 - ASSY-Defective Part</label>
+            </value>
+            <value>
+                <fullName>AS02 - ASSY-Misaligned</fullName>
+                <default>false</default>
+                <label>AS02 - ASSY-Misaligned</label>
+            </value>
+            <value>
+                <fullName>AS03 - ASSY-Missing Part</fullName>
+                <default>false</default>
+                <label>AS03 - ASSY-Missing Part</label>
+            </value>
+            <value>
+                <fullName>AS04 - ASSY-No Optical Contact</fullName>
+                <default>false</default>
+                <label>AS04 - ASSY-No Optical Contact</label>
+            </value>
+            <value>
+                <fullName>AS06 - ASSY-Wrong Part</fullName>
+                <default>false</default>
+                <label>AS06 - ASSY-Wrong Part</label>
+            </value>
+            <value>
+                <fullName>AS10 - ASSY-ER</fullName>
+                <default>false</default>
+                <label>AS10 - ASSY-ER</label>
+            </value>
+            <value>
+                <fullName>AS11 - ASSY-CONTACT FAIL - DIG</fullName>
+                <default>false</default>
+                <label>AS11 - ASSY-CONTACT FAIL - DIG</label>
+            </value>
+            <value>
+                <fullName>AS12 - ASSY-CONTACT FAIL - DECONTACT DAMAGE</fullName>
+                <default>false</default>
+                <label>AS12 - ASSY-CONTACT FAIL - DECONTACT DAMAGE</label>
+            </value>
+            <value>
+                <fullName>AS13 - ASSY-CONTACT FAIL - ER</fullName>
+                <default>false</default>
+                <label>AS13 - ASSY-CONTACT FAIL - ER</label>
+            </value>
+            <value>
+                <fullName>AS14 - ASSY-CONTACT FAIL - FOD</fullName>
+                <default>false</default>
+                <label>AS14 - ASSY-CONTACT FAIL - FOD</label>
+            </value>
+            <value>
+                <fullName>AS15 - ASSY-CONTACT FAIL - SCRATCH</fullName>
+                <default>false</default>
+                <label>AS15 - ASSY-CONTACT FAIL - SCRATCH</label>
+            </value>
+            <value>
+                <fullName>AS16 - ASSY-CONTACT FAIL - SURFACE FIGURE</fullName>
+                <default>false</default>
+                <label>AS16 - ASSY-CONTACT FAIL - SURFACE FIGURE</label>
+            </value>
+            <value>
+                <fullName>AS17 - ASSY-Incomplete Bonding</fullName>
+                <default>false</default>
+                <label>AS17 - ASSY-Incomplete Bonding</label>
+            </value>
+            <value>
+                <fullName>AS18 - ASSY-Corrosion</fullName>
+                <default>false</default>
+                <label>AS18 - ASSY-Corrosion</label>
+            </value>
+            <value>
+                <fullName>AS19 - ASSY-Plating or Passivation Defect</fullName>
+                <default>false</default>
+                <label>AS19 - ASSY-Plating or Passivation Defect</label>
+            </value>
+            <value>
+                <fullName>CO01 - COAT-Chamber Malfunction</fullName>
+                <default>false</default>
+                <label>CO01 - COAT-Chamber Malfunction</label>
+            </value>
+            <value>
+                <fullName>DC04 - DOCS-Process Sheet error</fullName>
+                <default>false</default>
+                <label>DC04 - DOCS-Process Sheet error</label>
+            </value>
+            <value>
+                <fullName>DC06 - DOCS-Part Quantity</fullName>
+                <default>false</default>
+                <label>DC06 - DOCS-Part Quantity</label>
+            </value>
+            <value>
+                <fullName>DC07 - DOCS-DCP</fullName>
+                <default>false</default>
+                <label>DC07 - DOCS-DCP</label>
+            </value>
+            <value>
+                <fullName>DC08 - DOCS-Missed PS Signoff</fullName>
+                <default>false</default>
+                <label>DC08 - DOCS-Missed PS Signoff</label>
+            </value>
+            <value>
+                <fullName>DM01 - DIM-Angle</fullName>
+                <default>false</default>
+                <label>DM01 - DIM-Angle</label>
+            </value>
+            <value>
+                <fullName>DM02 - DIM-Bevel</fullName>
+                <default>false</default>
+                <label>DM02 - DIM-Bevel</label>
+            </value>
+            <value>
+                <fullName>DM03 - DIM-Diameter</fullName>
+                <default>false</default>
+                <label>DM03 - DIM-Diameter</label>
+            </value>
+            <value>
+                <fullName>DM05 - DIM-Part Size (Thickness)</fullName>
+                <default>false</default>
+                <label>DM05 - DIM-Part Size (Thickness)</label>
+            </value>
+            <value>
+                <fullName>DM06 - DIM-Undefined</fullName>
+                <default>false</default>
+                <label>DM06 - DIM-Undefined</label>
+            </value>
+            <value>
+                <fullName>DM07 - DIM-Wedge</fullName>
+                <default>false</default>
+                <label>DM07 - DIM-Wedge</label>
+            </value>
+            <value>
+                <fullName>DU01 - DURA-Abrasion</fullName>
+                <default>false</default>
+                <label>DU01 - DURA-Abrasion</label>
+            </value>
+            <value>
+                <fullName>DU02 - DURA-Adhesion</fullName>
+                <default>false</default>
+                <label>DU02 - DURA-Adhesion</label>
+            </value>
+            <value>
+                <fullName>DU04 - DURA-Humidity</fullName>
+                <default>false</default>
+                <label>DU04 - DURA-Humidity</label>
+            </value>
+            <value>
+                <fullName>DU05 - DURA-LDT</fullName>
+                <default>false</default>
+                <label>DU05 - DURA-LDT</label>
+            </value>
+            <value>
+                <fullName>DU06 - DURA-Salt Fog</fullName>
+                <default>false</default>
+                <label>DU06 - DURA-Salt Fog</label>
+            </value>
+            <value>
+                <fullName>DU07 - DURA-Part Testing</fullName>
+                <default>false</default>
+                <label>DU07 - DURA-Part Testing</label>
+            </value>
+            <value>
+                <fullName>DU08 - DURA-Witness Missing</fullName>
+                <default>false</default>
+                <label>DU08 - DURA-Witness Missing</label>
+            </value>
+            <value>
+                <fullName>FT01 - FUNC-Electrical Fault</fullName>
+                <default>false</default>
+                <label>FT01 - FUNC-Electrical Fault</label>
+            </value>
+            <value>
+                <fullName>FT02 - FUNC-Test Error</fullName>
+                <default>false</default>
+                <label>FT02 - FUNC-Test Error</label>
+            </value>
+            <value>
+                <fullName>HA01 - HANDLING-Broken</fullName>
+                <default>false</default>
+                <label>HA01 - HANDLING-Broken</label>
+            </value>
+            <value>
+                <fullName>ME02 - MECH-Burrs</fullName>
+                <default>false</default>
+                <label>ME02 - MECH-Burrs</label>
+            </value>
+            <value>
+                <fullName>ME04 - MECH-Paint Defect</fullName>
+                <default>false</default>
+                <label>ME04 - MECH-Paint Defect</label>
+            </value>
+            <value>
+                <fullName>ME06 - MECH-Thread</fullName>
+                <default>false</default>
+                <label>ME06 - MECH-Thread</label>
+            </value>
+            <value>
+                <fullName>MK01 - MARKING-Arrow Missing</fullName>
+                <default>false</default>
+                <label>MK01 - MARKING-Arrow Missing</label>
+            </value>
+            <value>
+                <fullName>MK02 - MARKING-Arrowed Wrong</fullName>
+                <default>false</default>
+                <label>MK02 - MARKING-Arrowed Wrong</label>
+            </value>
+            <value>
+                <fullName>MK05 - MARKING-Mark Location</fullName>
+                <default>false</default>
+                <label>MK05 - MARKING-Mark Location</label>
+            </value>
+            <value>
+                <fullName>MK06 - MARKING-Other</fullName>
+                <default>false</default>
+                <label>MK06 - MARKING-Other</label>
+            </value>
+            <value>
+                <fullName>MK07 - MARKING-Serialization</fullName>
+                <default>false</default>
+                <label>MK07 - MARKING-Serialization</label>
+            </value>
+            <value>
+                <fullName>ML01 - MTRL-Bubbles/Inclusions/Striae</fullName>
+                <default>false</default>
+                <label>ML01 - MTRL-Bubbles/Inclusions/Striae</label>
+            </value>
+            <value>
+                <fullName>MT01 - MET-Beam Deviation &amp; Wedge</fullName>
+                <default>false</default>
+                <label>MT01 - MET-Beam Deviation &amp; Wedge</label>
+            </value>
+            <value>
+                <fullName>MT02 - MET-Irregularity Reflected</fullName>
+                <default>false</default>
+                <label>MT02 - MET-Irregularity Reflected</label>
+            </value>
+            <value>
+                <fullName>MT03 - MET-Irregularity Transmitted</fullName>
+                <default>false</default>
+                <label>MT03 - MET-Irregularity Transmitted</label>
+            </value>
+            <value>
+                <fullName>MT04 - MET-Power Reflected</fullName>
+                <default>false</default>
+                <label>MT04 - MET-Power Reflected</label>
+            </value>
+            <value>
+                <fullName>MT05 - MET-Power Transmitted</fullName>
+                <default>false</default>
+                <label>MT05 - MET-Power Transmitted</label>
+            </value>
+            <value>
+                <fullName>MT06 - MET-PV Reflected</fullName>
+                <default>false</default>
+                <label>MT06 - MET-PV Reflected</label>
+            </value>
+            <value>
+                <fullName>MT07 - MET-PV Transmitted</fullName>
+                <default>false</default>
+                <label>MT07 - MET-PV Transmitted</label>
+            </value>
+            <value>
+                <fullName>MT08 - MET-Roughness</fullName>
+                <default>false</default>
+                <label>MT08 - MET-Roughness</label>
+            </value>
+            <value>
+                <fullName>MT09 - MET - ROC</fullName>
+                <default>false</default>
+                <label>MT09 - MET - ROC</label>
+            </value>
+            <value>
+                <fullName>MT10 - MET - Absorption</fullName>
+                <default>false</default>
+                <label>MT10 - MET - Absorption</label>
+            </value>
+            <value>
+                <fullName>MT11 - MET-Transmission</fullName>
+                <default>false</default>
+                <label>MT11 - MET-Transmission</label>
+            </value>
+            <value>
+                <fullName>MT12 - MET - Reflection</fullName>
+                <default>false</default>
+                <label>MT12 - MET - Reflection</label>
+            </value>
+            <value>
+                <fullName>MT13 - MET-Scatter</fullName>
+                <default>false</default>
+                <label>MT13 - MET-Scatter</label>
+            </value>
+            <value>
+                <fullName>MT14 - MET - Optical Path Length</fullName>
+                <default>false</default>
+                <label>MT14 - MET - Optical Path Length</label>
+            </value>
+            <value>
+                <fullName>MT15 - MET - Extinction Ratio</fullName>
+                <default>false</default>
+                <label>MT15 - MET - Extinction Ratio</label>
+            </value>
+            <value>
+                <fullName>PA02 - PACK-Label Wrong</fullName>
+                <default>false</default>
+                <label>PA02 - PACK-Label Wrong</label>
+            </value>
+            <value>
+                <fullName>PA04 - Pack-Batch Size</fullName>
+                <default>false</default>
+                <label>PA04 - Pack-Batch Size</label>
+            </value>
+            <value>
+                <fullName>RL01 - RLG - CNC OD Chips</fullName>
+                <default>false</default>
+                <label>RL01 - RLG - CNC OD Chips</label>
+            </value>
+            <value>
+                <fullName>RL02 - RLG - CNC OD Fractures</fullName>
+                <default>false</default>
+                <label>RL02 - RLG - CNC OD Fractures</label>
+            </value>
+            <value>
+                <fullName>RL03 - RLG - CNC Interior Chips</fullName>
+                <default>false</default>
+                <label>RL03 - RLG - CNC Interior Chips</label>
+            </value>
+            <value>
+                <fullName>RL04 - RLG - CNC Interior Fractures</fullName>
+                <default>false</default>
+                <label>RL04 - RLG - CNC Interior Fractures</label>
+            </value>
+            <value>
+                <fullName>RL05 - RLG - Etch Defect</fullName>
+                <default>false</default>
+                <label>RL05 - RLG - Etch Defect</label>
+            </value>
+            <value>
+                <fullName>SP03 - SPECTRAL-Double-coated</fullName>
+                <default>false</default>
+                <label>SP03 - SPECTRAL-Double-coated</label>
+            </value>
+            <value>
+                <fullName>SP06 - SPECTRAL - Coated Wrong Side</fullName>
+                <default>false</default>
+                <label>SP06 - SPECTRAL - Coated Wrong Side</label>
+            </value>
+            <value>
+                <fullName>SP07 - SPECTRAL-Non-conforming</fullName>
+                <default>false</default>
+                <label>SP07 - SPECTRAL-Non-conforming</label>
+            </value>
+            <value>
+                <fullName>SQ01 - SQ -Particulate</fullName>
+                <default>false</default>
+                <label>SQ01 - SQ -Particulate</label>
+            </value>
+            <value>
+                <fullName>SQ02 - SQ-Chips/Fractures</fullName>
+                <default>false</default>
+                <label>SQ02 - SQ-Chips/Fractures</label>
+            </value>
+            <value>
+                <fullName>SQ03 - SQ-Coating Bubbles</fullName>
+                <default>false</default>
+                <label>SQ03 - SQ-Coating Bubbles</label>
+            </value>
+            <value>
+                <fullName>SQ04 - SQ-Delaminating/ Peeling</fullName>
+                <default>false</default>
+                <label>SQ04 - SQ-Delaminating/ Peeling</label>
+            </value>
+            <value>
+                <fullName>SQ05 - SQ-Dig</fullName>
+                <default>false</default>
+                <label>SQ05 - SQ-Dig</label>
+            </value>
+            <value>
+                <fullName>SQ07 - SQ-Incomplete Polish</fullName>
+                <default>false</default>
+                <label>SQ07 - SQ-Incomplete Polish</label>
+            </value>
+            <value>
+                <fullName>SQ09 - SQ-Non-Uniform Coating</fullName>
+                <default>false</default>
+                <label>SQ09 - SQ-Non-Uniform Coating</label>
+            </value>
+            <value>
+                <fullName>SQ13 - SQ-Scratch</fullName>
+                <default>false</default>
+                <label>SQ13 - SQ-Scratch</label>
+            </value>
+            <value>
+                <fullName>SQ15 - SQ-Sleek</fullName>
+                <default>false</default>
+                <label>SQ15 - SQ-Sleek</label>
+            </value>
+            <value>
+                <fullName>SQ17 - SQ-Stain/Discolor</fullName>
+                <default>false</default>
+                <label>SQ17 - SQ-Stain/Discolor</label>
+            </value>
+            <value>
+                <fullName>SQ20 - SQ-FOD(Trapped Fiber/Debris)</fullName>
+                <default>false</default>
+                <label>SQ20 - SQ-FOD(Trapped Fiber/Debris)</label>
+            </value>
+            <value>
+                <fullName>DA01 - RMA-ONLY-DAMAGE-Customer-induced</fullName>
+                <default>false</default>
+                <label>DA01 - RMA-ONLY-DAMAGE-Customer-induced</label>
+            </value>
+            <value>
+                <fullName>DA02 - RMA-ONLY-DAMAGE-Shipping (From Customer)</fullName>
+                <default>false</default>
+                <label>DA02 - RMA-ONLY-DAMAGE-Shipping (From Customer)</label>
+            </value>
+            <value>
+                <fullName>DA03 - RMA-ONLY-DAMAGE-Shipping (Internal)</fullName>
+                <default>false</default>
+                <label>DA03 - RMA-ONLY-DAMAGE-Shipping (Internal)</label>
+            </value>
+            <value>
+                <fullName>NFF  - NFF-No Fault Found</fullName>
+                <default>false</default>
+                <label>NFF  - NFF-No Fault Found</label>
+            </value>
+            <value>
+                <fullName>RE02 - RMA-ONLY-RETURN-For Evaluation</fullName>
+                <default>false</default>
+                <label>RE02 - RMA-ONLY-RETURN-For Evaluation</label>
+            </value>
+            <value>
+                <fullName>RE03 - RMA-ONLY-RETURN-For Rework</fullName>
+                <default>false</default>
+                <label>RE03 - RMA-ONLY-RETURN-For Rework</label>
+            </value>
+            <value>
+                <fullName>DC05 - RMA-ONLY-DOCS-Shipper Errors</fullName>
+                <default>false</default>
+                <label>DC05 - RMA-ONLY-DOCS-Shipper Errors</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT01 - MET-Beam Deviation &amp; Wedge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT02 - MET-Irregularity Reflected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT03 - MET-Irregularity Transmitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT04 - MET-Power Reflected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT05 - MET-Power Transmitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT06 - MET-PV Reflected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT07 - MET-PV Transmitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT08 - MET-Roughness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT09 - MET - ROC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT10 - MET - Absorption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT11 - MET-Transmission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT12 - MET - Reflection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT13 - MET-Scatter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT14 - MET - Optical Path Length</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MET</controllingFieldValue>
+            <valueName>MT15 - MET - Extinction Ratio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PACK</controllingFieldValue>
+            <valueName>PA02 - PACK-Label Wrong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PACK</controllingFieldValue>
+            <valueName>PA04 - Pack-Batch Size</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RLG</controllingFieldValue>
+            <valueName>RL01 - RLG - CNC OD Chips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RLG</controllingFieldValue>
+            <valueName>RL02 - RLG - CNC OD Fractures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RLG</controllingFieldValue>
+            <valueName>RL03 - RLG - CNC Interior Chips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RLG</controllingFieldValue>
+            <valueName>RL04 - RLG - CNC Interior Fractures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RLG</controllingFieldValue>
+            <valueName>RL05 - RLG - Etch Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECTRAL</controllingFieldValue>
+            <valueName>SP03 - SPECTRAL-Double-coated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECTRAL</controllingFieldValue>
+            <valueName>SP06 - SPECTRAL - Coated Wrong Side</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPECTRAL</controllingFieldValue>
+            <valueName>SP07 - SPECTRAL-Non-conforming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ01 - SQ -Particulate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ02 - SQ-Chips/Fractures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ03 - SQ-Coating Bubbles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ04 - SQ-Delaminating/ Peeling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ05 - SQ-Dig</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ07 - SQ-Incomplete Polish</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ09 - SQ-Non-Uniform Coating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ13 - SQ-Scratch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ15 - SQ-Sleek</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ17 - SQ-Stain/Discolor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SQ</controllingFieldValue>
+            <valueName>SQ20 - SQ-FOD(Trapped Fiber/Debris)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RETURN</controllingFieldValue>
+            <valueName>RE02 - RMA-ONLY-RETURN-For Evaluation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RETURN</controllingFieldValue>
+            <valueName>RE03 - RMA-ONLY-RETURN-For Rework</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NFF</controllingFieldValue>
+            <valueName>NFF  - NFF-No Fault Found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DAMAGE</controllingFieldValue>
+            <valueName>DA01 - RMA-ONLY-DAMAGE-Customer-induced</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DAMAGE</controllingFieldValue>
+            <valueName>DA02 - RMA-ONLY-DAMAGE-Shipping (From Customer)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DAMAGE</controllingFieldValue>
+            <valueName>DA03 - RMA-ONLY-DAMAGE-Shipping (Internal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS01 - ASSY-Defective Part</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS02 - ASSY-Misaligned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS03 - ASSY-Missing Part</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS04 - ASSY-No Optical Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS06 - ASSY-Wrong Part</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS10 - ASSY-ER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS11 - ASSY-CONTACT FAIL - DIG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS12 - ASSY-CONTACT FAIL - DECONTACT DAMAGE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS13 - ASSY-CONTACT FAIL - ER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS14 - ASSY-CONTACT FAIL - FOD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS15 - ASSY-CONTACT FAIL - SCRATCH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS16 - ASSY-CONTACT FAIL - SURFACE FIGURE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS17 - ASSY-Incomplete Bonding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS18 - ASSY-Corrosion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASSY</controllingFieldValue>
+            <valueName>AS19 - ASSY-Plating or Passivation Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COAT</controllingFieldValue>
+            <valueName>CO01 - COAT-Chamber Malfunction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOCS</controllingFieldValue>
+            <valueName>DC04 - DOCS-Process Sheet error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOCS</controllingFieldValue>
+            <valueName>DC06 - DOCS-Part Quantity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOCS</controllingFieldValue>
+            <valueName>DC07 - DOCS-DCP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOCS</controllingFieldValue>
+            <valueName>DC08 - DOCS-Missed PS Signoff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOCS</controllingFieldValue>
+            <valueName>DC05 - RMA-ONLY-DOCS-Shipper Errors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIM</controllingFieldValue>
+            <valueName>DM01 - DIM-Angle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIM</controllingFieldValue>
+            <valueName>DM02 - DIM-Bevel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIM</controllingFieldValue>
+            <valueName>DM03 - DIM-Diameter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIM</controllingFieldValue>
+            <valueName>DM05 - DIM-Part Size (Thickness)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIM</controllingFieldValue>
+            <valueName>DM06 - DIM-Undefined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DIM</controllingFieldValue>
+            <valueName>DM07 - DIM-Wedge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DURA</controllingFieldValue>
+            <valueName>DU01 - DURA-Abrasion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DURA</controllingFieldValue>
+            <valueName>DU02 - DURA-Adhesion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DURA</controllingFieldValue>
+            <valueName>DU04 - DURA-Humidity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DURA</controllingFieldValue>
+            <valueName>DU05 - DURA-LDT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DURA</controllingFieldValue>
+            <valueName>DU06 - DURA-Salt Fog</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DURA</controllingFieldValue>
+            <valueName>DU07 - DURA-Part Testing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DURA</controllingFieldValue>
+            <valueName>DU08 - DURA-Witness Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FUNC</controllingFieldValue>
+            <valueName>FT01 - FUNC-Electrical Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FUNC</controllingFieldValue>
+            <valueName>FT02 - FUNC-Test Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HANDLING</controllingFieldValue>
+            <valueName>HA01 - HANDLING-Broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MECH</controllingFieldValue>
+            <valueName>ME02 - MECH-Burrs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MECH</controllingFieldValue>
+            <valueName>ME04 - MECH-Paint Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MECH</controllingFieldValue>
+            <valueName>ME06 - MECH-Thread</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKING</controllingFieldValue>
+            <valueName>MK01 - MARKING-Arrow Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKING</controllingFieldValue>
+            <valueName>MK02 - MARKING-Arrowed Wrong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKING</controllingFieldValue>
+            <valueName>MK05 - MARKING-Mark Location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKING</controllingFieldValue>
+            <valueName>MK06 - MARKING-Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKING</controllingFieldValue>
+            <valueName>MK07 - MARKING-Serialization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MTRL</controllingFieldValue>
+            <valueName>ML01 - MTRL-Bubbles/Inclusions/Striae</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

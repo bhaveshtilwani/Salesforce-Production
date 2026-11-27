@@ -1,0 +1,41 @@
+<template>
+  <!-- Spinner while loading -->
+  <template if:true={isLoading}>
+    <lightning-spinner 
+      alternative-text="Loading" 
+      size="medium">
+    </lightning-spinner>
+  </template>
+
+  <!-- Reminder Modal -->
+  <template if:true={showReminder}>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+    <div class="slds-modal slds-fade-in-open" role="dialog" aria-modal="true">
+      <div class="slds-modal__container">
+        <div class="slds-modal__header">
+          <h2 class="slds-modal__title slds-hyphenate">Reminder</h2>
+        </div>
+
+        <div class="slds-modal__content slds-p-around_medium">
+          <p class="slds-text-heading_small slds-m-bottom_medium">
+            This is a reminder to populate the OVTPIT to get the Revenue Recognition Type
+          </p>
+          <p class="slds-text-body_regular">
+            Would you like to populate it now?
+          </p>
+        </div>
+
+        <div class="slds-modal__footer">
+          <button class="slds-button slds-button_neutral"
+                  onclick={handleNotYetClick}>
+            Not Yet
+          </button>
+          <button class="slds-button slds-button_brand"
+                  onclick={handleYesClick}>
+            Yes
+          </button>
+        </div>
+      </div>
+    </div>
+  </template>
+</template>

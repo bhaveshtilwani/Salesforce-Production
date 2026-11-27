@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Account where the related Asset record will be attached --></help>
+    <label><!-- Asset Destination --></label>
+    <lookupFilter>
+        <errorMessage><!-- There is no Accounts Record Types available for this search (Complimenter, Direct Customer, Internal Account, Large Distributor, OEM and Integrator, Private Label, Representative, Small Distributor). --></errorMessage>
+    </lookupFilter>
+    <name>Asset_Destination__c</name>
+    <relationshipLabel><!-- Orders (Asset Destination) --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partial_Delivery_Per_Item__c</fullName>
+    <label>Partial Delivery Per Item</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Account_Group__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partial delivery allowed</fullName>
+                <default>false</default>
+                <label>Partial delivery allowed</label>
+            </value>
+            <value>
+                <fullName>Create delivery with qty greater than 0</fullName>
+                <default>false</default>
+                <label>Create delivery with qty greater than 0</label>
+            </value>
+            <value>
+                <fullName>Create only one delivery (also with quantity = 0)</fullName>
+                <default>false</default>
+                <label>Create only one delivery (also with quantity = 0)</label>
+            </value>
+            <value>
+                <fullName>Only complete delivery allowed</fullName>
+                <default>false</default>
+                <label>Only complete delivery allowed</label>
+            </value>
+            <value>
+                <fullName>No limit to subsequent deliveries</fullName>
+                <default>false</default>
+                <label>No limit to subsequent deliveries</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Ship To - H002</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Ship To - 0002</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Ship To - W002</controllingFieldValue>
+            <valueName>Partial delivery allowed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Ship To - H002</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Ship To - 0002</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Ship To - W002</controllingFieldValue>
+            <valueName>Create delivery with qty greater than 0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Ship To - H002</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Ship To - 0002</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Ship To - W002</controllingFieldValue>
+            <valueName>Create only one delivery (also with quantity = 0)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Ship To - H002</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Ship To - 0002</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Ship To - W002</controllingFieldValue>
+            <valueName>Only complete delivery allowed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Ship To - H002</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Ship To - 0002</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Bill To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Ship To - W002</controllingFieldValue>
+            <valueName>No limit to subsequent deliveries</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

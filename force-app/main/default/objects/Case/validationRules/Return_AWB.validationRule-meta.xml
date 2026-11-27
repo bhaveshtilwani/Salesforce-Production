@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Return_AWB</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ Return_Initiated__c = TRUE,
+ISBLANK( Return_AWB_Tracking__c ))</errorConditionFormula>
+    <errorDisplayField>Return_AWB_Tracking__c</errorDisplayField>
+    <errorMessage>Please indicate AWB.</errorMessage>
+</ValidationRule>

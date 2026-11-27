@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Disposition --></label>
+    <name>Disposition__c</name>
+    <picklistValues>
+        <masterLabel>NA Not applicable</masterLabel>
+        <translation><!-- NA Not applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regrade</masterLabel>
+        <translation><!-- Regrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair</masterLabel>
+        <translation><!-- Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair on Risk</masterLabel>
+        <translation><!-- Repair on Risk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returns- do not use</masterLabel>
+        <translation><!-- Returns- do not use --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rework</masterLabel>
+        <translation><!-- Rework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrap</masterLabel>
+        <translation><!-- Scrap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Use As Is</masterLabel>
+        <translation><!-- Use As Is --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

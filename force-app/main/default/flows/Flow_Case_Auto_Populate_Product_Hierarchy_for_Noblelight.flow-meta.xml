@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Set_ED_Hierarchy_Disinfection_Noblelight</name>
+        <label>Set ED Hierarchy Disinfection - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Unit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Disinfection</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Line__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Disinfection - Noblelight</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Sub_Family__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_FLASH_Hierarchy_Photonics_Flash_Noblelight</name>
+        <label>Set FLASH Hierarchy Photonics Flash - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>MedTech &amp; Semiconductor</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>MedTech &amp; Life Sciences</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Unit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Plasma Light Sources</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Line__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Flash</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Sub_Family__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Hierarchy_Curing_LED_Phoseon_Noblelight</name>
+        <label>Set Hierarchy Curing LED Phoseon - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Unit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Line__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Curing LED Phoseon</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Sub_Family__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Hierarchy_Curing_Omnicure_Noblelight</name>
+        <label>Set Hierarchy Curing Omnicure - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Unit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Line__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Curing Omnicure</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Sub_Family__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Hierarchy_EIR_Thermal_Processing_Noblelight</name>
+        <label>Set Hierarchy EIR Thermal Processing- Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Unit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Thermal Processing</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Line__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Thermal Processing - Noblelight</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Sub_Family__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Hierarchy_OPT_Analytical_Noblelight</name>
+        <label>Set Hierarchy OPT Analytical - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>MedTech &amp; Semiconductor</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>MedTech &amp; Life Sciences</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Unit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Plasma Light Sources</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Line__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Analytical</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Sub_Family__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_LED_Curing_Hierarchy_Noblelight</name>
+        <label>Set LED  Curing Hierarchy - Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Unit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Line__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Curing LED - Noblelight</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Sub_Family__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_MW_Hierarchy_Microwave_Noblelight</name>
+        <label>Set MW Hierarchy Microwave- Noblelight</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Industrial</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Division__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Advanced Lighting Systems</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Business_Unit__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Product_Line__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Microwave - Noblelight</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Sub_Family__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Product_SubfamilyNL__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </assignments>
+    <collectionProcessors>
+        <name>Filter_Record_Type</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>Filter Record Type</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNextValueToReference>currentItem_Filter_Record_Type</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>Get_Acc_Trial_Record_type</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_Filter_Record_Type.Id</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <elementReference>$Record.RecordTypeId</elementReference>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>Loop_1</targetReference>
+        </connector>
+    </collectionProcessors>
+    <decisions>
+        <description>Checks if the product line (Product sub family) Populate PH</description>
+        <name>Check_Product_sub_family</name>
+        <label>Check Product sub family</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Loop_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Product_Line_ED</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ED COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ED System</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ED Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_ED_Hierarchy_Disinfection_Noblelight</targetReference>
+            </connector>
+            <label>If Product_Line = ED</label>
+        </rules>
+        <rules>
+            <name>If_Product_Line_LED</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LED COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LED Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>LED System</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_LED_Curing_Hierarchy_Noblelight</targetReference>
+            </connector>
+            <label>If Product_Line = LED</label>
+        </rules>
+        <rules>
+            <name>If_Product_Line_MW</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MW COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MW System</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MW Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_MW_Hierarchy_Microwave_Noblelight</targetReference>
+            </connector>
+            <label>If Product_Line = MW</label>
+        </rules>
+        <rules>
+            <name>If_Product_Line_EIR</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>E.IR COMPONENT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EIR System</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EIR Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Hierarchy_EIR_Thermal_Processing_Noblelight</targetReference>
+            </connector>
+            <label>If Product_Line = EIR</label>
+        </rules>
+        <rules>
+            <name>If_Product_Line_OPT</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPT COMPONENTS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPT Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OPT System</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Hierarchy_OPT_Analytical_Noblelight</targetReference>
+            </connector>
+            <label>If Product_Line = OPT</label>
+        </rules>
+        <rules>
+            <name>If_Product_Line_FLASH</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FLASH COMP.</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FLASH Custom.</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>FLASH system.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_FLASH_Hierarchy_Photonics_Flash_Noblelight</targetReference>
+            </connector>
+            <label>If Product_Line = FLASH</label>
+        </rules>
+        <rules>
+            <name>If_Product_Line_OMNICURE</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OMNICURE COMPONENTS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OMNICURE Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>OMNICURE System</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Hierarchy_Curing_Omnicure_Noblelight</targetReference>
+            </connector>
+            <label>If Product_Line = OMNICURE</label>
+        </rules>
+        <rules>
+            <name>If_Product_Line_PHOSEON</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PHOSEON COMPONENTS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PHOSEON Custom</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_SubfamilyNL__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PHOSEON System</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Hierarchy_Curing_LED_Phoseon_Noblelight</targetReference>
+            </connector>
+            <label>If Product_Line = PHOSEON</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_Record_type_equals_to_Servicetr</name>
+        <label>If Record type equals to Servicetr</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IF_yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Service</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coordination</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Product_sub_family</targetReference>
+            </connector>
+            <label>IF yes</label>
+        </rules>
+        <rules>
+            <name>If_Acc</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ACC Trial</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Product_sub_family</targetReference>
+            </connector>
+            <label>If Acc</label>
+        </rules>
+    </decisions>
+    <description>Auto-populates Product Hierarchy fields on Case 
+based on Product_SubfamilyNL__c selection.</description>
+    <environments>Default</environments>
+    <interviewLabel>Case Auto Populate Product Hierarchy for Noblelight {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow Case Auto Populate Product Hierarchy for Noblelight</label>
+    <loops>
+        <name>Loop_1</name>
+        <label>For each  record type</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Filter_Record_Type</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>If_Record_type_equals_to_Servicetr</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Acc_Trial_Record_type</name>
+        <label>Get Acc Trial Record type</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Filter_Record_Type</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ACCTrial</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Service</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>RecordType</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Acc_Trial_Record_type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Product_SubfamilyNL__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>currentItem_Filter_Record_Type</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>RecordType</objectType>
+    </variables>
+</Flow>

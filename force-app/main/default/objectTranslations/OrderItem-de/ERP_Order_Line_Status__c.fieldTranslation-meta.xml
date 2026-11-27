@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- ERP Order Line Status --></label>
+    <name>ERP_Order_Line_Status__c</name>
+    <picklistValues>
+        <masterLabel>Being Processed</masterLabel>
+        <translation><!-- Being Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canceled</masterLabel>
+        <translation><!-- Canceled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completely Processed</masterLabel>
+        <translation><!-- Completely Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivered</masterLabel>
+        <translation><!-- Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoiced</masterLabel>
+        <translation><!-- Invoiced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Yet Processed</masterLabel>
+        <translation><!-- Not Yet Processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation><!-- Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Order</masterLabel>
+        <translation><!-- Open Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Processed</masterLabel>
+        <translation><!-- Partially Processed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

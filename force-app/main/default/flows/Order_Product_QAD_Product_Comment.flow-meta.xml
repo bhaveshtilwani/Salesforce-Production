@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_QAD_Value</name>
+        <label>Assign QAD Value</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.QAD_Product_Comment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>QAD_DiscountZero_Value</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_QAD_Value_W_Discount</name>
+        <label>Assign QAD Value W/ Discount</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.QAD_Product_Comment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>QAD_Comment_Value</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Any_100_Discount</name>
+        <label>Any 100% Discount?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Assign_QAD_Value_W_Discount</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>((1 OR 2 OR 3) AND 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Discount_1__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>100.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Discount_2__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>100.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Discount_3__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>100.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QAD_Product_Comment__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_QAD_Value</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>SAL-97 Order Creation Lines and Quote Lines &gt; add &quot;QAD Product Comment&quot; 
+Add Changes in Unit Price</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>FinalUnitPrice</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.UnitPrice} 
+* (1 - BLANKVALUE({!$Record.Discount_1__c}, 0) / 100) 
+* (1 - BLANKVALUE({!$Record.Discount_2__c}, 0) / 100) 
+* (1 - BLANKVALUE({!$Record.Discount_3__c}, 0) / 100)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>FormattedPrice</name>
+        <dataType>String</dataType>
+        <expression>TEXT( ROUND( {!FinalUnitPrice} , 2 ) )</expression>
+    </formulas>
+    <formulas>
+        <name>QAD_Comment_Value</name>
+        <dataType>String</dataType>
+        <expression>&quot;CV$&quot; &amp; {!FormattedPrice} &amp; &quot; &quot; &amp; BLANKVALUE(TEXT({!$Record.CurrencyIsoCode}), &quot;USD&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>QAD_DiscountZero_Value</name>
+        <dataType>String</dataType>
+        <expression>&quot;CV$0.00 &quot; &amp; BLANKVALUE(TEXT({!$Record.CurrencyIsoCode}), &quot;USD&quot;)</expression>
+    </formulas>
+    <interviewLabel>Order Product {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Order Product - QAD Product Comment</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Any_100_Discount</targetReference>
+        </connector>
+        <filterLogic>(1 AND 6 AND (2 OR 3 OR 4 OR 5))</filterLogic>
+        <filters>
+            <field>QAD_Product_Comment__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Discount_1__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Discount_2__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Discount_3__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>UnitPrice</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Toronto</stringValue>
+            </value>
+        </filters>
+        <object>OrderItem</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

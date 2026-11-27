@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Angebotsvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Angebotsvorlagen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Angebotsvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Angebotsvorlagen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Angebotsvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Angebotsvorlagen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Angebotsvorlage</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Angebotsvorlagen</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Vorlagenname</nameFieldLabel>
+    <validationRules>
+        <errorMessage>&quot;FuÃŸzeilenhÃ¶he darf nicht leer sein, wenn &quot;&quot;Position Seitenzahl&quot;&quot; auf &quot;&quot;FuÃŸzeile&quot;&quot; eingestellt ist.&quot;</errorMessage>
+        <name>SBQQ__Blank_Footer_Height</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;KopfzeilenhÃ¶he darf nicht leer sein, wenn &quot;&quot;Position Seitenzahl&quot;&quot; auf &quot;&quot;Kopfzeile&quot;&quot; eingestellt ist.&quot;</errorMessage>
+        <name>SBQQ__Blank_Header_Height</name>
+    </validationRules>
+    <webLinks>
+        <label>Mit ZugehÃ¶rigen duplizieren</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>Mit ZugehÃ¶rigen duplizieren</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label>Ãœbersetzen</label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

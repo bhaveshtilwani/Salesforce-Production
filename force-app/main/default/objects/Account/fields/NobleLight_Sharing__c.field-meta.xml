@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NobleLight_Sharing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This filed is a temporary fix to allow NobleLight accounts to be visible without manual intervention. Until a later time when we can properly tag the accounts with their respective teams / tags. (example: Sales Team = ALS OEM)</description>
+    <label>NobleLight Sharing</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

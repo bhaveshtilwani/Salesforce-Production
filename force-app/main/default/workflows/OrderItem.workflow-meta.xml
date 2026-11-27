@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notify_when_Qty_Shipped_Greater_than_Qty_Ordered</fullName>
+        <description>Notify when Qty Shipped Greater than Qty Ordered</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>salesforce.administrator@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>QAD_LDGI_Email_Templates/Delivered_Quantity_Qty_Ordered</template>
+    </alerts>
+    <alerts>
+        <fullName>Order_Product_Notification</fullName>
+        <description>Order Product - Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>SubmittedUser__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/Order_General_Approved_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Order_Product_Partially_Approved_Notification</fullName>
+        <description>Order Product - Partially Approved Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>SubmittedUser__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Order_General_Partial_Approved_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Order_Product_Rejected_Notification</fullName>
+        <description>Order Product - Rejected Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>SubmittedUser__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Order_General_Rejected_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>SSD_Update_Alert</fullName>
+        <description>SSD Update Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>heidi.luther@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/SSD_Updated_Alert</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Set_Order_Total</fullName>
+        <field>Total_Price__c</field>
+        <formula>Quantity  *  UnitPrice</formula>
+        <name>Set Order Total</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_PR00</fullName>
+        <field>PR00_Price__c</field>
+        <formula>UnitPrice</formula>
+        <name>Update PR00</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Set Order Total</fullName>
+        <actions>
+            <name>Set_Order_Total</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>OrderItem.Quantity</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>OrderItem.UI_Price_Editable__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Set order total Quantity X Unit Price</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

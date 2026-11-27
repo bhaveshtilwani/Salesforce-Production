@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_save_with_NONE_value</fullName>
+    <active>true</active>
+    <description>The Priority Level of your case cannot be set to &quot;None&quot;.
+Please select High, Medium, or Low.</description>
+    <errorConditionFormula>ISPICKVAL(Priority, &quot;NONE&quot;)</errorConditionFormula>
+    <errorDisplayField>Priority</errorDisplayField>
+    <errorMessage>The Priority Level of your case cannot be set to &quot;None&quot;.
+Please select High, Medium, or Low.</errorMessage>
+</ValidationRule>

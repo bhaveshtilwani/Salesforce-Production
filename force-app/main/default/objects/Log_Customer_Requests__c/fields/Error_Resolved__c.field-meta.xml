@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Error_Resolved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To track the resolution of error when clicked retry. If checked, means this log record error is resolved and another log record is created for successful retry</description>
+    <inlineHelpText>To track the resolution of error when clicked retry. If checked, means this log record error is resolved and another log record is created for successful retry</inlineHelpText>
+    <label>Error Resolved</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

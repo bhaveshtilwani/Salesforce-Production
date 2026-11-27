@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_Order_to_COllection</name>
+        <label>Add Order to Collection</label>
+        <locationX>138</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>updateOrders</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Thru_Orders</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Thru_Orders</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_CS_BDM</name>
+        <label>Assign CS &amp; BDM</label>
+        <locationX>138</locationX>
+        <locationY>647</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_Thru_Orders.BDM__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.BDM__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Loop_Thru_Orders.Responsible_CS_Rep__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsible_CS_Rep__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Order_to_COllection</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>CS_or_BDM_Changed</name>
+        <label>CS or BDM Changed</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Changed</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Responsible_CS_Rep__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.BDM__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Open_Orders</targetReference>
+            </connector>
+            <label>Changed</label>
+        </rules>
+    </decisions>
+    <description>CS and BDM update of Open Orders if Changed in Bill/Sold Account</description>
+    <environments>Default</environments>
+    <interviewLabel>Order - Update BDM &amp; CS Upon Account Change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Order - Update BDM &amp; CS Upon Account Change</label>
+    <loops>
+        <name>Loop_Thru_Orders</name>
+        <label>Loop Thru Orders</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <collectionReference>Get_Open_Orders</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_CS_BDM</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Orders</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Open_Orders</name>
+        <label>Get Open Orders</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Thru_Orders</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Bill_To_Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Order_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Delivered</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Order_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Invoiced</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Order_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Canceled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Order_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Completely Processed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Order_Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Order Completed</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Order</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Orders</name>
+        <label>Update Orders</label>
+        <locationX>50</locationX>
+        <locationY>947</locationY>
+        <inputReference>updateOrders</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>CS_or_BDM_Changed</targetReference>
+        </connector>
+        <filterFormula>AND(
+  OR(
+    ISCHANGED({!$Record.Responsible_CS_Rep__c}),
+    ISCHANGED({!$Record.BDM__c})
+  ),
+  NOT(
+    OR(
+      {!$Record.RecordType.DeveloperName} = &quot;SAP_Asia&quot;,
+      {!$Record.RecordType.DeveloperName} = &quot;SAP_Germany&quot;,
+      {!$Record.RecordType.DeveloperName} = &quot;SAP_NA_Montreal&quot;,
+      {!$Record.RecordType.DeveloperName} = &quot;S4_Boulder&quot;
+    )
+  )
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>updateOrders</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Order</objectType>
+    </variables>
+</Flow>

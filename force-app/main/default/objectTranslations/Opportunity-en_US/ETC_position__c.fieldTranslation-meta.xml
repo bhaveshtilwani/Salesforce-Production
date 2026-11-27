@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- What is ETC&apos;s position relative to this opportunity? --></help>
+    <label><!-- ETC position? --></label>
+    <name>ETC_position__c</name>
+    <picklistValues>
+        <masterLabel>ETC actively trying to enter this market / capability</masterLabel>
+        <translation><!-- ETC actively trying to enter this market / capability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sole Source / Incumbent</masterLabel>
+        <translation><!-- Sole Source / Incumbent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Well within our market / Go-To for this capability</masterLabel>
+        <translation><!-- Well within our market / Go-To for this capability --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

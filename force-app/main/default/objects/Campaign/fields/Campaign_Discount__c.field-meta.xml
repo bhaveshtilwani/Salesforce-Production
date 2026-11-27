@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Discount__c</fullName>
+    <description>This field is custom for LDGI discount process. Often there is a campaign that includes a discount. CSR references the campaign when entering discounts for the quote or order.</description>
+    <inlineHelpText>LDGI Discount for campaign</inlineHelpText>
+    <label>Campaign Discount</label>
+    <length>1300</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

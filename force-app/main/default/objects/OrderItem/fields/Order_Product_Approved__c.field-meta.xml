@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Product_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>BACKEND -- Used by the advance approvals automation when an order product is approved or partially approved.</description>
+    <label>Order Product Approved</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQU__Advanced_Filter_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(CPQU__Filters_Met__c) == &quot;Custom&quot; &amp;&amp; ISBLANK(CPQU__Advanced_Filter__c)</errorConditionFormula>
+    <errorMessage>Advanced Filter value is required when Filters Met is &quot;Custom&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Block_All_Sales_Areas__c</fullName>
+    <label>Billing Block - All Sales Areas</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ERP_Site__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Calculation Missing (01)</fullName>
+                <default>false</default>
+                <label>Calculation Missing (01)</label>
+            </value>
+            <value>
+                <fullName>Compl Confirm Missng (02)</fullName>
+                <default>false</default>
+                <label>Compl Confirm Missng (02)</label>
+            </value>
+            <value>
+                <fullName>Prices Incomplete (03)</fullName>
+                <default>false</default>
+                <label>Prices Incomplete (03)</label>
+            </value>
+            <value>
+                <fullName>Check Terms of Paymt (04)</fullName>
+                <default>false</default>
+                <label>Check Terms of Paymt (04)</label>
+            </value>
+            <value>
+                <fullName>Check Terms of Dlv (05)</fullName>
+                <default>false</default>
+                <label>Check Terms of Dlv (05)</label>
+            </value>
+            <value>
+                <fullName>Check Credit Memo (08)</fullName>
+                <default>false</default>
+                <label>Check Credit Memo (08)</label>
+            </value>
+            <value>
+                <fullName>Check Debit Memo (09)</fullName>
+                <default>false</default>
+                <label>Check Debit Memo (09)</label>
+            </value>
+            <value>
+                <fullName>Customer Care Review (ZC)</fullName>
+                <default>false</default>
+                <label>Customer Care Review (ZC)</label>
+            </value>
+            <value>
+                <fullName>Demo Billing Block (ZD)</fullName>
+                <default>false</default>
+                <label>Demo Billing Block (ZD)</label>
+            </value>
+            <value>
+                <fullName>Acct Correction Blk (ZZ)</fullName>
+                <default>false</default>
+                <label>Acct Correction Blk (ZZ)</label>
+            </value>
+            <value>
+                <fullName>Down Payment (X3)</fullName>
+                <default>false</default>
+                <label>Down Payment (X3)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Calculation Missing (01)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Compl Confirm Missng (02)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Prices Incomplete (03)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Check Terms of Paymt (04)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Check Terms of Dlv (05)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Check Credit Memo (08)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Check Debit Memo (09)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Customer Care Review (ZC)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Demo Billing Block (ZD)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Acct Correction Blk (ZZ)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Down Payment (X3)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

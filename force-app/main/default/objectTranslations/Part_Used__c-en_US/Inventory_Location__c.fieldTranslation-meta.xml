@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Inventory Location --></label>
+    <name>Inventory_Location__c</name>
+    <picklistValues>
+        <masterLabel>Floor Stock</masterLabel>
+        <translation><!-- Floor Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Inventory</masterLabel>
+        <translation><!-- Non-Inventory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>S-Parts</masterLabel>
+        <translation><!-- S-Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIP</masterLabel>
+        <translation><!-- WIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse</masterLabel>
+        <translation><!-- Warehouse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

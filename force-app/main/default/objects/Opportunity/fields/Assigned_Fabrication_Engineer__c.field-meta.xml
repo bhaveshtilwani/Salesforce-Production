@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Fabrication_Engineer__c</fullName>
+    <description>Vertiba 4/25/14 - requested by REO to match existing functionality in RFQ Tracking sheet</description>
+    <inlineHelpText>Select the primary engineer assigned</inlineHelpText>
+    <label>Assigned Fabrication Engineer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anant Gunari</fullName>
+                <default>false</default>
+                <label>Anant Gunari</label>
+            </value>
+            <value>
+                <fullName>Blaine Larsen</fullName>
+                <default>false</default>
+                <label>Blaine Larsen</label>
+            </value>
+            <value>
+                <fullName>Blaine Larson</fullName>
+                <default>false</default>
+                <label>Blaine Larson</label>
+            </value>
+            <value>
+                <fullName>Brad Mason</fullName>
+                <default>false</default>
+                <label>Brad Mason</label>
+            </value>
+            <value>
+                <fullName>Dave Michaels</fullName>
+                <default>false</default>
+                <label>Dave Michaels</label>
+            </value>
+            <value>
+                <fullName>Drew Hunt</fullName>
+                <default>false</default>
+                <label>Drew Hunt</label>
+            </value>
+            <value>
+                <fullName>Eric Sausman</fullName>
+                <default>false</default>
+                <label>Eric Sausman</label>
+            </value>
+            <value>
+                <fullName>Evan Prast</fullName>
+                <default>false</default>
+                <label>Evan Prast</label>
+            </value>
+            <value>
+                <fullName>Jack Hickman</fullName>
+                <default>false</default>
+                <label>Jack Hickman</label>
+            </value>
+            <value>
+                <fullName>Jason Peters</fullName>
+                <default>false</default>
+                <label>Jason Peters</label>
+            </value>
+            <value>
+                <fullName>Jessica O&apos;Toole</fullName>
+                <default>false</default>
+                <label>Jessica O&apos;Toole</label>
+            </value>
+            <value>
+                <fullName>Joe Wintergerst</fullName>
+                <default>false</default>
+                <label>Joe Wintergerst</label>
+            </value>
+            <value>
+                <fullName>John Johnson</fullName>
+                <default>false</default>
+                <label>John Johnson</label>
+            </value>
+            <value>
+                <fullName>Justin Savage</fullName>
+                <default>false</default>
+                <label>Justin Savage</label>
+            </value>
+            <value>
+                <fullName>Matthew Caldwell</fullName>
+                <default>false</default>
+                <label>Matthew Caldwell</label>
+            </value>
+            <value>
+                <fullName>Ralph Rummel</fullName>
+                <default>false</default>
+                <label>Ralph Rummel</label>
+            </value>
+            <value>
+                <fullName>Ryan Brow</fullName>
+                <default>false</default>
+                <label>Ryan Brow</label>
+            </value>
+            <value>
+                <fullName>Ted Kibler</fullName>
+                <default>false</default>
+                <label>Ted Kibler</label>
+            </value>
+            <value>
+                <fullName>Tim Moor</fullName>
+                <default>false</default>
+                <label>Tim Moor</label>
+            </value>
+            <value>
+                <fullName>Asher Woolverton</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Asher Woolverton</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

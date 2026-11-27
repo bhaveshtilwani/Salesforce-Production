@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Category__c</fullName>
+    <label>Tax Category</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMIW - Minimum SalesOrdrVal</fullName>
+                <default>false</default>
+                <label>AMIW - Minimum SalesOrdrVal</label>
+            </value>
+            <value>
+                <fullName>AMIZ - Minimum ValueSurchrg</fullName>
+                <default>false</default>
+                <label>AMIZ - Minimum ValueSurchrg</label>
+            </value>
+            <value>
+                <fullName>ATX1 - Output Tax</fullName>
+                <default>false</default>
+                <label>ATX1 - Output Tax</label>
+            </value>
+            <value>
+                <fullName>AUFS - VKP Calcultn Surchrg</fullName>
+                <default>false</default>
+                <label>AUFS - VKP Calcultn Surchrg</label>
+            </value>
+            <value>
+                <fullName>AUFX - VKP Calcultn Surchrg</fullName>
+                <default>false</default>
+                <label>AUFX - VKP Calcultn Surchrg</label>
+            </value>
+            <value>
+                <fullName>AZWR - Down Pay./Settlement</fullName>
+                <default>false</default>
+                <label>AZWR - Down Pay./Settlement</label>
+            </value>
+            <value>
+                <fullName>BO01 - Mat/Group Rebate</fullName>
+                <default>false</default>
+                <label>BO01 - Mat/Group Rebate</label>
+            </value>
+            <value>
+                <fullName>BO02 - Material Rebate</fullName>
+                <default>false</default>
+                <label>BO02 - Material Rebate</label>
+            </value>
+            <value>
+                <fullName>BO03 - Customer Rebate</fullName>
+                <default>false</default>
+                <label>BO03 - Customer Rebate</label>
+            </value>
+            <value>
+                <fullName>BO04 - Hierarchy Rebate</fullName>
+                <default>false</default>
+                <label>BO04 - Hierarchy Rebate</label>
+            </value>
+            <value>
+                <fullName>BO05 - Hierarchy rebate/mat</fullName>
+                <default>false</default>
+                <label>BO05 - Hierarchy rebate/mat</label>
+            </value>
+            <value>
+                <fullName>BO06 - Sales Indpndt Rebate</fullName>
+                <default>false</default>
+                <label>BO06 - Sales Indpndt Rebate</label>
+            </value>
+            <value>
+                <fullName>BOLL - Bollo in Fattura</fullName>
+                <default>false</default>
+                <label>BOLL - Bollo in Fattura</label>
+            </value>
+            <value>
+                <fullName>CTX1 - GST (Canada)</fullName>
+                <default>false</default>
+                <label>CTX1 - GST (Canada)</label>
+            </value>
+            <value>
+                <fullName>CTX2 - PST (Canada)</fullName>
+                <default>false</default>
+                <label>CTX2 - PST (Canada)</label>
+            </value>
+            <value>
+                <fullName>CTX3 - PST (Base+GST) Cdn</fullName>
+                <default>false</default>
+                <label>CTX3 - PST (Base+GST) Cdn</label>
+            </value>
+            <value>
+                <fullName>CTXJ - Tax Jurisdict.Code</fullName>
+                <default>false</default>
+                <label>CTXJ - Tax Jurisdict.Code</label>
+            </value>
+            <value>
+                <fullName>DIFF - Rounding Off</fullName>
+                <default>false</default>
+                <label>DIFF - Rounding Off</label>
+            </value>
+            <value>
+                <fullName>DUPL - Cond.to be duplic.</fullName>
+                <default>false</default>
+                <label>DUPL - Cond.to be duplic.</label>
+            </value>
+            <value>
+                <fullName>ECCN - Partial Value</fullName>
+                <default>false</default>
+                <label>ECCN - Partial Value</label>
+            </value>
+            <value>
+                <fullName>EDI1 - Cust.expected price</fullName>
+                <default>false</default>
+                <label>EDI1 - Cust.expected price</label>
+            </value>
+            <value>
+                <fullName>EDI2 - Cust.expected value</fullName>
+                <default>false</default>
+                <label>EDI2 - Cust.expected value</label>
+            </value>
+            <value>
+                <fullName>EK01 - Actual Costs</fullName>
+                <default>false</default>
+                <label>EK01 - Actual Costs</label>
+            </value>
+            <value>
+                <fullName>EK02 - Calculated costs</fullName>
+                <default>false</default>
+                <label>EK02 - Calculated costs</label>
+            </value>
+            <value>
+                <fullName>EKNN - Net/Net PP IS-R</fullName>
+                <default>false</default>
+                <label>EKNN - Net/Net PP IS-R</label>
+            </value>
+            <value>
+                <fullName>EV00 - Ret. Price Cust.ISR</fullName>
+                <default>false</default>
+                <label>EV00 - Ret. Price Cust.ISR</label>
+            </value>
+            <value>
+                <fullName>EVAU - Ret.Markup SP Calc.</fullName>
+                <default>false</default>
+                <label>EVAU - Ret.Markup SP Calc.</label>
+            </value>
+            <value>
+                <fullName>EVAX - Ret.Markup SP Calc.</fullName>
+                <default>false</default>
+                <label>EVAX - Ret.Markup SP Calc.</label>
+            </value>
+            <value>
+                <fullName>EVP0 - Retail price</fullName>
+                <default>false</default>
+                <label>EVP0 - Retail price</label>
+            </value>
+            <value>
+                <fullName>EVP1 - Ret. Price 1 ISR</fullName>
+                <default>false</default>
+                <label>EVP1 - Ret. Price 1 ISR</label>
+            </value>
+            <value>
+                <fullName>FREI - Freight (Trade)</fullName>
+                <default>false</default>
+                <label>FREI - Freight (Trade)</label>
+            </value>
+            <value>
+                <fullName>GRWR - Statistical value</fullName>
+                <default>false</default>
+                <label>GRWR - Statistical value</label>
+            </value>
+            <value>
+                <fullName>HA00 - Percentage Discount</fullName>
+                <default>false</default>
+                <label>HA00 - Percentage Discount</label>
+            </value>
+            <value>
+                <fullName>HB00 - Discount (Value)</fullName>
+                <default>false</default>
+                <label>HB00 - Discount (Value)</label>
+            </value>
+            <value>
+                <fullName>HD00 - Freight</fullName>
+                <default>false</default>
+                <label>HD00 - Freight</label>
+            </value>
+            <value>
+                <fullName>HI01 - Hierarchy</fullName>
+                <default>false</default>
+                <label>HI01 - Hierarchy</label>
+            </value>
+            <value>
+                <fullName>HI02 - Hierarchy/Material</fullName>
+                <default>false</default>
+                <label>HI02 - Hierarchy/Material</label>
+            </value>
+            <value>
+                <fullName>HM00 - Order value</fullName>
+                <default>false</default>
+                <label>HM00 - Order value</label>
+            </value>
+            <value>
+                <fullName>IBRX - Brazil tax calc.</fullName>
+                <default>false</default>
+                <label>IBRX - Brazil tax calc.</label>
+            </value>
+            <value>
+                <fullName>ICM3 - ICMS from SD</fullName>
+                <default>false</default>
+                <label>ICM3 - ICMS from SD</label>
+            </value>
+            <value>
+                <fullName>ICMI - Price+Tax (for NF)</fullName>
+                <default>false</default>
+                <label>ICMI - Price+Tax (for NF)</label>
+            </value>
+            <value>
+                <fullName>ICMO - ICMS offset</fullName>
+                <default>false</default>
+                <label>ICMO - ICMS offset</label>
+            </value>
+            <value>
+                <fullName>ICMP - ICMS/ISS on price</fullName>
+                <default>false</default>
+                <label>ICMP - ICMS/ISS on price</label>
+            </value>
+            <value>
+                <fullName>ICMR - Price+ICMS/ISS (NF)</fullName>
+                <default>false</default>
+                <label>ICMR - Price+ICMS/ISS (NF)</label>
+            </value>
+            <value>
+                <fullName>ICS3 - Sub.Trib. from SD</fullName>
+                <default>false</default>
+                <label>ICS3 - Sub.Trib. from SD</label>
+            </value>
+            <value>
+                <fullName>ICSO - ISS  offset</fullName>
+                <default>false</default>
+                <label>ICSO - ISS  offset</label>
+            </value>
+            <value>
+                <fullName>ICZF - ADMS Disc. Zona Fr.</fullName>
+                <default>false</default>
+                <label>ICZF - ADMS Disc. Zona Fr.</label>
+            </value>
+            <value>
+                <fullName>IFR3 - ICMS on freight SD</fullName>
+                <default>false</default>
+                <label>IFR3 - ICMS on freight SD</label>
+            </value>
+            <value>
+                <fullName>IFS3 - ICMS ST freight SD</fullName>
+                <default>false</default>
+                <label>IFS3 - ICMS ST freight SD</label>
+            </value>
+            <value>
+                <fullName>INDX - Inflation Index</fullName>
+                <default>false</default>
+                <label>INDX - Inflation Index</label>
+            </value>
+            <value>
+                <fullName>IPI3 - IPI from SD</fullName>
+                <default>false</default>
+                <label>IPI3 - IPI from SD</label>
+            </value>
+            <value>
+                <fullName>IPIC - Copy of IPI from SD</fullName>
+                <default>false</default>
+                <label>IPIC - Copy of IPI from SD</label>
+            </value>
+            <value>
+                <fullName>IPIO - IPI offset</fullName>
+                <default>false</default>
+                <label>IPIO - IPI offset</label>
+            </value>
+            <value>
+                <fullName>ISS3 - ISS from SD</fullName>
+                <default>false</default>
+                <label>ISS3 - ISS from SD</label>
+            </value>
+            <value>
+                <fullName>IV01 - Inter-company Price</fullName>
+                <default>false</default>
+                <label>IV01 - Inter-company Price</label>
+            </value>
+            <value>
+                <fullName>IV02 - Inter-company %</fullName>
+                <default>false</default>
+                <label>IV02 - Inter-company %</label>
+            </value>
+            <value>
+                <fullName>J1A1 - GI Perc. Region 1</fullName>
+                <default>false</default>
+                <label>J1A1 - GI Perc. Region 1</label>
+            </value>
+            <value>
+                <fullName>J1A2 - GI Perc. Region 2</fullName>
+                <default>false</default>
+                <label>J1A2 - GI Perc. Region 2</label>
+            </value>
+            <value>
+                <fullName>J1A3 - GI Perc. Region 3</fullName>
+                <default>false</default>
+                <label>J1A3 - GI Perc. Region 3</label>
+            </value>
+            <value>
+                <fullName>J1AL - Liber. w. Credit</fullName>
+                <default>false</default>
+                <label>J1AL - Liber. w. Credit</label>
+            </value>
+            <value>
+                <fullName>J1AN - Liber. w/o. Credit</fullName>
+                <default>false</default>
+                <label>J1AN - Liber. w/o. Credit</label>
+            </value>
+            <value>
+                <fullName>J1AP - VAT Perception I</fullName>
+                <default>false</default>
+                <label>J1AP - VAT Perception I</label>
+            </value>
+            <value>
+                <fullName>J1AQ - VAT Perception II</fullName>
+                <default>false</default>
+                <label>J1AQ - VAT Perception II</label>
+            </value>
+            <value>
+                <fullName>J1AR - VAT Surcharge RNI</fullName>
+                <default>false</default>
+                <label>J1AR - VAT Surcharge RNI</label>
+            </value>
+            <value>
+                <fullName>J1AU - VAT</fullName>
+                <default>false</default>
+                <label>J1AU - VAT</label>
+            </value>
+            <value>
+                <fullName>J1AV - Internal Tax Sales</fullName>
+                <default>false</default>
+                <label>J1AV - Internal Tax Sales</label>
+            </value>
+            <value>
+                <fullName>J1W1 - Withholding Tax 1</fullName>
+                <default>false</default>
+                <label>J1W1 - Withholding Tax 1</label>
+            </value>
+            <value>
+                <fullName>J1W2 - Withholding Tax 2</fullName>
+                <default>false</default>
+                <label>J1W2 - Withholding Tax 2</label>
+            </value>
+            <value>
+                <fullName>J1W3 - Withholding tax 3</fullName>
+                <default>false</default>
+                <label>J1W3 - Withholding tax 3</label>
+            </value>
+            <value>
+                <fullName>JR1 - Tax Jur Code Level 1</fullName>
+                <default>false</default>
+                <label>JR1 - Tax Jur Code Level 1</label>
+            </value>
+            <value>
+                <fullName>JR2 - Tax Jur Code Level 2</fullName>
+                <default>false</default>
+                <label>JR2 - Tax Jur Code Level 2</label>
+            </value>
+            <value>
+                <fullName>JR3 - Tax Jur Code Level 3</fullName>
+                <default>false</default>
+                <label>JR3 - Tax Jur Code Level 3</label>
+            </value>
+            <value>
+                <fullName>JR4 - Tax Jur Code Level 4</fullName>
+                <default>false</default>
+                <label>JR4 - Tax Jur Code Level 4</label>
+            </value>
+            <value>
+                <fullName>JRC1 - Canadian GST</fullName>
+                <default>false</default>
+                <label>JRC1 - Canadian GST</label>
+            </value>
+            <value>
+                <fullName>JRC2 - Canadian PST</fullName>
+                <default>false</default>
+                <label>JRC2 - Canadian PST</label>
+            </value>
+            <value>
+                <fullName>JRC3 - Canadian PST(B+GST)</fullName>
+                <default>false</default>
+                <label>JRC3 - Canadian PST(B+GST)</label>
+            </value>
+            <value>
+                <fullName>K004 - Material</fullName>
+                <default>false</default>
+                <label>K004 - Material</label>
+            </value>
+            <value>
+                <fullName>K005 - Customer/Material</fullName>
+                <default>false</default>
+                <label>K005 - Customer/Material</label>
+            </value>
+            <value>
+                <fullName>K007 - Customer Discount</fullName>
+                <default>false</default>
+                <label>K007 - Customer Discount</label>
+            </value>
+            <value>
+                <fullName>K020 - Price Group</fullName>
+                <default>false</default>
+                <label>K020 - Price Group</label>
+            </value>
+            <value>
+                <fullName>K029 - Material pricing grp</fullName>
+                <default>false</default>
+                <label>K029 - Material pricing grp</label>
+            </value>
+            <value>
+                <fullName>K030 - Customer/Mat.Pr.Grp</fullName>
+                <default>false</default>
+                <label>K030 - Customer/Mat.Pr.Grp</label>
+            </value>
+            <value>
+                <fullName>K031 - Price Grp/Mat.Pr.Grp</fullName>
+                <default>false</default>
+                <label>K031 - Price Grp/Mat.Pr.Grp</label>
+            </value>
+            <value>
+                <fullName>K032 - Price Group/Material</fullName>
+                <default>false</default>
+                <label>K032 - Price Group/Material</label>
+            </value>
+            <value>
+                <fullName>KA00 - Sales deal</fullName>
+                <default>false</default>
+                <label>KA00 - Sales deal</label>
+            </value>
+            <value>
+                <fullName>KA02 - Promo Discount % 1</fullName>
+                <default>false</default>
+                <label>KA02 - Promo Discount % 1</label>
+            </value>
+            <value>
+                <fullName>KA03 - Promo Discount % 2</fullName>
+                <default>false</default>
+                <label>KA03 - Promo Discount % 2</label>
+            </value>
+            <value>
+                <fullName>KA04 - Promo Discount MD 1</fullName>
+                <default>false</default>
+                <label>KA04 - Promo Discount MD 1</label>
+            </value>
+            <value>
+                <fullName>KA05 - Promo Discount MD 2</fullName>
+                <default>false</default>
+                <label>KA05 - Promo Discount MD 2</label>
+            </value>
+            <value>
+                <fullName>KF00 - Freight</fullName>
+                <default>false</default>
+                <label>KF00 - Freight</label>
+            </value>
+            <value>
+                <fullName>KP00 - Pallet Discount</fullName>
+                <default>false</default>
+                <label>KP00 - Pallet Discount</label>
+            </value>
+            <value>
+                <fullName>KP01 - Incomp.Pallet Surch.</fullName>
+                <default>false</default>
+                <label>KP01 - Incomp.Pallet Surch.</label>
+            </value>
+            <value>
+                <fullName>KP02 - Mixed Pallet Disc.</fullName>
+                <default>false</default>
+                <label>KP02 - Mixed Pallet Disc.</label>
+            </value>
+            <value>
+                <fullName>KP03 - Mixed Pallet Surch.</fullName>
+                <default>false</default>
+                <label>KP03 - Mixed Pallet Surch.</label>
+            </value>
+            <value>
+                <fullName>KUMU - Cumulation condition</fullName>
+                <default>false</default>
+                <label>KUMU - Cumulation condition</label>
+            </value>
+            <value>
+                <fullName>KV00 - Sales Costs (ISR)</fullName>
+                <default>false</default>
+                <label>KV00 - Sales Costs (ISR)</label>
+            </value>
+            <value>
+                <fullName>KW00 - Group valuation</fullName>
+                <default>false</default>
+                <label>KW00 - Group valuation</label>
+            </value>
+            <value>
+                <fullName>LCFR - License - France</fullName>
+                <default>false</default>
+                <label>LCFR - License - France</label>
+            </value>
+            <value>
+                <fullName>LCIT - VAT license Italy</fullName>
+                <default>false</default>
+                <label>LCIT - VAT license Italy</label>
+            </value>
+            <value>
+                <fullName>MS15 - Tax 15%</fullName>
+                <default>false</default>
+                <label>MS15 - Tax 15%</label>
+            </value>
+            <value>
+                <fullName>MW01 - Tax Trigger (RU)</fullName>
+                <default>false</default>
+                <label>MW01 - Tax Trigger (RU)</label>
+            </value>
+            <value>
+                <fullName>MW07 - Tax 7%</fullName>
+                <default>false</default>
+                <label>MW07 - Tax 7%</label>
+            </value>
+            <value>
+                <fullName>MW15 - Factoring Disc. Tax</fullName>
+                <default>false</default>
+                <label>MW15 - Factoring Disc. Tax</label>
+            </value>
+            <value>
+                <fullName>MWB1 - Berlin procedure A1</fullName>
+                <default>false</default>
+                <label>MWB1 - Berlin procedure A1</label>
+            </value>
+            <value>
+                <fullName>MWB2 - Berlin procedure A2</fullName>
+                <default>false</default>
+                <label>MWB2 - Berlin procedure A2</label>
+            </value>
+            <value>
+                <fullName>MWBO - Opt.tax Bollo in Fat</fullName>
+                <default>false</default>
+                <label>MWBO - Opt.tax Bollo in Fat</label>
+            </value>
+            <value>
+                <fullName>MWR1 - Sales Tax Manual</fullName>
+                <default>false</default>
+                <label>MWR1 - Sales Tax Manual</label>
+            </value>
+            <value>
+                <fullName>MWR2 - Sales Tax Sett. Man.</fullName>
+                <default>false</default>
+                <label>MWR2 - Sales Tax Sett. Man.</label>
+            </value>
+            <value>
+                <fullName>MWR3 - SlsTax Sett.Rev.Man.</fullName>
+                <default>false</default>
+                <label>MWR3 - SlsTax Sett.Rev.Man.</label>
+            </value>
+            <value>
+                <fullName>MWR4 - Sls Tax Manual Local</fullName>
+                <default>false</default>
+                <label>MWR4 - Sls Tax Manual Local</label>
+            </value>
+            <value>
+                <fullName>MWR5 - SlsTax Sett.Man.Loc.</fullName>
+                <default>false</default>
+                <label>MWR5 - SlsTax Sett.Man.Loc.</label>
+            </value>
+            <value>
+                <fullName>MWR6 - SlsTax Sett.Rev.Loc.</fullName>
+                <default>false</default>
+                <label>MWR6 - SlsTax Sett.Rev.Loc.</label>
+            </value>
+            <value>
+                <fullName>MWR7 - GSM Manual      (RU)</fullName>
+                <default>false</default>
+                <label>MWR7 - GSM Manual      (RU)</label>
+            </value>
+            <value>
+                <fullName>MWR8 - GSM cost manual (RU)</fullName>
+                <default>false</default>
+                <label>MWR8 - GSM cost manual (RU)</label>
+            </value>
+            <value>
+                <fullName>MWR9 - GSM costComp.man(RU)</fullName>
+                <default>false</default>
+                <label>MWR9 - GSM costComp.man(RU)</label>
+            </value>
+            <value>
+                <fullName>MWSI - Output Tax</fullName>
+                <default>false</default>
+                <label>MWSI - Output Tax</label>
+            </value>
+            <value>
+                <fullName>MWST - Output Tax</fullName>
+                <default>false</default>
+                <label>MWST - Output Tax</label>
+            </value>
+            <value>
+                <fullName>MWSV - Output VAT -SlsPrice</fullName>
+                <default>false</default>
+                <label>MWSV - Output VAT -SlsPrice</label>
+            </value>
+            <value>
+                <fullName>MX01 - I.E.P.S.  (MEXICO)</fullName>
+                <default>false</default>
+                <label>MX01 - I.E.P.S.  (MEXICO)</label>
+            </value>
+            <value>
+                <fullName>NET1 - Net value full VAT</fullName>
+                <default>false</default>
+                <label>NET1 - Net value full VAT</label>
+            </value>
+            <value>
+                <fullName>NET2 - Net value half VAT</fullName>
+                <default>false</default>
+                <label>NET2 - Net value half VAT</label>
+            </value>
+            <value>
+                <fullName>NETP - Price</fullName>
+                <default>false</default>
+                <label>NETP - Price</label>
+            </value>
+            <value>
+                <fullName>NETW - Value of Goods</fullName>
+                <default>false</default>
+                <label>NETW - Value of Goods</label>
+            </value>
+            <value>
+                <fullName>PB00 - Price (Gross)</fullName>
+                <default>false</default>
+                <label>PB00 - Price (Gross)</label>
+            </value>
+            <value>
+                <fullName>PBEW - Value Transf. Sales</fullName>
+                <default>false</default>
+                <label>PBEW - Value Transf. Sales</label>
+            </value>
+            <value>
+                <fullName>PBFI - Value Transfer B.FI</fullName>
+                <default>false</default>
+                <label>PBFI - Value Transfer B.FI</label>
+            </value>
+            <value>
+                <fullName>PC00 - Profit ctr valuation</fullName>
+                <default>false</default>
+                <label>PC00 - Profit ctr valuation</label>
+            </value>
+            <value>
+                <fullName>PCAM - Charge AMEX</fullName>
+                <default>false</default>
+                <label>PCAM - Charge AMEX</label>
+            </value>
+            <value>
+                <fullName>PCDI - Charge Diners</fullName>
+                <default>false</default>
+                <label>PCDI - Charge Diners</label>
+            </value>
+            <value>
+                <fullName>PCMC - Charge MasterCard</fullName>
+                <default>false</default>
+                <label>PCMC - Charge MasterCard</label>
+            </value>
+            <value>
+                <fullName>PCVI - Charge VISA</fullName>
+                <default>false</default>
+                <label>PCVI - Charge VISA</label>
+            </value>
+            <value>
+                <fullName>PDIF - Diff.value (own)</fullName>
+                <default>false</default>
+                <label>PDIF - Diff.value (own)</label>
+            </value>
+            <value>
+                <fullName>PI01 - Inter-company Price</fullName>
+                <default>false</default>
+                <label>PI01 - Inter-company Price</label>
+            </value>
+            <value>
+                <fullName>PI02 - Inter-company %</fullName>
+                <default>false</default>
+                <label>PI02 - Inter-company %</label>
+            </value>
+            <value>
+                <fullName>PKAR - Settlement Price Hdr</fullName>
+                <default>false</default>
+                <label>PKAR - Settlement Price Hdr</label>
+            </value>
+            <value>
+                <fullName>PMIN - Minimum Price</fullName>
+                <default>false</default>
+                <label>PMIN - Minimum Price</label>
+            </value>
+            <value>
+                <fullName>PN00 - Price (net)</fullName>
+                <default>false</default>
+                <label>PN00 - Price (net)</label>
+            </value>
+            <value>
+                <fullName>PN10 - Sales Price</fullName>
+                <default>false</default>
+                <label>PN10 - Sales Price</label>
+            </value>
+            <value>
+                <fullName>PNET - Net value</fullName>
+                <default>false</default>
+                <label>PNET - Net value</label>
+            </value>
+            <value>
+                <fullName>PPAG - MatlGroup Price Item</fullName>
+                <default>false</default>
+                <label>PPAG - MatlGroup Price Item</label>
+            </value>
+            <value>
+                <fullName>PPAR - Settlement Price Itm</fullName>
+                <default>false</default>
+                <label>PPAR - Settlement Price Itm</label>
+            </value>
+            <value>
+                <fullName>PPSG - Hierarchy Price Item</fullName>
+                <default>false</default>
+                <label>PPSG - Hierarchy Price Item</label>
+            </value>
+            <value>
+                <fullName>PPSV - Service Price Item</fullName>
+                <default>false</default>
+                <label>PPSV - Service Price Item</label>
+            </value>
+            <value>
+                <fullName>PR00 - Price</fullName>
+                <default>false</default>
+                <label>PR00 - Price</label>
+            </value>
+            <value>
+                <fullName>PR01 - Price incl.Sales Tax</fullName>
+                <default>false</default>
+                <label>PR01 - Price incl.Sales Tax</label>
+            </value>
+            <value>
+                <fullName>PR02 - Graduated Price</fullName>
+                <default>false</default>
+                <label>PR02 - Graduated Price</label>
+            </value>
+            <value>
+                <fullName>PR03 - Price interco</fullName>
+                <default>false</default>
+                <label>PR03 - Price interco</label>
+            </value>
+            <value>
+                <fullName>PRA0 - Promo SP wholesale 1</fullName>
+                <default>false</default>
+                <label>PRA0 - Promo SP wholesale 1</label>
+            </value>
+            <value>
+                <fullName>PRA1 - Promo SP wholesale 2</fullName>
+                <default>false</default>
+                <label>PRA1 - Promo SP wholesale 2</label>
+            </value>
+            <value>
+                <fullName>PREF - Preference</fullName>
+                <default>false</default>
+                <label>PREF - Preference</label>
+            </value>
+            <value>
+                <fullName>PTAM - American Express</fullName>
+                <default>false</default>
+                <label>PTAM - American Express</label>
+            </value>
+            <value>
+                <fullName>PTBL - Invoice amount</fullName>
+                <default>false</default>
+                <label>PTBL - Invoice amount</label>
+            </value>
+            <value>
+                <fullName>PTCH - Payment Type - Check</fullName>
+                <default>false</default>
+                <label>PTCH - Payment Type - Check</label>
+            </value>
+            <value>
+                <fullName>PTCS - Payment Type - Cash</fullName>
+                <default>false</default>
+                <label>PTCS - Payment Type - Cash</label>
+            </value>
+            <value>
+                <fullName>PTDI - Diners Card</fullName>
+                <default>false</default>
+                <label>PTDI - Diners Card</label>
+            </value>
+            <value>
+                <fullName>PTEU - Eurocard</fullName>
+                <default>false</default>
+                <label>PTEU - Eurocard</label>
+            </value>
+            <value>
+                <fullName>PTMC - Mastercard/Eurocard</fullName>
+                <default>false</default>
+                <label>PTMC - Mastercard/Eurocard</label>
+            </value>
+            <value>
+                <fullName>PTVI - VISA Card</fullName>
+                <default>false</default>
+                <label>PTVI - VISA Card</label>
+            </value>
+            <value>
+                <fullName>PTVO - Voucher</fullName>
+                <default>false</default>
+                <label>PTVO - Voucher</label>
+            </value>
+            <value>
+                <fullName>R100 - 100% discount</fullName>
+                <default>false</default>
+                <label>R100 - 100% discount</label>
+            </value>
+            <value>
+                <fullName>RA00 - % Discount from Net</fullName>
+                <default>false</default>
+                <label>RA00 - % Discount from Net</label>
+            </value>
+            <value>
+                <fullName>RA01 - % Disc.from Gross</fullName>
+                <default>false</default>
+                <label>RA01 - % Disc.from Gross</label>
+            </value>
+            <value>
+                <fullName>RB00 - Discount (Value)</fullName>
+                <default>false</default>
+                <label>RB00 - Discount (Value)</label>
+            </value>
+            <value>
+                <fullName>RB10 - Complaint Discount</fullName>
+                <default>false</default>
+                <label>RB10 - Complaint Discount</label>
+            </value>
+            <value>
+                <fullName>RB11 - Cash and Carry Disc.</fullName>
+                <default>false</default>
+                <label>RB11 - Cash and Carry Disc.</label>
+            </value>
+            <value>
+                <fullName>RB19 - Other Discounts</fullName>
+                <default>false</default>
+                <label>RB19 - Other Discounts</label>
+            </value>
+            <value>
+                <fullName>RC00 - Quantity Discount</fullName>
+                <default>false</default>
+                <label>RC00 - Quantity Discount</label>
+            </value>
+            <value>
+                <fullName>RD00 - Weight Discount</fullName>
+                <default>false</default>
+                <label>RD00 - Weight Discount</label>
+            </value>
+            <value>
+                <fullName>RH00 - Percent in Hundreds</fullName>
+                <default>false</default>
+                <label>RH00 - Percent in Hundreds</label>
+            </value>
+            <value>
+                <fullName>RJ01 - Rackjobbing-Picking</fullName>
+                <default>false</default>
+                <label>RJ01 - Rackjobbing-Picking</label>
+            </value>
+            <value>
+                <fullName>RL00 - Factoring Discount</fullName>
+                <default>false</default>
+                <label>RL00 - Factoring Discount</label>
+            </value>
+            <value>
+                <fullName>SKTO - Cash Discount</fullName>
+                <default>false</default>
+                <label>SKTO - Cash Discount</label>
+            </value>
+            <value>
+                <fullName>SKTV - Cash Discount</fullName>
+                <default>false</default>
+                <label>SKTV - Cash Discount</label>
+            </value>
+            <value>
+                <fullName>TRIG - Event Trigger</fullName>
+                <default>false</default>
+                <label>TRIG - Event Trigger</label>
+            </value>
+            <value>
+                <fullName>UTX1 - State Sales Tax</fullName>
+                <default>false</default>
+                <label>UTX1 - State Sales Tax</label>
+            </value>
+            <value>
+                <fullName>UTX2 - County Sales Tax</fullName>
+                <default>false</default>
+                <label>UTX2 - County Sales Tax</label>
+            </value>
+            <value>
+                <fullName>UTX3 - City Sales Tax</fullName>
+                <default>false</default>
+                <label>UTX3 - City Sales Tax</label>
+            </value>
+            <value>
+                <fullName>UTXJ - Tax Jurisdict.Code</fullName>
+                <default>false</default>
+                <label>UTXJ - Tax Jurisdict.Code</label>
+            </value>
+            <value>
+                <fullName>VA00 - Variant Price</fullName>
+                <default>false</default>
+                <label>VA00 - Variant Price</label>
+            </value>
+            <value>
+                <fullName>VA01 - Variant Price</fullName>
+                <default>false</default>
+                <label>VA01 - Variant Price</label>
+            </value>
+            <value>
+                <fullName>VASE - Variant Price</fullName>
+                <default>false</default>
+                <label>VASE - Variant Price</label>
+            </value>
+            <value>
+                <fullName>VKA0 - Promo SP        IS-R</fullName>
+                <default>false</default>
+                <label>VKA0 - Promo SP        IS-R</label>
+            </value>
+            <value>
+                <fullName>VKA1 - Other promo SP  IS-R</fullName>
+                <default>false</default>
+                <label>VKA1 - Other promo SP  IS-R</label>
+            </value>
+            <value>
+                <fullName>VKAE - Parallel promo SP</fullName>
+                <default>false</default>
+                <label>VKAE - Parallel promo SP</label>
+            </value>
+            <value>
+                <fullName>VKP0 - Sales price</fullName>
+                <default>false</default>
+                <label>VKP0 - Sales price</label>
+            </value>
+            <value>
+                <fullName>VKP1 - Other Sales Pr. IS-R</fullName>
+                <default>false</default>
+                <label>VKP1 - Other Sales Pr. IS-R</label>
+            </value>
+            <value>
+                <fullName>VKPE - Parallel SP    IS-R</fullName>
+                <default>false</default>
+                <label>VKPE - Parallel SP    IS-R</label>
+            </value>
+            <value>
+                <fullName>VPRS - Cost</fullName>
+                <default>false</default>
+                <label>VPRS - Cost</label>
+            </value>
+            <value>
+                <fullName>WIA1 - Input Tax Dest. Ctry</fullName>
+                <default>false</default>
+                <label>WIA1 - Input Tax Dest. Ctry</label>
+            </value>
+            <value>
+                <fullName>WIA2 - Output Tax Dep. Ctry</fullName>
+                <default>false</default>
+                <label>WIA2 - Output Tax Dep. Ctry</label>
+            </value>
+            <value>
+                <fullName>WIA3 - Output Tax Dest.Ctry</fullName>
+                <default>false</default>
+                <label>WIA3 - Output Tax Dest.Ctry</label>
+            </value>
+            <value>
+                <fullName>WK00 - Targ.Val. Value Cont</fullName>
+                <default>false</default>
+                <label>WK00 - Targ.Val. Value Cont</label>
+            </value>
+            <value>
+                <fullName>WUST - Sales Tax</fullName>
+                <default>false</default>
+                <label>WUST - Sales Tax</label>
+            </value>
+            <value>
+                <fullName>XR1 - Tax Jur Code Level 1</fullName>
+                <default>false</default>
+                <label>XR1 - Tax Jur Code Level 1</label>
+            </value>
+            <value>
+                <fullName>XR2 - Tax Jur Code Level 2</fullName>
+                <default>false</default>
+                <label>XR2 - Tax Jur Code Level 2</label>
+            </value>
+            <value>
+                <fullName>XR3 - Tax Jur Code Level 3</fullName>
+                <default>false</default>
+                <label>XR3 - Tax Jur Code Level 3</label>
+            </value>
+            <value>
+                <fullName>XR4 - Tax Jur Code Level 4</fullName>
+                <default>false</default>
+                <label>XR4 - Tax Jur Code Level 4</label>
+            </value>
+            <value>
+                <fullName>XR5 - Tax Jur Code Level 5</fullName>
+                <default>false</default>
+                <label>XR5 - Tax Jur Code Level 5</label>
+            </value>
+            <value>
+                <fullName>XR6 - Tax Jur Code Level 6</fullName>
+                <default>false</default>
+                <label>XR6 - Tax Jur Code Level 6</label>
+            </value>
+            <value>
+                <fullName>ZBX1 - Royalty Expenses</fullName>
+                <default>false</default>
+                <label>ZBX1 - Royalty Expenses</label>
+            </value>
+            <value>
+                <fullName>ZC00 - Pay by phone fee</fullName>
+                <default>false</default>
+                <label>ZC00 - Pay by phone fee</label>
+            </value>
+            <value>
+                <fullName>ZCOM - Commission for Agent</fullName>
+                <default>false</default>
+                <label>ZCOM - Commission for Agent</label>
+            </value>
+            <value>
+                <fullName>ZCP0 - Cost</fullName>
+                <default>false</default>
+                <label>ZCP0 - Cost</label>
+            </value>
+            <value>
+                <fullName>ZCP1 - Price (Cost+%)</fullName>
+                <default>false</default>
+                <label>ZCP1 - Price (Cost+%)</label>
+            </value>
+            <value>
+                <fullName>ZF00 - Freight Cost</fullName>
+                <default>false</default>
+                <label>ZF00 - Freight Cost</label>
+            </value>
+            <value>
+                <fullName>ZF01 - Freight Cost (QTY)</fullName>
+                <default>false</default>
+                <label>ZF01 - Freight Cost (QTY)</label>
+            </value>
+            <value>
+                <fullName>ZF02 - Freight (Interco)</fullName>
+                <default>false</default>
+                <label>ZF02 - Freight (Interco)</label>
+            </value>
+            <value>
+                <fullName>ZH00 - Tariff Fee (Duty)</fullName>
+                <default>false</default>
+                <label>ZH00 - Tariff Fee (Duty)</label>
+            </value>
+            <value>
+                <fullName>ZIPO - Commission for IPO</fullName>
+                <default>false</default>
+                <label>ZIPO - Commission for IPO</label>
+            </value>
+            <value>
+                <fullName>ZK07 - Sales and Use Tax</fullName>
+                <default>false</default>
+                <label>ZK07 - Sales and Use Tax</label>
+            </value>
+            <value>
+                <fullName>ZM00 - Mark-up % Std Cost</fullName>
+                <default>false</default>
+                <label>ZM00 - Mark-up % Std Cost</label>
+            </value>
+            <value>
+                <fullName>ZNET - Net Value</fullName>
+                <default>false</default>
+                <label>ZNET - Net Value</label>
+            </value>
+            <value>
+                <fullName>ZO04 - Hier./customer</fullName>
+                <default>false</default>
+                <label>ZO04 - Hier./customer</label>
+            </value>
+            <value>
+                <fullName>ZO05 - Hier./cus/material</fullName>
+                <default>false</default>
+                <label>ZO05 - Hier./cus/material</label>
+            </value>
+            <value>
+                <fullName>ZO06 - Hier./Cust/Profit C</fullName>
+                <default>false</default>
+                <label>ZO06 - Hier./Cust/Profit C</label>
+            </value>
+            <value>
+                <fullName>ZO07 - Hier./Profit C</fullName>
+                <default>false</default>
+                <label>ZO07 - Hier./Profit C</label>
+            </value>
+            <value>
+                <fullName>ZOFF - Offshore commission</fullName>
+                <default>false</default>
+                <label>ZOFF - Offshore commission</label>
+            </value>
+            <value>
+                <fullName>ZPR0 - Price for Heimann Co</fullName>
+                <default>false</default>
+                <label>ZPR0 - Price for Heimann Co</label>
+            </value>
+            <value>
+                <fullName>ZPR1 - Prices Stl/Mn</fullName>
+                <default>false</default>
+                <label>ZPR1 - Prices Stl/Mn</label>
+            </value>
+            <value>
+                <fullName>ZPR3 - UnitPrice to Ext Cus</fullName>
+                <default>false</default>
+                <label>ZPR3 - UnitPrice to Ext Cus</label>
+            </value>
+            <value>
+                <fullName>ZPR4 - UnitPrice(no mat#)</fullName>
+                <default>false</default>
+                <label>ZPR4 - UnitPrice(no mat#)</label>
+            </value>
+            <value>
+                <fullName>ZPR5 - Approved Value(ZF8)</fullName>
+                <default>false</default>
+                <label>ZPR5 - Approved Value(ZF8)</label>
+            </value>
+            <value>
+                <fullName>ZPR6 - NRE Price</fullName>
+                <default>false</default>
+                <label>ZPR6 - NRE Price</label>
+            </value>
+            <value>
+                <fullName>ZR00 - Stl Rep Commission</fullName>
+                <default>false</default>
+                <label>ZR00 - Stl Rep Commission</label>
+            </value>
+            <value>
+                <fullName>ZR01 - The Macinnis Company</fullName>
+                <default>false</default>
+                <label>ZR01 - The Macinnis Company</label>
+            </value>
+            <value>
+                <fullName>ZR02 - Trilogy MarketingInc</fullName>
+                <default>false</default>
+                <label>ZR02 - Trilogy MarketingInc</label>
+            </value>
+            <value>
+                <fullName>ZR03 - C.W. Beach (RD Asso)</fullName>
+                <default>false</default>
+                <label>ZR03 - C.W. Beach (RD Asso)</label>
+            </value>
+            <value>
+                <fullName>ZR04 - C.W. Beach</fullName>
+                <default>false</default>
+                <label>ZR04 - C.W. Beach</label>
+            </value>
+            <value>
+                <fullName>ZR05 - C. W. Beach Co.</fullName>
+                <default>false</default>
+                <label>ZR05 - C. W. Beach Co.</label>
+            </value>
+            <value>
+                <fullName>ZR06 - S.States Mktg</fullName>
+                <default>false</default>
+                <label>ZR06 - S.States Mktg</label>
+            </value>
+            <value>
+                <fullName>ZR07 - Temper Tech Mktg Inc</fullName>
+                <default>false</default>
+                <label>ZR07 - Temper Tech Mktg Inc</label>
+            </value>
+            <value>
+                <fullName>ZR08 - Maxtech Mktg Ltd</fullName>
+                <default>false</default>
+                <label>ZR08 - Maxtech Mktg Ltd</label>
+            </value>
+            <value>
+                <fullName>ZR09 - Davix Int&apos;l Ltd.</fullName>
+                <default>false</default>
+                <label>ZR09 - Davix Int&apos;l Ltd.</label>
+            </value>
+            <value>
+                <fullName>ZR10 - Marathon Electronics</fullName>
+                <default>false</default>
+                <label>ZR10 - Marathon Electronics</label>
+            </value>
+            <value>
+                <fullName>ZR11 - Kobert Associates</fullName>
+                <default>false</default>
+                <label>ZR11 - Kobert Associates</label>
+            </value>
+            <value>
+                <fullName>ZR12 - Griot Group</fullName>
+                <default>false</default>
+                <label>ZR12 - Griot Group</label>
+            </value>
+            <value>
+                <fullName>ZR13 - Adv.Tech.Services</fullName>
+                <default>false</default>
+                <label>ZR13 - Adv.Tech.Services</label>
+            </value>
+            <value>
+                <fullName>ZR14 - Northstar Tech Sales</fullName>
+                <default>false</default>
+                <label>ZR14 - Northstar Tech Sales</label>
+            </value>
+            <value>
+                <fullName>ZR15 - Glenn Mar, Inc.</fullName>
+                <default>false</default>
+                <label>ZR15 - Glenn Mar, Inc.</label>
+            </value>
+            <value>
+                <fullName>ZR16 - RepTek</fullName>
+                <default>false</default>
+                <label>ZR16 - RepTek</label>
+            </value>
+            <value>
+                <fullName>ZR17 - Jem Electronics, Inc</fullName>
+                <default>false</default>
+                <label>ZR17 - Jem Electronics, Inc</label>
+            </value>
+            <value>
+                <fullName>ZR18 - Sales Eng. Concepts</fullName>
+                <default>false</default>
+                <label>ZR18 - Sales Eng. Concepts</label>
+            </value>
+            <value>
+                <fullName>ZR19 - Groh Associates</fullName>
+                <default>false</default>
+                <label>ZR19 - Groh Associates</label>
+            </value>
+            <value>
+                <fullName>ZR21 - Hawkins Frederickson</fullName>
+                <default>false</default>
+                <label>ZR21 - Hawkins Frederickson</label>
+            </value>
+            <value>
+                <fullName>ZR22 - Acorn Electronics</fullName>
+                <default>false</default>
+                <label>ZR22 - Acorn Electronics</label>
+            </value>
+            <value>
+                <fullName>ZR50 - PKI St. Louis</fullName>
+                <default>false</default>
+                <label>ZR50 - PKI St. Louis</label>
+            </value>
+            <value>
+                <fullName>ZR51 - B&amp;B Corporation</fullName>
+                <default>false</default>
+                <label>ZR51 - B&amp;B Corporation</label>
+            </value>
+            <value>
+                <fullName>ZR52 - Shinkoh</fullName>
+                <default>false</default>
+                <label>ZR52 - Shinkoh</label>
+            </value>
+            <value>
+                <fullName>ZR53 - Talviton</fullName>
+                <default>false</default>
+                <label>ZR53 - Talviton</label>
+            </value>
+            <value>
+                <fullName>ZR54 - Blue - Electric</fullName>
+                <default>false</default>
+                <label>ZR54 - Blue - Electric</label>
+            </value>
+            <value>
+                <fullName>ZR56 - Kinout Invest DevLtd</fullName>
+                <default>false</default>
+                <label>ZR56 - Kinout Invest DevLtd</label>
+            </value>
+            <value>
+                <fullName>ZR57 - Ota Taiwan Inc.</fullName>
+                <default>false</default>
+                <label>ZR57 - Ota Taiwan Inc.</label>
+            </value>
+            <value>
+                <fullName>ZR58 - Hutmacher &amp; Schlund</fullName>
+                <default>false</default>
+                <label>ZR58 - Hutmacher &amp; Schlund</label>
+            </value>
+            <value>
+                <fullName>ZR59 - Faster Electronica</fullName>
+                <default>false</default>
+                <label>ZR59 - Faster Electronica</label>
+            </value>
+            <value>
+                <fullName>ZR61 - Martinsson &amp; Co Inst</fullName>
+                <default>false</default>
+                <label>ZR61 - Martinsson &amp; Co Inst</label>
+            </value>
+            <value>
+                <fullName>ZR62 - ATYS</fullName>
+                <default>false</default>
+                <label>ZR62 - ATYS</label>
+            </value>
+            <value>
+                <fullName>ZR63 - Pacer Electronics</fullName>
+                <default>false</default>
+                <label>ZR63 - Pacer Electronics</label>
+            </value>
+            <value>
+                <fullName>ZR64 - Holst &amp; Fleischer</fullName>
+                <default>false</default>
+                <label>ZR64 - Holst &amp; Fleischer</label>
+            </value>
+            <value>
+                <fullName>ZR65 - Aviv Electronics Ltd</fullName>
+                <default>false</default>
+                <label>ZR65 - Aviv Electronics Ltd</label>
+            </value>
+            <value>
+                <fullName>ZR66 - Other Foreign</fullName>
+                <default>false</default>
+                <label>ZR66 - Other Foreign</label>
+            </value>
+            <value>
+                <fullName>ZR67 - Dalma Electronics OY</fullName>
+                <default>false</default>
+                <label>ZR67 - Dalma Electronics OY</label>
+            </value>
+            <value>
+                <fullName>ZR68 - PKI Instruments</fullName>
+                <default>false</default>
+                <label>ZR68 - PKI Instruments</label>
+            </value>
+            <value>
+                <fullName>ZR70 - Temper/NorthStarGlen</fullName>
+                <default>false</default>
+                <label>ZR70 - Temper/NorthStarGlen</label>
+            </value>
+            <value>
+                <fullName>ZR71 - Toptronic</fullName>
+                <default>false</default>
+                <label>ZR71 - Toptronic</label>
+            </value>
+            <value>
+                <fullName>ZR75 - PerkinElmer OptoElec</fullName>
+                <default>false</default>
+                <label>ZR75 - PerkinElmer OptoElec</label>
+            </value>
+            <value>
+                <fullName>ZR76 - PKI Singapore</fullName>
+                <default>false</default>
+                <label>ZR76 - PKI Singapore</label>
+            </value>
+            <value>
+                <fullName>ZR77 - Other Far East</fullName>
+                <default>false</default>
+                <label>ZR77 - Other Far East</label>
+            </value>
+            <value>
+                <fullName>ZR79 - Laser ElectronicsPty</fullName>
+                <default>false</default>
+                <label>ZR79 - Laser ElectronicsPty</label>
+            </value>
+            <value>
+                <fullName>ZR80 - A.T.E.</fullName>
+                <default>false</default>
+                <label>ZR80 - A.T.E.</label>
+            </value>
+            <value>
+                <fullName>ZR81 - Innovtek Enterprise</fullName>
+                <default>false</default>
+                <label>ZR81 - Innovtek Enterprise</label>
+            </value>
+            <value>
+                <fullName>ZR82 - Eurodis Texim</fullName>
+                <default>false</default>
+                <label>ZR82 - Eurodis Texim</label>
+            </value>
+            <value>
+                <fullName>ZR83 - Seraphim (HongKong)</fullName>
+                <default>false</default>
+                <label>ZR83 - Seraphim (HongKong)</label>
+            </value>
+            <value>
+                <fullName>ZR84 - Seraphim (Taiwan)</fullName>
+                <default>false</default>
+                <label>ZR84 - Seraphim (Taiwan)</label>
+            </value>
+            <value>
+                <fullName>ZR85 - Lober S.A.</fullName>
+                <default>false</default>
+                <label>ZR85 - Lober S.A.</label>
+            </value>
+            <value>
+                <fullName>ZR86 - K&amp;K Ent.(FarEast)Ltd</fullName>
+                <default>false</default>
+                <label>ZR86 - K&amp;K Ent.(FarEast)Ltd</label>
+            </value>
+            <value>
+                <fullName>ZR87 - Dae Hueng</fullName>
+                <default>false</default>
+                <label>ZR87 - Dae Hueng</label>
+            </value>
+            <value>
+                <fullName>ZR90 - Nok PKI</fullName>
+                <default>false</default>
+                <label>ZR90 - Nok PKI</label>
+            </value>
+            <value>
+                <fullName>ZR93 - Kevin S.R.L.</fullName>
+                <default>false</default>
+                <label>ZR93 - Kevin S.R.L.</label>
+            </value>
+            <value>
+                <fullName>ZR95 - PKI China</fullName>
+                <default>false</default>
+                <label>ZR95 - PKI China</label>
+            </value>
+            <value>
+                <fullName>ZR96 - Ciontek</fullName>
+                <default>false</default>
+                <label>ZR96 - Ciontek</label>
+            </value>
+            <value>
+                <fullName>ZRE1 - Royalty Expenses</fullName>
+                <default>false</default>
+                <label>ZRE1 - Royalty Expenses</label>
+            </value>
+            <value>
+                <fullName>ZSU1 - Special Surcharge</fullName>
+                <default>false</default>
+                <label>ZSU1 - Special Surcharge</label>
+            </value>
+            <value>
+                <fullName>ZSU2 - Gas Surcharge (QTY)</fullName>
+                <default>false</default>
+                <label>ZSU2 - Gas Surcharge (QTY)</label>
+            </value>
+            <value>
+                <fullName>ZSUR - Mark-up % for RM</fullName>
+                <default>false</default>
+                <label>ZSUR - Mark-up % for RM</label>
+            </value>
+            <value>
+                <fullName>ZSV1 - Service Cost</fullName>
+                <default>false</default>
+                <label>ZSV1 - Service Cost</label>
+            </value>
+            <value>
+                <fullName>ZSV2 - Evaluation Cost</fullName>
+                <default>false</default>
+                <label>ZSV2 - Evaluation Cost</label>
+            </value>
+            <value>
+                <fullName>ZX02 - Royalty Expenses</fullName>
+                <default>false</default>
+                <label>ZX02 - Royalty Expenses</label>
+            </value>
+            <value>
+                <fullName>ZZZ1 - Freight Cost (Excl)</fullName>
+                <default>false</default>
+                <label>ZZZ1 - Freight Cost (Excl)</label>
+            </value>
+            <value>
+                <fullName>KOFI - Accnt Determination</fullName>
+                <default>false</default>
+                <label>KOFI - Accnt Determination</label>
+            </value>
+            <value>
+                <fullName>KOFK - Acct Determ.with CO</fullName>
+                <default>false</default>
+                <label>KOFK - Acct Determ.with CO</label>
+            </value>
+            <value>
+                <fullName>KOFR - Accnt Det return</fullName>
+                <default>false</default>
+                <label>KOFR - Accnt Det return</label>
+            </value>
+            <value>
+                <fullName>KOSC - Accnt Deter (Subcon)</fullName>
+                <default>false</default>
+                <label>KOSC - Accnt Deter (Subcon)</label>
+            </value>
+            <value>
+                <fullName>KOTK - Accnt Determination</fullName>
+                <default>false</default>
+                <label>KOTK - Accnt Determination</label>
+            </value>
+            <value>
+                <fullName>ZSV1 - Repair Ser. Acc. Det</fullName>
+                <default>false</default>
+                <label>ZSV1 - Repair Ser. Acc. Det</label>
+            </value>
+            <value>
+                <fullName>A001 - Material Entered</fullName>
+                <default>false</default>
+                <label>A001 - Material Entered</label>
+            </value>
+            <value>
+                <fullName>A001 - Listing</fullName>
+                <default>false</default>
+                <label>A001 - Listing</label>
+            </value>
+            <value>
+                <fullName>B001 - Exclusion</fullName>
+                <default>false</default>
+                <label>B001 - Exclusion</label>
+            </value>
+            <value>
+                <fullName>SD01 - Customer/Material</fullName>
+                <default>false</default>
+                <label>SD01 - Customer/Material</label>
+            </value>
+            <value>
+                <fullName>SD02 - Customer/Matl/Plant</fullName>
+                <default>false</default>
+                <label>SD02 - Customer/Matl/Plant</label>
+            </value>
+            <value>
+                <fullName>SD03 - CountryOfDest/MatGrp</fullName>
+                <default>false</default>
+                <label>SD03 - CountryOfDest/MatGrp</label>
+            </value>
+            <value>
+                <fullName>NA00 - Free Goods SD</fullName>
+                <default>false</default>
+                <label>NA00 - Free Goods SD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

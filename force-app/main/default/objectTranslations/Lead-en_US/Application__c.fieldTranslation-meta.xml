@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select one Application for the lead.  Minimally choose CISS - Other or LS/A - Other.  If the application is not listed contact your SFDC Administrator. --></help>
+    <label><!-- Application --></label>
+    <name>Application__c</name>
+    <picklistValues>
+        <masterLabel>ALS - Curing - Noblelight</masterLabel>
+        <translation><!-- ALS - Curing - Noblelight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALS - Curing - OmniCure</masterLabel>
+        <translation><!-- ALS - Curing - OmniCure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALS - Curing - Phoseon</masterLabel>
+        <translation><!-- ALS - Curing - Phoseon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALS - Disinfection &amp; Oxidation</masterLabel>
+        <translation><!-- ALS - Disinfection &amp; Oxidation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALS - IR Industrial Heating</masterLabel>
+        <translation><!-- ALS - IR Industrial Heating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adhesion</masterLabel>
+        <translation><!-- Adhesion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aesthetics</masterLabel>
+        <translation><!-- Aesthetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analog Printing</masterLabel>
+        <translation><!-- Analog Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analysis, Diagnostics &amp; Detection</masterLabel>
+        <translation><!-- Analysis, Diagnostics &amp; Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avionic HUDs</masterLabel>
+        <translation><!-- Avionic HUDs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C5ISR</masterLabel>
+        <translation><!-- C5ISR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Aerial Imaging</masterLabel>
+        <translation><!-- CISS - Aerial Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Appliances</masterLabel>
+        <translation><!-- CISS - Appliances --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Automotive</masterLabel>
+        <translation><!-- CISS - Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Colorimetry</masterLabel>
+        <translation><!-- CISS - Colorimetry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Consumer Electronics</masterLabel>
+        <translation><!-- CISS - Consumer Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Curing</masterLabel>
+        <translation><!-- CISS - Curing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Detection</masterLabel>
+        <translation><!-- CISS - Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Drones / UAV</masterLabel>
+        <translation><!-- CISS - Drones / UAV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Gas Detection</masterLabel>
+        <translation><!-- CISS - Gas Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - IR Detection</masterLabel>
+        <translation><!-- CISS - IR Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - IR Imaging</masterLabel>
+        <translation><!-- CISS - IR Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Industrial</masterLabel>
+        <translation><!-- CISS - Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Laser Industry</masterLabel>
+        <translation><!-- CISS - Laser Industry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Laser Mtrl Proc</masterLabel>
+        <translation><!-- CISS - Laser Mtrl Proc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Lidar/range finding</masterLabel>
+        <translation><!-- CISS - Lidar/range finding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Lighting</masterLabel>
+        <translation><!-- CISS - Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Machine Vis/Inspect</masterLabel>
+        <translation><!-- CISS - Machine Vis/Inspect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Motion/Presence Detection</masterLabel>
+        <translation><!-- CISS - Motion/Presence Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Optics &amp; Fabrication</masterLabel>
+        <translation><!-- CISS - Optics &amp; Fabrication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Other</masterLabel>
+        <translation><!-- CISS - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Photography</masterLabel>
+        <translation><!-- CISS - Photography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Photon Detection</masterLabel>
+        <translation><!-- CISS - Photon Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Printing</masterLabel>
+        <translation><!-- CISS - Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - ResLab / Catalog</masterLabel>
+        <translation><!-- CISS - ResLab / Catalog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Safety Lighting</masterLabel>
+        <translation><!-- CISS - Safety Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Safety Security</masterLabel>
+        <translation><!-- CISS - Safety Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS - Smoke Detection</masterLabel>
+        <translation><!-- CISS - Smoke Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coatings</masterLabel>
+        <translation><!-- Coatings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Composites</masterLabel>
+        <translation><!-- Composites --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Converting</masterLabel>
+        <translation><!-- Converting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Service - Other</masterLabel>
+        <translation><!-- Customer Service - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Def/Aerosp - NO SFDC</masterLabel>
+        <translation><!-- Def/Aerosp - NO SFDC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense Other</masterLabel>
+        <translation><!-- Defense Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital printing</masterLabel>
+        <translation><!-- Digital printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disinfection</masterLabel>
+        <translation><!-- Disinfection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Processing</masterLabel>
+        <translation><!-- Food Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heating &amp; Drying</masterLabel>
+        <translation><!-- Heating &amp; Drying --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HuD and HMD Optics</masterLabel>
+        <translation><!-- HuD and HMD Optics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imaging - High-Speed</masterLabel>
+        <translation><!-- Imaging - High-Speed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imaging - Industrial</masterLabel>
+        <translation><!-- Imaging - Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imaging - Intensified</masterLabel>
+        <translation><!-- Imaging - Intensified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imaging - Scientific</masterLabel>
+        <translation><!-- Imaging - Scientific --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Analytical</masterLabel>
+        <translation><!-- LS/A - Analytical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - BioMed Instr</masterLabel>
+        <translation><!-- LS/A - BioMed Instr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Dental</masterLabel>
+        <translation><!-- LS/A - Dental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Endoscopy</masterLabel>
+        <translation><!-- LS/A - Endoscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Medical</masterLabel>
+        <translation><!-- LS/A - Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Medical Imaging</masterLabel>
+        <translation><!-- LS/A - Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Medical Lighting</masterLabel>
+        <translation><!-- LS/A - Medical Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Microscopy/Fluorescence</masterLabel>
+        <translation><!-- LS/A - Microscopy/Fluorescence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Ophthalmology</masterLabel>
+        <translation><!-- LS/A - Ophthalmology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Other</masterLabel>
+        <translation><!-- LS/A - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Semiconductor</masterLabel>
+        <translation><!-- LS/A - Semiconductor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - Thermometry</masterLabel>
+        <translation><!-- LS/A - Thermometry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A - UVC Disinfection</masterLabel>
+        <translation><!-- LS/A - UVC Disinfection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laser</masterLabel>
+        <translation><!-- Laser --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missiles / PGM / Missile Defense</masterLabel>
+        <translation><!-- Missiles / PGM / Missile Defense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oxidation</masterLabel>
+        <translation><!-- Oxidation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Satellite</masterLabel>
+        <translation><!-- Satellite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soldier Systems</masterLabel>
+        <translation><!-- Soldier Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Through Life Support</masterLabel>
+        <translation><!-- Through Life Support --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

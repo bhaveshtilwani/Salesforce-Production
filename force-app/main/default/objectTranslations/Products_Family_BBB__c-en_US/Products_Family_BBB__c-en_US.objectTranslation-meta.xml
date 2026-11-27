@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Family BBB</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Products Family BBB</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- PartDetails --></label>
+        <name>PartDetails</name>
+    </webLinks>
+</CustomObjectTranslation>

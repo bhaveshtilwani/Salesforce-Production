@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Feld, das bei &quot;&quot;Dynamische Genehmigungen&quot;&quot; verwendet wird und den Genehmigerwert fÃ¼r diese Regel enthÃ¤lt&quot;</help>
+    <label><!-- Approver Field --></label>
+    <name>sbaa__ApproverField__c</name>
+    <picklistValues>
+        <masterLabel>Created By</masterLabel>
+        <translation>Erstellt von</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TeamVp__c</masterLabel>
+        <translation><!-- TeamVp__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

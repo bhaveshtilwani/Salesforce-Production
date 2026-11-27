@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Microscope_Model__c</fullName>
+    <label>Microscope Model</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Microscope_Manufacturer__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Microscope_Model</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>AxioExaminer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>AxioImager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>AxioObserver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiophot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiophot2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axioplan 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axioplan 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>AxioScan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>AxioScope A1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axioskop 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axioskop 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axioskop 20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axioskop 2FS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axioskop 40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axioskop 50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>AxioTech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiovert 10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiovert 100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiovert 135</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiovert 200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiovert 25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiovert 35</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiovert 40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Axiovert 400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>AxioVert A1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>AxioZoom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Discovery.v12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Discovery.v20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Discovery.v8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>LSM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Stemi SV11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARL ZEISS</controllingFieldValue>
+            <valueName>Stereo Lumar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DM2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DM2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DM3000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DM4000-6000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DM4B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DM6B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMI4000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMI6000B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMi8 – Automated w/FIM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMi8 – Manual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMIL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMIRB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMIRE2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMIRM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMLB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMLFS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMRXA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>DMRXA2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>M10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>M165FC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>M205FA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>MZ10F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>MZ16F</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>MZ16FA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>MZ9.5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LEICA</controllingFieldValue>
+            <valueName>MZFLIII</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MOTIC</controllingFieldValue>
+            <valueName>AE31</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MOTIC</controllingFieldValue>
+            <valueName>BA400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>50i</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>80i</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>90i</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>all other “TE”</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>AZ100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>Ci</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>Diaphot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>E400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>E600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>E800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>FN1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>For “white light TIRF”</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>Labophot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>Ni</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>SMZ1270</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>SMZ1270i</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>SMZ1500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>SMZ18</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>SMZ25</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>SMZ800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>SMZ800N</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>TE2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>Ti</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>Ti2 (w/Ti-LAPP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>TMF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NIKON</controllingFieldValue>
+            <valueName>TS100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>AX70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX41</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX43</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX46</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX51</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX51WI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX53</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX61</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX61WI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>BX63</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>CK40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>CKX41</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>CKX53</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>CX41</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>IX3 series (w/ RFA)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>IX3 series (w/ RFA-L)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>IX50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>IX51</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>IX70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>IX71</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>IX81</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>MVX10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>SZX10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>SZX12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>SZX16</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Olympus</controllingFieldValue>
+            <valueName>SZX7</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

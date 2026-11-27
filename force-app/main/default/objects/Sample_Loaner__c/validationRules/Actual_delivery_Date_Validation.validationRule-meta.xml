@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_delivery_Date_Validation</fullName>
+    <active>true</active>
+    <description>Actual_Delivery_Date__c should be greater than start_date and less than equal to Today())</description>
+    <errorConditionFormula>OR (Actual_Delivery_Date__c  &lt; Start_Date__c ,Actual_Delivery_Date__c  &gt; Today())</errorConditionFormula>
+    <errorDisplayField>Actual_Delivery_Date__c</errorDisplayField>
+    <errorMessage>Actaul Delivery date should be greater than Start Date and less than equal to Today</errorMessage>
+</ValidationRule>

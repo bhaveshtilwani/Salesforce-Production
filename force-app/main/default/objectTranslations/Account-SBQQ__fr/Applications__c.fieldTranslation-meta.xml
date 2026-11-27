@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please select Application(s) that apply to Account --></help>
+    <label><!-- Applications --></label>
+    <name>Applications__c</name>
+    <picklistValues>
+        <masterLabel>Adaptive Cruise Control</masterLabel>
+        <translation><!-- Adaptive Cruise Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adaptive Optics</masterLabel>
+        <translation><!-- Adaptive Optics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adhesion</masterLabel>
+        <translation><!-- Adhesion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aerial Photography</masterLabel>
+        <translation><!-- Aerial Photography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aesthetics</masterLabel>
+        <translation><!-- Aesthetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Conditioning</masterLabel>
+        <translation><!-- Air Conditioning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ambient Light Sensing</masterLabel>
+        <translation><!-- Ambient Light Sensing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analog Printing</masterLabel>
+        <translation><!-- Analog Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analysis, Diagnostics &amp; Detection</masterLabel>
+        <translation><!-- Analysis, Diagnostics &amp; Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical</masterLabel>
+        <translation><!-- Analytical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architectural Lighting</masterLabel>
+        <translation><!-- Architectural Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Artificial Intelligence</masterLabel>
+        <translation><!-- Artificial Intelligence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asymmetrical Flow Field-Flow Fractionation</masterLabel>
+        <translation><!-- Asymmetrical Flow Field-Flow Fractionation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audio Control</masterLabel>
+        <translation><!-- Audio Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Automotive</masterLabel>
+        <translation><!-- Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aviation Lighting</masterLabel>
+        <translation><!-- Aviation Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barcode Reader</masterLabel>
+        <translation><!-- Barcode Reader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biotech Instrumentation</masterLabel>
+        <translation><!-- Biotech Instrumentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blood Analyzers and Immunoassay</masterLabel>
+        <translation><!-- Blood Analyzers and Immunoassay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blood Temperature Measurement</masterLabel>
+        <translation><!-- Blood Temperature Measurement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burner Control</masterLabel>
+        <translation><!-- Burner Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carbon Analysis</masterLabel>
+        <translation><!-- Carbon Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cargo Inspection</masterLabel>
+        <translation><!-- Cargo Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check Imaging</masterLabel>
+        <translation><!-- Check Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coatings</masterLabel>
+        <translation><!-- Coatings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Color Measurement</masterLabel>
+        <translation><!-- Color Measurement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colorimetry</masterLabel>
+        <translation><!-- Colorimetry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Composites</masterLabel>
+        <translation><!-- Composites --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Confocal Microscopy</masterLabel>
+        <translation><!-- Confocal Microscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Converting</masterLabel>
+        <translation><!-- Converting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Currency Validation</masterLabel>
+        <translation><!-- Currency Validation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DNA Sequencing</masterLabel>
+        <translation><!-- DNA Sequencing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Communication</masterLabel>
+        <translation><!-- Data Communication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dental</masterLabel>
+        <translation><!-- Dental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital Printing</masterLabel>
+        <translation><!-- Digital Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disinfection</masterLabel>
+        <translation><!-- Disinfection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ear Thermometer</masterLabel>
+        <translation><!-- Ear Thermometer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endoscopy</masterLabel>
+        <translation><!-- Endoscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment</masterLabel>
+        <translation><!-- Entertainment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment Lighting</masterLabel>
+        <translation><!-- Entertainment Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Analytics</masterLabel>
+        <translation><!-- Environmental Analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fiber Optic Temperature Measurement</masterLabel>
+        <translation><!-- Fiber Optic Temperature Measurement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fiber Optic Test Equipment</masterLabel>
+        <translation><!-- Fiber Optic Test Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow Cytometry / Cell Analysis</masterLabel>
+        <translation><!-- Flow Cytometry / Cell Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fluorescence &amp; Luminescence</masterLabel>
+        <translation><!-- Fluorescence &amp; Luminescence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fluorimetry</masterLabel>
+        <translation><!-- Fluorimetry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fog Detection</masterLabel>
+        <translation><!-- Fog Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Inspection</masterLabel>
+        <translation><!-- Food Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Processing</masterLabel>
+        <translation><!-- Food Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food/Grain Sorting</masterLabel>
+        <translation><!-- Food/Grain Sorting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Forehead Thermometer</masterLabel>
+        <translation><!-- Forehead Thermometer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Free Space Communication</masterLabel>
+        <translation><!-- Free Space Communication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Detection</masterLabel>
+        <translation><!-- Gas Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Detection and Analysis</masterLabel>
+        <translation><!-- Gas Detection and Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gene Sequencing</masterLabel>
+        <translation><!-- Gene Sequencing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPLC</masterLabel>
+        <translation><!-- HPLC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hazardous Area</masterLabel>
+        <translation><!-- Hazardous Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heating &amp; Drying</masterLabel>
+        <translation><!-- Heating &amp; Drying --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hyper Spectral</masterLabel>
+        <translation><!-- Hyper Spectral --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR Illumination</masterLabel>
+        <translation><!-- IR Illumination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Induction Heater</masterLabel>
+        <translation><!-- Induction Heater --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial</masterLabel>
+        <translation><!-- Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Imaging</masterLabel>
+        <translation><!-- Industrial Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intense Pulsed Light (IPL)</masterLabel>
+        <translation><!-- Intense Pulsed Light (IPL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intrusion Alarm</masterLabel>
+        <translation><!-- Intrusion Alarm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laser</masterLabel>
+        <translation><!-- Laser --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laser Material Processing</masterLabel>
+        <translation><!-- Laser Material Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Meter</masterLabel>
+        <translation><!-- Light Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Switch</masterLabel>
+        <translation><!-- Light Switch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Resolution IR Imaging</masterLabel>
+        <translation><!-- Low Resolution IR Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Luggage Inspection</masterLabel>
+        <translation><!-- Luggage Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine Vision</masterLabel>
+        <translation><!-- Machine Vision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mail Sorting</masterLabel>
+        <translation><!-- Mail Sorting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mass Spectroscopy - ICP</masterLabel>
+        <translation><!-- Mass Spectroscopy - ICP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical</masterLabel>
+        <translation><!-- Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Imaging</masterLabel>
+        <translation><!-- Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Lighting</masterLabel>
+        <translation><!-- Medical Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical analytics</masterLabel>
+        <translation><!-- Medical analytics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MicroPlate Readers</masterLabel>
+        <translation><!-- MicroPlate Readers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microscope Power Meter</masterLabel>
+        <translation><!-- Microscope Power Meter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microscopy</masterLabel>
+        <translation><!-- Microscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microwave Oven</masterLabel>
+        <translation><!-- Microwave Oven --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military</masterLabel>
+        <translation><!-- Military --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Molecular Imaging</masterLabel>
+        <translation><!-- Molecular Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motion Detection</masterLabel>
+        <translation><!-- Motion Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optical Switch</masterLabel>
+        <translation><!-- Optical Switch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oxidation</masterLabel>
+        <translation><!-- Oxidation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCB Inspection</masterLabel>
+        <translation><!-- PCB Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCR</masterLabel>
+        <translation><!-- PCR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Particle Sizing and Counting</masterLabel>
+        <translation><!-- Particle Sizing and Counting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photo</masterLabel>
+        <translation><!-- Photo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portable Consumer Lighting</masterLabel>
+        <translation><!-- Portable Consumer Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Presence Detection</masterLabel>
+        <translation><!-- Presence Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printer/Copier</masterLabel>
+        <translation><!-- Printer/Copier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Photography</masterLabel>
+        <translation><!-- Professional Photography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Proximity Light Switch</masterLabel>
+        <translation><!-- Proximity Light Switch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pulse Oximetry</masterLabel>
+        <translation><!-- Pulse Oximetry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantum Cryptography</masterLabel>
+        <translation><!-- Quantum Cryptography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiation Detection</masterLabel>
+        <translation><!-- Radiation Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Range Finding</masterLabel>
+        <translation><!-- Range Finding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remote Sensing</masterLabel>
+        <translation><!-- Remote Sensing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remote Temperature Sensing</masterLabel>
+        <translation><!-- Remote Temperature Sensing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retina Scanning</masterLabel>
+        <translation><!-- Retina Scanning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety Curtain</masterLabel>
+        <translation><!-- Safety Curtain --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scientific / R&amp;D</masterLabel>
+        <translation><!-- Scientific / R&amp;D --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security</masterLabel>
+        <translation><!-- Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security Laser Scanner</masterLabel>
+        <translation><!-- Security Laser Scanner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signal Lighting</masterLabel>
+        <translation><!-- Signal Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signs &amp; Displays</masterLabel>
+        <translation><!-- Signs &amp; Displays --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Molecule Detection</masterLabel>
+        <translation><!-- Single Molecule Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smoke Detection</masterLabel>
+        <translation><!-- Smoke Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sparc Emmission Spectroscopy</masterLabel>
+        <translation><!-- Sparc Emmission Spectroscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spectroscopy</masterLabel>
+        <translation><!-- Spectroscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speed Gun</masterLabel>
+        <translation><!-- Speed Gun --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sunload and DRL Sensor</masterLabel>
+        <translation><!-- Sunload and DRL Sensor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surveying Equipment</masterLabel>
+        <translation><!-- Surveying Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Equipment</masterLabel>
+        <translation><!-- Test Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Textile Inspection</masterLabel>
+        <translation><!-- Textile Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation/Obstruction Warning</masterLabel>
+        <translation><!-- Transportation/Obstruction Warning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wafer Inspection</masterLabel>
+        <translation><!-- Wafer Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warning Beacons</masterLabel>
+        <translation><!-- Warning Beacons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Web Inspection</masterLabel>
+        <translation><!-- Web Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X-Ray Detection</masterLabel>
+        <translation><!-- X-Ray Detection --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

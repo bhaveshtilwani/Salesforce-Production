@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitor_Name__c</fullName>
+    <label>Competitor Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADTECH</fullName>
+                <default>false</default>
+                <label>ADTECH</label>
+            </value>
+            <value>
+                <fullName>AJ TUCK</fullName>
+                <default>false</default>
+                <label>AJ TUCK</label>
+            </value>
+            <value>
+                <fullName>ALLIANTTECH SYSTEMS</fullName>
+                <default>false</default>
+                <label>ALLIANTTECH SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>ALPHA QUEST</fullName>
+                <default>false</default>
+                <label>ALPHA QUEST</label>
+            </value>
+            <value>
+                <fullName>AMBA</fullName>
+                <default>false</default>
+                <label>AMBA</label>
+            </value>
+            <value>
+                <fullName>AMGLO</fullName>
+                <default>false</default>
+                <label>AMGLO</label>
+            </value>
+            <value>
+                <fullName>APPLIED PHOTON TECHNOLOGY</fullName>
+                <default>false</default>
+                <label>APPLIED PHOTON TECHNOLOGY</label>
+            </value>
+            <value>
+                <fullName>ATC POWER SYSTEMS, INC.</fullName>
+                <default>false</default>
+                <label>ATC POWER SYSTEMS, INC.</label>
+            </value>
+            <value>
+                <fullName>ATLANTICUV</fullName>
+                <default>false</default>
+                <label>ATLANTICUV</label>
+            </value>
+            <value>
+                <fullName>ATMEL</fullName>
+                <default>false</default>
+                <label>ATMEL</label>
+            </value>
+            <value>
+                <fullName>AUTOMA TECH</fullName>
+                <default>false</default>
+                <label>AUTOMA TECH</label>
+            </value>
+            <value>
+                <fullName>BACHER</fullName>
+                <default>false</default>
+                <label>BACHER</label>
+            </value>
+            <value>
+                <fullName>BASLER</fullName>
+                <default>false</default>
+                <label>BASLER</label>
+            </value>
+            <value>
+                <fullName>BASYSPRINT</fullName>
+                <default>false</default>
+                <label>BASYSPRINT</label>
+            </value>
+            <value>
+                <fullName>BOWERS MOLD</fullName>
+                <default>false</default>
+                <label>BOWERS MOLD</label>
+            </value>
+            <value>
+                <fullName>BURLIG</fullName>
+                <default>false</default>
+                <label>BURLIG</label>
+            </value>
+            <value>
+                <fullName>CARSAN ENGINEERING</fullName>
+                <default>false</default>
+                <label>CARSAN ENGINEERING</label>
+            </value>
+            <value>
+                <fullName>CENTRONICS</fullName>
+                <default>false</default>
+                <label>CENTRONICS</label>
+            </value>
+            <value>
+                <fullName>COSMOS</fullName>
+                <default>false</default>
+                <label>COSMOS</label>
+            </value>
+            <value>
+                <fullName>CREO</fullName>
+                <default>false</default>
+                <label>CREO</label>
+            </value>
+            <value>
+                <fullName>C-SUN</fullName>
+                <default>false</default>
+                <label>C-SUN</label>
+            </value>
+            <value>
+                <fullName>DALSA</fullName>
+                <default>false</default>
+                <label>DALSA</label>
+            </value>
+            <value>
+                <fullName>ECLATRON</fullName>
+                <default>false</default>
+                <label>ECLATRON</label>
+            </value>
+            <value>
+                <fullName>ELECTRONICS METAL FINISHING</fullName>
+                <default>false</default>
+                <label>ELECTRONICS METAL FINISHING</label>
+            </value>
+            <value>
+                <fullName>ELTEC</fullName>
+                <default>false</default>
+                <label>ELTEC</label>
+            </value>
+            <value>
+                <fullName>ENSIGN-BICKFORD</fullName>
+                <default>false</default>
+                <label>ENSIGN-BICKFORD</label>
+            </value>
+            <value>
+                <fullName>EUBON</fullName>
+                <default>false</default>
+                <label>EUBON</label>
+            </value>
+            <value>
+                <fullName>FAIRCHILD IMAGING</fullName>
+                <default>false</default>
+                <label>FAIRCHILD IMAGING</label>
+            </value>
+            <value>
+                <fullName>FENIX</fullName>
+                <default>false</default>
+                <label>FENIX</label>
+            </value>
+            <value>
+                <fullName>FIRST LIGHT</fullName>
+                <default>false</default>
+                <label>FIRST LIGHT</label>
+            </value>
+            <value>
+                <fullName>FIRST TECHNOLOGIES</fullName>
+                <default>false</default>
+                <label>FIRST TECHNOLOGIES</label>
+            </value>
+            <value>
+                <fullName>FREQUENCY ELECTRONICS INC. (FEI)</fullName>
+                <default>false</default>
+                <label>FREQUENCY ELECTRONICS INC. (FEI)</label>
+            </value>
+            <value>
+                <fullName>FUJI</fullName>
+                <default>false</default>
+                <label>FUJI</label>
+            </value>
+            <value>
+                <fullName>GAR ELECTROFORMING</fullName>
+                <default>false</default>
+                <label>GAR ELECTROFORMING</label>
+            </value>
+            <value>
+                <fullName>GENESIS LAMP</fullName>
+                <default>false</default>
+                <label>GENESIS LAMP</label>
+            </value>
+            <value>
+                <fullName>GE THERMOMETRICS</fullName>
+                <default>false</default>
+                <label>GE THERMOMETRICS</label>
+            </value>
+            <value>
+                <fullName>HAKUTO</fullName>
+                <default>false</default>
+                <label>HAKUTO</label>
+            </value>
+            <value>
+                <fullName>HAMAMATSU</fullName>
+                <default>false</default>
+                <label>HAMAMATSU</label>
+            </value>
+            <value>
+                <fullName>HANOVIA</fullName>
+                <default>false</default>
+                <label>HANOVIA</label>
+            </value>
+            <value>
+                <fullName>HEIMANN SENSORS</fullName>
+                <default>false</default>
+                <label>HEIMANN SENSORS</label>
+            </value>
+            <value>
+                <fullName>HEREAUS NOBELIGHT</fullName>
+                <default>false</default>
+                <label>HEREAUS NOBELIGHT</label>
+            </value>
+            <value>
+                <fullName>HL PLANAR</fullName>
+                <default>false</default>
+                <label>HL PLANAR</label>
+            </value>
+            <value>
+                <fullName>INFINEON</fullName>
+                <default>false</default>
+                <label>INFINEON</label>
+            </value>
+            <value>
+                <fullName>JACOB</fullName>
+                <default>false</default>
+                <label>JACOB</label>
+            </value>
+            <value>
+                <fullName>JELIGHT</fullName>
+                <default>false</default>
+                <label>JELIGHT</label>
+            </value>
+            <value>
+                <fullName>KDS</fullName>
+                <default>false</default>
+                <label>KDS</label>
+            </value>
+            <value>
+                <fullName>KODAK</fullName>
+                <default>false</default>
+                <label>KODAK</label>
+            </value>
+            <value>
+                <fullName>LAMBDA NOVATRONICS</fullName>
+                <default>false</default>
+                <label>LAMBDA NOVATRONICS</label>
+            </value>
+            <value>
+                <fullName>LEADING EDGE CONCEPTS</fullName>
+                <default>false</default>
+                <label>LEADING EDGE CONCEPTS</label>
+            </value>
+            <value>
+                <fullName>LIGHTWAVE</fullName>
+                <default>false</default>
+                <label>LIGHTWAVE</label>
+            </value>
+            <value>
+                <fullName>LITE-ON</fullName>
+                <default>false</default>
+                <label>LITE-ON</label>
+            </value>
+            <value>
+                <fullName>LTI</fullName>
+                <default>false</default>
+                <label>LTI</label>
+            </value>
+            <value>
+                <fullName>LT KELTEC</fullName>
+                <default>false</default>
+                <label>LT KELTEC</label>
+            </value>
+            <value>
+                <fullName>LUXTEL</fullName>
+                <default>false</default>
+                <label>LUXTEL</label>
+            </value>
+            <value>
+                <fullName>MANIA</fullName>
+                <default>false</default>
+                <label>MANIA</label>
+            </value>
+            <value>
+                <fullName>MELEXIS</fullName>
+                <default>false</default>
+                <label>MELEXIS</label>
+            </value>
+            <value>
+                <fullName>MIL POWER</fullName>
+                <default>false</default>
+                <label>MIL POWER</label>
+            </value>
+            <value>
+                <fullName>MPD</fullName>
+                <default>false</default>
+                <label>MPD</label>
+            </value>
+            <value>
+                <fullName>NAM KWONG</fullName>
+                <default>false</default>
+                <label>NAM KWONG</label>
+            </value>
+            <value>
+                <fullName>NEC</fullName>
+                <default>false</default>
+                <label>NEC</label>
+            </value>
+            <value>
+                <fullName>NICERA</fullName>
+                <default>false</default>
+                <label>NICERA</label>
+            </value>
+            <value>
+                <fullName>OLEC</fullName>
+                <default>false</default>
+                <label>OLEC</label>
+            </value>
+            <value>
+                <fullName>ONO SOKKI</fullName>
+                <default>false</default>
+                <label>ONO SOKKI</label>
+            </value>
+            <value>
+                <fullName>OPTEK</fullName>
+                <default>false</default>
+                <label>OPTEK</label>
+            </value>
+            <value>
+                <fullName>OPTICAL ELECTROFORMS INC.</fullName>
+                <default>false</default>
+                <label>OPTICAL ELECTROFORMS INC.</label>
+            </value>
+            <value>
+                <fullName>OPTI-FORMS</fullName>
+                <default>false</default>
+                <label>OPTI-FORMS</label>
+            </value>
+            <value>
+                <fullName>OPTO TECH</fullName>
+                <default>false</default>
+                <label>OPTO TECH</label>
+            </value>
+            <value>
+                <fullName>OSRAM</fullName>
+                <default>false</default>
+                <label>OSRAM</label>
+            </value>
+            <value>
+                <fullName>PHILLIPS</fullName>
+                <default>false</default>
+                <label>PHILLIPS</label>
+            </value>
+            <value>
+                <fullName>PHOENIX</fullName>
+                <default>false</default>
+                <label>PHOENIX</label>
+            </value>
+            <value>
+                <fullName>PHOTONIC DETECTORS</fullName>
+                <default>false</default>
+                <label>PHOTONIC DETECTORS</label>
+            </value>
+            <value>
+                <fullName>RANTEC</fullName>
+                <default>false</default>
+                <label>RANTEC</label>
+            </value>
+            <value>
+                <fullName>RAYMOND ENGINEERING</fullName>
+                <default>false</default>
+                <label>RAYMOND ENGINEERING</label>
+            </value>
+            <value>
+                <fullName>ROBERTSON</fullName>
+                <default>false</default>
+                <label>ROBERTSON</label>
+            </value>
+            <value>
+                <fullName>ROPER</fullName>
+                <default>false</default>
+                <label>ROPER</label>
+            </value>
+            <value>
+                <fullName>SANREX</fullName>
+                <default>false</default>
+                <label>SANREX</label>
+            </value>
+            <value>
+                <fullName>SARNOFF LABS</fullName>
+                <default>false</default>
+                <label>SARNOFF LABS</label>
+            </value>
+            <value>
+                <fullName>SEMICOA</fullName>
+                <default>false</default>
+                <label>SEMICOA</label>
+            </value>
+            <value>
+                <fullName>SEMITEC</fullName>
+                <default>false</default>
+                <label>SEMITEC</label>
+            </value>
+            <value>
+                <fullName>SILICON SENSORS</fullName>
+                <default>false</default>
+                <label>SILICON SENSORS</label>
+            </value>
+            <value>
+                <fullName>STRONG BALLENTYNE</fullName>
+                <default>false</default>
+                <label>STRONG BALLENTYNE</label>
+            </value>
+            <value>
+                <fullName>SUPERIOR QUARTZ</fullName>
+                <default>false</default>
+                <label>SUPERIOR QUARTZ</label>
+            </value>
+            <value>
+                <fullName>SYMMETRICOMM</fullName>
+                <default>false</default>
+                <label>SYMMETRICOMM</label>
+            </value>
+            <value>
+                <fullName>TAMARACK</fullName>
+                <default>false</default>
+                <label>TAMARACK</label>
+            </value>
+            <value>
+                <fullName>TRANSISTOR DEVICES, INC. (TDI)</fullName>
+                <default>false</default>
+                <label>TRANSISTOR DEVICES, INC. (TDI)</label>
+            </value>
+            <value>
+                <fullName>UDT</fullName>
+                <default>false</default>
+                <label>UDT</label>
+            </value>
+            <value>
+                <fullName>USHIO</fullName>
+                <default>false</default>
+                <label>USHIO</label>
+            </value>
+            <value>
+                <fullName>VERRE &amp; QUARTZ</fullName>
+                <default>false</default>
+                <label>VERRE &amp; QUARTZ</label>
+            </value>
+            <value>
+                <fullName>VICOR</fullName>
+                <default>false</default>
+                <label>VICOR</label>
+            </value>
+            <value>
+                <fullName>VISHAY</fullName>
+                <default>false</default>
+                <label>VISHAY</label>
+            </value>
+            <value>
+                <fullName>VOLTARC</fullName>
+                <default>false</default>
+                <label>VOLTARC</label>
+            </value>
+            <value>
+                <fullName>WARNER POWER SUPPLIES</fullName>
+                <default>false</default>
+                <label>WARNER POWER SUPPLIES</label>
+            </value>
+            <value>
+                <fullName>WEST</fullName>
+                <default>false</default>
+                <label>WEST</label>
+            </value>
+            <value>
+                <fullName>WESTERN LITHOGRAPHY</fullName>
+                <default>false</default>
+                <label>WESTERN LITHOGRAPHY</label>
+            </value>
+            <value>
+                <fullName>XENON</fullName>
+                <default>false</default>
+                <label>XENON</label>
+            </value>
+            <value>
+                <fullName>YUMEX INC.</fullName>
+                <default>false</default>
+                <label>YUMEX INC.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

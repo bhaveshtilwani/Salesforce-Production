@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LDGI Record Type --></label>
+    <name>LDGI_Record_Type__c</name>
+    <picklistValues>
+        <masterLabel>Burleigh</masterLabel>
+        <translation><!-- Burleigh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cermax</masterLabel>
+        <translation><!-- Cermax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelerate</masterLabel>
+        <translation><!-- Excelerate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Omnicure</masterLabel>
+        <translation><!-- Omnicure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSL</masterLabel>
+        <translation><!-- SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X-Cite</masterLabel>
+        <translation><!-- X-Cite --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

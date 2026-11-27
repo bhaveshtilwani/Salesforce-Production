@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Check owner team</description>
+        <name>Checks_Owner_Team</name>
+        <label>Checks Owner Team</label>
+        <locationX>1898</locationX>
+        <locationY>647</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_Team_Name_Owner_ASIA_SALES_TEAM</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Arthur Jong</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Brian Liu</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Brian NG</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Eric Wang</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bright Lee</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Erick Li</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>James Lim</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Kotaro Suzuki</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Mei Li</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ricky Wong</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Serena Loh</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Toru Hayashi</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Sales_Team_Asia_Pac_Sales</targetReference>
+            </connector>
+            <label>Sales Team Name &amp; Owner ASIA SALES TEAM</label>
+        </rules>
+        <rules>
+            <name>Sales_Team_Name_Owner_Channel_Team</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Josep Tienda</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Uwe Helwig</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>James Clements</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Sales_Team_Channel_Sales</targetReference>
+            </connector>
+            <label>Sales Team Name &amp; Owner Channel Team</label>
+        </rules>
+        <rules>
+            <name>Sales_Team_Name_Owner_CISS_AMERICAS</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Alain Charlebois</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Anna Kostic</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Eric Gelinas</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Gregory Gallinat</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Guy Antley</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Guy Cote</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Harpreet Singh</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Helene Dubois</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Nidal Abbas</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Caroline Duval</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Guy Bittar</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Sales_Team_to_CISS_Americas</targetReference>
+            </connector>
+            <label>Sales Team Name &amp; Owner CISS AMERICAS</label>
+        </rules>
+        <rules>
+            <name>Sales_Team_Name_Owner_CISS_EMEA</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pavan Sonare</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bernd Ullmann</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Georg Zeitelhack</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hans Birzer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Isabel Haackert</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Jaroslaw Czeladzinski</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Jens Meyer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Jochen Wenk</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Matthias Endig</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Olaf Meyer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sabine Weber</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Steffi Petropoulos</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Stephan Fritsch</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Thomas Lindner</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Udo Kirchner</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Sales_Team_to_CISS_EMEA</targetReference>
+            </connector>
+            <label>Sales Team Name &amp; Owner CISS EMEA</label>
+        </rules>
+        <rules>
+            <name>Sales_Team_Name_Owner_Latin_America_sales_team</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>carlos alvarez</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Sales_Team_to_Latin_America_Sales</targetReference>
+            </connector>
+            <label>Sales Team Name &amp; Owner Latin America sales team</label>
+        </rules>
+        <rules>
+            <name>Sales_Team_Name_Owner_LS_A_AMERICAS</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ben Standish</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Peter Niedzielski</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Shawn Eaton</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Jennifer Melo</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Scott Elderkin</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Robert Trottini</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Todd Brainard</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Sales_Team_to_LSA_Semi_Americas</targetReference>
+            </connector>
+            <label>Sales Team Name &amp; Owner LS/A AMERICAS</label>
+        </rules>
+        <rules>
+            <name>Sales_Team_Name_Owner_LSA_EMEA</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Anton Gaedtke</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bruno Bosser</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Dieter Randel</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>David McKibben</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Doris Klapp</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Eva Sommerschuh</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Henning Gritz</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Jochem Sihorsch</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Juergen Zander</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Karsten Fischer</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Kristian Frazier</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Peter Jacobs</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Petra Arnold</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Stephan Schmall</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Thorsten Hirsch</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yacine Talji</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_the_Lead_Owner_Name.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yvonne Reinl</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Sales_Team_to_LSA_Semi_EMEA</targetReference>
+            </connector>
+            <label>Sales Team Name &amp; Owner LSA EMEA</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
+        <name>IS_BYPASS_ENABLED</name>
+        <label>IS BYPASS ENABLED</label>
+        <locationX>842</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Get_the_Lead_Owner_Name</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>BYPASS_FLOW_TRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GET_BYPASS_RECORDS.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>BYPASS FLOW TRUE</label>
+        </rules>
+    </decisions>
+    <description>Update the Lead field ‘Sales TeamOld’ based on the Lead Owner.</description>
+    <environments>Default</environments>
+    <interviewLabel>Lead Owner Set Sales Team Name {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead Owner Set Sales Team Name</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>It Creates Flow Error Logs Records</description>
+        <name>Create_Flow_Error_Logs_Records</name>
+        <label>Create Flow Error Logs Records</label>
+        <locationX>4010</locationX>
+        <locationY>647</locationY>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FLOW_API_NAME__c</field>
+            <value>
+                <stringValue>Lead_Owner_Set_Sales_Team_Name_Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_ID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Name__c</field>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Flow_Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>This record determines whether bypassing standard validations or logic is permitted.</description>
+        <name>GET_BYPASS_RECORDS</name>
+        <label>GET BYPASS RECORDS</label>
+        <locationX>842</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IS_BYPASS_ENABLED</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lead_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get lead owner name</description>
+        <name>Get_the_Lead_Owner_Name</name>
+        <label>Get the Lead Owner Name</label>
+        <locationX>1898</locationX>
+        <locationY>539</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Checks_Owner_Team</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update Sales Team Asia/Pac Sales</description>
+        <name>Update_Sales_Team_Asia_Pac_Sales</name>
+        <label>Update Sales Team Asia/Pac Sales</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>Asia/Pac Sales</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Sales Team to Channel Sales</description>
+        <name>Update_Sales_Team_Channel_Sales</name>
+        <label>Update Sales Team to Channel Sales</label>
+        <locationX>578</locationX>
+        <locationY>755</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>Channel Sales</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Sales Team to CISS Americas</description>
+        <name>Update_Sales_Team_to_CISS_Americas</name>
+        <label>Update Sales Team to CISS Americas</label>
+        <locationX>1106</locationX>
+        <locationY>755</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>CISS Americas</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Sales Team to CISS EMEA</description>
+        <name>Update_Sales_Team_to_CISS_EMEA</name>
+        <label>Update Sales Team to CISS EMEA</label>
+        <locationX>1634</locationX>
+        <locationY>755</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>CISS EMEA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Sales Team to Latin America Sales</description>
+        <name>Update_Sales_Team_to_Latin_America_Sales</name>
+        <label>Update Sales Team to Latin America Sales</label>
+        <locationX>2162</locationX>
+        <locationY>755</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>Latin America Sales</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Sales Team to LSA &amp; Semi Americas</description>
+        <name>Update_Sales_Team_to_LSA_Semi_Americas</name>
+        <label>Update Sales Team to LSA &amp; Semi Americas</label>
+        <locationX>2690</locationX>
+        <locationY>755</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>LSA &amp; Semi Americas</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Sales Team to LSA &amp; Semi EMEA</description>
+        <name>Update_Sales_Team_to_LSA_Semi_EMEA</name>
+        <label>Update Sales Team to LSA &amp; Semi EMEA</label>
+        <locationX>3218</locationX>
+        <locationY>755</locationY>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Sales_Team__c</field>
+            <value>
+                <stringValue>LSA &amp; Semi EMEA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>716</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GET_BYPASS_RECORDS</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

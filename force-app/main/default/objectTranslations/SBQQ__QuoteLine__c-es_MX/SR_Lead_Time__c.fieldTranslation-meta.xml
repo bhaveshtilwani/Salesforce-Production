@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Lead time needed once PO received (in weeks). Should included needed buffers. --></help>
+    <label><!-- SR Lead Time --></label>
+    <name>SR_Lead_Time__c</name>
+</CustomFieldTranslation>

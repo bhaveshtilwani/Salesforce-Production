@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Division__c</fullName>
+    <label>Order - Division</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(00) Common Channel</fullName>
+                <default>false</default>
+                <label>(00) Common Channel</label>
+            </value>
+            <value>
+                <fullName>(AI) Advanced Imaging Sys</fullName>
+                <default>false</default>
+                <label>(AI) Advanced Imaging Sys</label>
+            </value>
+            <value>
+                <fullName>(AP) Avalanche Photodiode</fullName>
+                <default>false</default>
+                <label>(AP) Avalanche Photodiode</label>
+            </value>
+            <value>
+                <fullName>(AS) Avionics &amp; Space</fullName>
+                <default>false</default>
+                <label>(AS) Avionics &amp; Space</label>
+            </value>
+            <value>
+                <fullName>(BS) Biomedical Systems</fullName>
+                <default>false</default>
+                <label>(BS) Biomedical Systems</label>
+            </value>
+            <value>
+                <fullName>(CO) Catalog &amp; Other</fullName>
+                <default>false</default>
+                <label>(CO) Catalog &amp; Other</label>
+            </value>
+            <value>
+                <fullName>(CP) CPM</fullName>
+                <default>false</default>
+                <label>(CP) CPM</label>
+            </value>
+            <value>
+                <fullName>(FI) ILC Flash</fullName>
+                <default>false</default>
+                <label>(FI) ILC Flash</label>
+            </value>
+            <value>
+                <fullName>(FQ) Q-ARC (Photonics)</fullName>
+                <default>false</default>
+                <label>(FQ) Q-ARC (Photonics)</label>
+            </value>
+            <value>
+                <fullName>(FT) Flashtubes</fullName>
+                <default>false</default>
+                <label>(FT) Flashtubes</label>
+            </value>
+            <value>
+                <fullName>(HE) HeNe Lasers</fullName>
+                <default>false</default>
+                <label>(HE) HeNe Lasers</label>
+            </value>
+            <value>
+                <fullName>(IC) IC Sensor</fullName>
+                <default>false</default>
+                <label>(IC) IC Sensor</label>
+            </value>
+            <value>
+                <fullName>(IL) ILC</fullName>
+                <default>false</default>
+                <label>(IL) ILC</label>
+            </value>
+            <value>
+                <fullName>(LE) Land Equipment</fullName>
+                <default>false</default>
+                <label>(LE) Land Equipment</label>
+            </value>
+            <value>
+                <fullName>(LS) LED</fullName>
+                <default>false</default>
+                <label>(LS) LED</label>
+            </value>
+            <value>
+                <fullName>(LT) Laser Technology</fullName>
+                <default>false</default>
+                <label>(LT) Laser Technology</label>
+            </value>
+            <value>
+                <fullName>(ME) Medical Sensor</fullName>
+                <default>false</default>
+                <label>(ME) Medical Sensor</label>
+            </value>
+            <value>
+                <fullName>(MI) Medical Imaging</fullName>
+                <default>false</default>
+                <label>(MI) Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>(OI) Optical Inspection</fullName>
+                <default>false</default>
+                <label>(OI) Optical Inspection</label>
+            </value>
+            <value>
+                <fullName>(OR) ORC</fullName>
+                <default>false</default>
+                <label>(OR) ORC</label>
+            </value>
+            <value>
+                <fullName>(PA) Photodiode Array</fullName>
+                <default>false</default>
+                <label>(PA) Photodiode Array</label>
+            </value>
+            <value>
+                <fullName>(PD) Photodiode</fullName>
+                <default>false</default>
+                <label>(PD) Photodiode</label>
+            </value>
+            <value>
+                <fullName>(PE) Pekin Elmer</fullName>
+                <default>false</default>
+                <label>(PE) Pekin Elmer</label>
+            </value>
+            <value>
+                <fullName>(PO) Precision Optics</fullName>
+                <default>false</default>
+                <label>(PO) Precision Optics</label>
+            </value>
+            <value>
+                <fullName>(RT) Reticon</fullName>
+                <default>false</default>
+                <label>(RT) Reticon</label>
+            </value>
+            <value>
+                <fullName>(SC) Semiconductor</fullName>
+                <default>false</default>
+                <label>(SC) Semiconductor</label>
+            </value>
+            <value>
+                <fullName>(SL) Salem</fullName>
+                <default>false</default>
+                <label>(SL) Salem</label>
+            </value>
+            <value>
+                <fullName>(SM) Sensors Salems Trad.</fullName>
+                <default>false</default>
+                <label>(SM) Sensors Salems Trad.</label>
+            </value>
+            <value>
+                <fullName>(SS) Sensor</fullName>
+                <default>false</default>
+                <label>(SS) Sensor</label>
+            </value>
+            <value>
+                <fullName>(ST) Surv &amp; Target Acq</fullName>
+                <default>false</default>
+                <label>(ST) Surv &amp; Target Acq</label>
+            </value>
+            <value>
+                <fullName>(TE) Telecom</fullName>
+                <default>false</default>
+                <label>(TE) Telecom</label>
+            </value>
+            <value>
+                <fullName>(TP) Thermopiles</fullName>
+                <default>false</default>
+                <label>(TP) Thermopiles</label>
+            </value>
+            <value>
+                <fullName>(UV) Biomedical Lighting</fullName>
+                <default>false</default>
+                <label>(UV) Biomedical Lighting</label>
+            </value>
+            <value>
+                <fullName>(VT) Voltarc</fullName>
+                <default>false</default>
+                <label>(VT) Voltarc</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(AP) Avalanche Photodiode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(CP) CPM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(FI) ILC Flash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(FQ) Q-ARC (Photonics)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(FT) Flashtubes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(HE) HeNe Lasers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(IC) IC Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(IL) ILC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(LS) LED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(ME) Medical Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(OR) ORC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(PA) Photodiode Array</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(PD) Photodiode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(PE) Pekin Elmer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(RT) Reticon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(SL) Salem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(SM) Sensors Salems Trad.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(SS) Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(TE) Telecom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(TP) Thermopiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>(VT) Voltarc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>(AI) Advanced Imaging Sys</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(AS) Avionics &amp; Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(BS) Biomedical Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(CO) Catalog &amp; Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LE) Land Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LT) Laser Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(MI) Medical Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(OI) Optical Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(PO) Precision Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(SC) Semiconductor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(ST) Surv &amp; Target Acq</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(UV) Biomedical Lighting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>(00) Common Channel</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

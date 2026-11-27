@@ -1,0 +1,21 @@
+<apex:page lightningStylesheets="true" controller="approverController">
+    <apex:form >
+      <apex:pageBlock title="Your Approvals">
+      <apex:pageBlockTable value="{!app}" var="appobj">
+          <apex:column value="{! appobj.Name}"/>
+          <apex:column headerValue="Delegation Start Date">
+              <apex:inputField value="{! appobj.sbaa__DelegationStart__c  }"/>
+          </apex:column>    
+          <apex:column headerValue="Delegation End Date">
+              <apex:inputField value="{! appobj.sbaa__DelegationEnd__c}"/>
+          </apex:column>     
+          <apex:column headerValue="Delegated Approver">
+              <apex:inputField value="{! appobj.sbaa__DelegatedApprover__c}"/>
+          </apex:column>   
+        </apex:pageBlockTable>   
+      <apex:pageBlockButtons >
+          <apex:commandButton value="Save" action="{!save}"/>
+      </apex:pageBlockButtons>
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Field__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Field on Quote Line or Product Option object that is evaluated by this condition.</description>
+    <inlineHelpText>Choose the field that should contain the value you enter in the Value field.</inlineHelpText>
+    <label>Field</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Product Code</fullName>
+                <default>false</default>
+                <label>Product Code</label>
+            </value>
+            <value>
+                <fullName>PKI_Product_Family__c</fullName>
+                <default>false</default>
+                <label>PKI_Product_Family__c</label>
+            </value>
+            <value>
+                <fullName>CurrencyIsoCode</fullName>
+                <default>false</default>
+                <label>CurrencyIsoCode</label>
+            </value>
+            <value>
+                <fullName>Is_Standard_Product_V2__c</fullName>
+                <default>false</default>
+                <label>Is_Standard_Product_V2__c</label>
+            </value>
+            <value>
+                <fullName>ApprovalStatus__c</fullName>
+                <default>false</default>
+                <label>ApprovalStatus__c</label>
+            </value>
+            <value>
+                <fullName>Excelitas_Siteformula__c</fullName>
+                <default>false</default>
+                <label>Excelitas_Siteformula__c</label>
+            </value>
+            <value>
+                <fullName>Bypass_Approval_Family__c</fullName>
+                <default>false</default>
+                <label>Bypass_Approval_Family__c</label>
+            </value>
+            <value>
+                <fullName>Region__c</fullName>
+                <default>false</default>
+                <label>Region__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

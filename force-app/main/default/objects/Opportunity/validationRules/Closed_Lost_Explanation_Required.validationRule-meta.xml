@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Lost_Explanation_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(StageName),
+OR(
+ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+CONTAINS(TEXT(StageName), &quot;Other&quot;)
+),
+OR(
+$RecordType.DeveloperName = &quot;NPI_Opportunity&quot;,
+$RecordType.DeveloperName = &quot;Semi_Opportunity&quot;,
+$RecordType.DeveloperName = &quot;ALS&quot;
+),
+ISBLANK(Closed_Lost_Explanation__c)
+)</errorConditionFormula>
+    <errorDisplayField>Closed_Lost_Explanation__c</errorDisplayField>
+    <errorMessage>Please select one or more reason from the “Closed Lost Explanation” field.</errorMessage>
+</ValidationRule>

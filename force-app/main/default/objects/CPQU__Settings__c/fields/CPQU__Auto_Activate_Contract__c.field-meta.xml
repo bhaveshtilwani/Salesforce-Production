@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQU__Auto_Activate_Contract__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Automatically marks all Contracts as Activated when they are created.</description>
+    <inlineHelpText>Automatically marks all Contracts as Activated when they are created, setting the Status picklist to Activated on the Contract.</inlineHelpText>
+    <label>Auto Activate Contract</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

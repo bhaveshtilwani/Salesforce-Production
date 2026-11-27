@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Header Text</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Header Texts</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You can only add Order Header Texts after a successful initial sync. --></errorMessage>
+        <name>No_ERP_SO_Number_Yet</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate Restriction. --></errorMessage>
+        <name>Restriction_AX</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sync in Progress. Creating and Editing is not allowed. Wait for the sync to finish to continue. --></errorMessage>
+        <name>Sync_in_Progress</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,100 @@
+/**
+ * Generic Installer
+ */
+function GenericHpcInstaller() {
+  this.componentId = null;
+	
+  this.hpcApi = new HomePageComponentToolkit(this);
+
+  this.installStep = 0;
+  this.installSteps = [];  //A list of functions which are executed in order
+
+  this.layouts = [];   
+  this.components = [];   
+}
+
+//Abstract
+GenericHpcInstaller.prototype.getContent = null;
+GenericHpcInstaller.prototype.getTitle = null;
+GenericHpcInstaller.prototype.isSidebarComponent = null;
+
+GenericHpcInstaller.prototype.validateInstantiation = function() {
+  if (!(this.getContent)) {
+      alert('Developer error - you must implement getContent')
+  }
+  if (!(this.getTitle)) {
+      alert('Developer error - you must implement getTitle')
+  }
+  if (!(this.isSidebarComponent)) {
+      alert('Developer error - you must implement isSidebarComponent')
+  }
+}
+// updated by the hpcApi during notification
+GenericHpcInstaller.prototype.setComponents = function(componentsArr) {
+	this.components = componentsArr;
+}
+
+// updated by the hpcApi during notification
+GenericHpcInstaller.prototype.setLayouts = function (layoutsArr) {
+	this.layouts = layoutsArr;
+}
+
+GenericHpcInstaller.prototype.install = function() {
+    this.validateInstantiation();
+
+	var installer = this;
+	
+	var installationLog = document.createElement("OL");
+	document.body.appendChild(installationLog);
+	//Delete any previous installations
+	this.installSteps.push(function() {installationLog.innerHTML += "<li>Removing any previous <em>" + installer.getTitle() + "</em> installations</li>"; installer.notify(); });
+	this.installSteps.push(function() {installer.hpcApi.fetchHomePageComponentsNamed(installer.componentTitle)});
+	this.installSteps.push(function() {
+		if (installer.components.length > 0) {
+			installer.installStep --; //repeat this step
+			installer.hpcApi.deleteComponent(installer.components.pop());
+		} else {
+			installer.notify();
+		}
+	});
+	
+	//Insert HPC
+    this.installSteps.push(function() {installationLog.innerHTML += "<li>Inserting Home Page Component</li>";  installer.notify();});
+	this.installSteps.push(function() {installer.hpcApi.insertNewComponent(installer.getTitle(), installer.getContent(), installer.isSidebarComponent())});
+	this.installSteps.push(function() {installer.hpcApi.fetchHomePageComponentsNamed(installer.getTitle())});
+	
+	//Add it to all homepage layouts in the wide section
+	var layoutNumber = 1;
+	this.installSteps.push(function() {installer.hpcApi.fetchListOfLayouts(); });
+	this.installSteps.push(function() {
+		if (installer.layouts.length > 0) {
+			installer.installStep --; //repeat this step
+			installationLog.innerHTML += "<li>Adding Home Page Component to layout #" + layoutNumber++ + "</li>";
+			installer.hpcApi.addComponentToLayout(installer.components[0], installer.layouts.pop());
+		} else {
+			if (layoutNumber == 1) {
+				installationLog.innerHTML += "<li class='warning'>Warning:  You do not have any Custom Home Page Layouts.  You must <a target='_top' href='/02T/e?pLayoutToClone=default&setupid=HomePageLayouts&retURL=%2Fsetup%2Fui%2Fhomepagelayout.jsp%3FretURL%3D%252Fui%252Fsetup%252FSetup%253Fsetupid%253DHome%26setupid%3DHomePageLayouts'>create one</a>, assign it to all users, and run the installation script again.</li>";
+			}
+			installer.notify();
+		}
+	});
+
+    //setup seidebar on every page	
+    if (this.isSidebarComponent()) {
+        this.installSteps.push(function() {installationLog.innerHTML += "<li>Adding homepage sidebar to every page</li>";  installer.notify();});
+    	this.installSteps.push(function() {installer.hpcApi.showCustomSidebarComponentsOnAllPages();});
+    }
+    
+	this.installSteps.push(function() {
+	    installationLog.innerHTML += "<li><strong>Installation complete!</strong></li>";
+     	alert('Installation Complete!'); });
+
+	this.installSteps[this.installStep]();	
+}
+
+GenericHpcInstaller.prototype.notify = function() { 
+	this.installStep++;
+	if (this.installStep < this.installSteps.length) {
+		this.installSteps[this.installStep]();
+	}
+}

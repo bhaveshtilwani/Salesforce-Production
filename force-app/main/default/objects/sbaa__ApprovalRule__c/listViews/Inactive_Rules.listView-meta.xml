@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive_Rules</fullName>
+    <columns>NAME</columns>
+    <columns>sbaa__Active__c</columns>
+    <columns>sbaa__ConditionsMet__c</columns>
+    <columns>sbaa__ApprovalStep__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>sbaa__Approver__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>sbaa__Active__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Inactive Rules</label>
+</ListView>

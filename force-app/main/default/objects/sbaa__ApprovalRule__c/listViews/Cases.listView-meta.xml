@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cases</fullName>
+    <columns>sbaa__TargetObject__c</columns>
+    <columns>NAME</columns>
+    <columns>Order_Approval_Type__c</columns>
+    <columns>sbaa__ApprovalChain__c</columns>
+    <columns>sbaa__ApprovalStep__c</columns>
+    <columns>sbaa__ConditionsMet__c</columns>
+    <columns>sbaa__Approver__c</columns>
+    <columns>sbaa__AdvancedCondition__c</columns>
+    <columns>sbaa__Active__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>sbaa__TargetObject__c</field>
+        <operation>equals</operation>
+        <value>Case</value>
+    </filters>
+    <label>Cases</label>
+</ListView>

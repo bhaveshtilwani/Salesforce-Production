@@ -1,0 +1,34 @@
+<apex:page standardController="Order" extensions="OrderExtController" lightningStylesheets="true" standardStylesheets="false">
+    <apex:slds />
+    <style>
+        .container {
+            margin: 2rem auto;
+            max-width: 50rem;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-field {
+            margin-bottom: 1rem;
+        }
+    </style>
+    <div class="slds-scope container">
+        <apex:pageMessages />
+        <h1 class="slds-text-heading_large slds-text-align_center slds-m-bottom_medium">Approval Information</h1>
+        <apex:form styleClass="form">
+            <div class="slds-form-element form-field">
+                <label class="slds-form-element__label" for="comment">On Submit Comments</label>
+                <div class="slds-form-element__control">
+                    <apex:inputTextarea styleClass="slds-textarea" value="{!customApproval.On_Submit_Comments__c}" />
+                </div>
+            </div>
+            <div class="slds-align_absolute-center">
+                <apex:commandButton action="{!goBackToOrder}" value="Return to Order" styleClass="slds-button slds-m-right_medium" />
+                <apex:commandButton action="{!onSubmit}" value="Submit for Approval" styleClass="slds-button slds-button_brand" />
+            </div>
+        </apex:form>
+    </div>
+</apex:page>

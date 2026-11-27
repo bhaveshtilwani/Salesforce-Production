@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Product_Segment__c</fullName>
+    <label>Primary Product Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Segment</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>Advanced Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Non-Standard Incoterms (One-Off)</controllingFieldValue>
+            <controllingFieldValue>Service</controllingFieldValue>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Payment (A/R) Terms</controllingFieldValue>
+            <controllingFieldValue>Customer Non-Standard Incoterms (Permanent)</controllingFieldValue>
+            <valueName>MedTech &amp; Semiconductor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Support</controllingFieldValue>
+            <valueName>General</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

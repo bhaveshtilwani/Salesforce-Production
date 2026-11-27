@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Required for:
+
+Germany - Customer int number assgnmnt - DEBI, QioDebitoren Europäische Union - DEEU, Sold to - W001, Ship To - W002, Ship To - H002
+Salem - Sold To/Ship To - 0001
+Montreal - Bill To - 0001, Ship To - 0002
+Boulder - Customer-Sold To Role, Customer-Ship To, Customer-Payer
+Asia - Sold-to party - ZCUS, Ship-to party - 0002, Sold-to party (OPSL) - 0001, Ship-to party - 0002 -->
+    </help>
+    <label><!-- Shipping Condition --></label>
+    <name>Shipping_Condition__c</name>
+    <relationshipLabel><!-- Accounts --></relationshipLabel>
+</CustomFieldTranslation>

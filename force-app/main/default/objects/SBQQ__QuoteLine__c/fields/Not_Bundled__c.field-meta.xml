@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_Bundled__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box if a product should not be interpreted as a bundled product (or part of a bundled product) when generating Quote Line output on a Quote Document.</description>
+    <inlineHelpText>Check this box if a product should not be interpreted as a bundled product (or part of a bundled product) when generating Quote Line output on a Quote Document.</inlineHelpText>
+    <label>Not Bundled</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

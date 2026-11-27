@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AIS Americas</fullName>
+        <default>false</default>
+        <label>AIS Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>AIS Asia</fullName>
+        <default>false</default>
+        <label>AIS Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>AIS EMEA</fullName>
+        <default>false</default>
+        <label>AIS EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>ALS OEM Americas</fullName>
+        <default>false</default>
+        <label>ALS OEM Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>ALS OEM Asia</fullName>
+        <default>false</default>
+        <label>ALS OEM Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>ALS OEM EMEA</fullName>
+        <default>false</default>
+        <label>ALS OEM EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>ALS Channel Americas</fullName>
+        <default>false</default>
+        <label>ALS Channel Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>ALS Channel Asia</fullName>
+        <default>false</default>
+        <label>ALS Channel Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>ALS Channel EMEA</fullName>
+        <default>false</default>
+        <label>ALS Channel EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>IOA Americas</fullName>
+        <default>false</default>
+        <label>IOA Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>IOA Asia</fullName>
+        <default>false</default>
+        <label>IOA Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>IOA EMEA</fullName>
+        <default>false</default>
+        <label>IOA EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Semi Americas</fullName>
+        <default>false</default>
+        <label>Semi Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>Semi Asia</fullName>
+        <default>false</default>
+        <label>Semi Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Semi EMEA</fullName>
+        <default>false</default>
+        <label>Semi EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Manufacturing Americas</fullName>
+        <default>false</default>
+        <label>Precision Manufacturing Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Manufacturing EMEA</fullName>
+        <default>false</default>
+        <label>Precision Manufacturing EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Manufacturing Asia</fullName>
+        <default>false</default>
+        <label>Precision Manufacturing Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Americas</fullName>
+        <default>false</default>
+        <label>Channel Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Asia</fullName>
+        <default>false</default>
+        <label>Channel Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel EMEA</fullName>
+        <default>false</default>
+        <label>Channel EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate</fullName>
+        <default>false</default>
+        <label>Corporate</label>
+    </customValue>
+    <customValue>
+        <fullName>Unassigned Sales Sub Team</fullName>
+        <default>false</default>
+        <label>Unassigned Sales Sub Team</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;LS Americas</fullName>
+        <default>false</default>
+        <label>M&amp;LS Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;LS Asia</fullName>
+        <default>false</default>
+        <label>M&amp;LS Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;LS EMEA</fullName>
+        <default>false</default>
+        <label>M&amp;LS EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>LSM EMEA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LSM EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>LSM Asia</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LSM Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>LSM Americas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LSM Americas</label>
+    </customValue>
+    <description>Sales Region Team -&gt; Anaplan New</description>
+    <masterLabel>Sales Region Team</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

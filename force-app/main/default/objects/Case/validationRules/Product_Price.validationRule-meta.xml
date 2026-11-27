@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Price</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Approval_Status__c , &quot;Approved&quot;),
+ISBLANK( Product_price__c ))</errorConditionFormula>
+    <errorDisplayField>Product_price__c</errorDisplayField>
+    <errorMessage>Please indicate the Product Price.</errorMessage>
+</ValidationRule>

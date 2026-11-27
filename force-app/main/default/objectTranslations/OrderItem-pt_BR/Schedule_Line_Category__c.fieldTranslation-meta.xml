@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Schedule Line Category --></label>
+    <name>Schedule_Line_Category__c</name>
+    <picklistValues>
+        <masterLabel>(AE) MRP</masterLabel>
+        <translation><!-- (AE) MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(AN) ALE Standard</masterLabel>
+        <translation><!-- (AN) ALE Standard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(AQ) MRP</masterLabel>
+        <translation><!-- (AQ) MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(AR) Advanced Returns</masterLabel>
+        <translation><!-- (AR) Advanced Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(AT) Inquiry sched.line</masterLabel>
+        <translation><!-- (AT) Inquiry sched.line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(BN) No MRP</masterLabel>
+        <translation><!-- (BN) No MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(BN) No mat.planning</masterLabel>
+        <translation><!-- (BN) No mat.planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(BP) MRP</masterLabel>
+        <translation><!-- (BP) MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(BT) No inventory mgmt</masterLabel>
+        <translation><!-- (BT) No inventory mgmt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(BV) Consumption MRP</masterLabel>
+        <translation><!-- (BV) Consumption MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(C0) ConsgtIssue/w/o AvCh</masterLabel>
+        <translation><!-- (C0) ConsgtIssue/w/o AvCh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(C1) ConsgtIssue/w. AvCh.</masterLabel>
+        <translation><!-- (C1) ConsgtIssue/w. AvCh. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(C2) Repost retPck/w/o AC</masterLabel>
+        <translation><!-- (C2) Repost retPck/w/o AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(C3) Repost retPck/w. AC</masterLabel>
+        <translation><!-- (C3) Repost retPck/w. AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CB) Indiv.Purchase Order</masterLabel>
+        <translation><!-- (CB) Indiv.Purchase Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CD) Without delivery</masterLabel>
+        <translation><!-- (CD) Without delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CN) No mat.planning</masterLabel>
+        <translation><!-- (CN) No mat.planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CP) MRP</masterLabel>
+        <translation><!-- (CP) MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CS) Leg</masterLabel>
+        <translation><!-- (CS) Leg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CT) No inv.mgmt/no GdsIs</masterLabel>
+        <translation><!-- (CT) No inv.mgmt/no GdsIs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CV) Consumption MRP</masterLabel>
+        <translation><!-- (CV) Consumption MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CX) No inventory mgmt</masterLabel>
+        <translation><!-- (CX) No inventory mgmt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(D0) Consignment Returns</masterLabel>
+        <translation><!-- (D0) Consignment Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(DN) Returns</masterLabel>
+        <translation><!-- (DN) Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(E0) StoTranToCons.w/o AC</masterLabel>
+        <translation><!-- (E0) StoTranToCons.w/o AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(E1) StoTranToCons. w. AC</masterLabel>
+        <translation><!-- (E1) StoTranToCons. w. AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(E2) StoTranRetPck.w/o AC</masterLabel>
+        <translation><!-- (E2) StoTranRetPck.w/o AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(E3) StoTranRetPck. w. AC</masterLabel>
+        <translation><!-- (E3) StoTranRetPck. w. AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(E4) StoTranToCons. ExtAg</masterLabel>
+        <translation><!-- (E4) StoTranToCons. ExtAg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(E5) MRP external agent</masterLabel>
+        <translation><!-- (E5) MRP external agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(EP) Cust. requirements</masterLabel>
+        <translation><!-- (EP) Cust. requirements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(F0) ConsPickup w/o AvCh</masterLabel>
+        <translation><!-- (F0) ConsPickup w/o AvCh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(F1) ConsPickup w. AvCh</masterLabel>
+        <translation><!-- (F1) ConsPickup w. AvCh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(F2) RetPckPickup w/o AC</masterLabel>
+        <translation><!-- (F2) RetPckPickup w/o AC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(F3) RetPckPickup w. AvCh</masterLabel>
+        <translation><!-- (F3) RetPckPickup w. AvCh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(IA) Repair Delivery</masterLabel>
+        <translation><!-- (IA) Repair Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(IR) Return for Repairs</masterLabel>
+        <translation><!-- (IR) Return for Repairs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(K0) TF consgmt lending</masterLabel>
+        <translation><!-- (K0) TF consgmt lending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(K1) TR consgmt ret. del.</masterLabel>
+        <translation><!-- (K1) TR consgmt ret. del. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(L1) MRP</masterLabel>
+        <translation><!-- (L1) MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(L2) MRP</masterLabel>
+        <translation><!-- (L2) MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(LB) Dlv.to stock of mat.</masterLabel>
+        <translation><!-- (LB) Dlv.to stock of mat. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(LN) No mat.planning</masterLabel>
+        <translation><!-- (LN) No mat.planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(LP) Dlv. from project</masterLabel>
+        <translation><!-- (LP) Dlv. from project --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(LR) Return del.to vendor</masterLabel>
+        <translation><!-- (LR) Return del.to vendor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(NC) Intercompany replen.</masterLabel>
+        <translation><!-- (NC) Intercompany replen. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(NN) Replenishmnt w/o MRP</masterLabel>
+        <translation><!-- (NN) Replenishmnt w/o MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(NR) Replen. returns</masterLabel>
+        <translation><!-- (NR) Replen. returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(NS) Backlog CrossC Ret</masterLabel>
+        <translation><!-- (NS) Backlog CrossC Ret --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(PN) ArtSel. w/o MRP</masterLabel>
+        <translation><!-- (PN) ArtSel. w/o MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(PP) ArtSel with MRP</masterLabel>
+        <translation><!-- (PP) ArtSel with MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(RN) Returns w/o planning</masterLabel>
+        <translation><!-- (RN) Returns w/o planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(S0)</masterLabel>
+        <translation><!-- (S0) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(S1)</masterLabel>
+        <translation><!-- (S1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(S2)</masterLabel>
+        <translation><!-- (S2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(SP) SPE Returns</masterLabel>
+        <translation><!-- (SP) SPE Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Z1)</masterLabel>
+        <translation><!-- (Z1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Z2) Repair customer Mat</masterLabel>
+        <translation><!-- (Z2) Repair customer Mat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Z5) Repair</masterLabel>
+        <translation><!-- (Z5) Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Z6) Replacement</masterLabel>
+        <translation><!-- (Z6) Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Z7) AS IS</masterLabel>
+        <translation><!-- (Z7) AS IS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Z8) Consumption MRP</masterLabel>
+        <translation><!-- (Z8) Consumption MRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Z9) migration backlog</masterLabel>
+        <translation><!-- (Z9) migration backlog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZA) No mat.planning</masterLabel>
+        <translation><!-- (ZA) No mat.planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZA) No mrp+schedule Mn</masterLabel>
+        <translation><!-- (ZA) No mrp+schedule Mn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZB) EB Intra-Divisionv</masterLabel>
+        <translation><!-- (ZB) EB Intra-Divisionv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZB) Indiv.Purchase Order</masterLabel>
+        <translation><!-- (ZB) Indiv.Purchase Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZC) MRP w/o availability</masterLabel>
+        <translation><!-- (ZC) MRP w/o availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZC) No inventory mgmt</masterLabel>
+        <translation><!-- (ZC) No inventory mgmt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZD)</masterLabel>
+        <translation><!-- (ZD) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZD) 3rd party returns</masterLabel>
+        <translation><!-- (ZD) 3rd party returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZE)</masterLabel>
+        <translation><!-- (ZE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZE) MRP w/o ato - no DN</masterLabel>
+        <translation><!-- (ZE) MRP w/o ato - no DN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZF) PassThru Returns</masterLabel>
+        <translation><!-- (ZF) PassThru Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZG) MRP w/o ATP :RM COGS</masterLabel>
+        <translation><!-- (ZG) MRP w/o ATP :RM COGS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZN) No mat.planning</masterLabel>
+        <translation><!-- (ZN) No mat.planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZN) Returns of samples</masterLabel>
+        <translation><!-- (ZN) Returns of samples --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZP) EG&amp;G samples</masterLabel>
+        <translation><!-- (ZP) EG&amp;G samples --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZP) copy of PD</masterLabel>
+        <translation><!-- (ZP) copy of PD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZQ) EB Intra-Divisio Qio</masterLabel>
+        <translation><!-- (ZQ) EB Intra-Divisio Qio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZR) RMA Returns</masterLabel>
+        <translation><!-- (ZR) RMA Returns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZS) MRP w/o ATP(901)</masterLabel>
+        <translation><!-- (ZS) MRP w/o ATP(901) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZT)</masterLabel>
+        <translation><!-- (ZT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZX) No inventory mgmt</masterLabel>
+        <translation><!-- (ZX) No inventory mgmt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ZZ)</masterLabel>
+        <translation><!-- (ZZ) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRP, Scheduled (CP)</masterLabel>
+        <translation><!-- MRP, Scheduled (CP) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No MRP,Not Scheduled (CN)</masterLabel>
+        <translation><!-- No MRP,Not Scheduled (CN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returns</masterLabel>
+        <translation><!-- Returns --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

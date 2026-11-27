@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERP_Line_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(ISPICKVAL( Order_Creation__r.Order_Type__c , &apos;Add Line to Existing Order&apos;),NOT(ISBLANK(Line_Number__c))),
+LPAD(TEXT(Line_Number__c), 6, &quot;0&quot;),
+&apos;&apos;
+)</formula>
+    <label>ERP Line Number</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

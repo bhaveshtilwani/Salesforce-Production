@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Specify field on Product Option that will hold this attribute&apos;s value. --></help>
+    <label>Champ cible</label>
+    <name>SBQQ__TargetField__c</name>
+    <picklistValues>
+        <masterLabel>Charge_Type__c</masterLabel>
+        <translation><!-- Charge_Type__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comments__c</masterLabel>
+        <translation><!-- Comments__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom_Part_Rev__c</masterLabel>
+        <translation><!-- Custom_Part_Rev__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom_Product_Name__c</masterLabel>
+        <translation><!-- Custom_Product_Name__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount (%)</masterLabel>
+        <translation><!-- Discount (%) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discount (Amt)</masterLabel>
+        <translation><!-- Discount (Amt) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECCN_Code__c</masterLabel>
+        <translation><!-- ECCN_Code__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelitas_Part_Number__c</masterLabel>
+        <translation><!-- Excelitas_Part_Number__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filter_Type__c</masterLabel>
+        <translation><!-- Filter_Type__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harmonized_Tariff_Code__c</masterLabel>
+        <translation><!-- Harmonized_Tariff_Code__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Line_of_Business__c</masterLabel>
+        <translation><!-- Line_of_Business__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOQ__c</masterLabel>
+        <translation><!-- MOQ__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MPQ__c</masterLabel>
+        <translation><!-- MPQ__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microscope_Manufacturer__c</masterLabel>
+        <translation><!-- Microscope_Manufacturer__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microscope_Model__c</masterLabel>
+        <translation><!-- Microscope_Model__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKI_Product_Family__c</masterLabel>
+        <translation><!-- PKI_Product_Family__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKI_Selling_Site__c</masterLabel>
+        <translation><!-- PKI_Selling_Site__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product_Description__c</masterLabel>
+        <translation><!-- Product_Description__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repeat_SR_Lookup__c</masterLabel>
+        <translation><!-- Repeat_SR_Lookup__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repeat_SR__c</masterLabel>
+        <translation><!-- Repeat_SR__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR_Description__c</masterLabel>
+        <translation><!-- SR_Description__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR_Note__c</masterLabel>
+        <translation><!-- SR_Note__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR_Number__c</masterLabel>
+        <translation><!-- SR_Number__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR_Type__c</masterLabel>
+        <translation><!-- SR_Type__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard_Lead_Time__c</masterLabel>
+        <translation><!-- Standard_Lead_Time__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit Price</masterLabel>
+        <translation><!-- Unit Price --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

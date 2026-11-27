@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approvals_Pending_for_Approval</fullName>
+    <columns>sbaa__Actions__c</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>sbaa__Status__c</columns>
+    <columns>OrderProduct__c</columns>
+    <columns>Order_Approval_Type__c</columns>
+    <columns>sbaa__Approver__c</columns>
+    <columns>sbaa__Rule__c</columns>
+    <columns>sbaa__ApprovalChain__c</columns>
+    <columns>sbaa__AssignedTo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>sbaa__Status__c</field>
+        <operation>equals</operation>
+        <value>Requested</value>
+    </filters>
+    <label>Order Item Pending for Approval</label>
+</ListView>

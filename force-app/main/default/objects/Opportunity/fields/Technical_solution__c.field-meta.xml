@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technical_solution__c</fullName>
+    <description>Technical solution?</description>
+    <inlineHelpText>Technical solution?</inlineHelpText>
+    <label>Technical solution?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Technology Leader</fullName>
+                <default>false</default>
+                <label>Technology Leader</label>
+            </value>
+            <value>
+                <fullName>Shaped Requirements</fullName>
+                <default>false</default>
+                <label>Shaped Requirements</label>
+            </value>
+            <value>
+                <fullName>Equal to Competition</fullName>
+                <default>false</default>
+                <label>Equal to Competition</label>
+            </value>
+            <value>
+                <fullName>Worse than Competition</fullName>
+                <default>false</default>
+                <label>Worse than Competition</label>
+            </value>
+            <value>
+                <fullName>No Solution Exists</fullName>
+                <default>false</default>
+                <label>No Solution Exists</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

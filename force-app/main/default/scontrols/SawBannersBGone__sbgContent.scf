@@ -1,0 +1,13 @@
+<span id="bannerBGone"></span>
+<script type="text/javascript">
+window.Banner = function(arg) {
+  function findParentWithClass(element, clazz) {
+    if (element.className == clazz) {
+      return element;
+    }
+    return findParentWithClass(element.parentNode, clazz);
+  }
+  var htmlArea = findParentWithClass(document.getElementById("bannerBGone"), "bHtmlArea");
+  htmlArea.style.display = "none";
+}
+</script>

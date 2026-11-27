@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Product Line</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IR Sensing</fullName>
+                <default>true</default>
+                <label>IR Sensing</label>
+            </value>
+            <value>
+                <fullName>Photon Detection</fullName>
+                <default>false</default>
+                <label>Photon Detection</label>
+            </value>
+            <value>
+                <fullName>Disinfection</fullName>
+                <default>false</default>
+                <label>Disinfection</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing</fullName>
+                <default>false</default>
+                <label>Industrial Curing</label>
+            </value>
+            <value>
+                <fullName>Thermal Processing</fullName>
+                <default>false</default>
+                <label>Thermal Processing</label>
+            </value>
+            <value>
+                <fullName>Customized Systems</fullName>
+                <default>false</default>
+                <label>Customized Systems</label>
+            </value>
+            <value>
+                <fullName>Plasma Light Sources BU</fullName>
+                <default>false</default>
+                <label>Plasma Light Sources BU</label>
+            </value>
+            <value>
+                <fullName>Solutions BU</fullName>
+                <default>false</default>
+                <label>Solutions BU</label>
+            </value>
+            <value>
+                <fullName>Precision Manufacturing</fullName>
+                <default>false</default>
+                <label>Precision Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Semiconductor Equipment</fullName>
+                <default>false</default>
+                <label>Semiconductor Equipment</label>
+            </value>
+            <value>
+                <fullName>Frequency Switches &amp; Defense Sensors</fullName>
+                <default>false</default>
+                <label>Frequency Switches &amp; Defense Sensors</label>
+            </value>
+            <value>
+                <fullName>Energetic &amp; Power Systems</fullName>
+                <default>false</default>
+                <label>Energetic &amp; Power Systems</label>
+            </value>
+            <value>
+                <fullName>Advanced Optronics</fullName>
+                <default>false</default>
+                <label>Advanced Optronics</label>
+            </value>
+            <value>
+                <fullName>Land Equipment</fullName>
+                <default>false</default>
+                <label>Land Equipment</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Integrated Optronics &amp; Avionics</fullName>
+                <default>false</default>
+                <label>Integrated Optronics &amp; Avionics</label>
+            </value>
+            <value>
+                <fullName>Holistic Lithography BU</fullName>
+                <default>false</default>
+                <label>Holistic Lithography BU</label>
+            </value>
+            <value>
+                <fullName>Imaging &amp; Laser Systems BU</fullName>
+                <default>false</default>
+                <label>Imaging &amp; Laser Systems BU</label>
+            </value>
+            <value>
+                <fullName>Metrology &amp; Inspection BU</fullName>
+                <default>false</default>
+                <label>Metrology &amp; Inspection BU</label>
+            </value>
+            <value>
+                <fullName>Life Sciences &amp; Medical Products</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Life Sciences &amp; Medical Products</label>
+            </value>
+            <value>
+                <fullName>Life Sciences &amp; Medical Solutions</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Life Sciences &amp; Medical Solutions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sample/Loaner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sample/Loaner</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- &quot;Actual Delivery Date&quot; is required when Status is &quot;Shipped&quot; /&quot;Purchased&quot;/&quot;Returned&quot; --></errorMessage>
+        <name>Actual_Delivery_Date_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Actaul Delivery date should be greater than Start Date and less than equal to Today --></errorMessage>
+        <name>Actual_delivery_Date_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When the type is &quot;Standard Loaner&quot; , Loaner Due Date is required --></errorMessage>
+        <name>Loaner_Due_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status should be shipped,Purchased or Returned for valid Actual delivery date --></errorMessage>
+        <name>Status_Shipped_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

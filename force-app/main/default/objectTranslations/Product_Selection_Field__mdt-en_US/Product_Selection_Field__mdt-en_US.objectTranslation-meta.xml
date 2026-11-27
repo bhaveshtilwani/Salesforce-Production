@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Selection Field</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Selection Fields</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot set a field as editable if it is not for the OrderItem --></errorMessage>
+        <name>Editable_fields_should_be_only_for_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To display a field in the selected product tile it needs to be either part of the result table or be editable in product selection --></errorMessage>
+        <name>Selected_Product_Display_requirement</name>
+    </validationRules>
+</CustomObjectTranslation>

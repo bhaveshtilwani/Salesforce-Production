@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Catalog_Lens_Type__c</fullName>
+    <label>Catalog Lens Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aspherical Condenser Lens</fullName>
+                <default>false</default>
+                <label>Aspherical Condenser Lens</label>
+            </value>
+            <value>
+                <fullName>Biconcave Lens</fullName>
+                <default>false</default>
+                <label>Biconcave Lens</label>
+            </value>
+            <value>
+                <fullName>Bioconvex Lens</fullName>
+                <default>false</default>
+                <label>Bioconvex Lens</label>
+            </value>
+            <value>
+                <fullName>Cylindrical Lens</fullName>
+                <default>false</default>
+                <label>Cylindrical Lens</label>
+            </value>
+            <value>
+                <fullName>Plano-Concave Lens</fullName>
+                <default>false</default>
+                <label>Plano-Concave Lens</label>
+            </value>
+            <value>
+                <fullName>Plano-Convex Lens</fullName>
+                <default>false</default>
+                <label>Plano-Convex Lens</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

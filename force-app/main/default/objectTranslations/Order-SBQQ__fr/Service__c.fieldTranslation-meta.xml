@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Service --></label>
+    <name>Service__c</name>
+    <picklistValues>
+        <masterLabel>Air</masterLabel>
+        <translation><!-- Air --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground</masterLabel>
+        <translation><!-- Ground --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal</masterLabel>
+        <translation><!-- Internal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miscellaneous</masterLabel>
+        <translation><!-- Miscellaneous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pickup</masterLabel>
+        <translation><!-- Pickup --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

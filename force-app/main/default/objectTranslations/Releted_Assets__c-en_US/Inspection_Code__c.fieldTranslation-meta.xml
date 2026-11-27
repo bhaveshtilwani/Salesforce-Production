@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Inspection Code --></label>
+    <name>Inspection_Code__c</name>
+    <picklistValues>
+        <masterLabel>AS01 - ASSY-Defective Part</masterLabel>
+        <translation><!-- AS01 - ASSY-Defective Part --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS02 - ASSY-Misaligned</masterLabel>
+        <translation><!-- AS02 - ASSY-Misaligned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS03 - ASSY-Missing Part</masterLabel>
+        <translation><!-- AS03 - ASSY-Missing Part --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS04 - ASSY-No Optical Contact</masterLabel>
+        <translation><!-- AS04 - ASSY-No Optical Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS06 - ASSY-Wrong Part</masterLabel>
+        <translation><!-- AS06 - ASSY-Wrong Part --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS10 - ASSY-ER</masterLabel>
+        <translation><!-- AS10 - ASSY-ER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS11 - ASSY-CONTACT FAIL - DIG</masterLabel>
+        <translation><!-- AS11 - ASSY-CONTACT FAIL - DIG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS12 - ASSY-CONTACT FAIL - DECONTACT DAMAGE</masterLabel>
+        <translation><!-- AS12 - ASSY-CONTACT FAIL - DECONTACT DAMAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS13 - ASSY-CONTACT FAIL - ER</masterLabel>
+        <translation><!-- AS13 - ASSY-CONTACT FAIL - ER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS14 - ASSY-CONTACT FAIL - FOD</masterLabel>
+        <translation><!-- AS14 - ASSY-CONTACT FAIL - FOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS15 - ASSY-CONTACT FAIL - SCRATCH</masterLabel>
+        <translation><!-- AS15 - ASSY-CONTACT FAIL - SCRATCH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS16 - ASSY-CONTACT FAIL - SURFACE FIGURE</masterLabel>
+        <translation><!-- AS16 - ASSY-CONTACT FAIL - SURFACE FIGURE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS17 - ASSY-Incomplete Bonding</masterLabel>
+        <translation><!-- AS17 - ASSY-Incomplete Bonding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS18 - ASSY-Corrosion</masterLabel>
+        <translation><!-- AS18 - ASSY-Corrosion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS19 - ASSY-Plating or Passivation Defect</masterLabel>
+        <translation><!-- AS19 - ASSY-Plating or Passivation Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CO01 - COAT-Chamber Malfunction</masterLabel>
+        <translation><!-- CO01 - COAT-Chamber Malfunction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DA01 - RMA-ONLY-DAMAGE-Customer-induced</masterLabel>
+        <translation><!-- DA01 - RMA-ONLY-DAMAGE-Customer-induced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DA02 - RMA-ONLY-DAMAGE-Shipping (From Customer)</masterLabel>
+        <translation><!-- DA02 - RMA-ONLY-DAMAGE-Shipping (From Customer) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DA03 - RMA-ONLY-DAMAGE-Shipping (Internal)</masterLabel>
+        <translation><!-- DA03 - RMA-ONLY-DAMAGE-Shipping (Internal) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC04 - DOCS-Process Sheet error</masterLabel>
+        <translation><!-- DC04 - DOCS-Process Sheet error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC05 - RMA-ONLY-DOCS-Shipper Errors</masterLabel>
+        <translation><!-- DC05 - RMA-ONLY-DOCS-Shipper Errors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC06 - DOCS-Part Quantity</masterLabel>
+        <translation><!-- DC06 - DOCS-Part Quantity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC07 - DOCS-DCP</masterLabel>
+        <translation><!-- DC07 - DOCS-DCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC08 - DOCS-Missed PS Signoff</masterLabel>
+        <translation><!-- DC08 - DOCS-Missed PS Signoff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DM01 - DIM-Angle</masterLabel>
+        <translation><!-- DM01 - DIM-Angle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DM02 - DIM-Bevel</masterLabel>
+        <translation><!-- DM02 - DIM-Bevel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DM03 - DIM-Diameter</masterLabel>
+        <translation><!-- DM03 - DIM-Diameter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DM05 - DIM-Part Size (Thickness)</masterLabel>
+        <translation><!-- DM05 - DIM-Part Size (Thickness) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DM06 - DIM-Undefined</masterLabel>
+        <translation><!-- DM06 - DIM-Undefined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DM07 - DIM-Wedge</masterLabel>
+        <translation><!-- DM07 - DIM-Wedge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DU01 - DURA-Abrasion</masterLabel>
+        <translation><!-- DU01 - DURA-Abrasion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DU02 - DURA-Adhesion</masterLabel>
+        <translation><!-- DU02 - DURA-Adhesion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DU04 - DURA-Humidity</masterLabel>
+        <translation><!-- DU04 - DURA-Humidity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DU05 - DURA-LDT</masterLabel>
+        <translation><!-- DU05 - DURA-LDT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DU06 - DURA-Salt Fog</masterLabel>
+        <translation><!-- DU06 - DURA-Salt Fog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DU07 - DURA-Part Testing</masterLabel>
+        <translation><!-- DU07 - DURA-Part Testing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DU08 - DURA-Witness Missing</masterLabel>
+        <translation><!-- DU08 - DURA-Witness Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FT01 - FUNC-Electrical Fault</masterLabel>
+        <translation><!-- FT01 - FUNC-Electrical Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FT02 - FUNC-Test Error</masterLabel>
+        <translation><!-- FT02 - FUNC-Test Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HA01 - HANDLING-Broken</masterLabel>
+        <translation><!-- HA01 - HANDLING-Broken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ME02 - MECH-Burrs</masterLabel>
+        <translation><!-- ME02 - MECH-Burrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ME04 - MECH-Paint Defect</masterLabel>
+        <translation><!-- ME04 - MECH-Paint Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ME06 - MECH-Thread</masterLabel>
+        <translation><!-- ME06 - MECH-Thread --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MK01 - MARKING-Arrow Missing</masterLabel>
+        <translation><!-- MK01 - MARKING-Arrow Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MK02 - MARKING-Arrowed Wrong</masterLabel>
+        <translation><!-- MK02 - MARKING-Arrowed Wrong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MK05 - MARKING-Mark Location</masterLabel>
+        <translation><!-- MK05 - MARKING-Mark Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MK06 - MARKING-Other</masterLabel>
+        <translation><!-- MK06 - MARKING-Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MK07 - MARKING-Serialization</masterLabel>
+        <translation><!-- MK07 - MARKING-Serialization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ML01 - MTRL-Bubbles/Inclusions/Striae</masterLabel>
+        <translation><!-- ML01 - MTRL-Bubbles/Inclusions/Striae --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT01 - MET-Beam Deviation &amp; Wedge</masterLabel>
+        <translation><!-- MT01 - MET-Beam Deviation &amp; Wedge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT02 - MET-Irregularity Reflected</masterLabel>
+        <translation><!-- MT02 - MET-Irregularity Reflected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT03 - MET-Irregularity Transmitted</masterLabel>
+        <translation><!-- MT03 - MET-Irregularity Transmitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT04 - MET-Power Reflected</masterLabel>
+        <translation><!-- MT04 - MET-Power Reflected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT05 - MET-Power Transmitted</masterLabel>
+        <translation><!-- MT05 - MET-Power Transmitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT06 - MET-PV Reflected</masterLabel>
+        <translation><!-- MT06 - MET-PV Reflected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT07 - MET-PV Transmitted</masterLabel>
+        <translation><!-- MT07 - MET-PV Transmitted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT08 - MET-Roughness</masterLabel>
+        <translation><!-- MT08 - MET-Roughness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT09 - MET - ROC</masterLabel>
+        <translation><!-- MT09 - MET - ROC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT10 - MET - Absorption</masterLabel>
+        <translation><!-- MT10 - MET - Absorption --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT11 - MET-Transmission</masterLabel>
+        <translation><!-- MT11 - MET-Transmission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT12 - MET - Reflection</masterLabel>
+        <translation><!-- MT12 - MET - Reflection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT13 - MET-Scatter</masterLabel>
+        <translation><!-- MT13 - MET-Scatter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT14 - MET - Optical Path Length</masterLabel>
+        <translation><!-- MT14 - MET - Optical Path Length --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT15 - MET - Extinction Ratio</masterLabel>
+        <translation><!-- MT15 - MET - Extinction Ratio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFF  - NFF-No Fault Found</masterLabel>
+        <translation><!-- NFF  - NFF-No Fault Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA02 - PACK-Label Wrong</masterLabel>
+        <translation><!-- PA02 - PACK-Label Wrong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA04 - Pack-Batch Size</masterLabel>
+        <translation><!-- PA04 - Pack-Batch Size --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RE02 - RMA-ONLY-RETURN-For Evaluation</masterLabel>
+        <translation><!-- RE02 - RMA-ONLY-RETURN-For Evaluation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RE03 - RMA-ONLY-RETURN-For Rework</masterLabel>
+        <translation><!-- RE03 - RMA-ONLY-RETURN-For Rework --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RL01 - RLG - CNC OD Chips</masterLabel>
+        <translation><!-- RL01 - RLG - CNC OD Chips --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RL02 - RLG - CNC OD Fractures</masterLabel>
+        <translation><!-- RL02 - RLG - CNC OD Fractures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RL03 - RLG - CNC Interior Chips</masterLabel>
+        <translation><!-- RL03 - RLG - CNC Interior Chips --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RL04 - RLG - CNC Interior Fractures</masterLabel>
+        <translation><!-- RL04 - RLG - CNC Interior Fractures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RL05 - RLG - Etch Defect</masterLabel>
+        <translation><!-- RL05 - RLG - Etch Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP03 - SPECTRAL-Double-coated</masterLabel>
+        <translation><!-- SP03 - SPECTRAL-Double-coated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP06 - SPECTRAL - Coated Wrong Side</masterLabel>
+        <translation><!-- SP06 - SPECTRAL - Coated Wrong Side --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP07 - SPECTRAL-Non-conforming</masterLabel>
+        <translation><!-- SP07 - SPECTRAL-Non-conforming --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ01 - SQ -Particulate</masterLabel>
+        <translation><!-- SQ01 - SQ -Particulate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ02 - SQ-Chips/Fractures</masterLabel>
+        <translation><!-- SQ02 - SQ-Chips/Fractures --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ03 - SQ-Coating Bubbles</masterLabel>
+        <translation><!-- SQ03 - SQ-Coating Bubbles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ04 - SQ-Delaminating/ Peeling</masterLabel>
+        <translation><!-- SQ04 - SQ-Delaminating/ Peeling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ05 - SQ-Dig</masterLabel>
+        <translation><!-- SQ05 - SQ-Dig --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ07 - SQ-Incomplete Polish</masterLabel>
+        <translation><!-- SQ07 - SQ-Incomplete Polish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ09 - SQ-Non-Uniform Coating</masterLabel>
+        <translation><!-- SQ09 - SQ-Non-Uniform Coating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ13 - SQ-Scratch</masterLabel>
+        <translation><!-- SQ13 - SQ-Scratch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ15 - SQ-Sleek</masterLabel>
+        <translation><!-- SQ15 - SQ-Sleek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ17 - SQ-Stain/Discolor</masterLabel>
+        <translation><!-- SQ17 - SQ-Stain/Discolor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ20 - SQ-FOD(Trapped Fiber/Debris)</masterLabel>
+        <translation><!-- SQ20 - SQ-FOD(Trapped Fiber/Debris) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

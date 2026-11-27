@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- &quot;Fixed value create rule depending on Customer Group: CI - Customer InternalCE - Customer Externaluse account group/recon account as rule base for interco - rest is 3rd party/external&quot; --></help>
+    <label><!-- Planning Group --></label>
+    <name>KNB1_FDGRV__c</name>
+    <picklistValues>
+        <masterLabel>CE</masterLabel>
+        <translation><!-- CE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CI</masterLabel>
+        <translation><!-- CI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

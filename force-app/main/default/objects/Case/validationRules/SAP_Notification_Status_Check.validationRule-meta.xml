@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_Notification_Status_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISCHANGED(Status),
+  ISPICKVAL(Status, &quot;Closed&quot;),
+  NOT(ISBLANK(SAP_Notification__c)),
+  NOT(ISPICKVAL(SAP_Notification_Status__c, &quot;Closed&quot;))
+)</errorConditionFormula>
+    <errorMessage>Case can only be closed in CRM if the Notification in SAP is Closed too.</errorMessage>
+</ValidationRule>

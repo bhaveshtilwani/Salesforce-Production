@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Organizations__c</fullName>
+    <label>Sales Organization</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2440 - XNA LLC</fullName>
+                <default>false</default>
+                <label>2440 - XNA LLC</label>
+            </value>
+            <value>
+                <fullName>1440 - XNG DE</fullName>
+                <default>false</default>
+                <label>1440 - XNG DE</label>
+            </value>
+            <value>
+                <fullName>1270 - XNL GB</fullName>
+                <default>false</default>
+                <label>1270 - XNL GB</label>
+            </value>
+            <value>
+                <fullName>2340 - XNS CN</fullName>
+                <default>false</default>
+                <label>2340 - XNS CN</label>
+            </value>
+            <value>
+                <fullName>3240 - XNJ JP</fullName>
+                <default>false</default>
+                <label>3240 - XNJ JP</label>
+            </value>
+            <value>
+                <fullName>1000 - HH DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1000 - HH DE</label>
+            </value>
+            <value>
+                <fullName>10001 - Qioptiq Photonics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>10001 - Qioptiq Photonics</label>
+            </value>
+            <value>
+                <fullName>1030 - HCA Heraeus Conamic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1030 - HCA Heraeus Conamic</label>
+            </value>
+            <value>
+                <fullName>1040 - HME Wehrheim, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1040 - HME Wehrheim, DE</label>
+            </value>
+            <value>
+                <fullName>1050 - HMG DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1050 - HMG DE</label>
+            </value>
+            <value>
+                <fullName>1080 - HMCW St. Paul</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1080 - HMCW St. Paul</label>
+            </value>
+            <value>
+                <fullName>1090 - HMNL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1090 - HMNL</label>
+            </value>
+            <value>
+                <fullName>1100 - YNE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1100 - YNE</label>
+            </value>
+            <value>
+                <fullName>1110 - HENH Hagen, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1110 - HENH Hagen, DE</label>
+            </value>
+            <value>
+                <fullName>1120 - HZCM (China)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1120 - HZCM (China)</label>
+            </value>
+            <value>
+                <fullName>1150 - HF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1150 - HF</label>
+            </value>
+            <value>
+                <fullName>1160 - HI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1160 - HI</label>
+            </value>
+            <value>
+                <fullName>1170 - HMTM MY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1170 - HMTM MY</label>
+            </value>
+            <value>
+                <fullName>1190 - HIB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1190 - HIB</label>
+            </value>
+            <value>
+                <fullName>1210 - HIC US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1210 - HIC US</label>
+            </value>
+            <value>
+                <fullName>1220 - HPMC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1220 - HPMC</label>
+            </value>
+            <value>
+                <fullName>1230 - HLH HK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1230 - HLH HK</label>
+            </value>
+            <value>
+                <fullName>1240 - HOT Korea</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1240 - HOT Korea</label>
+            </value>
+            <value>
+                <fullName>1250 - HKK JP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1250 - HKK JP</label>
+            </value>
+            <value>
+                <fullName>1260 - HMSL HMT SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1260 - HMSL HMT SG</label>
+            </value>
+            <value>
+                <fullName>1261 - HMSL HPM SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1261 - HMSL HPM SG</label>
+            </value>
+            <value>
+                <fullName>1262 - HMSL HNG SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1262 - HMSL HNG SG</label>
+            </value>
+            <value>
+                <fullName>1290 - HZA Gqeberha</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1290 - HZA Gqeberha</label>
+            </value>
+            <value>
+                <fullName>1300 - HMAUS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1300 - HMAUS</label>
+            </value>
+            <value>
+                <fullName>1410 - HPMG Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1410 - HPMG Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>1450 - HQNA US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1450 - HQNA US</label>
+            </value>
+            <value>
+                <fullName>1530 - HMS HPM CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1530 - HMS HPM CN</label>
+            </value>
+            <value>
+                <fullName>1540 - HTL Bangkok</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1540 - HTL Bangkok</label>
+            </value>
+            <value>
+                <fullName>1550 - Heraeus Korea</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1550 - Heraeus Korea</label>
+            </value>
+            <value>
+                <fullName>1580 - HAT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1580 - HAT</label>
+            </value>
+            <value>
+                <fullName>1600 - HEPN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1600 - HEPN</label>
+            </value>
+            <value>
+                <fullName>1620 - HMN HPM US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1620 - HMN HPM US</label>
+            </value>
+            <value>
+                <fullName>1700 - HMTS (China)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1700 - HMTS (China)</label>
+            </value>
+            <value>
+                <fullName>1702 - HMTS HPT (China)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1702 - HMTS HPT (China)</label>
+            </value>
+            <value>
+                <fullName>1710 - HPY DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1710 - HPY DE</label>
+            </value>
+            <value>
+                <fullName>1720 - HCS Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1720 - HCS Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>1730 - HMCC Caribe Inc.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1730 - HMCC Caribe Inc.</label>
+            </value>
+            <value>
+                <fullName>1810 - HMCZ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1810 - HMCZ</label>
+            </value>
+            <value>
+                <fullName>1820 - HMH HPM HK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1820 - HMH HPM HK</label>
+            </value>
+            <value>
+                <fullName>1870 - HZPM (China)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1870 - HZPM (China)</label>
+            </value>
+            <value>
+                <fullName>1920 - HMCH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1920 - HMCH</label>
+            </value>
+            <value>
+                <fullName>1940 - HSO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1940 - HSO</label>
+            </value>
+            <value>
+                <fullName>1990 - HMSW</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1990 - HMSW</label>
+            </value>
+            <value>
+                <fullName>1991 - HMSW, NO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1991 - HMSW, NO</label>
+            </value>
+            <value>
+                <fullName>2010 - HML UK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2010 - HML UK</label>
+            </value>
+            <value>
+                <fullName>2030 - HSO-E</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2030 - HSO-E</label>
+            </value>
+            <value>
+                <fullName>2050 - HQV Hanau, De</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2050 - HQV Hanau, De</label>
+            </value>
+            <value>
+                <fullName>2090 - HBV DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2090 - HBV DE</label>
+            </value>
+            <value>
+                <fullName>2160 - HCAUK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2160 - HCAUK</label>
+            </value>
+            <value>
+                <fullName>2170 - HTT TR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2170 - HTT TR</label>
+            </value>
+            <value>
+                <fullName>2180 - HMPT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2180 - HMPT</label>
+            </value>
+            <value>
+                <fullName>2230 - HPMN, US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2230 - HPMN, US</label>
+            </value>
+            <value>
+                <fullName>2240 - HMPL Shannon, IE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2240 - HMPL Shannon, IE</label>
+            </value>
+            <value>
+                <fullName>2330 - HMTT Heraeus Taiwan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2330 - HMTT Heraeus Taiwan</label>
+            </value>
+            <value>
+                <fullName>2350 - HSO III</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2350 - HSO III</label>
+            </value>
+            <value>
+                <fullName>2380 - HMGR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2380 - HMGR</label>
+            </value>
+            <value>
+                <fullName>2390 - HPL PL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2390 - HPL PL</label>
+            </value>
+            <value>
+                <fullName>2460 - HROM, RO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2460 - HROM, RO</label>
+            </value>
+            <value>
+                <fullName>2490 - HSL HH SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2490 - HSL HH SG</label>
+            </value>
+            <value>
+                <fullName>2510 - HCI HH CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2510 - HCI HH CN</label>
+            </value>
+            <value>
+                <fullName>2540 - HMCR Costa Rica</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2540 - HMCR Costa Rica</label>
+            </value>
+            <value>
+                <fullName>2560 - HPMT CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2560 - HPMT CN</label>
+            </value>
+            <value>
+                <fullName>2570 - HETS Chang Shu, CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2570 - HETS Chang Shu, CN</label>
+            </value>
+            <value>
+                <fullName>2590 - HENH Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2590 - HENH Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>2600 - HBT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2600 - HBT</label>
+            </value>
+            <value>
+                <fullName>2610 - Heraeus PM Proc.LLC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2610 - Heraeus PM Proc.LLC</label>
+            </value>
+            <value>
+                <fullName>2620 - HQSB Bitterfeld, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2620 - HQSB Bitterfeld, DE</label>
+            </value>
+            <value>
+                <fullName>2650 - HCNA US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2650 - HCNA US</label>
+            </value>
+            <value>
+                <fullName>2660 - HMUS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2660 - HMUS</label>
+            </value>
+            <value>
+                <fullName>2670 - AH Mendrisio, CH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2670 - AH Mendrisio, CH</label>
+            </value>
+            <value>
+                <fullName>2680 - AHD Pforzheim, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2680 - AHD Pforzheim, DE</label>
+            </value>
+            <value>
+                <fullName>2690 - AHI Cavenago, IT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2690 - AHI Cavenago, IT</label>
+            </value>
+            <value>
+                <fullName>2760 - HUVENCA1 GmbH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2760 - HUVENCA1 GmbH</label>
+            </value>
+            <value>
+                <fullName>2770 - HMDD, Dresden, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2770 - HMDD, Dresden, DE</label>
+            </value>
+            <value>
+                <fullName>2780 - HMHK Hradec K., CZ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2780 - HMHK Hradec K., CZ</label>
+            </value>
+            <value>
+                <fullName>2810 - HPTS Shanghai, CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2810 - HPTS Shanghai, CN</label>
+            </value>
+            <value>
+                <fullName>2820 - HPSL SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2820 - HPSL SG</label>
+            </value>
+            <value>
+                <fullName>2830 - HMCS SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2830 - HMCS SG</label>
+            </value>
+            <value>
+                <fullName>2840 - HSA Gqeberha</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2840 - HSA Gqeberha</label>
+            </value>
+            <value>
+                <fullName>2910 - HPRD Shanghai, CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2910 - HPRD Shanghai, CN</label>
+            </value>
+            <value>
+                <fullName>2920 - HSAH Gqeberha</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2920 - HSAH Gqeberha</label>
+            </value>
+            <value>
+                <fullName>2930 - YNEM MY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2930 - YNEM MY</label>
+            </value>
+            <value>
+                <fullName>2960 - HBS Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2960 - HBS Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>2970 - HHE Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2970 - HHE Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>2990 - HECS Shanghai, CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2990 - HECS Shanghai, CN</label>
+            </value>
+            <value>
+                <fullName>3090 - HMUK GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3090 - HMUK GB</label>
+            </value>
+            <value>
+                <fullName>3110 - HMHD Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3110 - HMHD Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>3120 - HETD Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3120 - HETD Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>3130 - HEPD Leverkusen, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3130 - HEPD Leverkusen, DE</label>
+            </value>
+            <value>
+                <fullName>3200 - HSW Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3200 - HSW Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>3230 - HCD Brøndby, DK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3230 - HCD Brøndby, DK</label>
+            </value>
+            <value>
+                <fullName>3240 - XNJJP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3240 - XNJJP</label>
+            </value>
+            <value>
+                <fullName>8000 - BHMR CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>8000 - BHMR CN</label>
+            </value>
+            <value>
+                <fullName>AH Mendrisio, CH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AH Mendrisio, CH</label>
+            </value>
+            <value>
+                <fullName>AHD Pforzheim, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AHD Pforzheim, DE</label>
+            </value>
+            <value>
+                <fullName>AHI Cavenago, IT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AHI Cavenago, IT</label>
+            </value>
+            <value>
+                <fullName>BHMR CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BHMR CN</label>
+            </value>
+            <value>
+                <fullName>E100 - Materion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>E100 - Materion</label>
+            </value>
+            <value>
+                <fullName>Excelitas Wiesbaden (0400)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Wiesbaden (0400)</label>
+            </value>
+            <value>
+                <fullName>HAT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HAT</label>
+            </value>
+            <value>
+                <fullName>HBS Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HBS Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>HBT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HBT</label>
+            </value>
+            <value>
+                <fullName>HBV DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HBV DE</label>
+            </value>
+            <value>
+                <fullName>HCA Heraeus Conamic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HCA Heraeus Conamic</label>
+            </value>
+            <value>
+                <fullName>HCAUK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HCAUK</label>
+            </value>
+            <value>
+                <fullName>HCD Brøndby, DK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HCD Brøndby, DK</label>
+            </value>
+            <value>
+                <fullName>HCI HH CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HCI HH CN</label>
+            </value>
+            <value>
+                <fullName>HCNA US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HCNA US</label>
+            </value>
+            <value>
+                <fullName>HCS Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HCS Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>HECS Shanghai, CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HECS Shanghai, CN</label>
+            </value>
+            <value>
+                <fullName>HENH Hagen, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HENH Hagen, DE</label>
+            </value>
+            <value>
+                <fullName>HENH Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HENH Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>HEPD Leverkusen, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HEPD Leverkusen, DE</label>
+            </value>
+            <value>
+                <fullName>HEPN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HEPN</label>
+            </value>
+            <value>
+                <fullName>HETD Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HETD Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>HETS Chang Shu, CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HETS Chang Shu, CN</label>
+            </value>
+            <value>
+                <fullName>HF</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HF</label>
+            </value>
+            <value>
+                <fullName>HH DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HH DE</label>
+            </value>
+            <value>
+                <fullName>HHE Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HHE Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>HI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HI</label>
+            </value>
+            <value>
+                <fullName>HIB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HIB</label>
+            </value>
+            <value>
+                <fullName>HIC US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HIC US</label>
+            </value>
+            <value>
+                <fullName>HKK JP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HKK JP</label>
+            </value>
+            <value>
+                <fullName>HLH HK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HLH HK</label>
+            </value>
+            <value>
+                <fullName>HMAUS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMAUS</label>
+            </value>
+            <value>
+                <fullName>HMCC Caribe Inc.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMCC Caribe Inc.</label>
+            </value>
+            <value>
+                <fullName>HMCH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMCH</label>
+            </value>
+            <value>
+                <fullName>HMCR Costa Rica</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMCR Costa Rica</label>
+            </value>
+            <value>
+                <fullName>HMCS SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMCS SG</label>
+            </value>
+            <value>
+                <fullName>HMCW St. Paul</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMCW St. Paul</label>
+            </value>
+            <value>
+                <fullName>HMCZ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMCZ</label>
+            </value>
+            <value>
+                <fullName>HMDD, Dresden, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMDD, Dresden, DE</label>
+            </value>
+            <value>
+                <fullName>HME Wehrheim, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HME Wehrheim, DE</label>
+            </value>
+            <value>
+                <fullName>HMG DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMG DE</label>
+            </value>
+            <value>
+                <fullName>HMGR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMGR</label>
+            </value>
+            <value>
+                <fullName>HMH HPM HK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMH HPM HK</label>
+            </value>
+            <value>
+                <fullName>HMHD Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMHD Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>HMHK Hradec K., CZ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMHK Hradec K., CZ</label>
+            </value>
+            <value>
+                <fullName>HML UK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HML UK</label>
+            </value>
+            <value>
+                <fullName>HMN HPM US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMN HPM US</label>
+            </value>
+            <value>
+                <fullName>HMNL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMNL</label>
+            </value>
+            <value>
+                <fullName>HMPL Shannon, IE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMPL Shannon, IE</label>
+            </value>
+            <value>
+                <fullName>HMPT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMPT</label>
+            </value>
+            <value>
+                <fullName>HMS HPM CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMS HPM CN</label>
+            </value>
+            <value>
+                <fullName>HMSL HMT SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMSL HMT SG</label>
+            </value>
+            <value>
+                <fullName>HMSL HNG SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMSL HNG SG</label>
+            </value>
+            <value>
+                <fullName>HMSL HPM SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMSL HPM SG</label>
+            </value>
+            <value>
+                <fullName>HMSW</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMSW</label>
+            </value>
+            <value>
+                <fullName>HMSW, NO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMSW, NO</label>
+            </value>
+            <value>
+                <fullName>HMTM MY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMTM MY</label>
+            </value>
+            <value>
+                <fullName>HMTS (China)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMTS (China)</label>
+            </value>
+            <value>
+                <fullName>HMTS HPT (China)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMTS HPT (China)</label>
+            </value>
+            <value>
+                <fullName>HMTT Heraeus Taiwan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMTT Heraeus Taiwan</label>
+            </value>
+            <value>
+                <fullName>HMUK GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMUK GB</label>
+            </value>
+            <value>
+                <fullName>HMUS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HMUS</label>
+            </value>
+            <value>
+                <fullName>HOT Korea</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HOT Korea</label>
+            </value>
+            <value>
+                <fullName>HPL PL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPL PL</label>
+            </value>
+            <value>
+                <fullName>HPMC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPMC</label>
+            </value>
+            <value>
+                <fullName>HPMG Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPMG Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>HPMN, US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPMN, US</label>
+            </value>
+            <value>
+                <fullName>HPMT CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPMT CN</label>
+            </value>
+            <value>
+                <fullName>HPRD Shanghai, CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPRD Shanghai, CN</label>
+            </value>
+            <value>
+                <fullName>HPSL SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPSL SG</label>
+            </value>
+            <value>
+                <fullName>HPTS Shanghai, CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPTS Shanghai, CN</label>
+            </value>
+            <value>
+                <fullName>HPY DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HPY DE</label>
+            </value>
+            <value>
+                <fullName>HQNA US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HQNA US</label>
+            </value>
+            <value>
+                <fullName>HQSB Bitterfeld, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HQSB Bitterfeld, DE</label>
+            </value>
+            <value>
+                <fullName>HQV Hanau, De</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HQV Hanau, De</label>
+            </value>
+            <value>
+                <fullName>HROM, RO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HROM, RO</label>
+            </value>
+            <value>
+                <fullName>HSA Gqeberha</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HSA Gqeberha</label>
+            </value>
+            <value>
+                <fullName>HSAH Gqeberha</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HSAH Gqeberha</label>
+            </value>
+            <value>
+                <fullName>HSL HH SG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HSL HH SG</label>
+            </value>
+            <value>
+                <fullName>HSO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HSO</label>
+            </value>
+            <value>
+                <fullName>HSO III</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HSO III</label>
+            </value>
+            <value>
+                <fullName>HSO-E</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HSO-E</label>
+            </value>
+            <value>
+                <fullName>HSW Hanau, DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HSW Hanau, DE</label>
+            </value>
+            <value>
+                <fullName>HTL Bangkok</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HTL Bangkok</label>
+            </value>
+            <value>
+                <fullName>HTT TR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HTT TR</label>
+            </value>
+            <value>
+                <fullName>HUVENCA1 GmbH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HUVENCA1 GmbH</label>
+            </value>
+            <value>
+                <fullName>HZA Gqeberha</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HZA Gqeberha</label>
+            </value>
+            <value>
+                <fullName>HZCM (China)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HZCM (China)</label>
+            </value>
+            <value>
+                <fullName>HZPM (China)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HZPM (China)</label>
+            </value>
+            <value>
+                <fullName>Heraeus Korea</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Heraeus Korea</label>
+            </value>
+            <value>
+                <fullName>Heraeus PM Proc.LLC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Heraeus PM Proc.LLC</label>
+            </value>
+            <value>
+                <fullName>KS_Org. 11</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KS_Org. 11</label>
+            </value>
+            <value>
+                <fullName>Materion</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Materion</label>
+            </value>
+            <value>
+                <fullName>Miamisburg (4002)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Miamisburg (4002)</label>
+            </value>
+            <value>
+                <fullName>Montreal (1000)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Montreal (1000)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics (0001)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics (0001)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics (0500)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics (0500)</label>
+            </value>
+            <value>
+                <fullName>Salem (4001)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Salem (4001)</label>
+            </value>
+            <value>
+                <fullName>Sales Org. 001</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sales Org. 001</label>
+            </value>
+            <value>
+                <fullName>XNA LLC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XNA LLC</label>
+            </value>
+            <value>
+                <fullName>XNG DE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XNG DE</label>
+            </value>
+            <value>
+                <fullName>XNJ JP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XNJ JP</label>
+            </value>
+            <value>
+                <fullName>XNL GB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XNL GB</label>
+            </value>
+            <value>
+                <fullName>XNS CN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XNS CN</label>
+            </value>
+            <value>
+                <fullName>YNE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>YNE</label>
+            </value>
+            <value>
+                <fullName>YNEM MY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>YNEM MY</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

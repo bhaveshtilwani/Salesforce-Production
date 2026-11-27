@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Market --></label>
+    <name>Market__c</name>
+    <picklistValues>
+        <masterLabel>Aircraft</masterLabel>
+        <translation><!-- Aircraft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avionics</masterLabel>
+        <translation><!-- Avionics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bombs</masterLabel>
+        <translation><!-- Bombs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communications</masterLabel>
+        <translation><!-- Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energetic Components</masterLabel>
+        <translation><!-- Energetic Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground Vehicle</masterLabel>
+        <translation><!-- Ground Vehicle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military Communications</masterLabel>
+        <translation><!-- Military Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missiles</masterLabel>
+        <translation><!-- Missiles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mortar</masterLabel>
+        <translation><!-- Mortar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuclear Stockpile</masterLabel>
+        <translation><!-- Nuclear Stockpile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PGW</masterLabel>
+        <translation><!-- PGW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sonar</masterLabel>
+        <translation><!-- Sonar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Space</masterLabel>
+        <translation><!-- Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Targeting Pod</masterLabel>
+        <translation><!-- Targeting Pod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UAV</masterLabel>
+        <translation><!-- UAV --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

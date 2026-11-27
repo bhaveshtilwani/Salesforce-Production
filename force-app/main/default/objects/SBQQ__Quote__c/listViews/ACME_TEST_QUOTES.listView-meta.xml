@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ACME_TEST_QUOTES</fullName>
+    <columns>NAME</columns>
+    <columns>ApprovalStatus__c</columns>
+    <columns>SBQQ__Status__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SBQQ__Account__c</field>
+        <operation>startsWith</operation>
+        <value>ACME</value>
+    </filters>
+    <label>ACME TEST QUOTES</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

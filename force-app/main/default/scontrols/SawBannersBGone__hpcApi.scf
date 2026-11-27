@@ -1,0 +1,170 @@
+/** 
+ * Unfortunately, winter '07 does not provide an official public API 
+ * for manipulating Home Page Components or Home Page Layouts. 
+ * This is the unoffical, unsupported ajax api for Home Page Components.
+ * Winter '07 allows integrators to add homepage components to the sidebar, 
+ * and allows them to include these components on any page in the app.
+ * By creating an invisible home page component on the sidebar, 
+ * developers can then manipulate any page of the app with javascript or css.
+ * Obviously, this api is not as good or reliable as the SOAP API, 
+ * though it should be enough to help you slap together an installation 
+ * script.
+ * 
+ * You are not encouraged to use this in any capacity other than an installation script, and even then you should think twice.
+ * This script is unsupported & will likely break early & often 
+ * It is not reccomended that you rely on this code for anything important.
+ * 
+ *  v .1b
+ * 
+ */
+var HomePageComponentToolkit = function(notify /* optional */) {
+	this.notify = null;
+	if (notify) {
+		 this.notify = notify;
+		 if (!(this.notify.setLayouts && this.notify.setComponents)) {
+		 	alert('Missing notification methods');
+		 }
+	}
+}
+
+HomePageComponentToolkit.prototype.deleteComponent = function(id, handler, errorHandler) {
+  var url = '/setup/own/deleteredirect.jsp?setupid=HomePageComponents&delID=' + id;
+  var hpcApi = this;	
+  XBrowser.getHttpResponse(url,
+		function(xhr) {
+		    if (handler) { handler(xhr); }
+	  		else if (hpcApi.notify) { hpcApi.notify.notify(); }
+	  	},
+		errorHandler ? errorHandler : function(xhr) { hpcApi.handleErrors(xhr); } );
+}
+
+/**
+ * @param componentName - HomePageComponents do not necessarily have unique names.  It is suggested you use a sufficiently unique name consisting of alphanumerics.
+ * @param isSidebarComponent - Should this component appear in the sidebar or in the wide section of the homepage?
+ */
+HomePageComponentToolkit.prototype.insertNewComponent = function(componentName, componentHTML, isSidebarComponent, handler, errorHandler /* optional */) {
+  var url = "/_ui/common/page/custom/PageComponentStageManager";
+  var hpcApi = this;	
+  var formArgs = {};
+  formArgs['Name'] 			= componentName;
+  formArgs['Type'] 			= '3';
+  formArgs['currentStage'] 	= '1';
+  formArgs['visited_0'] 	= '1';
+  formArgs['visited_1'] 	= '1';
+  formArgs['IsNarrow'] 		= (isSidebarComponent) ? 'pnar' : 'pwide';
+  formArgs['phfont'] 		= 'Font';
+  formArgs['phsize'] 		= 'Size';
+  formArgs['Body'] 			= componentHTML;
+  formArgs['save'] 			= ' Save ';
+  XBrowser.postHttpResponse(url,
+		function(xhr) {
+		    if (handler) { handler(xhr); }
+	  		else if (hpcApi.notify) { hpcApi.notify.notify(); }
+	  	},
+		XBrowser.buildPost(formArgs), 
+		errorHandler ? errorHandler : function(xhr) { hpcApi.handleErrors(xhr); } );
+}
+
+HomePageComponentToolkit.prototype.addComponentToLayout = function(componentId, layoutId, handler) {
+   var url = '/setup/ui/homePageLayoutWizard.jsp?pCPLID=' + layoutId;
+   var sidebarIframeId = 'showSidebarHiddenFrame';
+   var frameContainer = document.createElement("div");
+   var hpcApi = this;	
+        //does this get called once or twice?
+   HomePageComponentToolkit.componentAdder = function() {
+       var frameDoc = frameContainer.firstChild.contentWindow.document;
+       if (frameDoc.getElementById(componentId) && (!frameDoc.getElementById(componentId).checked) && (frameDoc.getElementsByName('goNext').length > 0)) {
+           frameDoc.getElementById(componentId).checked = true;
+           frameDoc.getElementsByName('goNext')[0].click();
+       } else if (frameDoc.getElementsByName('save').length > 0) {
+           frameDoc.getElementsByName('save')[0].click();
+       } else { 
+          if (handler) { handler(idArr); }
+     	  else if (hpcApi.notify) { hpcApi.notify.notify(); }
+       }
+   }
+   document.body.appendChild(frameContainer);
+   frameContainer.innerHTML = "<iframe src='" + url + "' onload='HomePageComponentToolkit.componentAdder();' style='border: 0; width: 1px; height:1px'></iframe>";
+}
+
+/**
+ * Synchronous Method to retrieve the a list HPC's with a particular name
+ * 
+ * @param componentName - HomePageComponents do not necessarily have unique names.  It is suggested you use a sufficiently unique name consisting of alphanumerics.
+ * 
+ * @return an array of ID's (sync requests only)
+ */
+HomePageComponentToolkit.prototype.fetchHomePageComponentsNamed = function(componentName /* optional */, handler /* optional */, errorHandler /* optional */) {
+  var url = '/setup/ui/homepagecomponents.jsp';
+  var soughtComponent = componentName ? componentName : '[^">]*';
+  var reStr = '<a href="[^">]*delID=([^&"]*)[^">]*"[^>]*"Del[^>"]*' + soughtComponent + '">';
+  var fetchIdRegex = new RegExp(reStr, 'gim');
+  var hpcApi = this;	
+  XBrowser.getHttpResponse(url,
+	  	function(xhr) {
+	  	    var idArr = [];
+	  		var match = fetchIdRegex.exec(xhr.responseText);
+	  		while (match) {
+	  		    idArr.push(match[1]);
+	  		    match = fetchIdRegex.exec(xhr.responseText);
+	  		}
+	  		if (handler) { handler(idArr); }
+	  		else if (hpcApi.notify) {
+	  			hpcApi.notify.setComponents(idArr);
+	  			hpcApi.notify.notify();
+	  		}
+	  	},
+	    errorHandler ? errorHandler : function(xhr) { hpcApi.handleErrors(xhr); });
+}
+
+HomePageComponentToolkit.prototype.fetchListOfLayouts = function(handler, errorHandler) {
+    var url = '/setup/ui/homepagelayout.jsp';
+    var fetchIdRegex = new RegExp('<a href="[^">]*delID=([^&"]*)[^">]*"[^>]*"Del[^>"]*">', 'gim');
+  	var hpcApi = this;	
+    XBrowser.getHttpResponse(url,
+	  	function(xhr) {
+	  	    var idArr = [];
+	  		var match = fetchIdRegex.exec(xhr.responseText);
+	  		while (match) {
+	  		    idArr.push(match[1]);
+	  		    match = fetchIdRegex.exec(xhr.responseText);
+	  		}
+	  		if (handler) { handler(idArr); }
+	  		else if (hpcApi.notify) {
+	  			hpcApi.notify.setLayouts(idArr);
+	  			hpcApi.notify.notify();
+	  		}
+	  	},
+	    errorHandler ? errorHandler : function(xhr) { hpcApi.handleErrors(xhr); });
+}
+
+HomePageComponentToolkit.prototype.showCustomSidebarComponentsOnAllPages = function(handler) {
+  var url = '/ui/setup/org/UserInterfaceUI';
+  var hpcApi = this;
+    if (Modal.confirm("We will now enable the custom sidebar components on all pages.  If you would like to disable this functionality uncheck Setup -> User Interface -> Show Custom Sidebar Components On All Pages")){
+        var sidebarIframeId = 'showSidebarHiddenFrame';
+        var frameContainer = document.createElement("div");
+        //does this get called once or twice?
+        HomePageComponentToolkit.submitSidebar = function() {
+          var frameDoc = frameContainer.firstChild.contentWindow.document;
+          if (frameDoc.getElementById('customSidebar') && (!frameDoc.getElementById('customSidebar').checked)) {
+            frameDoc.getElementById('customSidebar').checked = true;
+            frameDoc.getElementById('saveButton').click();
+          } else { 
+            if (handler) { handler(idArr); }
+ 	  		else if (hpcApi.notify) { hpcApi.notify.notify(); }
+          }
+        }
+        document.body.appendChild(frameContainer);
+        frameContainer.innerHTML = "<iframe id='" + sidebarIframeId + "' src='" + url + "' onload='HomePageComponentToolkit.submitSidebar()' style='border:0;width:1px;height:1px;'></iframe>";
+    } else {
+       	if (handler) { handler(idArr); }
+  		else if (hpcApi.notify) {
+  			hpcApi.notify.notify();
+  		}
+    }
+}
+
+HomePageComponentToolkit.prototype.handleErrors = function(xhr) {
+	alert("There has been an error during installation.  Try again, and check for an updated package on the appexchange.  If neither of those works, try asking for help in the appexchange forums.")
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Creation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Creations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have any Order Lines. --></errorMessage>
+        <name>No_Order_Lines</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Ship To Account --></errorMessage>
+        <name>Ship_To_Blank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Account_Selection --></label>
+        <name>Account_Selection</name>
+    </webLinks>
+</CustomObjectTranslation>

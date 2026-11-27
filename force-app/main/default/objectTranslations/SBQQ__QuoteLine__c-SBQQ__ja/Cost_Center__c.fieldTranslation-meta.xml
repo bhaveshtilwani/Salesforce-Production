@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cost Center --></label>
+    <name>Cost_Center__c</name>
+    <picklistValues>
+        <masterLabel>0404- Service Repair Billable</masterLabel>
+        <translation><!-- 0404- Service Repair Billable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9001 - Sales Group - Inside/Exe</masterLabel>
+        <translation><!-- 9001 - Sales Group - Inside/Exe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9002 - Sales&amp;Mktg Group - Omni</masterLabel>
+        <translation><!-- 9002 - Sales&amp;Mktg Group - Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9003 - Sales Group - LS</masterLabel>
+        <translation><!-- 9003 - Sales Group - LS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9004 - MKTG - X-Cite</masterLabel>
+        <translation><!-- 9004 - MKTG - X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9005 - MKTG - Burleigh</masterLabel>
+        <translation><!-- 9005 - MKTG - Burleigh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9006 - Sales Group - Cust Serv.</masterLabel>
+        <translation><!-- 9006 - Sales Group - Cust Serv. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9007 - Sales Group - China</masterLabel>
+        <translation><!-- 9007 - Sales Group - China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9008 - MKGT - Print Cure</masterLabel>
+        <translation><!-- 9008 - MKGT - Print Cure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9009 - MKTG-General</masterLabel>
+        <translation><!-- 9009 - MKTG-General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>9500 - Organic Growth</masterLabel>
+        <translation><!-- 9500 - Organic Growth --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

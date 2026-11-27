@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEF_Date_and_Quantity_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL ( Usage__c, &quot;(DEF) Defence&quot;),
+
+OR(
+ISBLANK( EUS_Expiry_Date__c ),
+ISBLANK( EUS_Quantity__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Usage__c</errorDisplayField>
+    <errorMessage>EUS Expiry Date and EUS Quantity are required for (DEF) Defence.</errorMessage>
+</ValidationRule>

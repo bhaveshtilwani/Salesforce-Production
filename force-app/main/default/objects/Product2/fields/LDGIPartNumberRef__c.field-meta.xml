@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LDGIPartNumberRef__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>LDGI Field</description>
+    <label>LDGI Part Number Ref</label>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Products (LDGI Part Number Ref)</relationshipLabel>
+    <relationshipName>Products1</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

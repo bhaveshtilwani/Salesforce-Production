@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_based_on_Approval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ $RecordType.Name = &quot;Sample Loaner&quot;,
+OR(
+ISPICKVAL( Status , &quot;For Shipping&quot;),
+ISPICKVAL( Status , &quot;Shipped&quot;),
+ISPICKVAL( Status , &quot;Returned&quot;),
+ISPICKVAL( Status , &quot;Closed&quot;)),
+OR(
+ISPICKVAL( Approval_Status__c , &quot;Pending&quot;),
+ISPICKVAL( Approval_Status__c , &quot;&quot;),
+ISPICKVAL( Approval_Status__c , &quot;Declined&quot;)))</errorConditionFormula>
+    <errorDisplayField>Approval_Status__c</errorDisplayField>
+    <errorMessage>Request should be approved.</errorMessage>
+</ValidationRule>

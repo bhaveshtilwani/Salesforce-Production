@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Vendor__c</fullName>
+    <label>Shipping Vendor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FDX 2D (CAN)</fullName>
+                <default>false</default>
+                <label>FDX 2D (CAN)</label>
+            </value>
+            <value>
+                <fullName>FDX 2D COL (CAN)</fullName>
+                <default>false</default>
+                <label>FDX 2D COL (CAN)</label>
+            </value>
+            <value>
+                <fullName>FDX EXP</fullName>
+                <default>false</default>
+                <label>FDX EXP</label>
+            </value>
+            <value>
+                <fullName>FDX EXP COL</fullName>
+                <default>false</default>
+                <label>FDX EXP COL</label>
+            </value>
+            <value>
+                <fullName>FDX EXP COL DT</fullName>
+                <default>false</default>
+                <label>FDX EXP COL DT</label>
+            </value>
+            <value>
+                <fullName>FDX EXP DT</fullName>
+                <default>false</default>
+                <label>FDX EXP DT</label>
+            </value>
+            <value>
+                <fullName>FDX GD 3rd</fullName>
+                <default>false</default>
+                <label>FDX GD 3rd</label>
+            </value>
+            <value>
+                <fullName>FDX GD 3rd DT</fullName>
+                <default>false</default>
+                <label>FDX GD 3rd DT</label>
+            </value>
+            <value>
+                <fullName>FDX GD COL</fullName>
+                <default>false</default>
+                <label>FDX GD COL</label>
+            </value>
+            <value>
+                <fullName>FDX GD COL DT</fullName>
+                <default>false</default>
+                <label>FDX GD COL DT</label>
+            </value>
+            <value>
+                <fullName>FDX GD PPD</fullName>
+                <default>false</default>
+                <label>FDX GD PPD</label>
+            </value>
+            <value>
+                <fullName>FDX GD PPD DT</fullName>
+                <default>false</default>
+                <label>FDX GD PPD DT</label>
+            </value>
+            <value>
+                <fullName>FDX Intl Eco 3rd</fullName>
+                <default>false</default>
+                <label>FDX Intl Eco 3rd</label>
+            </value>
+            <value>
+                <fullName>FDX Intl Eco 3rd DT</fullName>
+                <default>false</default>
+                <label>FDX Intl Eco 3rd DT</label>
+            </value>
+            <value>
+                <fullName>FDX Intl Eco Col</fullName>
+                <default>false</default>
+                <label>FDX Intl Eco Col</label>
+            </value>
+            <value>
+                <fullName>FDX Intl Eco Col DT</fullName>
+                <default>false</default>
+                <label>FDX Intl Eco Col DT</label>
+            </value>
+            <value>
+                <fullName>FDX Intl Eco PPD</fullName>
+                <default>false</default>
+                <label>FDX Intl Eco PPD</label>
+            </value>
+            <value>
+                <fullName>FDX Intl Eco PPD DT</fullName>
+                <default>false</default>
+                <label>FDX Intl Eco PPD DT</label>
+            </value>
+            <value>
+                <fullName>FDX P1 3rd</fullName>
+                <default>false</default>
+                <label>FDX P1 3rd</label>
+            </value>
+            <value>
+                <fullName>FDX P1 3rd DT</fullName>
+                <default>false</default>
+                <label>FDX P1 3rd DT</label>
+            </value>
+            <value>
+                <fullName>FDX P1 COL</fullName>
+                <default>false</default>
+                <label>FDX P1 COL</label>
+            </value>
+            <value>
+                <fullName>FDX P1 COL DT</fullName>
+                <default>false</default>
+                <label>FDX P1 COL DT</label>
+            </value>
+            <value>
+                <fullName>FDX P1 PPD</fullName>
+                <default>false</default>
+                <label>FDX P1 PPD</label>
+            </value>
+            <value>
+                <fullName>FDX P1 PPD DT</fullName>
+                <default>false</default>
+                <label>FDX P1 PPD DT</label>
+            </value>
+            <value>
+                <fullName>LDGI Pays</fullName>
+                <default>false</default>
+                <label>LDGI Pays</label>
+            </value>
+            <value>
+                <fullName>LDGI Pays DT</fullName>
+                <default>false</default>
+                <label>LDGI Pays DT</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other DT</fullName>
+                <default>false</default>
+                <label>Other DT</label>
+            </value>
+            <value>
+                <fullName>UPS 3 Day COL DT</fullName>
+                <default>false</default>
+                <label>UPS 3 Day COL DT</label>
+            </value>
+            <value>
+                <fullName>UPS 3 Day Select COL</fullName>
+                <default>false</default>
+                <label>UPS 3 Day Select COL</label>
+            </value>
+            <value>
+                <fullName>UPS Exp COL = Red</fullName>
+                <default>false</default>
+                <label>UPS Exp COL = Red</label>
+            </value>
+            <value>
+                <fullName>UPS Exp COL = Red DT</fullName>
+                <default>false</default>
+                <label>UPS Exp COL = Red DT</label>
+            </value>
+            <value>
+                <fullName>UPS Expedited COL</fullName>
+                <default>false</default>
+                <label>UPS Expedited COL</label>
+            </value>
+            <value>
+                <fullName>UPS Expedited COL DT</fullName>
+                <default>false</default>
+                <label>UPS Expedited COL DT</label>
+            </value>
+            <value>
+                <fullName>UPS GD COL</fullName>
+                <default>false</default>
+                <label>UPS GD COL</label>
+            </value>
+            <value>
+                <fullName>UPS GD COL DT</fullName>
+                <default>false</default>
+                <label>UPS GD COL DT</label>
+            </value>
+            <value>
+                <fullName>UPS Saver COL</fullName>
+                <default>false</default>
+                <label>UPS Saver COL</label>
+            </value>
+            <value>
+                <fullName>UPS Saver COL DT</fullName>
+                <default>false</default>
+                <label>UPS Saver COL DT</label>
+            </value>
+            <value>
+                <fullName>UPS 3 Day COL</fullName>
+                <default>false</default>
+                <label>UPS 3 Day COL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

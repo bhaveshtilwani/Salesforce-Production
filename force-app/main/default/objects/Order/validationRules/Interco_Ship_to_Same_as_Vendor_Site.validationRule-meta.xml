@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interco_Ship_to_Same_as_Vendor_Site</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT( Interco_Ship_to_Account__r.ERP_Site__c ) &lt;&gt;  Vendor_Site__r.Name</errorConditionFormula>
+    <errorDisplayField>Interco_Ship_to_Account__c</errorDisplayField>
+    <errorMessage>Interco Ship To Should be from the Assigned Vendor Site.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group_3_Not_Applicable</fullName>
+    <active>false</active>
+    <description>GER Accounts only</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP Germany&quot;,OR( ISPICKVAL( Account_Group__c , &quot;Ship To - W002&quot;),( ISPICKVAL( Account_Group__c , &quot;Ship To - H002&quot;)),( ISPICKVAL( Account_Group__c , &quot;Bill To - W004&quot;)),( ISPICKVAL( Account_Group__c , &quot;Bill To - H004&quot;)))
+&amp;&amp; NOT(ISBLANK(  Customer_Group_3__c )))</errorConditionFormula>
+    <errorDisplayField>Customer_Group_3__c</errorDisplayField>
+    <errorMessage>Customer Group 3 is not Applicable for selected Account Group.</errorMessage>
+</ValidationRule>

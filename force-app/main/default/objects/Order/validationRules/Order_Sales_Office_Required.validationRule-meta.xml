@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Sales_Office_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISPICKVAL( Site__c , &quot;ESG&quot;),
+ISPICKVAL( Site__c , &quot;QSG&quot;),
+ISPICKVAL( Site__c , &quot;Shenzhen&quot;)),
+ISPICKVAL( Order_Sales_Office__c , &quot;&quot;),
+ISPICKVAL ( SFDC_Integration_Status__c , &quot;In Progress&quot;))</errorConditionFormula>
+    <errorDisplayField>Order_Sales_Office__c</errorDisplayField>
+    <errorMessage>Please select Sales Office.</errorMessage>
+</ValidationRule>

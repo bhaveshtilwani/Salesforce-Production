@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BP_ROLE__c</fullName>
+    <defaultValue>&quot;C3RD&quot;</defaultValue>
+    <inlineHelpText>Customer Values:
+C3RD Customer Third-party
+CCMT Collections management 
+CCOL Credit management. 
+CICO Intercompany
+CZOT One-time customer
+
+Vendors Values:
+V3RD Third-party
+VICO Intercomp
+VEMP Employee
+VZOT One-time vend</inlineHelpText>
+    <label>BP Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>C3RD</fullName>
+                <default>true</default>
+                <label>C3RD</label>
+            </value>
+            <value>
+                <fullName>CCMT</fullName>
+                <default>false</default>
+                <label>CCMT</label>
+            </value>
+            <value>
+                <fullName>CCOL</fullName>
+                <default>false</default>
+                <label>CCOL</label>
+            </value>
+            <value>
+                <fullName>CICO</fullName>
+                <default>false</default>
+                <label>CICO</label>
+            </value>
+            <value>
+                <fullName>CZOT</fullName>
+                <default>false</default>
+                <label>CZOT</label>
+            </value>
+            <value>
+                <fullName>V3RD</fullName>
+                <default>false</default>
+                <label>V3RD</label>
+            </value>
+            <value>
+                <fullName>VICO</fullName>
+                <default>false</default>
+                <label>VICO</label>
+            </value>
+            <value>
+                <fullName>VEMP</fullName>
+                <default>false</default>
+                <label>VEMP</label>
+            </value>
+            <value>
+                <fullName>VZOT</fullName>
+                <default>false</default>
+                <label>VZOT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

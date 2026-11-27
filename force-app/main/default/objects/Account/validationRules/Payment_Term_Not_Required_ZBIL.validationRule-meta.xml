@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Term_Not_Required_ZBIL</fullName>
+    <active>false</active>
+    <description>If maintained by Central Finance.</description>
+    <errorConditionFormula>AND(
+$User.Profile_Name__c = &quot;Central Finance&quot;,
+Is_CFIN_Process__c = 1,
+ISBLANK( PaymentTerm__c ),
+NOT(ISPICKVAL(ERP_Site__c, &quot;Toronto&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>PaymentTerm__c</errorDisplayField>
+    <errorMessage>Payment Term required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SR_Type__c</fullName>
+    <label>SR Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SR-Accessories</fullName>
+                <default>false</default>
+                <label>SR-Accessories</label>
+            </value>
+            <value>
+                <fullName>SR-System</fullName>
+                <default>false</default>
+                <label>SR-System</label>
+            </value>
+            <value>
+                <fullName>SR-NRE</fullName>
+                <default>false</default>
+                <label>SR-NRE</label>
+            </value>
+            <value>
+                <fullName>SR-NRE Tooling</fullName>
+                <default>false</default>
+                <label>SR-NRE Tooling</label>
+            </value>
+            <value>
+                <fullName>SR-Testing</fullName>
+                <default>false</default>
+                <label>SR-Testing</label>
+            </value>
+            <value>
+                <fullName>SR-Prototype</fullName>
+                <default>false</default>
+                <label>SR-Prototype</label>
+            </value>
+            <value>
+                <fullName>SR-Regulatory</fullName>
+                <default>false</default>
+                <label>SR-Regulatory</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

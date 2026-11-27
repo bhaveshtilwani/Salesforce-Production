@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Product_Prices</fullName>
+    <columns>NAME</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <columns>CPQU_ProductCode__c</columns>
+    <columns>CPQU_Product__c</columns>
+    <columns>Product_Family__c</columns>
+    <columns>Product_Price_Type__c</columns>
+    <columns>Region__c</columns>
+    <columns>CPQU_MinimumQuantity__c</columns>
+    <columns>CPQU_MaximumQuantity__c</columns>
+    <columns>CPQU_Price__c</columns>
+    <columns>Contact_PM_for_Price__c</columns>
+    <columns>CPQU_EffectiveDate__c</columns>
+    <columns>CPQU_ExpirationDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Product Prices</label>
+</ListView>

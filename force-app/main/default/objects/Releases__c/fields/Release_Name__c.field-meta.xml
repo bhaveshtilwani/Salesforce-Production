@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Release_Name__c</fullName>
+    <label>Release Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Siebel Migration</fullName>
+                <default>false</default>
+                <label>Siebel Migration</label>
+            </value>
+            <value>
+                <fullName>Sample &amp; Loaner Migration</fullName>
+                <default>false</default>
+                <label>Sample &amp; Loaner Migration</label>
+            </value>
+            <value>
+                <fullName>Outlook Integration</fullName>
+                <default>false</default>
+                <label>Outlook Integration</label>
+            </value>
+            <value>
+                <fullName>Offline Integration</fullName>
+                <default>false</default>
+                <label>Offline Integration</label>
+            </value>
+            <value>
+                <fullName>Maximizer</fullName>
+                <default>false</default>
+                <label>Maximizer</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Lead Import</fullName>
+                <default>false</default>
+                <label>Lead Import</label>
+            </value>
+            <value>
+                <fullName>Internal Support</fullName>
+                <default>false</default>
+                <label>Internal Support</label>
+            </value>
+            <value>
+                <fullName>Localization</fullName>
+                <default>false</default>
+                <label>Localization</label>
+            </value>
+            <value>
+                <fullName>Data Warehouse Integration</fullName>
+                <default>false</default>
+                <label>Data Warehouse Integration</label>
+            </value>
+            <value>
+                <fullName>Import</fullName>
+                <default>false</default>
+                <label>Import</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

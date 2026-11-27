@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>User BBB</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>User BBBs</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- GetBBBDetails --></label>
+        <name>GetBBBDetails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- UpdateBBBSummary --></label>
+        <name>UpdateBBBSummary</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- UserBBBDetails --></label>
+        <name>UserBBBDetails</name>
+    </webLinks>
+</CustomObjectTranslation>

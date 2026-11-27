@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Excelitas_Site__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Excelitas Site</label>
+    <referenceTo>Excelitas_Site__c</referenceTo>
+    <relationshipLabel>Family to Site Mappings</relationshipLabel>
+    <relationshipName>Family_to_Site_Mappings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

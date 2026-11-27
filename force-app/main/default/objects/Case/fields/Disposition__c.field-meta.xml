@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disposition__c</fullName>
+    <description>REO group accountable for the feedback - assigned by CS Mgr upon closure</description>
+    <inlineHelpText>Enter the REO group accountable for the feedback</inlineHelpText>
+    <label>Disposition</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Customer Support</fullName>
+                <default>false</default>
+                <label>Customer Support</label>
+            </value>
+            <value>
+                <fullName>Document Control</fullName>
+                <default>false</default>
+                <label>Document Control</label>
+            </value>
+            <value>
+                <fullName>Engineering – COAT</fullName>
+                <default>false</default>
+                <label>Engineering – COAT</label>
+            </value>
+            <value>
+                <fullName>Engineering – FAB</fullName>
+                <default>false</default>
+                <label>Engineering – FAB</label>
+            </value>
+            <value>
+                <fullName>Planning</fullName>
+                <default>false</default>
+                <label>Planning</label>
+            </value>
+            <value>
+                <fullName>Production Line – Assembly</fullName>
+                <default>false</default>
+                <label>Production Line – Assembly</label>
+            </value>
+            <value>
+                <fullName>Production Line - FQC</fullName>
+                <default>false</default>
+                <label>Production Line - FQC</label>
+            </value>
+            <value>
+                <fullName>Production Line – Infrared Optics (IR)</fullName>
+                <default>false</default>
+                <label>Production Line – Infrared Optics (IR)</label>
+            </value>
+            <value>
+                <fullName>Production Line – Laser Optics (LO)</fullName>
+                <default>false</default>
+                <label>Production Line – Laser Optics (LO)</label>
+            </value>
+            <value>
+                <fullName>Production Line – Lasers</fullName>
+                <default>false</default>
+                <label>Production Line – Lasers</label>
+            </value>
+            <value>
+                <fullName>Production Line – New Product Development(NPI)</fullName>
+                <default>false</default>
+                <label>Production Line – New Product Development(NPI)</label>
+            </value>
+            <value>
+                <fullName>Production Line – Prisms &amp; Flats (P&amp;F)</fullName>
+                <default>false</default>
+                <label>Production Line – Prisms &amp; Flats (P&amp;F)</label>
+            </value>
+            <value>
+                <fullName>Production Line – Ring Laser Gyroscope (RLG)</fullName>
+                <default>false</default>
+                <label>Production Line – Ring Laser Gyroscope (RLG)</label>
+            </value>
+            <value>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+                <label>Purchasing</label>
+            </value>
+            <value>
+                <fullName>Quality - FQC</fullName>
+                <default>false</default>
+                <label>Quality - FQC</label>
+            </value>
+            <value>
+                <fullName>Quality - General</fullName>
+                <default>false</default>
+                <label>Quality - General</label>
+            </value>
+            <value>
+                <fullName>Sales</fullName>
+                <default>false</default>
+                <label>Sales</label>
+            </value>
+            <value>
+                <fullName>Warehouse - Inventory Control</fullName>
+                <default>false</default>
+                <label>Warehouse - Inventory Control</label>
+            </value>
+            <value>
+                <fullName>Warehouse - Receiving</fullName>
+                <default>false</default>
+                <label>Warehouse - Receiving</label>
+            </value>
+            <value>
+                <fullName>Warehouse - Shipping</fullName>
+                <default>false</default>
+                <label>Warehouse - Shipping</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

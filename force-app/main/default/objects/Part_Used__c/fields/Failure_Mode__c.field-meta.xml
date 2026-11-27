@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Failure_Mode__c</fullName>
+    <label>Failure Mode</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA Not Applicable</fullName>
+                <default>false</default>
+                <label>NA Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+                <label>Customer Request</label>
+            </value>
+            <value>
+                <fullName>Damage</fullName>
+                <default>false</default>
+                <label>Damage</label>
+            </value>
+            <value>
+                <fullName>Dimensional Error</fullName>
+                <default>false</default>
+                <label>Dimensional Error</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Finish / Paint</fullName>
+                <default>false</default>
+                <label>Finish / Paint</label>
+            </value>
+            <value>
+                <fullName>FTI (Failure to Ignite)</fullName>
+                <default>false</default>
+                <label>FTI (Failure to Ignite)</label>
+            </value>
+            <value>
+                <fullName>Functional Failure</fullName>
+                <default>false</default>
+                <label>Functional Failure</label>
+            </value>
+            <value>
+                <fullName>Guidelines / Specifications Violated</fullName>
+                <default>false</default>
+                <label>Guidelines / Specifications Violated</label>
+            </value>
+            <value>
+                <fullName>Lack of Preventative Maintenance</fullName>
+                <default>false</default>
+                <label>Lack of Preventative Maintenance</label>
+            </value>
+            <value>
+                <fullName>Light Source - Extinguish</fullName>
+                <default>false</default>
+                <label>Light Source - Extinguish</label>
+            </value>
+            <value>
+                <fullName>Light Source - Functional</fullName>
+                <default>false</default>
+                <label>Light Source - Functional</label>
+            </value>
+            <value>
+                <fullName>Light Source - Ignite Failure</fullName>
+                <default>false</default>
+                <label>Light Source - Ignite Failure</label>
+            </value>
+            <value>
+                <fullName>Light Source - Low Output</fullName>
+                <default>false</default>
+                <label>Light Source - Low Output</label>
+            </value>
+            <value>
+                <fullName>Light Source - Non Passive Failure</fullName>
+                <default>false</default>
+                <label>Light Source - Non Passive Failure</label>
+            </value>
+            <value>
+                <fullName>Light Source - Other</fullName>
+                <default>false</default>
+                <label>Light Source - Other</label>
+            </value>
+            <value>
+                <fullName>Material / Part Incorrect</fullName>
+                <default>false</default>
+                <label>Material / Part Incorrect</label>
+            </value>
+            <value>
+                <fullName>Missing Parts</fullName>
+                <default>false</default>
+                <label>Missing Parts</label>
+            </value>
+            <value>
+                <fullName>No Fault Found</fullName>
+                <default>false</default>
+                <label>No Fault Found</label>
+            </value>
+            <value>
+                <fullName>Packaging</fullName>
+                <default>false</default>
+                <label>Packaging</label>
+            </value>
+            <value>
+                <fullName>Scheduled &amp; Preventative Maintenance</fullName>
+                <default>false</default>
+                <label>Scheduled &amp; Preventative Maintenance</label>
+            </value>
+            <value>
+                <fullName>Test Failure</fullName>
+                <default>false</default>
+                <label>Test Failure</label>
+            </value>
+            <value>
+                <fullName>Workmanship - Assembly</fullName>
+                <default>false</default>
+                <label>Workmanship - Assembly</label>
+            </value>
+            <value>
+                <fullName>Workmanship - Soldering</fullName>
+                <default>false</default>
+                <label>Workmanship - Soldering</label>
+            </value>
+            <value>
+                <fullName>Workmanship - Vendor</fullName>
+                <default>false</default>
+                <label>Workmanship - Vendor</label>
+            </value>
+            <value>
+                <fullName>Workmanship - Wire and Cable</fullName>
+                <default>false</default>
+                <label>Workmanship - Wire and Cable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

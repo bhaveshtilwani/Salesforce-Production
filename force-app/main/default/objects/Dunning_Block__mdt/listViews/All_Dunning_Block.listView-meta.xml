@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Dunning_Block</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>Dunning_Block_ID__c</columns>
+    <columns>Site__c</columns>
+    <columns>IsProtected</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Dunning Block</label>
+</ListView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Should_new_terms_only_apply_to_new_order__c</fullName>
+    <label>Should New Terms Only Apply to New Order</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apply to new backlog only</fullName>
+                <default>true</default>
+                <label>Apply to new backlog only</label>
+            </value>
+            <value>
+                <fullName>Apply to existing and new backlog</fullName>
+                <default>false</default>
+                <label>Apply to existing and new backlog</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

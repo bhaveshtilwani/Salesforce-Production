@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NDA Type --></label>
+    <name>NDA_Type__c</name>
+    <picklistValues>
+        <masterLabel>Mutual NDA</masterLabel>
+        <translation><!-- Mutual NDA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unilateral NDA</masterLabel>
+        <translation><!-- Unilateral NDA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

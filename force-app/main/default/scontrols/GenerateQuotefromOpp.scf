@@ -1,0 +1,6 @@
+<script language="JavaScript"> 
+function redirect() {
+parent.frames.location.replace("/setup/ui/recordtypeselect.jsp?p3=0123000000007lt&save=x&retURL=%2F{!Opportunity_ID}&save_new_url=%2F006%2Fe%3F	00N30000000k3Ql={!Opportunity_Name}%26retURL%3D%252F{!Opportunity_ID}%26accid%3D{!Opportunity_Account_ID}&id=006")
+}
+redirect();
+</script>

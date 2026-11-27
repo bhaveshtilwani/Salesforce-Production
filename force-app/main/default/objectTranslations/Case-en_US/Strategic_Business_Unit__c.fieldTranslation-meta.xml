@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Strategic Business Unit --></label>
+    <name>Strategic_Business_Unit__c</name>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation><!-- Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense &amp; Aerospace</masterLabel>
+        <translation><!-- Defense &amp; Aerospace --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

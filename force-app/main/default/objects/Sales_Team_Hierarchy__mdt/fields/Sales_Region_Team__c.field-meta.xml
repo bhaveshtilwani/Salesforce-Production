@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Region_Team__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Sales Region Team</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AIS Americas</fullName>
+                <default>true</default>
+                <label>AIS Americas</label>
+            </value>
+            <value>
+                <fullName>AIS Asia</fullName>
+                <default>false</default>
+                <label>AIS Asia</label>
+            </value>
+            <value>
+                <fullName>AIS EMEA</fullName>
+                <default>false</default>
+                <label>AIS EMEA</label>
+            </value>
+            <value>
+                <fullName>ALS OEM Americas</fullName>
+                <default>false</default>
+                <label>ALS OEM Americas</label>
+            </value>
+            <value>
+                <fullName>ALS OEM Asia</fullName>
+                <default>false</default>
+                <label>ALS OEM Asia</label>
+            </value>
+            <value>
+                <fullName>ALS OEM EMEA</fullName>
+                <default>false</default>
+                <label>ALS OEM EMEA</label>
+            </value>
+            <value>
+                <fullName>ALS Channel Americas</fullName>
+                <default>false</default>
+                <label>ALS Channel Americas</label>
+            </value>
+            <value>
+                <fullName>ALS Channel Asia</fullName>
+                <default>false</default>
+                <label>ALS Channel Asia</label>
+            </value>
+            <value>
+                <fullName>ALS Channel EMEA</fullName>
+                <default>false</default>
+                <label>ALS Channel EMEA</label>
+            </value>
+            <value>
+                <fullName>IOA Americas</fullName>
+                <default>false</default>
+                <label>IOA Americas</label>
+            </value>
+            <value>
+                <fullName>IOA Asia</fullName>
+                <default>false</default>
+                <label>IOA Asia</label>
+            </value>
+            <value>
+                <fullName>IOA EMEA</fullName>
+                <default>false</default>
+                <label>IOA EMEA</label>
+            </value>
+            <value>
+                <fullName>Semi Americas</fullName>
+                <default>false</default>
+                <label>Semi Americas</label>
+            </value>
+            <value>
+                <fullName>Semi Asia</fullName>
+                <default>false</default>
+                <label>Semi Asia</label>
+            </value>
+            <value>
+                <fullName>Semi EMEA</fullName>
+                <default>false</default>
+                <label>Semi EMEA</label>
+            </value>
+            <value>
+                <fullName>Precision Manufacturing Americas</fullName>
+                <default>false</default>
+                <label>Precision Manufacturing Americas</label>
+            </value>
+            <value>
+                <fullName>Precision Manufacturing EMEA</fullName>
+                <default>false</default>
+                <label>Precision Manufacturing EMEA</label>
+            </value>
+            <value>
+                <fullName>Precision Manufacturing Asia</fullName>
+                <default>false</default>
+                <label>Precision Manufacturing Asia</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS Americas</fullName>
+                <default>false</default>
+                <label>M&amp;LS Americas</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS Asia</fullName>
+                <default>false</default>
+                <label>M&amp;LS Asia</label>
+            </value>
+            <value>
+                <fullName>M&amp;LS EMEA</fullName>
+                <default>false</default>
+                <label>M&amp;LS EMEA</label>
+            </value>
+            <value>
+                <fullName>Channel Americas</fullName>
+                <default>false</default>
+                <label>Channel Americas</label>
+            </value>
+            <value>
+                <fullName>Channel Asia</fullName>
+                <default>false</default>
+                <label>Channel Asia</label>
+            </value>
+            <value>
+                <fullName>Channel EMEA</fullName>
+                <default>false</default>
+                <label>Channel EMEA</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Unassigned Sales Sub Team</fullName>
+                <default>false</default>
+                <label>Unassigned Sales Sub Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

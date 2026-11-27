@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>German_Munition_Category__c</fullName>
+    <description>The code for the German Munition list (Manual entry)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The code for the German Munition list</inlineHelpText>
+    <label>German Munition Category</label>
+    <length>15</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

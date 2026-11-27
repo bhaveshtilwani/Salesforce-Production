@@ -1,0 +1,38 @@
+<template>
+    <table class="rr-table" role="grid">
+        <thead>
+            <tr>
+                <th scope="col">Quote Line</th>
+                <th scope="col">Product</th>
+                <th scope="col">Custom vs Standard</th>
+                <th scope="col">Revenue Recognition Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={rows} for:item="row">
+                <tr key={row.id}>
+                    <td>
+                        <a href="#" class="rr-link" data-id={row.id} onclick={handleRowClick}>{row.name}</a>
+                    </td>
+                    <td>{row.productName}</td>
+                    <td>
+                        <lightning-combobox
+                            variant="label-hidden"
+                            data-id={row.id}
+                            value={row.customVsStandard}
+                            options={picklistOptions}
+                            placeholder="--None--"
+                            onchange={handleChange}
+                        ></lightning-combobox>
+                    </td>
+                    <td>
+                        <span class={row.resultClass}>{row.resultLabel}</span>
+                        <template if:true={row.isExistingValue}>
+                            <span class="result-badge">Existing Value</span>
+                        </template>
+                    </td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</template>

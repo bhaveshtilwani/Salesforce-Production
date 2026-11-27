@@ -1,0 +1,63 @@
+<template>
+    <div class="slds-var-m-around_small">
+        <template if:true={showSpinner}>
+            <div>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </div>
+        </template>
+        <div class="slds-var-m-around_small">
+            <div class="slds-grid slds-wrap">
+                <!-- Required Filters -->
+                <lightning-input
+                    class="slds-col slds-size_1-of-4 slds-var-p-horizontal_small"
+                    type="search"
+                    data-name="Product Name"
+                    label="Product Name"
+                    placeholder="Search Product"
+                    onchange={handleFilterChange}
+                ></lightning-input>
+                <!-- Quote Filters -->
+                <template lwc:if={showQuoteFilters}>
+                    <lightning-input
+                        class="slds-col slds-size_1-of-4 slds-var-p-horizontal_small"
+                        type="search"
+                        data-name="Name"
+                        label="Quote Number"
+                        placeholder="Search Quote"
+                        onchange={handleFilterChange}
+                    ></lightning-input>
+                </template>
+                <!-- Dynamic Filters -->
+                <template for:each={dynamicFilters} for:item="field">
+                    <div key={field.id} class="slds-col slds-size_1-of-4 slds-var-p-horizontal_small">
+                        <template if:true={field.isPicklist}>
+                            <lightning-combobox
+                                data-name={field.name}
+                                label={field.label}
+                                field-name={field.name}
+                                options={field.picklistValues}
+                                onchange={handleFilterChange}
+                            ></lightning-combobox>
+                        </template>
+                        <template if:false={field.isPicklist}>
+                            <lightning-input
+                                data-name={field.name}
+                                label={field.label}
+                                field-name={field.name}
+                                onchange={handleFilterChange}
+                                type={field.type}
+                            ></lightning-input>
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <button
+            class="slds-button slds-button_brand slds-size_1-of-3 slds-button_stretch slds-align_absolute-center slds-var-m-top_x-large"
+            title="Search Products"
+            onclick={handleSearch}
+        >
+            <label>Search Products</label>
+        </button>
+    </div>
+</template>

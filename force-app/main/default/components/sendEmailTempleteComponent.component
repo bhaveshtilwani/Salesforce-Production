@@ -1,0 +1,5 @@
+<apex:component access="global" controller="sendEmailToCaseRec">
+    
+    <apex:attribute name="caseId" type="Id" description="Id of the Case" assignTo="{!cId}"/>
+ 
+</apex:component>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LUMEN_PICKLIST_RECORD_TYPE__c</fullName>
+    <label>LUMEN PICKLIST RECORD TYPE</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Complimenter</fullName>
+                <default>false</default>
+                <label>Complimenter</label>
+            </value>
+            <value>
+                <fullName>Direct Customer</fullName>
+                <default>false</default>
+                <label>Direct Customer</label>
+            </value>
+            <value>
+                <fullName>Formulator</fullName>
+                <default>false</default>
+                <label>Formulator</label>
+            </value>
+            <value>
+                <fullName>House Account</fullName>
+                <default>false</default>
+                <label>House Account</label>
+            </value>
+            <value>
+                <fullName>Internal Account</fullName>
+                <default>false</default>
+                <label>Internal Account</label>
+            </value>
+            <value>
+                <fullName>Large Distributor</fullName>
+                <default>false</default>
+                <label>Large Distributor</label>
+            </value>
+            <value>
+                <fullName>OEM and Integrator</fullName>
+                <default>false</default>
+                <label>OEM and Integrator</label>
+            </value>
+            <value>
+                <fullName>Private Label</fullName>
+                <default>false</default>
+                <label>Private Label</label>
+            </value>
+            <value>
+                <fullName>Representative</fullName>
+                <default>false</default>
+                <label>Representative</label>
+            </value>
+            <value>
+                <fullName>Small Distributor</fullName>
+                <default>false</default>
+                <label>Small Distributor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

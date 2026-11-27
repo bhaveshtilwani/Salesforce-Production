@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Count_Blank_ERP_Part_Numbers__c</fullName>
+    <description>Used to count how many blank ERP Part Numbers exist on Order Products. If this field is greater than 0, it will trigger a validation rule to prevent the CS rep from marking their Order as Completed.</description>
+    <label>Count Blank ERP Part Numbers</label>
+    <summaryFilterItems>
+        <field>OrderItem.Product_SKU__c</field>
+        <operation>equals</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

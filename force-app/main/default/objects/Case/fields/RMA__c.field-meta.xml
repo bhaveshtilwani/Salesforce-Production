@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RMA__c</fullName>
+    <label>RMA Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>With Quality</fullName>
+                <default>false</default>
+                <label>With Quality</label>
+            </value>
+            <value>
+                <fullName>With Customer Service</fullName>
+                <default>false</default>
+                <label>With Customer Service</label>
+            </value>
+            <value>
+                <fullName>With Customer</fullName>
+                <default>false</default>
+                <label>With Customer</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>true</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Working</fullName>
+                <default>false</default>
+                <label>Working</label>
+            </value>
+            <value>
+                <fullName>Feedback Requested</fullName>
+                <default>false</default>
+                <label>Feedback Requested</label>
+            </value>
+            <value>
+                <fullName>Waiting for Customer Reply</fullName>
+                <default>false</default>
+                <label>Waiting for Customer Reply</label>
+            </value>
+            <value>
+                <fullName>Inspection complete - pending action</fullName>
+                <default>false</default>
+                <label>Inspection complete - pending action</label>
+            </value>
+            <value>
+                <fullName>Action in Progress</fullName>
+                <default>false</default>
+                <label>Action in Progress</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Quoted Customer - Pending Response</fullName>
+                <default>false</default>
+                <label>Quoted Customer - Pending Response</label>
+            </value>
+            <value>
+                <fullName>Pending Receipt of Product from Customer</fullName>
+                <default>false</default>
+                <label>Pending Receipt of Product from Customer</label>
+            </value>
+            <value>
+                <fullName>Product Received from Customer - Pending Inspection</fullName>
+                <default>false</default>
+                <label>Product Received from Customer - Pending Inspection</label>
+            </value>
+            <value>
+                <fullName>Inspection Shows No Fault - Ready to Ship Back to Customer</fullName>
+                <default>false</default>
+                <label>Inspection Shows No Fault - Ready to Ship Back to Customer</label>
+            </value>
+            <value>
+                <fullName>Inspection Complete - In Transit to Germany</fullName>
+                <default>false</default>
+                <label>Inspection Complete - In Transit to Germany</label>
+            </value>
+            <value>
+                <fullName>Quote Accepted - Pending Action</fullName>
+                <default>false</default>
+                <label>Quote Accepted - Pending Action</label>
+            </value>
+            <value>
+                <fullName>Action Completed - Ready to Ship Back to Customer</fullName>
+                <default>false</default>
+                <label>Action Completed - Ready to Ship Back to Customer</label>
+            </value>
+            <value>
+                <fullName>Action Completed - In transit from Germany</fullName>
+                <default>false</default>
+                <label>Action Completed - In transit from Germany</label>
+            </value>
+            <value>
+                <fullName>Quote Declined - In Transit from Germany</fullName>
+                <default>false</default>
+                <label>Quote Declined - In Transit from Germany</label>
+            </value>
+            <value>
+                <fullName>Product Received from Germany - Pending Inspection</fullName>
+                <default>false</default>
+                <label>Product Received from Germany - Pending Inspection</label>
+            </value>
+            <value>
+                <fullName>Inspection from Germany Complete - Ready to Ship Back to Customer</fullName>
+                <default>false</default>
+                <label>Inspection from Germany Complete - Ready to Ship Back to Customer</label>
+            </value>
+            <value>
+                <fullName>Item(s) Received</fullName>
+                <default>false</default>
+                <label>Item(s) Received</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Asaph</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Billerica</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Asslar</controllingFieldValue>
+            <valueName>With Quality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Asaph</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Billerica</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Asslar</controllingFieldValue>
+            <valueName>With Customer Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Asaph</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Billerica</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Asslar</controllingFieldValue>
+            <valueName>With Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Asaph</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <controllingFieldValue>Billerica</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Asslar</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Feedback Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Waiting for Customer Reply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Inspection complete - pending action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Action in Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Quoted Customer - Pending Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Pending Receipt of Product from Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Product Received from Customer - Pending Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Inspection Shows No Fault - Ready to Ship Back to Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Inspection Complete - In Transit to Germany</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Quote Accepted - Pending Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Action Completed - Ready to Ship Back to Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Action Completed - In transit from Germany</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Quote Declined - In Transit from Germany</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Product Received from Germany - Pending Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Inspection from Germany Complete - Ready to Ship Back to Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kitchener</controllingFieldValue>
+            <valueName>Item(s) Received</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

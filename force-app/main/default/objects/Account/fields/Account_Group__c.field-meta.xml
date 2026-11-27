@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Group__c</fullName>
+    <inlineHelpText>Account Group - Code	Account Group - Description</inlineHelpText>
+    <label>Account Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ERP_Site__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer int number assgnmnt - DEBI</fullName>
+                <default>false</default>
+                <label>Customer int number assgnmnt - DEBI</label>
+            </value>
+            <value>
+                <fullName>QioDebitoren Europäische Union - DEEU</fullName>
+                <default>false</default>
+                <label>QioDebitoren Europäische Union - DEEU</label>
+            </value>
+            <value>
+                <fullName>Sold to - W001</fullName>
+                <default>false</default>
+                <label>Sold to - W001</label>
+            </value>
+            <value>
+                <fullName>Sold to - H001</fullName>
+                <default>false</default>
+                <label>Sold to - H001</label>
+            </value>
+            <value>
+                <fullName>Sold To/Ship To - 0001</fullName>
+                <default>false</default>
+                <label>Sold To/Ship To - 0001</label>
+            </value>
+            <value>
+                <fullName>Ship To - W002</fullName>
+                <default>false</default>
+                <label>Ship To - W002</label>
+            </value>
+            <value>
+                <fullName>Ship To - H002</fullName>
+                <default>false</default>
+                <label>Ship To - H002</label>
+            </value>
+            <value>
+                <fullName>Ship To - 0002</fullName>
+                <default>false</default>
+                <label>Ship To - 0002</label>
+            </value>
+            <value>
+                <fullName>Bill To - W004</fullName>
+                <default>false</default>
+                <label>Bill To - W004</label>
+            </value>
+            <value>
+                <fullName>Bill To - H004</fullName>
+                <default>false</default>
+                <label>Bill To - H004</label>
+            </value>
+            <value>
+                <fullName>Prospective customer - W005</fullName>
+                <default>false</default>
+                <label>Prospective customer - W005</label>
+            </value>
+            <value>
+                <fullName>Prospective customer - H005</fullName>
+                <default>false</default>
+                <label>Prospective customer - H005</label>
+            </value>
+            <value>
+                <fullName>Customer Service Responsible (ZM) - Z001</fullName>
+                <default>false</default>
+                <label>Customer Service Responsible (ZM) - Z001</label>
+            </value>
+            <value>
+                <fullName>End Customers - ZEND</fullName>
+                <default>false</default>
+                <label>End Customers - ZEND</label>
+            </value>
+            <value>
+                <fullName>Payer/Bill-to Entry - 0003</fullName>
+                <default>false</default>
+                <label>Payer/Bill-to Entry - 0003</label>
+            </value>
+            <value>
+                <fullName>Bill To - 0001</fullName>
+                <default>false</default>
+                <label>Bill To - 0001</label>
+            </value>
+            <value>
+                <fullName>Country of Ultimate Dest - Z004</fullName>
+                <default>false</default>
+                <label>Country of Ultimate Dest - Z004</label>
+            </value>
+            <value>
+                <fullName>Sales Person Responsible (ZT) - Z001</fullName>
+                <default>false</default>
+                <label>Sales Person Responsible (ZT) - Z001</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Rechnungsempfänger - 0004</fullName>
+                <default>false</default>
+                <label>Qioptiq Rechnungsempfänger - 0004</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Warenempfänger -0002</fullName>
+                <default>false</default>
+                <label>Qioptiq Warenempfänger -0002</label>
+            </value>
+            <value>
+                <fullName>Sales Person Responsible (ZT) - Z002</fullName>
+                <default>false</default>
+                <label>Sales Person Responsible (ZT) - Z002</label>
+            </value>
+            <value>
+                <fullName>Sold-to party (OPSL) - 0001</fullName>
+                <default>false</default>
+                <label>Sold-to party (OPSL) - 0001</label>
+            </value>
+            <value>
+                <fullName>Sold-to party - ZCUS</fullName>
+                <default>false</default>
+                <label>Sold-to party - ZCUS</label>
+            </value>
+            <value>
+                <fullName>Ship-to party - 0002</fullName>
+                <default>false</default>
+                <label>Ship-to party - 0002</label>
+            </value>
+            <value>
+                <fullName>Billing email address - ZBIL</fullName>
+                <default>false</default>
+                <label>Billing email address - ZBIL</label>
+            </value>
+            <value>
+                <fullName>Intra-Div &amp; Inter-Co. - ZINT</fullName>
+                <default>false</default>
+                <label>Intra-Div &amp; Inter-Co. - ZINT</label>
+            </value>
+            <value>
+                <fullName>One-time cust.(int.no.assgnmt) - CPD</fullName>
+                <default>false</default>
+                <label>One-time cust.(int.no.assgnmt) - CPD</label>
+            </value>
+            <value>
+                <fullName>Third-Party - Cus. For Trade - Z003</fullName>
+                <default>false</default>
+                <label>Third-Party - Cus. For Trade - Z003</label>
+            </value>
+            <value>
+                <fullName>Intra-Div &amp; Inter-Co For Trade - Z004</fullName>
+                <default>false</default>
+                <label>Intra-Div &amp; Inter-Co For Trade - Z004</label>
+            </value>
+            <value>
+                <fullName>Hierarchy Node - 0012</fullName>
+                <default>false</default>
+                <label>Hierarchy Node - 0012</label>
+            </value>
+            <value>
+                <fullName>3rd Party Agent - ZAGT</fullName>
+                <default>false</default>
+                <label>3rd Party Agent - ZAGT</label>
+            </value>
+            <value>
+                <fullName>Sold-to for upload(DO NOT USE) - Z001</fullName>
+                <default>false</default>
+                <label>Sold-to for upload(DO NOT USE) - Z001</label>
+            </value>
+            <value>
+                <fullName>Customer-Sold To Role</fullName>
+                <default>false</default>
+                <label>Customer-Sold To Role</label>
+            </value>
+            <value>
+                <fullName>Customer-Ship To</fullName>
+                <default>false</default>
+                <label>Customer-Ship To</label>
+            </value>
+            <value>
+                <fullName>Customer-Bill To</fullName>
+                <default>false</default>
+                <label>Customer-Bill To</label>
+            </value>
+            <value>
+                <fullName>Customer-Payer</fullName>
+                <default>false</default>
+                <label>Customer-Payer</label>
+            </value>
+            <value>
+                <fullName>Bill To - QAD</fullName>
+                <default>false</default>
+                <label>Bill To - QAD</label>
+            </value>
+            <value>
+                <fullName>Customer-Ship To Role</fullName>
+                <default>false</default>
+                <label>Customer-Ship To Role</label>
+            </value>
+            <value>
+                <fullName>Customer-Bill To Role</fullName>
+                <default>false</default>
+                <label>Customer-Bill To Role</label>
+            </value>
+            <value>
+                <fullName>Prospect Customer</fullName>
+                <default>false</default>
+                <label>Prospect Customer</label>
+            </value>
+            <value>
+                <fullName>Sold To - P001</fullName>
+                <default>false</default>
+                <label>Sold To - P001</label>
+            </value>
+            <value>
+                <fullName>Ship To - P002</fullName>
+                <default>false</default>
+                <label>Ship To - P002</label>
+            </value>
+            <value>
+                <fullName>Bill To - P004</fullName>
+                <default>false</default>
+                <label>Bill To - P004</label>
+            </value>
+            <value>
+                <fullName>Ship To - QAD</fullName>
+                <default>false</default>
+                <label>Ship To - QAD</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <valueName>Sold To/Ship To - 0001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <valueName>Payer/Bill-to Entry - 0003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <valueName>Country of Ultimate Dest - Z004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Sold-to party - ZCUS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Ship-to party - 0002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Billing email address - ZBIL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Intra-Div &amp; Inter-Co. - ZINT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>One-time cust.(int.no.assgnmt) - CPD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>Third-Party - Cus. For Trade - Z003</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>Intra-Div &amp; Inter-Co For Trade - Z004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Hierarchy Node - 0012</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>3rd Party Agent - ZAGT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Sold-to for upload(DO NOT USE) - Z001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <valueName>Prospect Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Customer-Sold To Role</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Customer-Ship To Role</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Customer-Bill To Role</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>Sold-to party (OPSL) - 0001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Bill To - QAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Ship To - QAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Sold to - W001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Ship To - W002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Bill To - W004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Prospective customer - W005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Customer Service Responsible (ZM) - Z001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>End Customers - ZEND</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Sales Person Responsible (ZT) - Z001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Sales Person Responsible (ZT) - Z002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Customer-Ship To</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Customer-Bill To</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Customer-Payer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Customer int number assgnmnt - DEBI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>QioDebitoren Europäische Union - DEEU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Rechnungsempfänger - 0004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Warenempfänger -0002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <valueName>Sold to - H001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <valueName>Ship To - H002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <valueName>Bill To - H004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <valueName>Prospective customer - H005</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>Ship To - 0002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>Bill To - 0001</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

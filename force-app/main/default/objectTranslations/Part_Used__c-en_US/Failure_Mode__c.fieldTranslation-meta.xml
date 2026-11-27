@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Failure Mode --></label>
+    <name>Failure_Mode__c</name>
+    <picklistValues>
+        <masterLabel>Customer Request</masterLabel>
+        <translation><!-- Customer Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damage</masterLabel>
+        <translation><!-- Damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dimensional Error</masterLabel>
+        <translation><!-- Dimensional Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation</masterLabel>
+        <translation><!-- Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FTI (Failure to Ignite)</masterLabel>
+        <translation><!-- FTI (Failure to Ignite) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finish / Paint</masterLabel>
+        <translation><!-- Finish / Paint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Functional Failure</masterLabel>
+        <translation><!-- Functional Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guidelines / Specifications Violated</masterLabel>
+        <translation><!-- Guidelines / Specifications Violated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Preventative Maintenance</masterLabel>
+        <translation><!-- Lack of Preventative Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Extinguish</masterLabel>
+        <translation><!-- Light Source - Extinguish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Functional</masterLabel>
+        <translation><!-- Light Source - Functional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Ignite Failure</masterLabel>
+        <translation><!-- Light Source - Ignite Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Low Output</masterLabel>
+        <translation><!-- Light Source - Low Output --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Non Passive Failure</masterLabel>
+        <translation><!-- Light Source - Non Passive Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Source - Other</masterLabel>
+        <translation><!-- Light Source - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material / Part Incorrect</masterLabel>
+        <translation><!-- Material / Part Incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing Parts</masterLabel>
+        <translation><!-- Missing Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA Not Applicable</masterLabel>
+        <translation><!-- NA Not Applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Fault Found</masterLabel>
+        <translation><!-- No Fault Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packaging</masterLabel>
+        <translation><!-- Packaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled &amp; Preventative Maintenance</masterLabel>
+        <translation><!-- Scheduled &amp; Preventative Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test Failure</masterLabel>
+        <translation><!-- Test Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workmanship - Assembly</masterLabel>
+        <translation><!-- Workmanship - Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workmanship - Soldering</masterLabel>
+        <translation><!-- Workmanship - Soldering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workmanship - Vendor</masterLabel>
+        <translation><!-- Workmanship - Vendor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workmanship - Wire and Cable</masterLabel>
+        <translation><!-- Workmanship - Wire and Cable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

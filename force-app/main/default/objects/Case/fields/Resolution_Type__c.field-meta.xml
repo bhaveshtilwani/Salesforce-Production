@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution_Type__c</fullName>
+    <label>Resolution Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>accepted: send replacement</fullName>
+                <default>false</default>
+                <label>accepted: send replacement</label>
+            </value>
+            <value>
+                <fullName>accepted: send credit note</fullName>
+                <default>false</default>
+                <label>accepted: send credit note</label>
+            </value>
+            <value>
+                <fullName>partially accepted: send replacement</fullName>
+                <default>false</default>
+                <label>partially accepted: send replacement</label>
+            </value>
+            <value>
+                <fullName>partially accepted: send credit note</fullName>
+                <default>false</default>
+                <label>partially accepted: send credit note</label>
+            </value>
+            <value>
+                <fullName>rejected</fullName>
+                <default>false</default>
+                <label>rejected</label>
+            </value>
+            <value>
+                <fullName>repair process completed</fullName>
+                <default>false</default>
+                <label>repair process completed</label>
+            </value>
+            <value>
+                <fullName>Consignment process completed</fullName>
+                <default>false</default>
+                <label>Consignment process completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

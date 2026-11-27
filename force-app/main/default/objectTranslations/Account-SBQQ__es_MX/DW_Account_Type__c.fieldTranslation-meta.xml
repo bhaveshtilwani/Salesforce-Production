@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- DW Account Type --></label>
+    <name>DW_Account_Type__c</name>
+    <picklistValues>
+        <masterLabel>Business Name</masterLabel>
+        <translation><!-- Business Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Name (T)</masterLabel>
+        <translation><!-- Business Name (T) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Name</masterLabel>
+        <translation><!-- Customer Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Name[C3]</masterLabel>
+        <translation><!-- Customer Name[C3] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Customer</masterLabel>
+        <translation><!-- Global Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inactive</masterLabel>
+        <translation><!-- Inactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M&amp;A</masterLabel>
+        <translation><!-- M&amp;A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospect Customer</masterLabel>
+        <translation><!-- Prospect Customer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

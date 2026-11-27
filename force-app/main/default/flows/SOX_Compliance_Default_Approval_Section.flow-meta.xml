@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>ExcelitasSite</name>
+        <dataType>String</dataType>
+        <expression>Case({!$Record.Site__c}, &quot;Asslar&quot;, &quot;a2v38000000NvbX&quot;, &quot;Billerica&quot;, &quot;a2v38000000OQF9AAO&quot;, &quot;Boulder&quot;, &quot;a2v38000000Nvbe&quot;, &quot;ESG&quot;, &quot;a2v38000000NvbcAAC&quot;, &quot;Goettingen&quot;, &quot;a2v38000000NvbW&quot;, &quot;Hamble&quot;, &quot;a2v38000000Nvbb&quot;, &quot;Manila&quot;, &quot;a2v3t000002DrHCAA0&quot;, &quot;Montreal&quot;, &quot;a2v38000000NvbY&quot;, &quot;Miamisburg&quot;, &quot;a2v3t000001N1eWAAS&quot;, &quot;Munich&quot;, &quot;a2v38000000NvbZ&quot;, &quot;QSG&quot;, &quot;a2v38000000NvbaAAC&quot;, &quot;Salem&quot;, &quot;a2v38000000NvbS&quot;, &quot;Shenzhen&quot;, &quot;a2v38000000Nvbd&quot;, &quot;St Louis&quot;, &quot;a2v38000000NvbVAAS&quot;, &quot;Toronto&quot;, &quot;a2v38000000NvbU&quot;, &quot;Wiesbaden&quot;, &quot;a2v38000000Nvbf&quot;, null)</expression>
+    </formulas>
+    <interviewLabel>SOX Compliance - Default Approval Section {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SOX Compliance - Default Approval Section</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Approver</name>
+        <label>Update Approver</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>ExcelitasSite</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Sox_Compliance_Approver__c</field>
+            <value>
+                <elementReference>$Record.Excelitas_Site__r.Sox_Compliance_Approver__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Approver</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>012Qp000008zpAfIAI</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>(B62) ATYS</label>
+    <protected>false</protected>
+    <values>
+        <field>Sales_Group_ID__c</field>
+        <value xsi:type="xsd:string">B62,B62,B62</value>
+    </values>
+    <values>
+        <field>Site__c</field>
+        <value xsi:type="xsd:string">ESG Optics,ESG L&amp;D,Shenzhen</value>
+    </values>
+</CustomMetadata>

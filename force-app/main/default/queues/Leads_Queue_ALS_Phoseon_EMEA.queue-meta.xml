@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Leads Queue ALS (Phoseon) EMEA</name>
+    <queueMembers>
+        <users>
+            <user>joerg.hannig@excelitas.com</user>
+            <user>joerg.woell@excelitas.com</user>
+            <user>rob.karsten@excelitas.com</user>
+            <user>tanja.bizjak@excelitas.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

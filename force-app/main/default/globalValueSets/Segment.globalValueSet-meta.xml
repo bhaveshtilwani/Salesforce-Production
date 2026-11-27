@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Industrial</fullName>
+        <default>false</default>
+        <label>Advanced Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>MedTech &amp; Semiconductor</fullName>
+        <default>false</default>
+        <label>MedTech &amp; Semiconductor</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense &amp; Aerospace</fullName>
+        <default>false</default>
+        <label>Defense &amp; Aerospace</label>
+    </customValue>
+    <customValue>
+        <fullName>General</fullName>
+        <default>false</default>
+        <label>General</label>
+    </customValue>
+    <customValue>
+        <fullName>CS Segment</fullName>
+        <default>false</default>
+        <label>CS Segment</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Sciences &amp; Semiconductor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Life Sciences &amp; Semiconductor</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Segment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other Segment</label>
+    </customValue>
+    <masterLabel>Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

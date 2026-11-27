@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>To_Do__c</fullName>
+    <label>To Do</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arrange return</fullName>
+                <default>false</default>
+                <label>Arrange return</label>
+            </value>
+            <value>
+                <fullName>Calibrate product</fullName>
+                <default>false</default>
+                <label>Calibrate product</label>
+            </value>
+            <value>
+                <fullName>Check if customer wants product back</fullName>
+                <default>false</default>
+                <label>Check if customer wants product back</label>
+            </value>
+            <value>
+                <fullName>Check if customer will scrap product themselves</fullName>
+                <default>false</default>
+                <label>Check if customer will scrap product themselves</label>
+            </value>
+            <value>
+                <fullName>Check if customer will send replacement order</fullName>
+                <default>false</default>
+                <label>Check if customer will send replacement order</label>
+            </value>
+            <value>
+                <fullName>Close case</fullName>
+                <default>false</default>
+                <label>Close case</label>
+            </value>
+            <value>
+                <fullName>Inspect returned product</fullName>
+                <default>false</default>
+                <label>Inspect returned product</label>
+            </value>
+            <value>
+                <fullName>Invoice &amp; close case</fullName>
+                <default>false</default>
+                <label>Invoice &amp; close case</label>
+            </value>
+            <value>
+                <fullName>Issue credit &amp; close case</fullName>
+                <default>false</default>
+                <label>Issue credit &amp; close case</label>
+            </value>
+            <value>
+                <fullName>Quote customer</fullName>
+                <default>false</default>
+                <label>Quote customer</label>
+            </value>
+            <value>
+                <fullName>Repair product</fullName>
+                <default>false</default>
+                <label>Repair product</label>
+            </value>
+            <value>
+                <fullName>Respond to question</fullName>
+                <default>false</default>
+                <label>Respond to question</label>
+            </value>
+            <value>
+                <fullName>Respond to quotation</fullName>
+                <default>false</default>
+                <label>Respond to quotation</label>
+            </value>
+            <value>
+                <fullName>Return product</fullName>
+                <default>false</default>
+                <label>Return product</label>
+            </value>
+            <value>
+                <fullName>Review case details</fullName>
+                <default>false</default>
+                <label>Review case details</label>
+            </value>
+            <value>
+                <fullName>Scrap/recycle product</fullName>
+                <default>false</default>
+                <label>Scrap/recycle product</label>
+            </value>
+            <value>
+                <fullName>Send order</fullName>
+                <default>false</default>
+                <label>Send order</label>
+            </value>
+            <value>
+                <fullName>Ship back with invoice &amp; close case</fullName>
+                <default>false</default>
+                <label>Ship back with invoice &amp; close case</label>
+            </value>
+            <value>
+                <fullName>Ship back without invoice &amp; close case</fullName>
+                <default>false</default>
+                <label>Ship back without invoice &amp; close case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

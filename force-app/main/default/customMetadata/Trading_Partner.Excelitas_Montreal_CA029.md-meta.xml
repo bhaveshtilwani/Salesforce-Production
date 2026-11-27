@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Excelitas Montreal - (CA029)</label>
+    <protected>false</protected>
+    <values>
+        <field>Site__c</field>
+        <value xsi:type="xsd:string">ESG L&amp;D,ESG Optics,Shenzhen,St Louis,Manila</value>
+    </values>
+    <values>
+        <field>Trading_Partner_ID__c</field>
+        <value xsi:type="xsd:string">CA029,CA029,CA029,CA029,CA029</value>
+    </values>
+    <values>
+        <field>Trading_Partner_Name__c</field>
+        <value xsi:type="xsd:string">Excelitas Montreal - (CA029)</value>
+    </values>
+</CustomMetadata>

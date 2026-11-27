@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test1</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>sControl</linkType>
+    <masterLabel>test1</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <scontrol>test_attach_file</scontrol>
+</WebLink>

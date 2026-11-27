@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Cause --></label>
+    <name>Cause__c</name>
+    <picklistValues>
+        <masterLabel>Assembly Error</masterLabel>
+        <translation><!-- Assembly Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Request</masterLabel>
+        <translation><!-- Customer Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defective Part</masterLabel>
+        <translation><!-- Defective Part --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design Error</masterLabel>
+        <translation><!-- Design Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation Incorrect / Lack of Clarity</masterLabel>
+        <translation><!-- Documentation Incorrect / Lack of Clarity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drawing Error / Misinterpretation</masterLabel>
+        <translation><!-- Drawing Error / Misinterpretation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Influence</masterLabel>
+        <translation><!-- External Influence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Known Issue - Upgrade Required</masterLabel>
+        <translation><!-- Known Issue - Upgrade Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing Error</masterLabel>
+        <translation><!-- Manufacturing Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Materials Defective</masterLabel>
+        <translation><!-- Materials Defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA Not Applicable</masterLabel>
+        <translation><!-- NA Not Applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Normal End of Life (NEOL)</masterLabel>
+        <translation><!-- Normal End of Life (NEOL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operator Error</masterLabel>
+        <translation><!-- Operator Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Ineffective</masterLabel>
+        <translation><!-- Process Ineffective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requirements Ambiguous / Unclear</masterLabel>
+        <translation><!-- Requirements Ambiguous / Unclear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled Maintenance</masterLabel>
+        <translation><!-- Scheduled Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping Error</masterLabel>
+        <translation><!-- Shipping Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Issue</masterLabel>
+        <translation><!-- Software Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplier Error</masterLabel>
+        <translation><!-- Supplier Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tools &amp; Equipment Inadequate / Faulty</masterLabel>
+        <translation><!-- Tools &amp; Equipment Inadequate / Faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training Ineffective</masterLabel>
+        <translation><!-- Training Ineffective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Training Not Provided</masterLabel>
+        <translation><!-- Training Not Provided --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montreal_Order_In_Process_or_Failed</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>ERP_Sales_Order_Number__c</columns>
+    <columns>SFDC_Integration_Status__c</columns>
+    <columns>Bill_To_Account__c</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>Order_Type__c</columns>
+    <columns>Integration_Error_Description__c</columns>
+    <columns>ORDERS.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>Montreal</value>
+    </filters>
+    <filters>
+        <field>SFDC_Integration_Status__c</field>
+        <operation>equals</operation>
+        <value>In Process,Failed</value>
+    </filters>
+    <label>Montreal Orders - In Process or Failed</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

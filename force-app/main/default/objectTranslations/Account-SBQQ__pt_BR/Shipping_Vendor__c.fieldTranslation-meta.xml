@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Red= UPS Express
+Blue= UPS Expedited
+Orange= UPS 3 Day -->
+    </help>
+    <label><!-- Shipping Vendor --></label>
+    <name>Shipping_Vendor__c</name>
+    <picklistValues>
+        <masterLabel>FDX 2D (CAN)</masterLabel>
+        <translation><!-- FDX 2D (CAN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX 2D COL (CAN)</masterLabel>
+        <translation><!-- FDX 2D COL (CAN) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX EXP</masterLabel>
+        <translation><!-- FDX EXP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX EXP COL</masterLabel>
+        <translation><!-- FDX EXP COL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX EXP COL DT</masterLabel>
+        <translation><!-- FDX EXP COL DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX EXP DT</masterLabel>
+        <translation><!-- FDX EXP DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX GD 3rd</masterLabel>
+        <translation><!-- FDX GD 3rd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX GD 3rd DT</masterLabel>
+        <translation><!-- FDX GD 3rd DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX GD COL</masterLabel>
+        <translation><!-- FDX GD COL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX GD COL DT</masterLabel>
+        <translation><!-- FDX GD COL DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX GD PPD</masterLabel>
+        <translation><!-- FDX GD PPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX GD PPD DT</masterLabel>
+        <translation><!-- FDX GD PPD DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX Intl Eco 3rd</masterLabel>
+        <translation><!-- FDX Intl Eco 3rd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX Intl Eco 3rd DT</masterLabel>
+        <translation><!-- FDX Intl Eco 3rd DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX Intl Eco Col</masterLabel>
+        <translation><!-- FDX Intl Eco Col --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX Intl Eco Col DT</masterLabel>
+        <translation><!-- FDX Intl Eco Col DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX Intl Eco PPD</masterLabel>
+        <translation><!-- FDX Intl Eco PPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX Intl Eco PPD DT</masterLabel>
+        <translation><!-- FDX Intl Eco PPD DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX P1 3rd</masterLabel>
+        <translation><!-- FDX P1 3rd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX P1 3rd DT</masterLabel>
+        <translation><!-- FDX P1 3rd DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX P1 COL</masterLabel>
+        <translation><!-- FDX P1 COL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX P1 COL DT</masterLabel>
+        <translation><!-- FDX P1 COL DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX P1 PPD</masterLabel>
+        <translation><!-- FDX P1 PPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FDX P1 PPD DT</masterLabel>
+        <translation><!-- FDX P1 PPD DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LDGI Pays</masterLabel>
+        <translation><!-- LDGI Pays --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LDGI Pays DT</masterLabel>
+        <translation><!-- LDGI Pays DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other DT</masterLabel>
+        <translation><!-- Other DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS 3 Day COL DT</masterLabel>
+        <translation><!-- UPS 3 Day COL DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS 3 Day Select COL</masterLabel>
+        <translation><!-- UPS 3 Day Select COL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Exp COL = Red</masterLabel>
+        <translation><!-- UPS Exp COL = Red --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Exp COL = Red DT</masterLabel>
+        <translation><!-- UPS Exp COL = Red DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Expedited COL</masterLabel>
+        <translation><!-- UPS Expedited COL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Expedited COL DT</masterLabel>
+        <translation><!-- UPS Expedited COL DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS GD COL</masterLabel>
+        <translation><!-- UPS GD COL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS GD COL DT</masterLabel>
+        <translation><!-- UPS GD COL DT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Saver COL</masterLabel>
+        <translation><!-- UPS Saver COL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Saver COL DT</masterLabel>
+        <translation><!-- UPS Saver COL DT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

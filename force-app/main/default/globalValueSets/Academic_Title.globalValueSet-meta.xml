@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Dr.</fullName>
+        <default>false</default>
+        <label>Dr.</label>
+    </customValue>
+    <customValue>
+        <fullName>Prof.</fullName>
+        <default>false</default>
+        <label>Prof.</label>
+    </customValue>
+    <customValue>
+        <fullName>Prof. Dr.</fullName>
+        <default>false</default>
+        <label>Prof. Dr.</label>
+    </customValue>
+    <customValue>
+        <fullName>Bachelor of Arts</fullName>
+        <default>false</default>
+        <label>Bachelor of Arts</label>
+    </customValue>
+    <customValue>
+        <fullName>Doctor of Philosophy</fullName>
+        <default>false</default>
+        <label>Doctor of Philosophy</label>
+    </customValue>
+    <customValue>
+        <fullName>Master of Business Administration</fullName>
+        <default>false</default>
+        <label>Master of Business Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>B.Eng.</fullName>
+        <default>false</default>
+        <label>B.Eng.</label>
+    </customValue>
+    <customValue>
+        <fullName>B.Sc.</fullName>
+        <default>false</default>
+        <label>B.Sc.</label>
+    </customValue>
+    <customValue>
+        <fullName>Dipl.-Betriebswirt</fullName>
+        <default>false</default>
+        <label>Dipl.-Betriebswirt</label>
+    </customValue>
+    <customValue>
+        <fullName>Dipl.-Ing.</fullName>
+        <default>false</default>
+        <label>Dipl.-Ing.</label>
+    </customValue>
+    <customValue>
+        <fullName>Dipl.-Ing. (BA)</fullName>
+        <default>false</default>
+        <label>Dipl.-Ing. (BA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Dipl.-Ing. (FH)</fullName>
+        <default>false</default>
+        <label>Dipl.-Ing. (FH)</label>
+    </customValue>
+    <customValue>
+        <fullName>Dr. Phil</fullName>
+        <default>false</default>
+        <label>Dr. Phil</label>
+    </customValue>
+    <customValue>
+        <fullName>Dr.-Ing.</fullName>
+        <default>false</default>
+        <label>Dr.-Ing.</label>
+    </customValue>
+    <customValue>
+        <fullName>M.Eng.</fullName>
+        <default>false</default>
+        <label>M.Eng.</label>
+    </customValue>
+    <customValue>
+        <fullName>M.Sc.</fullName>
+        <default>false</default>
+        <label>M.Sc.</label>
+    </customValue>
+    <masterLabel>Academic Title</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

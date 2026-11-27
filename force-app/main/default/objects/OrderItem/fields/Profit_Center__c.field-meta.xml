@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profit_Center__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Profit Center</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Profit_Center__c.Site__c</field>
+            <operation>contains</operation>
+            <valueField>$Source.Site__c</valueField>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Profit_Center__c</referenceTo>
+    <relationshipLabel>Order Products</relationshipLabel>
+    <relationshipName>Order_Products</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

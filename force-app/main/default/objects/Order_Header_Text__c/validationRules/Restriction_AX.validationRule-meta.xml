@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restriction_AX</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(  Order__r.Site__c , &quot;Billerica&quot;),
+ISPICKVAL(  Restriction__c ,&quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>Restriction__c</errorDisplayField>
+    <errorMessage>Please indicate Restriction.</errorMessage>
+</ValidationRule>

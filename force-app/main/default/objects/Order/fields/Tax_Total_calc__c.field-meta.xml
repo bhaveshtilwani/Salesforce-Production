@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Total_calc__c</fullName>
+    <description>See email SF  Tax_Total_calc was: for previous formula (too large for display)</description>
+    <externalId>false</externalId>
+    <formula>Tax_ln1__c  + Tax_ln2__c  + Tax_ln3__c  + Tax_ln4__c  + Tax_ln5__c  + Tax_ln6__c  + Tax_ln7__c  + Tax_ln8__c  + Tax_ln9__c + Tax_ln10__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tax_Total_calc</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

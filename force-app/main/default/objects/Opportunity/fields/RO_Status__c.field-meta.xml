@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RO_Status__c</fullName>
+    <label>RO Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Upside (Pull Forward)</fullName>
+                <default>false</default>
+                <label>Upside (Pull Forward)</label>
+            </value>
+            <value>
+                <fullName>Upside (Promote to A)</fullName>
+                <default>false</default>
+                <label>Upside (Promote to A)</label>
+            </value>
+            <value>
+                <fullName>Upside (Overage vs Original Opportunity)</fullName>
+                <default>false</default>
+                <label>Upside (Overage vs Original Opportunity)</label>
+            </value>
+            <value>
+                <fullName>Downside (Push Out)</fullName>
+                <default>false</default>
+                <label>Downside (Push Out)</label>
+            </value>
+            <value>
+                <fullName>Downside (Risk to Lose)</fullName>
+                <default>false</default>
+                <label>Downside (Risk to Lose)</label>
+            </value>
+            <value>
+                <fullName>Downside (Lower Value)</fullName>
+                <default>false</default>
+                <label>Downside (Lower Value)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

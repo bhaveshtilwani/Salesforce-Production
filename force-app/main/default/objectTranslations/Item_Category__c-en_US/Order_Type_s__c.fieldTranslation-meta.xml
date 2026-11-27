@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order Type/s --></label>
+    <name>Order_Type_s__c</name>
+    <picklistValues>
+        <masterLabel>Append Order Lines</masterLabel>
+        <translation><!-- Append Order Lines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Call Off</masterLabel>
+        <translation><!-- Contract Call Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Creation</masterLabel>
+        <translation><!-- Contract Creation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Memo Request</masterLabel>
+        <translation><!-- Credit Memo Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Return</masterLabel>
+        <translation><!-- Customer Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer return for a repair</masterLabel>
+        <translation><!-- Customer return for a repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debit Memo/Bill only Request</masterLabel>
+        <translation><!-- Debit Memo/Bill only Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loan Return</masterLabel>
+        <translation><!-- Loan Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Return no Credit</masterLabel>
+        <translation><!-- Opto Return no Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Return to Stock</masterLabel>
+        <translation><!-- Opto Return to Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Return w/Credit</masterLabel>
+        <translation><!-- Opto Return w/Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety Stock</masterLabel>
+        <translation><!-- Safety Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samples</masterLabel>
+        <translation><!-- Samples --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Sales Order</masterLabel>
+        <translation><!-- Standard Sales Order --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

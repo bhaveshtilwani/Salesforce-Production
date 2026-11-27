@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Purchase Order Type --></label>
+    <name>Purchase_Order_Type__c</name>
+    <picklistValues>
+        <masterLabel>ASAP</masterLabel>
+        <translation><!-- ASAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DB - Dummy purchase order</masterLabel>
+        <translation><!-- DB - Dummy purchase order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ENB - Standard PO DFPS</masterLabel>
+        <translation><!-- ENB - Standard PO DFPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUB - DFPS, Int. Ord. Type</masterLabel>
+        <translation><!-- EUB - DFPS, Int. Ord. Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FO - Framework order</masterLabel>
+        <translation><!-- FO - Framework order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NB - Standard PO</masterLabel>
+        <translation><!-- NB - Standard PO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEB1 - Batam Exp PO (PEB1)</masterLabel>
+        <translation><!-- PEB1 - Batam Exp PO (PEB1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UB - Stock transport ord.</masterLabel>
+        <translation><!-- UB - Stock transport ord. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XNB - Standard PO (XT)</masterLabel>
+        <translation><!-- XNB - Standard PO (XT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XZR - Return PO(ZR) - XT</masterLabel>
+        <translation><!-- XZR - Return PO(ZR) - XT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z3 - for 3rd Party Ord PO</masterLabel>
+        <translation><!-- Z3 - for 3rd Party Ord PO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZB - Standard PO (ZB)</masterLabel>
+        <translation><!-- ZB - Standard PO (ZB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZGIT - Return PO (ZGIT)</masterLabel>
+        <translation><!-- ZGIT - Return PO (ZGIT) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZNB - Standard PO (MN/SL)</masterLabel>
+        <translation><!-- ZNB - Standard PO (MN/SL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZPNB - Std PO - PE (ZPNB)</masterLabel>
+        <translation><!-- ZPNB - Std PO - PE (ZPNB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZPR - Return PO - PE(ZPR)</masterLabel>
+        <translation><!-- ZPR - Return PO - PE(ZPR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR - Return PO(ZR)</masterLabel>
+        <translation><!-- ZR - Return PO(ZR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZS - Standard PO(ZS)</masterLabel>
+        <translation><!-- ZS - Standard PO(ZS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZSNB - Standard PO (QSG)</masterLabel>
+        <translation><!-- ZSNB - Standard PO (QSG) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

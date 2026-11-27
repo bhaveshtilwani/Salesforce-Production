@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>01- Call</fullName>
+        <default>false</default>
+        <label>01- Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>02- Conference Call</fullName>
+        <default>false</default>
+        <label>02- Conference Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>03 - Correspondence</fullName>
+        <default>false</default>
+        <label>03 - Correspondence</label>
+    </standardValue>
+    <standardValue>
+        <fullName>04 - Email</fullName>
+        <default>false</default>
+        <label>04 - Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>05 - Fax</fullName>
+        <default>false</default>
+        <label>05 - Fax</label>
+    </standardValue>
+    <standardValue>
+        <fullName>06 - Meeting</fullName>
+        <default>false</default>
+        <label>06 - Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>07 - Onsite Meeting</fullName>
+        <default>false</default>
+        <label>07 - Onsite Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>08 - Prepare Presentation</fullName>
+        <default>false</default>
+        <label>08 - Prepare Presentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>09 - To Do</fullName>
+        <default>true</default>
+        <label>09 - To Do</label>
+    </standardValue>
+    <standardValue>
+        <fullName>10 - Appointment</fullName>
+        <default>false</default>
+        <label>10 - Appointment</label>
+    </standardValue>
+</StandardValueSet>

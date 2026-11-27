@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Language_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Language__c , 
+&quot;English&quot;, &quot;E&quot;, 
+&quot;German&quot;, &quot;D&quot;, 
+&quot;French&quot;,&quot;F&quot;,  
+&quot;Serbian&quot;,&quot;0&quot;, 
+&quot;Chinese&quot;,&quot;1&quot;, 
+&quot;Thai&quot;,&quot;2&quot;, 
+&quot;Korean&quot;,&quot;3&quot;, 
+&quot;Romanian&quot;,&quot;4&quot;, 
+&quot;Slovenian&quot;,&quot;5&quot;, 
+&quot;Croatian&quot;,&quot;6&quot;, 
+&quot;Malay&quot;,&quot;7&quot;, 
+&quot;Ukranian&quot;,&quot;8&quot;, 
+&quot;Estonian&quot;,&quot;9&quot;, 
+&quot;Arabic&quot;,&quot;A&quot;, 
+&quot;Hebrew&quot;,&quot;B&quot;, 
+&quot;Czech&quot;,&quot;C&quot;, 
+&quot;Greek&quot;,&quot;G&quot;, 
+&quot;Hungarian&quot;,&quot;H&quot;, 
+&quot;Italian&quot;,&quot;I&quot;, 
+&quot;Japanese&quot;,&quot;J&quot;, 
+&quot;Danish&quot;,&quot;K&quot;, 
+&quot;Polish&quot;,&quot;L&quot;, 
+&quot;Chinese trad.&quot;,&quot;M&quot;, 
+&quot;Dutch&quot;,&quot;N&quot;, 
+&quot;Norwegian&quot;,&quot;O&quot;, 
+&quot;Portugese&quot;,&quot;P&quot;,
+&quot;Slovak&quot;,&quot;Q&quot;,  
+&quot;Russian&quot;,&quot;R&quot;, 
+&quot;Spanish&quot;,&quot;S&quot;, 
+&quot;Turkish&quot;,&quot;T&quot;, 
+&quot;Finnish&quot;,&quot;U&quot;, 
+&quot;Swedish&quot;,&quot;V&quot;, 
+&quot;Bulgarian&quot;,&quot;W&quot;, 
+&quot;Lithuanian&quot;,&quot;X&quot;, 
+&quot;Latvian&quot;,&quot;Y&quot;, 
+&quot;Customer reserve&quot;,&quot;Z&quot;, 
+&quot;Afrikaans&quot;,&quot;a&quot;, 
+&quot;Icalandic&quot;,&quot;b&quot;, 
+&quot;Catalan&quot;,&quot;c&quot;, 
+&quot;Serbian (Latin)&quot;,&quot;d&quot;, 
+&quot;Indonesian&quot;,&quot;i&quot;, 
+&quot;Hindi&quot;,&quot;h&quot;, 
+&quot;Kazakh&quot;,&quot;k&quot;, 
+&quot;Vietnamese&quot;,&quot;v&quot;, 
+&quot;N/A&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Language Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

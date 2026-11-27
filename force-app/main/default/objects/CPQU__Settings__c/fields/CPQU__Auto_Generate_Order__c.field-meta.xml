@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQU__Auto_Generate_Order__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Automatically generates an Order record when an Opportunity is marked as Closed Won.</description>
+    <inlineHelpText>Automatically generates an Order record when an Opportunity is marked as Closed Won, checking the Ordered checkbox on the Opportunity.</inlineHelpText>
+    <label>Auto Generate Order</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Light_Guides__c</fullName>
+    <label>Light Guides</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High Power Fiber Light Guides</fullName>
+                <default>false</default>
+                <label>High Power Fiber Light Guides</label>
+            </value>
+            <value>
+                <fullName>Liquid filled Light Guides</fullName>
+                <default>false</default>
+                <label>Liquid filled Light Guides</label>
+            </value>
+            <value>
+                <fullName>Light Guide Retort Stand</fullName>
+                <default>false</default>
+                <label>Light Guide Retort Stand</label>
+            </value>
+            <value>
+                <fullName>1.5 meters</fullName>
+                <default>false</default>
+                <label>1.5 meters</label>
+            </value>
+            <value>
+                <fullName>3 meters</fullName>
+                <default>false</default>
+                <label>3 meters</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Route --></label>
+    <name>Route__c</name>
+    <picklistValues>
+        <masterLabel>Air Parcel Post</masterLabel>
+        <translation><!-- Air Parcel Post --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collected by Customer</masterLabel>
+        <translation><!-- Collected by Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Courier - DHL</masterLabel>
+        <translation><!-- Courier - DHL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Courier - FedEx</masterLabel>
+        <translation><!-- Courier - FedEx --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Courier - TNT</masterLabel>
+        <translation><!-- Courier - TNT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Courier - UPS</masterLabel>
+        <translation><!-- Courier - UPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Courier Services</masterLabel>
+        <translation><!-- Courier Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DHL Express</masterLabel>
+        <translation><!-- DHL Express --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DHL Ground</masterLabel>
+        <translation><!-- DHL Ground --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DHL Second Day Delivery</masterLabel>
+        <translation><!-- DHL Second Day Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East-west Route</masterLabel>
+        <translation><!-- East-west Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eastern Route</masterLabel>
+        <translation><!-- Eastern Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Express 2 Day</masterLabel>
+        <translation><!-- Federal Express 2 Day --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Express First Overnight (8 AM)</masterLabel>
+        <translation><!-- Federal Express First Overnight (8 AM) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Express Ground</masterLabel>
+        <translation><!-- Federal Express Ground --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Express Priority</masterLabel>
+        <translation><!-- Federal Express Priority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Express Saturday Delivery</masterLabel>
+        <translation><!-- Federal Express Saturday Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Express Saver</masterLabel>
+        <translation><!-- Federal Express Saver --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Express Standard</masterLabel>
+        <translation><!-- Federal Express Standard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hand Carry</masterLabel>
+        <translation><!-- Hand Carry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LH Express</masterLabel>
+        <translation><!-- LH Express --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LH Express1</masterLabel>
+        <translation><!-- LH Express1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North-south Route</masterLabel>
+        <translation><!-- North-south Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northern Route</masterLabel>
+        <translation><!-- Northern Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Global</masterLabel>
+        <translation><!-- Opto Global --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Global HAZ</masterLabel>
+        <translation><!-- Opto Global HAZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKI Global</masterLabel>
+        <translation><!-- PKI Global --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South-north Route</masterLabel>
+        <translation><!-- South-north Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southern Route</masterLabel>
+        <translation><!-- Southern Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Instructions</masterLabel>
+        <translation><!-- Special Instructions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speedpost</masterLabel>
+        <translation><!-- Speedpost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swift Rider</masterLabel>
+        <translation><!-- Swift Rider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TNT</masterLabel>
+        <translation><!-- TNT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Air Saver Delivery</masterLabel>
+        <translation><!-- UPS Air Saver Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS BLUE</masterLabel>
+        <translation><!-- UPS BLUE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Consolidated</masterLabel>
+        <translation><!-- UPS Consolidated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Early Dely 8AM</masterLabel>
+        <translation><!-- UPS Early Dely 8AM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Ground</masterLabel>
+        <translation><!-- UPS Ground --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS International Standard</masterLabel>
+        <translation><!-- UPS International Standard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS ORANGE</masterLabel>
+        <translation><!-- UPS ORANGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS RED</masterLabel>
+        <translation><!-- UPS RED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Saturday Delivery</masterLabel>
+        <translation><!-- UPS Saturday Delivery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS WorldWide Expedite</masterLabel>
+        <translation><!-- UPS WorldWide Expedite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Worldwide Express Saver (Intl)</masterLabel>
+        <translation><!-- UPS Worldwide Express Saver (Intl) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West-east Route</masterLabel>
+        <translation><!-- West-east Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Western Route</masterLabel>
+        <translation><!-- Western Route --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>by AIR</masterLabel>
+        <translation><!-- by AIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>by MAIL</masterLabel>
+        <translation><!-- by MAIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>by Sea</masterLabel>
+        <translation><!-- by Sea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>by Truck</masterLabel>
+        <translation><!-- by Truck --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

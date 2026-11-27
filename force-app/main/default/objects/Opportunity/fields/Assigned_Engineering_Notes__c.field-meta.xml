@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Engineering_Notes__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter notes or comments that need to be read by the engineers. This note will appear in the e-mail sent to the engineers to start the costing process.</inlineHelpText>
+    <label>Assigned Engineering Notes</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

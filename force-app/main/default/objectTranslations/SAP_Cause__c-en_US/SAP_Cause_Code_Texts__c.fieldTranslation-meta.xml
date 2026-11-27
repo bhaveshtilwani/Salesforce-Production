@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SAP Cause Code Text --></label>
+    <name>SAP_Cause_Code_Texts__c</name>
+    <picklistValues>
+        <masterLabel>500 EUR Value Limit</masterLabel>
+        <translation><!-- 500 EUR Value Limit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accompanying documents incorrect</masterLabel>
+        <translation><!-- Accompanying documents incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Capacity shortage</masterLabel>
+        <translation><!-- Capacity shortage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cause not detectable</masterLabel>
+        <translation><!-- Cause not detectable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coordination</masterLabel>
+        <translation><!-- Coordination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coordination not sufficient</masterLabel>
+        <translation><!-- Coordination not sufficient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer material</masterLabel>
+        <translation><!-- Customer material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defect</masterLabel>
+        <translation><!-- Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emissionen</masterLabel>
+        <translation><!-- Emissionen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error not reproducible/found</masterLabel>
+        <translation><!-- Error not reproducible/found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foreign engagement</masterLabel>
+        <translation><!-- Foreign engagement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incoming effort missing</masterLabel>
+        <translation><!-- Incoming effort missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incoming effort too late</masterLabel>
+        <translation><!-- Incoming effort too late --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect</masterLabel>
+        <translation><!-- Incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect specifications</masterLabel>
+        <translation><!-- Incorrect specifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of Proper Maintenance</masterLabel>
+        <translation><!-- Lack of Proper Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material missing</masterLabel>
+        <translation><!-- Material missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power / Media supply</masterLabel>
+        <translation><!-- Power / Media supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process missing</masterLabel>
+        <translation><!-- Process missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process not clear</masterLabel>
+        <translation><!-- Process not clear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production error</masterLabel>
+        <translation><!-- Production error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Responsibility and authorities</masterLabel>
+        <translation><!-- Responsibility and authorities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplier material missing / incorrect</masterLabel>
+        <translation><!-- Supplier material missing / incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test equipment error</masterLabel>
+        <translation><!-- Test equipment error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test facility</masterLabel>
+        <translation><!-- Test facility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working environment</masterLabel>
+        <translation><!-- Working environment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>building/location</masterLabel>
+        <translation><!-- building/location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cleanliness/orderliness</masterLabel>
+        <translation><!-- cleanliness/orderliness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>climatic conditions</masterLabel>
+        <translation><!-- climatic conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>communication</masterLabel>
+        <translation><!-- communication --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>communication problem</masterLabel>
+        <translation><!-- communication problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>competence/qualification</masterLabel>
+        <translation><!-- competence/qualification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>composition</masterLabel>
+        <translation><!-- composition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>construction/development</masterLabel>
+        <translation><!-- construction/development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>contamination</masterLabel>
+        <translation><!-- contamination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>control of documents</masterLabel>
+        <translation><!-- control of documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>correlation issue</masterLabel>
+        <translation><!-- correlation issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>customer</masterLabel>
+        <translation><!-- customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>damage</masterLabel>
+        <translation><!-- damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>damage in transit</masterLabel>
+        <translation><!-- damage in transit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>data entry/review</masterLabel>
+        <translation><!-- data entry/review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>defective equipment</masterLabel>
+        <translation><!-- defective equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>defective/incorrect material</masterLabel>
+        <translation><!-- defective/incorrect material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>documentation</masterLabel>
+        <translation><!-- documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>drawing, specification, method errors</masterLabel>
+        <translation><!-- drawing, specification, method errors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>enviroment</masterLabel>
+        <translation><!-- enviroment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>equipment not qualified</masterLabel>
+        <translation><!-- equipment not qualified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>evaluation method</masterLabel>
+        <translation><!-- evaluation method --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>expiration date</masterLabel>
+        <translation><!-- expiration date --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>external</masterLabel>
+        <translation><!-- external --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fault logistic in-house</masterLabel>
+        <translation><!-- fault logistic in-house --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fault logistic service provider</masterLabel>
+        <translation><!-- fault logistic service provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>fixture</masterLabel>
+        <translation><!-- fixture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>handling</masterLabel>
+        <translation><!-- handling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>handling (cooling)</masterLabel>
+        <translation><!-- handling (cooling) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>handling (electrical)</masterLabel>
+        <translation><!-- handling (electrical) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>handling (mechanical)</masterLabel>
+        <translation><!-- handling (mechanical) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>hardware</masterLabel>
+        <translation><!-- hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>immission</masterLabel>
+        <translation><!-- immission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>inadequate measurement system</masterLabel>
+        <translation><!-- inadequate measurement system --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>inadequate supervision</masterLabel>
+        <translation><!-- inadequate supervision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>inadequate/incorrect/lack of tool</masterLabel>
+        <translation><!-- inadequate/incorrect/lack of tool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>inadequate/lack of procedure or process</masterLabel>
+        <translation><!-- inadequate/lack of procedure or process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>inadequate/lack of validation</masterLabel>
+        <translation><!-- inadequate/lack of validation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>incorrect / incomplete</masterLabel>
+        <translation><!-- incorrect / incomplete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>incorrect equipment or material</masterLabel>
+        <translation><!-- incorrect equipment or material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>insufficient/inadequate packaging</masterLabel>
+        <translation><!-- insufficient/inadequate packaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>insufficient/inadequate/lack of training</masterLabel>
+        <translation><!-- insufficient/inadequate/lack of training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lack of/insufficient resources or capaci</masterLabel>
+        <translation><!-- lack of/insufficient resources or capaci --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>machine design</masterLabel>
+        <translation><!-- machine design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>machine/equipment</masterLabel>
+        <translation><!-- machine/equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>malfunction</masterLabel>
+        <translation><!-- malfunction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>man</masterLabel>
+        <translation><!-- man --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>management/documentation</masterLabel>
+        <translation><!-- management/documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>material</masterLabel>
+        <translation><!-- material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>material not qualified</masterLabel>
+        <translation><!-- material not qualified --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>material properties</masterLabel>
+        <translation><!-- material properties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>measurement</masterLabel>
+        <translation><!-- measurement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>measurement object</masterLabel>
+        <translation><!-- measurement object --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>measuring device</masterLabel>
+        <translation><!-- measuring device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>method/process</masterLabel>
+        <translation><!-- method/process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>microstructure</masterLabel>
+        <translation><!-- microstructure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>missing</masterLabel>
+        <translation><!-- missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>not available</masterLabel>
+        <translation><!-- not available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>not implemented as planned</masterLabel>
+        <translation><!-- not implemented as planned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>not our product</masterLabel>
+        <translation><!-- not our product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>operating error</masterLabel>
+        <translation><!-- operating error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>out of specification</masterLabel>
+        <translation><!-- out of specification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>out of warranty</masterLabel>
+        <translation><!-- out of warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>out of/past due for calibration</masterLabel>
+        <translation><!-- out of/past due for calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>parameter out of range</masterLabel>
+        <translation><!-- parameter out of range --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>power failure or transient</masterLabel>
+        <translation><!-- power failure or transient --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pre-material/supplier</masterLabel>
+        <translation><!-- pre-material/supplier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>procedure or process not followed</masterLabel>
+        <translation><!-- procedure or process not followed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>process not followed</masterLabel>
+        <translation><!-- process not followed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>process parameters</masterLabel>
+        <translation><!-- process parameters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>responsibility/authority unclear</masterLabel>
+        <translation><!-- responsibility/authority unclear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>service/maintenance</masterLabel>
+        <translation><!-- service/maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>shipping/transport</masterLabel>
+        <translation><!-- shipping/transport --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>software</masterLabel>
+        <translation><!-- software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>standard</masterLabel>
+        <translation><!-- standard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>storage</masterLabel>
+        <translation><!-- storage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>supplier</masterLabel>
+        <translation><!-- supplier --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>testing/measuring procedure</masterLabel>
+        <translation><!-- testing/measuring procedure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>unexpected condition</masterLabel>
+        <translation><!-- unexpected condition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>unexpected results</masterLabel>
+        <translation><!-- unexpected results --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wear</masterLabel>
+        <translation><!-- wear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>work orgnztn/planning/deploymnt deficncy</masterLabel>
+        <translation><!-- work orgnztn/planning/deploymnt deficncy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>work place design</masterLabel>
+        <translation><!-- work place design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong delivery (mix-up)</masterLabel>
+        <translation><!-- wrong delivery (mix-up) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong instructions/plan</masterLabel>
+        <translation><!-- wrong instructions/plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong material</masterLabel>
+        <translation><!-- wrong material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong order</masterLabel>
+        <translation><!-- wrong order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong specification</masterLabel>
+        <translation><!-- wrong specification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong/insufficient labeling</masterLabel>
+        <translation><!-- wrong/insufficient labeling --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

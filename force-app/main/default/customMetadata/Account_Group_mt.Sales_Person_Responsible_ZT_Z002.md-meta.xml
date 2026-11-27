@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Sales Person Responsible (ZT) - Z002</label>
+    <protected>false</protected>
+    <values>
+        <field>Account_Group__c</field>
+        <value xsi:type="xsd:string">Sales Person Responsible (ZT) - Z002</value>
+    </values>
+    <values>
+        <field>Account_Groups_ID__c</field>
+        <value xsi:type="xsd:string">Z002,Z002,Z002,Z002</value>
+    </values>
+    <values>
+        <field>Site__c</field>
+        <value xsi:type="xsd:string">Munich,Goettingen,Wiesbaden,Hamble</value>
+    </values>
+</CustomMetadata>

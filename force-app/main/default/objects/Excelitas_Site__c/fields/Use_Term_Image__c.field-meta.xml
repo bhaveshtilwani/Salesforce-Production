@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Term_Image__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To use for sites where terms require logo/image file.</description>
+    <label>Use Term Image</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

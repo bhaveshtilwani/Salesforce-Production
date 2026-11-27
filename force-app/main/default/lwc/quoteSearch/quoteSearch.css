@@ -1,0 +1,25 @@
+.slds-hyphenate  {
+    text-align: left !important;
+    font-weight: bold;
+    font-size: large;
+}
+
+.inputWidthForDesktop{
+    width : 40%;
+}
+
+.inputWidthForMobile{
+    width : 100%;
+}
+
+.inputWidthForLookupDesktop{
+    width : 49.5%;
+}
+
+.inputWidthForLookupMobile{
+    width : 100%;
+}
+
+.floatCenter{
+text-align: center !important;
+}

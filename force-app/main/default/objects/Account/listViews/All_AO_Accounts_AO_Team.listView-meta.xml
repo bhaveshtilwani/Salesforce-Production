@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_AO_Accounts_AO_Team</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Business Name</value>
+    </filters>
+    <label>All AO Accounts (AO Team)</label>
+    <sharedTo>
+        <role>Program_Director_AO_QSG_DA</role>
+        <role>Program_Director_AO_UK_DA</role>
+        <role>VP_DA_Advanced_Optronics</role>
+    </sharedTo>
+</ListView>

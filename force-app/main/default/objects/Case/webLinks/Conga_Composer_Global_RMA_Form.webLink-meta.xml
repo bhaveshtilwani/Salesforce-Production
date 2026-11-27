@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Global_RMA_Form</fullName>
+    <availability>online</availability>
+    <description>Created by Conga Solution Manager. Record link: https://excelitas--apxtconga4.vf.force.com/a1OQp000000rqBlMAI.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Global RMA Form</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_520}
+&amp;Id={!Case.Id}
+
+&amp;QueryId=[CMQ0056]0Q_056EAE380879,
+[CMQ0055]0Q_056EAE380879</url>
+    <width>900</width>
+</WebLink>

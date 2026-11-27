@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Check current user&apos;s CS-Team and update the case CS-Team field.</description>
+        <name>Check_Current_User_s_CS_Team</name>
+        <label>Check Current User&apos;s CS-Team</label>
+        <locationX>578</locationX>
+        <locationY>611</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>CS_AMER</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_User.CS_Team__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CS AMER</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_s_CS_Team_to_CS_AMER</targetReference>
+            </connector>
+            <label>CS AMER</label>
+        </rules>
+        <rules>
+            <name>CS_ASIA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_User.CS_Team__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CS ASIA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_s_CS_Team_to_CS_ASIA</targetReference>
+            </connector>
+            <label>CS ASIA</label>
+        </rules>
+        <rules>
+            <name>CS_EMEA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_User.CS_Team__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CS EMEA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_s_CS_Team_to_CS_EMEA</targetReference>
+            </connector>
+            <label>CS EMEA</label>
+        </rules>
+        <rules>
+            <name>CS_ADMIN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Current_User.CS_Team__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>CS ADMIN</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Case_s_CS_Team_to_CS_ADMIN</targetReference>
+            </connector>
+            <label>CS ADMIN</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check bypass flag is enabled to prevent flow processing.</description>
+        <name>Is_Bypass_Enabled</name>
+        <label>Is Bypass Enabled?</label>
+        <locationX>182</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Get_Current_User</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Bypass_Is_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Bypass Is True</label>
+        </rules>
+    </decisions>
+    <description>Update the Case ‘CS-Team’ field with the value from the logged-in User’s ‘CS-Team’ field.</description>
+    <environments>Default</environments>
+    <interviewLabel>Case CS TEAM Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case CS TEAM Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Retrieve the bypass record from custom metadata to determine if the bypass is enabled.</description>
+        <name>Get_Bypass_Record</name>
+        <label>Get Bypass Record</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Bypass_Enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Case_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Get current user record</description>
+        <name>Get_Current_User</name>
+        <label>Get Current User</label>
+        <locationX>578</locationX>
+        <locationY>503</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Current_User_s_CS_Team</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>User</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update Case&apos;s CS Team to CS ADMIN on user CS-Team</description>
+        <name>Update_Case_s_CS_Team_to_CS_ADMIN</name>
+        <label>Update Case&apos;s CS Team to CS ADMIN</label>
+        <locationX>842</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>CS_Team__c</field>
+            <value>
+                <stringValue>CS ADMIN</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Case&apos;s CS Team to CS AMER on user CS Team</description>
+        <name>Update_Case_s_CS_Team_to_CS_AMER</name>
+        <label>Update Case&apos;s CS Team to CS AMER</label>
+        <locationX>50</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>CS_Team__c</field>
+            <value>
+                <stringValue>CS AMER</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Case&apos;s CS Team to CS ASIA on user CS Team</description>
+        <name>Update_Case_s_CS_Team_to_CS_ASIA</name>
+        <label>Update Case&apos;s CS Team to CS ASIA</label>
+        <locationX>314</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>CS_Team__c</field>
+            <value>
+                <stringValue>CS ASIA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Case&apos;s CS Team to CS ASIA on user CS-Team</description>
+        <name>Update_Case_s_CS_Team_to_CS_EMEA</name>
+        <label>Update Case&apos;s CS Team to CS EMEA</label>
+        <locationX>578</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>CS_Team__c</field>
+            <value>
+                <stringValue>CS EMEA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_Record</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Last Price Paid</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Last Prices Paid</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- LPP Searchable Fields --></label>
+        <name>LPPSearchableFields</name>
+    </fieldSets>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

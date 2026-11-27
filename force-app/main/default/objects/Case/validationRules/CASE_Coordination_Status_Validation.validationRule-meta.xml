@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CASE_Coordination_Status_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL( Status  , &quot;Waiting for details&quot;),
+    OR(
+        ISPICKVAL(Case_Subtype__c , &quot;&quot;),
+        ISPICKVAL( Type ,&quot;&quot;)
+       
+    )
+)</errorConditionFormula>
+    <errorMessage>Fill the Required Fields:
+Case Type ,Case Subtype</errorMessage>
+</ValidationRule>

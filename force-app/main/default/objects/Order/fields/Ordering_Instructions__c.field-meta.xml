@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ordering_Instructions__c</fullName>
+    <defaultValue>&quot;When placing your order, please be sure to provide the following:&quot; &amp; BR() &amp; BR()
+&amp; 
+&quot;- Offer name &quot; &amp; BR() &amp;
+&quot;- Shipping method (when shipping collect, please include account number)&quot; &amp; BR() &amp;
+&quot;- IRS#&quot; &amp; BR() &amp;
+&quot;- Purchaser’s contact name and phone number&quot; &amp; BR() &amp; BR() &amp;
+
+&quot;- Provide Required Date if needed by a specific date&quot; &amp; BR() &amp; BR() &amp; 
+
+&quot;- We ship FCA Mississauga or FCA Shipping Point only.&quot; &amp; BR() &amp; BR() &amp; 
+
+&quot;- Orders are non-cancellable.&quot; &amp; BR() &amp; BR() &amp; 
+
+&quot;- Please be advised of the following clauses for all SR orders:&quot;  &amp; BR() &amp; BR() &amp;
+&quot;-SR&apos;s are outside of our standard warranty policy and only include protection from manufacturing defects for the first 30 days.&quot;  &amp; BR() &amp; BR() &amp;
+&quot;- SR&apos;s do not include any regulatory appovals; additionally any SR modified standard product will have all regulatory approval removed.&quot;  &amp; BR() &amp; BR() &amp;
+
+&quot;Please address your Purchase Order to:&quot; &amp; BR() &amp; BR() &amp;
+
+&quot;Excelitas Canada &quot; &amp; BR() &amp;
+&quot;2260 Argentia Road&quot; &amp; BR() &amp;
+&quot;Mississauga,ON&quot; &amp; BR() &amp;
+&quot;L5N 6H7&quot; &amp; BR() &amp; BR() &amp;
+
+&quot;Fax your purchase order to 1-905-821-4812, or email to orders@excelitas.com&quot; &amp; BR() &amp; BR() &amp; 
+&quot;For any repairs or calibration service, please email your purchase order to techsupport@excelitas.com&quot; &amp; BR() &amp; BR() &amp;
+
+&quot;A sales acknowledgement, including ship date, will be sent by fax within 48 hours upon receipt of an acceptable PO.&quot; &amp; BR() &amp; BR() &amp;
+
+&quot;If you do not have an active account, please attach your Credit References along with your PO for credit approval.&quot; &amp; BR() &amp; BR() &amp;
+
+&quot;For any additional information please contact Customer Service at 905-821-2600 or by email at orders@excelitas.com&quot; &amp; BR() &amp; BR() &amp;
+
+&quot;Any product returns must be pre-approved by Excelitas Canada. A 25% restocking fee will be charged for any items returned providing the product is in mint condition. Any special request items (SRs) cannot be cancelled once manufacturing begins and are not returnable once received.&quot; &amp; BR() &amp; BR() &amp; 
+
+
+&quot;The enclosed Excelitas Canada. standard terms and conditions provided herein are a contingency of the offer and shall apply to all subsequent purchase orders. Any additional or different terms provided in the acceptance, Purchase Order, or otherwise shall not take effect.  Any acceptance of this offer is limited to the acceptance of the express terms contained within the offer.&quot;</defaultValue>
+    <inlineHelpText>Put ordering instructions here</inlineHelpText>
+    <label>Ordering Instructions</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

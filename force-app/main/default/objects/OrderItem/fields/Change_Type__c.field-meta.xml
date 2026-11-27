@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Type__c</fullName>
+    <inlineHelpText>Pull-in:  Request by the customer to change the CRD date to an earlier date than originally requested 
+Push-out: Request by the customer to change the CRD date to a later date than originally requested 
+Cancellation: Cancellation of the order line or full order. 
+Expedite: Customer would like us to see if it is possible to ship earlier. 
+Price Change 
+Quantity Change</inlineHelpText>
+    <label>Change Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Quantity Change</fullName>
+                <default>false</default>
+                <label>Quantity Change</label>
+            </value>
+            <value>
+                <fullName>Price Change</fullName>
+                <default>false</default>
+                <label>Price Change</label>
+            </value>
+            <value>
+                <fullName>Pull-in</fullName>
+                <default>false</default>
+                <label>Pull-in</label>
+            </value>
+            <value>
+                <fullName>Push-out</fullName>
+                <default>false</default>
+                <label>Push-out</label>
+            </value>
+            <value>
+                <fullName>Expedite</fullName>
+                <default>false</default>
+                <label>Expedite</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Split Line</fullName>
+                <default>false</default>
+                <label>Split Line</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

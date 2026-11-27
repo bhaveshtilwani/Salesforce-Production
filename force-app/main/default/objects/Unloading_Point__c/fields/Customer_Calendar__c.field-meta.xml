@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Calendar__c</fullName>
+    <label>Customer Calendar</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(01) - Factory calendar Germany standard</fullName>
+                <default>false</default>
+                <label>(01) - Factory calendar Germany standard</label>
+            </value>
+            <value>
+                <fullName>(AJ) - Annual arrangement</fullName>
+                <default>false</default>
+                <label>(AJ) - Annual arrangement</label>
+            </value>
+            <value>
+                <fullName>(AK) - Annual arrangement at the start of the year</fullName>
+                <default>false</default>
+                <label>(AK) - Annual arrangement at the start o</label>
+            </value>
+            <value>
+                <fullName>(AM) - Monthly settlement</fullName>
+                <default>false</default>
+                <label>(AM) - Monthly settlement</label>
+            </value>
+            <value>
+                <fullName>(AN) - Monthly arrangement at the start of the month</fullName>
+                <default>false</default>
+                <label>(AN) - Monthly arrangement at the start</label>
+            </value>
+            <value>
+                <fullName>(AO) - Arrangement Mondays and Fridays</fullName>
+                <default>false</default>
+                <label>(AO) - Arrangement Mondays and Fridays</label>
+            </value>
+            <value>
+                <fullName>(AR) - Factory Calendar Argentina</fullName>
+                <default>false</default>
+                <label>(AR) - Factory Calendar Argentina</label>
+            </value>
+            <value>
+                <fullName>(AT) - Factory calendar Austria standard</fullName>
+                <default>false</default>
+                <label>(AT) - Factory calendar Austria standard</label>
+            </value>
+            <value>
+                <fullName>(AU) - Factory calendar Australia standard</fullName>
+                <default>false</default>
+                <label>(AU) - Factory calendar Australia standa</label>
+            </value>
+            <value>
+                <fullName>(B6) - PKI Batam Working Day</fullName>
+                <default>false</default>
+                <label>(B6) - PKI Batam Working Day</label>
+            </value>
+            <value>
+                <fullName>(BE) - Factory calendar Belgium standard</fullName>
+                <default>false</default>
+                <label>(BE) - Factory calendar Belgium standard</label>
+            </value>
+            <value>
+                <fullName>(BR) - Factory calendar Brazil</fullName>
+                <default>false</default>
+                <label>(BR) - Factory calendar Brazil</label>
+            </value>
+            <value>
+                <fullName>(CA) - Factory calendar Canada standard</fullName>
+                <default>false</default>
+                <label>(CA) - Factory calendar Canada standard</label>
+            </value>
+            <value>
+                <fullName>(CH) - Factory calendar Switzerland standard</fullName>
+                <default>false</default>
+                <label>(CH) - Factory calendar Switzerland stan</label>
+            </value>
+            <value>
+                <fullName>(CN) - Factory calendar China</fullName>
+                <default>false</default>
+                <label>(CN) - Factory calendar China</label>
+            </value>
+            <value>
+                <fullName>(CZ) - Factory calendar Czech Republic standard</fullName>
+                <default>false</default>
+                <label>(CZ) - Factory calendar Czech Republic s</label>
+            </value>
+            <value>
+                <fullName>(DK) - Factory calendar Denmark</fullName>
+                <default>false</default>
+                <label>(DK) - Factory calendar Denmark</label>
+            </value>
+            <value>
+                <fullName>(E1) - Factory calendar Spain Madrid</fullName>
+                <default>false</default>
+                <label>(E1) - Factory calendar Spain Madrid</label>
+            </value>
+            <value>
+                <fullName>(E2) - Factory calendar Spain Catalonia</fullName>
+                <default>false</default>
+                <label>(E2) - Factory calendar Spain Catalonia</label>
+            </value>
+            <value>
+                <fullName>(EL) - Factory calendar France Alsace</fullName>
+                <default>false</default>
+                <label>(EL) - Factory calendar France Alsace</label>
+            </value>
+            <value>
+                <fullName>(ES) - Factory calendar Spain standard</fullName>
+                <default>false</default>
+                <label>(ES) - Factory calendar Spain standard</label>
+            </value>
+            <value>
+                <fullName>(FI) - Factory calendar Finland</fullName>
+                <default>false</default>
+                <label>(FI) - Factory calendar Finland</label>
+            </value>
+            <value>
+                <fullName>(FR) - Factory calendar France standard</fullName>
+                <default>false</default>
+                <label>(FR) - Factory calendar France standard</label>
+            </value>
+            <value>
+                <fullName>(GB) - Factory calendar Great Britain standard</fullName>
+                <default>false</default>
+                <label>(GB) - Factory calendar Great Britain st</label>
+            </value>
+            <value>
+                <fullName>(HU) - Factory calendar Hungary</fullName>
+                <default>false</default>
+                <label>(HU) - Factory calendar Hungary</label>
+            </value>
+            <value>
+                <fullName>(IE) - Factory calendar Republic of Ireland</fullName>
+                <default>false</default>
+                <label>(IE) - Factory calendar Republic of Irel</label>
+            </value>
+            <value>
+                <fullName>(IT) - Factory calendar Italy standard</fullName>
+                <default>false</default>
+                <label>(IT) - Factory calendar Italy standard</label>
+            </value>
+            <value>
+                <fullName>(JP) - Factory calendar Japan standard</fullName>
+                <default>false</default>
+                <label>(JP) - Factory calendar Japan standard</label>
+            </value>
+            <value>
+                <fullName>(MX) - Factory calendar Mexico</fullName>
+                <default>false</default>
+                <label>(MX) - Factory calendar Mexico</label>
+            </value>
+            <value>
+                <fullName>(NL) - Factory calendar Netherlands standard</fullName>
+                <default>false</default>
+                <label>(NL) - Factory calendar Netherlands stan</label>
+            </value>
+            <value>
+                <fullName>(NO) - Factory calendar Norway</fullName>
+                <default>false</default>
+                <label>(NO) - Factory calendar Norway</label>
+            </value>
+            <value>
+                <fullName>(NZ) - Factory calendar New Zealand</fullName>
+                <default>false</default>
+                <label>(NZ) - Factory calendar New Zealand</label>
+            </value>
+            <value>
+                <fullName>(PH) - PerkinElmer Manila Factory Calendar All days working</fullName>
+                <default>false</default>
+                <label>(PH) - PerkinElmer Manila Factory Calend</label>
+            </value>
+            <value>
+                <fullName>(PT) - Factory calendar Portugal</fullName>
+                <default>false</default>
+                <label>(PT) - Factory calendar Portugal</label>
+            </value>
+            <value>
+                <fullName>(RU) - Factory calendar Russian Federation</fullName>
+                <default>false</default>
+                <label>(RU) - Factory calendar Russian Federati</label>
+            </value>
+            <value>
+                <fullName>(SE) - Factory calendar Sweden</fullName>
+                <default>false</default>
+                <label>(SE) - Factory calendar Sweden</label>
+            </value>
+            <value>
+                <fullName>(SG) - Factory calendar Singapore</fullName>
+                <default>false</default>
+                <label>(SG) - Factory calendar Singapore</label>
+            </value>
+            <value>
+                <fullName>(TH) - Thailand</fullName>
+                <default>false</default>
+                <label>(TH) - Thailand</label>
+            </value>
+            <value>
+                <fullName>(TW) - Factory calendar Taiwan</fullName>
+                <default>false</default>
+                <label>(TW) - Factory calendar Taiwan</label>
+            </value>
+            <value>
+                <fullName>(US) - Factory calendar USA standard</fullName>
+                <default>false</default>
+                <label>(US) - Factory calendar USA standard</label>
+            </value>
+            <value>
+                <fullName>(VE) - Factory calendar Venezuela</fullName>
+                <default>false</default>
+                <label>(VE) - Factory calendar Venezuela</label>
+            </value>
+            <value>
+                <fullName>(W6) - Germany Baden Württemberg with workdays Mo Sa</fullName>
+                <default>false</default>
+                <label>(W6) - Germany Baden Württemberg with wo</label>
+            </value>
+            <value>
+                <fullName>(W7) - Germany Baden Württemberg with workdays Mo Sa</fullName>
+                <default>false</default>
+                <label>(W7) - Germany Baden Württemberg with wo</label>
+            </value>
+            <value>
+                <fullName>(W8) - Germany All days are workdays</fullName>
+                <default>false</default>
+                <label>(W8) - Germany All days are workdays</label>
+            </value>
+            <value>
+                <fullName>(Z1) - PKI Spore calendar working day</fullName>
+                <default>false</default>
+                <label>(Z1) - PKI Spore calendar working day</label>
+            </value>
+            <value>
+                <fullName>(Z2) - Delivery Schedule on Tuesday</fullName>
+                <default>false</default>
+                <label>(Z2) - Delivery Schedule on Tuesday</label>
+            </value>
+            <value>
+                <fullName>(Z3) - Delivery Schedule on Wednesday</fullName>
+                <default>false</default>
+                <label>(Z3) - Delivery Schedule on Wednesday</label>
+            </value>
+            <value>
+                <fullName>(Z4) - Delivery Schedule on Thursday</fullName>
+                <default>false</default>
+                <label>(Z4) - Delivery Schedule on Thursday</label>
+            </value>
+            <value>
+                <fullName>(Z5) - Delivery Schedule on Friday</fullName>
+                <default>false</default>
+                <label>(Z5) - Delivery Schedule on Friday</label>
+            </value>
+            <value>
+                <fullName>(Z6) - PKI Batam work day calendar</fullName>
+                <default>false</default>
+                <label>(Z6) - PKI Batam work day calendar</label>
+            </value>
+            <value>
+                <fullName>(Z9) - day week</fullName>
+                <default>false</default>
+                <label>(Z9) - day week</label>
+            </value>
+            <value>
+                <fullName>(ZA) - Factory calendar South Africa</fullName>
+                <default>false</default>
+                <label>(ZA) - Factory calendar South Africa</label>
+            </value>
+            <value>
+                <fullName>(ZB) - PKI Batam Calendar</fullName>
+                <default>false</default>
+                <label>(ZB) - PKI Batam Calendar</label>
+            </value>
+            <value>
+                <fullName>(ZC) - PKI Shenzhen Calendar Working Day</fullName>
+                <default>false</default>
+                <label>(ZC) - PKI Shenzhen Calendar Working Day</label>
+            </value>
+            <value>
+                <fullName>(ZE) - PKI Shenzhen Calendar Alternative Saturday</fullName>
+                <default>false</default>
+                <label>(ZE) - PKI Shenzhen Calendar Alternative</label>
+            </value>
+            <value>
+                <fullName>(ZF) - PKI Shenzhen Factory Calendar Tuesday &amp; Thursday</fullName>
+                <default>false</default>
+                <label>(ZF) - PKI Shenzhen Factory Calendar Tue</label>
+            </value>
+            <value>
+                <fullName>(ZG) - QSG Singapore calendar Capacity Planning</fullName>
+                <default>false</default>
+                <label>(ZG) - QSG Singapore calendar Capacity P</label>
+            </value>
+            <value>
+                <fullName>(ZI) - Delivery Schedule on Monday</fullName>
+                <default>false</default>
+                <label>(ZI) - Delivery Schedule on Monday</label>
+            </value>
+            <value>
+                <fullName>(ZP) - USAD Shipment Factory Calendar</fullName>
+                <default>false</default>
+                <label>(ZP) - USAD Shipment Factory Calendar</label>
+            </value>
+            <value>
+                <fullName>(ZQ) - QSG Singapore calendar</fullName>
+                <default>false</default>
+                <label>(ZQ) - QSG Singapore calendar</label>
+            </value>
+            <value>
+                <fullName>(ZR) - day payment</fullName>
+                <default>false</default>
+                <label>(ZR) - day payment</label>
+            </value>
+            <value>
+                <fullName>(ZS) - PKI Singapore Calendar</fullName>
+                <default>false</default>
+                <label>(ZS) - PKI Singapore Calendar</label>
+            </value>
+            <value>
+                <fullName>(ZT) - Rebate Agreement Fiscal year Calendar</fullName>
+                <default>false</default>
+                <label>(ZT) - Rebate Agreement Fiscal year Cale</label>
+            </value>
+            <value>
+                <fullName>(ZV) - Calendar for commission processing</fullName>
+                <default>false</default>
+                <label>(ZV) - Calendar for commission processin</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,157 @@
+<template>
+    <header>
+        <div class="slds-text-heading_medium"
+            style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px; margin: 10px;">
+            <p style="text-align: -internal-center;font-weight: bold;"> Un-Quote Lines Details Section </p>
+        </div>
+  </header>              
+    <div class="container-fluid " >        
+        <table class= "slds-table" style= "width: 100%;">
+            <thead>
+                <tr>
+                   <!-- <th class="slds-is-sortable slds-wrap " scope="col">
+                        <div class={strTableClassCalTd}
+                            title="S.No">S.No</div>
+                    </th>-->
+                     <th style="text-align: -internal-center" class="slds-is-sortable slds-wrap" scope="col">
+                        <div 
+                        title="Product Number">Product</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap " scope="col">
+                        <div class={strTableClassCalTd}
+                            title="Quantity">Quantity</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class={strTableClassCalTd}
+                            title="Unit Price">Unit Price</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class={strTableClassCalTd}
+                            title="CRD">Customer Requested Date</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class={strTableClassCalTd}
+                            title="OCD">Original Commit Date</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class={strTableClassCalTd}
+                            title="SSD">Scheduled Ship Date</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap " scope="col">
+                        <div class={strTableClassCalTd}
+                            title="Item Category">Item Category</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap " scope="col">
+                        <div class={strTableClassCalTd}
+                            title="Serial Number">Serial Number</div>
+                    </th>
+                   
+                    <!--<th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class={strTableClassCalTd}
+                            title="Order Product">Order Product</div>
+                    </th> -->
+                    <th class="slds-is-sortable slds-wrap " scope="col">
+                        <div class={strTableClassCalTd}
+                            title="Remove">Remove</div>
+                    </th>
+                </tr>
+            </thead>  
+            <tbody>
+                <template for:each = {orderItemRecords} for:item = "acc" for:index="indexVar">
+                    <tr key={acc.key} class="slds-hint-parent">
+                       <!-- <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <div class="slds-text-heading_small slds-text-align_center">
+                                    {indexVar}
+                                </div>
+                            </div>
+                        </td>-->
+                        <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <c-dynamic-lookup selectedsite={selectedsite} lookup-label="Product" key={acc.key} data-id={acc.key} value={acc.Product2Id} object-api-name="Product2" icon-name="standard:orderitem"  
+                                onrecordselection={handleItemProductChange}></c-dynamic-lookup> 
+                            </div>
+                        </td>
+                        <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <lightning-input key={acc.key} data-id={acc.key} name="input1" label="Quantity" value={acc.Quantity} variant="label-hidden" onchange={handleQuantityChange}></lightning-input>
+                            </div>
+                        </td>
+                        <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                              <!--    <lightning-formatted-number key={acc.key} data-id={acc.key} name="input1" label="Unit Price" value={acc.UnitPrice} variant="label-hidden" onchange={handleUnitPriceChange} maximum-fraction-digits="2"></lightning-formatted-number>-->
+                            <lightning-input type="number" formatter="decimal" step="0.01" key={acc.key} data-id={acc.key} name="input1" label="Unit Price" value={acc.UnitPrice} variant="label-hidden" onchange={handleUnitPriceChange}></lightning-input> 
+                            </div>
+                        </td>
+                        <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <lightning-input  type="date" key={acc.key} data-id={acc.key} name="input1" label="Customer Requested Date" value={acc.Customer_Requested_Date__c} variant="label-hidden" onchange={handleCRDChange}></lightning-input>
+                            </div>
+                        </td>
+                        <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <lightning-input type="date" key={acc.key} data-id={acc.key} name="input1" label="Original Commit Date" value={acc.Original_Commit_Date__c} variant="label-hidden" onchange={handleOCDChange}></lightning-input>
+                            </div>
+                        </td>
+                        <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <lightning-input type="date" key={acc.key} data-id={acc.key} name="input1" label="Scheduled Ship Date" value={acc.Scheduled_Ship_Date__c} variant="label-hidden" onchange={handleSSDChange}></lightning-input>
+                            </div>
+                        </td>
+                        <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <c-dynamic-lookup selectedsite={selectedsite} lookup-label="Catgeory" key={acc.key} data-id={acc.key} value={acc.Item_Category__c} object-api-name="Item_Category__c" icon-name="standard:orderitem"  
+                                onrecordselection={handleItemCategoryChange}></c-dynamic-lookup>  
+                              </div>
+                        </td>
+                        <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <lightning-input  type="Text" key={acc.key} data-id={acc.key} name="input1" label="Serial Number" value={acc.Serial_Number__c} variant="label-hidden" onchange={handleSerialNOChange}></lightning-input>
+                            </div>
+                        </td>
+                        
+                        
+                           
+                    <!-- <td class="slds-size_3-of-10" data-label="Prospecting">
+                            <div  title="Prospecting">
+                                <c-dynamic-lookup lookup-label="Order Product" key={acc.key} data-id={acc.key} value={acc.Original_Order_Product__c} object-api-name="OrderItem" icon-name="standard:orderitem"  
+                                onrecordselection={handleItemOrderProductChange}></c-dynamic-lookup>  
+                             
+                               </div>
+                         </td> -->
+                        <td class="slds-size_1-of-10" data-label="Prospecting">
+                            <a name={indexVar} onclick={removeRow}>
+                                    <lightning-icon icon-name="utility:delete" alternative-text="delete"  size="x-small"></lightning-icon>
+                            </a>
+                        </td> 
+                    </tr>
+                </template>
+            </tbody>
+
+        </table>
+
+
+        <div class="slds-align_absolute-left slds-p-top_small">                
+           <!-- <lightning-button 
+            label={toggleSaveLabel} 
+            icon-name="utility:save" 
+            slot="actions"
+            onclick={handleSave}>
+        </lightning-button> -->
+            <lightning-button variant="brand" label="Create Order" name="openConfirmation" title="Create Order"
+                onclick={handleSave} class="slds-m-left_x-small"></lightning-button>
+               <lightning-button variant="brand" label="Cancel" title="Cancel" onclick={handleCancelClick}
+            class="slds-m-left_x-small"></lightning-button> 
+            <lightning-button
+            variant="brand"
+            label="Add Row"
+            title="Add Row"
+            onclick={addRow}
+            icon-name="utility:add"
+            class="slds-m-left_x-small">
+            </lightning-button> 
+        </div>         
+        
+    </div>
+
+</template>

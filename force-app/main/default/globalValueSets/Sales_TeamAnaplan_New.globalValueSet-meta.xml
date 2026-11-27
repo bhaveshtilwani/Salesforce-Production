@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AIS Sales</fullName>
+        <default>false</default>
+        <label>AIS Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>ALS OEM</fullName>
+        <default>false</default>
+        <label>ALS OEM</label>
+    </customValue>
+    <customValue>
+        <fullName>ALS Channel</fullName>
+        <default>false</default>
+        <label>ALS Channel</label>
+    </customValue>
+    <customValue>
+        <fullName>IOA Sales</fullName>
+        <default>false</default>
+        <label>IOA Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Semi Sales</fullName>
+        <default>false</default>
+        <label>Global Semi Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Manufacturing Sales</fullName>
+        <default>false</default>
+        <label>Precision Manufacturing Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>LSM Sales</fullName>
+        <default>false</default>
+        <label>LSM Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>WW Channel</fullName>
+        <default>false</default>
+        <label>WW Channel</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Sales Team</fullName>
+        <default>false</default>
+        <label>Corporate Sales Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Unassigned Sales Team</fullName>
+        <default>false</default>
+        <label>Unassigned Sales Team</label>
+    </customValue>
+    <customValue>
+        <fullName>M&amp;LS Sales</fullName>
+        <default>false</default>
+        <label>M&amp;LS Sales</label>
+    </customValue>
+    <description>Sales Team -&gt; Anaplan Team</description>
+    <masterLabel>Sales Team</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

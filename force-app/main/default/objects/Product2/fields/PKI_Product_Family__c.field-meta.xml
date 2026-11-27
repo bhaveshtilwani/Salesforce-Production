@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PKI_Product_Family__c</fullName>
+    <label>Product Line</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PKI_Product_Line__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Product_Family</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>IR Sensing</controllingFieldValue>
+            <valueName>Pyroelectric Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IR Sensing</controllingFieldValue>
+            <valueName>Thermopile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photon Detection</controllingFieldValue>
+            <valueName>High Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photon Detection</controllingFieldValue>
+            <valueName>Photodiodes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photon Detection</controllingFieldValue>
+            <valueName>SPCM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metrology &amp; Inspection BU</controllingFieldValue>
+            <controllingFieldValue>Imaging &amp; Laser Systems BU</controllingFieldValue>
+            <valueName>Metrology &amp; Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing</controllingFieldValue>
+            <valueName>Catalog and Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing</controllingFieldValue>
+            <valueName>Optical Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing</controllingFieldValue>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Precision Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Laser Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Semiconductor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermal Processing</controllingFieldValue>
+            <valueName>Thermal Processing - Noblelight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS BU</controllingFieldValue>
+            <valueName>CS Line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated Optronics &amp; Avionics</controllingFieldValue>
+            <valueName>Advanced Sensor Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated Optronics &amp; Avionics</controllingFieldValue>
+            <valueName>Optronics Platforms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated Optronics &amp; Avionics</controllingFieldValue>
+            <valueName>Precision Optronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated Optronics &amp; Avionics</controllingFieldValue>
+            <valueName>Precision Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Holistic Lithography BU</controllingFieldValue>
+            <valueName>Fibers &amp; Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Holistic Lithography BU</controllingFieldValue>
+            <valueName>Lightsources</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Holistic Lithography BU</controllingFieldValue>
+            <valueName>Modules &amp; Objectives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imaging &amp; Laser Systems BU</controllingFieldValue>
+            <valueName>Aerial &amp; Laser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imaging &amp; Laser Systems BU</controllingFieldValue>
+            <valueName>Aerial Imaging &amp; Laser Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imaging &amp; Laser Systems BU</controllingFieldValue>
+            <valueName>Optics &amp; Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Imaging &amp; Laser Systems BU</controllingFieldValue>
+            <valueName>Optics &amp; Imaging Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plasma Light Sources BU</controllingFieldValue>
+            <valueName>Analytical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plasma Light Sources BU</controllingFieldValue>
+            <valueName>Cermax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plasma Light Sources BU</controllingFieldValue>
+            <valueName>Flash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions BU</controllingFieldValue>
+            <valueName>Biomedical Light Engines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions BU</controllingFieldValue>
+            <valueName>Camera Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions BU</controllingFieldValue>
+            <valueName>High Voltage Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions BU</controllingFieldValue>
+            <valueName>Laser Engines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions BU</controllingFieldValue>
+            <valueName>Optical Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solutions BU</controllingFieldValue>
+            <valueName>Solid State Lighting Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disinfection</controllingFieldValue>
+            <valueName>Disinfection - Noblelight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Frequency Switches &amp; Defense Sensors</controllingFieldValue>
+            <valueName>Freq Stds and Switches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General</controllingFieldValue>
+            <valueName>General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing</controllingFieldValue>
+            <valueName>Curing LED - Noblelight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing</controllingFieldValue>
+            <valueName>Curing LED Phoseon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing</controllingFieldValue>
+            <valueName>Curing Omnicure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing</controllingFieldValue>
+            <valueName>Industrial Curing - Noblelight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing</controllingFieldValue>
+            <valueName>Microwave</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing</controllingFieldValue>
+            <valueName>Microwave - Noblelight</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing</controllingFieldValue>
+            <valueName>Noblelight Other - Noblelight</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

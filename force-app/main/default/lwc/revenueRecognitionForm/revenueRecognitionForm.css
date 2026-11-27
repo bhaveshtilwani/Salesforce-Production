@@ -1,0 +1,77 @@
+.result-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    font-family: inherit;
+}
+
+.result-inner {
+    display: flex;
+    align-items: center;
+}
+
+.result-label {
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.result-value {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+/* Saved badge — shown when displaying existing stored value */
+.result-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.3);
+    color: inherit;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* Blue — Point in Time */
+.result-pit {
+    background-color: #0070d2;
+    color: #ffffff;
+}
+
+/* Green — Over Time */
+.result-ot {
+    background-color: #2e844a;
+    color: #ffffff;
+}
+
+/* Amber — NRE */
+.result-nre {
+    background-color: #f4bc25;
+    color: #1c1c1c;
+}
+.result-nre .result-badge {
+    background: rgba(0,0,0,0.1);
+    color: #1c1c1c;
+    border-color: rgba(0,0,0,0.2);
+}
+
+/* Yellow-green — Service */
+.result-service {
+    background-color: #8bc34a;
+    color: #1c1c1c;
+}
+.result-service .result-badge {
+    background: rgba(0,0,0,0.1);
+    color: #1c1c1c;
+    border-color: rgba(0,0,0,0.2);
+}
+.result-mismatch {
+    background-color: #fff3cd;
+    border-left: 4px solid #e6a817;
+    color: #7d5a00;
+}

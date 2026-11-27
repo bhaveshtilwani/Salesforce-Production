@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsible_Party__c</fullName>
+    <label>Responsible Party</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Chris Bigwood</fullName>
+                <default>false</default>
+                <label>Chris Bigwood</label>
+            </value>
+            <value>
+                <fullName>Doug Benner</fullName>
+                <default>false</default>
+                <label>Doug Benner</label>
+            </value>
+            <value>
+                <fullName>Jim Haney</fullName>
+                <default>false</default>
+                <label>Jim Haney</label>
+            </value>
+            <value>
+                <fullName>John Cronley</fullName>
+                <default>false</default>
+                <label>John Cronley</label>
+            </value>
+            <value>
+                <fullName>John Russell</fullName>
+                <default>false</default>
+                <label>John Russell</label>
+            </value>
+            <value>
+                <fullName>Jonathan Partee</fullName>
+                <default>false</default>
+                <label>Jonathan Partee</label>
+            </value>
+            <value>
+                <fullName>Pat Zajac</fullName>
+                <default>false</default>
+                <label>Pat Zajac</label>
+            </value>
+            <value>
+                <fullName>Peter White</fullName>
+                <default>false</default>
+                <label>Peter White</label>
+            </value>
+            <value>
+                <fullName>Robin Swain</fullName>
+                <default>false</default>
+                <label>Robin Swain</label>
+            </value>
+            <value>
+                <fullName>Roy Streetz</fullName>
+                <default>false</default>
+                <label>Roy Streetz</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

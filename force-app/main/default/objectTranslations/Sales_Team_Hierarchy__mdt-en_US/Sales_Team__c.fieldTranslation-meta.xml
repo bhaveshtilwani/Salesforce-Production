@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Team --></label>
+    <name>Sales_Team__c</name>
+    <picklistValues>
+        <masterLabel>AIS Sales</masterLabel>
+        <translation><!-- AIS Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALS Channel</masterLabel>
+        <translation><!-- ALS Channel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ALS OEM</masterLabel>
+        <translation><!-- ALS OEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Sales Team</masterLabel>
+        <translation><!-- Corporate Sales Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Global Semi Sales</masterLabel>
+        <translation><!-- Global Semi Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IOA Sales</masterLabel>
+        <translation><!-- IOA Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSM Sales</masterLabel>
+        <translation><!-- LSM Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Precision Manufacturing Sales</masterLabel>
+        <translation><!-- Precision Manufacturing Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unassigned Sales Team</masterLabel>
+        <translation><!-- Unassigned Sales Team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WW Channel</masterLabel>
+        <translation><!-- WW Channel --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

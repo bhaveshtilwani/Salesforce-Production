@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salem_CP_Partner_Functions</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Contact_Partner_Email_from_SAP__c</columns>
+    <columns>ERP_ID__c</columns>
+    <columns>Order__c</columns>
+    <columns>Partner_Function_Id__c</columns>
+    <columns>Site__c</columns>
+    <columns>Sequence_No__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>Salem</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>CP</value>
+    </filters>
+    <label>Salem CP Partner Functions</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

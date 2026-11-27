@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RA_Status__c</fullName>
+    <label>Status (OLD)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Closed: Not Received</fullName>
+                <default>false</default>
+                <label>Closed: Not Received</label>
+            </value>
+            <value>
+                <fullName>Opened in Error</fullName>
+                <default>false</default>
+                <label>Opened in Error</label>
+            </value>
+            <value>
+                <fullName>Waiting for Agreement</fullName>
+                <default>false</default>
+                <label>Waiting for Agreement</label>
+            </value>
+            <value>
+                <fullName>On Loan</fullName>
+                <default>false</default>
+                <label>On Loan</label>
+            </value>
+            <value>
+                <fullName>Waiting for Return</fullName>
+                <default>false</default>
+                <label>Waiting for Return</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

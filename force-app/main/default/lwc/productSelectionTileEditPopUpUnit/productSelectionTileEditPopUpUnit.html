@@ -1,0 +1,58 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="spinnerContainer">
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </div>
+    </template>
+    <div class="slds-grid slds-gutters slds-wrap">
+        <div class="slds-col slds-size_11-of-12">
+            <lightning-record-edit-form object-api-name="OrderItem">
+                <div class="slds-grid slds-wrap slds-var-p-vertical_medium slds-border_bottom">
+                    <template for:each={editedFields} for:item="field">
+                        <div key={field.Id} class="slds-col slds-size_1-of-3 slds-var-p-horizontal_x-small">
+                            <lightning-input-field
+                                label={field.Field_API_Name__c}
+                                field-name={field.Field_API_Name__c}
+                                value={field.value}
+                                disabled={field.disableField}
+                                onchange={handleInputChange}
+                                date-style="short"
+                                data-fieldid={field.Id}
+                            >
+                            </lightning-input-field>
+                        </div>
+                    </template>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+        <div class="slds-col slds-size_1-of-12 slds-align_absolute-center">
+            <div class="slds-grid slds-grid_vertical">
+                <lightning-button-icon
+                    class="slds-col slds-size_1-of-1"
+                    icon-name="utility:delete"
+                    variant="container"
+                    alternative-text="Delete"
+                    title="Delete"
+                    onclick={handleDelete}
+                ></lightning-button-icon>
+                <template lwc:if={showPricingConditions}>
+                    <!-- <lightning-button-icon
+                        icon-name="utility:money"
+                        alternative-text="Pricing Conditions"
+                        variant="container"
+                        title="Pricing Conditions"
+                        onclick={handlePricingConditionsPopup}
+                    ></lightning-button-icon> -->
+                    <lightning-button
+                        variant="base"
+                        label={numberOfPricingConditions}
+                        title="Pricing Conditions"
+                        icon-name="utility:money"
+                        class="slds-col slds-size_1-of-1"
+                        onclick={handlePricingConditionsPopup}
+                    ></lightning-button>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

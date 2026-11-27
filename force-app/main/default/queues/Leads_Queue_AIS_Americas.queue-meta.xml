@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Leads Queue AIS Americas</name>
+    <queueMembers>
+        <users>
+            <user>allyson.budnik@excelitas.com</user>
+            <user>amy.geiger@excelitas.com</user>
+            <user>dan.iadonisi@excelitas.com</user>
+            <user>harpreet.singh@excelitas.com</user>
+            <user>mark.wendtland@excelitas.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

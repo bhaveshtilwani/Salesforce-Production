@@ -1,0 +1,31 @@
+<template>
+    <template if:true={isBusinessName}>
+        <lightning-card title="Send Account to SAP" icon-name="standard:account">
+            <div class="slds-p-around_medium">
+                <lightning-combobox
+                    name="erpSite"
+                    label="ERP Site"
+                    value={selectedSite}
+                    options={erpSiteOptions}
+                    placeholder="Select ERP Site"
+                    onchange={handleSiteChange}
+                ></lightning-combobox>
+
+                <div class="slds-m-top_medium">
+                    <lightning-button
+                        label="Send"
+                        variant="brand"
+                        onclick={handleSend}
+                        disabled={isSendDisabled}
+                    ></lightning-button>
+                </div>
+
+                <template if:true={isLoading}>
+                    <div class="slds-m-top_medium slds-text-align_center">
+                        <lightning-spinner alternative-text="Sending..." size="small"></lightning-spinner>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </template>
+</template>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RMA Case Reason --></label>
+    <name>RMA_Case_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Calibration</masterLabel>
+        <translation><!-- Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Return</masterLabel>
+        <translation><!-- Consignment Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Damaged product delivered</masterLabel>
+        <translation><!-- Damaged product delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluation</masterLabel>
+        <translation><!-- Evaluation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faulty product delivered</masterLabel>
+        <translation><!-- Faulty product delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loaner / demo return</masterLabel>
+        <translation><!-- Loaner / demo return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product delivered too early</masterLabel>
+        <translation><!-- Product delivered too early --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product no longer working as it should</masterLabel>
+        <translation><!-- Product no longer working as it should --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Request from customer to scrap / recycle the product for them</masterLabel>
+        <translation><!-- Request from customer to scrap / recycle the product for them --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade</masterLabel>
+        <translation><!-- Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong product delivered</masterLabel>
+        <translation><!-- Wrong product delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong quantity delivered</masterLabel>
+        <translation><!-- Wrong quantity delivered --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

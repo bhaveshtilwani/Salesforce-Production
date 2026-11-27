@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Status, &quot;Shipped&quot;),
+ISBLANK(Shipping_Date__c))</errorConditionFormula>
+    <errorDisplayField>Shipping_Date__c</errorDisplayField>
+    <errorMessage>Please indicate date.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,22 @@
+/**
+ * SawBannersBeGone Installer
+ */
+function sbgInstaller() {
+    this.superclass();
+}
+
+sbgInstaller.prototype = new GenericHpcInstaller();
+sbgInstaller.prototype.constructor = sbgInstaller;
+sbgInstaller.prototype.superclass = GenericHpcInstaller;
+
+sbgInstaller.prototype.getTitle = function() {
+    return 'SawBannersBeGone';
+}
+
+sbgInstaller.prototype.getContent = function() {
+  return document.getElementById('installationContent').value;
+}
+
+sbgInstaller.prototype.isSidebarComponent = function() {
+    return false;
+}

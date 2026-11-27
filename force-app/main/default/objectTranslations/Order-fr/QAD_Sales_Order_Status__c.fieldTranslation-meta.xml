@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- QAD Sales Order Status --></label>
+    <name>QAD_Sales_Order_Status__c</name>
+    <picklistValues>
+        <masterLabel>- Order OK to ship</masterLabel>
+        <translation><!-- - Order OK to ship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Debooking</masterLabel>
+        <translation><!-- Closed Debooking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Duplicate</masterLabel>
+        <translation><!-- Closed Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed Lost</masterLabel>
+        <translation><!-- Closed Lost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed QC call off done- deleted</masterLabel>
+        <translation><!-- Closed QC call off done- deleted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD - Credit Hold</masterLabel>
+        <translation><!-- HD - Credit Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD - Hold Status - Order Not OK to ship</masterLabel>
+        <translation><!-- HD - Hold Status - Order Not OK to ship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opened in Error</masterLabel>
+        <translation><!-- Opened in Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z2 - Tax Hold</masterLabel>
+        <translation><!-- Z2 - Tax Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z3 - Confirm Shipment Info</masterLabel>
+        <translation><!-- Z3 - Confirm Shipment Info --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z4 - Awaiting Revised PO</masterLabel>
+        <translation><!-- Z4 - Awaiting Revised PO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z5 - Letter of Credit</masterLabel>
+        <translation><!-- Z5 - Letter of Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z6 - Customer Hold</masterLabel>
+        <translation><!-- Z6 - Customer Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z7 - Prepaid</masterLabel>
+        <translation><!-- Z7 - Prepaid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z8 - Waiting for info from Customer</masterLabel>
+        <translation><!-- Z8 - Waiting for info from Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Z9 - Hold - Other</masterLabel>
+        <translation><!-- Z9 - Hold - Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZC - Credit Card Check</masterLabel>
+        <translation><!-- ZC - Credit Card Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZD - Pending Clarifications of Discount</masterLabel>
+        <translation><!-- ZD - Pending Clarifications of Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZE - Pricing Issue</masterLabel>
+        <translation><!-- ZE - Pricing Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZH - Part # Hold</masterLabel>
+        <translation><!-- ZH - Part # Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZP - Pending terms resubmit</masterLabel>
+        <translation><!-- ZP - Pending terms resubmit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZS - Stop Ship</masterLabel>
+        <translation><!-- ZS - Stop Ship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZ - Waiting for Lead Time</masterLabel>
+        <translation><!-- ZZ - Waiting for Lead Time --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

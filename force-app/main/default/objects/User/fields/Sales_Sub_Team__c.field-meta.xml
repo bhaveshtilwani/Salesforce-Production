@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Sub_Team__c</fullName>
+    <label>Sales Sub-TeamOLD</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sales_TeamNEW__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Americas Channel Sales</fullName>
+                <default>false</default>
+                <label>Americas Channel Sales</label>
+            </value>
+            <value>
+                <fullName>Axsun</fullName>
+                <default>false</default>
+                <label>Axsun</label>
+            </value>
+            <value>
+                <fullName>Biotech and Analytical Americas</fullName>
+                <default>false</default>
+                <label>Biotech and Analytical Americas</label>
+            </value>
+            <value>
+                <fullName>Biotech and Analytical EMEA</fullName>
+                <default>false</default>
+                <label>Biotech and Analytical EMEA</label>
+            </value>
+            <value>
+                <fullName>Catalog and Technical Sales</fullName>
+                <default>false</default>
+                <label>Catalog and Technical Sales</label>
+            </value>
+            <value>
+                <fullName>Central and South America Sales</fullName>
+                <default>false</default>
+                <label>Central and South America Sales</label>
+            </value>
+            <value>
+                <fullName>CISS</fullName>
+                <default>false</default>
+                <label>CISS</label>
+            </value>
+            <value>
+                <fullName>CISS 1</fullName>
+                <default>false</default>
+                <label>CISS 1</label>
+            </value>
+            <value>
+                <fullName>CISS 2</fullName>
+                <default>false</default>
+                <label>CISS 2</label>
+            </value>
+            <value>
+                <fullName>D&amp;A</fullName>
+                <default>false</default>
+                <label>D&amp;A</label>
+            </value>
+            <value>
+                <fullName>D&amp;A - Boulder</fullName>
+                <default>false</default>
+                <label>D&amp;A - Boulder</label>
+            </value>
+            <value>
+                <fullName>EMEA Channel Sales</fullName>
+                <default>false</default>
+                <label>EMEA Channel Sales</label>
+            </value>
+            <value>
+                <fullName>GAM</fullName>
+                <default>false</default>
+                <label>GAM</label>
+            </value>
+            <value>
+                <fullName>GBS Photo &amp; Measurement</fullName>
+                <default>false</default>
+                <label>GBS Photo &amp; Measurement</label>
+            </value>
+            <value>
+                <fullName>Global Account Team</fullName>
+                <default>false</default>
+                <label>Global Account Team</label>
+            </value>
+            <value>
+                <fullName>Greater China</fullName>
+                <default>false</default>
+                <label>Greater China</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing Americas</fullName>
+                <default>false</default>
+                <label>Industrial Curing Americas</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing Asia</fullName>
+                <default>false</default>
+                <label>Industrial Curing Asia</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing EMEA</fullName>
+                <default>false</default>
+                <label>Industrial Curing EMEA</label>
+            </value>
+            <value>
+                <fullName>Inside Sales CISS</fullName>
+                <default>false</default>
+                <label>Inside Sales CISS</label>
+            </value>
+            <value>
+                <fullName>Inside Sales EMEA</fullName>
+                <default>false</default>
+                <label>Inside Sales EMEA</label>
+            </value>
+            <value>
+                <fullName>Inside Sales LSA &amp; Semi EMEA</fullName>
+                <default>false</default>
+                <label>Inside Sales LSA &amp; Semi EMEA</label>
+            </value>
+            <value>
+                <fullName>Japan</fullName>
+                <default>false</default>
+                <label>Japan</label>
+            </value>
+            <value>
+                <fullName>Korea</fullName>
+                <default>false</default>
+                <label>Korea</label>
+            </value>
+            <value>
+                <fullName>LSA1</fullName>
+                <default>false</default>
+                <label>LSA1</label>
+            </value>
+            <value>
+                <fullName>LSA2</fullName>
+                <default>false</default>
+                <label>LSA2</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>SE Asia, India, Australia</fullName>
+                <default>false</default>
+                <label>SE Asia, India, Australia</label>
+            </value>
+            <value>
+                <fullName>SEMI/GAM</fullName>
+                <default>false</default>
+                <label>SEMI/GAM</label>
+            </value>
+            <value>
+                <fullName>Semi Americas</fullName>
+                <default>false</default>
+                <label>Semi Americas</label>
+            </value>
+            <value>
+                <fullName>Semi EMEA</fullName>
+                <default>false</default>
+                <label>Semi EMEA</label>
+            </value>
+            <value>
+                <fullName>Semi Asia</fullName>
+                <default>false</default>
+                <label>Semi Asia</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>LSA Americas</controllingFieldValue>
+            <valueName>Biotech and Analytical Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LSA Americas</controllingFieldValue>
+            <valueName>Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WW Channel Sales</controllingFieldValue>
+            <valueName>Americas Channel Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WW Channel Sales</controllingFieldValue>
+            <valueName>EMEA Channel Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LSA EMEA</controllingFieldValue>
+            <valueName>Biotech and Analytical EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LSA EMEA</controllingFieldValue>
+            <valueName>Inside Sales LSA &amp; Semi EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LSA EMEA</controllingFieldValue>
+            <valueName>LSA1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LSA EMEA</controllingFieldValue>
+            <valueName>LSA2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LSA EMEA</controllingFieldValue>
+            <valueName>SEMI/GAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing Worldwide</controllingFieldValue>
+            <valueName>Industrial Curing Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing Worldwide</controllingFieldValue>
+            <valueName>Industrial Curing Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Curing Worldwide</controllingFieldValue>
+            <valueName>Industrial Curing EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Latin America Sales</controllingFieldValue>
+            <valueName>Central and South America Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global Semi</controllingFieldValue>
+            <valueName>Semi Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global Semi</controllingFieldValue>
+            <valueName>Semi EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global Semi</controllingFieldValue>
+            <valueName>Semi Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AO</controllingFieldValue>
+            <valueName>D&amp;A - Boulder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISS Americas</controllingFieldValue>
+            <valueName>CISS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISS Americas</controllingFieldValue>
+            <valueName>GAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISS Americas</controllingFieldValue>
+            <valueName>Inside Sales CISS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISS EMEA</controllingFieldValue>
+            <valueName>Catalog and Technical Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISS EMEA</controllingFieldValue>
+            <valueName>CISS 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISS EMEA</controllingFieldValue>
+            <valueName>CISS 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISS EMEA</controllingFieldValue>
+            <valueName>GBS Photo &amp; Measurement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISS EMEA</controllingFieldValue>
+            <valueName>Inside Sales EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asia Sales Team</controllingFieldValue>
+            <valueName>Greater China</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asia Sales Team</controllingFieldValue>
+            <valueName>Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asia Sales Team</controllingFieldValue>
+            <valueName>Korea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Asia Sales Team</controllingFieldValue>
+            <valueName>SE Asia, India, Australia</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

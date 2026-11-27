@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Agency</fullName>
+        <default>false</default>
+        <label>Agency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Agent</fullName>
+        <default>false</default>
+        <label>Agent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Analyst</fullName>
+        <default>false</default>
+        <label>Analyst</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bank/Banker</fullName>
+        <default>false</default>
+        <label>Bank/Banker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business Name</fullName>
+        <default>false</default>
+        <label>Business Name</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Partner</fullName>
+        <default>false</default>
+        <label>Channel Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Complimenter</fullName>
+        <default>false</default>
+        <label>Complimenter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Manufacturer</fullName>
+        <default>false</default>
+        <label>Contract Manufacturer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Educational / Research</fullName>
+        <default>false</default>
+        <label>Educational / Research</label>
+    </standardValue>
+    <standardValue>
+        <fullName>End User</fullName>
+        <default>false</default>
+        <label>End User</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Global Cust Name</fullName>
+        <default>false</default>
+        <label>Global Customer Name</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HOSPITAL - INSTITUTE - INDIVIDUAL - OTHER</fullName>
+        <default>false</default>
+        <label>HOSPITAL - INSTITUTE - INDIVIDUAL - OTHER</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Integrator</fullName>
+        <default>false</default>
+        <label>Integrator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investor</fullName>
+        <default>false</default>
+        <label>Investor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Key Account</fullName>
+        <default>false</default>
+        <label>Key Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Military</fullName>
+        <default>false</default>
+        <label>Military</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OEM</fullName>
+        <default>false</default>
+        <label>OEM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Parent</fullName>
+        <default>false</default>
+        <label>Parent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Press</fullName>
+        <default>false</default>
+        <label>Press</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Probationary Distributor</fullName>
+        <default>false</default>
+        <label>Probationary Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect</fullName>
+        <default>false</default>
+        <label>Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Publications</fullName>
+        <default>false</default>
+        <label>Publications</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Representative</fullName>
+        <default>false</default>
+        <label>Representative</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reseller</fullName>
+        <default>false</default>
+        <label>Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Prospect</fullName>
+        <default>false</default>
+        <label>Service Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ship To</fullName>
+        <default>false</default>
+        <label>Ship To</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ship-To</fullName>
+        <default>false</default>
+        <label>Ship-To</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Supplier</fullName>
+        <default>false</default>
+        <label>Supplier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unofficial Reseller</fullName>
+        <default>false</default>
+        <label>Unofficial Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor</fullName>
+        <default>false</default>
+        <label>Vendor</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Address_Cannot_be_Blank</fullName>
+    <active>true</active>
+    <description>The Billing Address of the address cannot be blank.</description>
+    <errorConditionFormula>AND(ISPICKVAL(DW_Account_Type__c, &quot;Business Name&quot;), ISBLANK(BillingAddress))</errorConditionFormula>
+    <errorDisplayField>BillingCountry</errorDisplayField>
+    <errorMessage>New Account – Please provide a Billing Address before saving.
+Lead Conversion – Ensure the Lead has a valid address before converting.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Sub_TeamHIER__c</fullName>
+    <label>Sales Sub Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sales_Region_TeamHIER__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Sales_Sub_Team_Anaplan_New</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Channel Americas</controllingFieldValue>
+            <valueName>Channel Americas Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Channel Asia</controllingFieldValue>
+            <valueName>Channel Asia Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Channel EMEA</controllingFieldValue>
+            <valueName>Channel EMEA Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate</controllingFieldValue>
+            <valueName>Corporate Sub-Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unassigned Sales Sub Team</controllingFieldValue>
+            <valueName>Unassigned Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS Americas</controllingFieldValue>
+            <valueName>M&amp;LS Americas Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS Asia</controllingFieldValue>
+            <valueName>M&amp;LS Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS Asia</controllingFieldValue>
+            <valueName>M&amp;LS Korea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS Asia</controllingFieldValue>
+            <valueName>M&amp;LS China</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS Asia</controllingFieldValue>
+            <valueName>M&amp;LS SE Asia, Australia, India</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS EMEA</controllingFieldValue>
+            <valueName>M&amp;LS EMEA 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS EMEA</controllingFieldValue>
+            <valueName>M&amp;LS EMEA 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;LS EMEA</controllingFieldValue>
+            <valueName>M&amp;LS EMEA 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IOA Americas</controllingFieldValue>
+            <valueName>IOA Americas Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IOA Asia</controllingFieldValue>
+            <valueName>IOA Asia Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IOA EMEA</controllingFieldValue>
+            <valueName>IOA EMEA Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semi Americas</controllingFieldValue>
+            <valueName>Semi Americas Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semi Asia</controllingFieldValue>
+            <valueName>Semi Asia Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semi EMEA</controllingFieldValue>
+            <valueName>Semi EMEA Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Americas</controllingFieldValue>
+            <valueName>PM Americas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing EMEA</controllingFieldValue>
+            <valueName>PM EMEA Technical Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing EMEA</controllingFieldValue>
+            <valueName>PM EMEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Asia</controllingFieldValue>
+            <valueName>PM Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Asia</controllingFieldValue>
+            <valueName>PM China</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Asia</controllingFieldValue>
+            <valueName>PM Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Asia</controllingFieldValue>
+            <valueName>PM Korea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Precision Manufacturing Asia</controllingFieldValue>
+            <valueName>PM SE Asia, Australia, India</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AIS Americas</controllingFieldValue>
+            <valueName>AIS Americas Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AIS Asia</controllingFieldValue>
+            <valueName>AIS Asia Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AIS EMEA</controllingFieldValue>
+            <valueName>AIS EMEA Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM Americas</controllingFieldValue>
+            <valueName>ALS OEM Americas Disinfection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM Americas</controllingFieldValue>
+            <valueName>ALS OEM Americas Printing &amp; Wood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM Americas</controllingFieldValue>
+            <valueName>ALS OEM Americas Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM Asia</controllingFieldValue>
+            <valueName>ALS OEM China</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM Asia</controllingFieldValue>
+            <valueName>ALS OEM Korea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM Asia</controllingFieldValue>
+            <valueName>ALS OEM Taiwan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM Asia</controllingFieldValue>
+            <valueName>ALS OEM India</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM Asia</controllingFieldValue>
+            <valueName>ALS OEM Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM EMEA</controllingFieldValue>
+            <valueName>ALS OEM EMEA Disinfection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM EMEA</controllingFieldValue>
+            <valueName>ALS OEM EMEA Printing &amp; Wood</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS OEM EMEA</controllingFieldValue>
+            <valueName>ALS OEM EMEA Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS Channel Americas</controllingFieldValue>
+            <valueName>ALS Channel Americas Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS Channel Asia</controllingFieldValue>
+            <valueName>ALS Channel Asia Sub Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALS Channel EMEA</controllingFieldValue>
+            <valueName>ALS Channel EMEA Sub Team</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

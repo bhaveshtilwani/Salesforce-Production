@@ -1,0 +1,45 @@
+<apex:page standardController="Order" showHeader="false" renderAs="pdf" standardStylesheets="false" docType="xhtml-1.0" applyBodyTag="true" applyHtmlTag="true">
+    <head>
+        <!-- Include the static resource CSS instead of internal common.css -->
+        <apex:stylesheet value="{!$Resource.OrderPdfBase}"/>
+    </head>
+    <!-- Header content (running header elements) -->
+    <div class="headerLeft">
+        <h3><apex:image value="{!URLFOR($Resource.logo)}"/></h3>
+    </div>
+    <div class="headerCenter">
+        <h3></h3>
+    </div>
+    <div class="headerRight">
+            <h3>
+                <apex:outputText value="EXCELITAS CANADA INC"/><br/>
+                <apex:outputText value="{0}<br/>{1}, {2} {3} {4}" escape="false">
+                    <apex:param value="2260 ARGENTIA ROAD"/>
+                    <apex:param value="MISSISSAUGA"/>
+                    <apex:param value="ONTARIO"/>
+                    <apex:param value="L5N 6H7"/>
+                    <apex:param value="CANADA"/>
+                </apex:outputText><br/>
+                <apex:outputLink value="http://www.EXCELITAS.com">www.EXCELITAS.com</apex:outputLink><br/>
+                <apex:outputText value="{0}<br/>{1}<br/>{2}<br/>{3}" escape="false">
+                    <apex:param value="Telephone: +1 905 821-2600"/>
+                    <apex:param value="Toll Free: +1 800 668-8752"/>
+                    <apex:param value="Fax: +1 905 821-4812"/>
+                    <apex:param value="orders@excelitas.com"/>
+                </apex:outputText>
+            </h3>
+    </div>
+    <!-- SINGLE, FULL-WIDTH FOOTER BAR -->
+    <div class="footerBar">
+      <div class="cell l">
+        <apex:outputText value="{0,date,EEEEE, MMMMM d, yyyy}">
+          <apex:param value="{!TODAY()}"/>
+        </apex:outputText>
+      </div>
+      <div class="cell c">ORDER CONFIRMATION</div>
+      <div class="cell r">PAGE <span class="pageNumber"></span> OF <span class="pageCount"></span></div>
+    </div>
+
+    <!-- Main content uses the Visualforce component -->
+   <!-- <c:orderConfirmation order="{!Order}" orderIdParam="{!Order.Id}"/> -->
+</apex:page>

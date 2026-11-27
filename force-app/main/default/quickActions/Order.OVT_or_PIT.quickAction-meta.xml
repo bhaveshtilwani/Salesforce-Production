@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users need to identify the type of quote/Order they’re creating. Value over time or Point in Time revenue.</description>
+    <flowDefinition>Order_OVT_or_PIT_Screenflow</flowDefinition>
+    <label>OVT or PIT</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

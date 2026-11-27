@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation><!-- Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Check in Progress</masterLabel>
+        <translation><!-- Credit Check in Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit On Hold</masterLabel>
+        <translation><!-- Credit On Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inactive</masterLabel>
+        <translation><!-- Inactive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit Ship-to to QAD</masterLabel>
+        <translation><!-- Submit Ship-to to QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit Ship-to to QADDEV</masterLabel>
+        <translation><!-- Submit Ship-to to QADDEV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit to QAD</masterLabel>
+        <translation><!-- Submit to QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submit to QADDEV</masterLabel>
+        <translation><!-- Submit to QADDEV --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

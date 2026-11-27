@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;API-Name des benutzerdefinierten Felds, das in der Abfrage verwendet wird.&quot;</help>
+    <label><!-- Lookup Field --></label>
+    <name>SBQQ__LookupField__c</name>
+    <picklistValues>
+        <masterLabel>Account__c</masterLabel>
+        <translation><!-- Account__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C3_Excelitas_Site_ID__c</masterLabel>
+        <translation><!-- C3_Excelitas_Site_ID__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPQU_MaximumQuantity__c</masterLabel>
+        <translation><!-- CPQU_MaximumQuantity__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPQU_MinimumQuantity__c</masterLabel>
+        <translation><!-- CPQU_MinimumQuantity__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPQU_Product__c</masterLabel>
+        <translation><!-- CPQU_Product__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Country__c</masterLabel>
+        <translation><!-- Country__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CurrencyIsoCode</masterLabel>
+        <translation><!-- CurrencyIsoCode --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Our_Part__c</masterLabel>
+        <translation><!-- Our_Part__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKI_Selling_Site__c</masterLabel>
+        <translation><!-- PKI_Selling_Site__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parent_Acc_ID__c</masterLabel>
+        <translation><!-- Parent_Acc_ID__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product__c</masterLabel>
+        <translation><!-- Product__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Account__c</masterLabel>
+        <translation><!-- SBQQ__Account__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Category__c</masterLabel>
+        <translation>SBQQ__Category__c</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__EffectiveDate__c</masterLabel>
+        <translation><!-- SBQQ__EffectiveDate__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__ExpirationDate__c</masterLabel>
+        <translation><!-- SBQQ__ExpirationDate__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Product__c</masterLabel>
+        <translation><!-- SBQQ__Product__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier_1_Maximum_Qty__c</masterLabel>
+        <translation><!-- Tier_1_Maximum_Qty__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier_1_Minimum_Qty__c</masterLabel>
+        <translation><!-- Tier_1_Minimum_Qty__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier_2_Maximum_Qty__c</masterLabel>
+        <translation><!-- Tier_2_Maximum_Qty__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier_2_Minimum_Qty__c</masterLabel>
+        <translation><!-- Tier_2_Minimum_Qty__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier_3_Maximum_Qty__c</masterLabel>
+        <translation><!-- Tier_3_Maximum_Qty__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier_3_Minimum_Qty__c</masterLabel>
+        <translation><!-- Tier_3_Minimum_Qty__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier_4_Maximum_Qty__c</masterLabel>
+        <translation><!-- Tier_4_Maximum_Qty__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tier_4_Minimum_Qty__c</masterLabel>
+        <translation><!-- Tier_4_Minimum_Qty__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

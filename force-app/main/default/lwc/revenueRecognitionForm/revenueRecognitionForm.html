@@ -1,0 +1,23 @@
+<template>
+    <!-- ✅ Valid result -->
+    <template if:true={displayValue}>
+        <div class={resultCardClass}>
+            <div class="result-inner">
+                <span class="result-label">Revenue Recognition Type is&nbsp;&nbsp;</span>
+                <span class="result-value">{displayValue}</span>
+            </div>
+            <template if:true={isExistingValue}>
+                <span class="result-badge">Existing Value</span>
+            </template>
+        </div>
+    </template>
+
+    <!-- ⚠️ No valid result — show mismatch message from Custom Label -->
+    <template if:true={isMismatch}>
+        <div class="result-card result-mismatch">
+            <div class="result-inner">
+                <span class="result-label">{label.mismatch}</span>
+            </div>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,2944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Group__c</fullName>
+    <label>Sales Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ERP_Site__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Endo (160)</fullName>
+                <default>false</default>
+                <label>Advanced Endo (160)</label>
+            </value>
+            <value>
+                <fullName>Avionics &amp; Space (232)</fullName>
+                <default>false</default>
+                <label>Avionics &amp; Space (232)</label>
+            </value>
+            <value>
+                <fullName>Biotech (281)</fullName>
+                <default>false</default>
+                <label>Biotech (281)</label>
+            </value>
+            <value>
+                <fullName>BL (W2)</fullName>
+                <default>false</default>
+                <label>BL (W2)</label>
+            </value>
+            <value>
+                <fullName>Crystal Technology (550)</fullName>
+                <default>false</default>
+                <label>Crystal Technology (550)</label>
+            </value>
+            <value>
+                <fullName>Defense (231)</fullName>
+                <default>false</default>
+                <label>Defense (231)</label>
+            </value>
+            <value>
+                <fullName>Dental Technology (241)</fullName>
+                <default>false</default>
+                <label>Dental Technology (241)</label>
+            </value>
+            <value>
+                <fullName>EOD Salem (73)</fullName>
+                <default>false</default>
+                <label>EOD Salem (73)</label>
+            </value>
+            <value>
+                <fullName>GB IM Diverse (420)</fullName>
+                <default>false</default>
+                <label>GB IM Diverse (420)</label>
+            </value>
+            <value>
+                <fullName>Hambles 1sales group (H00)</fullName>
+                <default>false</default>
+                <label>Hambles 1sales group (H00)</label>
+            </value>
+            <value>
+                <fullName>Hene Laser (W6)</fullName>
+                <default>false</default>
+                <label>Hene Laser (W6)</label>
+            </value>
+            <value>
+                <fullName>HPD (72)</fullName>
+                <default>false</default>
+                <label>HPD (72)</label>
+            </value>
+            <value>
+                <fullName>ILC (77)</fullName>
+                <default>false</default>
+                <label>ILC (77)</label>
+            </value>
+            <value>
+                <fullName>Industry Catalog (518)</fullName>
+                <default>false</default>
+                <label>Industry Catalog (518)</label>
+            </value>
+            <value>
+                <fullName>Laser Material Proc. (222)</fullName>
+                <default>false</default>
+                <label>Laser Material Proc. (222)</label>
+            </value>
+            <value>
+                <fullName>Machine Vision (261)</fullName>
+                <default>false</default>
+                <label>Machine Vision (261)</label>
+            </value>
+            <value>
+                <fullName>Operations München (340)</fullName>
+                <default>false</default>
+                <label>Operations München (340)</label>
+            </value>
+            <value>
+                <fullName>Operations Regen (360)</fullName>
+                <default>false</default>
+                <label>Operations Regen (360)</label>
+            </value>
+            <value>
+                <fullName>Ophtalmology (216)</fullName>
+                <default>false</default>
+                <label>Ophtalmology (216)</label>
+            </value>
+            <value>
+                <fullName>OPTEM (580)</fullName>
+                <default>false</default>
+                <label>OPTEM (580)</label>
+            </value>
+            <value>
+                <fullName>Optical Metrol.&amp;Insp (520)</fullName>
+                <default>false</default>
+                <label>Optical Metrol.&amp;Insp (520)</label>
+            </value>
+            <value>
+                <fullName>Photo and Lab Techn. (102)</fullName>
+                <default>false</default>
+                <label>Photo and Lab Techn. (102)</label>
+            </value>
+            <value>
+                <fullName>Photocells/Vactrols (32)</fullName>
+                <default>false</default>
+                <label>Photocells/Vactrols (32)</label>
+            </value>
+            <value>
+                <fullName>Photonics PHF (W3)</fullName>
+                <default>false</default>
+                <label>Photonics PHF (W3)</label>
+            </value>
+            <value>
+                <fullName>Pyroelectric Sensors (35)</fullName>
+                <default>false</default>
+                <label>Pyroelectric Sensors (35)</label>
+            </value>
+            <value>
+                <fullName>Reticon (70)</fullName>
+                <default>false</default>
+                <label>Reticon (70)</label>
+            </value>
+            <value>
+                <fullName>Semiconductor Techn. (500)</fullName>
+                <default>false</default>
+                <label>Semiconductor Techn. (500)</label>
+            </value>
+            <value>
+                <fullName>Sonstige Erlöse (999)</fullName>
+                <default>false</default>
+                <label>Sonstige Erlöse (999)</label>
+            </value>
+            <value>
+                <fullName>SPCM (W5)</fullName>
+                <default>false</default>
+                <label>SPCM (W5)</label>
+            </value>
+            <value>
+                <fullName>SSL (291)</fullName>
+                <default>false</default>
+                <label>SSL (291)</label>
+            </value>
+            <value>
+                <fullName>TPS/TPM (38)</fullName>
+                <default>false</default>
+                <label>TPS/TPM (38)</label>
+            </value>
+            <value>
+                <fullName>Vactec (74)</fullName>
+                <default>false</default>
+                <label>Vactec (74)</label>
+            </value>
+            <value>
+                <fullName>X-Ray-Imaging (211)</fullName>
+                <default>false</default>
+                <label>X-Ray-Imaging (211)</label>
+            </value>
+            <value>
+                <fullName>Boulder (501)</fullName>
+                <default>false</default>
+                <label>Boulder (501)</label>
+            </value>
+            <value>
+                <fullName>A00-NA PKI Direct</fullName>
+                <default>false</default>
+                <label>A00-NA PKI Direct</label>
+            </value>
+            <value>
+                <fullName>B00-NA West Griot Group</fullName>
+                <default>false</default>
+                <label>B00-NA West Griot Group</label>
+            </value>
+            <value>
+                <fullName>B01-MAX TECH SALES-IL,WI</fullName>
+                <default>false</default>
+                <label>B01-MAX TECH SALES-IL,WI</label>
+            </value>
+            <value>
+                <fullName>B02-MARATHON-GA,AL,MS,TN</fullName>
+                <default>false</default>
+                <label>B02-MARATHON-GA,AL,MS,TN</label>
+            </value>
+            <value>
+                <fullName>B03-MAXTECH;OH,IN,KY,WV</fullName>
+                <default>false</default>
+                <label>B03-MAXTECH;OH,IN,KY,WV</label>
+            </value>
+            <value>
+                <fullName>B04-Ciontek</fullName>
+                <default>false</default>
+                <label>B04-Ciontek</label>
+            </value>
+            <value>
+                <fullName>B05-TRILOGY;MI</fullName>
+                <default>false</default>
+                <label>B05-TRILOGY;MI</label>
+            </value>
+            <value>
+                <fullName>B06-HAWKINS;FL</fullName>
+                <default>false</default>
+                <label>B06-HAWKINS;FL</label>
+            </value>
+            <value>
+                <fullName>B07-CASE-NORTHSTAR MN,SD</fullName>
+                <default>false</default>
+                <label>B07-CASE-NORTHSTAR MN,SD</label>
+            </value>
+            <value>
+                <fullName>B08-ACORN ELEC; MO,AR,IA</fullName>
+                <default>false</default>
+                <label>B08-ACORN ELEC; MO,AR,IA</label>
+            </value>
+            <value>
+                <fullName>B09-HOUSE;TX,OK,LA</fullName>
+                <default>false</default>
+                <label>B09-HOUSE;TX,OK,LA</label>
+            </value>
+            <value>
+                <fullName>B10-C.W.Beach Company-NY</fullName>
+                <default>false</default>
+                <label>B10-C.W.Beach Company-NY</label>
+            </value>
+            <value>
+                <fullName>B11-MACINNIS; MA,CT,VT</fullName>
+                <default>false</default>
+                <label>B11-MACINNIS; MA,CT,VT</label>
+            </value>
+            <value>
+                <fullName>B12-S.States Mktg</fullName>
+                <default>false</default>
+                <label>B12-S.States Mktg</label>
+            </value>
+            <value>
+                <fullName>B13-Adv.Tech.Services</fullName>
+                <default>false</default>
+                <label>B13-Adv.Tech.Services</label>
+            </value>
+            <value>
+                <fullName>B14-RepTek</fullName>
+                <default>false</default>
+                <label>B14-RepTek</label>
+            </value>
+            <value>
+                <fullName>B15-Sales Eng. Concepts</fullName>
+                <default>false</default>
+                <label>B15-Sales Eng. Concepts</label>
+            </value>
+            <value>
+                <fullName>B17-Trilogy Tech Inc.</fullName>
+                <default>false</default>
+                <label>B17-Trilogy Tech Inc.</label>
+            </value>
+            <value>
+                <fullName>B18-Omega Sales;DE,NJ,PA</fullName>
+                <default>false</default>
+                <label>B18-Omega Sales;DE,NJ,PA</label>
+            </value>
+            <value>
+                <fullName>B19-ATM Mid-Atlantic</fullName>
+                <default>false</default>
+                <label>B19-ATM Mid-Atlantic</label>
+            </value>
+            <value>
+                <fullName>B21-Alliance Group One</fullName>
+                <default>false</default>
+                <label>B21-Alliance Group One</label>
+            </value>
+            <value>
+                <fullName>B22-KMA Consulting; BR</fullName>
+                <default>false</default>
+                <label>B22-KMA Consulting; BR</label>
+            </value>
+            <value>
+                <fullName>B50-NA House Accounts</fullName>
+                <default>false</default>
+                <label>B50-NA House Accounts</label>
+            </value>
+            <value>
+                <fullName>B88-Anchor Engineering</fullName>
+                <default>false</default>
+                <label>B88-Anchor Engineering</label>
+            </value>
+            <value>
+                <fullName>Wiesbaden</fullName>
+                <default>false</default>
+                <label>Wiesbaden (WI)</label>
+            </value>
+            <value>
+                <fullName>analytical component</fullName>
+                <default>false</default>
+                <label>analytical component</label>
+            </value>
+            <value>
+                <fullName>(10) Triggercoil</fullName>
+                <default>false</default>
+                <label>(10) Triggercoil</label>
+            </value>
+            <value>
+                <fullName>(20) QUSA</fullName>
+                <default>false</default>
+                <label>(20) QUSA</label>
+            </value>
+            <value>
+                <fullName>(21) QUSA &amp; TC</fullName>
+                <default>false</default>
+                <label>(21) QUSA &amp; TC</label>
+            </value>
+            <value>
+                <fullName>(30) PFL</fullName>
+                <default>false</default>
+                <label>(30) PFL</label>
+            </value>
+            <value>
+                <fullName>(40) LEGO</fullName>
+                <default>false</default>
+                <label>(40) LEGO</label>
+            </value>
+            <value>
+                <fullName>(41) A90</fullName>
+                <default>false</default>
+                <label>(41) A90</label>
+            </value>
+            <value>
+                <fullName>(43) Vactec Trading - PC</fullName>
+                <default>false</default>
+                <label>(43) Vactec Trading - PC</label>
+            </value>
+            <value>
+                <fullName>(44) UV Sensor</fullName>
+                <default>false</default>
+                <label>(44) UV Sensor</label>
+            </value>
+            <value>
+                <fullName>(50) IRD</fullName>
+                <default>false</default>
+                <label>(50) IRD</label>
+            </value>
+            <value>
+                <fullName>(60) Diode Array</fullName>
+                <default>false</default>
+                <label>(60) Diode Array</label>
+            </value>
+            <value>
+                <fullName>(62) PDA Trading</fullName>
+                <default>false</default>
+                <label>(62) PDA Trading</label>
+            </value>
+            <value>
+                <fullName>(66) PD Trading</fullName>
+                <default>false</default>
+                <label>(66) PD Trading</label>
+            </value>
+            <value>
+                <fullName>(70) Accelerometer</fullName>
+                <default>false</default>
+                <label>(70) Accelerometer</label>
+            </value>
+            <value>
+                <fullName>(80) Thermopile</fullName>
+                <default>false</default>
+                <label>(80) Thermopile</label>
+            </value>
+            <value>
+                <fullName>(90) PCB Assembly</fullName>
+                <default>false</default>
+                <label>(90) PCB Assembly</label>
+            </value>
+            <value>
+                <fullName>(110) ILC Flash Mfg</fullName>
+                <default>false</default>
+                <label>(110) ILC Flash Mfg</label>
+            </value>
+            <value>
+                <fullName>(121) Q-ARC (Phontonics)</fullName>
+                <default>false</default>
+                <label>(121) Q-ARC (Phontonics)</label>
+            </value>
+            <value>
+                <fullName>(251) Sensors Salem Trad</fullName>
+                <default>false</default>
+                <label>(251) Sensors Salem Trad</label>
+            </value>
+            <value>
+                <fullName>(310) ORC</fullName>
+                <default>false</default>
+                <label>(310) ORC</label>
+            </value>
+            <value>
+                <fullName>(311) ORC Trading</fullName>
+                <default>false</default>
+                <label>(311) ORC Trading</label>
+            </value>
+            <value>
+                <fullName>(410) Cermax Lamp</fullName>
+                <default>false</default>
+                <label>(410) Cermax Lamp</label>
+            </value>
+            <value>
+                <fullName>(411) Cermax Trading</fullName>
+                <default>false</default>
+                <label>(411) Cermax Trading</label>
+            </value>
+            <value>
+                <fullName>(450) ILC-HPG</fullName>
+                <default>false</default>
+                <label>(450) ILC-HPG</label>
+            </value>
+            <value>
+                <fullName>(460) Cermax Video</fullName>
+                <default>false</default>
+                <label>(460) Cermax Video</label>
+            </value>
+            <value>
+                <fullName>(510) PE-Photovac</fullName>
+                <default>false</default>
+                <label>(510) PE-Photovac</label>
+            </value>
+            <value>
+                <fullName>(520) PE-Lamps</fullName>
+                <default>false</default>
+                <label>(520) PE-Lamps</label>
+            </value>
+            <value>
+                <fullName>(530) PE-Nelson</fullName>
+                <default>false</default>
+                <label>(530) PE-Nelson</label>
+            </value>
+            <value>
+                <fullName>(540) PE-AA</fullName>
+                <default>false</default>
+                <label>(540) PE-AA</label>
+            </value>
+            <value>
+                <fullName>(552) Telecom Minidil</fullName>
+                <default>false</default>
+                <label>(552) Telecom Minidil</label>
+            </value>
+            <value>
+                <fullName>(610) Salem(HPG)</fullName>
+                <default>false</default>
+                <label>(610) Salem(HPG)</label>
+            </value>
+            <value>
+                <fullName>(620) Salem</fullName>
+                <default>false</default>
+                <label>(620) Salem</label>
+            </value>
+            <value>
+                <fullName>(621) Salem Trading</fullName>
+                <default>false</default>
+                <label>(621) Salem Trading</label>
+            </value>
+            <value>
+                <fullName>(710) Reticon</fullName>
+                <default>false</default>
+                <label>(710) Reticon</label>
+            </value>
+            <value>
+                <fullName>(711) Reticon Trading</fullName>
+                <default>false</default>
+                <label>(711) Reticon Trading</label>
+            </value>
+            <value>
+                <fullName>(751) CPM</fullName>
+                <default>false</default>
+                <label>(751) CPM</label>
+            </value>
+            <value>
+                <fullName>(800) Pressure Sensors</fullName>
+                <default>false</default>
+                <label>(800) Pressure Sensors</label>
+            </value>
+            <value>
+                <fullName>(811) Voltarc Trading</fullName>
+                <default>false</default>
+                <label>(811) Voltarc Trading</label>
+            </value>
+            <value>
+                <fullName>(AI2) AI Trading</fullName>
+                <default>false</default>
+                <label>(AI2) AI Trading</label>
+            </value>
+            <value>
+                <fullName>(APD) Avalanche Photodiode</fullName>
+                <default>false</default>
+                <label>(APD) Avalanche Photodiode</label>
+            </value>
+            <value>
+                <fullName>(AS0) AS Component</fullName>
+                <default>false</default>
+                <label>(AS0) AS Component</label>
+            </value>
+            <value>
+                <fullName>(AS1) AS Assembly</fullName>
+                <default>false</default>
+                <label>(AS1) AS Assembly</label>
+            </value>
+            <value>
+                <fullName>(BS0) BS Component</fullName>
+                <default>false</default>
+                <label>(BS0) BS Component</label>
+            </value>
+            <value>
+                <fullName>(BS1) BS Assembly</fullName>
+                <default>false</default>
+                <label>(BS1) BS Assembly</label>
+            </value>
+            <value>
+                <fullName>(BS2) BS Trading</fullName>
+                <default>false</default>
+                <label>(BS2) BS Trading</label>
+            </value>
+            <value>
+                <fullName>(C01) PKI China MS</fullName>
+                <default>false</default>
+                <label>(C01) PKI China MS</label>
+            </value>
+            <value>
+                <fullName>(CO2) CO Trading</fullName>
+                <default>false</default>
+                <label>(CO2) CO Trading</label>
+            </value>
+            <value>
+                <fullName>(D00) analytical system</fullName>
+                <default>false</default>
+                <label>(D00) analytical system</label>
+            </value>
+            <value>
+                <fullName>(D01) analytical component</fullName>
+                <default>false</default>
+                <label>(D01) analytical component</label>
+            </value>
+            <value>
+                <fullName>(HNL) HeNe Lasers Trading</fullName>
+                <default>false</default>
+                <label>(HNL) HeNe Lasers Trading</label>
+            </value>
+            <value>
+                <fullName>(LE0) LE Component</fullName>
+                <default>false</default>
+                <label>(LE0) LE Component</label>
+            </value>
+            <value>
+                <fullName>(LE1) LE Assembly</fullName>
+                <default>false</default>
+                <label>(LE1) LE Assembly</label>
+            </value>
+            <value>
+                <fullName>(LE2) LE Trading</fullName>
+                <default>false</default>
+                <label>(LE2) LE Trading</label>
+            </value>
+            <value>
+                <fullName>(LS1) LED Solution</fullName>
+                <default>false</default>
+                <label>(LS1) LED Solution</label>
+            </value>
+            <value>
+                <fullName>(LS2) LED Component</fullName>
+                <default>false</default>
+                <label>(LS2) LED Component</label>
+            </value>
+            <value>
+                <fullName>(LT0) LT Component</fullName>
+                <default>false</default>
+                <label>(LT0) LT Component</label>
+            </value>
+            <value>
+                <fullName>(LT1) LT Assembly</fullName>
+                <default>false</default>
+                <label>(LT1) LT Assembly</label>
+            </value>
+            <value>
+                <fullName>(LT2) LT Trading</fullName>
+                <default>false</default>
+                <label>(LT2) LT Trading</label>
+            </value>
+            <value>
+                <fullName>(MI0) MI Component</fullName>
+                <default>false</default>
+                <label>(MI0) MI Component</label>
+            </value>
+            <value>
+                <fullName>(MI1) MI Assembly</fullName>
+                <default>false</default>
+                <label>(MI1) MI Assembly</label>
+            </value>
+            <value>
+                <fullName>(MI2) MI Trading</fullName>
+                <default>false</default>
+                <label>(MI2) MI Trading</label>
+            </value>
+            <value>
+                <fullName>(OI0) OI Component</fullName>
+                <default>false</default>
+                <label>(OI0) OI Component</label>
+            </value>
+            <value>
+                <fullName>(OI1) OI Assembly</fullName>
+                <default>false</default>
+                <label>(OI1) OI Assembly</label>
+            </value>
+            <value>
+                <fullName>(OI2) OI Trading</fullName>
+                <default>false</default>
+                <label>(OI2) OI Trading</label>
+            </value>
+            <value>
+                <fullName>(PO0) PO Component</fullName>
+                <default>false</default>
+                <label>(PO0) PO Component</label>
+            </value>
+            <value>
+                <fullName>(PO1) PO Assembly</fullName>
+                <default>false</default>
+                <label>(PO1) PO Assembly</label>
+            </value>
+            <value>
+                <fullName>(PO2) PO Trading</fullName>
+                <default>false</default>
+                <label>(PO2) PO Trading</label>
+            </value>
+            <value>
+                <fullName>(SC0) SC Component</fullName>
+                <default>false</default>
+                <label>(SC0) SC Component</label>
+            </value>
+            <value>
+                <fullName>(SC1) SC Assembly</fullName>
+                <default>false</default>
+                <label>(SC1) SC Assembly</label>
+            </value>
+            <value>
+                <fullName>(SC2) SC Trading</fullName>
+                <default>false</default>
+                <label>(SC2) SC Trading</label>
+            </value>
+            <value>
+                <fullName>(ST0) ST Component</fullName>
+                <default>false</default>
+                <label>(ST0) ST Component</label>
+            </value>
+            <value>
+                <fullName>(ST1) ST Assembly</fullName>
+                <default>false</default>
+                <label>(ST1) ST Assembly</label>
+            </value>
+            <value>
+                <fullName>(UV1) BL Assembly</fullName>
+                <default>false</default>
+                <label>(UV1) BL Assembly</label>
+            </value>
+            <value>
+                <fullName>B75 PerkinElmer Opto</fullName>
+                <default>false</default>
+                <label>B75 PerkinElmer Opto</label>
+            </value>
+            <value>
+                <fullName>B20 AS PKI Direct</fullName>
+                <default>false</default>
+                <label>B20 AS PKI Direct</label>
+            </value>
+            <value>
+                <fullName>C00 PKI China / X.C.</fullName>
+                <default>false</default>
+                <label>C00 PKI China / X.C.</label>
+            </value>
+            <value>
+                <fullName>B77 Other Asia</fullName>
+                <default>false</default>
+                <label>B77 Other Asia</label>
+            </value>
+            <value>
+                <fullName>B90 Neopt</fullName>
+                <default>false</default>
+                <label>B90 Neopt</label>
+            </value>
+            <value>
+                <fullName>B84 Seraphim (Taiwan)</fullName>
+                <default>false</default>
+                <label>B84 Seraphim (Taiwan)</label>
+            </value>
+            <value>
+                <fullName>B83 Seraphim (Hong Kong)</fullName>
+                <default>false</default>
+                <label>B83 Seraphim (Hong Kong)</label>
+            </value>
+            <value>
+                <fullName>A01-Azpect Photonics</fullName>
+                <default>false</default>
+                <label>A01-Azpect Photonics</label>
+            </value>
+            <value>
+                <fullName>B51-B &amp; B</fullName>
+                <default>false</default>
+                <label>B51-B &amp; B</label>
+            </value>
+            <value>
+                <fullName>B57-OTA</fullName>
+                <default>false</default>
+                <label>B57-OTA</label>
+            </value>
+            <value>
+                <fullName>B59 Fast Electronics</fullName>
+                <default>false</default>
+                <label>B59 Fast Electronics</label>
+            </value>
+            <value>
+                <fullName>B61 Martinsson</fullName>
+                <default>false</default>
+                <label>B61 Martinsson</label>
+            </value>
+            <value>
+                <fullName>B63 Pacer</fullName>
+                <default>false</default>
+                <label>B63 Pacer</label>
+            </value>
+            <value>
+                <fullName>B64 Holst &amp; Fleischer</fullName>
+                <default>false</default>
+                <label>B64 Holst &amp; Fleischer</label>
+            </value>
+            <value>
+                <fullName>B67 Dalma</fullName>
+                <default>false</default>
+                <label>B67 Dalma</label>
+            </value>
+            <value>
+                <fullName>B71 Toptronic</fullName>
+                <default>false</default>
+                <label>B71 Toptronic</label>
+            </value>
+            <value>
+                <fullName>B76 PKI Singapore</fullName>
+                <default>false</default>
+                <label>B76 PKI Singapore</label>
+            </value>
+            <value>
+                <fullName>Flash - Salem (WI)</fullName>
+                <default>false</default>
+                <label>Flash - Salem (WI)</label>
+            </value>
+            <value>
+                <fullName>FW (31)</fullName>
+                <default>false</default>
+                <label>FW (31)</label>
+            </value>
+            <value>
+                <fullName>Hene (W6)</fullName>
+                <default>false</default>
+                <label>Hene (W6)</label>
+            </value>
+            <value>
+                <fullName>IC Sensors (71)</fullName>
+                <default>false</default>
+                <label>IC Sensors (71)</label>
+            </value>
+            <value>
+                <fullName>Judson (75)</fullName>
+                <default>false</default>
+                <label>Judson (75)</label>
+            </value>
+            <value>
+                <fullName>Obsolete (101)</fullName>
+                <default>false</default>
+                <label>Obsolete (101)</label>
+            </value>
+            <value>
+                <fullName>Optotecs Re/Gö (365)</fullName>
+                <default>false</default>
+                <label>Optotecs Re/Gö (365)</label>
+            </value>
+            <value>
+                <fullName>ORC-EPD (76)</fullName>
+                <default>false</default>
+                <label>ORC-EPD (76)</label>
+            </value>
+            <value>
+                <fullName>ORC-Lighting (78)</fullName>
+                <default>false</default>
+                <label>ORC-Lighting (78)</label>
+            </value>
+            <value>
+                <fullName>Research&amp;Laboratory (510)</fullName>
+                <default>false</default>
+                <label>Research&amp;Laboratory (510)</label>
+            </value>
+            <value>
+                <fullName>SMM (W4)</fullName>
+                <default>false</default>
+                <label>SMM (W4)</label>
+            </value>
+            <value>
+                <fullName>Voltarc (79)</fullName>
+                <default>false</default>
+                <label>Voltarc (79)</label>
+            </value>
+            <value>
+                <fullName>FT</fullName>
+                <default>false</default>
+                <label>FT</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Advanced Endo (160)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Avionics &amp; Space (232)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Biotech (281)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>BL (W2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Crystal Technology (550)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Defense (231)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Dental Technology (241)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>EOD Salem (73)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>GB IM Diverse (420)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Hambles 1sales group (H00)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Hene Laser (W6)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>HPD (72)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>ILC (77)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Industry Catalog (518)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Laser Material Proc. (222)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Machine Vision (261)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Operations München (340)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Operations Regen (360)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Ophtalmology (216)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>OPTEM (580)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Optical Metrol.&amp;Insp (520)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Photo and Lab Techn. (102)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Photocells/Vactrols (32)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Photonics PHF (W3)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Pyroelectric Sensors (35)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Reticon (70)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Semiconductor Techn. (500)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Sonstige Erlöse (999)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>SPCM (W5)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>SSL (291)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>TPS/TPM (38)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Vactec (74)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>X-Ray-Imaging (211)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Boulder (501)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>A00-NA PKI Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B00-NA West Griot Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B01-MAX TECH SALES-IL,WI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B02-MARATHON-GA,AL,MS,TN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B03-MAXTECH;OH,IN,KY,WV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B04-Ciontek</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B05-TRILOGY;MI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B06-HAWKINS;FL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B07-CASE-NORTHSTAR MN,SD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B08-ACORN ELEC; MO,AR,IA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B09-HOUSE;TX,OK,LA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B10-C.W.Beach Company-NY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B11-MACINNIS; MA,CT,VT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B12-S.States Mktg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B13-Adv.Tech.Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B14-RepTek</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B15-Sales Eng. Concepts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B17-Trilogy Tech Inc.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B18-Omega Sales;DE,NJ,PA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B19-ATM Mid-Atlantic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B21-Alliance Group One</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B22-KMA Consulting; BR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B50-NA House Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B88-Anchor Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Wiesbaden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>analytical component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(10) Triggercoil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(20) QUSA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(21) QUSA &amp; TC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(30) PFL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(40) LEGO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(41) A90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(43) Vactec Trading - PC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(44) UV Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(50) IRD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(60) Diode Array</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(62) PDA Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(66) PD Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(70) Accelerometer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(80) Thermopile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(90) PCB Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(110) ILC Flash Mfg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(121) Q-ARC (Phontonics)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(251) Sensors Salem Trad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(310) ORC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(311) ORC Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(410) Cermax Lamp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(411) Cermax Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(450) ILC-HPG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(460) Cermax Video</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(510) PE-Photovac</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(520) PE-Lamps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(530) PE-Nelson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(540) PE-AA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(552) Telecom Minidil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(610) Salem(HPG)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(620) Salem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(621) Salem Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(710) Reticon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(711) Reticon Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(751) CPM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(800) Pressure Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(811) Voltarc Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(AI2) AI Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(APD) Avalanche Photodiode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(AS0) AS Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(AS1) AS Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(BS0) BS Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(BS1) BS Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(BS2) BS Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(C01) PKI China MS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(CO2) CO Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(D00) analytical system</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(D01) analytical component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(HNL) HeNe Lasers Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LE0) LE Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LE1) LE Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LE2) LE Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LS1) LED Solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LS2) LED Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LT0) LT Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LT1) LT Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(LT2) LT Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(MI0) MI Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(MI1) MI Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(MI2) MI Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(OI0) OI Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(OI1) OI Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(OI2) OI Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(PO0) PO Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(PO1) PO Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(PO2) PO Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(SC0) SC Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(SC1) SC Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(SC2) SC Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(ST0) ST Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(ST1) ST Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>(UV1) BL Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B75 PerkinElmer Opto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B20 AS PKI Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>C00 PKI China / X.C.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B77 Other Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B90 Neopt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B84 Seraphim (Taiwan)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B83 Seraphim (Hong Kong)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>A01-Azpect Photonics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B51-B &amp; B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B57-OTA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B59 Fast Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B61 Martinsson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B63 Pacer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B64 Holst &amp; Fleischer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B67 Dalma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B71 Toptronic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>B76 PKI Singapore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Flash - Salem (WI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>FW (31)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Hene (W6)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>IC Sensors (71)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Judson (75)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Obsolete (101)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Optotecs Re/Gö (365)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>ORC-EPD (76)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>ORC-Lighting (78)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Research&amp;Laboratory (510)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>SMM (W4)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Voltarc (79)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>PCO Kelheim</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>FT</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

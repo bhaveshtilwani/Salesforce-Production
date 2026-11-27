@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Illumination_Systems__c</fullName>
+    <label>Illumination Systems</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>X-Cite 110LED</fullName>
+                <default>false</default>
+                <label>X-Cite 110LED</label>
+            </value>
+            <value>
+                <fullName>X-Cite 120LED</fullName>
+                <default>false</default>
+                <label>X-Cite 120LED</label>
+            </value>
+            <value>
+                <fullName>X-Cite 120PC Q</fullName>
+                <default>false</default>
+                <label>X-Cite 120PC Q</label>
+            </value>
+            <value>
+                <fullName>X-Cite 120Q with Iris</fullName>
+                <default>false</default>
+                <label>X-Cite 120Q with Iris</label>
+            </value>
+            <value>
+                <fullName>X-Cite 120Q with no Iris</fullName>
+                <default>false</default>
+                <label>X-Cite 120Q with no Iris</label>
+            </value>
+            <value>
+                <fullName>X-Cite 200DC</fullName>
+                <default>false</default>
+                <label>X-Cite 200DC</label>
+            </value>
+            <value>
+                <fullName>X-Cite exacte</fullName>
+                <default>false</default>
+                <label>X-Cite exacte</label>
+            </value>
+            <value>
+                <fullName>X-Cite XLED1</fullName>
+                <default>false</default>
+                <label>X-Cite XLED1</label>
+            </value>
+            <value>
+                <fullName>X-Cite Turbo</fullName>
+                <default>false</default>
+                <label>X-Cite Turbo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

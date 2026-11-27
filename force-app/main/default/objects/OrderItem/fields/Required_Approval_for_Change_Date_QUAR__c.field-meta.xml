@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Approval_for_Change_Date_QUAR__c</fullName>
+    <formula>IF(AND(NOT(ISBLANK(Requested_Ship_Date_Change__c) ),
+       CEILING(MONTH(Requested_Ship_Date_Change__c)/3) &gt; CEILING(MONTH(Customer_Requested_Date__c)/3)
+    ), 
+   IF(Requested_Quantity_Change__c &gt; 0, 
+      Requested_Quantity_Change__c*UnitPrice,
+      Quantity*UnitPrice), 
+    0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Required Approval for Change Date QUAR</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

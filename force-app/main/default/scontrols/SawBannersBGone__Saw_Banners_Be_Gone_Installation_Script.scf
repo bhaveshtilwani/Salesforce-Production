@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Saw Banners Be Gone!</title> 
+<link href="/sCSS/8.0/Theme2/default/common.css" rel="stylesheet" type="text/css" />
+<script src="/dJS/en/library.js"></script>
+<script type="text/javascript">
+{!INCLUDE($SControl.SawBannersBGone__hpcApi)}
+
+{!INCLUDE($SControl.SawBannersBGone__GenericHpcInstaller)}
+
+{!INCLUDE($SControl.SawBannersBGone__sbgInstaller)}
+
+var sbg = new sbgInstaller();
+</script>
+<style>
+body {
+	margin-left: 3em;
+}
+</style>
+
+<script type="text/javascript">
+function showManualInstall() {
+	document.getElementById('manualInstallation').style.display='block';
+	document.getElementById('automatedInstallation').style.display='none';
+	return false;
+}
+</script>
+</head>
+<body>
+<div><img src="/servlet/servlet.ImageServer?id=01550000000K4JU&oid=00D300000000W1h" width='749' height='322'></div>
+<h3>You asked for it and we delivered.</h3>
+
+<p><em>Saw Banners Be Gone!</em> works by embedding some javascript in all of the custom home-pages in your org.<BR/>
+If you have problems with the automated script, try the <a href="#" onclick="showManualInstall();">manual installation instructions</a>.</p>
+
+<div id='automatedInstallation'>
+<h3>Easy 1-click install</h3>
+<ul><li>Click <input class='btn' type='button' value='here' onclick="sbg.install();this.disabled = true; this.className='btnDisabled'; this.value = 'Please Wait...'; "> to install <em>SawBannersBeGone!</em> </li></ul>
+</div>
+
+<div id='manualInstallation' style='display:none'>
+<h3>Manual Installation instructions</h3>
+<p>You need to follow these instructions only if the automated script proves unsuccessful.</p>
+<ol>
+<li> Paste the following snippet into your <strong>Messages &amp; Alerts</strong> note by clicking edit on <a href = '/setup/ui/homepagecomponents.jsp?retURL=%2Fui%2Fsetup%2FSetup%3Fsetupid%3DHome&setupid=HomePageComponents'>this page</a><BR> <textarea rows='3' cols='70' id='installationContent'>
+{!INCLUDE($SControl.SawBannersBGone__sbgContent)}
+</textarea></li>
+<li>Ensure that the <strong>Messages &amp; Alerts</strong> note appears on all users' home pages. </li>
+<li> Celebrate!</li>
+</ol>
+</div>
+
+</body>
+</html>

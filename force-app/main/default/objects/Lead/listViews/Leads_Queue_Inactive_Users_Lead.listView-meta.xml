@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_Queue_Inactive_Users_Lead</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Leads Queue Inactive Users</label>
+    <queue>Leads_Queue_Inactive_Users</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>ALS OEM Asia</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Sales Region Team</value>
+    </values>
+    <values>
+        <field>Leader_Emails__c</field>
+        <value xsi:type="xsd:string">michael.beck@excelitas.com</value>
+    </values>
+    <values>
+        <field>Sales_Region_Team__c</field>
+        <value xsi:type="xsd:string">ALS OEM Asia</value>
+    </values>
+    <values>
+        <field>Sales_Sub_Team__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sales_Team__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

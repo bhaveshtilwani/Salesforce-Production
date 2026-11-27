@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>1064</locationX>
+        <locationY>176</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Get_Queue_Record.Recipient_Emails__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>DefaultWorkflowUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>BodyTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>1.0.1</versionString>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_Queue</name>
+        <label>Check Queue</label>
+        <locationX>770</locationX>
+        <locationY>179</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>is_Queue_Available</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Queue_Record</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner:Group.Id</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.OwnerId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.OwnerId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email</targetReference>
+            </connector>
+            <label>is Queue Available?</label>
+        </rules>
+    </decisions>
+    <description>Simplifying the Email - Fixed Notif (Direct)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Subject</name>
+        <dataType>String</dataType>
+        <expression>&quot;Re-Assigned To Queue - &quot; &amp; {!$Record.Company}</expression>
+    </formulas>
+    <interviewLabel>Lead - Re Assign Record Back To Queue Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead - Re Assign Record Back To Queue Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Queue_Record</name>
+        <label>Get Queue Record</label>
+        <locationX>551</locationX>
+        <locationY>176</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Queue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Owner:Group.DeveloperName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Lead_Queue_Collection__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>98</locationX>
+        <locationY>67</locationY>
+        <connector>
+            <targetReference>Get_Queue_Record</targetReference>
+        </connector>
+        <filterFormula>AND(
+    ISCHANGED({!$Record.OwnerId}) 
+)</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>BodyTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;br/&gt;&lt;br/&gt;
+*** THIS LEAD IS RE ASSIGN BACK TO QUEUE NOTIFICATION ***&lt;br/&gt;&lt;br/&gt;
+This following lead has been reassigned back to your respective {!$Record.Owner:Group.Name} team.&lt;br/&gt;&lt;br/&gt;
+Lead Name: {!$Record.FirstName} {!$Record.LastName}, {!$Record.Country}&lt;br/&gt;
+Company: {!$Record.Company}&lt;br/&gt;
+Source: {!$Record.LeadSource}&lt;br/&gt;
+Source Detail: {!$Record.Lead_Source_Detail__c}&lt;br/&gt;
+Lead Source Date: {!$Record.Lead_Source_Date__c}&lt;br/&gt;
+Application: {!$Record.Application__c}&lt;br/&gt;
+Notes: {!$Record.Notes__c}&lt;br/&gt;
+{!$Record.pi__comments__c}&lt;br/&gt;&lt;br/&gt;
+Update the Lead Status to discontinue the Automated Notifications.&lt;br/&gt;&lt;br/&gt;
+Click on the link to access the lead directly: &lt;a href=&quot;{!$Label.LeadURL}{!$Record.Id}&quot; target=&quot;_blank&quot;&gt;{!$Label.LeadURL}{!$Record.Id}&lt;/a&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>ToEmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

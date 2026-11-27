@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Object --></label>
+    <name>Object__c</name>
+    <picklistValues>
+        <masterLabel>CPQU_ProductPrice__c</masterLabel>
+        <translation><!-- CPQU_ProductPrice__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OrderItem</masterLabel>
+        <translation><!-- OrderItem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PricebookEntry</masterLabel>
+        <translation><!-- PricebookEntry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product2</masterLabel>
+        <translation><!-- Product2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard_Product_Mapping__c</masterLabel>
+        <translation><!-- Standard_Product_Mapping__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

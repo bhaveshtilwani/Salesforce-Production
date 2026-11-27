@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- ACC Trial --></label>
+        <name>ACCTrial</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer Portal Request --></label>
+        <name>Customer_Portal_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Demo Case --></description>
+        <label><!-- Demo Case --></label>
+        <name>Demo_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- CS Case Record Type --></description>
+        <label><!-- CS Case --></label>
+        <name>ETC_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Price List Update --></label>
+        <name>Price_List_Update</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Any request where the customer wants to, or thinks they need to, return products to Excelitas. --></description>
+        <label><!-- RMA Request --></label>
+        <name>RMA_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Case for Salesforce related issues --></description>
+        <label><!-- SF Case --></label>
+        <name>SF_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Order approval for SOX compliance --></description>
+        <label><!-- SOX Order Compliance --></label>
+        <name>SOX_Order_Compliance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sample Loaner --></label>
+        <name>Sample_Loaner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service --></label>
+        <name>Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Any requests to grant non-standard conditions of service that require management approval. --></description>
+        <label><!-- Special Approval Request --></label>
+        <name>Special_Approval_Request</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Either Account or Opportunity is required. --></errorMessage>
+        <name>AccountOROpportunity_Required_Nobelight</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate the date. --></errorMessage>
+        <name>Actual_Delivery_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate date. --></errorMessage>
+        <name>Actual_Returned_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fill the required fields Resolution, Resolution Type, Resolution Remarks --></errorMessage>
+        <name>CASE_Closed_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Fill the Required Fields:
+Case Type ,Case Subtype -->
+        </errorMessage>
+        <name>CASE_Coordination_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fill the Required Fields: Waiting For --></errorMessage>
+        <name>CASE_Status_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please follow the standard approval process. --></errorMessage>
+        <name>CS_Cant_Approve_Manually_Portal_Request</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- The Priority Level of your case cannot be set to &quot;None&quot;.
+Please select High, Medium, or Low. -->
+        </errorMessage>
+        <name>Cannot_save_with_NONE_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensure that the following fields are completed: Primary Product Segment, Primary Product Division and Annual Sales at Account Name. --></errorMessage>
+        <name>Case_Empty_fields_AR_Terms</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensure that the following fields are completed: Business Unit, Primary Product Line, Estimated One-Off Shipping Cost USD, Place of delivery (destination), Sales Order Number, Sales Order Line Number. --></errorMessage>
+        <name>Case_Empty_fields_Incoterms_One_Off</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ensure that the following fields are completed: Estimated Annualized Shipping Cost USD, Business Unit, and Primary Product Line. --></errorMessage>
+        <name>Case_Empty_fields_Incoterms_Permanent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since your request is rejected before, In order to resubmit this record please add the Resubmit Comment before submit the Case. --></errorMessage>
+        <name>Case_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Executive Summary is required when closing the record.
+Once closed, the record cannot be edited unless the status is changed back to Open. -->
+        </errorMessage>
+        <name>Closedrecordscannotbeedited</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate the date. --></errorMessage>
+        <name>Committed_Return_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide details. --></errorMessage>
+        <name>Product_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate the Product Price. --></errorMessage>
+        <name>Product_Price</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate AWB. --></errorMessage>
+        <name>Return_AWB</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SAP ERP Account must contain numbers only. --></errorMessage>
+        <name>SAP_ERP_Account_Numeric_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SAP Notification and SAP ERP Account# are required. --></errorMessage>
+        <name>SAP_Notifcation_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case can only be closed in CRM if the Notification in SAP is Closed too. --></errorMessage>
+        <name>SAP_Notification_Status_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate  AWB. --></errorMessage>
+        <name>Shipping_AWB</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate date. --></errorMessage>
+        <name>Shipping_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Request should be approved. --></errorMessage>
+        <name>Status_based_on_Approval</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Assign_to_CS_Team --></label>
+        <name>Assign_to_CS_Team</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CaseTimeline --></label>
+        <name>CaseTimeline</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Advanced_Imaging_Product_Return_Form --></label>
+        <name>Conga_Composer_Advanced_Imaging_Product_Return_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Global_RMA_Form --></label>
+        <name>Conga_Composer_Global_RMA_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_LDGI_Select_Forms --></label>
+        <name>Conga_Composer_LDGI_Select_Forms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_RMARepair_Case_Data --></label>
+        <name>Conga_Composer_RMARepair_Case_Data</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Return_closing_report --></label>
+        <name>Conga_Composer_Return_closing_report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Return_closing_report1 --></label>
+        <name>Conga_Composer_Return_closing_report1</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Preview_Approval --></label>
+        <name>Preview_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Product_Return_Sheet --></label>
+        <name>Product_Return_Sheet</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recall_Approval --></label>
+        <name>Recall_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_for_Approval --></label>
+        <name>Submit_for_Approval</name>
+    </webLinks>
+</CustomObjectTranslation>

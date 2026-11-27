@@ -1,0 +1,312 @@
+<html>
+<head>
+<script  type="text/javascript">
+<!--
+
+//modified by lexi
+
+// Default to true so user will have to confirm if they try to close window
+var userClose = true;
+
+var productCode = "";
+
+// If we are programmatically closing the window, set flag so user is not asked to confirm
+function closeWindow(){
+  userClose = false;
+  window.close();
+}
+
+// Perform query and calculations, if successful, refresh Opp and close popup
+function onLoad() {
+  if (performOperation() == true) {
+    opener.location.reload();
+    closeWindow();
+  } else {
+    // Close popup without refreshing Opp
+   closeWindow();
+  }
+} // onLoad()
+
+// Triggered when the window close event is triggered
+function onBeforeUnload() {
+  // Check to see if user initiated the close or if we tried to close it due to script completion
+  if (userClose) {
+  event.returnValue = "salesforce.com is currently performing operations for this Opportunity.  If you close this window, the calculation may not complete.  Please click 'Cancel' to allow calculation to complete.";
+  }
+}
+
+function onBlur() {
+
+  self.focus();
+  return false;
+
+}
+
+
+function performOperation(){
+
+//alert("begin");
+
+try {xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");}
+catch(e){
+//alert("hello1");
+return false;}
+
+var url = "{!API_Enterprise_Server_URL_40}";
+
+xmlhttp.Open("POST",url,false);
+xmlhttp.setRequestHeader("Content-Type","text/xml");
+xmlhttp.setRequestHeader("soapAction","update");
+
+// Create an XML doc to use for reading our query results
+
+// Use appropriate progID for system/browser
+try{xmlDoc = new ActiveXObject("MSxml2.xmldom" )}catch(e){err=e.message}
+try{xmlDoc = new ActiveXObject("Microsoft.xmldom")}catch(e){err=e.message}
+try{xmlDoc = new ActiveXObject("MSxml.xmldom" )}catch(e){err=e.message}
+try{xmlDoc = new ActiveXObject("MSxml3.xmldom" )}catch(e){err=e.message}
+if(!xmlDoc){ alert(err); return }
+xmlDoc.async="false";
+
+
+
+// Get line items associated with the current Opportunity ID
+var xmlLineItemQuery = "<?xml  version='1.0'  encoding='UTF-8' ?>" +
+                          '<soapenv:Envelope ' +
+                          'xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" ' +
+                          'xmlns:xsd="http://www.w3.org/2001/XMLSchema" '+
+                          'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+
+                          '<soapenv:Header>'+
+                          '<ns1:SessionHeader ' +
+                          'soapenv:mustUnderstand="0" '+
+                          'xmlns:ns1="SforceService">'+
+                          '<ns2:sessionId ' +
+                          'xmlns:ns2="urn:enterprise.soap.sforce.com">{!API_Session_ID}'+
+                          '</ns2:sessionId>'+
+                          ' </ns1:SessionHeader>'+
+                          '<ns3:QueryOptions soapenv:mustUnderstand="0" ' +
+                          'xmlns:ns3="SoapService">' +
+                          '</ns3:QueryOptions>'+
+	                      '</soapenv:Header>'+
+                          '<soapenv:Body>' +
+                          '<query xmlns="urn:enterprise.soap.sforce.com">'+
+                          '<queryString>select PricebookEntryId from OpportunityLineItem ' +
+                          'where OpportunityID=' +
+                          "'{!Opportunity_ID}'</queryString>" +
+                          '</query>' +
+                          '</soapenv:Body>'+
+                          '</soapenv:Envelope>';
+
+xmlhttp.Send(xmlLineItemQuery);
+var status = xmlhttp.status;
+
+if ( status == 200)
+{
+  	//alert(xmlhttp.responseText);
+    var xml = xmlhttp.responseXml;
+  	xmlDoc.load(xml);
+  	var PriceBookEntryIds = xmlDoc.getElementsByTagName("sf:PricebookEntryId");
+  	var productIds = new Array();
+
+    for (var xx = 0; xx < PriceBookEntryIds.length; xx++ ) {
+    	var entryId = PriceBookEntryIds[xx].text;
+    	var xmlEntryQuery = "<?xml  version='1.0'  encoding='UTF-8' ?>" +
+                          '<soapenv:Envelope ' +
+                          'xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" ' +
+                          'xmlns:xsd="http://www.w3.org/2001/XMLSchema" '+
+                          'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+
+                          '<soapenv:Header>'+
+                          '<ns1:SessionHeader ' +
+                          'soapenv:mustUnderstand="0" '+
+                          'xmlns:ns1="SforceService">'+
+                          '<ns2:sessionId ' +
+                          'xmlns:ns2="urn:enterprise.soap.sforce.com">{!API_Session_ID}'+
+                          '</ns2:sessionId>'+
+                          ' </ns1:SessionHeader>'+
+                          '<ns3:QueryOptions soapenv:mustUnderstand="0" ' +
+                          'xmlns:ns3="SoapService">' +
+	     '<ns4:batchSize ' +
+                          'xmlns:ns4="urn:enterprise.soap.sforce.com">200</ns4:batchSize>' +
+                          '</ns3:QueryOptions>'+
+	     '</soapenv:Header>'+
+                          '<soapenv:Body>' +
+                          '<query xmlns="urn:enterprise.soap.sforce.com">'+
+                          '<queryString>select Product2Id from PricebookEntry ' +
+                          "where id='"+entryId+ "'</queryString>" +
+                          '</query>' +
+                          '</soapenv:Body>'+
+                          '</soapenv:Envelope>';
+
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		xmlhttp.Open("POST",url,false);
+		xmlhttp.setRequestHeader("Content-Type","text/xml");
+		xmlhttp.setRequestHeader("soapAction","update");
+		xmlhttp.Send(xmlEntryQuery);
+
+		var stat = xmlhttp.status;
+		if (stat != 200 ) {
+			return false;
+		}
+
+		var xml = xmlhttp.responseXml;
+        xmlDoc.load(xml);
+
+        //alert(xmlhttp.responseText);
+        //alert("insertinginto" + xx);
+        //alert(xmlDoc.getElementsByTagName("sf:Product2Id")[0].text);
+	 	productIds[xx] = xmlDoc.getElementsByTagName("sf:Product2Id")[0].text;
+
+	 }
+
+	 //Loop through productIds, querying for product code, tallying only
+	 //quantities of type targetProductCode
+	 for (var productCount = 0; productCount < productIds.length; productCount++) {
+
+	    //alert("beginloop" + productCount + " length"+ productIds.length + "count " + productCount );
+
+
+
+	    //alert("here" + productIds[productCount]);
+
+	    var productId = productIds[productCount];
+
+        //alert("not here");
+
+        //alert("productId" + productId);
+	    var xmlProductCodeQuery = "<?xml  version='1.0'  encoding='UTF-8' ?>" +
+                          '<soapenv:Envelope ' +
+                          'xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" ' +
+                          'xmlns:xsd="http://www.w3.org/2001/XMLSchema" '+
+                          'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+
+                          '<soapenv:Header>'+
+                          '<ns1:SessionHeader ' +
+                          'soapenv:mustUnderstand="0" '+
+                          'xmlns:ns1="SforceService">'+
+                          '<ns2:sessionId ' +
+                          'xmlns:ns2="urn:enterprise.soap.sforce.com">{!API_Session_ID}'+
+                          '</ns2:sessionId>'+
+                          ' </ns1:SessionHeader>'+
+                          '<ns3:QueryOptions soapenv:mustUnderstand="0" ' +
+                          'xmlns:ns3="SoapService">' +
+	    				  '<ns4:batchSize ' +
+                          'xmlns:ns4="urn:enterprise.soap.sforce.com">200</ns4:batchSize>' +
+                          '</ns3:QueryOptions>'+
+	    				  '</soapenv:Header>'+
+                          '<soapenv:Body>' +
+                          '<query xmlns="urn:enterprise.soap.sforce.com">'+
+                          '<queryString>select Terms_and_Conditions__c from Product2 ' +
+                          "where id='"+productId+ "'</queryString>" +
+                          '</query>' +
+                          '</soapenv:Body>'+
+                          '</soapenv:Envelope>';
+
+    	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    	xmlhttp.Open("POST",url,false);
+    	xmlhttp.setRequestHeader("Content-Type","text/xml");
+    	xmlhttp.setRequestHeader("soapAction","update");
+    	xmlhttp.Send(xmlProductCodeQuery);
+
+   		var sq = xmlhttp.status;
+   		if ( sq == 200)
+   	    {
+      		//alert(xmlhttp.responseText);
+      		var xml = xmlhttp.responseXml;
+      		xmlDoc.load(xml);
+
+      		if (productCount == 0 ) {
+      	      productCode =  productCode + xmlDoc.getElementsByTagName("sf:Terms_and_Conditions__c")[0].text;
+  			} else {
+      		productCode =  productCode + "\n" + "----------------------------" + "\n" + xmlDoc.getElementsByTagName("sf:Terms_and_Conditions__c")[0].text;
+      		 //alert(productCode);
+      		}
+
+  		}
+  		else
+  		{
+  			//alert("yoooo");
+    		return false;
+  		}
+  		//alert("endloop" + productCount);
+	}//for loop
+
+	//Update to populate 'total voice units' and 'weighted voice units'
+	try{xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");}
+	catch(e){return false;}
+
+	xmlhttp.Open("POST",url,false);
+	xmlhttp.setRequestHeader("Content-Type","text/xml");
+	xmlhttp.setRequestHeader("soapAction","update");
+	//alert(productCode);
+	var xmlUpdateOpp = "<?xml  version='1.0'  encoding='UTF-8' ?>" +
+                          '<soapenv:Envelope ' +
+                          'xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" ' +
+                          'xmlns:xsd="http://www.w3.org/2001/XMLSchema" '+
+                          'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+
+                          '<soapenv:Header>'+
+                          '<ns1:SessionHeader ' +
+                          'soapenv:mustUnderstand="0" '+
+                          'xmlns:ns1="SforceService">'+
+                          '<ns2:sessionId' +
+                          ' xmlns:ns2="urn:enterprise.soap.sforce.com">{!API_Session_ID}'+
+                          '</ns2:sessionId>'+
+                          ' </ns1:SessionHeader>'+
+                          '</soapenv:Header>'+
+                          '<soapenv:Body>' +
+                          '<update xmlns="urn:enterprise.soap.sforce.com">'+
+                          '<sObjects xsi:type="ns3:Opportunity" '+
+                          'xmlns:ns3="urn:sobject.enterprise.soap.sforce.com">'+
+                          '<ns3:Id>{!Opportunity_ID}' +
+                          '</ns3:Id>'+
+                          '<ns3:Terms_and_Conditions__c>'+productCode+
+                          '</ns3:Terms_and_Conditions__c>'+
+                          '</sObjects>' +
+                          '</update>' +
+                          '</soapenv:Body>'+
+                          '</soapenv:Envelope>';
+  	xmlhttp.Send(xmlUpdateOpp);
+  	var sq = xmlhttp.status;
+  	if ( sq == 200){
+  	  return true;
+  	}
+  	else{
+  	  //alert("chum");
+  	  return false;
+  	}
+}
+else
+{
+  //alert("zoo");
+  return false;
+}
+}// performOperation()
+ -->
+</script>
+<title></title>
+<link href="/css/ie_global.css" rel="stylesheet" type="text/css">
+<link href="/css/ie_navigation.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" onBlur="onBlur();" onBeforeUnload="onBeforeUnload();">
+
+<center>
+  <br>
+  <table width="100%">
+    <tr>
+	  <td align=center>
+        <span class="moduleTitle">Performing Operation ... Please Wait</span>
+	  </td>
+	</tr>
+	<tr>
+	  <td>&nbsp;</td>
+	</tr>
+	<tr>
+	  <td align=center>
+        <img src="/img/waiting_dots.gif" border="0" width=156 height=34>
+	  </td>
+    </tr>
+  </table>
+  </center>
+<script  type="text/javascript">
+setTimeout("onLoad();",2000);
+</script>
+</body>
+</html>

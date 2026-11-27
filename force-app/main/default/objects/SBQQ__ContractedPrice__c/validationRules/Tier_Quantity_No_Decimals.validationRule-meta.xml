@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tier_Quantity_No_Decimals</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    MOD(Tier_1_Maximum_Qty__c, 1) &lt;&gt; 0,
+    MOD(Tier_1_Minimum_Qty__c, 1) &lt;&gt; 0,
+    MOD(Tier_2_Maximum_Qty__c, 1) &lt;&gt; 0,
+    MOD(Tier_2_Minimum_Qty__c, 1) &lt;&gt; 0,
+    MOD(Tier_3_Maximum_Qty__c, 1) &lt;&gt; 0,
+    MOD(Tier_3_Minimum_Qty__c, 1) &lt;&gt; 0,
+    MOD(Tier_4_Maximum_Qty__c, 1) &lt;&gt; 0,
+    MOD(Tier_4_Minimum_Qty__c, 1) &lt;&gt; 0
+)</errorConditionFormula>
+    <errorMessage>Tier Quantity must be whole numbers. Decimal values are not allowed.</errorMessage>
+</ValidationRule>

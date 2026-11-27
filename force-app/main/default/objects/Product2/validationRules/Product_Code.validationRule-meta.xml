@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Code</fullName>
+    <active>false</active>
+    <description>The Product Code field cannot contain more than 18 characters.</description>
+    <errorConditionFormula>AND(
+LEN(ProductCode)&gt;18,
+ISPICKVAL(Excelitas_Selling_Site__c, &apos;Toronto&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>ProductCode</errorDisplayField>
+    <errorMessage>The Product Code field cannot contain more than 18 characters.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Days_to_Close__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+CONTAINS(TEXT(StageName), &quot;Other&quot;),
+IsWon
+),
+IF(
+ISBLANK(Actual_Close_Date__c),
+MAX(0, CloseDate - DATEVALUE(CreatedDate)),
+MAX(0, Actual_Close_Date__c - DATEVALUE(CreatedDate))
+),
+null
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actual Days to Close</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Warehouse for AX Billerica RMA --></help>
+    <label><!-- Warehouse (AX RMA) --></label>
+    <name>Warehouse__c</name>
+    <picklistValues>
+        <masterLabel>RETURNS</masterLabel>
+        <translation><!-- RETURNS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RMA</masterLabel>
+        <translation><!-- RMA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

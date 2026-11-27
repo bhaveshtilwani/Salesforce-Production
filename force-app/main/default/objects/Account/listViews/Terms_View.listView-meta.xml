@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terms_View</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PKI_Site__c</columns>
+    <columns>Credit_Terms__c</columns>
+    <columns>Credit_Terms_Desc__c</columns>
+    <columns>Shipping_Terms__c</columns>
+    <columns>Shipping_Terms_Desc_1__c</columns>
+    <columns>Shipping_Terms_Desc_2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Customer Name</value>
+    </filters>
+    <label>Terms View</label>
+    <sharedTo>
+        <role>IT_Administrators</role>
+    </sharedTo>
+</ListView>

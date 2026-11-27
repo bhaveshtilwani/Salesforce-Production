@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Revenue_Date__c</fullName>
+    <description>For D&amp;A</description>
+    <inlineHelpText>Best estimate as to when we would recognize the revenue associated with this booking.  In most cases, this is equal to an estimated ship/invoice date.</inlineHelpText>
+    <label>Estimated Revenue Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

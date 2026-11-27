@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Contact_Update_from_Exhibition</fullName>
+        <ccEmails>Thomas.Legrand@excelitas.com; scott.Orr@Excelitas.com</ccEmails>
+        <description>Contact Update from Exhibition</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>JC_ALL/Exsiting_CONTACT_Update_from_Exhibition</template>
+    </alerts>
+    <alerts>
+        <fullName>Existing_Contact_Update_for_Account_Owner</fullName>
+        <description>Existing Contact Update for Account Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Existing_Contact_Updated_from_Website</template>
+    </alerts>
+    <alerts>
+        <fullName>Existing_Contact_Update_for_Owner</fullName>
+        <description>Existing Contact Update for Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Existing_Contact_Updated_from_Website</template>
+    </alerts>
+    <alerts>
+        <fullName>Existing_Contact_Updated_from_Website</fullName>
+        <description>Existing Contact Updated from Website</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alona.droga@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>andrew.goodfellow@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>danica.martin@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jo.patron@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>richard.ankcorn@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sinead.oleary@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Existing_Contact_Updated_from_Website</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Opt_out_on_DBL_Opt</fullName>
+        <field>HasOptedOutOfEmail</field>
+        <literalValue>1</literalValue>
+        <name>Opt-out on DBL-Opt</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Optin</fullName>
+        <field>HasOptedOutOfEmail</field>
+        <literalValue>0</literalValue>
+        <name>Update Optin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_Stamp_Contact</fullName>
+        <field>Double_Opt_In_TimeStamp__c</field>
+        <formula>NOW()</formula>
+        <name>Update Time Stamp (Contact)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Contact Inquiry</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contact.pi__last_activity__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>If existing Contact creates new inquiry to webform, trigger to Account owner to advise inquiry was made and look for PARDOT COMMENTS</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Contact Update from Expo</fullName>
+        <actions>
+            <name>Contact_Update_from_Exhibition</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contact.LeadSource</field>
+            <operation>equals</operation>
+            <value>Exhibition</value>
+        </criteriaItems>
+        <description>When Contact captured by iCapture and updated, Email alert to owner</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Do not email</fullName>
+        <actions>
+            <name>Opt_out_on_DBL_Opt</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Contact.Market_Do_Not_Market__c</field>
+            <operation>equals</operation>
+            <value>Do Not Market</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email OptIN</fullName>
+        <actions>
+            <name>Update_Optin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Market_Do_Not_Market__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Market_Do_Not_Market__c</field>
+            <operation>equals</operation>
+            <value>Market</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Time Stamp %28Contact%29</fullName>
+        <actions>
+            <name>Update_Time_Stamp_Contact</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Contact.Market_Do_Not_Market__c</field>
+            <operation>contains</operation>
+            <value>Market</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.Market_Do_Not_Market__c</field>
+            <operation>contains</operation>
+            <value>Do Not Market</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

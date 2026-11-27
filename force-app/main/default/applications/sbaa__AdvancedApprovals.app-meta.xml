@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>Enhance approval workflow management with Advanced Approvals. We understand the many intricacies that growing businesses face and have created a flexible product that allows you to customize complex approval solutions that will meet your needs.</description>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Advanced Approvals</label>
+    <logo>sbaa__Salesforce_CPQ_AA_Assets/sbaa__Salesforce_CPQ_Logo.png</logo>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>sbaa__ApprovalRule__c</tabs>
+    <tabs>sbaa__ApprovalChain__c</tabs>
+    <tabs>sbaa__Approver__c</tabs>
+    <tabs>sbaa__ApprovalVariable__c</tabs>
+    <tabs>sbaa__EmailTemplate__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>sbaa__ApprovalCondition__c</tabs>
+    <tabs>SBQQ__QuoteLine__c</tabs>
+    <tabs>sbaa__Approval__c</tabs>
+    <tabs>Customer_Group__c</tabs>
+    <tabs>Mode_of_delivery__c</tabs>
+    <tabs>Dunning_Clerk__c</tabs>
+    <tabs>Shipping_Company__c</tabs>
+    <tabs>Export_Classification__c</tabs>
+    <tabs>Item_Condition_Type__c</tabs>
+    <tabs>WBS_Element__c</tabs>
+    <tabs>Special_Instruction__c</tabs>
+    <tabs>Trip_Report__c</tabs>
+    <tabs>Invoice__c</tabs>
+    <tabs>Log_Customer_Requests__c</tabs>
+    <tabs>Revenue_Recognition_Mapping__c</tabs>
+</CustomApplication>

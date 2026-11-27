@@ -1,0 +1,87 @@
+<!--
+    @description       : This Quote Search Result Replacement LWC(Child) is called from Quote Search LWC(Parent) for rendering replacement result
+    @author            : Jade Global
+    @last modified on  : 02-18-2021
+    @last modified by  : Jade Global
+    Modifications Log
+    Ver   Date         Author        Modification
+    1.0   02-18-2021   Jade Global   Initial Version
+-->
+<template>
+    <header>
+        <div class="slds-text-heading_medium" style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px;">
+            <p style="font-weight: bold;">Support Request Selection Section</p>
+        </div>
+    </header>
+    <br />
+    <div style="width: 100%; overflow-x: scroll;">
+        <table class={strTableClass}>
+            <thead>
+                <tr class="slds-text-heading--label">
+                    <th class="slds-is-sortable" scope="col">
+                        <span class="slds-truncate" style="text-transform: capitalize;font-size: 13px;">Select</span>
+                    </th>
+                    <th align="center" class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;" title="SFDC Account Name">SFDC Account Name</div>
+                    </th>
+                    <th  class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;" title="Contact Name">Contact Name</div>
+                    </th>
+                    <th   class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;" title="Recipient Name">Recipient Name</div>
+                    </th>
+                    <th  class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;" title="Serial Number">Serial Number</div>
+                    </th>
+                    <th  class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;" title="Status">Status</div>
+                    </th>
+                    <th  class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;" title="Warranty Expiration">Warranty Expiration</div>
+                    </th>
+                    <th  class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;" title="Failure Type">Failure Type</div>
+                    </th>
+                    <th  class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;" title="Request Type">Request Type</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            <template for:each={tempQuoteOrderResult} for:item="con" for:index="index">
+                    <tr class="slds-hint-parent" key={con.replacementId}>
+                        <td class="slds-truncate" scope="col">
+                            <div class="slds-truncate">
+                                <lightning-input type="checkbox" value={con.replacementId} onclick={handleSelectedRows}></lightning-input>
+                            </div> 
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col"  data-label="SFDC Account Name">
+                            <div>{con.accountName}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col"  data-label="Contact Name">
+                            <div>{con.contactName}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col"  data-label="Recipient Name">
+                            <div>{con.recipientName}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col"  data-label="Serial Number">
+                            <div>{con.serialNumber}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col"  data-label="Status">
+                            <div>{con.status}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col"  data-label="Warranty Expiration">
+                            <div>{con.warrantyExpirationDate}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col"  data-label="Failure Type">
+                            <div>{con.failureType}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col"  data-label="Request Type">
+                            <div>{con.requestType}</div>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>        
+</template>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>AIS_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>AIS Sales</label>
+        <sharedTo>
+            <group>AIS_Sales</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>AIS Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ALS_Channel</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ALS Channel</label>
+        <sharedTo>
+            <group>ALS_Channel</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>ALS Channel</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ALS_OEM</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ALS OEM</label>
+        <sharedTo>
+            <group>ALS_OEM</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>ALS OEM</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Corp_Dev</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Corp Dev</label>
+        <sharedTo>
+            <group>Corp_Dev</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Corp Dev</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Global_Semi_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Global Semi Sales</label>
+        <sharedTo>
+            <group>Global_Semi_Sales</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>Global Semi Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>IOA_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>IOA Sales</label>
+        <sharedTo>
+            <group>IOA_Sales</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>IOA Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>LSM_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>LSM Sales</label>
+        <sharedTo>
+            <group>LSM_Sales</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>LSM Sales</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>M&amp;LS Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Nobelight_access_for_opportunity</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Nobelight access for opportunity</label>
+        <sharedTo>
+            <group>Noblelight</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Noblelight</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Precision_Manufacturing_Sales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Precision Manufacturing Sales</label>
+        <sharedTo>
+            <group>Precision_Manufacturing_Sales</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>Precision Manufacturing Sales</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>WW_Channel</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>WW Channel</label>
+        <sharedTo>
+            <group>WW_Channel</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sales_TeamHIER__c</field>
+            <operation>equals</operation>
+            <value>WW Channel</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

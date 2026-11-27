@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allow access for Nathalie to edit invoice date in order lines</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>OrderItem.Invoice_DateLDGI__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Toronto Nathalie Invoice Date</label>
+</PermissionSet>

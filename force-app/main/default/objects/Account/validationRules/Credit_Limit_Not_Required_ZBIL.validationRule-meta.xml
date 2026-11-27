@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Limit_Not_Required_ZBIL</fullName>
+    <active>false</active>
+    <description>If maintained by Central Finance.</description>
+    <errorConditionFormula>AND(
+$User.Profile_Name__c = &quot;Central Finance&quot;,
+Is_CFIN_Process__c = 1,
+NOT(ISPICKVAL(Account_Group__c, &quot;Intra-Div &amp; Inter-Co. - ZINT&quot;)),
+ISBLANK(UKMBP_CMS_SGM_CREDIT_LIMIT__c)
+)</errorConditionFormula>
+    <errorDisplayField>UKMBP_CMS_SGM_CREDIT_LIMIT__c</errorDisplayField>
+    <errorMessage>Credit Limit required</errorMessage>
+</ValidationRule>

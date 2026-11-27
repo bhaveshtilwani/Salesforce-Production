@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Aktivieren Sie das KontrollkÃ¤stchen, um anzugeben, dass das zugehÃ¶rige Produkt im Paket mit dem Hauptprodukt gebÃ¼ndelt ist. Bei Paketoptionen sind die Menge festgelegt und der Preis auf Null gesetzt, da der Preis im Hauptprodukt eingeschlossen ist. Lassen Sie das KontrollkÃ¤stchen deaktiviert, wenn der Preis zur Option hinzugefÃ¼gt werden soll.&quot;</help>
+    <label>GebÃ¼ndelt</label>
+    <name>SBQQ__Bundled__c</name>
+</CustomFieldTranslation>

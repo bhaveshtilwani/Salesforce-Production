@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Hiermit steuern Sie, wann der Bildschirm &quot;&quot;Produkte konfigurieren&quot;&quot; fÃ¼r dieses Produkt angezeigt wird. WÃ¤hlen Sie &quot;&quot;HinzufÃ¼gen&quot;&quot; aus, um die Bildschirmanzeige auf die anfÃ¤ngliche Konfiguration zu beschrÃ¤nken. Bei Auswahl von &quot;&quot;Bearbeiten&quot;&quot; erfolgt die Anzeige bei der nachfolgenden Konfiguration.&quot;</help>
+    <label><!-- Configuration Event --></label>
+    <name>SBQQ__ConfigurationEvent__c</name>
+    <picklistValues>
+        <masterLabel>Add</masterLabel>
+        <translation>Addieren</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Always</masterLabel>
+        <translation>Immer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edit</masterLabel>
+        <translation>Bearbeiten</translation>
+    </picklistValues>
+</CustomFieldTranslation>

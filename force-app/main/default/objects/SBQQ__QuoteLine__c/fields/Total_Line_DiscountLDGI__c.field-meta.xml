@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Line_DiscountLDGI__c</fullName>
+    <formula>ROUND(
+SBQQ__ListPrice__c -
+(
+SBQQ__ListPrice__c *
+(1 - (Disc_1__c / 100)) *
+(1 - (Disc_2__c / 100))
+),3
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Line Discount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

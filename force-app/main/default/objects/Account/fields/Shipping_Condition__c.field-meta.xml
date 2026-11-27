@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Condition__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Required for:
+
+Germany - Customer int number assgnmnt - DEBI, QioDebitoren Europäische Union - DEEU, Sold to - W001, Ship To - W002, Ship To - H002
+Salem - Sold To/Ship To - 0001
+Montreal - Bill To - 0001, Ship To - 0002
+Boulder - Customer-Sold To Role, Customer-Ship To, Customer-Payer
+Asia - Sold-to party - ZCUS, Ship-to party - 0002, Sold-to party (OPSL) - 0001, Ship-to party - 0002</inlineHelpText>
+    <label>Shipping Condition</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Shipping_Condition__c.Site__c</field>
+            <operation>contains</operation>
+            <valueField>$Source.ERP_Site__c</valueField>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Shipping_Condition__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

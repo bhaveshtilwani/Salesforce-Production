@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllContacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Business_Unit__c</columns>
+    <columns>DivisionGlobal__c</columns>
+    <columns>Product_Family__c</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.LAST_UPDATE</columns>
+    <columns>ContactStatus__c</columns>
+    <columns>Contact_StatusIMG__c</columns>
+    <columns>Sales_TeamNEW__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Lead_Source_Detail__c</field>
+        <operation>equals</operation>
+        <value>The Assembly Show</value>
+    </filters>
+    <filters>
+        <field>CONTACT.LAST_UPDATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>10/26/2026 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>CONTACT.LAST_UPDATE</field>
+        <operation>lessOrEqual</operation>
+        <value>11/1/2026 12:00 AM</value>
+    </filters>
+    <label>All Contacts</label>
+</ListView>

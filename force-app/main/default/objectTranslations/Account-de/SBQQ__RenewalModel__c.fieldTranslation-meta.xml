@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;WÃ¤hlen Sie &quot;&quot;VermÃ¶genswertbasiert&quot;&quot;, um VerlÃ¤ngerungen auf der Basis der VermÃ¶genswerte eines Accounts vorzunehmen, oder &quot;&quot;Abonnementbasiert&quot;&quot;, wenn VerlÃ¤ngerungen auf Abonnements basieren sollen, die aus einem Angebot erstellt werden.&quot;</help>
+    <label>VerlÃ¤ngerungsmodell</label>
+    <name>SBQQ__RenewalModel__c</name>
+    <picklistValues>
+        <masterLabel>Asset Based</masterLabel>
+        <translation>VermÃ¶genswertbasiert</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Based</masterLabel>
+        <translation>Vertragsbasiert</translation>
+    </picklistValues>
+</CustomFieldTranslation>

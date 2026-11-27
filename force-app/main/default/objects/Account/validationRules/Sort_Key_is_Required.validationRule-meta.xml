@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sort_Key_is_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    $User.Alias &lt;&gt; &quot;sconn&quot;,
+
+    OR(
+        AND(
+            $RecordType.Name = &quot;SAP Germany&quot;,
+            CFIN_Completed_and_Confirmed__c = TRUE,
+            OR(
+                ISPICKVAL(Account_Group__c , &quot;Customer int number assgnmnt - DEBI&quot;),
+                ISPICKVAL(Account_Group__c , &quot;QioDebitoren Europäische Union - DEEU&quot;)
+            ),
+            ISBLANK(TEXT(Sort_Key__c))
+        ),
+
+AND(
+OR(
+ISPICKVAL( ERP_Site__c , &quot;Goettingen&quot;),
+                ISPICKVAL(ERP_Site__c , &quot;Munich&quot;)
+            ),
+            ISBLANK(TEXT(Sort_Key__c)),
+            $User.Profile_Name__c = &quot;Central Finance&quot;
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Sort_Key__c</errorDisplayField>
+    <errorMessage>Sort Key is Required.</errorMessage>
+</ValidationRule>

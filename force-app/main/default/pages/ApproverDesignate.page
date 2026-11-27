@@ -1,0 +1,9 @@
+<apex:page lightningStylesheets="true" controller="approverController">
+
+<apex:form >
+
+<apex:commandButton value="Delegate Approvals" action="{!delegate}" />
+
+</apex:form>
+
+</apex:page>

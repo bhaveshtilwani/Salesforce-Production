@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Type_s__c</fullName>
+    <label>Order Type/s</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Append Order Lines</fullName>
+                <default>false</default>
+                <label>Append Order Lines</label>
+            </value>
+            <value>
+                <fullName>Contract Call Off</fullName>
+                <default>false</default>
+                <label>Contract Call Off</label>
+            </value>
+            <value>
+                <fullName>Contract Creation</fullName>
+                <default>false</default>
+                <label>Contract Creation</label>
+            </value>
+            <value>
+                <fullName>Credit Memo Request</fullName>
+                <default>false</default>
+                <label>Credit Memo Request</label>
+            </value>
+            <value>
+                <fullName>Customer Return</fullName>
+                <default>false</default>
+                <label>Customer Return</label>
+            </value>
+            <value>
+                <fullName>Customer return for a repair</fullName>
+                <default>false</default>
+                <label>Customer return for a repair</label>
+            </value>
+            <value>
+                <fullName>Debit Memo/Bill only Request</fullName>
+                <default>false</default>
+                <label>Debit Memo/Bill only Request</label>
+            </value>
+            <value>
+                <fullName>Loan Return</fullName>
+                <default>false</default>
+                <label>Loan Return</label>
+            </value>
+            <value>
+                <fullName>Opto Return no Credit</fullName>
+                <default>false</default>
+                <label>Opto Return no Credit</label>
+            </value>
+            <value>
+                <fullName>Opto Return to Stock</fullName>
+                <default>false</default>
+                <label>Opto Return to Stock</label>
+            </value>
+            <value>
+                <fullName>Opto Return w/Credit</fullName>
+                <default>false</default>
+                <label>Opto Return w/Credit</label>
+            </value>
+            <value>
+                <fullName>Safety Stock</fullName>
+                <default>false</default>
+                <label>Safety Stock</label>
+            </value>
+            <value>
+                <fullName>Samples</fullName>
+                <default>false</default>
+                <label>Samples</label>
+            </value>
+            <value>
+                <fullName>Standard Sales Order</fullName>
+                <default>false</default>
+                <label>Standard Sales Order</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

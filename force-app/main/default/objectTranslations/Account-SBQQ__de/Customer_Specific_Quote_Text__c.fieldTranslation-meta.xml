@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Customer specific text/information/note used in Quotes.
+This value/text will be displayed on the quote document. -->
+    </help>
+    <label><!-- Customer Specific Quote Text --></label>
+    <name>Customer_Specific_Quote_Text__c</name>
+</CustomFieldTranslation>

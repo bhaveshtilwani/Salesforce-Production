@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Determines if the product is dual use. IE Defense and Commercial --></help>
+    <label><!-- Dual Use (EU) --></label>
+    <name>Dual_Use_EU__c</name>
+    <picklistValues>
+        <masterLabel>V_EUD</masterLabel>
+        <translation><!-- V_EUD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ohne Angabe</masterLabel>
+        <translation><!-- ohne Angabe --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Term_Not_Applicable</fullName>
+    <active>false</active>
+    <description>Payment term is not applicable to:
+Ship To - 0002 - Montreal
+Sold to - 0001 - Salem/MIA   
+Ship To - W002  - Wiesbaden
+Ship To - H002  - Hamble</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP NA Salem/MIA&quot;,OR( ISPICKVAL( Account_Group__c , &quot;Sold To/Ship To - 0001&quot;))
+&amp;&amp; NOT(ISBLANK( PaymentTerm__c ))) ||
+AND(
+NOT(ISBLANK(PaymentTerm__c)),
+OR (ISPICKVAL( Account_Group__c , &quot;Ship To - 0002&quot;),
+ISPICKVAL( Account_Group__c , &quot;Ship To - W002&quot;),
+ISPICKVAL( Account_Group__c , &quot;Ship To - H002&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>PaymentTerm__c</errorDisplayField>
+    <errorMessage>Payment Term is not applicable for the selected account group.</errorMessage>
+</ValidationRule>

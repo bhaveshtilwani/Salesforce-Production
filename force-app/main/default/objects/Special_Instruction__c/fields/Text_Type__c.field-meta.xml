@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Text_Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Text Type</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Text_Type__c.Site__c</field>
+            <operation>contains</operation>
+            <valueField>$Source.Site__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Text_Type__c.Description__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Text_Type__c</referenceTo>
+    <relationshipLabel>Special Instructions</relationshipLabel>
+    <relationshipName>Special_Instructions</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

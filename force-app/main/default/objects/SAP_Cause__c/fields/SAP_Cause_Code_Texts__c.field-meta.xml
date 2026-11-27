@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_Cause_Code_Texts__c</fullName>
+    <label>SAP Cause Code Text</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SAP_Cause_Groups__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>500 EUR Value Limit</fullName>
+                <default>false</default>
+                <label>500 EUR Value Limit</label>
+            </value>
+            <value>
+                <fullName>Accompanying documents incorrect</fullName>
+                <default>false</default>
+                <label>Accompanying documents incorrect</label>
+            </value>
+            <value>
+                <fullName>building/location</fullName>
+                <default>false</default>
+                <label>building/location</label>
+            </value>
+            <value>
+                <fullName>Capacity shortage</fullName>
+                <default>false</default>
+                <label>Capacity shortage</label>
+            </value>
+            <value>
+                <fullName>Cause not detectable</fullName>
+                <default>false</default>
+                <label>Cause not detectable</label>
+            </value>
+            <value>
+                <fullName>cleanliness/orderliness</fullName>
+                <default>false</default>
+                <label>cleanliness/orderliness</label>
+            </value>
+            <value>
+                <fullName>climatic conditions</fullName>
+                <default>false</default>
+                <label>climatic conditions</label>
+            </value>
+            <value>
+                <fullName>communication</fullName>
+                <default>false</default>
+                <label>communication</label>
+            </value>
+            <value>
+                <fullName>communication problem</fullName>
+                <default>false</default>
+                <label>communication problem</label>
+            </value>
+            <value>
+                <fullName>competence/qualification</fullName>
+                <default>false</default>
+                <label>competence/qualification</label>
+            </value>
+            <value>
+                <fullName>composition</fullName>
+                <default>false</default>
+                <label>composition</label>
+            </value>
+            <value>
+                <fullName>construction/development</fullName>
+                <default>false</default>
+                <label>construction/development</label>
+            </value>
+            <value>
+                <fullName>contamination</fullName>
+                <default>false</default>
+                <label>contamination</label>
+            </value>
+            <value>
+                <fullName>control of documents</fullName>
+                <default>false</default>
+                <label>control of documents</label>
+            </value>
+            <value>
+                <fullName>Coordination</fullName>
+                <default>false</default>
+                <label>Coordination</label>
+            </value>
+            <value>
+                <fullName>Coordination not sufficient</fullName>
+                <default>false</default>
+                <label>Coordination not sufficient</label>
+            </value>
+            <value>
+                <fullName>correlation issue</fullName>
+                <default>false</default>
+                <label>correlation issue</label>
+            </value>
+            <value>
+                <fullName>customer</fullName>
+                <default>false</default>
+                <label>customer</label>
+            </value>
+            <value>
+                <fullName>Customer material</fullName>
+                <default>false</default>
+                <label>Customer material</label>
+            </value>
+            <value>
+                <fullName>damage</fullName>
+                <default>false</default>
+                <label>damage</label>
+            </value>
+            <value>
+                <fullName>damage in transit</fullName>
+                <default>false</default>
+                <label>damage in transit</label>
+            </value>
+            <value>
+                <fullName>data entry/review</fullName>
+                <default>false</default>
+                <label>data entry/review</label>
+            </value>
+            <value>
+                <fullName>Defect</fullName>
+                <default>false</default>
+                <label>Defect</label>
+            </value>
+            <value>
+                <fullName>defective/incorrect material</fullName>
+                <default>false</default>
+                <label>defective/incorrect material</label>
+            </value>
+            <value>
+                <fullName>defective equipment</fullName>
+                <default>false</default>
+                <label>defective equipment</label>
+            </value>
+            <value>
+                <fullName>documentation</fullName>
+                <default>false</default>
+                <label>documentation</label>
+            </value>
+            <value>
+                <fullName>drawing, specification, method errors</fullName>
+                <default>false</default>
+                <label>drawing, specification, method errors</label>
+            </value>
+            <value>
+                <fullName>Emissionen</fullName>
+                <default>false</default>
+                <label>Emissionen</label>
+            </value>
+            <value>
+                <fullName>enviroment</fullName>
+                <default>false</default>
+                <label>enviroment</label>
+            </value>
+            <value>
+                <fullName>equipment not qualified</fullName>
+                <default>false</default>
+                <label>equipment not qualified</label>
+            </value>
+            <value>
+                <fullName>Error not reproducible/found</fullName>
+                <default>false</default>
+                <label>Error not reproducible/found</label>
+            </value>
+            <value>
+                <fullName>evaluation method</fullName>
+                <default>false</default>
+                <label>evaluation method</label>
+            </value>
+            <value>
+                <fullName>expiration date</fullName>
+                <default>false</default>
+                <label>expiration date</label>
+            </value>
+            <value>
+                <fullName>external</fullName>
+                <default>false</default>
+                <label>external</label>
+            </value>
+            <value>
+                <fullName>fault logistic in-house</fullName>
+                <default>false</default>
+                <label>fault logistic in-house</label>
+            </value>
+            <value>
+                <fullName>fault logistic service provider</fullName>
+                <default>false</default>
+                <label>fault logistic service provider</label>
+            </value>
+            <value>
+                <fullName>fixture</fullName>
+                <default>false</default>
+                <label>fixture</label>
+            </value>
+            <value>
+                <fullName>Foreign engagement</fullName>
+                <default>false</default>
+                <label>Foreign engagement</label>
+            </value>
+            <value>
+                <fullName>handling</fullName>
+                <default>false</default>
+                <label>handling</label>
+            </value>
+            <value>
+                <fullName>handling (cooling)</fullName>
+                <default>false</default>
+                <label>handling (cooling)</label>
+            </value>
+            <value>
+                <fullName>handling (electrical)</fullName>
+                <default>false</default>
+                <label>handling (electrical)</label>
+            </value>
+            <value>
+                <fullName>handling (mechanical)</fullName>
+                <default>false</default>
+                <label>handling (mechanical)</label>
+            </value>
+            <value>
+                <fullName>hardware</fullName>
+                <default>false</default>
+                <label>hardware</label>
+            </value>
+            <value>
+                <fullName>immission</fullName>
+                <default>false</default>
+                <label>immission</label>
+            </value>
+            <value>
+                <fullName>inadequate/incorrect/lack of tool</fullName>
+                <default>false</default>
+                <label>inadequate/incorrect/lack of tool</label>
+            </value>
+            <value>
+                <fullName>inadequate/lack of procedure or process</fullName>
+                <default>false</default>
+                <label>inadequate/lack of procedure or process</label>
+            </value>
+            <value>
+                <fullName>inadequate/lack of validation</fullName>
+                <default>false</default>
+                <label>inadequate/lack of validation</label>
+            </value>
+            <value>
+                <fullName>inadequate measurement system</fullName>
+                <default>false</default>
+                <label>inadequate measurement system</label>
+            </value>
+            <value>
+                <fullName>inadequate supervision</fullName>
+                <default>false</default>
+                <label>inadequate supervision</label>
+            </value>
+            <value>
+                <fullName>Incoming effort missing</fullName>
+                <default>false</default>
+                <label>Incoming effort missing</label>
+            </value>
+            <value>
+                <fullName>Incoming effort too late</fullName>
+                <default>false</default>
+                <label>Incoming effort too late</label>
+            </value>
+            <value>
+                <fullName>Incorrect</fullName>
+                <default>false</default>
+                <label>Incorrect</label>
+            </value>
+            <value>
+                <fullName>incorrect / incomplete</fullName>
+                <default>false</default>
+                <label>incorrect / incomplete</label>
+            </value>
+            <value>
+                <fullName>incorrect equipment or material</fullName>
+                <default>false</default>
+                <label>incorrect equipment or material</label>
+            </value>
+            <value>
+                <fullName>Incorrect specifications</fullName>
+                <default>false</default>
+                <label>Incorrect specifications</label>
+            </value>
+            <value>
+                <fullName>insufficient/inadequate/lack of training</fullName>
+                <default>false</default>
+                <label>insufficient/inadequate/lack of training</label>
+            </value>
+            <value>
+                <fullName>insufficient/inadequate packaging</fullName>
+                <default>false</default>
+                <label>insufficient/inadequate packaging</label>
+            </value>
+            <value>
+                <fullName>lack of/insufficient resources or capaci</fullName>
+                <default>false</default>
+                <label>lack of/insufficient resources or capaci</label>
+            </value>
+            <value>
+                <fullName>Lack of Proper Maintenance</fullName>
+                <default>false</default>
+                <label>Lack of Proper Maintenance</label>
+            </value>
+            <value>
+                <fullName>machine/equipment</fullName>
+                <default>false</default>
+                <label>machine/equipment</label>
+            </value>
+            <value>
+                <fullName>machine design</fullName>
+                <default>false</default>
+                <label>machine design</label>
+            </value>
+            <value>
+                <fullName>malfunction</fullName>
+                <default>false</default>
+                <label>malfunction</label>
+            </value>
+            <value>
+                <fullName>man</fullName>
+                <default>false</default>
+                <label>man</label>
+            </value>
+            <value>
+                <fullName>management/documentation</fullName>
+                <default>false</default>
+                <label>management/documentation</label>
+            </value>
+            <value>
+                <fullName>material</fullName>
+                <default>false</default>
+                <label>material</label>
+            </value>
+            <value>
+                <fullName>Material missing</fullName>
+                <default>false</default>
+                <label>Material missing</label>
+            </value>
+            <value>
+                <fullName>material not qualified</fullName>
+                <default>false</default>
+                <label>material not qualified</label>
+            </value>
+            <value>
+                <fullName>material properties</fullName>
+                <default>false</default>
+                <label>material properties</label>
+            </value>
+            <value>
+                <fullName>measurement</fullName>
+                <default>false</default>
+                <label>measurement</label>
+            </value>
+            <value>
+                <fullName>measurement object</fullName>
+                <default>false</default>
+                <label>measurement object</label>
+            </value>
+            <value>
+                <fullName>measuring device</fullName>
+                <default>false</default>
+                <label>measuring device</label>
+            </value>
+            <value>
+                <fullName>method/process</fullName>
+                <default>false</default>
+                <label>method/process</label>
+            </value>
+            <value>
+                <fullName>microstructure</fullName>
+                <default>false</default>
+                <label>microstructure</label>
+            </value>
+            <value>
+                <fullName>missing</fullName>
+                <default>false</default>
+                <label>missing</label>
+            </value>
+            <value>
+                <fullName>not available</fullName>
+                <default>false</default>
+                <label>not available</label>
+            </value>
+            <value>
+                <fullName>not implemented as planned</fullName>
+                <default>false</default>
+                <label>not implemented as planned</label>
+            </value>
+            <value>
+                <fullName>not our product</fullName>
+                <default>false</default>
+                <label>not our product</label>
+            </value>
+            <value>
+                <fullName>operating error</fullName>
+                <default>false</default>
+                <label>operating error</label>
+            </value>
+            <value>
+                <fullName>out of/past due for calibration</fullName>
+                <default>false</default>
+                <label>out of/past due for calibration</label>
+            </value>
+            <value>
+                <fullName>out of specification</fullName>
+                <default>false</default>
+                <label>out of specification</label>
+            </value>
+            <value>
+                <fullName>out of warranty</fullName>
+                <default>false</default>
+                <label>out of warranty</label>
+            </value>
+            <value>
+                <fullName>parameter out of range</fullName>
+                <default>false</default>
+                <label>parameter out of range</label>
+            </value>
+            <value>
+                <fullName>Power / Media supply</fullName>
+                <default>false</default>
+                <label>Power / Media supply</label>
+            </value>
+            <value>
+                <fullName>power failure or transient</fullName>
+                <default>false</default>
+                <label>power failure or transient</label>
+            </value>
+            <value>
+                <fullName>pre-material/supplier</fullName>
+                <default>false</default>
+                <label>pre-material/supplier</label>
+            </value>
+            <value>
+                <fullName>procedure or process not followed</fullName>
+                <default>false</default>
+                <label>procedure or process not followed</label>
+            </value>
+            <value>
+                <fullName>Process missing</fullName>
+                <default>false</default>
+                <label>Process missing</label>
+            </value>
+            <value>
+                <fullName>Process not clear</fullName>
+                <default>false</default>
+                <label>Process not clear</label>
+            </value>
+            <value>
+                <fullName>process not followed</fullName>
+                <default>false</default>
+                <label>process not followed</label>
+            </value>
+            <value>
+                <fullName>process parameters</fullName>
+                <default>false</default>
+                <label>process parameters</label>
+            </value>
+            <value>
+                <fullName>Production error</fullName>
+                <default>false</default>
+                <label>Production error</label>
+            </value>
+            <value>
+                <fullName>responsibility/authority unclear</fullName>
+                <default>false</default>
+                <label>responsibility/authority unclear</label>
+            </value>
+            <value>
+                <fullName>Responsibility and authorities</fullName>
+                <default>false</default>
+                <label>Responsibility and authorities</label>
+            </value>
+            <value>
+                <fullName>service/maintenance</fullName>
+                <default>false</default>
+                <label>service/maintenance</label>
+            </value>
+            <value>
+                <fullName>shipping/transport</fullName>
+                <default>false</default>
+                <label>shipping/transport</label>
+            </value>
+            <value>
+                <fullName>software</fullName>
+                <default>false</default>
+                <label>software</label>
+            </value>
+            <value>
+                <fullName>standard</fullName>
+                <default>false</default>
+                <label>standard</label>
+            </value>
+            <value>
+                <fullName>storage</fullName>
+                <default>false</default>
+                <label>storage</label>
+            </value>
+            <value>
+                <fullName>supplier</fullName>
+                <default>false</default>
+                <label>supplier</label>
+            </value>
+            <value>
+                <fullName>Supplier material missing / incorrect</fullName>
+                <default>false</default>
+                <label>Supplier material missing / incorrect</label>
+            </value>
+            <value>
+                <fullName>Test equipment error</fullName>
+                <default>false</default>
+                <label>Test equipment error</label>
+            </value>
+            <value>
+                <fullName>Test facility</fullName>
+                <default>false</default>
+                <label>Test facility</label>
+            </value>
+            <value>
+                <fullName>testing/measuring procedure</fullName>
+                <default>false</default>
+                <label>testing/measuring procedure</label>
+            </value>
+            <value>
+                <fullName>unexpected condition</fullName>
+                <default>false</default>
+                <label>unexpected condition</label>
+            </value>
+            <value>
+                <fullName>unexpected results</fullName>
+                <default>false</default>
+                <label>unexpected results</label>
+            </value>
+            <value>
+                <fullName>wear</fullName>
+                <default>false</default>
+                <label>wear</label>
+            </value>
+            <value>
+                <fullName>Working environment</fullName>
+                <default>false</default>
+                <label>Working environment</label>
+            </value>
+            <value>
+                <fullName>work orgnztn/planning/deploymnt deficncy</fullName>
+                <default>false</default>
+                <label>work orgnztn/planning/deploymnt deficncy</label>
+            </value>
+            <value>
+                <fullName>work place design</fullName>
+                <default>false</default>
+                <label>work place design</label>
+            </value>
+            <value>
+                <fullName>wrong/insufficient labeling</fullName>
+                <default>false</default>
+                <label>wrong/insufficient labeling</label>
+            </value>
+            <value>
+                <fullName>wrong delivery (mix-up)</fullName>
+                <default>false</default>
+                <label>wrong delivery (mix-up)</label>
+            </value>
+            <value>
+                <fullName>wrong instructions/plan</fullName>
+                <default>false</default>
+                <label>wrong instructions/plan</label>
+            </value>
+            <value>
+                <fullName>wrong material</fullName>
+                <default>false</default>
+                <label>wrong material</label>
+            </value>
+            <value>
+                <fullName>wrong order</fullName>
+                <default>false</default>
+                <label>wrong order</label>
+            </value>
+            <value>
+                <fullName>wrong specification</fullName>
+                <default>false</default>
+                <label>wrong specification</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cause not detectable</controllingFieldValue>
+            <valueName>500 EUR Value Limit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cause not detectable</controllingFieldValue>
+            <valueName>Cause not detectable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>damage in transit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Error not reproducible/found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>fault logistic in-house</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>fault logistic service provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>handling (cooling)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>handling (electrical)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>handling (mechanical)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Lack of Proper Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>not our product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>out of warranty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <controllingFieldValue>External/Transport</controllingFieldValue>
+            <valueName>storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>wrong order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>building/location</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>climatic conditions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>Emissionen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>enviroment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>Foreign engagement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>immission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>Power / Media supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>power failure or transient</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>Test facility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Environment</controllingFieldValue>
+            <valueName>Working environment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External/Transport</controllingFieldValue>
+            <valueName>customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External/Transport</controllingFieldValue>
+            <valueName>external</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External/Transport</controllingFieldValue>
+            <valueName>shipping/transport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>External/Transport</controllingFieldValue>
+            <valueName>supplier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>defective equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>equipment not qualified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>inadequate/incorrect/lack of tool</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>inadequate/lack of validation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>Incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>machine/equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>machine design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>malfunction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>not available</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>service/maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>Test equipment error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Machine/Equipment</controllingFieldValue>
+            <valueName>wear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>Capacity shortage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>communication problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>competence/qualification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>data entry/review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>handling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>Incorrect specifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>man</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>operating error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>process not followed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Man</controllingFieldValue>
+            <valueName>Responsibility and authorities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>Accompanying documents incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>construction/development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>inadequate supervision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>incorrect / incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>lack of/insufficient resources or capaci</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>management/documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>responsibility/authority unclear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>work orgnztn/planning/deploymnt deficncy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>work place design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>wrong/insufficient labeling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>wrong instructions/plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Management/Documentation</controllingFieldValue>
+            <valueName>wrong specification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>composition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>contamination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>Customer material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>defective/incorrect material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>expiration date</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>Material missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>material not qualified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>material properties</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>microstructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>out of specification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>pre-material/supplier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>Production error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>Supplier material missing / incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>unexpected condition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>wrong delivery (mix-up)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Material</controllingFieldValue>
+            <valueName>wrong material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>control of documents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>correlation issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>evaluation method</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>fixture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>inadequate measurement system</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>measurement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>measurement object</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>measuring device</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>out of/past due for calibration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>parameter out of range</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>testing/measuring procedure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Measurement</controllingFieldValue>
+            <valueName>unexpected results</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>cleanliness/orderliness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>Coordination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>Coordination not sufficient</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>drawing, specification, method errors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>inadequate/lack of procedure or process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>Incoming effort missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>Incoming effort too late</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>incorrect equipment or material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>insufficient/inadequate/lack of training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>insufficient/inadequate packaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>method/process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>not implemented as planned</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>procedure or process not followed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>Process missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>Process not clear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Method/Process</controllingFieldValue>
+            <valueName>process parameters</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

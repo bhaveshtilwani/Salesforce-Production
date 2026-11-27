@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Product_Engineer__c</fullName>
+    <description>Field used to designate product engineer responsible for costing and evaluating the opportunity.</description>
+    <inlineHelpText>Designated product engineer(s) responsible for costing and evaluating the opportunity</inlineHelpText>
+    <label>Assigned Product Engineer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Andy Aust</fullName>
+                <default>false</default>
+                <label>Andy Aust</label>
+            </value>
+            <value>
+                <fullName>Asher Woolverton</fullName>
+                <default>false</default>
+                <label>Asher Woolverton</label>
+            </value>
+            <value>
+                <fullName>Brian Turner</fullName>
+                <default>false</default>
+                <label>Brian Turner</label>
+            </value>
+            <value>
+                <fullName>Chuck Williams</fullName>
+                <default>false</default>
+                <label>Chuck Williams</label>
+            </value>
+            <value>
+                <fullName>David Corkum</fullName>
+                <default>false</default>
+                <label>David Corkum</label>
+            </value>
+            <value>
+                <fullName>Paula Gallup</fullName>
+                <default>false</default>
+                <label>Paula Gallup</label>
+            </value>
+            <value>
+                <fullName>Chris Downs</fullName>
+                <default>false</default>
+                <label>Chris Downs</label>
+            </value>
+            <value>
+                <fullName>Drew Hunt</fullName>
+                <default>false</default>
+                <label>Drew Hunt</label>
+            </value>
+            <value>
+                <fullName>Evan Prast</fullName>
+                <default>false</default>
+                <label>Evan Prast</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

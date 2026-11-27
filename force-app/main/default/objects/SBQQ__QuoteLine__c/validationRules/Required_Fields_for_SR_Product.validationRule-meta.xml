@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Fields_for_SR_Product</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(
+   AND(
+     OR( ISBLANK(TEXT(SR_Type__c)),ISBLANK( Custom_Part_Rev__c ),ISBLANK( Custom_Product_Name__c ),ISBLANK( TEXT( Line_of_Business__c ))),SBQQ__ProductName__c  = &quot;Special Request&quot;),
+True, False)</errorConditionFormula>
+    <errorMessage>Please complete the following fields: Custom Part Rev#, SR Type, Custom Product Name, SR Description, Line of Bussines</errorMessage>
+</ValidationRule>

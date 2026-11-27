@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Class_Not_Applicable</fullName>
+    <active>false</active>
+    <description>Customer class is not required for:
+PAYER Entry - 0003 - Salem/MI
+Sold to - 0001 - Salem/MIA
+Ship To - 0002 - Montreal</description>
+    <errorConditionFormula>AND(
+    $User.Alias&lt;&gt; &quot;sconn&quot;,
+
+    OR(
+        AND(
+            $RecordType.Name = &quot;SAP NA Salem/MIA&quot;,
+            ISPICKVAL(Account_Group__c , &quot;PAYER Entry - 0003&quot;),
+            NOT(ISBLANK(TEXT(Customer_Class__c)))
+        ),
+
+        AND(
+            $RecordType.Name = &quot;SAP NA Montreal&quot;,
+            ISPICKVAL(Account_Group__c , &quot;Ship To - 0002&quot;),
+            NOT(ISBLANK(TEXT(Customer_Class__c)))
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Customer_Class__c</errorDisplayField>
+    <errorMessage>Customer Class is not applicable for selected Account Group.</errorMessage>
+</ValidationRule>

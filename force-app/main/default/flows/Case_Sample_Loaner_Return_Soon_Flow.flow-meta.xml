@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>sp1Case_Sample_Due_for_Return_Soon</name>
+        <label>Case.Case_Sample_Due_for_Return_Soon</label>
+        <locationX>506</locationX>
+        <locationY>492</locationY>
+        <actionName>Case.Case_Sample_Due_for_Return_Soon</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Case_Sample_Due_for_Return_Soon</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Check bypass flag is enabled to prevent flow processing.</description>
+        <name>Is_Bypass_Enabled</name>
+        <label>Is Bypass Enabled?</label>
+        <locationX>374</locationX>
+        <locationY>384</locationY>
+        <defaultConnector>
+            <targetReference>sp1Case_Sample_Due_for_Return_Soon</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Bypass_Is_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Bypass Is True</label>
+        </rules>
+    </decisions>
+    <description>When the Case field &apos;Contact Confirmed Receipt&apos; is set to True, trigger the Email Alert &apos;Case_Sample_Due_for_Return_Soon&apos;.</description>
+    <environments>Default</environments>
+    <interviewLabel>Case Sample Loaner Return Soon {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Sample Loaner Return Soon</label>
+    <migratedFromWorkflowRuleName>Case Sample Loaner Return Soon</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>It Creates Flow Error Logs Records</description>
+        <name>Create_Flow_Error_Logs_Records</name>
+        <label>Create Flow Error Logs Records</label>
+        <locationX>770</locationX>
+        <locationY>384</locationY>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FLOW_API_NAME__c</field>
+            <value>
+                <stringValue>Case_Sample_Loaner_Return_Soon_Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_ID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Name__c</field>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Flow_Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Retrieve the bypass record from custom metadata to determine if the bypass is enabled.</description>
+        <name>Get_Bypass_Record</name>
+        <label>Get Bypass Record</label>
+        <locationX>374</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Bypass_Enabled</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Case_Flow_Bypass	</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Contact_Confirmed_Receipt__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>ScheduledPath1</name>
+            <connector>
+                <targetReference>Get_Bypass_Record</targetReference>
+            </connector>
+            <label>ScheduledPath1</label>
+            <offsetNumber>-7</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>Committed_Return_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

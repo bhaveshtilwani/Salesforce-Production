@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Damage_Code_Groups__c</fullName>
+    <label>Damage Code Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IP_EIR_Connection</fullName>
+                <default>false</default>
+                <label>IP_EIR_Connection</label>
+            </value>
+            <value>
+                <fullName>IP_EIR_Assembly</fullName>
+                <default>false</default>
+                <label>IP_EIR_Assembly</label>
+            </value>
+            <value>
+                <fullName>IP_EIR_Coating</fullName>
+                <default>false</default>
+                <label>IP_EIR_Coating</label>
+            </value>
+            <value>
+                <fullName>IP_EIR_Filament</fullName>
+                <default>false</default>
+                <label>IP_EIR_Filament</label>
+            </value>
+            <value>
+                <fullName>IP_EIR_Function</fullName>
+                <default>false</default>
+                <label>IP_EIR_Function</label>
+            </value>
+            <value>
+                <fullName>IP_EIR_Body</fullName>
+                <default>false</default>
+                <label>IP_EIR_Body</label>
+            </value>
+            <value>
+                <fullName>IP_EIR_Packaging</fullName>
+                <default>false</default>
+                <label>IP_EIR_Packaging</label>
+            </value>
+            <value>
+                <fullName>IP_EIR_unascertainable</fullName>
+                <default>false</default>
+                <label>IP_EIR_unascertainable</label>
+            </value>
+            <value>
+                <fullName>OF_A_D-lamp</fullName>
+                <default>false</default>
+                <label>OF_A_D-lamp</label>
+            </value>
+            <value>
+                <fullName>OF_A_Xenon flash module</fullName>
+                <default>false</default>
+                <label>OF_A_Xenon flash module</label>
+            </value>
+            <value>
+                <fullName>OF_A_Fiberlight module</fullName>
+                <default>false</default>
+                <label>OF_A_Fiberlight module</label>
+            </value>
+            <value>
+                <fullName>OF_A_Nox / Nox module</fullName>
+                <default>false</default>
+                <label>OF_A_Nox / Nox module</label>
+            </value>
+            <value>
+                <fullName>OF_A_Hollow cathode lamp</fullName>
+                <default>false</default>
+                <label>OF_A_Hollow cathode lamp</label>
+            </value>
+            <value>
+                <fullName>OF_A_Mercury_lamp</fullName>
+                <default>false</default>
+                <label>OF_A_Mercury_lamp</label>
+            </value>
+            <value>
+                <fullName>OF_A_PID_lamp</fullName>
+                <default>false</default>
+                <label>OF_A_PID_lamp</label>
+            </value>
+            <value>
+                <fullName>OF_A_Tungsten_Halogen_lamp</fullName>
+                <default>false</default>
+                <label>OF_A_Tungsten_Halogen_lamp</label>
+            </value>
+            <value>
+                <fullName>OF_A_Xenon_flash_lamp</fullName>
+                <default>false</default>
+                <label>OF_A_Xenon_flash_lamp</label>
+            </value>
+            <value>
+                <fullName>OF_A_Power supply</fullName>
+                <default>false</default>
+                <label>OF_A_Power supply</label>
+            </value>
+            <value>
+                <fullName>UVP_ED_Connection</fullName>
+                <default>false</default>
+                <label>UVP_ED_Connection</label>
+            </value>
+            <value>
+                <fullName>UVP_ED_Assembly</fullName>
+                <default>false</default>
+                <label>UVP_ED_Assembly</label>
+            </value>
+            <value>
+                <fullName>UVD_ED_Coating</fullName>
+                <default>false</default>
+                <label>UVD_ED_Coating</label>
+            </value>
+            <value>
+                <fullName>UVD_ED_Electrode</fullName>
+                <default>false</default>
+                <label>UVD_ED_Electrode</label>
+            </value>
+            <value>
+                <fullName>UVP_ED_Function</fullName>
+                <default>false</default>
+                <label>UVP_ED_Function</label>
+            </value>
+            <value>
+                <fullName>UVP_ED_Body</fullName>
+                <default>false</default>
+                <label>UVP_ED_Body</label>
+            </value>
+            <value>
+                <fullName>UVP_ED_Packaging</fullName>
+                <default>false</default>
+                <label>UVP_ED_Packaging</label>
+            </value>
+            <value>
+                <fullName>UVP_ED_unascertainable</fullName>
+                <default>false</default>
+                <label>UVP_ED_unascertainable</label>
+            </value>
+            <value>
+                <fullName>UVP_LED_System</fullName>
+                <default>false</default>
+                <label>UVP_LED_System</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_Conveyor</fullName>
+                <default>false</default>
+                <label>UVP_MW_Conveyor</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_F300S</fullName>
+                <default>false</default>
+                <label>UVP_MW_F300S</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_F450T</fullName>
+                <default>false</default>
+                <label>UVP_MW_F450T</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_F500S</fullName>
+                <default>false</default>
+                <label>UVP_MW_F500S</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_F600S</fullName>
+                <default>false</default>
+                <label>UVP_MW_F600S</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_LH10</fullName>
+                <default>false</default>
+                <label>UVP_MW_LH10</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_LH6</fullName>
+                <default>false</default>
+                <label>UVP_MW_LH6</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_VPS</fullName>
+                <default>false</default>
+                <label>UVP_MW_VPS</label>
+            </value>
+            <value>
+                <fullName>UVP_LED_Chiller UV5000x Series</fullName>
+                <default>false</default>
+                <label>UVP_LED_Chiller UV5000x Series</label>
+            </value>
+            <value>
+                <fullName>UVP_LED_UV5000x Series</fullName>
+                <default>false</default>
+                <label>UVP_LED_UV5000x Series</label>
+            </value>
+            <value>
+                <fullName>UVP_LED_Control Cabinet UV5000x Series</fullName>
+                <default>false</default>
+                <label>UVP_LED_Control Cabinet UV5000x Series</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_LHP6 Mark II</fullName>
+                <default>false</default>
+                <label>UVP_MW_LHP6 Mark II</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_LHI6 Mark II</fullName>
+                <default>false</default>
+                <label>UVP_MW_LHI6 Mark II</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_LHP10 Mark II</fullName>
+                <default>false</default>
+                <label>UVP_MW_LHP10 Mark II</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_LHI10 Mark II</fullName>
+                <default>false</default>
+                <label>UVP_MW_LHI10 Mark II</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_LHP10 Mark III</fullName>
+                <default>false</default>
+                <label>UVP_MW_LHP10 Mark III</label>
+            </value>
+            <value>
+                <fullName>UVP_MW_LHI10 Mark III</fullName>
+                <default>false</default>
+                <label>UVP_MW_LHI10 Mark III</label>
+            </value>
+            <value>
+                <fullName>UVP_LED_Chiller</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UVP_LED_Chiller</label>
+            </value>
+            <value>
+                <fullName>UVP_LED_Lamp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UVP_LED_Lamp</label>
+            </value>
+            <value>
+                <fullName>UVP_LED_Switch Cabinet</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UVP_LED_Switch Cabinet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

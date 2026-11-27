@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assign Lead Demo</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_AIS_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>((1 OR 2 OR 3 OR 4) AND (5 OR 6 OR 7 OR 8 OR 9 OR 10))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>Sensor</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>High Performance Commercial</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>Photodiodes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>SPCM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iran,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_AIS_Americas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>((1 OR 2 OR 3 OR 4) AND (5 OR 6 OR 7))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>Sensor</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>High Performance Commercial</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>Photodiodes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>SPCM</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Assign Leads to Sales Managers</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <formula>AND(      NOT(ISNEW()),      Owner:User.IsActive = TRUE,      LEFT(OwnerId, 3) = &quot;005&quot;,      NOT(ISPICKVAL(Status, &quot;Closed&quot;)),   Owner:User.Profile.Name &lt;&gt; &quot;System Administrator&quot; )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>salesforce.administrator@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Lumen Data</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Connection User</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rigoberto.jimenez@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND (2 or 3 or 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.End_Market__c</field>
+                <operation>equals</operation>
+                <value>Customer Service</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>nur.mariani@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.End_Market__c</field>
+                <operation>equals</operation>
+                <value>Customer Service</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Hong Kong,China,India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Lao People&apos;s Democratic Republic,Macao,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>corina.kukla@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.End_Market__c</field>
+                <operation>equals</operation>
+                <value>Customer Service</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Reunion</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jennifer.melo@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND (2  OR 3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>X-Cite</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_Semi_Asia</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Semiconductor Equipment</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Hong Kong,China,India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Lao People&apos;s Democratic Republic,Macao,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>aaron.berry@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND (2 or 3 or 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Sub_Family__c</field>
+                <operation>equals</operation>
+                <value>Ophthalmology</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_Semi_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Semiconductor Equipment</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Reunion</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_ALS_Omni_WW</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>equals</operation>
+                <value>Curing Omnicure</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_ALS_Phoseon_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>PHOSEON</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Reunion</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_Semi_Americas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 or 3 or 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Semiconductor Equipment</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>aaron.berry@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>equals</operation>
+                <value>Laser Engines</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>luitpold.kaspar@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>equals</operation>
+                <value>Advanced Imaging Systems</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>altaf.ramji@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>((1 OR 2) AND (3 OR 4))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Application__c</field>
+                <operation>equals</operation>
+                <value>Imaging - Intensified</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Application__c</field>
+                <operation>equals</operation>
+                <value>Imaging - High-Speed</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Canada</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_AIS_Americas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>IR Sensing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Photon Detection</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_AIS_Asia</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5 OR 6)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>IR Sensing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Photon Detection</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Hong Kong,China,India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Lao People&apos;s Democratic Republic,Macao,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_AIS_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2) AND (3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>IR Sensing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Photon Detection</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Reunion</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>christine.iannuccilli@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>((1 OR 5) AND (2 OR 3 OR 4))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Plasma Light Sources BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Solutions BU</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jameslim@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>((1 OR 6) AND (2 OR 3 OR 4 OR 5))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Plasma Light Sources BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Hong Kong,China,India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Lao People&apos;s Democratic Republic,Macao,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Solutions BU</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_LSM_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>((1 OR 8) AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 9))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Plasma Light Sources BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Solutions BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Reunion</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>christoph.polzer@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Integrated Optronics &amp; Avionics</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Application__c</field>
+                <operation>equals</operation>
+                <value>C5ISR</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Application__c</field>
+                <operation>equals</operation>
+                <value>Avionic HUDs</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>denis.boireau@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 AND 4 AND 5 AND (2 OR 3))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Integrated Optronics &amp; Avionics</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Application__c</field>
+                <operation>equals</operation>
+                <value>Missiles / PGM / Missile Defense</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Application__c</field>
+                <operation>equals</operation>
+                <value>Defense Other</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>notEqual</operation>
+                <value>Canada</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>gina.gonzalez@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>Noblelight</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Hong Kong,China,India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Lao People&apos;s Democratic Republic,Macao,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Reunion</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_ALS_Phoseon_Americas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>Noblelight</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_ALS_Phoseon_Americas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>PHOSEON</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_ALS_Phoseon_China</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>PHOSEON</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>China</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bright.lee@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>PHOSEON</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>South Korea</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>masahiko.suzuki@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>PHOSEON</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Taiwan</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ameya.nalavde@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>PHOSEON</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>India</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>saori.arima@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>PHOSEON</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Japan</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ameya.nalavde@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product_Family__c</field>
+                <operation>contains</operation>
+                <value>PHOSEON</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>phillip.lockhart@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3) AND (4 OR 5))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Integrated Optronics &amp; Avionics</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Application__c</field>
+                <operation>equals</operation>
+                <value>Missiles / PGM / Missile Defense</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Application__c</field>
+                <operation>equals</operation>
+                <value>Defense Other</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Canada</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_PM_Americas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Precision Manufacturing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jameslim@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Precision Manufacturing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Hong Kong,China,India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Lao People&apos;s Democratic Republic,Macao,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_PM_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Precision Manufacturing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_PM_Americas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Imaging &amp; Laser Systems BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jameslim@excelitas.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Imaging &amp; Laser Systems BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Hong Kong,China,India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Lao People&apos;s Democratic Republic,Macao,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_PM_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>equals</operation>
+                <value>Imaging &amp; Laser Systems BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_Semi_Americas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Holistic Lithography BU,Metrology &amp; Inspection BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>United States,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Bermuda</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_Semi_Asia</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Holistic Lithography BU,Metrology &amp; Inspection BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Hong Kong,China,India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Lao People&apos;s Democratic Republic,Macao,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Norfolk Island,North Korea,Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Vanuatu,Vietnam,Wallis and Futuna</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Leads_Queue_Semi_EMEA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Product_Line__c</field>
+                <operation>contains</operation>
+                <value>Holistic Lithography BU,Metrology &amp; Inspection BU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Chad,Comoros,Congo,Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Ghana,Gibraltar,Greece,Greenland,Guinea,Guinea-Bissau,Hungary,Iceland,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania,Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe,Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine,United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

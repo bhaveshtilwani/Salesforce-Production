@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Site</name>
+        <label>Site</label>
+        <locationX>486</locationX>
+        <locationY>360</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ESG_QSG</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Order_Creation__r.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ESG</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Order_Creation__r.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>QSG</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_PR00</targetReference>
+            </connector>
+            <label>ESG + QSG</label>
+        </rules>
+        <rules>
+            <name>St_Louis</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Order_Creation__r.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>St Louis</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_ZPR1</targetReference>
+            </connector>
+            <label>St Louis</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Item Condition Type Defaults - SAP Asia {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Item Condition Type Defaults - SAP Asia</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_PR00</name>
+        <label>Update PR00</label>
+        <locationX>760</locationX>
+        <locationY>222</locationY>
+        <inputAssignments>
+            <field>Item_Condition_Type__c</field>
+            <value>
+                <stringValue>a3zO5000000HAB3IAO</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_ZPR1</name>
+        <label>Update ZPR1</label>
+        <locationX>762</locationX>
+        <locationY>428</locationY>
+        <inputAssignments>
+            <field>Item_Condition_Type__c</field>
+            <value>
+                <stringValue>a3zO5000000HANxIAO</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>154</locationX>
+        <locationY>90</locationY>
+        <connector>
+            <targetReference>Site</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Item_Condition_Type__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Order_Creation_Line__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

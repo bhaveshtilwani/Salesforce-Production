@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PKI_Site__c</fullName>
+    <label>Excelitas Site</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Billerica</fullName>
+                <default>false</default>
+                <label>Billerica</label>
+            </value>
+            <value>
+                <fullName>Boulder</fullName>
+                <default>false</default>
+                <label>Boulder</label>
+            </value>
+            <value>
+                <fullName>Canada</fullName>
+                <default>false</default>
+                <label>Canada</label>
+            </value>
+            <value>
+                <fullName>Covina</fullName>
+                <default>false</default>
+                <label>Covina</label>
+            </value>
+            <value>
+                <fullName>ESG L&amp;D</fullName>
+                <default>false</default>
+                <label>ESG L&amp;D</label>
+            </value>
+            <value>
+                <fullName>ESG Optics</fullName>
+                <default>false</default>
+                <label>ESG Optics</label>
+            </value>
+            <value>
+                <fullName>Fremont</fullName>
+                <default>false</default>
+                <label>Fremont</label>
+            </value>
+            <value>
+                <fullName>Germany</fullName>
+                <default>false</default>
+                <label>Germany</label>
+            </value>
+            <value>
+                <fullName>Hamble</fullName>
+                <default>false</default>
+                <label>Hamble</label>
+            </value>
+            <value>
+                <fullName>Manila</fullName>
+                <default>false</default>
+                <label>Manila</label>
+            </value>
+            <value>
+                <fullName>Miamisburg</fullName>
+                <default>false</default>
+                <label>Miamisburg</label>
+            </value>
+            <value>
+                <fullName>Montreal</fullName>
+                <default>false</default>
+                <label>Montreal</label>
+            </value>
+            <value>
+                <fullName>Munich</fullName>
+                <default>false</default>
+                <label>Munich</label>
+            </value>
+            <value>
+                <fullName>PCO Kelheim</fullName>
+                <default>false</default>
+                <label>PCO Kelheim</label>
+            </value>
+            <value>
+                <fullName>Salem</fullName>
+                <default>false</default>
+                <label>Salem</label>
+            </value>
+            <value>
+                <fullName>Salem (Heimann)</fullName>
+                <default>false</default>
+                <label>Salem (Heimann)</label>
+            </value>
+            <value>
+                <fullName>Shenzhen</fullName>
+                <default>false</default>
+                <label>Shenzhen</label>
+            </value>
+            <value>
+                <fullName>Singapore</fullName>
+                <default>false</default>
+                <label>Singapore</label>
+            </value>
+            <value>
+                <fullName>St. Louis</fullName>
+                <default>false</default>
+                <label>St. Louis</label>
+            </value>
+            <value>
+                <fullName>St Asaph</fullName>
+                <default>false</default>
+                <label>St Asaph</label>
+            </value>
+            <value>
+                <fullName>St Louis</fullName>
+                <default>false</default>
+                <label>St Louis</label>
+            </value>
+            <value>
+                <fullName>Toronto</fullName>
+                <default>false</default>
+                <label>Toronto</label>
+            </value>
+            <value>
+                <fullName>Wheeling</fullName>
+                <default>false</default>
+                <label>Wheeling</label>
+            </value>
+            <value>
+                <fullName>Wiesbaden</fullName>
+                <default>false</default>
+                <label>Wiesbaden</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

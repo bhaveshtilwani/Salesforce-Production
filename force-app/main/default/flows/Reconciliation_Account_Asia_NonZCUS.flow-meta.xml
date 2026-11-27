@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Account_Group</name>
+        <label>Account Group</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Update_Reconciliation_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ZCUS</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-to party - ZCUS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-to party (OPSL) - 0001</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Sold To</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Reconciliation Account - Asia - NonZCUS {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Reconciliation Account - Asia - NonZCUS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Reconciliation_Account</name>
+        <label>Update Reconciliation Account</label>
+        <locationX>308</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Reconciliation_Accountpicklist__c</field>
+            <value>
+                <stringValue>AR- 3rd Parties-Alternate (1111001)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Account_Group</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ESG</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QSG</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Shenzhen</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>St Louis</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

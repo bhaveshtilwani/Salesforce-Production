@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Center__c</fullName>
+    <label>Cost Center</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>9001 - Sales Group - Inside/Exe</fullName>
+                <default>false</default>
+                <label>9001 - Sales Group - Inside/Exe</label>
+            </value>
+            <value>
+                <fullName>9002 - Sales&amp;Mktg Group - Omni</fullName>
+                <default>false</default>
+                <label>9002 - Sales&amp;Mktg Group - Omni</label>
+            </value>
+            <value>
+                <fullName>9003 - Sales Group - LS</fullName>
+                <default>false</default>
+                <label>9003 - Sales Group - LS</label>
+            </value>
+            <value>
+                <fullName>9004 - MKTG - X-Cite</fullName>
+                <default>false</default>
+                <label>9004 - MKTG - X-Cite</label>
+            </value>
+            <value>
+                <fullName>9005 - MKTG - Burleigh</fullName>
+                <default>false</default>
+                <label>9005 - MKTG - Burleigh</label>
+            </value>
+            <value>
+                <fullName>9006 - Sales Group - Cust Serv.</fullName>
+                <default>false</default>
+                <label>9006 - Sales Group - Cust Serv.</label>
+            </value>
+            <value>
+                <fullName>9007 - Sales Group - China</fullName>
+                <default>false</default>
+                <label>9007 - Sales Group - China</label>
+            </value>
+            <value>
+                <fullName>9008 - MKGT - Print Cure</fullName>
+                <default>false</default>
+                <label>9008 - MKGT - Print Cure</label>
+            </value>
+            <value>
+                <fullName>9009 - MKTG-General</fullName>
+                <default>false</default>
+                <label>9009 - MKTG-General</label>
+            </value>
+            <value>
+                <fullName>9500 - Organic Growth</fullName>
+                <default>false</default>
+                <label>9500 - Organic Growth</label>
+            </value>
+            <value>
+                <fullName>0404- Service Repair Billable</fullName>
+                <default>false</default>
+                <label>0404- Service Repair Billable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

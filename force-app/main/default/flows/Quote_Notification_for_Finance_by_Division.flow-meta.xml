@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Advanced_Industrial_Sensing_Alert</name>
+        <label>Advanced Industrial Sensing Alert</label>
+        <locationX>968</locationX>
+        <locationY>971</locationY>
+        <actionName>SBQQ__Quote__c.Division_Notifications_Advanced_Industrial_Sensing</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>LoopThroughQuoteLines</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SBQQ__Quote__c.Division_Notifications_Advanced_Industrial_Sensing</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Advanced_Lighting_Systems_alert</name>
+        <label>Advanced Lighting Systems alert</label>
+        <locationX>1232</locationX>
+        <locationY>971</locationY>
+        <actionName>SBQQ__Quote__c.Division_Notifications_Advanced_Lighting_Systems</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>LoopThroughQuoteLines</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SBQQ__Quote__c.Division_Notifications_Advanced_Lighting_Systems</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Integrated_Optronics_Avionics_alert</name>
+        <label>Integrated Optronics &amp; Avionics alert</label>
+        <locationX>2024</locationX>
+        <locationY>971</locationY>
+        <actionName>SBQQ__Quote__c.Division_Notifications_Integrated_Optronics_Avionics</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>LoopThroughQuoteLines</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SBQQ__Quote__c.Division_Notifications_Integrated_Optronics_Avionics</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Life_Sciences_Medical_alert</name>
+        <label>Life Sciences &amp; Medical alert</label>
+        <locationX>1496</locationX>
+        <locationY>971</locationY>
+        <actionName>SBQQ__Quote__c.Division_Notifications_Life_Sciences_Medical</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>LoopThroughQuoteLines</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SBQQ__Quote__c.Division_Notifications_Life_Sciences_Medical</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Semiconductor_Equipment_alert</name>
+        <label>Semiconductor Equipment alert</label>
+        <locationX>1760</locationX>
+        <locationY>971</locationY>
+        <actionName>SBQQ__Quote__c.Division_Notifications_Semiconductor_Equipment</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>LoopThroughQuoteLines</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>SBQQ__Quote__c.Division_Notifications_Semiconductor_Equipment</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Decision_Quote_line</name>
+        <label>Decision Quote line</label>
+        <locationX>1628</locationX>
+        <locationY>863</locationY>
+        <defaultConnector>
+            <targetReference>LoopThroughQuoteLines</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>AdvancedIndustrialSensing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LoopThroughQuoteLines.Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advanced Industrial Sensing</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Advanced_Industrial_Sensing_Alert</targetReference>
+            </connector>
+            <label>Advanced Industrial Sensing</label>
+        </rules>
+        <rules>
+            <name>Advanced_Lighting_Systems</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LoopThroughQuoteLines.Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advanced Lighting Systems</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Advanced_Lighting_Systems_alert</targetReference>
+            </connector>
+            <label>Advanced Lighting Systems</label>
+        </rules>
+        <rules>
+            <name>Life_Sciences_Medical1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LoopThroughQuoteLines.Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>MedTech &amp; Life Sciences</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Life_Sciences_Medical_alert</targetReference>
+            </connector>
+            <label>Life Sciences &amp; Medical</label>
+        </rules>
+        <rules>
+            <name>Semiconductor_Equipment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LoopThroughQuoteLines.Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Semiconductor Equipment</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Semiconductor_Equipment_alert</targetReference>
+            </connector>
+            <label>Semiconductor Equipment</label>
+        </rules>
+        <rules>
+            <name>Integrated_Optronics_Avionics</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LoopThroughQuoteLines.Division__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Integrated Optronics &amp; Avionics</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Integrated_Optronics_Avionics_alert</targetReference>
+            </connector>
+            <label>Integrated Optronics &amp; Avionics</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check bypass flag is enabled to prevent flow processing.</description>
+        <name>IS_BYPASS_ENABLED</name>
+        <label>IS BYPASS ENABLED?</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Quote_Condition</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>BYPASS_FLOW_TRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GET_BYPASS_RECORD.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>BYPASS FLOW TRUE</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Quote - Submit for approval condition</description>
+        <name>Quote_Condition</name>
+        <label>Quote Condition</label>
+        <locationX>1144</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Quote_Condition</name>
+            <conditionLogic>1 AND ( 2 OR (3 AND 4)) AND (5 AND 6)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SubmittedDate__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>submitteddate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__NetAmount__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>1000000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__NetAmount__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__NetAmount__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>1000000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ApprovalStatus__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ApprovalStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Quote_Lines</targetReference>
+            </connector>
+            <label>Outcome 1 of Quote Condition</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>submitteddate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY ()</expression>
+    </formulas>
+    <interviewLabel>Quote Notification for Finance by Division {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Quote Notification for Finance by Division</label>
+    <loops>
+        <description>Loop over quote line records</description>
+        <name>LoopThroughQuoteLines</name>
+        <label>Loop Through Quote Lines</label>
+        <locationX>880</locationX>
+        <locationY>755</locationY>
+        <collectionReference>Get_Quote_Lines</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Decision_Quote_line</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>It Creates Flow Error Logs Records</description>
+        <name>Create_Flow_Error_Logs_Records</name>
+        <label>Create Flow Error Logs Records</label>
+        <locationX>1144</locationX>
+        <locationY>755</locationY>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FLOW_API_NAME__c</field>
+            <value>
+                <stringValue>Quote_Notification_for_Finance_by_Division</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_ID__c</field>
+            <value>
+                <elementReference>$Record.Quote__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Name__c</field>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Flow_Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Retrieves bypass setting from custom metadata to determine if flow should run for this object.</description>
+        <name>GET_BYPASS_RECORD</name>
+        <label>GET BYPASS RECORD</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IS_BYPASS_ENABLED</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Quote_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the quote line records</description>
+        <name>Get_Quote_Lines</name>
+        <label>Get Quote Lines</label>
+        <locationX>880</locationX>
+        <locationY>647</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>LoopThroughQuoteLines</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Quote__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SBQQ__QuoteLine__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GET_BYPASS_RECORD</targetReference>
+        </connector>
+        <object>SBQQ__Quote__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

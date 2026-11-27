@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>C3_Changed</name>
+        <label>C3 Changed</label>
+        <locationX>529</locationX>
+        <locationY>18</locationY>
+        <defaultConnector>
+            <targetReference>ZW_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>C3_Updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.C3_Partner_Name__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_KUNN2_0_0_0</targetReference>
+            </connector>
+            <label>C3 Updated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ZM_Changed</name>
+        <label>ZM Changed</label>
+        <locationX>532</locationX>
+        <locationY>317</locationY>
+        <defaultConnector>
+            <targetReference>ZT_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Updated_0</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Responsible_CS_Rep__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_KUNN2_0</targetReference>
+            </connector>
+            <label>Updated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ZT_Changed</name>
+        <label>ZT Changed</label>
+        <locationX>535</locationX>
+        <locationY>485</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Updated_0_0</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Business_Development_Manager__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_KUNN2_0_0</targetReference>
+            </connector>
+            <label>Updated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ZW_Changed</name>
+        <label>ZW Changed</label>
+        <locationX>531</locationX>
+        <locationY>140</locationY>
+        <defaultConnector>
+            <targetReference>ZM_Changed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Updated</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Employee_Resp_ZW__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_KUNN2</targetReference>
+            </connector>
+            <label>Updated</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>ZMKUNN2</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.Responsible_CS_Rep__r.ERP_Code__c}, FIND(&quot;,&quot;,{!$Record.Responsible_CS_Rep__r.ERP_Code__c}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>ZTKUNN2</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.Business_Development_Manager__r.ERP_Code__c}, FIND(&quot;,&quot;,{!$Record.Business_Development_Manager__r.ERP_Code__c}) - 1)</expression>
+    </formulas>
+    <formulas>
+        <name>ZWKUNN2</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Record.Employee_Resp_ZW__r.ERP_Code__c}, FIND(&quot;,&quot;,{!$Record.Employee_Resp_ZW__r.ERP_Code__c}) - 1)</expression>
+    </formulas>
+    <interviewLabel>Partner Function - Zs Updated {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Partner Function - C3 and Zs Updated</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_KUNN2</name>
+        <label>Update KUNN2</label>
+        <locationX>726</locationX>
+        <locationY>137</locationY>
+        <inputAssignments>
+            <field>ERP_Partner_Function_Number_KUNN2__c</field>
+            <value>
+                <elementReference>ZWKUNN2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_KUNN2_0</name>
+        <label>Update KUNN2</label>
+        <locationX>732</locationX>
+        <locationY>311</locationY>
+        <inputAssignments>
+            <field>ERP_Partner_Function_Number_KUNN2__c</field>
+            <value>
+                <elementReference>ZMKUNN2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_KUNN2_0_0</name>
+        <label>Update KUNN2</label>
+        <locationX>732</locationX>
+        <locationY>478</locationY>
+        <inputAssignments>
+            <field>ERP_Partner_Function_Number_KUNN2__c</field>
+            <value>
+                <elementReference>ZTKUNN2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_KUNN2_0_0_0</name>
+        <label>Update KUNN2</label>
+        <locationX>728</locationX>
+        <locationY>18</locationY>
+        <inputAssignments>
+            <field>ERP_Partner_Function_Number_KUNN2__c</field>
+            <value>
+                <elementReference>$Record.Partner__r.Client_Side_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>81</locationX>
+        <locationY>40</locationY>
+        <connector>
+            <targetReference>C3_Changed</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Account__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Partner_Function__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

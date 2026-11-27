@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Amount__c</fullName>
+    <description>This is not Total order amount. This total excludes UI Price Editable products (Service Products).</description>
+    <inlineHelpText>This is not Total order amount. This total excludes UI Price Editable products (Service Products).</inlineHelpText>
+    <label>Total Amount</label>
+    <summarizedField>OrderItem.Total_Price__c</summarizedField>
+    <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

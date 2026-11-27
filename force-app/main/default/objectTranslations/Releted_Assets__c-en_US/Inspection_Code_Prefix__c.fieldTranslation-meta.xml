@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Inspection Code Prefix --></label>
+    <name>Inspection_Code_Prefix__c</name>
+    <picklistValues>
+        <masterLabel>ASSY</masterLabel>
+        <translation><!-- ASSY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COAT</masterLabel>
+        <translation><!-- COAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DAMAGE</masterLabel>
+        <translation><!-- DAMAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIM</masterLabel>
+        <translation><!-- DIM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOCS</masterLabel>
+        <translation><!-- DOCS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DURA</masterLabel>
+        <translation><!-- DURA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FUNC</masterLabel>
+        <translation><!-- FUNC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HANDLING</masterLabel>
+        <translation><!-- HANDLING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARKING</masterLabel>
+        <translation><!-- MARKING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MECH</masterLabel>
+        <translation><!-- MECH --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MET</masterLabel>
+        <translation><!-- MET --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MTRL</masterLabel>
+        <translation><!-- MTRL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NFF</masterLabel>
+        <translation><!-- NFF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PACK</masterLabel>
+        <translation><!-- PACK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RETURN</masterLabel>
+        <translation><!-- RETURN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RLG</masterLabel>
+        <translation><!-- RLG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPECTRAL</masterLabel>
+        <translation><!-- SPECTRAL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQ</masterLabel>
+        <translation><!-- SQ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

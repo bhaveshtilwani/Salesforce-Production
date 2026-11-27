@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loaner_Due_Date</fullName>
+    <active>true</active>
+    <description>Loaner Due Date is required</description>
+    <errorConditionFormula>AND(ISPICKVAL(  Type__c  , &quot;Standard Loaner&quot;),
+ISNULL(  Loaner_Due_Date__c ))</errorConditionFormula>
+    <errorDisplayField>Loaner_Due_Date__c</errorDisplayField>
+    <errorMessage>When the type is &quot;Standard Loaner&quot; , Loaner Due Date is required</errorMessage>
+</ValidationRule>

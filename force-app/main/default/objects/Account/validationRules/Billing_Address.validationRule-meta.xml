@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Address</fullName>
+    <active>false</active>
+    <description>Billing address cannot be changed for accounts existing in QAD</description>
+    <errorConditionFormula>AND(  
+
+$User.Alias &lt;&gt; &quot;bconn&quot;,
+ISPICKVAL( ERP_Site__c, &quot;Toronto&quot;),
+NOT(ISBLANK(AccountNumber)),
+ISCHANGED(BillingAddress)
+)</errorConditionFormula>
+    <errorMessage>Billing address cannot be changed for accounts existing in QAD</errorMessage>
+</ValidationRule>

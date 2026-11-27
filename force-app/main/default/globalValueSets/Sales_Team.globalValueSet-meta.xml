@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AES</fullName>
+        <default>false</default>
+        <label>AES</label>
+    </customValue>
+    <customValue>
+        <fullName>AO</fullName>
+        <default>false</default>
+        <label>AO</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia Sales Team</fullName>
+        <default>false</default>
+        <label>Asia Sales Team</label>
+    </customValue>
+    <customValue>
+        <fullName>AvS/STA</fullName>
+        <default>false</default>
+        <label>AvS/STA</label>
+    </customValue>
+    <customValue>
+        <fullName>Central and South America Sales</fullName>
+        <default>false</default>
+        <label>Central and South America Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>CISS Americas</fullName>
+        <default>false</default>
+        <label>CISS Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>CISS EMEA</fullName>
+        <default>false</default>
+        <label>CISS EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Service</fullName>
+        <default>false</default>
+        <label>Customer Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense</fullName>
+        <default>false</default>
+        <label>Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Semi</fullName>
+        <default>false</default>
+        <label>Global Semi</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Curing Worldwide</fullName>
+        <default>false</default>
+        <label>Industrial Curing Worldwide</label>
+    </customValue>
+    <customValue>
+        <fullName>Land</fullName>
+        <default>false</default>
+        <label>Land</label>
+    </customValue>
+    <customValue>
+        <fullName>Latin America Sales</fullName>
+        <default>false</default>
+        <label>Latin America Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>LSA Americas</fullName>
+        <default>false</default>
+        <label>LSA Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>LSA EMEA</fullName>
+        <default>false</default>
+        <label>LSA EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Teledyne Sales</fullName>
+        <default>false</default>
+        <label>Teledyne Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown Team</fullName>
+        <default>false</default>
+        <label>Unknown Team</label>
+    </customValue>
+    <customValue>
+        <fullName>WW Channel Sales</fullName>
+        <default>false</default>
+        <label>WW Channel Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotech &amp; Analytical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biotech &amp; Analytical</label>
+    </customValue>
+    <customValue>
+        <fullName>Catalog &amp; Technical Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Catalog &amp; Technical Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Sales Americas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Channel Sales Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Sales Asia</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Channel Sales Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Sales EMEA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Channel Sales EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>CISS 1</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CISS 1</label>
+    </customValue>
+    <customValue>
+        <fullName>CISS 2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CISS 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Comm &amp; Tech</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Comm &amp; Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Consumer</label>
+    </customValue>
+    <customValue>
+        <fullName>GBS Photo &amp; Measurement</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GBS Photo &amp; Measurement</label>
+    </customValue>
+    <customValue>
+        <fullName>Industial Curing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industial Curing</label>
+    </customValue>
+    <customValue>
+        <fullName>ISS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ISS</label>
+    </customValue>
+    <customValue>
+        <fullName>Japan</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Japan</label>
+    </customValue>
+    <customValue>
+        <fullName>Korea</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Korea</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical 1</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical 2</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical 2</label>
+    </customValue>
+    <customValue>
+        <fullName>SE Asia, India, Australia</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SE Asia, India, Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>Semi</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semi</label>
+    </customValue>
+    <customValue>
+        <fullName>Machine Vision</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Machine Vision</label>
+    </customValue>
+    <customValue>
+        <fullName>Ophthalmology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ophthalmology</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotech/Life Sciences</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biotech/Life Sciences</label>
+    </customValue>
+    <customValue>
+        <fullName>Photonics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Photonics</label>
+    </customValue>
+    <customValue>
+        <fullName>3rd Party Partners</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>3rd Party Partners</label>
+    </customValue>
+    <customValue>
+        <fullName>LS/A &amp; Semi Americas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LS/A &amp; Semi Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>Aerospace</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Aerospace</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Curing Americas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Curing Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>LSA &amp; SEMI Americas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LSA &amp; SEMI Americas</label>
+    </customValue>
+    <customValue>
+        <fullName>LS/A &amp; Semi EMEA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LS/A &amp; Semi EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Curing EMEA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Curing EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Curing Asia</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Curing Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotech &amp; Analytical EMEA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biotech &amp; Analytical EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Channel Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>LSA &amp; Semi EMEA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LSA &amp; Semi EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Asia/Pac Sales</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Asia/Pac Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomedical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biomedical</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>DELETE Industrial Sensors</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DELETE Industrial Sensors</label>
+    </customValue>
+    <customValue>
+        <fullName>Lithography</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lithography</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecom</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Telecom</label>
+    </customValue>
+    <customValue>
+        <fullName>Aersoapce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Aersoapce</label>
+    </customValue>
+    <customValue>
+        <fullName>CHANNEL SALES World-Wide</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CHANNEL SALES World-Wide</label>
+    </customValue>
+    <customValue>
+        <fullName>BioTech &amp; Laser</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>BioTech &amp; Laser</label>
+    </customValue>
+    <customValue>
+        <fullName>USA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>USA</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>DS/FSS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DS/FSS</label>
+    </customValue>
+    <customValue>
+        <fullName>ES/PS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ES/PS</label>
+    </customValue>
+    <customValue>
+        <fullName>AXSUN</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>AXSUN</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Consumer Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialty Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Specialty Lighting</label>
+    </customValue>
+    <masterLabel>Sales TeamXXX</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_SLA_Weekend_Holiday</name>
+        <label>Assign SLA Weekend Holiday</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>For_Each_Related_Asset.SLA_Weekends_Holidays__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CountSLAWeekendHoliday</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>For_Each_Related_Asset</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Holiday_Or_Weekend</name>
+        <label>Check Holiday Or Weekend</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Holiday_or_Weekend</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Holiday</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Yes_Weekend</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_Asset</targetReference>
+            </connector>
+            <label>Yes Holiday or Weekend</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>is_Related_Asset_Record_Found</name>
+        <label>is Related Asset Record Found?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_Asset</leftValueReference>
+                <operator>IsEmpty</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>For_Each_Related_Asset</targetReference>
+            </connector>
+            <label>Yes Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Weekend</name>
+        <label>Is Weekend?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Get_Holiday</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Weekend</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isWeekend</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Holiday</targetReference>
+            </connector>
+            <label>Yes Weekend</label>
+        </rules>
+    </decisions>
+    <description>#INC-283997 Toronto RMA&apos;s - time/clock</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CountSLAWeekendHoliday</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+  ISBLANK({!For_Each_Related_Asset.SLA_Weekends_Holidays__c}),
+  1,
+  {!For_Each_Related_Asset.SLA_Weekends_Holidays__c} + 1
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>isWeekend</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+  WEEKDAY(TODAY()) = 1,
+  WEEKDAY(TODAY()) = 7
+)</expression>
+    </formulas>
+    <interviewLabel>Related Asset – SLA Weekend &amp; Holiday Counter {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Related Asset – SLA Weekend &amp; Holiday Counter</label>
+    <loops>
+        <name>For_Each_Related_Asset</name>
+        <label>For Each Related Asset</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_Related_Asset</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_SLA_Weekend_Holiday</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Related_Assets_Found</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Holiday</name>
+        <label>Get Holiday</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Holiday_Or_Weekend</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ActivityDate</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Holiday</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Related_Asset</name>
+        <label>Get Related Asset</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>is_Related_Asset_Record_Found</targetReference>
+        </connector>
+        <filterLogic>(1 AND 8 AND ((2 AND 3) OR (4 AND 5 AND 6 AND 7)))</filterLogic>
+        <filters>
+            <field>SLA_Paused__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SLA_Start_1__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SLA_Stop_1__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SLA_Start_1__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SLA_Stop_1__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SLA_Start_2__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SLA_Stop_2__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Toronto</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Releted_Assets__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Related_Assets_Found</name>
+        <label>Update Related Assets Found</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>Get_Related_Asset</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Weekend</targetReference>
+        </connector>
+        <schedule>
+            <dayOfMonthToRun>0</dayOfMonthToRun>
+            <frequency>Daily</frequency>
+            <frequencyNumber>0</frequencyNumber>
+            <startDate>2026-01-23</startDate>
+            <startTime>04:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

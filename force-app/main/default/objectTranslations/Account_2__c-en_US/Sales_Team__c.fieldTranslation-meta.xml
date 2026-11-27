@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Team --></label>
+    <name>Sales_Team__c</name>
+    <picklistValues>
+        <masterLabel>Asia/Pac Sales</masterLabel>
+        <translation><!-- Asia/Pac Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS Americas</masterLabel>
+        <translation><!-- CISS Americas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISS EMEA</masterLabel>
+        <translation><!-- CISS EMEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Central and South America Sales</masterLabel>
+        <translation><!-- Central and South America Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Sales</masterLabel>
+        <translation><!-- Channel Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Curing Worldwide</masterLabel>
+        <translation><!-- Industrial Curing Worldwide --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS/A &amp; Semi Americas</masterLabel>
+        <translation><!-- LS/A &amp; Semi Americas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSA &amp; Semi EMEA</masterLabel>
+        <translation><!-- LSA &amp; Semi EMEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown Team</masterLabel>
+        <translation><!-- Unknown Team --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

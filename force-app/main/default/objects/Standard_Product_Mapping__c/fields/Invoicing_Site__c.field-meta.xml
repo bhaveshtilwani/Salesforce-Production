@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoicing_Site__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Invoicing Site</label>
+    <referenceTo>Excelitas_Site__c</referenceTo>
+    <relationshipLabel>Standard Product Mappings (Invoicing Site)</relationshipLabel>
+    <relationshipName>Standard_Product_Mappings2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

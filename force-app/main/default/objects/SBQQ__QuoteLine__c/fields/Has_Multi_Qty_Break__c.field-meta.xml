@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Multi_Qty_Break__c</fullName>
+    <description>Used in Approval flow to warn Approver to open Quote Line drawer to view and approve Qty Breaks.</description>
+    <formula>IF(
+OR(
+NOT(ISBLANK(Quantity_2__c)),
+NOT(ISBLANK(Quantity_3__c)),
+NOT(ISBLANK(Quantity_4__c)),
+NOT(ISBLANK(Quantity_5__c))
+),
+TRUE, FALSE)</formula>
+    <inlineHelpText>If this quote contains multi Quantity Breaks, this box will be checked.</inlineHelpText>
+    <label>Has Multi-Qty Break</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

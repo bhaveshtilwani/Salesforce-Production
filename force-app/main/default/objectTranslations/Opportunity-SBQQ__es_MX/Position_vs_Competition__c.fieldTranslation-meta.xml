@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Position vs Competition --></label>
+    <name>Position_vs_Competition__c</name>
+    <picklistValues>
+        <masterLabel>Front Runner</masterLabel>
+        <translation><!-- Front Runner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Only Alternative</masterLabel>
+        <translation><!-- Only Alternative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shared</masterLabel>
+        <translation><!-- Shared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zero</masterLabel>
+        <translation><!-- Zero --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

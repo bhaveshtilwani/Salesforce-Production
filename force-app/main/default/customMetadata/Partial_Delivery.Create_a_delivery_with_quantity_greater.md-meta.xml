@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Create a delivery with quantity greater</label>
+    <protected>false</protected>
+    <values>
+        <field>Partial_Delivery_ID__c</field>
+        <value xsi:type="xsd:string">A,A,A,A,A,A,A,A,A</value>
+    </values>
+    <values>
+        <field>Partial_Delivery_Name__c</field>
+        <value xsi:type="xsd:string">Create a delivery with quantity greater than zero</value>
+    </values>
+    <values>
+        <field>Site__c</field>
+        <value xsi:type="xsd:string">Munich,Goettingen,Wiesbaden,Hamble,Montreal,ESG L&amp;D,ESG Optics,Shenzhen,St Louis</value>
+    </values>
+</CustomMetadata>

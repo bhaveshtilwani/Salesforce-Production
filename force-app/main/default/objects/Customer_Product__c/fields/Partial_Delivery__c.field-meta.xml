@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partial_Delivery__c</fullName>
+    <inlineHelpText>Partial delivery allowed
+A Create a delivery with quantity greater than zero
+B Create only one delivery (also with quantity = 0)
+C Only complete delivery allowed
+D No limit to subsequent deliveries</inlineHelpText>
+    <label>Partial Delivery</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partial delivery allowed</fullName>
+                <default>false</default>
+                <label>Partial delivery allowed</label>
+            </value>
+            <value>
+                <fullName>Create a delivery with quantity greater than zero</fullName>
+                <default>false</default>
+                <label>Create a delivery with quantity greater than zero</label>
+            </value>
+            <value>
+                <fullName>Create only one delivery (also with quantity = 0)</fullName>
+                <default>false</default>
+                <label>Create only one delivery (also with quantity = 0)</label>
+            </value>
+            <value>
+                <fullName>Only complete delivery allowed</fullName>
+                <default>false</default>
+                <label>Only complete delivery allowed</label>
+            </value>
+            <value>
+                <fullName>No limit to subsequent deliveries</fullName>
+                <default>false</default>
+                <label>No limit to subsequent deliveries</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

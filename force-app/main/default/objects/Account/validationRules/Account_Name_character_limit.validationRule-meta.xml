@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Name_character_limit</fullName>
+    <active>false</active>
+    <description>SAP Accounts Character Limits</description>
+    <errorConditionFormula>AND (LEN( Name ) &gt; 35, (
+OR(RecordType.Name = &quot;SAP Germany&quot;, 
+RecordType.Name = &quot;SAP NA Montreal&quot;, 
+RecordType.Name = &quot;SAP NA Salem/MIA&quot;,
+RecordType.Name = &quot;SAP Asia&quot;,
+RecordType.Name = &quot;S4 - Boulder&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>ACCESSORIES_OMNI_DEMO_DISCOUNT__c</errorDisplayField>
+    <errorMessage>Please limit the Account Name to 35 characters</errorMessage>
+</ValidationRule>

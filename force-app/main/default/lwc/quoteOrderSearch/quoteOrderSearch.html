@@ -1,0 +1,1580 @@
+<!--
+    @description       : This Quote Order Converter LWC is called from lightning Quote Search tab
+    @author            : Jade Global
+    @last modified on  : 04-22-2021
+    @last modified by  : Jade Global
+    Modifications Log
+    Ver   Date         Author        Modification
+    1.0   02-18-2021   Jade Global   Initial Version
+-->
+<template>
+    <template if:false={loaded}>
+        <lightning-spinner style="position: fixed;" variant="brand" size="large" alternative-text="Loading...">
+        </lightning-spinner>
+    </template>
+    <lightning-card>
+        <header class="slds-modal__header" style="line-height:1px;">
+            <h3 id="modal-heading-01" class="slds-modal__title slds-hyphenate"
+                style="text-align: left;font-weight: bold;font-size: large;">Quote to Order Converter Page</h3>
+        </header>
+        <div class="c-container test">
+            <lightning-accordion allow-multiple-sections-open class="example-accordion" active-section-name="A"
+                style="padding-left:10px; padding-right:10px;">
+                <template if:false={showAppendLinesBTN}>
+                    <header>
+                        <div class="slds-text-heading_medium"
+                            style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px; margin: 10px;">
+                            <p style="font-weight: bold;" class="slds-var-m-top_xx-small"> User Entered Details Section </p>
+                        </div>
+                    </header>
+                    <div>
+                        <template if:true={isShowTotal}>
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Account Name:</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span>{accountName}</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Order Type:</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span>{orderType}</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span style="font-weight: bold;" class="slds-var-m-top_xx-small">PO Number:</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <lightning-input type="text" label="PO Number:" value={poNumberEntered} onchange={handlePOnumberChange}
+                                        name="openConfirmation" required>
+                                    </lightning-input>
+                                </div>
+
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Bill/Sold To Account:</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size_9-of-12">
+                                            <c-lwc-custom-lookup id="billToAccountId" ltng-icon-name="standard:account" query-object-api-name="Account"
+                                                main-object-api-name="Account" id-field="Id" name-field="Name" scroll-after-n-items=5 result-display-size=10
+                                                placeholder="Search Account..." additional-seach-keyword-fields="ERP_Site__c"
+                                                onselectionchange={handleBillToAccountChange} selection={listBillToAccountLookup}
+                                                additional-fields="Client_Side_ID__c,BillingCountry,BillingState,BillingCity,CurrencyIsoCode"
+                                                nothing-found-subtitle="No accounts were found on the selected site"
+                                                additional-where-clause={whereBillERPSite}>
+                                            </c-lwc-custom-lookup>
+                                        </div>
+                                        <div class="slds-col slds-size_3-of-12">
+                                            <lightning-button label="PF" onclick={showModal}>
+                                            </lightning-button>
+                                        </div>
+                                    </div>
+                                    <template if:true={openModal}>
+                                        <div class="slds-modal slds-fade-in-open slds-backdrop">
+                                            <div class="slds-modal__container">
+                                                <div class="slds-modal__header">
+                                                    <lightning-button-icon icon-name="utility:close" alternative-text="Close this window" size="large"
+                                                        variant="bare-inverse" onclick={closeModal} class="slds-modal__close">
+                                                    </lightning-button-icon>
+                                                    <h2>Choose Partner Function</h2>
+                                                </div>
+                                                <div class="slds-modal__content slds-p-around_large  slds-scrollable">
+                                                    <table class="slds-table slds-table_cell-buffer slds-table_bordered" border="1" cellspacing="0"
+                                                        cellpadding="0" style="border: 1 px solid #ccc;border-collapse:collapse;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sold To/Ship To</th>
+                                                                <th>ERP ID</th>
+                                                                <th>Partner Function Type</th>
+                                                                <th>Address</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <template for:each={records} for:item="PFItem" for:index="index">
+                                                                <tr key={PFItem.Id}>
+                                                                    <td>
+                                                                        <div>
+
+                                                                            <lightning-button variant="base" label={PFItem.Partner__r.Name}
+                                                                                value={PFItem.Partner__c} title="Populate to Ship To Account"
+                                                                                onclick={PopulatePartnerFunction} class="slds-m-left_x-small"
+                                                                                data-index={index}>
+                                                                            </lightning-button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>{PFItem.ERP_ID__c}</td>
+                                                                    <td>{PFItem.Partner_Function_Type__r.Name}</td>
+                                                                    <td>{PFItem.Partner__r.BillingStreet},
+                                                                        {PFItem.Partner__r.BillingCity},
+                                                                        {PFItem.Partner__r.BillingState},
+                                                                        {PFItem.Partner__r.BillingPostalCode},
+                                                                        {PFItem.Partner__r.BillingCountry}</td>
+                                                                </tr>
+                                                            </template>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!---Footer Section-->
+                                                <div class="slds-modal__footer">
+                                                    <lightning-button icon-name="utility:close" label="close" variant="brand" onclick={closeModal}>
+                                                    </lightning-button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Ship To Account:</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <c-lwc-custom-lookup id="shipToAccountId" ltng-icon-name="standard:account" query-object-api-name="Account"
+                                        main-object-api-name="Account" id-field="Id" name-field="Name" scroll-after-n-items=5 result-display-size=10
+                                        placeholder="Search Account..." additional-seach-keyword-fields="Name" onselectionchange={handleShipToAccountChange}
+                                        nothing-found-subtitle="No accounts were found on the selected site"
+                                        selection={listShipToAccountLookup} additional-where-clause={whereShipERPSite}>
+                                    </c-lwc-custom-lookup>
+                                </div>
+
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span style="font-weight: bold;" class="slds-var-m-top_xx-small">PO Date:</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <lightning-input type="date" name="input1" variant="label-hidden" onchange={handlePoDateChange} value={PODate}>
+                                    </lightning-input>
+                                </div>
+
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Order Reason:</span>
+                                </div>
+                                <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                    <c-lwc-custom-lookup id="orderReason" ltng-icon-name="custom:custom11" query-object-api-name="Order_Reason__c"
+                                        main-object-api-name="Order_Reason__c" id-field="Id" name-field="Name" scroll-after-n-items=5 result-display-size=10
+                                        placeholder="Select Order Reason..." onselectionchange={handleOrderReasonChange}
+                                        nothing-found-subtitle="No Order Reasons were found on the selected site"
+                                        additional-where-clause={whereERPSite}>
+                                    </c-lwc-custom-lookup>
+                                </div>
+
+                                <template if:true={showBillericaFields}>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Bill To Address:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <c-lwc-custom-lookup id="billtoaddr" ltng-icon-name="custom:custom11" query-object-api-name="Related_Address__c"
+                                            main-object-api-name="Related_Address__c" id-field="Id" name-field="Address_Name__c" scroll-after-n-items=5
+                                            result-display-size=10 placeholder="Bill Address" onselectionchange={handleBillToAddressChange}
+                                            additional-fields="Address_Street__c,Addresses__r.Address_Country__c"
+                                            selection={selection} additional-where-clause={whereBilltoAddress}>
+                                        </c-lwc-custom-lookup>
+                                    </div>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Ship To Address:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <c-lwc-custom-lookup id="shiptoaddr" ltng-icon-name="custom:custom11" query-object-api-name="Related_Address__c"
+                                            main-object-api-name="Related_Address__c" id-field="Id" name-field="Address_Name__c" scroll-after-n-items=5
+                                            result-display-size=10 placeholder="Ship Address" onselectionchange={handleShipToAddressChange}
+                                            additional-fields="Address_Street__c,Addresses__r.Address_Country__c"
+                                            selection={selection} additional-where-clause={whereShiptoAddress}>
+                                        </c-lwc-custom-lookup>
+                                    </div>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Delivery Mode:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <c-lwc-custom-lookup id="delmode" ltng-icon-name="custom:custom11" query-object-api-name="Mode_of_delivery__c"
+                                            main-object-api-name="Mode_of_delivery__c" id-field="Id" name-field="Name" scroll-after-n-items=5
+                                            result-display-size=10 placeholder="Select Delivery Mode..." onselectionchange={handleDeliveryModeChange}>
+                                        </c-lwc-custom-lookup>
+                                    </div>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Method of Payment:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <lightning-combobox name="methodOfPayment" options={methodOfPaymentOptions} onchange={handleMethodOfPaymentChange}>
+                                        </lightning-combobox>
+                                    </div>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Service:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <lightning-combobox name="service" options={serviceOptions} onchange={handleServiceChange}></lightning-combobox>
+                                    </div>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Carrier Account Number:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <lightning-input type="text" name="carrieraccno" variant="label-hidden" onchange={handleCarrierAccountNoChange}
+                                            value={strCarrierAccountNumber}>
+                                        </lightning-input>
+                                    </div>
+
+                                </template>
+
+                                <template if:true={showSAPGermanyFields}>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Delivery Date Control:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <lightning-combobox name="deliveryDateControl" options={DeliveryDateControlOptions}
+                                            onchange={handleDeliveryDateControlChange}></lightning-combobox>
+                                    </div>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Ship-To Party's PO Date:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <lightning-input type="date" name="shiptopartypodate" variant="label-hidden" onchange={handleShipToPartyPODateChange}
+                                            value={strShipToPartyPoDate}>
+                                        </lightning-input>
+                                    </div>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Ship-To Party's PO Number:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <lightning-input type="text" name="shiptopartypono" variant="label-hidden" onchange={handleShipToPartyPONumberChange}
+                                            value={strShipToPartyPoNumber}>
+                                        </lightning-input>
+                                    </div>
+
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Header Condition Type:</span>
+                                    </div>
+                                    <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                        <c-lwc-custom-lookup id="itemconditiontype" ltng-icon-name="custom:custom11"
+                                            query-object-api-name="Header_Condition_Type__c" main-object-api-name="Header_Condition_Type__c" id-field="Id"
+                                            name-field="Name" scroll-after-n-items=5 result-display-size=10 placeholder="Select Header Condition Type..."
+                                            nothing-found-subtitle="No Header Contidion Types were found on the selected site"
+                                            onselectionchange={handleItemConditionTypeChange} additional-where-clause={whereERPSite}>
+                                        </c-lwc-custom-lookup>
+                                    </div>
+
+                                    <template if:true={contractEndDate}>
+
+                                        <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                            <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Contract Start Date:</span>
+                                        </div>
+                                        <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                            <lightning-input type="date" name="input1" variant="label-hidden" onchange={handleCSDateChange} value={CSDate}>
+                                            </lightning-input>
+                                        </div>
+
+                                        <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                            <span style="font-weight: bold;" class="slds-var-m-top_xx-small">Contract End Date:</span>
+                                        </div>
+                                        <div class="slds-col slds-var-p-horizontal_small slds-var-m-top_small slds-size_2-of-12">
+                                            <lightning-input type="date" name="input1" variant="label-hidden" onchange={handleCEDateChange} value={CEDate}>
+                                            </lightning-input>
+                                        </div>
+                                    </template>
+
+                                </template>
+                            </div>
+                        </template>
+                        <br />
+                    </div>
+                </template>
+                <template if:true={showReplaceResult}>
+                    <header>
+                        <div class="slds-text-heading_medium"
+                            style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px;">
+                            <p style="font-weight: bold;" class="slds-var-m-top_xx-small"> Support Request Lines Details Section </p>
+                        </div>
+                    </header>
+                    <br />
+                    <div>
+                        <table class={strTableClass} style="width: 100%;">
+                            <thead>
+                                <tr class="slds-text-heading--label">
+                                    <th class="slds-is-sortable" scope="col">
+                                        <lightning-input onchange={getSelectedRow} selected type="checkbox"
+                                            disabled="true"></lightning-input>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="Quantity">Support Request Name</div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="productCode">Product Code</div>
+                                    </th>
+                                    <th align="center" class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;">
+                                            Product Name</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;">
+                                            Application Name</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;">
+                                            Quantity</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;">
+                                            Tally</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={requestLineDetails} for:item="con" for:index="index">
+                                    <tr class="slds-hint-parent" key={con.quoteId}>
+                                        <td class="slds-truncate" scope="col">
+                                            <div class="slds-truncate">
+                                                <lightning-input type="checkbox" checked={con.selected} disabled="true">
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <td class="slds-truncate" scope="col">
+                                            {con.repProdName}
+                                        </td>
+                                        <td class="slds-truncate" scope="col">
+                                            <div>{con.productCode}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>{con.productName}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>{con.prodApplication}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>{con.productQuantity}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>{con.prodTally}</div>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </template>
+                <template if:true={showOpportunityResult}>
+                    <header>
+                        <div class="slds-text-heading_medium"
+                            style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px;">
+                            <p style="font-weight: bold;" class="slds-var-m-top_xx-small"> Opportunity Lines Details Section </p>
+                        </div>
+                    </header>
+                    <br />
+                    <div style="overflow-x: scroll;">
+                        <table class={strTableClassCal} style="width:100%">
+                            <tr>
+                                <td>
+                                    <div class={strTableClassCalTd}>Lines Total: <lightning-formatted-number
+                                            value={linesGrandTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Products Total: <lightning-formatted-number
+                                            value={prodGrandTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Grand Total: <lightning-formatted-number
+                                            value={overAllGrandTotal} format-style="decimal"
+                                            minimum-fraction-digits="2"></lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Agreement Total: <lightning-formatted-number
+                                            value={agreementAmount} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Available Total: <lightning-formatted-number
+                                            value={availableTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Cumulative Ordered Total:
+                                        <lightning-formatted-number value={usedTotal} format-style="decimal"
+                                            minimum-fraction-digits="2"></lightning-formatted-number>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class={strTableClass} style="width: 100%;">
+                            <thead>
+                                <tr class="slds-text-heading--label">
+                                    <th class="slds-is-sortable" scope="col">
+                                        <lightning-input onchange={handleSelectAllLines} type="checkbox"
+                                            disabled="true">
+                                        </lightning-input>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="Quantity">Opportunity Number</div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="productCode">Product Code</div>
+                                    </th>
+                                    <th align="center" class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="productName">Product Name</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Unit Price</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Quantity</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Total Price</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Is Current Order?</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">SO Line No.</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Serial Number</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={lstQuoteLines} for:item="con" for:index="index">
+                                    <tr class="slds-hint-parent" key={con.quoteId}>
+                                        <td class="slds-truncate" scope="col">
+                                            <div class="slds-truncate">
+                                                <lightning-input type="checkbox" data-id={index}
+                                                    checked={con.isSelected} onchange={handleQuoteLineSelection}
+                                                    disabled="true">
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <td class="slds-truncate" scope="col" data-label="Opportunity Number">
+                                            {con.opportunityNumber}
+                                        </td>
+                                        <td class="slds-truncate" scope="col" data-label="Product Code">
+                                            <div>{con.productCode}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Product Name">
+                                            <div>{con.productName}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Unit Price">
+                                            <div>{con.unitPrice}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Quote Line Quantity">
+                                            <div>
+                                                <lightning-input type="text" value={con.quantity} disabled="true">
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Total Price">
+                                            <div>{con.totalPrice}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Is Current Order?">
+                                            <div>
+                                                <lightning-input type="checkbox" name="input2"
+                                                    disabled={con.isDisableCurrOrder} data-id={index}
+                                                    checked={con.isCurrentOrder} onchange={handleChangeCurrentOrder}>
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <td style={solineOverflow} scope="col" data-label="SO Line No.">
+                                            <lightning-combobox name="lineNumber" value={con.soLineNumber}
+                                                options={soLineNumberoptions} onchange={handleChangeSoline}
+                                                disabled={con.isDisableSoLine} data-id={index} class="lstDropList">
+                                            </lightning-combobox>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Serial Number">
+                                            <div>
+                                                <lightning-input type="text" value={con.serialNumber}
+                                                    disabled={con.isDisableSerialNo} data-id={index}
+                                                    onchange={handleChangeSerialNumber}></lightning-input>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                            <template if:true={isShowTotal}>
+                                <tr>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"><b>{currencyCode}
+                                            <lightning-formatted-number value={quoteGridTotal} format-style="decimal"
+                                                minimum-fraction-digits="2"></lightning-formatted-number>
+                                        </b></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+
+                                </tr>
+                            </template>
+                            <template if:false={isShowTotal}>
+                                <tr>
+                                    <td class="slds-truncate" scope="col"><b>{currencyCode} <lightning-formatted-number
+                                                value={quoteGridTotal} format-style="decimal"
+                                                minimum-fraction-digits="2"></lightning-formatted-number></b></td>
+                                </tr>
+                            </template>
+                        </table>
+                    </div>
+                </template>
+                <template if:true={showQuoteLineResult}>
+                    <header>
+                        <div class="slds-text-heading_medium"
+                            style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px; margin: 10px;">
+                            <p style="font-weight: bold;" class="slds-var-m-top_xx-small"> Quote Lines Details Section </p>
+                        </div>
+                    </header>
+                    <div style="overflow-x: scroll;">
+                        <table class={strTableClassCal} style="width:100%">
+                            <tr>
+                                <td>
+                                    <div class={strTableClassCalTd}>Lines Total: <lightning-formatted-number
+                                            value={linesGrandTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Products Total: <lightning-formatted-number
+                                            value={prodGrandTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Grand Total: <lightning-formatted-number
+                                            value={overAllGrandTotal} format-style="decimal"
+                                            minimum-fraction-digits="2"></lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Agreement Total: <lightning-formatted-number
+                                            value={agreementAmount} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Available Total: <lightning-formatted-number
+                                            value={availableTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Cumulative Ordered Total:
+                                        <lightning-formatted-number value={usedTotal} format-style="decimal"
+                                            minimum-fraction-digits="2"></lightning-formatted-number>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class={strTableClass} style="width: 100%;">
+                            <thead>
+                                <tr class="slds-text-heading--label">
+                                    <th class="slds-is-sortable" scope="col">
+                                        <lightning-input type="checkbox" onchange={handleSelectAllLines}>
+                                        </lightning-input>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="productCode">Quote Number</div>
+                                    </th>
+                                    <th align="center" class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="productName">Product Code</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Product Name</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">ERP Product Number</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Excelitas Site</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Is Standard product?</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Quote Line Name</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Quote Line Unit Price</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Quote Avail Qty</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Quote Line Quantity</div>
+                                    </th>
+
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Total Price</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={lstQuoteLines} for:item="con" for:index="index">
+                                    <tr class="slds-hint-parent" key={con.quoteId}>
+                                        <td class="slds-truncate" scope="col">
+                                            <div class="slds-truncate">
+                                                <lightning-input type="checkbox" data-id={index}
+                                                    checked={con.isSelected} onchange={handleQuoteLineSelection}
+                                                    disabled={con.isQuantityEnable}>
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Quote Number">
+                                            <div>{con.quoteNumber}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Product Code">
+                                            <div>{con.productCode}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Product Name">
+                                            <div>{con.productName}</div>
+                                        </td>
+                                        <td  scope="col"
+                                            data-label="ERP Product Number">
+                                            <template if:true={con.disableERPProductInput}>
+                                                <lightning-input type="text" name="erpProductNumber" data-id={index}
+                                                    disabled="true" value={con.erpProductNumbers}></lightning-input>
+                                            </template>
+                                            <template if:false={con.disableERPProductInput}>
+                                                <c-lwc-custom-lookup ltng-icon-name="custom:custom11" query-object-api-name="PricebookEntry"
+                                                    main-object-api-name="PricebookEntry" id-field="Id" name-field="Product_Name__c" scroll-after-n-items=5 result-display-size=10
+                                                    placeholder="ERP Product" onselectionchange={handleERPProductNumberChange} identifier={index}
+                                                    additional-fields="Product_Description__c,Product2Id"
+                                                    nothing-found-subtitle="No ERP Products found with the given criteria"
+                                                    additional-where-clause={whereERPProductCustomPart}>
+                                                </c-lwc-custom-lookup>
+                                            </template>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Excelitas Site">
+                                            <div>{con.quoteLineSite}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Is Standard product?">
+                                            <div>{con.productStandardCheck}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Quote Line Name">
+                                            <div>{con.quoteLineName}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Quote Line Unit Price">
+                                            <div>{con.quoteLineUnitPrice}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Available Quantity">
+                                            <div>{con.quoteLineAvailableQty}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Quote Line Quantity">
+                                            <div>{con.quoteLineQuantity}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Total Price">
+                                            <div>{con.quoteLineTotal}</div>
+                                        </td>
+                                    </tr>
+
+                                    <template if:true={con.displayAdditionalOrderItems}>
+                                        <tr key={con.childrenKey}>
+                                            <td colspan="1">&nbsp;</td>
+                                            <td colspan="9" style="background-color: white !important;">
+                                                <table class={strTableClass}>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                    title="Quote Line Quantity">Quote Line Quantity</div>
+                                                            </th>
+                                                            <th scope="col">
+                                                                <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                    title="Item Category">Item Category</div>
+                                                            </th>
+                                                            <th scope="col">
+                                                                <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                    title="Customer Requested Date (CRD)">Customer Requested Date (CRD)</div>
+                                                            </th>
+                                                            <th scope="col">
+                                                                <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                    title="Original Commit Date (OCD)">Original Commit Date (OCD)</div>
+                                                            </th>
+                                                            <th scope="col">
+                                                                <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                    title="Scheduled Ship Date (SSD)">Scheduled Ship Date (SSD)</div>
+                                                            </th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <template for:each={con.additionalOrderItems} for:item="line" for:index="subIndex">
+                                                            <tr key={line.key}>
+                                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                                    data-label="Quote Line Quantity">
+                                                                    <lightning-input type="text" value={line.quantity} data-id={subIndex} data-index={index}
+                                                                        disabled={con.isQuantityEnable} onblur={handleChangeQuantity}
+                                                                        onchange={handleChangeQuantity}>
+                                                                    </lightning-input>
+                                                                </td>
+                                                                <td  scope="col"
+                                                                    data-label="Item Category">
+                                                                    <c-lwc-custom-lookup ltng-icon-name="custom:custom11" id={con.oLId} query-object-api-name="Item_Category__c"
+                                                                        main-object-api-name="Item_Category__c" id-field="Id" name-field="Name" scroll-after-n-items=5
+                                                                        is-disabled={con.isQuantityEnable} result-display-size=10 placeholder="Select Item Category..."
+                                                                        onselectionchange={handleItemCategoryChange} identifier={index} child-identifier={subIndex} additional-where-clause={whereERPSite}
+                                                                        data-id={index}>
+                                                                    </c-lwc-custom-lookup>
+                                                                </td>
+                                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                                    data-label="Customer Requested Date (CRD)">
+                                                                    <lightning-input type="date"
+                                                                        data-id={subIndex} data-index={index} disabled={con.isQuantityEnable} onchange={handleCRD}>
+                                                                    </lightning-input>
+                                                                </td>
+                                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                                    data-label="Original Commit Date (OCD)">
+                                                                    <lightning-input type="date"
+                                                                        data-id={subIndex} data-index={index} disabled={con.isQuantityEnable} onchange={handleOCD}>
+                                                                    </lightning-input>
+                                                                </td>
+                                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                                    data-label="Scheduled Ship Date (SSD)">
+                                                                    <lightning-input type="date"
+                                                                        data-id={subIndex} data-index={index} disabled={con.isQuantityEnable} onchange={handleSSD}>
+                                                                    </lightning-input>
+                                                                </td>
+                                                                <td>
+                                                                    <lightning-icon icon-name="utility:delete" onclick={handleLineDelete} data-id={subIndex} data-index={index}
+                                                                    alternative-text="delete" size="x-small"></lightning-icon>
+                                                                </td>
+                                                            </tr>
+                                                        </template>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <td colspan="6">
+                                                            <lightning-button icon-name="utility:add" label="Add Line" variant="brand" onclick={addLine} data-id={index}>
+                                                            </lightning-button>
+                                                        </td>
+                                                    </tfoot>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </template>
+
+                                </template>
+                            </tbody>
+                            <template if:true={isShowTotal}>
+                                <tr>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <!-- <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td> -->
+                                    <td class="slds-truncate" scope="col"><b>{currencyCode} <lightning-formatted-number
+                                                value={quoteGridTotal} format-style="decimal"
+                                                minimum-fraction-digits="2"></lightning-formatted-number></b></td>
+                                </tr>
+                            </template>
+                            <template if:false={isShowTotal}>
+                                <tr>
+                                    <td class="slds-truncate" scope="col"><b>{currencyCode} <lightning-formatted-number
+                                                value={quoteGridTotal} format-style="decimal"
+                                                minimum-fraction-digits="2"></lightning-formatted-number></b></td>
+                                </tr>
+                            </template>
+                        </table>
+                    </div>
+                </template>
+                <template if:true={showUnQuoteLineResult}>
+                    <c-unquote-linesdisplay selectedsite={site} onaccountselection={onAccountSelection}></c-unquote-linesdisplay>
+                </template>
+                <template if:true={showQuoteItemResult}>
+                    <header>
+                        <div class="slds-text-heading_medium"
+                            style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px;">
+                            <p style="font-weight: bold;" class="slds-var-m-top_xx-small"> Order Items Details Section </p>
+                        </div>
+                    </header>
+                    <br />
+                    <div style="overflow-x: scroll;">
+                        <table class={strTableClassCal} style="width:100%">
+                            <tr>
+                                <td>
+                                    <div class={strTableClassCalTd}>Lines Total: <lightning-formatted-number
+                                            value={linesGrandTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Products Total: <lightning-formatted-number
+                                            value={prodGrandTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Grand Total: <lightning-formatted-number
+                                            value={overAllGrandTotal} format-style="decimal"
+                                            minimum-fraction-digits="2"></lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Agreement Total: <lightning-formatted-number
+                                            value={agreementAmount} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Available Total: <lightning-formatted-number
+                                            value={availableTotal} format-style="decimal" minimum-fraction-digits="2">
+                                        </lightning-formatted-number>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class={strTableClassCalTd}>Cumulative Ordered Total:
+                                        <lightning-formatted-number value={usedTotal} format-style="decimal"
+                                            minimum-fraction-digits="2"></lightning-formatted-number>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class={strTableClass} style="width: 100%;">
+                            <thead>
+                                <tr class="slds-text-heading--label">
+                                    <th class="slds-is-sortable" scope="col">
+                                        <lightning-input onchange={handleSelectAllLines} type="checkbox">
+                                        </lightning-input>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="Quantity">Order Number</div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="productCode">Product Code</div>
+                                    </th>
+                                    <th align="center" class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="productName">Product Name</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Status</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Order Quantity</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Available Quantity</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Order Item Quantity</div>
+                                    </th>
+                                    <template if:true={showERPOrderLineStatus}>
+                                        <th class="slds-is-sortable slds-wrap" scope="col">
+                                            <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                                title="applicationName">ERP Order Line Status</div>
+                                        </th>
+                                        <th class="slds-is-sortable slds-wrap" scope="col">
+                                            <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                                title="applicationName">Unit Price</div>
+                                        </th>
+                                    </template>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Item Category</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Customer Requested Date (CRD)</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Original Commit Date (OCD)</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Scheduled Ship Date (SSD)</div>
+                                    </th>
+                                    <th class="slds-is-sortable slds-wrap" scope="col">
+                                        <div class="slds-truncate" style="text-transform: capitalize;font-size: 13px;"
+                                            title="applicationName">Total Price</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={lstQuoteLines} for:item="con" for:index="index">
+                                    <tr class="slds-hint-parent" key={con.oLId}>
+                                        <td class="slds-truncate" scope="col">
+                                            <div class="slds-truncate">
+                                                <lightning-input type="checkbox" data-id={index}
+                                                    checked={con.isSelected} disabled={con.isQuantityEnable}
+                                                    onchange={handleQuoteLineSelection}>
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <td class="slds-truncate" scope="col" data-label="Quantity">
+                                            <div>{con.orderNumber}</div>
+                                        </td>
+                                        <td class="slds-truncate" scope="col" data-label="Product Code">
+                                            <div>{con.oLProductCode}</div>
+                                        </td>
+                                        <td class="slds-truncate" scope="col" data-label="Product Code">
+                                            <div>{con.oLProductName}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>{con.oLActivationStatus}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>{con.oLQuotedQuantity}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>{con.oLAvailableQuantity}</div>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>
+                                                <lightning-input type="text" value={con.oLQuantity} data-id={index}
+                                                    onblur={handleChangeQuantity} onchange={handleChangeQuantity}>
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <template if:true={showERPOrderLineStatus}>
+                                            <td class="slds-truncate slds-cell-wrap" scope="col">
+                                                <div>
+                                                    {con.ERPOrderLineStatus}
+                                                </div>
+                                            </td>
+                                            <td class="slds-truncate slds-cell-wrap" scope="col">
+                                                <div>
+                                                    <lightning-input type="text" value={con.oLUnitPrice} data-id={index}
+                                                        onblur={handleOrderUnitPrice}>
+                                                    </lightning-input>
+                                                </div>
+                                            </td>
+                                        </template>
+                                        <td scope="col"
+                                            data-label="Item Category">
+                                            <c-lwc-custom-lookup ltng-icon-name="custom:custom11" id={con.oLId} query-object-api-name="Item_Category__c"
+                                                main-object-api-name="Item_Category__c" id-field="Id" name-field="Name" scroll-after-n-items=5
+                                                is-disabled={con.isQuantityEnable} result-display-size=10 placeholder="Select Item Category..."
+                                                onselectionchange={handleItemCategoryChange}
+                                                identifier={index} additional-where-clause={whereERPSite} data-id={index}>
+                                            </c-lwc-custom-lookup>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Customer Requested Date (CRD)">
+                                            <lightning-input type="date" value={con.quoteLineCRD}
+                                                data-id={index} disabled={con.isQuantityEnable} onchange={handleCRD}>
+                                            </lightning-input>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Original Commit Date (OCD)">
+                                            <lightning-input type="date" value={con.quoteLineOCD}
+                                                data-id={index} disabled={con.isQuantityEnable} onchange={handleOCD}>
+                                            </lightning-input>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                            data-label="Scheduled Ship Date (SSD)">
+                                            <lightning-input type="date" value={con.quoteLineSSD}
+                                                data-id={index} disabled={con.isQuantityEnable} onchange={handleSSD}>
+                                            </lightning-input>
+                                        </td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col">
+                                            <div>{con.oLTotalPrice}</div>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                            <template if:true={isShowTotal}>
+                                <tr>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    <template if:true={showERPOrderLineStatus}>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                        <td class="slds-truncate slds-cell-wrap" scope="col"></td>
+                                    </template>
+                                    <td class="slds-truncate" scope="col"><b>{currencyCode} <lightning-formatted-number
+                                                value={quoteGridTotal} format-style="decimal"
+                                                minimum-fraction-digits="2"></lightning-formatted-number></b></td>
+                                </tr>
+                            </template>
+                            <template if:false={isShowTotal}>
+                                <tr>
+                                    <td class="slds-truncate" scope="col"><b>{currencyCode} <lightning-formatted-number
+                                                value={quoteGridTotal} format-style="decimal"
+                                                minimum-fraction-digits="2"></lightning-formatted-number></b></td>
+                                </tr>
+                            </template>
+                        </table>
+                    </div>
+                </template>
+                <br />
+                <template if:false={showUnQuoteLineResult}>
+                    <template if:false={showAppendLinesBTN}>
+                        <lightning-button variant="brand" label="Create Order" name="openConfirmation" title="Create Order"
+                            onclick={handleCreateOrder} class="slds-m-left_x-small"></lightning-button>
+                    </template>
+                    <template if:true={showAppendLinesBTN}>
+                        <lightning-button variant="brand" label="Amend" title="Amend" onclick={handleAppendUnquoteOrder}
+                            class="slds-m-left_x-small"></lightning-button>
+                    </template>
+                    <lightning-button variant="brand" label="Cancel" title="Cancel" onclick={handleCancelClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </template>
+            </lightning-accordion>
+        </div>
+    </lightning-card>
+    <br />
+    <lightning-card>
+        <template if:false={showSearchSection}>
+        <header class="slds-modal__header" style="line-height: 1px;">
+            <h3 id="modal-heading-02" class="slds-modal__title slds-hyphenate"
+                style="text-align: left;font-weight: bold;font-size: large;">Product Search</h3>
+        </header>
+        <div class="c-container" style="padding-bottom: 5%;">
+            <lightning-layout multiple-rows="true" class="x-large">
+                <lightning-layout-item flexibility="auto" padding="around-small" class="custom-box">
+                    <lightning-accordion allow-multiple-sections-open class="example-accordion"
+                        active-section-name={activeSections}>
+                        <lightning-accordion-section name="P1" label="Product Search Criteria Section">
+                            <lightning-layout multiple-rows>
+                                <lightning-layout-item padding="horizontal-small" size="12" small-device-size="12"
+                                    medium-device-size="6" large-device-size="7">
+                                    <lightning-layout vertical-align="center">
+                                        <template if:false={showProductSearch}>
+                                        <lightning-layout-item size="2" class="right-align">
+                                            Search Product:
+                                        </lightning-layout-item>
+                                        <lightning-layout-item size="2" class="left-align">
+                                            <c-lwc-custom-lookup id="productId" ltng-icon-name="custom:custom11"
+                                                query-object-api-name="Product2" main-object-api-name="Product2"
+                                                id-field="Id" name-field="name" scroll-after-n-items=5
+                                                result-display-size=10 placeholder="Search Product"
+                                                onselectionchange={handleProdChange} selection={selection} additional-where-clause={whereStandardProduct}>
+                                            </c-lwc-custom-lookup>
+                                        </lightning-layout-item>
+                                        </template>
+                                        <lightning-layout-item size="1" class="right-align">
+                                            UI Price Editable:
+                                        </lightning-layout-item>
+                                        <lightning-layout-item size="1" class="left-align">
+                                                <lightning-combobox name="UIPriceEditable" options={uiPriceEditOptions}
+                                                    onchange={handleUIEditCheck}></lightning-combobox>
+                                        </lightning-layout-item>
+                                        <template if:false={showFilterCriteria}>
+                                            <lightning-layout-item size="2" class="right-align">
+                                                Product Price Type:
+                                            </lightning-layout-item>
+                                            <lightning-layout-item size="2" class="left-align">
+                                                <lightning-combobox name="ProductPriceType" options={ProductPriceType}
+                                                    onchange={handleProductPriceType}></lightning-combobox>
+                                            </lightning-layout-item>
+                                            <lightning-layout-item size="1" class="right-align">
+                                                Region:
+                                            </lightning-layout-item>
+                                            <lightning-layout-item size="2" class="left-align">
+                                                <lightning-combobox name="RegionArea" options={RegionArea}
+                                                    onchange={handleRegionArea}>
+                                                </lightning-combobox>
+                                            </lightning-layout-item>
+                                            <lightning-layout-item size="1" class="right-align">
+                                                Quantity:
+                                            </lightning-layout-item>
+                                            <lightning-layout-item size="2" class="left-align">
+                                                <lightning-input data-id="text-input-id" value={defaultval} type="text" id="text-input-id-3"
+                                                    onchange={handleMinMaxChange}>
+                                            </lightning-input>
+                                  </lightning-layout-item>
+
+                                            <lightning-layout-item size="1" class="right-align">
+                                                ERP Part Number:
+                                            </lightning-layout-item>
+                                            <lightning-layout-item size="2" class="left-align">
+                                                <c-lwc-custom-lookup id="erpProductNumber"
+                                                    ltng-icon-name="custom:custom11" query-object-api-name="Product2"
+                                                    main-object-api-name="Product2" id-field="Id" name-field="name"
+                                                    scroll-after-n-items=5 result-display-size=10
+                                                    placeholder="ERP Product" onselectionchange={handleERPProductChange}
+                                                    selection={selection} additional-where-clause={whereERPProduct}>
+                                                </c-lwc-custom-lookup>
+                                            </lightning-layout-item>
+                                        </template>
+                                        <lightning-layout-item size="1" class="left-align">
+                                            <lightning-button variant="brand" label="Search" title="Search"
+                                                onclick={fetchProductSelection} class="slds-m-left_x-small">
+                                            </lightning-button>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-accordion-section>
+                        <lightning-accordion-section name="P2" label="Selected Product Section">
+                            <div>
+                                <table class={strTableClass} style="table-layout: fixed;width: 100%;">
+                                    <thead>
+                                        <tr class="slds-text-heading--label">
+                                            <th align="center" class="slds-is-sortable slds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="productCode">Product Code</div>
+                                            </th>
+                                            <th align="center" class="slds-is-sortable slds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">ERP Product</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Product Name</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Product Desc</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Currency Code</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Unit Price</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">UI Price Editable</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Quantity</div>
+                                            </th>
+                                            <th class="slds-is-sortable slsds-wrap" scope="col">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Total Price</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:6%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Remove</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={mpSelectedProdEnt} for:item="con" for:index="index">
+                                            <tr class="slds-hint-parent" key={con.productId}>
+                                                <td class="slds-truncate" scope="col" data-label="Product Code">
+                                                    <div>{con.productCode}</div>
+                                                </td>
+                                                <td class="slds-truncate" scope="col" data-label="Product Code">
+                                                    <div>{con.productERPPartNumber}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Product Name">
+                                                    <div>{con.productName}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Application Name">
+                                                    <div>{con.productDesc}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Application Name">
+                                                    <div>{con.prodCurrencyCode}</div>
+                                                </td>
+                                                <template if:false={UICREDITCheck}>
+                                                    <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Application Name">
+                                                    <lightning-input data-id={index} type="number"
+                                                        disabled={con.productShowEdit} value={con.productUnitListPrice}
+                                                        onblur={handleProductUnitListPrice}>
+                                                    </lightning-input>
+                                                </td>
+                                                </template>
+                                                <template if:true={UICREDITCheck}>
+                                                    <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Application Name">
+                                                    <lightning-input data-id={index} type="number"
+                                                        value={con.productUnitListPrice}
+                                                        onblur={handleProductUnitListPrice}>
+                                                    </lightning-input>
+                                                </td>
+                                                </template>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="UI Price Editable">
+                                                    <div>{con.UIPriceEditable}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Quantity">
+                                                    <div>{con.productQuantity}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Total Price">
+                                                    <div>{con.productSubtotal}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Unit Price">
+                                                  <a name={indexVar} onclick={removeRow}>
+                                                    <lightning-icon icon-name="utility:delete" data-uid="selected-product"
+                                                    data-id={index} data-index={indexed} alternative-text="delete"  size="x-small"></lightning-icon>
+                                                 </a>
+                                               </td>
+                                            </tr>
+
+                                            <template if:true={con.displayAdditionalOrderItems}>
+                                                <tr key={con.childrenKey}>
+                                                    <td colspan="1">&nbsp;</td>
+                                                    <td colspan="9" style="background-color: white !important;">
+                                                        <table class={strTableClass}>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">
+                                                                        <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                            title="Quantity">Quantity</div>
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                            title="Item Category">Item Category</div>
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                            title="Customer Requested Date (CRD)">Customer Requested Date (CRD)</div>
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                            title="Original Commit Date (OCD)">Original Commit Date (OCD)</div>
+                                                                    </th>
+                                                                    <th scope="col">
+                                                                        <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;"
+                                                                            title="Scheduled Ship Date (SSD)">Scheduled Ship Date (SSD)</div>
+                                                                    </th>
+                                                                    <th>&nbsp;</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <template for:each={con.additionalOrderItems} for:item="line" for:index="subIndex">
+                                                                    <tr key={line.key}>
+                                                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Quote Line Quantity">
+                                                                            <lightning-input type="text" value={line.quantity} data-id={subIndex} data-index={index}
+                                                                                disabled={con.isQuantityEnable} onblur={handleProductQuantityChange}
+                                                                                onchange={handleProductQuantityChange}>
+                                                                            </lightning-input>
+                                                                        </td>
+                                                                        <td scope="col" data-label="Item Category">
+                                                                            <c-lwc-custom-lookup ltng-icon-name="custom:custom11" id={con.oLId}
+                                                                                query-object-api-name="Item_Category__c" main-object-api-name="Item_Category__c"
+                                                                                id-field="Id" name-field="Name" scroll-after-n-items=5
+                                                                                is-disabled={con.isQuantityEnable} result-display-size=10
+                                                                                placeholder="Select Item Category..." onselectionchange={handleERPItemCategory}
+                                                                                identifier={index} child-identifier={subIndex}
+                                                                                additional-where-clause={whereERPSite} data-id={index}>
+                                                                            </c-lwc-custom-lookup>
+                                                                        </td>
+                                                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                                            data-label="Customer Requested Date (CRD)">
+                                                                            <lightning-input type="date" data-id={subIndex} data-index={index}
+                                                                                disabled={con.isQuantityEnable} onchange={handleERPCRD}>
+                                                                            </lightning-input>
+                                                                        </td>
+                                                                        <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                                            data-label="Original Commit Date (OCD)">
+                                                                            <lightning-input type="date" data-id={subIndex} data-index={index}
+                                                                                disabled={con.isQuantityEnable} onchange={handleERPOCD}>
+                                                                            </lightning-input>
+                                                                        </td>
+                                                                        <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Scheduled Ship Date (SSD)">
+                                                                            <lightning-input type="date" data-id={subIndex} data-index={index}
+                                                                                disabled={con.isQuantityEnable} onchange={handleERPSSD}>
+                                                                            </lightning-input>
+                                                                        </td>
+                                                                        <td>
+                                                                            <lightning-icon icon-name="utility:delete" onclick={handleProductLineDelete} data-id={subIndex}
+                                                                                data-index={index} alternative-text="delete" size="x-small"></lightning-icon>
+                                                                        </td>
+                                                                    </tr>
+                                                                </template>
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <td colspan="6">
+                                                                    <lightning-button icon-name="utility:add" label="Add Line" variant="brand" onclick={addProductLine}
+                                                                        data-id={index}>
+                                                                    </lightning-button>
+                                                                </td>
+                                                            </tfoot>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </template>
+                                        </template>
+                                    </tbody>
+                                </table>
+                                <br />
+                            </div>
+                        </lightning-accordion-section>
+
+                        <lightning-accordion-section name="P3" label="Product Selection Section">
+                            <div style="overflow-x: scroll;">
+                                <p style="font-size: small; font-weight: bold; margin-left: 10px;"> Please NOTE : Click
+                                    Select Products button to keep your selection saved before click on Create Order
+                                    Button. Remove Selected Products button is to delete saved products. </p>
+                                <br />
+                                <template if:true={isShowTotal}>
+                                    <div>
+                                        <lightning-button variant="brand" label="Select Products"
+                                            title="Select Products" onclick={handleSelectProducts}
+                                            class="slds-m-around_x-small" disabled={showSelectProductsBTN}>
+                                        </lightning-button>
+                                        <lightning-button variant="brand" label="Remove Selected Products"
+                                            title="Remove Selected Products" onclick={handleRemoveProducts}
+                                            class="slds-m-around_x-small" disabled={showRemoveProductsBTN}>
+                                        </lightning-button>
+                                    </div>
+                                </template>
+                                <template if:false={isShowTotal}>
+                                    <lightning-layout horizontal-align="center" multiple-rows>
+                                        <lightning-layout-item padding="around-small" size="12" small-device-size="12"
+                                            medium-device-size="6" large-device-size="6">
+                                            <lightning-button variant="brand" label="Select Products"
+                                                title="Select Products" onclick={handleSelectProducts}
+                                                class="slds-m-around_x-small" disabled={showSelectProductsBTN}>
+                                            </lightning-button>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item padding="around-small" size="12" small-device-size="12"
+                                            medium-device-size="6" large-device-size="6">
+                                            <lightning-button variant="brand" label="Remove Selected Products"
+                                                title="Remove Selected Products" onclick={handleRemoveProducts}
+                                                class="slds-m-around_x-small" disabled={showRemoveProductsBTN}>
+                                            </lightning-button>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </template>
+
+                                <table class={strTableClass} style="table-layout: fixed;width: 125%;">
+                                    <thead>
+                                        <tr class="slds-text-heading--label">
+                                            <th class="slds-is-sortable" scope="col" style="width:5%">
+                                                <div class="slds-truncate slds-wrap"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="Quantity">Select</div>
+                                            </th>
+                                            <th class="slds-is-sortable" scope="col" style="width:6%">
+                                                <div class="slds-truncate slds-wrap"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="Quantity">Enter quantity</div>
+                                            </th>
+                                            <th align="center" class="slds-is-sortable slds-wrap" scope="col" style="width:6%">
+                                                <div class="slds-truncate slds-wrap"
+                                                    style="text-transform: capitalize;font-size: 13px;" title="minQty">
+                                                    Min Qty</div>
+                                            </th>
+                                            <th align="center" class="slds-is-sortable slds-wrap" scope="col" style="width:6%">
+                                                <div class="slds-truncate slds-wrap"
+                                                    style="text-transform: capitalize;font-size: 13px;" title="maxQty">
+                                                    Max Qty</div>
+                                            </th>
+                                            <th align="center" class="slds-is-sortable slds-wrap" scope="col" style="width:11%">
+                                                <div class="slds-truncate slds-wrap"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="productCode">Product Code</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:11%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">ERP Product</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:7%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Excelitas Site</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:6%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Price Type</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:6%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Region</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:11%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Product Name</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:20%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Product Desc</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:6%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">UI Price Editable</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:8%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Currency Code</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:8%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Unit Price</div>
+                                            </th>
+                                            <th class="slds-is-sortable slds-wrap" scope="col" style="width:8%">
+                                                <div class="slds-truncate"
+                                                    style="text-transform: capitalize;font-size: 13px;"
+                                                    title="applicationName">Is Standard Product?</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={displayOnTable} for:item="con" for:index="index">
+                                            <tr class="slds-hint-parent" key={con.productId}>
+                                                <td class="slds-truncate" scope="col">
+                                                    <div class="slds-truncate">
+                                                        <lightning-input type="checkbox" class="product_selection_checkbox" data-uid="selected-product"
+                                                            data-id={index} data-index={indexed} value={con.isSelected}
+                                                            disabled={con.productERPPartNumberCheck}>
+                                                        </lightning-input>
+                                                    </div>
+                                                </td>
+                                                <td class="slds-truncate" scope="col" data-label="Quantity">
+                                                    <lightning-input type="number" name="sample" id={con.productId}
+                                                        data-id={index} data-index={indexed} value={con.productQuantity}
+                                                        onchange={handleMaxQuantityChange}></lightning-input>
+                                                </td>
+                                                <td class="slds-truncate" scope="col" data-label="Min Qty">
+                                                    <div>{con.minQty}</div>
+                                                </td>
+                                                <td class="slds-truncate" scope="col" data-label="Max Qty">
+                                                    <div>{con.maxQty}</div>
+                                                </td>
+                                                <td class="slds-truncate" scope="col" data-label="Product Code">
+                                                    <div>{con.productCode}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="ERPPartNumber">
+                                                    <div>{con.productERPPartNumber}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Site">
+                                                    <div>{con.productSite}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="ERPPartNumber">
+                                                    <div>{con.productPriceType}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col" data-label="Site">
+                                                    <div>{con.productRegion}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Product Name">
+                                                    <div>{con.productName}</div>
+                                                </td>
+
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Product Desc">
+                                                    <div>{con.productDesc}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="UI Price Editable">
+                                                    <div>{con.UIPriceEditable}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Currency Code">
+                                                    <div>{con.prodCurrencyCode}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Unit Price">
+                                                    <div>{con.productUnitListPrice}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Is Standard Product?">
+                                                    <div>{con.productStandardStatus}</div>
+                                                </td>
+                                                <td class="slds-truncate slds-cell-wrap" scope="col"
+                                                    data-label="Unit Price">
+                                                    <lightning-input type="checkbox" data-uid="remove-product"
+                                                        data-id={index} data-index={indexed} name="sample"
+                                                        id={con.productId}>
+                                                    </lightning-input>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                                <template if:true={isDisplayNoRecords}>
+                                    <div class="slds-align_absolute-center">
+                                        <br />
+                                        No records found
+                                    </div>
+                                </template>
+                                <br />
+                            </div>
+                        </lightning-accordion-section>
+                    </lightning-accordion>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        </template>
+    </lightning-card>
+</template>

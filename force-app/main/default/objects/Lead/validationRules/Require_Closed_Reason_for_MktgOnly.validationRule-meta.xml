@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Closed_Reason_for_MktgOnly</fullName>
+    <active>true</active>
+    <description>If the status is updated to Mktg Only Closed and the user tries to save without entering a reason, a message should show asking them to enter one.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Status, &quot;Marketing Only - Closed&quot;),
+  OR(
+    ISCHANGED(Status),
+    ISCHANGED(Closed_Reason__c)
+  ),
+  ISBLANK(TEXT(Closed_Reason__c))
+)</errorConditionFormula>
+    <errorDisplayField>Closed_Reason__c</errorDisplayField>
+    <errorMessage>Please select a reason for moving the record to Closed</errorMessage>
+</ValidationRule>

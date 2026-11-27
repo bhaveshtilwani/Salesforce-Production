@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Account_Group</name>
+        <label>Account Group</label>
+        <locationX>395</locationX>
+        <locationY>336</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sold_To</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-to party - ZCUS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Intra-Div &amp; Inter-Co. - ZINT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ERP_ID_Available</targetReference>
+            </connector>
+            <label>Sold To &amp; ZINT</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Copy_1_of_Account_Group</name>
+        <label>Account Group</label>
+        <locationX>923</locationX>
+        <locationY>554</locationY>
+        <defaultConnector>
+            <targetReference>Copy_1_of_Sync_to_SAP</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Sold_To</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-to party - ZCUS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Intra-Div &amp; Inter-Co. - ZINT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ERP_ID_Available_0</targetReference>
+            </connector>
+            <label>Sold To &amp; ZINT</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ERP_ID_Available</name>
+        <label>ERP ID Available</label>
+        <locationX>50</locationX>
+        <locationY>361</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ERP_ID_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Client_Side_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_to_CFIN</targetReference>
+            </connector>
+            <label>ERP ID Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ERP_ID_Available_0</name>
+        <label>ERP ID Available</label>
+        <locationX>677</locationX>
+        <locationY>552</locationY>
+        <defaultConnector>
+            <targetReference>Sync_to_In_Progress</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>ERP ID Available</defaultConnectorLabel>
+        <rules>
+            <name>ERP_ID_Null_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Client_Side_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>ERP ID Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Last_Modified</name>
+        <label>Last Modified</label>
+        <locationX>923</locationX>
+        <locationY>336</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Non_Boomi_and_Non_Admin</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LastModifiedById</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0053t0000083ZWXAA2</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$User.ProfileId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>00e30000000e7Mv</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Operations Admin</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Account_Group</targetReference>
+            </connector>
+            <label>Non Boomi and Non Admin</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Last_Modified_0</name>
+        <label>Last Modified</label>
+        <locationX>218</locationX>
+        <locationY>16</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Non_Boomi_and_Non_Admin_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.LastModifiedById</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>0053t0000083ZWXAA2</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$User.ProfileId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>00e30000000e7Mv</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Operations Admin</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_Group</targetReference>
+            </connector>
+            <label>Non Boomi and Non Admin</label>
+        </rules>
+    </decisions>
+    <description>#INC-277706 Asia Account Auto Syncing Update</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>DueDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY() + 7</expression>
+    </formulas>
+    <formulas>
+        <name>NOW</name>
+        <dataType>Date</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <name>NOWFormula</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <interviewLabel>Nirvana - Asia - Approved then CFIN {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Nirvana - Asia - Approved then CFIN</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>CFIN_Task</name>
+        <label>CFIN Task</label>
+        <locationX>263</locationX>
+        <locationY>576</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>DueDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>005Qp00000XOxyPIAT</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>02 - High</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>01- Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Account Submitted for CFIN Completion</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>09 - To Do</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Copy_1_of_Sync_to_SAP</name>
+        <label>Sync To SAP</label>
+        <locationX>1055</locationX>
+        <locationY>672</locationY>
+        <inputAssignments>
+            <field>AutomationBypassDateTime__c</field>
+            <value>
+                <elementReference>NOWFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SFDC_Integration_Status__c</field>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Sync_to_In_Progress</name>
+        <label>Sync - to In Progress</label>
+        <locationX>689</locationX>
+        <locationY>368</locationY>
+        <inputAssignments>
+            <field>AutomationBypassDateTime__c</field>
+            <value>
+                <elementReference>NOWFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CFIN_Integration_Status__c</field>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CFIN_Status__c</field>
+            <value>
+                <stringValue>CFIN Confirmed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SFDC_Integration_Status__c</field>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_to_CFIN</name>
+        <label>Update to CFIN</label>
+        <locationX>263</locationX>
+        <locationY>456</locationY>
+        <connector>
+            <targetReference>CFIN_Task</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CFIN_Status__c</field>
+            <value>
+                <stringValue>CS Confirmed and Forwarded to CFIN</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CS_Confirmed_and_Forward_to_CFIN__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>533</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Last_Modified_0</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Account_Approval_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>LastModifiedById</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>0053t0000083ZWXAA2</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <scheduledPaths>
+            <name>Sync_to_ERP</name>
+            <connector>
+                <targetReference>Last_Modified</targetReference>
+            </connector>
+            <label>Sync to ERP</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>LastModifiedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

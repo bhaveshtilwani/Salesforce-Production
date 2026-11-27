@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Line_Other_cannot_be_used</fullName>
+    <active>true</active>
+    <description>If a user selects a value contianing CS in the line, fam or sub-fam, restrict record from saving.</description>
+    <errorConditionFormula>AND(
+ISCHANGED(Product_Line__c),
+TEXT(Product_Line__c)=&quot;Other Line CS&quot;,
+$Profile.Name&lt;&gt;&quot;System Administrator&quot;, 
+$Profile.Name&lt;&gt;&quot;C3-Customer Service&quot;, 
+$Profile.Name&lt;&gt;&quot;M1-Marketing&quot;, 
+$Profile.Name&lt;&gt;&quot;Marketing User&quot;)</errorConditionFormula>
+    <errorDisplayField>Product_Line__c</errorDisplayField>
+    <errorMessage>Only Customer Service and Administrator can select Product Line &quot;Other Line CS&quot; for Lead records.</errorMessage>
+</ValidationRule>

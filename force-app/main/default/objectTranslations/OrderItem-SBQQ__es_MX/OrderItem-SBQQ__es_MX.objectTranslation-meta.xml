@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage><!-- CRD is Required. --></errorMessage>
+        <name>CRD_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CSD1 is Not Applicable for selected Site. --></errorMessage>
+        <name>CSD1_Not_Applicale</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CSD2 is Not Applicable for selected Site. --></errorMessage>
+        <name>CSD2_Not_Applicale</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CSD3 is Not Applicable for selected Site. --></errorMessage>
+        <name>CSD3_Not_Applicale</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cancellation is not allowed if there are deliveries. You can split the line then cancel the line with remaining Quantity. --></errorMessage>
+        <name>Cant_Cancel_if_there_are_deliveries</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Clearing Date is Not Applicable for selected Sites. --></errorMessage>
+        <name>ClearingDate_Not_Applicale</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Item Category Not Applicable for Order Type --></errorMessage>
+        <name>Item_Category_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Item Category does not apply for this Order Type --></errorMessage>
+        <name>Item_Category_not_for_Order_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not allowed to update fully delivered lines --></errorMessage>
+        <name>Line_Item_Fully_Delivered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must split the line then request the price change on the split line with the open quantity balance. --></errorMessage>
+        <name>Prrice_Change_is_not_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requested Quantity can&apos;t be more than existing. For additional quantity, add a new Order Line. --></errorMessage>
+        <name>Quantity_Change_Cant_be_Higher</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This order type and product are not eligible for pricing. --></errorMessage>
+        <name>RMA_Order_Type_Price_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantity, Customer Requested Date, or Unit Price can only be modified through an Approval. --></errorMessage>
+        <name>Restrict_Field_Updates_Without_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede modificar el estado de las reservas en un producto de pedido activado.</errorMessage>
+        <name>SBQQ__CannotChangeBookingIndicatorOnActivation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cuando el Tipo de cargo es Recurrente, debe seleccionarse un Tipo de facturación.</errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cuando el Tipo de cargo es Puntual, no puede seleccionarse un valor de Frecuencia de facturación.</errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cuando el Tipo de cargo es Puntual o Uso, no puede seleccionarse un valor de Tipo de facturación.</errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Scheduled Ship Date Required. --></errorMessage>
+        <name>SSD_Required_for_SalemMIA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Storage Location is Not Applicable. --></errorMessage>
+        <name>Storage_Location_is_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unit of Measure is required. --></errorMessage>
+        <name>Unit_of_Measure_required_for_Billerica</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- WBS Element is Required. --></errorMessage>
+        <name>WBS_Element_is_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Split_Line_Item --></label>
+        <name>Split_Line_Item</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_For_Approval --></label>
+        <name>Submit_For_Approval</name>
+    </webLinks>
+</CustomObjectTranslation>

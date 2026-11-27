@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Assignment__c</fullName>
+    <label>Product Manager</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Richard Ankcorn</fullName>
+                <default>false</default>
+                <label>Richard Ankcorn</label>
+            </value>
+            <value>
+                <fullName>Jim Topper</fullName>
+                <default>false</default>
+                <label>Jim Topper</label>
+            </value>
+            <value>
+                <fullName>Rita Stauter</fullName>
+                <default>false</default>
+                <label>Rita Stauter</label>
+            </value>
+            <value>
+                <fullName>John Hylden</fullName>
+                <default>false</default>
+                <label>John Hylden</label>
+            </value>
+            <value>
+                <fullName>Meaghan Daly</fullName>
+                <default>false</default>
+                <label>Meaghan Daly</label>
+            </value>
+            <value>
+                <fullName>Dylan McCoy</fullName>
+                <default>false</default>
+                <label>Dylan McCoy</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Sara Palandeng</fullName>
+                <default>false</default>
+                <label>Sara Palandeng</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

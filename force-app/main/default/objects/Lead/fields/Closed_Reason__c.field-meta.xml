@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Reason__c</fullName>
+    <description>This should be a required field whenever the status is moved to Mktg Only Closed.</description>
+    <label>Closed Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cannot contact</fullName>
+                <default>false</default>
+                <label>Cannot contact</label>
+            </value>
+            <value>
+                <fullName>We can’t support their interest</fullName>
+                <default>false</default>
+                <label>We can’t support their interest</label>
+            </value>
+            <value>
+                <fullName>They’re no longer interested</fullName>
+                <default>false</default>
+                <label>They’re no longer interested</label>
+            </value>
+            <value>
+                <fullName>They’re trying to sell to us</fullName>
+                <default>false</default>
+                <label>They’re trying to sell to us</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>For Another GBU</fullName>
+                <default>false</default>
+                <label>For Another GBU</label>
+            </value>
+            <value>
+                <fullName>Soliciting Us</fullName>
+                <default>false</default>
+                <label>Soliciting Us</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

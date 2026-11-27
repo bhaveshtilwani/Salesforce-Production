@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_QuoteLines_When_Quote_Deactivated</fullName>
+    <active>true</active>
+    <description>Prevents users from editing Quote Line records when the parent Quote is in a Deactivated state.</description>
+    <errorConditionFormula>AND(
+    SBQQ__Quote__r.Deactivate__c = TRUE,
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+    $Profile.Name &lt;&gt; &quot;API/ADMIN/NON MFA&quot;
+)</errorConditionFormula>
+    <errorMessage>Quote Lines cannot be edited because the parent Quote is deactivated.</errorMessage>
+</ValidationRule>

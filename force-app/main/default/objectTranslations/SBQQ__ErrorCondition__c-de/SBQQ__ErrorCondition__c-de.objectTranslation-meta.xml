@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Fehlerbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Fehlerbedingungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Fehlerbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Fehlerbedingungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Fehlerbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Fehlerbedingungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Fehlerbedingung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Fehlerbedingungen</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Bedingungsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage>&quot;Ein Filter des Typs &quot;&quot;Variable&quot;&quot; muss eine Filtervariable enthalten.&quot;</errorMessage>
+        <name>SBQQ__FilterCombinationValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Diese Kombination aus ProductRule.Scope und ErrorCondition.TestedObject ist ungÃ¼ltig.</errorMessage>
+        <name>SBQQ__ScopeAndErrorConditionTestedObject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Getestetes Attribut ist erforderlich, da &quot;&quot;Getestetes Feld&quot;&quot; ein globales Konfigurationsattributfeld ist.&quot;</errorMessage>
+        <name>SBQQ__Tested_attr_required_if_global_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Sie mÃ¼ssen entweder &quot;&quot;Getestetes Feld&quot;&quot; oder &quot;&quot;Getestete Variable&quot;&quot; angeben.&quot;</errorMessage>
+        <name>SBQQ__Tested_field_or_variable_required</name>
+    </validationRules>
+</CustomObjectTranslation>

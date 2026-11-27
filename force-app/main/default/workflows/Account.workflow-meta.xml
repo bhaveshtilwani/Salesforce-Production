@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Created_Now</fullName>
+        <description>Account Created Now</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Commercial_Account_Notification</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/AccountCreation</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Denied_Email_Alert_1</fullName>
+        <ccEmails>Surya.Yadav@excelitas.com</ccEmails>
+        <ccEmails>Pranav.Jain@excelitas.com</ccEmails>
+        <ccEmails>Chauhan.Pooja@excelitas.com</ccEmails>
+        <description>Account Denied Email Asia</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>peter@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_JC/MK_Denied_to_ITC</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Denied_Email_Alert_2</fullName>
+        <description>Account Denied Email Americas</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>lisa.knerr@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_JC/MK_Denied_to_ITC</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Denied_Email_EMEA</fullName>
+        <description>Account Denied Email EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>filomena.koch@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All_JC/MK_Denied_to_ITC</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Submitted_for_CFIN_Completion</fullName>
+        <description>Account Submitted for CFIN Completion</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>aldwin.alegre@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jo.patron@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>michael.kingsbury@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sujatha.vedula@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>thomas.legrand@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>valerie.boston-watts@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/CFIN_Account_for_Completion</template>
+    </alerts>
+    <alerts>
+        <fullName>Accountiscreatedfromlead</fullName>
+        <description>Account is created from lead</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Commercial_Account_Notification</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/AccountCreation</template>
+    </alerts>
+    <alerts>
+        <fullName>C3_Account_Created_Now</fullName>
+        <description>C3 Account Created Now</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Commercial_Account_Notification</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/AccountCreationC3</template>
+    </alerts>
+    <alerts>
+        <fullName>C3_Account_Edited_Now</fullName>
+        <description>C3 Account Edited Now</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>josh.cragan@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/AccountEditC3</template>
+    </alerts>
+    <alerts>
+        <fullName>CFIN_Complete_CS_Notif</fullName>
+        <ccEmails>jo.patron@excelitas.com</ccEmails>
+        <ccEmails>Richard.Ankcorn@excelitas.com</ccEmails>
+        <ccEmails>LezlieAnn.DelaCruz@excelitas.com</ccEmails>
+        <ccEmails>steve.burek@excelitas.com</ccEmails>
+        <ccEmails>Aldwin.Alegre@excelitas.com</ccEmails>
+        <description>CFIN Complete - CS Notif</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/CFIN_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Account_Changed_Approved</fullName>
+        <description>Email - Account Changed Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Asia_Account_Change_Approval_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Approved</fullName>
+        <ccEmails>jo.patron@excelitas.com</ccEmails>
+        <description>Email - Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Asia_Account_Approval_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Change_Rejected</fullName>
+        <ccEmails>jo.patron@excelitas.com</ccEmails>
+        <description>Email - Change Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Asia_Account_Change_Approval_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Rejected</fullName>
+        <ccEmails>jo.patron@excelitas.com</ccEmails>
+        <description>Email - Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Asia_Account_Approval_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Salem_003_Payer_Partner_Function_Notification</fullName>
+        <ccEmails>jo.patron@excelitas.com</ccEmails>
+        <ccEmails>richard.ankcorn@excelitas.com</ccEmails>
+        <description>Salem - 003 Payer Partner Function Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Salem_003_Payer_Partner_Function_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>St_Louis_ZBIL_Partner_Function_Notification</fullName>
+        <ccEmails>jo.patron@excelitas.com</ccEmails>
+        <ccEmails>richard.ankcorn@excelitas.com</ccEmails>
+        <description>St Louis - ZBIL Partner Function Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/St_Louis_ZBIL_Partner_Function_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Billing_to_Shipping_City</fullName>
+        <field>ShippingCity</field>
+        <formula>BillingCity</formula>
+        <name>Billing to Shipping City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Shipping_Country</fullName>
+        <field>ShippingCountry</field>
+        <formula>BillingCountry</formula>
+        <name>Billing to Shipping Country</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Shipping_State</fullName>
+        <field>ShippingState</field>
+        <formula>BillingState</formula>
+        <name>Billing to Shipping State</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Shipping_Street</fullName>
+        <field>ShippingStreet</field>
+        <formula>BillingStreet</formula>
+        <name>Billing to Shipping Street</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Shipping_Zip</fullName>
+        <field>ShippingPostalCode</field>
+        <formula>BillingPostalCode</formula>
+        <name>Billing to Shipping Zip</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Sold_City</fullName>
+        <field>Sold_To_City__c</field>
+        <formula>BillingCity</formula>
+        <name>Billing to Sold City</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Sold_Country</fullName>
+        <field>Sold_To_Country__c</field>
+        <formula>BillingCountry</formula>
+        <name>Billing to Sold Country</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Sold_State</fullName>
+        <field>Sold_To_State__c</field>
+        <formula>BillingState</formula>
+        <name>Billing to Sold State</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Sold_Street</fullName>
+        <field>Sold_To_Street__c</field>
+        <formula>BillingStreet</formula>
+        <name>Billing to Sold Street</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_to_Sold_Zip</fullName>
+        <field>Sold_To_Zip_Postal_Code__c</field>
+        <formula>BillingPostalCode</formula>
+        <name>Billing to Sold Zip</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CFIN_Complete</fullName>
+        <field>CFIN_Status__c</field>
+        <literalValue>CFIN Confirmed</literalValue>
+        <name>CFIN Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CFIN_Confirmed</fullName>
+        <field>CFIN_Status__c</field>
+        <literalValue>CFIN Confirmed</literalValue>
+        <name>CFIN Confirmed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Approved</fullName>
+        <field>Account_Approval_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Pending</fullName>
+        <field>Account_Approval_Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Recalled</fullName>
+        <field>Account_Approval_Status__c</field>
+        <literalValue>Recalled</literalValue>
+        <name>Status Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Rejected</fullName>
+        <field>Account_Approval_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Status Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Submitted_to_CFIN</fullName>
+        <field>CFIN_Status__c</field>
+        <literalValue>CS Confirmed and Forwarded to CFIN</literalValue>
+        <name>Submitted to CFIN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_Done</fullName>
+        <field>Sync_in_Progress__c</field>
+        <literalValue>0</literalValue>
+        <name>Sync Done</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sync_in_Progress</fullName>
+        <field>Sync_in_Progress__c</field>
+        <literalValue>1</literalValue>
+        <name>Sync in Progress</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Bypass</fullName>
+        <field>AutomationBypassDateTime__c</field>
+        <formula>NOW()</formula>
+        <name>Update Bypass</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Account_Extension</fullName>
+        <apiVersion>58.0</apiVersion>
+        <endpointUrl>https://boomi.excelitas.com/ws/simple/executeExtendAccount;boomi_auth=ZXhjZWxpdGFzdGVjaG5vbG9naWVzY29ycC1CU1VJMUo6MWNiZTViYjQtMjUyOC00YjU5LTkwZjAtMzRjMWFmYmY5MmQz</endpointUrl>
+        <fields>Id</fields>
+        <fields>Name</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>boomi.connector@excelitas.com</integrationUser>
+        <name>Account Extension</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <outboundMessages>
+        <fullName>OutboundMessage_to_Boomi</fullName>
+        <apiVersion>52.0</apiVersion>
+        <endpointUrl>https://boomi.excelitas.com/ws/simple/executeAccount;boomi_auth=ZXhjZWxpdGFzdGVjaG5vbG9naWVzY29ycC1CU1VJMUo6MWNiZTViYjQtMjUyOC00YjU5LTkwZjAtMzRjMWFmYmY5MmQz</endpointUrl>
+        <fields>Id</fields>
+        <fields>Name</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>josh.cragan@excelitas.com</integrationUser>
+        <name>OutboundMessage_to_Boomi</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
+    <rules>
+        <fullName>Account Creation from Lead</fullName>
+        <actions>
+            <name>Accountiscreatedfromlead</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.From_Lead__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>This rule fires when account is created from lead</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CFIN Account for Completion</fullName>
+        <actions>
+            <name>Account_Submitted_for_CFIN_Completion</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Submitted_to_CFIN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Account_Submitted_for_CFIN_Completion</name>
+            <type>Task</type>
+        </actions>
+        <actions>
+            <name>Account_Submitted_for_CFIN_Completionboston</name>
+            <type>Task</type>
+        </actions>
+        <actions>
+            <name>Account_Submitted_for_CFIN_Completionkings</name>
+            <type>Task</type>
+        </actions>
+        <actions>
+            <name>Account_Submitted_for_CFIN_Completiontrevant</name>
+            <type>Task</type>
+        </actions>
+        <actions>
+            <name>Account_Submitted_for_CFIN_Completionvedula</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.CS_Confirmed_and_Forward_to_CFIN__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CFIN Complete</fullName>
+        <actions>
+            <name>CFIN_Complete</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.CFIN_Completed_and_Confirmed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>updates CFIN Status = CFIN Confirmed when criteria is met</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CFIN Complete - CS Notif</fullName>
+        <actions>
+            <name>CFIN_Complete_CS_Notif</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Email alert when Account is populated with ERP ID.</description>
+        <formula>Client_Side_ID__c &lt;&gt; &quot;&quot;</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OutboundMessage_to_Boomi</fullName>
+        <actions>
+            <name>OutboundMessage_to_Boomi</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.SFDC_Integration_Status__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </criteriaItems>
+        <description>triggers the Outbound Message to Boomi to sync the Account</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Shipping same as Billng</fullName>
+        <actions>
+            <name>Billing_to_Shipping_City</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_to_Shipping_Country</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_to_Shipping_State</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_to_Shipping_Street</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_to_Shipping_Zip</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Shipping_same_as_Billing__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>copies Billing Address to Shipping Address when checkbox is ticked</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sold-To same as Billing</fullName>
+        <actions>
+            <name>Billing_to_Sold_City</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_to_Sold_Country</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_to_Sold_State</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_to_Sold_Street</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_to_Sold_Zip</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Sold_To_same_as_Billing__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>copies Billing Address to Sold To Address when checkbox is ticked</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Business Account Address from Child</fullName>
+        <active>false</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Business Name</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Account_Submitted_for_CFIN_Completion</fullName>
+        <assignedTo>salesforce.administrator@excelitas.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please complete the CFIN section at the earliest.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>02 - High</priority>
+        <protected>false</protected>
+        <status>01- Not Started</status>
+        <subject>Account Submitted for CFIN Completion</subject>
+    </tasks>
+    <tasks>
+        <fullName>Account_Submitted_for_CFIN_Completionboston</fullName>
+        <assignedTo>valerie.boston-watts@excelitas.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please complete the CFIN section at the earliest.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>02 - High</priority>
+        <protected>false</protected>
+        <status>01- Not Started</status>
+        <subject>Account Submitted for CFIN Completion</subject>
+    </tasks>
+    <tasks>
+        <fullName>Account_Submitted_for_CFIN_Completionkings</fullName>
+        <assignedTo>salesforce.administrator@excelitas.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please complete the CFIN section at the earliest.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>02 - High</priority>
+        <protected>false</protected>
+        <status>01- Not Started</status>
+        <subject>Account Submitted for CFIN Completion</subject>
+    </tasks>
+    <tasks>
+        <fullName>Account_Submitted_for_CFIN_Completiontrevant</fullName>
+        <assignedTo>salesforce.administrator@excelitas.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please complete the CFIN section at the earliest.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>02 - High</priority>
+        <protected>false</protected>
+        <status>01- Not Started</status>
+        <subject>Account Submitted for CFIN Completion</subject>
+    </tasks>
+    <tasks>
+        <fullName>Account_Submitted_for_CFIN_Completionvedula</fullName>
+        <assignedTo>sujatha.vedula@excelitas.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please complete the CFIN section at the earliest.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>02 - High</priority>
+        <protected>false</protected>
+        <status>01- Not Started</status>
+        <subject>Account Submitted for CFIN Completion</subject>
+    </tasks>
+</Workflow>

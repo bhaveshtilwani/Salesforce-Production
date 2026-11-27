@@ -1,0 +1,13 @@
+.THIS .test .slds-accordion__summary-heading {
+    background: rgb(243, 242, 242) !important;
+    height: 1 rem;
+}
+
+.THIS .slds-accordion__summary{
+    background-color: rgb(243, 242, 242);
+    font-weight: bold;
+    height: 35px;
+}
+.THIS .slds-form-element__label{
+    display: none;
+}

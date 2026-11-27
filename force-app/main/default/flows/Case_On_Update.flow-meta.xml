@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Closed_AR_Payment_Terms</name>
+        <label>Closed - AR Payment Terms</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_AR_Payment_Terms</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_AR_Payment_Terms</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Closed_AR_Payment_Terms_From_Other</name>
+        <label>Closed - AR Payment Terms - From Other</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_AR_Payment_Terms_From_Other</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_AR_Payment_Terms_From_Other</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Closed_AR_Payment_Terms_From_Rejected</name>
+        <label>Closed - AR Payment Terms - From Rejected</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_AR_Payment_Terms_From_Rejected</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_AR_Payment_Terms_From_Rejected</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Closed_Incoterms_one_off</name>
+        <label>Closed - Incoterms (one-off)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_Incoterms_one_off</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_Incoterms_one_off</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Closed_Incoterms_one_off_From_Others</name>
+        <label>Closed - Incoterms (one-off) - From Others</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_Incoterms_one_off_From_Others</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_Incoterms_one_off_From_Others</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Closed_Incoterms_one_off_From_Reject</name>
+        <label>Closed - Incoterms (one-off) - From Reject</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_Incoterms_one_off_From_Reject</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_Incoterms_one_off_From_Reject</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Closed_Incoterms_permanent</name>
+        <label>Closed - Incoterms (permanent)</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_Incoterms_permanent</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_Incoterms_permanent</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Closed_Incoterms_permanent_From_Others</name>
+        <label>Closed - Incoterms (permanent) - From Others</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_Incoterms_permanent_From_Others</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_Incoterms_permanent_From_Others</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Closed_Incoterms_permanent_From_Rejected</name>
+        <label>Closed - Incoterms (permanent) - From Rejected</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Closed_Incoterms_permanent_From_Rejected</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Closed_Incoterms_permanent_From_Rejected</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Implementor_Notification</name>
+        <label>Implementor Notification</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>Case.Implementor_AR_Payment_Terms</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Update_Records_4</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Case.Implementor_AR_Payment_Terms</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Case_Changes</name>
+        <label>Case Changes?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Approved_Rejected</name>
+            <conditionLogic>(1 OR 2) AND 3 AND 4</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ApprovalStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ApprovalStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ApprovalStatus__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved Pending Implementation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Approved</targetReference>
+            </connector>
+            <label>Approved/Rejected</label>
+        </rules>
+        <rules>
+            <name>ClosedPaymentterms</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Customer Non-Standard Payment (A/R) Terms</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Decision_4</targetReference>
+            </connector>
+            <label>Closed Payment terms</label>
+        </rules>
+        <rules>
+            <name>Closed_Permanent</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Customer Non-Standard Incoterms (Permanent)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Since_Approval_Status2</targetReference>
+            </connector>
+            <label>Closed Permanent</label>
+        </rules>
+        <rules>
+            <name>Closed_One_Off</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Customer Non-Standard Incoterms (One-Off)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Since_Approval_Status3</targetReference>
+            </connector>
+            <label>Closed One Off</label>
+        </rules>
+        <rules>
+            <name>Approval_Start</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ApprovalStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ApprovalStatus__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_case_status_Start_approval</targetReference>
+            </connector>
+            <label>Approval Start</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Create_or_Update</name>
+        <label>Create or Update</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Case_Changes</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>On Update</defaultConnectorLabel>
+        <rules>
+            <name>On_Creation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ISNEW</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Customer Non-Standard Payment (A/R) Terms</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Implementor</targetReference>
+            </connector>
+            <label>On Creation</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Decision_4</name>
+        <label>Since Approval Status</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Closed_AR_Payment_Terms_From_Other</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>From_Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved Pending Implementation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Closed_AR_Payment_Terms</targetReference>
+            </connector>
+            <label>From Approved</label>
+        </rules>
+        <rules>
+            <name>From_Rejected</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Closed_AR_Payment_Terms_From_Rejected</targetReference>
+            </connector>
+            <label>From Rejected</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Approved</name>
+        <label>Is Approved</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_case_status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Approved</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ApprovalStatus__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Implementor_Notification</targetReference>
+            </connector>
+            <label>Yes Approved</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Since_Approval_Status2</name>
+        <label>Since Approval Status2</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Closed_Incoterms_permanent_From_Others</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other Status</defaultConnectorLabel>
+        <rules>
+            <name>From_Approved2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved Pending Implementation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Closed_Incoterms_permanent</targetReference>
+            </connector>
+            <label>From Approved2</label>
+        </rules>
+        <rules>
+            <name>From_Rejected2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Closed_Incoterms_permanent_From_Rejected</targetReference>
+            </connector>
+            <label>From Rejected2</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Since_Approval_Status3</name>
+        <label>Since Approval Status3</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Closed_Incoterms_one_off_From_Others</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other Status</defaultConnectorLabel>
+        <rules>
+            <name>From_Approved3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Approved Pending Implementation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Closed_Incoterms_one_off</targetReference>
+            </connector>
+            <label>From Approved3</label>
+        </rules>
+        <rules>
+            <name>From_Rejected3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rejected</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Closed_Incoterms_one_off_From_Reject</targetReference>
+            </connector>
+            <label>From Rejected3</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>DynamicImplementorbyRegion</name>
+        <dataType>String</dataType>
+        <expression>IF(TEXT({!$Record.Region__c}) = &apos;Americas&apos;, 
+   &apos;0053t000008hiMmAAI&apos;, 
+   IF(TEXT({!$Record.Region__c}) = &apos;Asia/Pac&apos;, 
+      &apos;005Qp00000XOxyPIAT&apos;, 
+      IF(TEXT({!$Record.Region__c}) = &apos;EMEA&apos;, 
+         &apos;0053t000009ubsBAAQ&apos;, 
+   IF(TEXT({!$Record.Region__c}) = &apos;UK&apos;, 
+         &apos;005Qp00000UtFRlIAN&apos;, 
+         IF(TEXT({!$Record.Account.Region__c}) = &apos;Americas&apos;, 
+             &apos;0053t000008hiMmAAI&apos;, 
+             IF(TEXT({!$Record.Account.Region__c}) = &apos;Asia/Pac&apos;, 
+                 &apos;005Qp00000XOxyPIAT&apos;, 
+                 IF(TEXT({!$Record.Account.Region__c}) = &apos;EMEA&apos;, 
+                     &apos;0053t000009ubsBAAQ&apos;, 
+                      &apos;&apos;
+                  )
+)
+            )
+         )
+       )
+   )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ISNEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Case - On Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - On Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Assign_Implementor</name>
+        <label>Assign Implementor</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Implementor_User__c</field>
+            <value>
+                <elementReference>DynamicImplementorbyRegion</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Region__c</field>
+            <value>
+                <elementReference>$Record.Account.Region__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_case_status</name>
+        <label>Update case status</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <elementReference>$Record.ApprovalStatus__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_case_status_Start_approval</name>
+        <label>Update case status Start approval</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Management Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Records_4</name>
+        <label>Update Records 4</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Approved Pending Implementation</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_or_Update</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

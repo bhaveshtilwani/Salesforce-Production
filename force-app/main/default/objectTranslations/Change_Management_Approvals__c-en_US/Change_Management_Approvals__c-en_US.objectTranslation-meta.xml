@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Change Management Approvals</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Change Management Approvals</value>
+    </caseValues>
+    <recordTypes>
+        <label><!-- Approval --></label>
+        <name>Approval</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Deployed --></label>
+        <name>Deployed</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rejected --></label>
+        <name>Rejected</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Waiting Boomi Confirmation --></label>
+        <name>Waiting_Boomi_Confirmation</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

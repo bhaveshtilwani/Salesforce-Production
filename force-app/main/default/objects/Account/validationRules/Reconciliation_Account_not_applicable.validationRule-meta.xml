@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reconciliation_Account_not_applicable</fullName>
+    <active>false</active>
+    <description>Reconciliation Account not applicable for
+Ship To - W002  - Wiesbaden
+Ship To - H002  - Hamble
+Ship To - 0002 - Montreal</description>
+    <errorConditionFormula>AND(
+$RecordType.Name = &quot;SAP Germany&quot;,
+$User.ProfileId = &quot;00e3t00000212g0&quot;,
+OR( ISPICKVAL( Account_Group__c , &quot;Ship To - W002&quot;),( ISPICKVAL( Account_Group__c , &quot;Ship To - H002&quot;)))
+&amp;&amp; NOT(ISPICKVAL( Reconciliation_Accountpicklist__c , &quot;&quot;)))||
+AND($RecordType.Name = &quot;SAP NA Montreal&quot;, OR(ISPICKVAL( Account_Group__c , &quot;Ship To - 0002&quot;))
+&amp;&amp; NOT(ISPICKVAL(Reconciliation_Accountpicklist__c , &quot;&quot;)))</errorConditionFormula>
+    <errorMessage>Reconciliation Account is not applicable for selected Account Group.</errorMessage>
+</ValidationRule>

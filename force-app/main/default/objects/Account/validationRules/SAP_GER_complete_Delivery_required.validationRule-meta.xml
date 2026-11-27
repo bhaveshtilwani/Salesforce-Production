@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_GER_complete_Delivery_required</fullName>
+    <active>false</active>
+    <description>For SAP GER: When Complete Delivery is checked, 
+Partial Delivery Per Items can be
+Create a delivery with quantity greater than zero
+Create only one delivery (also with quantity = 0)
+Only complete delivery allowed</description>
+    <errorConditionFormula>AND(
+    $User.Alias &lt;&gt; &quot;sconn&quot;,
+
+    Complete_Delivery__c = TRUE,
+    $RecordType.Name = &quot;SAP Germany&quot;,
+
+    OR(
+        ISPICKVAL(Partial_Delivery_Per_Item__c , &quot;No limit to subsequent deliveries&quot;),
+        ISPICKVAL(Partial_Delivery_Per_Item__c , &quot;Partial delivery allowed&quot;)
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Partial_Delivery_Per_Item__c</errorDisplayField>
+    <errorMessage>Please select correct value for Partial Delivery Per Item.</errorMessage>
+</ValidationRule>

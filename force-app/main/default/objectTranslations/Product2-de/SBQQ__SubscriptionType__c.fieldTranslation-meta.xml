@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Verlangerbare Abonnements werden in Verlangerungsangebote abertragen, einmalige Abonnements nicht.&quot;</help>
+    <label><!-- Subscription Type --></label>
+    <name>SBQQ__SubscriptionType__c</name>
+    <picklistValues>
+        <masterLabel>Evergreen</masterLabel>
+        <translation>Dauergaltigkeit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One-time</masterLabel>
+        <translation>Einmalig</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewable</masterLabel>
+        <translation>Verlangerbar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewable/Evergreen</masterLabel>
+        <translation>Verlangerbar/Dauergaltigkeit</translation>
+    </picklistValues>
+</CustomFieldTranslation>

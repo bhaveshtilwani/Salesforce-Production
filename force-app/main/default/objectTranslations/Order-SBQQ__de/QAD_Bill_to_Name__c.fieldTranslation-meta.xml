@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- This is the name of the company paying the bill. It may not match the Customer which the items were sold to.
+This field will default to the Sold to Name if left blank. -->
+    </help>
+    <label><!-- Bill to Name --></label>
+    <name>QAD_Bill_to_Name__c</name>
+    <relationshipLabel><!-- Orders (Bill to Name) --></relationshipLabel>
+</CustomFieldTranslation>

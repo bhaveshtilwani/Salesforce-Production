@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sample Loaner Duration Expiration Notification</description>
+        <name>Sample_Loaner_Duration_Expiration_Notification</name>
+        <label>Sample Loaner Duration Expiration Notification</label>
+        <locationX>506</locationX>
+        <locationY>600</locationY>
+        <actionName>Sample_Loaner__c.SampleLoanerDurationExpirationNotification</actionName>
+        <actionType>emailAlert</actionType>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Sample_Loaner__c.SampleLoanerDurationExpirationNotification</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Check bypass flag is enabled to prevent flow processing.</description>
+        <name>Is_Bypass_Enabled</name>
+        <label>Is Bypass Enabled?</label>
+        <locationX>374</locationX>
+        <locationY>384</locationY>
+        <defaultConnector>
+            <targetReference>Sample_Loaner_duration_will_expire_soon</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Bypass_Is_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Bypass Is True</label>
+        </rules>
+    </decisions>
+    <description>When a Sample/Loaner record has a ‘Loaner Due Date’ and &apos;Status&apos; equals ‘Shipped’, create a Task and send the Email Alert ‘SampleLoanerDurationExpirationNotification’</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>3 Days Before Sample/Loaner: Loaner Due Date</description>
+        <name>DaysBeforeSample</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.Loaner_Due_Date__c} - 3</expression>
+    </formulas>
+    <formulas>
+        <description>DueDateFormula</description>
+        <name>DueDateFormula</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.Loaner_Due_Date__c} - 15</expression>
+    </formulas>
+    <interviewLabel>Loaner Duration Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Loaner Duration Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>It Creates Flow Error Logs Records</description>
+        <name>Create_Flow_Error_Logs_Records</name>
+        <label>Create Flow Error Logs Records</label>
+        <locationX>1034</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FLOW_API_NAME__c</field>
+            <value>
+                <stringValue>Loaner_Duration_Notification_Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_ID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Name__c</field>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Flow_Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <description>Sample / Loaner duration will expire soon.</description>
+        <name>Sample_Loaner_duration_will_expire_soon</name>
+        <label>Sample / Loaner duration will expire soon.</label>
+        <locationX>506</locationX>
+        <locationY>492</locationY>
+        <connector>
+            <targetReference>Sample_Loaner_Duration_Expiration_Notification</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>DueDateFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>01 - ASAP</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>07 - In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Sample / Loaner duration will expire soon.</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Retrieve the bypass record from custom metadata to determine if the bypass is enabled.</description>
+        <name>Get_Bypass_Record</name>
+        <label>Get Bypass Record</label>
+        <locationX>374</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Bypass_Enabled</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sample_Loaner_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Loaner_Due_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Shipped</stringValue>
+            </value>
+        </filters>
+        <object>Sample_Loaner__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>X3_days_before_the_Loaner_Due_Date</name>
+            <connector>
+                <targetReference>Get_Bypass_Record</targetReference>
+            </connector>
+            <label>3 days before the Loaner Due Date</label>
+            <offsetNumber>-3</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>Loaner_Due_Date__c</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

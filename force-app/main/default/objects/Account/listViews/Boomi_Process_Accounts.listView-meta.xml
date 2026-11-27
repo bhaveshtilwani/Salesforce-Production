@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Boomi_Process_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>Account_Group__c</columns>
+    <columns>SFDC_Integration_Status__c</columns>
+    <columns>CFIN_Integration_Status__c</columns>
+    <columns>Client_Side_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Customer Name</value>
+    </filters>
+    <filters>
+        <field>Account_Group__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>SFDC_Integration_Status__c</field>
+        <operation>equals</operation>
+        <value>In Progress</value>
+    </filters>
+    <label>Boomi Process Accounts</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

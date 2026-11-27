@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Outcome --></label>
+    <name>Outcome__c</name>
+    <picklistValues>
+        <masterLabel>ACC trial not successful</masterLabel>
+        <translation><!-- ACC trial not successful --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACC trials needed</masterLabel>
+        <translation><!-- ACC trials needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ACC trials successful</masterLabel>
+        <translation><!-- ACC trials successful --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interest generated</masterLabel>
+        <translation><!-- Interest generated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue solved</masterLabel>
+        <translation><!-- Issue solved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No follow ups</masterLabel>
+        <translation><!-- No follow ups --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order received</masterLabel>
+        <translation><!-- Order received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote needed</masterLabel>
+        <translation><!-- Quote needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workshop done</masterLabel>
+        <translation><!-- Workshop done --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

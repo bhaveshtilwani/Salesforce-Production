@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EUS_Quantity_Field_is_not_Required</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(ISPICKVAL(Site__c, &quot;QSG&quot;),
+OR(
+ISPICKVAL(Usage__c, &quot;(E) Replacement&quot;),
+ISPICKVAL(Usage__c, &quot;(FAI) First Article Inspec&quot;),
+ISPICKVAL(Usage__c, &quot;(FAT) First Article Test&quot;),
+ISPICKVAL(Usage__c, &quot;(FIM) Free Issue Material&quot;),
+ISPICKVAL(Usage__c, &quot;(FLP) First Lot Production&quot;),
+ISPICKVAL(Usage__c, &quot;(M) Sample&quot;),
+ISPICKVAL(Usage__c, &quot;(NRM) Norm&quot;),
+ISPICKVAL(Usage__c, &quot;(RW) ReWork&quot;),
+ISPICKVAL(Usage__c, &quot;(S) Series&quot;),
+ISPICKVAL(Usage__c, &quot;(TBA) To Be Advised&quot;),
+ISPICKVAL(Usage__c, &quot;(Z01) FOC under Warranty&quot;))
+&amp;&amp;
+NOT(ISBLANK(EUS_Quantity__c)))</errorConditionFormula>
+    <errorDisplayField>EUS_Quantity__c</errorDisplayField>
+    <errorMessage>EUS Quantity Field is not Required</errorMessage>
+</ValidationRule>

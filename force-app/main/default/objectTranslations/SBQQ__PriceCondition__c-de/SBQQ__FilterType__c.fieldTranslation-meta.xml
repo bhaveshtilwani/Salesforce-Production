@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;WÃ¤hlen Sie &quot;&quot;Variable&quot;&quot; aus, um diese Bedingung fÃ¼r eine Zusammenfassungsvariable auszuwerten. Andernfalls wÃ¤hlen Sie &quot;&quot;Wert&quot;&quot;.&quot;</help>
+    <label><!-- Filter Type --></label>
+    <name>SBQQ__FilterType__c</name>
+    <picklistValues>
+        <masterLabel>Formula</masterLabel>
+        <translation>Formel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value</masterLabel>
+        <translation>Wert</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Variable</masterLabel>
+        <translation>Variable</translation>
+    </picklistValues>
+</CustomFieldTranslation>

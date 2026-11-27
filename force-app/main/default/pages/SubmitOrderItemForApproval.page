@@ -1,0 +1,21 @@
+<apex:page standardcontroller="OrderItem" extensions="OrderItemExtController" lightningStylesheets="true" standardStylesheets="false">
+    <apex:slds />
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages />
+            <apex:pageBlockSection title="Order Product Information">
+                <apex:outputField value="{!orderItem.Product_Name__c}" />
+                <apex:outputField value="{!orderItem.OrderId}" />
+                <apex:outputField value="{!customApproval.Status__c}" label="Approval Status" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Approval Information">
+                <apex:inputTextarea value="{!customApproval.On_Submit_Comments__c}" styleClass="slds-textarea" />
+            </apex:pageBlockSection>
+            <div class="slds-align_absolute-center">
+                <apex:commandButton action="{!goBackToOrder}" value="Return to Order Product" styleClass="slds-button slds-m-right_medium"
+                />
+                <apex:commandButton action="{!onSubmit}" value="Submit for Approval" styleClass="slds-button slds-button_brand" />
+            </div>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

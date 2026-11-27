@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dynamic_Approval_Region__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Region__c) = &apos;Americas&apos;, 
+   &apos;0053t000008hiMm&apos;, 
+   IF(TEXT(Region__c) = &apos;Asia/Pac&apos;, 
+      &apos;0053t00000B4Fkg&apos;, 
+      IF(TEXT(Region__c) = &apos;EMEA&apos;, 
+         &apos;0053t000009ubsB&apos;, 
+         &apos;0053t000008hiMm&apos;
+       )
+   )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dynamic Approval (Region)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

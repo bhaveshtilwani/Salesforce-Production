@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MFA_Weighted_Forecast_QTY__c</fullName>
+    <externalId>false</externalId>
+    <formula>MFA_Total_Forecast_QTY__c  -
+(MFA_Additional_Demand_QTY__c *
+Case( MFA_Probability__c, 
+&quot;100&quot;, 0.0, 
+&quot;90&quot;, 0.1, 
+&quot;80&quot;, 0.2, 
+&quot;70&quot;, 0.3, 
+&quot;60&quot;, 0.4, 
+&quot;50&quot;, 0.5, 
+&quot;40&quot;, 0.6, 
+&quot;30&quot;, 0.7, 
+&quot;20&quot;, 0.8, 
+&quot;10&quot;, 0.9, 
+00))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Weighted Forecast - QTY</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

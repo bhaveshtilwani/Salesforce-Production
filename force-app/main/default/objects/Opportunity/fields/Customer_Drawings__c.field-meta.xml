@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Drawings__c</fullName>
+    <description>Vertiba 4/28/14 - added to match functionality in current RFQ Tracking spreadsheet</description>
+    <inlineHelpText>Enter customer drawing number(s), description and the required quantities for quote. This field will appear in the e-mail to the NPC, Engineers &amp; PLMs.</inlineHelpText>
+    <label>Customer Drawings</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyLeads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>Priority__c</columns>
+    <columns>Lead_Source_Date__c</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.COUNTRY</columns>
+    <columns>Lead_Source_Detail__c</columns>
+    <columns>Application__c</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Marketing Only - Closed,Closed,Qualified - Converted</value>
+    </filters>
+    <label>My Leads</label>
+</ListView>

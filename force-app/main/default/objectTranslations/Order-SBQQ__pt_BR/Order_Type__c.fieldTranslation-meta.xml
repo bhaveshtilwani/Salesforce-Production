@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Order Type --></label>
+    <name>Order_Type__c</name>
+    <picklistValues>
+        <masterLabel>Append Order Lines</masterLabel>
+        <translation><!-- Append Order Lines --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billable - R</masterLabel>
+        <translation><!-- Billable - R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Contract</masterLabel>
+        <translation><!-- Consignment Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Fillup</masterLabel>
+        <translation><!-- Consignment Fillup --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Invoice</masterLabel>
+        <translation><!-- Consignment Invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Issue</masterLabel>
+        <translation><!-- Consignment Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Pick-Up</masterLabel>
+        <translation><!-- Consignment Pick-Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Pick-up (to cancell a KB)</masterLabel>
+        <translation><!-- Consignment Pick-up (to cancell a KB) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consignment Return</masterLabel>
+        <translation><!-- Consignment Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Call Off</masterLabel>
+        <translation><!-- Contract Call Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Creation</masterLabel>
+        <translation><!-- Contract Creation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Memo Request</masterLabel>
+        <translation><!-- Credit Memo Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Return</masterLabel>
+        <translation><!-- Customer Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer return for a repair</masterLabel>
+        <translation><!-- Customer return for a repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debit Memo - No Order Reference</masterLabel>
+        <translation><!-- Debit Memo - No Order Reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Debit Memo/Bill only Request</masterLabel>
+        <translation><!-- Debit Memo/Bill only Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domest. FOC Order SZ</masterLabel>
+        <translation><!-- Domest. FOC Order SZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Domest.Repl ord  SHZ</masterLabel>
+        <translation><!-- Domest.Repl ord  SHZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FoC sample order</masterLabel>
+        <translation><!-- FoC sample order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Free of Charge (ZSDF)</masterLabel>
+        <translation><!-- Free of Charge (ZSDF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goods Return As Is (ZASI)</masterLabel>
+        <translation><!-- Goods Return As Is (ZASI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loan Invoice</masterLabel>
+        <translation><!-- Loan Invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loan Return</masterLabel>
+        <translation><!-- Loan Return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRE Order/Prj Ord (Charged)</masterLabel>
+        <translation><!-- NRE Order/Prj Ord (Charged) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRE Order/Prj Ord (Milestone)</masterLabel>
+        <translation><!-- NRE Order/Prj Ord (Milestone) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRE Order/Prj Orders (ZNRE)</masterLabel>
+        <translation><!-- NRE Order/Prj Orders (ZNRE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRE Sales Order</masterLabel>
+        <translation><!-- NRE Sales Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Charge Billable - R</masterLabel>
+        <translation><!-- No Charge Billable - R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Return no Credit</masterLabel>
+        <translation><!-- Opto Return no Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Return to Stock</masterLabel>
+        <translation><!-- Opto Return to Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Return w/Credit</masterLabel>
+        <translation><!-- Opto Return w/Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Order</masterLabel>
+        <translation><!-- Project Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prototype Order</masterLabel>
+        <translation><!-- Prototype Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qty Contract</masterLabel>
+        <translation><!-- Qty Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair Orders (Charged)</masterLabel>
+        <translation><!-- Repair Orders (Charged) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair Orders (No charge)</masterLabel>
+        <translation><!-- Repair Orders (No charge) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair Service Order</masterLabel>
+        <translation><!-- Repair Service Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacement Order</masterLabel>
+        <translation><!-- Replacement Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Replacement Order w/ Reference</masterLabel>
+        <translation><!-- Replacement Order w/ Reference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ret. Replacement Scrap</masterLabel>
+        <translation><!-- Ret. Replacement Scrap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SO for Raw Materials</masterLabel>
+        <translation><!-- SO for Raw Materials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety Stock</masterLabel>
+        <translation><!-- Safety Stock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Order - S</masterLabel>
+        <translation><!-- Sales Order - S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Samples</masterLabel>
+        <translation><!-- Samples --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Revenue STL</masterLabel>
+        <translation><!-- Special Revenue STL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St Louis/Mn Ret Ord</masterLabel>
+        <translation><!-- St Louis/Mn Ret Ord --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Order WEB Shop GOE</masterLabel>
+        <translation><!-- Standard Order WEB Shop GOE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Sales Order</masterLabel>
+        <translation><!-- Standard Sales Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party (Drop ship Sales)</masterLabel>
+        <translation><!-- Third Party (Drop ship Sales) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trading Raw Mat. SHZ</masterLabel>
+        <translation><!-- Trading Raw Mat. SHZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trading Sales SHZ</masterLabel>
+        <translation><!-- Trading Sales SHZ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turn Key Sale-Order</masterLabel>
+        <translation><!-- Turn Key Sale-Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value Contract (ZWK1)</masterLabel>
+        <translation><!-- Value Contract (ZWK1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty - W</masterLabel>
+        <translation><!-- Warranty - W --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warranty/No Charge Billable - W</masterLabel>
+        <translation><!-- Warranty/No Charge Billable - W --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

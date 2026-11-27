@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>SBQQ__Account__c</field>
+        <formula>Opportunity.AccountId</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__BillingCity__c</field>
+        <formula>Opportunity.Account.BillingCity</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__BillingCountry__c</field>
+        <formula>Opportunity.Account.BillingCountry</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__BillingPostalCode__c</field>
+        <formula>Opportunity.Account.BillingPostalCode</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__BillingState__c</field>
+        <formula>Opportunity.Account.BillingState</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__BillingStreet__c</field>
+        <formula>Opportunity.Account.BillingStreet</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__Opportunity2__c</field>
+        <formula>Opportunity.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__Primary__c</field>
+        <formula>IF(
+OR(
+Opportunity.RecordType.Name = &apos;Quick Quote&apos;,
+Opportunity.RecordType.Name = &apos;NPI Opportunity&apos;,
+Opportunity.RecordType.Name = &apos;Semi Opportunity&apos;,
+Opportunity.RecordType.Name = &apos;Service/Repair&apos;,
+Opportunity.RecordType.Name = &apos;ALS&apos;
+),
+TRUE,
+FALSE
+)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__SalesRep__c</field>
+        <formula>$User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__ShippingCity__c</field>
+        <formula>Opportunity.Account.ShippingCity</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__ShippingCountry__c</field>
+        <formula>Opportunity.Account.ShippingCountry</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__ShippingPostalCode__c</field>
+        <formula>Opportunity.Account.ShippingPostalCode</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__ShippingState__c</field>
+        <formula>Opportunity.Account.ShippingState</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>SBQQ__ShippingStreet__c</field>
+        <formula>Opportunity.Account.ShippingState</formula>
+    </fieldOverrides>
+    <label>New Quote</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Product_Price_Type__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Region__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__SalesRep__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__PrimaryContact__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__Primary__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__Opportunity2__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SBQQ__Account__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Frame_Contract__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <targetObject>SBQQ__Quote__c</targetObject>
+    <targetParentField>SBQQ__Opportunity2__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

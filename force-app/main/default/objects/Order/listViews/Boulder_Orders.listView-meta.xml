@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Boulder_Orders</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>ERP_Sales_Order_Number__c</columns>
+    <columns>SFDC_Integration_Status__c</columns>
+    <columns>Integration_Error_Description__c</columns>
+    <columns>ERP_Order_Status__c</columns>
+    <columns>Order_Type__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>Bill_To_Account__c</columns>
+    <columns>Ship_To_Account__c</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Excelitas_Site__c</field>
+        <operation>equals</operation>
+        <value>Boulder</value>
+    </filters>
+    <label>Boulder Orders</label>
+</ListView>

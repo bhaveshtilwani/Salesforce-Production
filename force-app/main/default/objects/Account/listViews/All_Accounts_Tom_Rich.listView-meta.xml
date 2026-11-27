@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Accounts_Tom_Rich</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>DW_Account_Type__c</columns>
+    <columns>PKI_Site__c</columns>
+    <columns>Excelitas_Site_Lookup__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Business Name</value>
+    </filters>
+    <label>All Accounts Tom &amp; Rich</label>
+    <sharedTo>
+        <role>IT_Administrators</role>
+    </sharedTo>
+</ListView>

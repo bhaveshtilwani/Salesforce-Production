@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesTeamMedicalImaging</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Sales_Team__c</columns>
+    <columns>PKI_Site__c</columns>
+    <columns>Client_Side_ID__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_Team__c</field>
+        <operation>includes</operation>
+        <value>Medical Imaging</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notEqual</operation>
+        <value>ttest1,ttest2,klee,admin,sfadmin</value>
+    </filters>
+    <label>SalesTeam - Medical Imaging</label>
+</ListView>

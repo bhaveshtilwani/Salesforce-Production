@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Produkt, fÃ¼r das diese Preisregelung gilt. Wird nur in Verbindung mit &quot;&quot;Preisbuch nachschlagen&quot;&quot; verwendet, um eine produkt- bzw. preisbuchspezifische Regelung zuzuweisen.&quot;</help>
+    <label><!-- Product --></label>
+    <name>SBQQ__Product__c</name>
+    <relationshipLabel><!-- Price Schedules --></relationshipLabel>
+</CustomFieldTranslation>

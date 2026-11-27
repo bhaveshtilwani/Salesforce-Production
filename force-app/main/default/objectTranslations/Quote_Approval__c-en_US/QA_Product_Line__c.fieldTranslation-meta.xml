@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Line --></label>
+    <name>QA_Product_Line__c</name>
+    <picklistValues>
+        <masterLabel>Biomedical</masterLabel>
+        <translation><!-- Biomedical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumer Electronics</masterLabel>
+        <translation><!-- Consumer Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial</masterLabel>
+        <translation><!-- Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Imaging</masterLabel>
+        <translation><!-- Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mil/Aero/Gov</masterLabel>
+        <translation><!-- Mil/Aero/Gov --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

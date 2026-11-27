@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounting_Clerk_Is_Required</fullName>
+    <active>false</active>
+    <description>Accounting Clerk Is Required - GER Accounts only</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP Germany&quot;, CFIN_Completed_and_Confirmed__c = True, OR( ISPICKVAL( Account_Group__c , &quot;Customer int number assgnmnt - DEBI&quot;),ISPICKVAL( Account_Group__c , &quot;QioDebitoren Europäische Union - DEEU&quot;),ISPICKVAL( Account_Group__c , &quot;Sold to - W001&quot;),ISPICKVAL( Account_Group__c , &quot;Sold to - H001&quot;),ISPICKVAL( Account_Group__c , &quot;Bill To - W004&quot;),ISPICKVAL( Account_Group__c , &quot;Bill To - H004&quot;))
+&amp;&amp; ISBLANK( Accounting_Clerk__c ))</errorConditionFormula>
+    <errorDisplayField>Accounting_Clerk__c</errorDisplayField>
+    <errorMessage>Accounting Clerk is required for selected account group.</errorMessage>
+</ValidationRule>

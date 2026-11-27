@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PKI_Product_FamilyXXX__c</fullName>
+    <label>Excelitas Product Family</label>
+    <required>false</required>
+    <securityClassification>Restricted</securityClassification>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PKI_Product_LineXXX__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Product_FamilyXXX</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Land Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Optronics</controllingFieldValue>
+            <valueName>Surv and Target Acq</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Systems &amp; Optics</controllingFieldValue>
+            <valueName>Catalog and Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Systems &amp; Optics</controllingFieldValue>
+            <valueName>Optical Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial Systems &amp; Optics</controllingFieldValue>
+            <valueName>Precision Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor</controllingFieldValue>
+            <valueName>Semiconductor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Laser Technology</controllingFieldValue>
+            <valueName>Laser Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Biomedical Imaging</controllingFieldValue>
+            <valueName>Optical Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solid State Technologies</controllingFieldValue>
+            <valueName>Biomedical Light Engines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solid State Technologies</controllingFieldValue>
+            <valueName>Industrial Curing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solid State Technologies</controllingFieldValue>
+            <valueName>Laser Engines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solid State Technologies</controllingFieldValue>
+            <valueName>Solid State Lighting Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plasma Lighting</controllingFieldValue>
+            <valueName>Analytical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plasma Lighting</controllingFieldValue>
+            <valueName>Cermax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plasma Lighting</controllingFieldValue>
+            <valueName>Flash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plasma Lighting</controllingFieldValue>
+            <valueName>HeNe Lasers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plasma Lighting</controllingFieldValue>
+            <valueName>Industrial Flash Shenzhen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Voltage Power</controllingFieldValue>
+            <valueName>High Voltage Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IR Sensing</controllingFieldValue>
+            <valueName>Pyroelectric Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IR Sensing</controllingFieldValue>
+            <valueName>Thermopile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Electronic Systems</controllingFieldValue>
+            <valueName>Defense Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Electronic Systems</controllingFieldValue>
+            <valueName>Energetic Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Electronic Systems</controllingFieldValue>
+            <valueName>Freq Stds and Switches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Electronic Systems</controllingFieldValue>
+            <valueName>Solidtron</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UNKNOWN LINE</controllingFieldValue>
+            <valueName>UNKNOWN FAMILY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photon Detection</controllingFieldValue>
+            <valueName>High Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photon Detection</controllingFieldValue>
+            <valueName>Photodiodes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photon Detection</controllingFieldValue>
+            <valueName>SPCM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Imaging Systems</controllingFieldValue>
+            <valueName>Camera Systems</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

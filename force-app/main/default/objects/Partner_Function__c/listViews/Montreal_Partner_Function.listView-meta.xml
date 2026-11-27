@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montreal_Partner_Function</fullName>
+    <columns>NAME</columns>
+    <columns>ERP_ID__c</columns>
+    <columns>ERP_Partner_Function_Number_KUNN2__c</columns>
+    <columns>Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ERP_ID__c</field>
+        <operation>contains</operation>
+        <value>C</value>
+    </filters>
+    <label>Montreal Partner Function</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

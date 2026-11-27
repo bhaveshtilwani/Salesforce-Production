@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_ERP_ID_yet</fullName>
+    <active>true</active>
+    <description>records can&apos;t be added unless there is an Account ERP ID</description>
+    <errorConditionFormula>AND(
+ISBLANK( Account__r.Client_Side_ID__c ),
+NOT(ISPICKVAL( Account__r.ERP_Site__c , &quot;Billerica&quot;)))</errorConditionFormula>
+    <errorMessage>You can only add records once the Account has been fully synced to ERP.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    Type,
+    &quot;Existing Cust - Existing Prod (Comp Bid or LTA)&quot;, &quot;Incremental&quot;,
+    &quot;Existing Cust - Existing Product 1st X&quot;, &quot;Incremental&quot;,
+    &quot;Existing Cust - NPI&quot;, &quot;Incremental&quot;,
+    &quot;Existing Customer / add-on order&quot;, &quot;Replacement&quot;,
+    &quot;Existing Customer / Competitive Win&quot;, &quot;Incremental&quot;,
+    &quot;Existing Customer / New Product / New Platform&quot;, &quot;Incremental&quot;,
+    &quot;Existing Customer / Upgrade to Existing Platform&quot;, &quot;Replacement&quot;,
+    &quot;Existing Cust - Recurring Business&quot;, &quot;Replacement&quot;,
+    &quot;New Cust - Existing Product&quot;, &quot;Incremental&quot;,
+    &quot;New Cust - NPI&quot;, &quot;Incremental&quot;,
+    &quot;New Customer / NPI&quot;, &quot;Incremental&quot;,
+    /* Default value if none match */
+    &quot;Other&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Business Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

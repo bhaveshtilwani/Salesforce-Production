@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- This is a multi-select Picklist.
+Please select all that apply. -->
+    </help>
+    <label><!-- Closed Reason --></label>
+    <name>Closed_Lost_Explanation__c</name>
+    <picklistValues>
+        <masterLabel>Engineering resource constraints</masterLabel>
+        <translation><!-- Engineering resource constraints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Time to Design &amp; Manufacture</masterLabel>
+        <translation><!-- Lead Time to Design &amp; Manufacture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Technology/Product Required</masterLabel>
+        <translation><!-- New Technology/Product Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No current demand</masterLabel>
+        <translation><!-- No current demand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pricing</masterLabel>
+        <translation><!-- Pricing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Lead Time / Availability</masterLabel>
+        <translation><!-- Product Lead Time / Availability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Performance</masterLabel>
+        <translation><!-- Product Performance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production capacity constraints</masterLabel>
+        <translation><!-- Production capacity constraints --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Cancelled</masterLabel>
+        <translation><!-- Project Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Issues</masterLabel>
+        <translation><!-- Quality Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Issues</masterLabel>
+        <translation><!-- Technical Issues --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

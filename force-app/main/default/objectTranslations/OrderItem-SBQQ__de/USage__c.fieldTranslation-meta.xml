@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Usage --></label>
+    <name>USage__c</name>
+    <picklistValues>
+        <masterLabel>(DEF) Defence</masterLabel>
+        <translation><!-- (DEF) Defence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(E) Replacement</masterLabel>
+        <translation><!-- (E) Replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(FAI) First Article Inspec</masterLabel>
+        <translation><!-- (FAI) First Article Inspec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(FAT) First Article Test</masterLabel>
+        <translation><!-- (FAT) First Article Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(FIM) Free Issue Material</masterLabel>
+        <translation><!-- (FIM) Free Issue Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(FLP) First Lot Production</masterLabel>
+        <translation><!-- (FLP) First Lot Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(M) Sample</masterLabel>
+        <translation><!-- (M) Sample --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(NRM) Norm</masterLabel>
+        <translation><!-- (NRM) Norm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(RW) ReWork</masterLabel>
+        <translation><!-- (RW) ReWork --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(S) Series</masterLabel>
+        <translation><!-- (S) Series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(TBA) To Be Advised</masterLabel>
+        <translation><!-- (TBA) To Be Advised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(Z01) FOC under Warranty</masterLabel>
+        <translation><!-- (Z01) FOC under Warranty --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

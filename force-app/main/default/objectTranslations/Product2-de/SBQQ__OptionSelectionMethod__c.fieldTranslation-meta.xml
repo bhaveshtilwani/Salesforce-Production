@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Bestimmt, wie der Benutzer mit diesem Produkt verknÃ¼pfte Optionen auswÃ¤hlt. Bei der Methode &quot;&quot;Klicken&quot;&quot; werden KontrollkÃ¤stchen neben den Optionen angezeigt. Bei &quot;&quot;HinzufÃ¼gen&quot;&quot; wird eine SchaltflÃ¤che angezeigt, Ã¼ber die ein Dialogfeld mit verfÃ¼gbaren Optionen aufgerufen wird.&quot;</help>
+    <label>Methode fÃ¼r die Optionsauswahl</label>
+    <name>SBQQ__OptionSelectionMethod__c</name>
+    <picklistValues>
+        <masterLabel>Add</masterLabel>
+        <translation>Addieren</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Click</masterLabel>
+        <translation>Klicken</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,111 @@
+<template>
+    <lightning-card>
+        <header class="slds-modal__header">
+            <h1 class="slds-modal__title slds-hyphenate" style="font-weight: bold; font-size: medium">Create New Order</h1>
+        </header>
+
+        <!-- Search -->
+        <div class="slds-card__body slds-card__body_inner">
+            <template if:true={showSpinner}>
+                <div class="spinnerContainer">
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </div>
+            </template>
+
+            <div class="slds-form">
+                <!-- Site Lookup -->
+                <div>
+                    <label class="slds-form-element__label" for="ExcelitasSite">Site</label>
+                    <c-lwc-custom-lookup
+                        id="ExcelitasSite"
+                        ltng-icon-name="standard:account"
+                        query-object-api-name="Excelitas_Site__c"
+                        main-object-api-name="Excelitas_Site__c"
+                        id-field="Id"
+                        name-field="Name"
+                        scroll-after-n-items="5"
+                        result-display-size="10"
+                        placeholder="Search Site..."
+                        nothing-found-subtitle="No Sites were found"
+                        additional-seach-keyword-fields="Name"
+                        onselectionchange={handleSiteChange}
+                    >
+                    </c-lwc-custom-lookup>
+                </div>
+
+                <!-- Order Type Combobox -->
+                <div if:true={showOrderType}>
+                    <lightning-combobox
+                        name="orderType"
+                        label="Order Type"
+                        value={orderType}
+                        placeholder="Select Order Type"
+                        options={orderTypeOptions}
+                        onchange={handleOrderTypeChange}
+                    ></lightning-combobox>
+                </div>
+
+                <!-- Order Input Field -->
+                <div if:true={showOrder}>
+                    <label class="slds-form-element__label" for="Order">Order</label>
+                    <c-lwc-custom-lookup
+                        id="Order"
+                        ltng-icon-name="standard:orders"
+                        query-object-api-name="Order"
+                        main-object-api-name="Order"
+                        id-field="Id"
+                        name-field="OrderNumber"
+                        scroll-after-n-items="5"
+                        result-display-size="10"
+                        placeholder="Search Order..."
+                        nothing-found-subtitle="No Orders were found"
+                        additional-seach-keyword-fields="ERP_Sales_Order_Number__c"
+                        onselectionchange={handleOrderChange}
+                        additional-fields="ERP_Sales_Order_Number__c"
+                        additional-where-clause={orderWhereClause}
+                    >
+                    </c-lwc-custom-lookup>
+                </div>
+
+                <!-- Bill-To Account Input Field onchange={handleBillToAccountChange} -->
+                <div if:true={showSoldToAccount}>
+                    <lightning-input label="Sold-To Account" type="text" disabled="true" placeholder={soldToAccount}></lightning-input>
+                </div>
+                <div if:true={showSoldToAccountLookup}>
+                    <label class="slds-form-element__label" for="Order">Sold-To Account</label>
+                    <c-lwc-custom-lookup
+                        id="SoldToAccount"
+                        ltng-icon-name="standard:currency"
+                        query-object-api-name="Account"
+                        main-object-api-name="Account"
+                        id-field="Id"
+                        name-field="Name"
+                        scroll-after-n-items="5"
+                        result-display-size="10"
+                        placeholder="Search Sold-To Account..."
+                        nothing-found-subtitle="No Sold-To Accounts were found"
+                        additional-fields="Client_Side_ID__c"
+                        onselectionchange={handleSoldToAccountChange}
+                        additional-where-clause={soldToAccountWhereClause}
+                    >
+                    </c-lwc-custom-lookup>
+                </div>
+
+                <!-- Create Order Button -->
+                <div if:true={showButtons}>
+                    <div class="slds-card__footer">
+                        <div class="slds-form-element__control">
+                            <lightning-button
+                                label="Cancel"
+                                class="slds-button_text-destructive slds-var-m-right_x-small"
+                                onclick={handleCancel}
+                            ></lightning-button>
+                            <lightning-button variant="brand" label="Create Order" onclick={handleCreateOrderCreation} class="slds-var-m-left_x-small">
+                            </lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

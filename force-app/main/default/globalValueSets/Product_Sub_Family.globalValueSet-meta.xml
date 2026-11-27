@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>&gt; 1 Inch</fullName>
+        <default>false</default>
+        <label>&gt; 1 Inch</label>
+    </customValue>
+    <customValue>
+        <fullName>1 inch</fullName>
+        <default>false</default>
+        <label>1 inch</label>
+    </customValue>
+    <customValue>
+        <fullName>Accessory</fullName>
+        <default>false</default>
+        <label>Accessory</label>
+    </customValue>
+    <customValue>
+        <fullName>Adjustment</fullName>
+        <default>false</default>
+        <label>Adjustment</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Endoscopy</fullName>
+        <default>false</default>
+        <label>Advanced Endoscopy</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Imaging Systems</fullName>
+        <default>false</default>
+        <label>Advanced Imaging Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Aerial Imaging</fullName>
+        <default>false</default>
+        <label>Aerial Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Aida</fullName>
+        <default>false</default>
+        <label>Aida</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytical</fullName>
+        <default>false</default>
+        <label>Analytical</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytical Components</fullName>
+        <default>false</default>
+        <label>Analytical Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytical Light Sources</fullName>
+        <default>false</default>
+        <label>Analytical Light Sources</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytical Systems</fullName>
+        <default>false</default>
+        <label>Analytical Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Applied Microscopy</fullName>
+        <default>false</default>
+        <label>Applied Microscopy</label>
+    </customValue>
+    <customValue>
+        <fullName>Array Module</fullName>
+        <default>false</default>
+        <label>Array Module</label>
+    </customValue>
+    <customValue>
+        <fullName>Avionics and Space</fullName>
+        <default>false</default>
+        <label>Avionics and Space</label>
+    </customValue>
+    <customValue>
+        <fullName>Biophotonics</fullName>
+        <default>false</default>
+        <label>Biophotonics</label>
+    </customValue>
+    <customValue>
+        <fullName>Camera Systems</fullName>
+        <default>false</default>
+        <label>Camera Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Carsan Power Supply</fullName>
+        <default>false</default>
+        <label>Carsan Power Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>Catalog</fullName>
+        <default>false</default>
+        <label>Catalog</label>
+    </customValue>
+    <customValue>
+        <fullName>Cathode pills</fullName>
+        <default>false</default>
+        <label>Cathode pills</label>
+    </customValue>
+    <customValue>
+        <fullName>CCD Commercial</fullName>
+        <default>false</default>
+        <label>CCD Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>CCD Defense</fullName>
+        <default>false</default>
+        <label>CCD Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Ceramic Detectors</fullName>
+        <default>false</default>
+        <label>Ceramic Detectors</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV &gt; 1 Inch</fullName>
+        <default>false</default>
+        <label>CEV &gt; 1 Inch</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV Large Cermax Lamps</fullName>
+        <default>false</default>
+        <label>CEV Large Cermax Lamps</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV Large Cermax Modules</fullName>
+        <default>false</default>
+        <label>CEV Large Cermax Modules</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV Modules</fullName>
+        <default>false</default>
+        <label>CEV Modules</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV RAW</fullName>
+        <default>false</default>
+        <label>CEV RAW</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV Video Cermax-Gen 3 1.4 Inch Lamp</fullName>
+        <default>false</default>
+        <label>CEV Video Cermax-Gen 3 1.4 Inch Lamp</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV WIP</fullName>
+        <default>false</default>
+        <label>CEV WIP</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV XHP</fullName>
+        <default>false</default>
+        <label>CEV XHP</label>
+    </customValue>
+    <customValue>
+        <fullName>Components</fullName>
+        <default>false</default>
+        <label>Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Components - Fibers&amp;Comp</fullName>
+        <default>false</default>
+        <label>Components - Fibers&amp;Comp</label>
+    </customValue>
+    <customValue>
+        <fullName>Components - Opt&amp;Img</fullName>
+        <default>false</default>
+        <label>Components - Opt&amp;Img</label>
+    </customValue>
+    <customValue>
+        <fullName>Contracts</fullName>
+        <default>false</default>
+        <label>Contracts</label>
+    </customValue>
+    <customValue>
+        <fullName>Controller</fullName>
+        <default>false</default>
+        <label>Controller</label>
+    </customValue>
+    <customValue>
+        <fullName>COTS Power</fullName>
+        <default>false</default>
+        <label>COTS Power</label>
+    </customValue>
+    <customValue>
+        <fullName>CPM</fullName>
+        <default>false</default>
+        <label>CPM</label>
+    </customValue>
+    <customValue>
+        <fullName>Crystal Technology</fullName>
+        <default>false</default>
+        <label>Crystal Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>CT</fullName>
+        <default>false</default>
+        <label>CT</label>
+    </customValue>
+    <customValue>
+        <fullName>Curing LED Phoseon Adjustment</fullName>
+        <default>false</default>
+        <label>Curing LED Phoseon Adjustment</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom Power</fullName>
+        <default>false</default>
+        <label>Custom Power</label>
+    </customValue>
+    <customValue>
+        <fullName>CW</fullName>
+        <default>false</default>
+        <label>CW</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense</fullName>
+        <default>false</default>
+        <label>Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense Sensors</fullName>
+        <default>false</default>
+        <label>Defense Sensors</label>
+    </customValue>
+    <customValue>
+        <fullName>Dental Technology</fullName>
+        <default>false</default>
+        <label>Dental Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Depot Services</fullName>
+        <default>false</default>
+        <label>Depot Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Dermatology Treatment Optics</fullName>
+        <default>false</default>
+        <label>Dermatology Treatment Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>Detector</fullName>
+        <default>false</default>
+        <label>Detector</label>
+    </customValue>
+    <customValue>
+        <fullName>E.IR COMPONENT</fullName>
+        <default>false</default>
+        <label>E.IR COMPONENT</label>
+    </customValue>
+    <customValue>
+        <fullName>E.IR CUSTOM</fullName>
+        <default>false</default>
+        <label>E.IR CUSTOM</label>
+    </customValue>
+    <customValue>
+        <fullName>E.IR RAW/SEMI</fullName>
+        <default>false</default>
+        <label>E.IR RAW/SEMI</label>
+    </customValue>
+    <customValue>
+        <fullName>E.IR SYSTEM</fullName>
+        <default>false</default>
+        <label>E.IR SYSTEM</label>
+    </customValue>
+    <customValue>
+        <fullName>ED COMPONENT</fullName>
+        <default>false</default>
+        <label>ED COMPONENT</label>
+    </customValue>
+    <customValue>
+        <fullName>ED CUSTOM</fullName>
+        <default>false</default>
+        <label>ED CUSTOM</label>
+    </customValue>
+    <customValue>
+        <fullName>ED RAW/SEMI</fullName>
+        <default>false</default>
+        <label>ED RAW/SEMI</label>
+    </customValue>
+    <customValue>
+        <fullName>ED SYSTEM</fullName>
+        <default>false</default>
+        <label>ED SYSTEM</label>
+    </customValue>
+    <customValue>
+        <fullName>EIR Custom</fullName>
+        <default>false</default>
+        <label>EIR Custom</label>
+    </customValue>
+    <customValue>
+        <fullName>EIR System</fullName>
+        <default>false</default>
+        <label>EIR System</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrooptics</fullName>
+        <default>false</default>
+        <label>Electrooptics</label>
+    </customValue>
+    <customValue>
+        <fullName>ESAF</fullName>
+        <default>false</default>
+        <label>ESAF</label>
+    </customValue>
+    <customValue>
+        <fullName>Espros</fullName>
+        <default>false</default>
+        <label>Espros</label>
+    </customValue>
+    <customValue>
+        <fullName>EUV</fullName>
+        <default>false</default>
+        <label>EUV</label>
+    </customValue>
+    <customValue>
+        <fullName>Fibers</fullName>
+        <default>false</default>
+        <label>Fibers</label>
+    </customValue>
+    <customValue>
+        <fullName>FireEdge</fullName>
+        <default>false</default>
+        <label>FireEdge</label>
+    </customValue>
+    <customValue>
+        <fullName>FireFlex</fullName>
+        <default>false</default>
+        <label>FireFlex</label>
+    </customValue>
+    <customValue>
+        <fullName>FireFly</fullName>
+        <default>false</default>
+        <label>FireFly</label>
+    </customValue>
+    <customValue>
+        <fullName>FireJet</fullName>
+        <default>false</default>
+        <label>FireJet</label>
+    </customValue>
+    <customValue>
+        <fullName>FireLine</fullName>
+        <default>false</default>
+        <label>FireLine</label>
+    </customValue>
+    <customValue>
+        <fullName>FirePower</fullName>
+        <default>false</default>
+        <label>FirePower</label>
+    </customValue>
+    <customValue>
+        <fullName>FLASH COMP.</fullName>
+        <default>false</default>
+        <label>FLASH COMP.</label>
+    </customValue>
+    <customValue>
+        <fullName>FLASH Custom</fullName>
+        <default>false</default>
+        <label>FLASH Custom</label>
+    </customValue>
+    <customValue>
+        <fullName>FLASH Custom.</fullName>
+        <default>false</default>
+        <label>FLASH Custom.</label>
+    </customValue>
+    <customValue>
+        <fullName>FLASH OTHERS</fullName>
+        <default>false</default>
+        <label>FLASH OTHERS</label>
+    </customValue>
+    <customValue>
+        <fullName>FLASH RAW/SEMI</fullName>
+        <default>false</default>
+        <label>FLASH RAW/SEMI</label>
+    </customValue>
+    <customValue>
+        <fullName>FLASH system.</fullName>
+        <default>false</default>
+        <label>FLASH system.</label>
+    </customValue>
+    <customValue>
+        <fullName>FLASH SYSTEMS</fullName>
+        <default>false</default>
+        <label>FLASH SYSTEMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Flexray</fullName>
+        <default>false</default>
+        <label>Flexray</label>
+    </customValue>
+    <customValue>
+        <fullName>FlexTower</fullName>
+        <default>false</default>
+        <label>FlexTower</label>
+    </customValue>
+    <customValue>
+        <fullName>FL - Flash</fullName>
+        <default>false</default>
+        <label>FL - Flash</label>
+    </customValue>
+    <customValue>
+        <fullName>FOI</fullName>
+        <default>false</default>
+        <label>FOI</label>
+    </customValue>
+    <customValue>
+        <fullName>Freight</fullName>
+        <default>false</default>
+        <label>Freight</label>
+    </customValue>
+    <customValue>
+        <fullName>Gen 3 Medical</fullName>
+        <default>false</default>
+        <label>Gen 3 Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>Glass/Ceramic</fullName>
+        <default>false</default>
+        <label>Glass/Ceramic</label>
+    </customValue>
+    <customValue>
+        <fullName>Ground Vehicles</fullName>
+        <default>false</default>
+        <label>Ground Vehicles</label>
+    </customValue>
+    <customValue>
+        <fullName>HCA – AA – Lamp Material</fullName>
+        <default>false</default>
+        <label>HCA – AA – Lamp Material</label>
+    </customValue>
+    <customValue>
+        <fullName>Hcl</fullName>
+        <default>false</default>
+        <label>Hcl</label>
+    </customValue>
+    <customValue>
+        <fullName>Heatsinks</fullName>
+        <default>false</default>
+        <label>Heatsinks</label>
+    </customValue>
+    <customValue>
+        <fullName>Heimann</fullName>
+        <default>false</default>
+        <label>Heimann</label>
+    </customValue>
+    <customValue>
+        <fullName>HeNe Laser Heads\Systems</fullName>
+        <default>false</default>
+        <label>HeNe Laser Heads\Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Hene Laser Others</fullName>
+        <default>false</default>
+        <label>Hene Laser Others</label>
+    </customValue>
+    <customValue>
+        <fullName>HeNe Laser Power Supplies</fullName>
+        <default>false</default>
+        <label>HeNe Laser Power Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>HeNe Laser Tubes</fullName>
+        <default>false</default>
+        <label>HeNe Laser Tubes</label>
+    </customValue>
+    <customValue>
+        <fullName>Heraeus not assigned</fullName>
+        <default>false</default>
+        <label>Heraeus not assigned</label>
+    </customValue>
+    <customValue>
+        <fullName>High Performance Commercial</fullName>
+        <default>false</default>
+        <label>High Performance Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>High Voltage Power</fullName>
+        <default>false</default>
+        <label>High Voltage Power</label>
+    </customValue>
+    <customValue>
+        <fullName>HNG ZZ-HNG Other</fullName>
+        <default>false</default>
+        <label>HNG ZZ-HNG Other</label>
+    </customValue>
+    <customValue>
+        <fullName>HPG</fullName>
+        <default>false</default>
+        <label>HPG</label>
+    </customValue>
+    <customValue>
+        <fullName>Hvp</fullName>
+        <default>false</default>
+        <label>Hvp</label>
+    </customValue>
+    <customValue>
+        <fullName>Image Tubes</fullName>
+        <default>false</default>
+        <label>Image Tubes</label>
+    </customValue>
+    <customValue>
+        <fullName>Ipl</fullName>
+        <default>false</default>
+        <label>Ipl</label>
+    </customValue>
+    <customValue>
+        <fullName>KeyLight</fullName>
+        <default>false</default>
+        <label>KeyLight</label>
+    </customValue>
+    <customValue>
+        <fullName>KeyPro</fullName>
+        <default>false</default>
+        <label>KeyPro</label>
+    </customValue>
+    <customValue>
+        <fullName>Lamp Accessories</fullName>
+        <default>false</default>
+        <label>Lamp Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Land Equipment</fullName>
+        <default>false</default>
+        <label>Land Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser &amp; Fibers</fullName>
+        <default>false</default>
+        <label>Laser &amp; Fibers</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser Components</fullName>
+        <default>false</default>
+        <label>Laser Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Lasers</fullName>
+        <default>false</default>
+        <label>Lasers</label>
+    </customValue>
+    <customValue>
+        <fullName>Lasers and Fibers</fullName>
+        <default>false</default>
+        <label>Lasers and Fibers</label>
+    </customValue>
+    <customValue>
+        <fullName>LED COMPONENT</fullName>
+        <default>false</default>
+        <label>LED COMPONENT</label>
+    </customValue>
+    <customValue>
+        <fullName>LED Components</fullName>
+        <default>false</default>
+        <label>LED Components</label>
+    </customValue>
+    <customValue>
+        <fullName>LED CUSTOM</fullName>
+        <default>false</default>
+        <label>LED CUSTOM</label>
+    </customValue>
+    <customValue>
+        <fullName>LED OTHER</fullName>
+        <default>false</default>
+        <label>LED OTHER</label>
+    </customValue>
+    <customValue>
+        <fullName>LED RAW/SEMI</fullName>
+        <default>false</default>
+        <label>LED RAW/SEMI</label>
+    </customValue>
+    <customValue>
+        <fullName>LED Solutions</fullName>
+        <default>false</default>
+        <label>LED Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>LED SYSTEM</fullName>
+        <default>false</default>
+        <label>LED SYSTEM</label>
+    </customValue>
+    <customValue>
+        <fullName>Levelsensor</fullName>
+        <default>false</default>
+        <label>Levelsensor</label>
+    </customValue>
+    <customValue>
+        <fullName>Linear Beacons</fullName>
+        <default>false</default>
+        <label>Linear Beacons</label>
+    </customValue>
+    <customValue>
+        <fullName>LiTa Detectors</fullName>
+        <default>false</default>
+        <label>LiTa Detectors</label>
+    </customValue>
+    <customValue>
+        <fullName>LMP</fullName>
+        <default>false</default>
+        <label>LMP</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGL IR Source</fullName>
+        <default>false</default>
+        <label>MAGL IR Source</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGL Service</fullName>
+        <default>false</default>
+        <label>MAGL Service</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGL Space Lighting</fullName>
+        <default>false</default>
+        <label>MAGL Space Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGL WIP</fullName>
+        <default>false</default>
+        <label>MAGL WIP</label>
+    </customValue>
+    <customValue>
+        <fullName>Materials</fullName>
+        <default>false</default>
+        <label>Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical</fullName>
+        <default>false</default>
+        <label>Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Components</fullName>
+        <default>false</default>
+        <label>Medical Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Sensors</fullName>
+        <default>false</default>
+        <label>Medical Sensors</label>
+    </customValue>
+    <customValue>
+        <fullName>Metrology &amp; Inspection</fullName>
+        <default>false</default>
+        <label>Metrology &amp; Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Micro Optics</fullName>
+        <default>false</default>
+        <label>Micro Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>Microwave bulbs</fullName>
+        <default>false</default>
+        <label>Microwave bulbs</label>
+    </customValue>
+    <customValue>
+        <fullName>Microwave systems</fullName>
+        <default>false</default>
+        <label>Microwave systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Mini-Cermax</fullName>
+        <default>false</default>
+        <label>Mini-Cermax</label>
+    </customValue>
+    <customValue>
+        <fullName>Missile Warning &amp; Targeting Sys</fullName>
+        <default>false</default>
+        <label>Missile Warning &amp; Targeting Sys</label>
+    </customValue>
+    <customValue>
+        <fullName>Modular Vessel</fullName>
+        <default>false</default>
+        <label>Modular Vessel</label>
+    </customValue>
+    <customValue>
+        <fullName>Module</fullName>
+        <default>false</default>
+        <label>Module</label>
+    </customValue>
+    <customValue>
+        <fullName>Modules</fullName>
+        <default>false</default>
+        <label>Modules</label>
+    </customValue>
+    <customValue>
+        <fullName>MOTS Power</fullName>
+        <default>false</default>
+        <label>MOTS Power</label>
+    </customValue>
+    <customValue>
+        <fullName>Multipoint Device</fullName>
+        <default>false</default>
+        <label>Multipoint Device</label>
+    </customValue>
+    <customValue>
+        <fullName>MVS</fullName>
+        <default>false</default>
+        <label>MVS</label>
+    </customValue>
+    <customValue>
+        <fullName>MW COMPONENT</fullName>
+        <default>false</default>
+        <label>MW COMPONENT</label>
+    </customValue>
+    <customValue>
+        <fullName>MW CUSTOM</fullName>
+        <default>false</default>
+        <label>MW CUSTOM</label>
+    </customValue>
+    <customValue>
+        <fullName>MW OTHER</fullName>
+        <default>false</default>
+        <label>MW OTHER</label>
+    </customValue>
+    <customValue>
+        <fullName>MW RAW/SEMI</fullName>
+        <default>false</default>
+        <label>MW RAW/SEMI</label>
+    </customValue>
+    <customValue>
+        <fullName>MW System</fullName>
+        <default>false</default>
+        <label>MW System</label>
+    </customValue>
+    <customValue>
+        <fullName>MW SYSTEMS</fullName>
+        <default>false</default>
+        <label>MW SYSTEMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Nexus</fullName>
+        <default>false</default>
+        <label>Nexus</label>
+    </customValue>
+    <customValue>
+        <fullName>Nexustower</fullName>
+        <default>false</default>
+        <label>Nexustower</label>
+    </customValue>
+    <customValue>
+        <fullName>NIR</fullName>
+        <default>false</default>
+        <label>NIR</label>
+    </customValue>
+    <customValue>
+        <fullName>NRE</fullName>
+        <default>false</default>
+        <label>NRE</label>
+    </customValue>
+    <customValue>
+        <fullName>Omni</fullName>
+        <default>false</default>
+        <label>Omni</label>
+    </customValue>
+    <customValue>
+        <fullName>Omnicure</fullName>
+        <default>false</default>
+        <label>Omnicure</label>
+    </customValue>
+    <customValue>
+        <fullName>OMNICURE COMPONENTS</fullName>
+        <default>false</default>
+        <label>OMNICURE COMPONENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>OMNICURE Custom</fullName>
+        <default>false</default>
+        <label>OMNICURE Custom</label>
+    </customValue>
+    <customValue>
+        <fullName>OMNICURE System</fullName>
+        <default>false</default>
+        <label>OMNICURE System</label>
+    </customValue>
+    <customValue>
+        <fullName>Ophthalmology</fullName>
+        <default>false</default>
+        <label>Ophthalmology</label>
+    </customValue>
+    <customValue>
+        <fullName>OP - Optics</fullName>
+        <default>false</default>
+        <label>OP - Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>Ops Munich</fullName>
+        <default>false</default>
+        <label>Ops Munich</label>
+    </customValue>
+    <customValue>
+        <fullName>Ops Regen</fullName>
+        <default>false</default>
+        <label>Ops Regen</label>
+    </customValue>
+    <customValue>
+        <fullName>OPT COMPONENTS</fullName>
+        <default>false</default>
+        <label>OPT COMPONENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>OPT Custom</fullName>
+        <default>false</default>
+        <label>OPT Custom</label>
+    </customValue>
+    <customValue>
+        <fullName>Optem</fullName>
+        <default>false</default>
+        <label>Optem</label>
+    </customValue>
+    <customValue>
+        <fullName>Optical Components</fullName>
+        <default>false</default>
+        <label>Optical Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Opto Others</fullName>
+        <default>false</default>
+        <label>Opto Others</label>
+    </customValue>
+    <customValue>
+        <fullName>OPT RAW/SEMI</fullName>
+        <default>false</default>
+        <label>OPT RAW/SEMI</label>
+    </customValue>
+    <customValue>
+        <fullName>Optronics Platforms</fullName>
+        <default>false</default>
+        <label>Optronics Platforms</label>
+    </customValue>
+    <customValue>
+        <fullName>OPT System</fullName>
+        <default>false</default>
+        <label>OPT System</label>
+    </customValue>
+    <customValue>
+        <fullName>OPT SYSTEMS</fullName>
+        <default>false</default>
+        <label>OPT SYSTEMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Optical Components</fullName>
+        <default>false</default>
+        <label>Other Optical Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>PHOSEON COMPONENTS</fullName>
+        <default>false</default>
+        <label>PHOSEON COMPONENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>PHOSEON Custom</fullName>
+        <default>false</default>
+        <label>PHOSEON Custom</label>
+    </customValue>
+    <customValue>
+        <fullName>PHOSEON System</fullName>
+        <default>false</default>
+        <label>PHOSEON System</label>
+    </customValue>
+    <customValue>
+        <fullName>Photo</fullName>
+        <default>false</default>
+        <label>Photo</label>
+    </customValue>
+    <customValue>
+        <fullName>Photodiode Arrays</fullName>
+        <default>false</default>
+        <label>Photodiode Arrays</label>
+    </customValue>
+    <customValue>
+        <fullName>Photodiodes</fullName>
+        <default>false</default>
+        <label>Photodiodes</label>
+    </customValue>
+    <customValue>
+        <fullName>Photonics Flash - Noblelight</fullName>
+        <default>false</default>
+        <label>Photonics Flash - Noblelight</label>
+    </customValue>
+    <customValue>
+        <fullName>PHS COMPONENTS</fullName>
+        <default>false</default>
+        <label>PHS COMPONENTS</label>
+    </customValue>
+    <customValue>
+        <fullName>PHS Custom</fullName>
+        <default>false</default>
+        <label>PHS Custom</label>
+    </customValue>
+    <customValue>
+        <fullName>PHS Other</fullName>
+        <default>false</default>
+        <label>PHS Other</label>
+    </customValue>
+    <customValue>
+        <fullName>PHS System</fullName>
+        <default>false</default>
+        <label>PHS System</label>
+    </customValue>
+    <customValue>
+        <fullName>PID DC</fullName>
+        <default>false</default>
+        <label>PID DC</label>
+    </customValue>
+    <customValue>
+        <fullName>PID RF Auto</fullName>
+        <default>false</default>
+        <label>PID RF Auto</label>
+    </customValue>
+    <customValue>
+        <fullName>PID RF Manual</fullName>
+        <default>false</default>
+        <label>PID RF Manual</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Supply &amp; Accessories</fullName>
+        <default>false</default>
+        <label>Power Supply &amp; Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Optics Singapore</fullName>
+        <default>false</default>
+        <label>Precision Optics Singapore</label>
+    </customValue>
+    <customValue>
+        <fullName>Pulsed</fullName>
+        <default>false</default>
+        <label>Pulsed</label>
+    </customValue>
+    <customValue>
+        <fullName>Pulsed Power</fullName>
+        <default>false</default>
+        <label>Pulsed Power</label>
+    </customValue>
+    <customValue>
+        <fullName>Quartz Linear</fullName>
+        <default>false</default>
+        <label>Quartz Linear</label>
+    </customValue>
+    <customValue>
+        <fullName>RAW</fullName>
+        <default>false</default>
+        <label>RAW</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor Technology</fullName>
+        <default>false</default>
+        <label>Semiconductor Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Sensor</fullName>
+        <default>false</default>
+        <label>Sensor</label>
+    </customValue>
+    <customValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </customValue>
+    <customValue>
+        <fullName>SF MAX</fullName>
+        <default>false</default>
+        <label>SF MAX</label>
+    </customValue>
+    <customValue>
+        <fullName>SiPM</fullName>
+        <default>false</default>
+        <label>SiPM</label>
+    </customValue>
+    <customValue>
+        <fullName>Solder seal</fullName>
+        <default>false</default>
+        <label>Solder seal</label>
+    </customValue>
+    <customValue>
+        <fullName>Soldier - Man Portable</fullName>
+        <default>false</default>
+        <label>Soldier - Man Portable</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid State Lighting</fullName>
+        <default>false</default>
+        <label>Solid State Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid State Switches</fullName>
+        <default>false</default>
+        <label>Solid State Switches</label>
+    </customValue>
+    <customValue>
+        <fullName>SO Other</fullName>
+        <default>false</default>
+        <label>SO Other</label>
+    </customValue>
+    <customValue>
+        <fullName>SPCM</fullName>
+        <default>false</default>
+        <label>SPCM</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Tube</fullName>
+        <default>false</default>
+        <label>Special Tube</label>
+    </customValue>
+    <customValue>
+        <fullName>Surgical Optics</fullName>
+        <default>false</default>
+        <label>Surgical Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>Surv and Target Acq</fullName>
+        <default>false</default>
+        <label>Surv and Target Acq</label>
+    </customValue>
+    <customValue>
+        <fullName>Surveillance</fullName>
+        <default>false</default>
+        <label>Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>Switches</fullName>
+        <default>false</default>
+        <label>Switches</label>
+    </customValue>
+    <customValue>
+        <fullName>Systems</fullName>
+        <default>false</default>
+        <label>Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Tactical Missiles</fullName>
+        <default>false</default>
+        <label>Tactical Missiles</label>
+    </customValue>
+    <customValue>
+        <fullName>TECHNICAL SERVICE</fullName>
+        <default>false</default>
+        <label>TECHNICAL SERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecom/FFM</fullName>
+        <default>false</default>
+        <label>Telecom/FFM</label>
+    </customValue>
+    <customValue>
+        <fullName>TO Packages</fullName>
+        <default>false</default>
+        <label>TO Packages</label>
+    </customValue>
+    <customValue>
+        <fullName>Trigger Coil</fullName>
+        <default>false</default>
+        <label>Trigger Coil</label>
+    </customValue>
+    <customValue>
+        <fullName>Trigger Transformer</fullName>
+        <default>false</default>
+        <label>Trigger Transformer</label>
+    </customValue>
+    <customValue>
+        <fullName>UNKNOWN SUBFAMILY</fullName>
+        <default>false</default>
+        <label>UNKNOWN SUBFAMILY</label>
+    </customValue>
+    <customValue>
+        <fullName>U Tube (+ H 3rd Gen)</fullName>
+        <default>false</default>
+        <label>U Tube (+ H 3rd Gen)</label>
+    </customValue>
+    <customValue>
+        <fullName>Vaconics</fullName>
+        <default>false</default>
+        <label>Vaconics</label>
+    </customValue>
+    <customValue>
+        <fullName>Vactec</fullName>
+        <default>false</default>
+        <label>Vactec</label>
+    </customValue>
+    <customValue>
+        <fullName>Vision Technology</fullName>
+        <default>false</default>
+        <label>Vision Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>WIP</fullName>
+        <default>false</default>
+        <label>WIP</label>
+    </customValue>
+    <customValue>
+        <fullName>X-Cite</fullName>
+        <default>false</default>
+        <label>X-Cite</label>
+    </customValue>
+    <customValue>
+        <fullName>X-Ray Imaging</fullName>
+        <default>false</default>
+        <label>X-Ray Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>XWarranty</fullName>
+        <default>false</default>
+        <label>XWarranty</label>
+    </customValue>
+    <customValue>
+        <fullName>Yieldstar</fullName>
+        <default>false</default>
+        <label>Yieldstar</label>
+    </customValue>
+    <customValue>
+        <fullName>Yieldstar - Lightsources</fullName>
+        <default>false</default>
+        <label>Yieldstar - Lightsources</label>
+    </customValue>
+    <customValue>
+        <fullName>Yieldstar - Mod&amp;Obj</fullName>
+        <default>false</default>
+        <label>Yieldstar - Mod&amp;Obj</label>
+    </customValue>
+    <customValue>
+        <fullName>High Performance Defense</fullName>
+        <default>false</default>
+        <label>High Performance Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>0400/spcm</fullName>
+        <default>false</default>
+        <label>0400/spcm</label>
+    </customValue>
+    <customValue>
+        <fullName>Dental</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dental</label>
+    </customValue>
+    <customValue>
+        <fullName>Operations Munic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Operations Munic</label>
+    </customValue>
+    <customValue>
+        <fullName>Vision Technolog</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vision Technolog</label>
+    </customValue>
+    <customValue>
+        <fullName>Operations Regen</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Operations Regen</label>
+    </customValue>
+    <customValue>
+        <fullName>Semicon-Inspection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semicon-Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomed-Laser</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biomed-Laser</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Laser</label>
+    </customValue>
+    <customValue>
+        <fullName>Excel</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Excel</label>
+    </customValue>
+    <customValue>
+        <fullName>UV and Microscopy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UV and Microscopy</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV Power Supply</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CEV Power Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV NRE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CEV NRE</label>
+    </customValue>
+    <customValue>
+        <fullName>MAGL RAW</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MAGL RAW</label>
+    </customValue>
+    <customValue>
+        <fullName>Lae - Service</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lae - Service</label>
+    </customValue>
+    <customValue>
+        <fullName>LAE – Service</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LAE – Service</label>
+    </customValue>
+    <customValue>
+        <fullName>PFL - MPC (FTA)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PFL - MPC (FTA)</label>
+    </customValue>
+    <customValue>
+        <fullName>PFL - MPC (4th Gen Cap)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PFL - MPC (4th Gen Cap)</label>
+    </customValue>
+    <customValue>
+        <fullName>PFL - DSC (4th Gen Cap)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PFL - DSC (4th Gen Cap)</label>
+    </customValue>
+    <customValue>
+        <fullName>PFL - DSC (3rd Gen)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PFL - DSC (3rd Gen)</label>
+    </customValue>
+    <customValue>
+        <fullName>PFL - DSC (TC/ Xfer)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PFL - DSC (TC/ Xfer)</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Endo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Endo</label>
+    </customValue>
+    <customValue>
+        <fullName>Semicon. Tech.</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semicon. Tech.</label>
+    </customValue>
+    <customValue>
+        <fullName>PFL - DSC (FTA)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PFL - DSC (FTA)</label>
+    </customValue>
+    <customValue>
+        <fullName>PFL - DSC (Opto Others)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PFL - DSC (Opto Others)</label>
+    </customValue>
+    <customValue>
+        <fullName>FORECAST</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FORECAST</label>
+    </customValue>
+    <customValue>
+        <fullName>SNG Optics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SNG Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>Ops Munic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ops Munic</label>
+    </customValue>
+    <customValue>
+        <fullName>Machine Vision</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Machine Vision</label>
+    </customValue>
+    <customValue>
+        <fullName>Industry Catalog</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industry Catalog</label>
+    </customValue>
+    <customValue>
+        <fullName>Flash Modules</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Flash Modules</label>
+    </customValue>
+    <customValue>
+        <fullName>IPL Cartridges</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>IPL Cartridges</label>
+    </customValue>
+    <customValue>
+        <fullName>Optical Components Test</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optical Components Test</label>
+    </customValue>
+    <customValue>
+        <fullName>XHP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>XHP</label>
+    </customValue>
+    <customValue>
+        <fullName>Video Cermax-Gen 3 1.4 Inch Lamp</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Video Cermax-Gen 3 1.4 Inch Lamp</label>
+    </customValue>
+    <customValue>
+        <fullName>Tc/xfer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tc/xfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Space Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Space Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Sensors</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sensors</label>
+    </customValue>
+    <customValue>
+        <fullName>Rad</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Rad</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Supply</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Power Supply</label>
+    </customValue>
+    <customValue>
+        <fullName>Molecular Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Molecular Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Mercury Capillary Lamps</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mercury Capillary Lamps</label>
+    </customValue>
+    <customValue>
+        <fullName>Large Cermax Modules</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Large Cermax Modules</label>
+    </customValue>
+    <customValue>
+        <fullName>Large Cermax Lamps</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Large Cermax Lamps</label>
+    </customValue>
+    <customValue>
+        <fullName>LAE - Accessories</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LAE - Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>LAE - 8&quot;</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LAE - 8&quot;</label>
+    </customValue>
+    <customValue>
+        <fullName>LAE - 16&quot;</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>LAE - 16&quot;</label>
+    </customValue>
+    <customValue>
+        <fullName>IR Source</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>IR Source</label>
+    </customValue>
+    <customValue>
+        <fullName>Hybrid</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Hybrid</label>
+    </customValue>
+    <customValue>
+        <fullName>HP Hybrids</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HP Hybrids</label>
+    </customValue>
+    <customValue>
+        <fullName>HP Emitters</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HP Emitters</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser Material Processing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Laser Material Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>HP Detectors</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HP Detectors</label>
+    </customValue>
+    <customValue>
+        <fullName>Fta</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fta</label>
+    </customValue>
+    <customValue>
+        <fullName>FM/FTA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>FM/FTA</label>
+    </customValue>
+    <customValue>
+        <fullName>Emitters</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Emitters</label>
+    </customValue>
+    <customValue>
+        <fullName>E/M/J</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>E/M/J</label>
+    </customValue>
+    <customValue>
+        <fullName>Endoscopy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Endoscopy</label>
+    </customValue>
+    <customValue>
+        <fullName>Opthalmology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Opthalmology</label>
+    </customValue>
+    <customValue>
+        <fullName>E/M</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>E/M</label>
+    </customValue>
+    <customValue>
+        <fullName>Diode Array</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Diode Array</label>
+    </customValue>
+    <customValue>
+        <fullName>Combo</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Combo</label>
+    </customValue>
+    <customValue>
+        <fullName>Cer_Chips</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cer_Chips</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotech</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biotech</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardiac</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cardiac</label>
+    </customValue>
+    <customValue>
+        <fullName>Cameras</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cameras</label>
+    </customValue>
+    <customValue>
+        <fullName>Arrays</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Arrays</label>
+    </customValue>
+    <customValue>
+        <fullName>Angio</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Angio</label>
+    </customValue>
+    <customValue>
+        <fullName>4th Gen (non-Cap)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>4th Gen (non-Cap)</label>
+    </customValue>
+    <customValue>
+        <fullName>4th Gen (capillary)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>4th Gen (capillary)</label>
+    </customValue>
+    <customValue>
+        <fullName>3rd Gen</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>3rd Gen</label>
+    </customValue>
+    <customValue>
+        <fullName>Photo &amp; Lab Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Photo &amp; Lab Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>CEV 3rd Gen</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CEV 3rd Gen</label>
+    </customValue>
+    <customValue>
+        <fullName>IDF RAW</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>IDF RAW</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown Sub-family</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unknown Sub-family</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown Sub Family</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Unknown Sub Family</label>
+    </customValue>
+    <customValue>
+        <fullName>Projection Display</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Projection Display</label>
+    </customValue>
+    <masterLabel>Product Sub Family</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

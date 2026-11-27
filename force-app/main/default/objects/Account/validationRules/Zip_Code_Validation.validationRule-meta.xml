@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zip_Code_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( BillingCountry  = &quot;United States&quot;, NOT(REGEX( BillingPostalCode  , &quot;\\d{5}(-\\d{4})?&quot;)) )</errorConditionFormula>
+    <errorDisplayField>BillingPostalCode</errorDisplayField>
+    <errorMessage>US Zip code must be in the &apos;99999&apos; 0r &apos;99999-9999&apos; format.</errorMessage>
+</ValidationRule>

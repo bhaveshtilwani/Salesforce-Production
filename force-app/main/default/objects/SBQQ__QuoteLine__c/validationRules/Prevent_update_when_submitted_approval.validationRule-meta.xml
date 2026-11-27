@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_update_when_submitted_approval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(SBQQ__Quote__r.Has_Bypass_Site__c),
+NOT($User.Locked_Quotes_Editor__c),
+NOT(ISCHANGED(Customer_Selected__c)),
+OR(
+AND(
+ISPICKVAL(SBQQ__Quote__r.ApprovalStatus__c, &quot;Pending&quot;),
+OR(
+ISCHANGED(SBQQ__Discount__c),
+ISCHANGED(SBQQ__Quantity__c),
+ISCHANGED(Quantity_2__c),
+ISCHANGED(Quantity_3__c),
+ISCHANGED(Quantity_4__c),
+ISCHANGED(Quantity_5__c),
+ISCHANGED(SBQQ__ListPrice__c),
+ISCHANGED(Price_2__c),
+ISCHANGED(Price_3__c),
+ISCHANGED(Price_4__c),
+ISCHANGED(Price_5__c)
+)
+),
+AND(
+ISPICKVAL(SBQQ__Quote__r.ApprovalStatus__c, &quot;Approved&quot;),
+OR(
+ISCHANGED(SBQQ__Discount__c),
+ISCHANGED(SBQQ__Quantity__c),
+ISCHANGED(Quantity_2__c),
+ISCHANGED(Quantity_3__c),
+ISCHANGED(Quantity_4__c),
+ISCHANGED(Quantity_5__c),
+AND(
+ISCHANGED(SBQQ__ListPrice__c),
+SBQQ__ListPrice__c &lt; List_Unit_Price_1_Approved__c
+),
+AND(
+ISCHANGED(Price_2__c),
+Price_2__c &lt; List_Unit_Price_2_Approved__c
+),
+AND(
+ISCHANGED(Price_3__c),
+Price_3__c &lt; List_Unit_Price_3_Approved__c
+),
+AND(
+ISCHANGED(Price_4__c),
+Price_4__c &lt; List_Unit_Price_4_Approved__c
+),
+AND(
+ISCHANGED(Price_5__c),
+Price_5__c &lt; List_Unit_Price_5_Approved__c
+)
+)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Quotes that are approved or pending approval cannot be edited unless the approval request is recalled.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Opp_and_Acc_in_Relation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISNEW()),  
+    
+    OR(
+        ISCLONE(),  
+        ISCHANGED(SBQQ__Account__c),
+        ISCHANGED(SBQQ__Opportunity2__c)
+    ),
+    
+    OR(
+        ISBLANK(SBQQ__Account__c),
+        ISBLANK(SBQQ__Opportunity2__c),
+        AND(
+            NOT(ISBLANK(SBQQ__Account__c)),
+            NOT(ISBLANK(SBQQ__Opportunity2__c)),
+            SBQQ__Opportunity2__r.AccountId &lt;&gt; SBQQ__Account__c
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Account and Opportunity are required and must be related.</errorMessage>
+</ValidationRule>

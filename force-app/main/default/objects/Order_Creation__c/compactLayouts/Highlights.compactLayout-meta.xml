@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Highlights</fullName>
+    <fields>Name</fields>
+    <fields>AccountId__c</fields>
+    <fields>Sold_To_Account__c</fields>
+    <fields>Excelitas_Site__c</fields>
+    <fields>Order_Type__c</fields>
+    <fields>CurrencyIsoCode</fields>
+    <label>Highlights</label>
+</CompactLayout>

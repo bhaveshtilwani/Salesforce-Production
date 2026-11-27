@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejection_Status__c</fullName>
+    <label>Rejection Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Completely processed</fullName>
+                <default>false</default>
+                <label>Completely processed</label>
+            </value>
+            <value>
+                <fullName>Nothing Rejected</fullName>
+                <default>false</default>
+                <label>Nothing Rejected</label>
+            </value>
+            <value>
+                <fullName>Partially Rejected</fullName>
+                <default>false</default>
+                <label>Partially Rejected</label>
+            </value>
+            <value>
+                <fullName>Everything Rejected</fullName>
+                <default>false</default>
+                <label>Everything Rejected</label>
+            </value>
+            <value>
+                <fullName>Not yet processed</fullName>
+                <default>false</default>
+                <label>Not yet processed</label>
+            </value>
+            <value>
+                <fullName>Partially processed</fullName>
+                <default>false</default>
+                <label>Partially processed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

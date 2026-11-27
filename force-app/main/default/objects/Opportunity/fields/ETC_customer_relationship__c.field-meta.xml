@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETC_customer_relationship__c</fullName>
+    <description>For PGO Calculation (D&amp;A)</description>
+    <inlineHelpText>How strong is ETC&apos;s customer relationship?</inlineHelpText>
+    <label>ETC customer relationship?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excellent / Strong Intimacy / Active</fullName>
+                <default>false</default>
+                <label>Excellent / Strong Intimacy / Active</label>
+            </value>
+            <value>
+                <fullName>Previous Customer / Minor to Medium Intimacy</fullName>
+                <default>false</default>
+                <label>Previous Customer / Minor to Medium Intimacy</label>
+            </value>
+            <value>
+                <fullName>New Customer / No Intimacy</fullName>
+                <default>false</default>
+                <label>New Customer / No Intimacy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

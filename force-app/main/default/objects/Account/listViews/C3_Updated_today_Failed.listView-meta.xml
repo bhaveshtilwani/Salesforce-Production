@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>C3_Updated_today_Failed</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>SFDC_Error_Description__c</columns>
+    <columns>Client_Side_ID__c</columns>
+    <columns>SFDC_Integration_Status__c</columns>
+    <columns>PKI_Site__c</columns>
+    <columns>Excelitas_Site_Lookup__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Customer Name</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.LAST_UPDATE</field>
+        <operation>equals</operation>
+        <value>YESTERDAY</value>
+    </filters>
+    <filters>
+        <field>SFDC_Integration_Status__c</field>
+        <operation>equals</operation>
+        <value>Failed</value>
+    </filters>
+    <label>C3 Updated today - Failed</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Market Segment --></label>
+    <name>Market_Segment__c</name>
+    <picklistValues>
+        <masterLabel>AA00-Automated Assembly</masterLabel>
+        <translation><!-- AA00-Automated Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AD00-Adhesives/Chemicals Omni</masterLabel>
+        <translation><!-- AD00-Adhesives/Chemicals Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AI00-Analytical Instrumentation Omni</masterLabel>
+        <translation><!-- AI00-Analytical Instrumentation Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS00-Aviation/Space</masterLabel>
+        <translation><!-- AS00-Aviation/Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AU00-Automotive</masterLabel>
+        <translation><!-- AU00-Automotive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Additive Manuf.</masterLabel>
+        <translation><!-- Additive Manuf. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Adhesives</masterLabel>
+        <translation><!-- Adhesives --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air treatment (VOCs)</masterLabel>
+        <translation><!-- Air treatment (VOCs) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical</masterLabel>
+        <translation><!-- Analytical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical instrum.</masterLabel>
+        <translation><!-- Analytical instrum. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battery technology</masterLabel>
+        <translation><!-- Battery technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biomedical Analysis</masterLabel>
+        <translation><!-- Biomedical Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building &amp; furniture</masterLabel>
+        <translation><!-- Building &amp; furniture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS00-Consumer</masterLabel>
+        <translation><!-- CS00-Consumer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catalogue</masterLabel>
+        <translation><!-- Catalogue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coating</masterLabel>
+        <translation><!-- Coating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coating &amp; Converting</masterLabel>
+        <translation><!-- Coating &amp; Converting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumer</masterLabel>
+        <translation><!-- Consumer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crystal</masterLabel>
+        <translation><!-- Crystal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE00-Defense</masterLabel>
+        <translation><!-- DE00-Defense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DP00-Digital Printing</masterLabel>
+        <translation><!-- DP00-Digital Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT00-Competitor</masterLabel>
+        <translation><!-- DT00-Competitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT00-Distributor Omni</masterLabel>
+        <translation><!-- DT00-Distributor Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT00-Distributor Omni and X-Cite</masterLabel>
+        <translation><!-- DT00-Distributor Omni and X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT00-Distributor X-Cite</masterLabel>
+        <translation><!-- DT00-Distributor X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT00-Distributor X-Cite &amp; SSL</masterLabel>
+        <translation><!-- DT00-Distributor X-Cite &amp; SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense</masterLabel>
+        <translation><!-- Defense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dental</masterLabel>
+        <translation><!-- Dental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EL00-Electronics Omni</masterLabel>
+        <translation><!-- EL00-Electronics Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EL00-Electronics Omni and X-Cite</masterLabel>
+        <translation><!-- EL00-Electronics Omni and X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EL00-Electronics X-Cite</masterLabel>
+        <translation><!-- EL00-Electronics X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endoscopy</masterLabel>
+        <translation><!-- Endoscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelitas</masterLabel>
+        <translation><!-- Excelitas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F&amp;B Filling</masterLabel>
+        <translation><!-- F&amp;B Filling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fiber components</masterLabel>
+        <translation><!-- Fiber components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flexo</masterLabel>
+        <translation><!-- Flexo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food processing</masterLabel>
+        <translation><!-- Food processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Funct. Film&amp;Display</masterLabel>
+        <translation><!-- Funct. Film&amp;Display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ILL0-Illumination</masterLabel>
+        <translation><!-- ILL0-Illumination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ILL0-Iluminination &amp; SSL</masterLabel>
+        <translation><!-- ILL0-Iluminination &amp; SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ind. process heat</masterLabel>
+        <translation><!-- Ind. process heat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial</masterLabel>
+        <translation><!-- Industrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial laser</masterLabel>
+        <translation><!-- Industrial laser --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMP</masterLabel>
+        <translation><!-- LMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LS00-Life Sciences (Burleigh)</masterLabel>
+        <translation><!-- LS00-Life Sciences (Burleigh) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laser</masterLabel>
+        <translation><!-- Laser --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Life Sciences</masterLabel>
+        <translation><!-- Life Sciences --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lumen Dynamics</masterLabel>
+        <translation><!-- Lumen Dynamics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD00-Medical Omni</masterLabel>
+        <translation><!-- MD00-Medical Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD00-Medical Omni &amp; SSL</masterLabel>
+        <translation><!-- MD00-Medical Omni &amp; SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD00-Medical Omni &amp; X-Cite</masterLabel>
+        <translation><!-- MD00-Medical Omni &amp; X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD00-Medical Omni &amp; X-Cite &amp; SSL</masterLabel>
+        <translation><!-- MD00-Medical Omni &amp; X-Cite &amp; SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD00-Medical SSL</masterLabel>
+        <translation><!-- MD00-Medical SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD00-Medical X-CIte &amp; SSL</masterLabel>
+        <translation><!-- MD00-Medical X-CIte &amp; SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MD00-Medical X-Cite</masterLabel>
+        <translation><!-- MD00-Medical X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ML00-Multiple Market Segments Omni</masterLabel>
+        <translation><!-- ML00-Multiple Market Segments Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ML00-Multiple Market Segments Omni and X-Cite</masterLabel>
+        <translation><!-- ML00-Multiple Market Segments Omni and X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine Vision</masterLabel>
+        <translation><!-- Machine Vision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Med. Products / Pkg.</masterLabel>
+        <translation><!-- Med. Products / Pkg. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Med./Cosm. Therapy</masterLabel>
+        <translation><!-- Med./Cosm. Therapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Imaging</masterLabel>
+        <translation><!-- Medical Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Micro Optics</masterLabel>
+        <translation><!-- Micro Optics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microwave</masterLabel>
+        <translation><!-- Microwave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobility parts&amp;assy</masterLabel>
+        <translation><!-- Mobility parts&amp;assy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OE00-Optoelectronic Omni &amp; Consumer SSL</masterLabel>
+        <translation><!-- OE00-Optoelectronic Omni &amp; Consumer SSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OE00-Optoelectronics Omni</masterLabel>
+        <translation><!-- OE00-Optoelectronics Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmology</masterLabel>
+        <translation><!-- Ophthalmology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optical fiber</masterLabel>
+        <translation><!-- Optical fiber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Medical</masterLabel>
+        <translation><!-- Other Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCBs &amp; other electr.</masterLabel>
+        <translation><!-- PCBs &amp; other electr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PL00-Plastics</masterLabel>
+        <translation><!-- PL00-Plastics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR00- Analog Printing</masterLabel>
+        <translation><!-- PR00- Analog Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photography</masterLabel>
+        <translation><!-- Photography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photovoltaics</masterLabel>
+        <translation><!-- Photovoltaics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printing</masterLabel>
+        <translation><!-- Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Projection</masterLabel>
+        <translation><!-- Projection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RS00-Reseller Omni</masterLabel>
+        <translation><!-- RS00-Reseller Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RS00-Reseller X-Cite</masterLabel>
+        <translation><!-- RS00-Reseller X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SC00-Security</masterLabel>
+        <translation><!-- SC00-Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SL00-Solar Panels</masterLabel>
+        <translation><!-- SL00-Solar Panels --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SP00-Suppliers</masterLabel>
+        <translation><!-- SP00-Suppliers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR00-Sales Representative</masterLabel>
+        <translation><!-- SR00-Sales Representative --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety &amp; Security</masterLabel>
+        <translation><!-- Safety &amp; Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semiconductor</masterLabel>
+        <translation><!-- Semiconductor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TL00-Telecom</masterLabel>
+        <translation><!-- TL00-Telecom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UN00-University Omni &amp; X-Cite</masterLabel>
+        <translation><!-- UN00-University Omni &amp; X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VMS</masterLabel>
+        <translation><!-- VMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor</masterLabel>
+        <translation><!-- Vendor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X-Ray</masterLabel>
+        <translation><!-- X-Ray --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>soluva</masterLabel>
+        <translation><!-- soluva --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>water treatment</masterLabel>
+        <translation><!-- water treatment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

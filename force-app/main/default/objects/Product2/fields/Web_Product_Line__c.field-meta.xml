@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Web_Product_Line__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(or(left( qad_pt_part__c ,3)=&quot;805&quot;,left(qad_pt_part__c ,3)=&quot;806&quot;),&quot;Light Guide&quot;,TEXT( LDGI_Record_Type__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The is for Service Web requests only</inlineHelpText>
+    <label>Web Product Line</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

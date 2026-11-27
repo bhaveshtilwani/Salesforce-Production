@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Shipped_Required__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(and(isnull(Ops_Hold_Original_Ship_Date__c),Not(isnull(Date_Shipped__c))),Date_Shipped__c - QAD_Required_Date__c, Date_Shipped__c - Ops_Hold_Original_Ship_Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date Shipped - Required</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

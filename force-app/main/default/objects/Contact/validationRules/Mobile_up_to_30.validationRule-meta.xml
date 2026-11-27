@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_up_to_30</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (LEN(MobilePhone) &gt; 30, (
+OR(Account.RecordType.Name = &quot;SAP Germany&quot;, Account.RecordType.Name = &quot;SAP NA Montreal&quot;, 
+Account.RecordType.Name = &quot;SAP Asia&quot;,
+Account.RecordType.Name = &quot;SAP NA Salem/MIA&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>MobilePhone</errorDisplayField>
+    <errorMessage>Mobile can&apos;t exceed 30 characters</errorMessage>
+</ValidationRule>

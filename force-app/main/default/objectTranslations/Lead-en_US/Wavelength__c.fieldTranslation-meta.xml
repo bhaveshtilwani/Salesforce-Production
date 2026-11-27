@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Wavelength --></label>
+    <name>Wavelength__c</name>
+    <picklistValues>
+        <masterLabel>280nm</masterLabel>
+        <translation><!-- 280nm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>340nm</masterLabel>
+        <translation><!-- 340nm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>365nm</masterLabel>
+        <translation><!-- 365nm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>385nm</masterLabel>
+        <translation><!-- 385nm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>395nm</masterLabel>
+        <translation><!-- 395nm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,201 @@
+<SCRIPT language=javascript type=text/javascript> 
+function redirects()
+{
+window.parent.location.href = "https://na3.salesforce.com/servlet/servlet.Integration?lid=01r500000005K3g"; 
+window.parent.document.lcreation.submit();
+}
+</SCRIPT>
+
+
+<!------------------ Sample HTML -----------------
+    Notes to webmaster:
+
+    Please add the following line to the <HEAD> element of your Online Lead Capture page. If necessary, modify the "charset=UTF-8" parameter to specify the character set of your HTML page. If you are not sure which character set to use, do not modify the line before adding it to your page.
+
+     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+------------------->
+<form action="http://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method = "POST"> 
+
+<!------------------
+    This HTML is defaulted to DEBUG mode so that your web master can test the online Web-to-Lead page from the desktop.  Once your web master has finished testing please remember to remove the entire "debug" and "debugEmail" lines of code prior to adding this HTML to your website. 
+
+<input type="hidden" name="debug" value=1>
+<input type="hidden" name="debugEmail" value="pramod.patil@perkinelmer.com">
+------------------->
+
+<input type=hidden name="oid" value="00D300000000W1h">
+<input type=hidden name="retURL" value="www.yahoo.com">
+
+<label for="salutation">Salutation</label><select  id="salutation" name="salutation"><option value="">--None--</option><option value="Mr.">Mr.</option>
+<option value="Ms.">Ms.</option>
+<option value="Mrs.">Mrs.</option>
+<option value="Dr.">Dr.</option>
+<option value="Prof.">Prof.</option>
+</select><br>
+
+<label for="first_name">First Name</label><input  maxlength="40" type="text" id="first_name" size="20" name="first_name"><br>
+
+<label for="last_name">Last Name</label><input  maxlength="40" type="text" id="last_name" size="20" name="last_name"><br>
+
+<label for="title">Title</label><input  maxlength="80" type="text" id="title" size="20" name="title"><br>
+
+<label for="company">Company</label><input  maxlength="80" type="text" id="company" size="20" name="company"><br>
+
+<label for="URL">Website</label><input  maxlength="80" type="text" id="URL" size="20" name="URL"><br>
+
+<label for="email">Email</label><input  maxlength="80" type="text" id="email" size="20" name="email"><br>
+
+<label for="phone">Phone</label><input  maxlength="40" type="text" id="phone" size="20" name="phone"><br>
+
+<label for="fax">Fax</label><input  maxlength="40" type="text" id="fax" size="20" name="fax"><br>
+
+<label for="mobile">Mobile Phone</label><input  maxlength="40" type="text" id="mobile" size="20" name="mobile"><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+<label for="street">Address</label><textarea name="street"></textarea><br>
+
+<label for="city">City</label><input  maxlength="40" type="text" id="city" size="20" name="city"><br>
+
+<label for="state">State/Province</label><input  maxlength="20" type="text" id="state" size="20" name="state"><br>
+
+<label for="zip">Zip</label><input  maxlength="20" type="text" id="zip" size="20" name="zip"><br>
+
+<label for="country">Country</label><input  maxlength="40" type="text" id="country" size="20" name="country"><br>
+
+<label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Advertisement">Advertisement</option>
+<option value="Direct From Sales">Direct From Sales</option>
+<option value="External Referral">External Referral</option>
+<option value="Other">Other</option>
+<option value="Partner">Partner</option>
+<option value="Public Relations">Public Relations</option>
+<option value="Sales Referral">Sales Referral</option>
+<option value="Seminar - Internal">Seminar - Internal</option>
+<option value="Seminar - Partner">Seminar - Partner</option>
+<option value="Trade Show">Trade Show</option>
+<option value="Trade Show - Lightfair 06">Trade Show - Lightfair 06</option>
+<option value="Web">Web</option>
+<option value="Word of mouth">Word of mouth</option>
+<option value="Electronica 2006">Electronica 2006</option>
+</select><br>
+
+<label for="industry">Industry</label><select  id="industry" name="industry"><option value="">--None--</option><option value="Adhesives and sealants">Adhesives and sealants</option>
+<option value="Agriculture">Agriculture</option>
+<option value="Apparel">Apparel</option>
+<option value="Automotive">Automotive</option>
+<option value="Banking">Banking</option>
+<option value="Biotechnology">Biotechnology</option>
+<option value="Chemicals">Chemicals</option>
+<option value="Communications">Communications</option>
+<option value="Construction">Construction</option>
+<option value="Consulting">Consulting</option>
+<option value="Education">Education</option>
+<option value="Electronics">Electronics</option>
+<option value="Energy">Energy</option>
+<option value="Engineering">Engineering</option>
+<option value="Entertainment">Entertainment</option>
+<option value="Environmental">Environmental</option>
+<option value="Finance">Finance</option>
+<option value="Food & Beverage">Food & Beverage</option>
+<option value="Government">Government</option>
+<option value="Healthcare">Healthcare</option>
+<option value="Hospitality">Hospitality</option>
+<option value="Insurance">Insurance</option>
+<option value="Machinery">Machinery</option>
+<option value="Manufacturing">Manufacturing</option>
+<option value="Media">Media</option>
+<option value="Not For Profit">Not For Profit</option>
+<option value="Recreation">Recreation</option>
+<option value="Retail">Retail</option>
+<option value="Shipping">Shipping</option>
+<option value="Technology">Technology</option>
+<option value="Telecommunications">Telecommunications</option>
+<option value="Transportation">Transportation</option>
+<option value="Utilities">Utilities</option>
+<option value="Other">Other</option>
+<option value="Aerospace">Aerospace</option>
+</select><br>
+
+<label for="rating">Rating</label><select  id="rating" name="rating"><option value="">--None--</option><option value="Hot">Hot</option>
+<option value="Warm">Warm</option>
+<option value="Cold">Cold</option>
+<option value="Dead">Dead</option>
+</select><br>
+
+<label for="revenue">Annual Revenue</label><input  type="text" id="revenue" size="20" name="revenue" /><br>
+
+<label for="employees">Employees</label><input  value="" type="text" id="employees" size="20" name="employees" /><br>
+
+<label for="Campaign_ID">Campaign</label><select  id="Campaign_ID" name="Campaign_ID"><option value="">--None--</option><option value="701300000003fiu">test</option>
+</select><br>
+
+<input type="hidden"  id="member_status" name="member_status" value="">
+
+<label for="emailOptOut">Email Opt Out</label><input  value="1" type="checkbox" id="emailOptOut" name="emailOptOut" /><label for="emailOptOut">Email Opt Out</label><br>
+
+<label for="faxOptOut">Fax Opt Out</label><input  value="1" type="checkbox" id="faxOptOut" name="faxOptOut" /><label for="faxOptOut">Fax Opt Out</label><br>
+
+<label for="doNotCall">Do Not Call</label><input  value="1" type="checkbox" id="doNotCall" name="doNotCall" /><label for="doNotCall">Do Not Call</label><br>
+
+Product Line:<select  title="Product Line" id="00N30000000m1wv" name="00N30000000m1wv"><option value="">--None--</option><option value="Biomedical">Biomedical</option>
+<option value="Industrial">Industrial</option>
+<option value="Medical Imaging">Medical Imaging</option>
+<option value="Mil/Aero/Gov">Mil/Aero/Gov</option>
+<option value="Consumer Electronics">Consumer Electronics</option>
+</select><br>
+
+OEM/ODM/Distributor:<select  title="OEM/ODM/Distributor" id="00N30000000j0Ca" name="00N30000000j0Ca"><option value="">--None--</option><option value="None">None</option>
+<option value="OEM">OEM</option>
+<option value="ODM">ODM</option>
+<option value="Distributor">Distributor</option>
+</select><br>
+
+Sales Team:<select  title="Sales Team" id="00N30000000m1x1" name="00N30000000m1x1"><option value="">--None--</option><option value="Aerospace">Aerospace</option>
+<option value="Biomedical">Biomedical</option>
+<option value="Industrial Imaging">Industrial Imaging</option>
+<option value="Industrial Lighting">Industrial Lighting</option>
+<option value="Industrial Sensors">Industrial Sensors</option>
+<option value="Lithography">Lithography</option>
+<option value="Telecom">Telecom</option>
+<option value="Unknown Team">Unknown Team</option>
+</select><br>
+
+From Lead:<input  value="1" type="checkbox" id="00N30000000moKv" name="00N30000000moKv" /><label for="00N30000000moKv">From Lead</label><br>
+
+Product Family:<select  title="Product Family" id="00N30000000m1wy" name="00N30000000m1wy"><option value="">--None--</option><option value="Analytical Subsystems">Analytical Subsystems</option>
+<option value="CCD">CCD</option>
+<option value="CPM">CPM</option>
+<option value="SPCM">SPCM</option>
+<option value="Molecular Imaging">Molecular Imaging</option>
+<option value="High Performance">High Performance</option>
+<option value="Industrial Flash">Industrial Flash</option>
+<option value="IRD">IRD</option>
+<option value="Photocells">Photocells</option>
+<option value="Photodiodes">Photodiodes</option>
+<option value="Photodiodes Array">Photodiodes Array</option>
+<option value="Photoflash">Photoflash</option>
+<option value="Photonics Flash">Photonics Flash</option>
+<option value="Thermopile">Thermopile</option>
+<option value="Video Cermax">Video Cermax</option>
+<option value="aSi - GE">aSi - GE</option>
+<option value="aSi - PKI">aSi - PKI</option>
+<option value="Cermax Equipment">Cermax Equipment</option>
+<option value="Cermax Lamps">Cermax Lamps</option>
+<option value="Image Tubes">Image Tubes</option>
+<option value="Medical Sensors">Medical Sensors</option>
+<option value="Energetic Systems">Energetic Systems</option>
+<option value="Industrial Components">Industrial Components</option>
+<option value="Mil/Aero CCD">Mil/Aero CCD</option>
+<option value="Mil/Aero/ Sensors">Mil/Aero/ Sensors</option>
+<option value="Military Lighting">Military Lighting</option>
+<option value="Power Supplies">Power Supplies</option>
+<option value="Systems">Systems</option>
+<option value="LED Solutions">LED Solutions</option>
+<option value="Photoflash Digital">Photoflash Digital</option>
+<option value="Photoflash Film">Photoflash Film</option>
+<option value="Flash Modules">Flash Modules</option>
+</select><br>
+
+<input type="submit" name="submit" onClick="window.parent.location.href = https://na3.salesforce.com/servlet/servlet.Integration?lid=01r500000005K3g;">
+
+</form>

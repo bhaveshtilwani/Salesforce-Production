@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Location_is_Not_Applicable</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Order.Site__c , &quot;Salem&quot;)
+&amp;&amp; NOT(ISBLANK( Storage_Location__c ))) ||
+AND(ISPICKVAL(Order.Site__c , &quot;Miamisburg&quot;)
+&amp;&amp; NOT(ISBLANK( Storage_Location__c ))) ||
+AND(ISPICKVAL(Order.Site__c , &quot;Montreal&quot;)
+&amp;&amp; NOT(ISBLANK( Storage_Location__c )))</errorConditionFormula>
+    <errorDisplayField>Storage_Location__c</errorDisplayField>
+    <errorMessage>Storage Location is Not Applicable.</errorMessage>
+</ValidationRule>

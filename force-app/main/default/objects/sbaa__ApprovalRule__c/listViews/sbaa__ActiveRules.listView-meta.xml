@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sbaa__ActiveRules</fullName>
+    <columns>NAME</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>sbaa__ConditionsMet__c</columns>
+    <columns>sbaa__ApprovalStep__c</columns>
+    <columns>sbaa__Approver__c</columns>
+    <columns>sbaa__ApprovalRecipients__c</columns>
+    <columns>sbaa__RejectionRecipients__c</columns>
+    <columns>sbaa__Active__c</columns>
+    <columns>sbaa__AdvancedCondition__c</columns>
+    <columns>sbaa__ApprovalTemplate__c</columns>
+    <columns>sbaa__RecallTemplate__c</columns>
+    <columns>sbaa__RejectionTemplate__c</columns>
+    <columns>sbaa__RequestTemplate__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Active Rules</label>
+</ListView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_to_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Ship To Name: Parent Account ID Quote: Sold To Name
+Ship To Name: Account ID Quote: Sold To Name</description>
+    <inlineHelpText>This is the Name given for the location the items will be shipped to. It may be different from both Sold to and Bill to addresses.
+This field will default to the Sold to name if left blank.</inlineHelpText>
+    <label>Ship to Name</label>
+    <lookupFilter>
+        <active>false</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <filterItems>
+            <field>Account.Add_Ref__c</field>
+            <operation>equals</operation>
+            <valueField>Account.AccountNumber</valueField>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Orders (Ship to Name)</relationshipLabel>
+    <relationshipName>Orders6</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

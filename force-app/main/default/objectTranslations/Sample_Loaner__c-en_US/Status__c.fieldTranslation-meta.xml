@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation><!-- Closed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Declined</masterLabel>
+        <translation><!-- Declined --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Booked</masterLabel>
+        <translation><!-- Order Booked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purchased</masterLabel>
+        <translation><!-- Purchased --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reopened</masterLabel>
+        <translation><!-- Reopened --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested</masterLabel>
+        <translation><!-- Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Returned</masterLabel>
+        <translation><!-- Returned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipped</masterLabel>
+        <translation><!-- Shipped --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

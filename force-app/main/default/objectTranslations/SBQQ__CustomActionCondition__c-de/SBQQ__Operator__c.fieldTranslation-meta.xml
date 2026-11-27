@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;WÃ¤hlen Sie den Operator aus, der beim Vergleich von &quot;&quot;Feld&quot;&quot; mit &quot;&quot;Wert&quot;&quot; verwendet werden soll.&quot;</help>
+    <label><!-- Operator --></label>
+    <name>SBQQ__Operator__c</name>
+    <picklistValues>
+        <masterLabel>contains</masterLabel>
+        <translation>enthÃ¤lt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ends with</masterLabel>
+        <translation>endet auf</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>equals</masterLabel>
+        <translation>gleich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>greater or equals</masterLabel>
+        <translation>grÃ¶ÃŸer oder gleich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>greater than</masterLabel>
+        <translation>grÃ¶ÃŸer als</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>less or equals</masterLabel>
+        <translation>kleiner oder gleich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>less than</masterLabel>
+        <translation>kleiner als</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>not equals</masterLabel>
+        <translation>ungleich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>starts with</masterLabel>
+        <translation>beginnt mit</translation>
+    </picklistValues>
+</CustomFieldTranslation>

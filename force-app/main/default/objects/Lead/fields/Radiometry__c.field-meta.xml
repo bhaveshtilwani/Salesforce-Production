@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Radiometry__c</fullName>
+    <label>Radiometry</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cure Ring Radiometer</fullName>
+                <default>false</default>
+                <label>Cure Ring Radiometer</label>
+            </value>
+            <value>
+                <fullName>Cure Site Radiometer</fullName>
+                <default>false</default>
+                <label>Cure Site Radiometer</label>
+            </value>
+            <value>
+                <fullName>LED Light Meter</fullName>
+                <default>false</default>
+                <label>LED Light Meter</label>
+            </value>
+            <value>
+                <fullName>Radiometer R2000</fullName>
+                <default>false</default>
+                <label>Radiometer R2000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

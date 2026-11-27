@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_City_Character_Limit</fullName>
+    <active>true</active>
+    <description>For SAP NA and Germany billing citymust be 35 characters long or less.</description>
+    <errorConditionFormula>AND(
+    $User.Alias&lt;&gt; &quot;sconn&quot;,
+
+    OR(
+        AND(
+            LEN(BillingCity) &gt; 35,
+OR(
+RecordType.Name = &quot;SAP Germany&quot;, 
+RecordType.Name = &quot;SAP NA Montreal&quot;, 
+RecordType.Name = &quot;SAP Asia&quot;,
+RecordType.Name = &quot;S4 - Boulder&quot;,
+                RecordType.Name = &quot;SAP NA Salem/MIA&quot;
+)
+        ),
+
+AND(
+LEN(BillingCity) &gt; 20,
+RecordType.Name = &quot;QAD - LDGI&quot;
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>BillingCity</errorDisplayField>
+    <errorMessage>City for SAP sites must be 35 characters or less.</errorMessage>
+</ValidationRule>

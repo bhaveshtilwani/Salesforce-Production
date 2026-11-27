@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Damage Code Group --></label>
+    <name>Damage_Code_Groups__c</name>
+    <picklistValues>
+        <masterLabel>IP_EIR_Assembly</masterLabel>
+        <translation><!-- IP_EIR_Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP_EIR_Body</masterLabel>
+        <translation><!-- IP_EIR_Body --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP_EIR_Coating</masterLabel>
+        <translation><!-- IP_EIR_Coating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP_EIR_Connection</masterLabel>
+        <translation><!-- IP_EIR_Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP_EIR_Filament</masterLabel>
+        <translation><!-- IP_EIR_Filament --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP_EIR_Function</masterLabel>
+        <translation><!-- IP_EIR_Function --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP_EIR_Packaging</masterLabel>
+        <translation><!-- IP_EIR_Packaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IP_EIR_unascertainable</masterLabel>
+        <translation><!-- IP_EIR_unascertainable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_D-lamp</masterLabel>
+        <translation><!-- OF_A_D-lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_Fiberlight module</masterLabel>
+        <translation><!-- OF_A_Fiberlight module --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_Hollow cathode lamp</masterLabel>
+        <translation><!-- OF_A_Hollow cathode lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_Mercury_lamp</masterLabel>
+        <translation><!-- OF_A_Mercury_lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_Nox / Nox module</masterLabel>
+        <translation><!-- OF_A_Nox / Nox module --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_PID_lamp</masterLabel>
+        <translation><!-- OF_A_PID_lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_Power supply</masterLabel>
+        <translation><!-- OF_A_Power supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_Tungsten_Halogen_lamp</masterLabel>
+        <translation><!-- OF_A_Tungsten_Halogen_lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_Xenon flash module</masterLabel>
+        <translation><!-- OF_A_Xenon flash module --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OF_A_Xenon_flash_lamp</masterLabel>
+        <translation><!-- OF_A_Xenon_flash_lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVD_ED_Coating</masterLabel>
+        <translation><!-- UVD_ED_Coating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVD_ED_Electrode</masterLabel>
+        <translation><!-- UVD_ED_Electrode --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_ED_Assembly</masterLabel>
+        <translation><!-- UVP_ED_Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_ED_Body</masterLabel>
+        <translation><!-- UVP_ED_Body --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_ED_Connection</masterLabel>
+        <translation><!-- UVP_ED_Connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_ED_Function</masterLabel>
+        <translation><!-- UVP_ED_Function --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_ED_Packaging</masterLabel>
+        <translation><!-- UVP_ED_Packaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_ED_unascertainable</masterLabel>
+        <translation><!-- UVP_ED_unascertainable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_LED_Chiller UV5000x Series</masterLabel>
+        <translation><!-- UVP_LED_Chiller UV5000x Series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_LED_Control Cabinet UV5000x Series</masterLabel>
+        <translation><!-- UVP_LED_Control Cabinet UV5000x Series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_LED_System</masterLabel>
+        <translation><!-- UVP_LED_System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_LED_UV5000x Series</masterLabel>
+        <translation><!-- UVP_LED_UV5000x Series --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_Conveyor</masterLabel>
+        <translation><!-- UVP_MW_Conveyor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_F300S</masterLabel>
+        <translation><!-- UVP_MW_F300S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_F450T</masterLabel>
+        <translation><!-- UVP_MW_F450T --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_F500S</masterLabel>
+        <translation><!-- UVP_MW_F500S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_F600S</masterLabel>
+        <translation><!-- UVP_MW_F600S --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_LH10</masterLabel>
+        <translation><!-- UVP_MW_LH10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_LH6</masterLabel>
+        <translation><!-- UVP_MW_LH6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_LHI10 Mark II</masterLabel>
+        <translation><!-- UVP_MW_LHI10 Mark II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_LHI10 Mark III</masterLabel>
+        <translation><!-- UVP_MW_LHI10 Mark III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_LHI6 Mark II</masterLabel>
+        <translation><!-- UVP_MW_LHI6 Mark II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_LHP10 Mark II</masterLabel>
+        <translation><!-- UVP_MW_LHP10 Mark II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_LHP10 Mark III</masterLabel>
+        <translation><!-- UVP_MW_LHP10 Mark III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_LHP6 Mark II</masterLabel>
+        <translation><!-- UVP_MW_LHP6 Mark II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UVP_MW_VPS</masterLabel>
+        <translation><!-- UVP_MW_VPS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>01 - Call</fullName>
+        <default>false</default>
+        <label>01 - Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>02 - Cold Call</fullName>
+        <default>false</default>
+        <label>02 - Cold Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>04 - Email</fullName>
+        <default>false</default>
+        <label>04 - Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>06 - Meeting</fullName>
+        <default>false</default>
+        <label>06 - Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>09 - To-do</fullName>
+        <default>false</default>
+        <label>09 - To-do</label>
+    </standardValue>
+    <standardValue>
+        <fullName>11 - Other</fullName>
+        <default>false</default>
+        <label>11 - Other</label>
+    </standardValue>
+</StandardValueSet>

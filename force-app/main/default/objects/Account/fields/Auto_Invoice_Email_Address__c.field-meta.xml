@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Invoice_Email_Address__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This field must be entered by accounting to cm_chr04 in QAD by using 2.1.11 which instructs the Invoice Email program to send electronic emails for this customer.</inlineHelpText>
+    <label>Auto Invoice Email Address</label>
+    <length>55</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

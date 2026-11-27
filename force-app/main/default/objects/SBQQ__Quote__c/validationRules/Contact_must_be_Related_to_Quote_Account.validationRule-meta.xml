@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_must_be_Related_to_Quote_Account</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+    ISBLANK(SBQQ__PrimaryContact__c),
+    SBQQ__Account__c &lt;&gt; SBQQ__PrimaryContact__r.AccountId
+)</errorConditionFormula>
+    <errorDisplayField>SBQQ__PrimaryContact__c</errorDisplayField>
+    <errorMessage>The Primary Contact is a required field and it must be a Contact that is related to the Account on the Quote. Please update the value of this field.</errorMessage>
+</ValidationRule>

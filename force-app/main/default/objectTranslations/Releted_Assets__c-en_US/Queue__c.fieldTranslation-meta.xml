@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Queue --></label>
+    <name>Queue__c</name>
+    <picklistValues>
+        <masterLabel>Awaiting Return (Inventory)</masterLabel>
+        <translation><!-- Awaiting Return (Inventory) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Return (Non-Inventory)</masterLabel>
+        <translation><!-- Awaiting Return (Non-Inventory) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call Cancelled</masterLabel>
+        <translation><!-- Call Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completed</masterLabel>
+        <translation><!-- Completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Hold</masterLabel>
+        <translation><!-- Customer Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluated and Quoted</masterLabel>
+        <translation><!-- Evaluated and Quoted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Hold</masterLabel>
+        <translation><!-- Internal Hold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO Approved</masterLabel>
+        <translation><!-- PO Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Received</masterLabel>
+        <translation><!-- Received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repaired Under Risk</masterLabel>
+        <translation><!-- Repaired Under Risk --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

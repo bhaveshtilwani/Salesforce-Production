@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acct_at_Customer__c</fullName>
+    <description>This is used by the Montreal site for planning to identify who the order belongs to</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the initials of the customer service responsible.</inlineHelpText>
+    <label>Acct at Customer</label>
+    <length>12</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

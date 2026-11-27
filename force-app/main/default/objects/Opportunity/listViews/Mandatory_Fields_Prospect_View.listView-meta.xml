@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mandatory_Fields_Prospect_View</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>Full_Production_Annual_Value__c</columns>
+    <columns>Full_Production_Value_Range__c</columns>
+    <columns>Revenue_Forecast_Year_1__c</columns>
+    <columns>Revenue_Forecast_Year_2__c</columns>
+    <columns>Revenue_Forecast_Year_3__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Product_Line__c</columns>
+    <columns>Product_Family__c</columns>
+    <columns>Application_Picklist__c</columns>
+    <columns>OPPORTUNITY.NEXT_STEP</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>contains</operation>
+        <value>1 - Opportunity Validation,2 - Requirement Definition/Technical Evl,3 - Techni</value>
+    </filters>
+    <label>Mandatory Fields Prospect View</label>
+</ListView>

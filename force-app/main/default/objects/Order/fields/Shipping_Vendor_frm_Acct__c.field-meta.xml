@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Vendor_frm_Acct__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Add DT at end of pays own Duties &amp; Taxes
+FDX EXP
+FDX EXP COL
+FDX P1 PPD
+FDX P1 COL
+FDX P1 3rd
+FDX Intl Eco PPD
+FDX Intl Eco Col
+FDX Intl Eco 3rd
+FDX GD PPD
+FDX GD COL
+FDX GD 3rd
+FDX 2D (CAN)
+FDX 2D COL (CAN)
+UPS Exp COL = Red
+UPS Saver COL
+UPS Expedited COL
+UPS 3 Day COL
+UPS GD COL
+LDGI Pays
+Other</inlineHelpText>
+    <label>Shipping Vendor</label>
+    <length>20</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

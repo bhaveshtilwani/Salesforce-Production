@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Germany_Division__c</fullName>
+    <label>Germany Division</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PVS (10)</fullName>
+                <default>false</default>
+                <label>PVS (10)</label>
+            </value>
+            <value>
+                <fullName>PVS Aufnahme (11)</fullName>
+                <default>false</default>
+                <label>PVS Aufnahme (11)</label>
+            </value>
+            <value>
+                <fullName>PVS Vergröß. (12)</fullName>
+                <default>false</default>
+                <label>PVS Vergröß. (12)</label>
+            </value>
+            <value>
+                <fullName>PVS Repro (13)</fullName>
+                <default>false</default>
+                <label>PVS Repro (13)</label>
+            </value>
+            <value>
+                <fullName>Objektiv Bildverarb (14)</fullName>
+                <default>false</default>
+                <label>Objektiv Bildverarb (14)</label>
+            </value>
+            <value>
+                <fullName>Farbfilter (18)</fullName>
+                <default>false</default>
+                <label>Farbfilter (18)</label>
+            </value>
+            <value>
+                <fullName>PVS E-Teile (19)</fullName>
+                <default>false</default>
+                <label>PVS E-Teile (19)</label>
+            </value>
+            <value>
+                <fullName>Industrie-Optik (20)</fullName>
+                <default>false</default>
+                <label>Industrie-Optik (20)</label>
+            </value>
+            <value>
+                <fullName>Medical Technology (21)</fullName>
+                <default>false</default>
+                <label>Medical Technology (21)</label>
+            </value>
+            <value>
+                <fullName>Laser/Imaging Syst. (22)</fullName>
+                <default>false</default>
+                <label>Laser/Imaging Syst. (22)</label>
+            </value>
+            <value>
+                <fullName>Systems Technologies (23)</fullName>
+                <default>false</default>
+                <label>Systems Technologies (23)</label>
+            </value>
+            <value>
+                <fullName>Diagnostic Systems (24)</fullName>
+                <default>false</default>
+                <label>Diagnostic Systems (24)</label>
+            </value>
+            <value>
+                <fullName>CinTec (25)</fullName>
+                <default>false</default>
+                <label>CinTec (25)</label>
+            </value>
+            <value>
+                <fullName>Optical Metrology (26)</fullName>
+                <default>false</default>
+                <label>Optical Metrology (26)</label>
+            </value>
+            <value>
+                <fullName>Precision Opt.Comp. (27)</fullName>
+                <default>false</default>
+                <label>Precision Opt.Comp. (27)</label>
+            </value>
+            <value>
+                <fullName>Bio Photonics (28)</fullName>
+                <default>false</default>
+                <label>Bio Photonics (28)</label>
+            </value>
+            <value>
+                <fullName>Meßtechnik (30)</fullName>
+                <default>false</default>
+                <label>Meßtechnik (30)</label>
+            </value>
+            <value>
+                <fullName>0400/FW (31)</fullName>
+                <default>false</default>
+                <label>0400/FW (31)</label>
+            </value>
+            <value>
+                <fullName>0400/Photoc/Vactrol (32)</fullName>
+                <default>false</default>
+                <label>0400/Photoc/Vactrol (32)</label>
+            </value>
+            <value>
+                <fullName>0400/Pyroelecc Sen (35)</fullName>
+                <default>false</default>
+                <label>0400/Pyroelecc Sen (35)</label>
+            </value>
+            <value>
+                <fullName>0400/TPS/TPM (38)</fullName>
+                <default>false</default>
+                <label>0400/TPS/TPM (38)</label>
+            </value>
+            <value>
+                <fullName>C40 Operations Munic (40)</fullName>
+                <default>false</default>
+                <label>C40 Operations Munic (40)</label>
+            </value>
+            <value>
+                <fullName>C40 Operations Regen (41)</fullName>
+                <default>false</default>
+                <label>C40 Operations Regen (41)</label>
+            </value>
+            <value>
+                <fullName>C40 Prod.Auslast.Sys (42)</fullName>
+                <default>false</default>
+                <label>C40 Prod.Auslast.Sys (42)</label>
+            </value>
+            <value>
+                <fullName>C40 Prod.Auslast.Mec (43)</fullName>
+                <default>false</default>
+                <label>C40 Prod.Auslast.Mec (43)</label>
+            </value>
+            <value>
+                <fullName>C40 Prod.Auslast.Obe (44)</fullName>
+                <default>false</default>
+                <label>C40 Prod.Auslast.Obe (44)</label>
+            </value>
+            <value>
+                <fullName>GRIG (50)</fullName>
+                <default>false</default>
+                <label>GRIG (50)</label>
+            </value>
+            <value>
+                <fullName>Crystal Technology (60)</fullName>
+                <default>false</default>
+                <label>Crystal Technology (60)</label>
+            </value>
+            <value>
+                <fullName>0200 Soutions (Wheel (62)</fullName>
+                <default>false</default>
+                <label>0200 Soutions (Wheel (62)</label>
+            </value>
+            <value>
+                <fullName>0400/Reticon (70)</fullName>
+                <default>false</default>
+                <label>0400/Reticon (70)</label>
+            </value>
+            <value>
+                <fullName>0400/IC Sensors (71)</fullName>
+                <default>false</default>
+                <label>0400/IC Sensors (71)</label>
+            </value>
+            <value>
+                <fullName>0400/HPD (72)</fullName>
+                <default>false</default>
+                <label>0400/HPD (72)</label>
+            </value>
+            <value>
+                <fullName>0400/EOD Salem (73)</fullName>
+                <default>false</default>
+                <label>0400/EOD Salem (73)</label>
+            </value>
+            <value>
+                <fullName>0400/Vactec (74)</fullName>
+                <default>false</default>
+                <label>0400/Vactec (74)</label>
+            </value>
+            <value>
+                <fullName>0400/Judson (75)</fullName>
+                <default>false</default>
+                <label>0400/Judson (75)</label>
+            </value>
+            <value>
+                <fullName>0400/ORC-EPD (76)</fullName>
+                <default>false</default>
+                <label>0400/ORC-EPD (76)</label>
+            </value>
+            <value>
+                <fullName>0400/ILC (77)</fullName>
+                <default>false</default>
+                <label>0400/ILC (77)</label>
+            </value>
+            <value>
+                <fullName>0400/ORC-Lighting (78)</fullName>
+                <default>false</default>
+                <label>0400/ORC-Lighting (78)</label>
+            </value>
+            <value>
+                <fullName>0400/Voltarc (79)</fullName>
+                <default>false</default>
+                <label>0400/Voltarc (79)</label>
+            </value>
+            <value>
+                <fullName>0200 Roche (80)</fullName>
+                <default>false</default>
+                <label>0200 Roche (80)</label>
+            </value>
+            <value>
+                <fullName>0200 Standard (81)</fullName>
+                <default>false</default>
+                <label>0200 Standard (81)</label>
+            </value>
+            <value>
+                <fullName>0200 Kundensp. Teile (82)</fullName>
+                <default>false</default>
+                <label>0200 Kundensp. Teile (82)</label>
+            </value>
+            <value>
+                <fullName>0200 Zw.-/Intra Comp (84)</fullName>
+                <default>false</default>
+                <label>0200 Zw.-/Intra Comp (84)</label>
+            </value>
+            <value>
+                <fullName>0200 Allg. Rohmat. (85)</fullName>
+                <default>false</default>
+                <label>0200 Allg. Rohmat. (85)</label>
+            </value>
+            <value>
+                <fullName>0200 Wallac (87)</fullName>
+                <default>false</default>
+                <label>0200 Wallac (87)</label>
+            </value>
+            <value>
+                <fullName>HL Göttingen (91)</fullName>
+                <default>false</default>
+                <label>HL Göttingen (91)</label>
+            </value>
+            <value>
+                <fullName>LINOS France (92)</fullName>
+                <default>false</default>
+                <label>LINOS France (92)</label>
+            </value>
+            <value>
+                <fullName>C10 Photo (A1)</fullName>
+                <default>false</default>
+                <label>C10 Photo (A1)</label>
+            </value>
+            <value>
+                <fullName>C10 Printing (A2)</fullName>
+                <default>false</default>
+                <label>C10 Printing (A2)</label>
+            </value>
+            <value>
+                <fullName>C10 Printing (A3)</fullName>
+                <default>false</default>
+                <label>C10 Printing (A3)</label>
+            </value>
+            <value>
+                <fullName>C20 X-Ray Imaging (B1)</fullName>
+                <default>false</default>
+                <label>C20 X-Ray Imaging (B1)</label>
+            </value>
+            <value>
+                <fullName>C70 Ophthalmology (B2)</fullName>
+                <default>false</default>
+                <label>C70 Ophthalmology (B2)</label>
+            </value>
+            <value>
+                <fullName>C10 LMP (C1)</fullName>
+                <default>false</default>
+                <label>C10 LMP (C1)</label>
+            </value>
+            <value>
+                <fullName>D10 Defense (D1)</fullName>
+                <default>false</default>
+                <label>D10 Defense (D1)</label>
+            </value>
+            <value>
+                <fullName>D20 Display (D2)</fullName>
+                <default>false</default>
+                <label>D20 Display (D2)</label>
+            </value>
+            <value>
+                <fullName>D10 Def. Türkei (D3)</fullName>
+                <default>false</default>
+                <label>D10 Def. Türkei (D3)</label>
+            </value>
+            <value>
+                <fullName>D10 Warning (D4)</fullName>
+                <default>false</default>
+                <label>D10 Warning (D4)</label>
+            </value>
+            <value>
+                <fullName>B23 DriverAssistance (D5)</fullName>
+                <default>false</default>
+                <label>B23 DriverAssistance (D5)</label>
+            </value>
+            <value>
+                <fullName>D30 Land Equipment (D6)</fullName>
+                <default>false</default>
+                <label>D30 Land Equipment (D6)</label>
+            </value>
+            <value>
+                <fullName>C20 Dental (E1)</fullName>
+                <default>false</default>
+                <label>C20 Dental (E1)</label>
+            </value>
+            <value>
+                <fullName>B26 Produktronicsl (F1)</fullName>
+                <default>false</default>
+                <label>B26 Produktronicsl (F1)</label>
+            </value>
+            <value>
+                <fullName>C50 Vision Technolog (F2)</fullName>
+                <default>false</default>
+                <label>C50 Vision Technolog (F2)</label>
+            </value>
+            <value>
+                <fullName>B26 Opt. Met.&amp; Insp. (F3)</fullName>
+                <default>false</default>
+                <label>B26 Opt. Met.&amp; Insp. (F3)</label>
+            </value>
+            <value>
+                <fullName>C50 Semicon. Tech. (F4)</fullName>
+                <default>false</default>
+                <label>C50 Semicon. Tech. (F4)</label>
+            </value>
+            <value>
+                <fullName>Optem (F5)</fullName>
+                <default>false</default>
+                <label>Optem (F5)</label>
+            </value>
+            <value>
+                <fullName>Semi Distribution (F6)</fullName>
+                <default>false</default>
+                <label>Semi Distribution (F6)</label>
+            </value>
+            <value>
+                <fullName>C70 Biophotonics (G1)</fullName>
+                <default>false</default>
+                <label>C70 Biophotonics (G1)</label>
+            </value>
+            <value>
+                <fullName>C20 Advanced Endo (G2)</fullName>
+                <default>false</default>
+                <label>C20 Advanced Endo (G2)</label>
+            </value>
+            <value>
+                <fullName>C30 Res. &amp; Labor (H1)</fullName>
+                <default>false</default>
+                <label>C30 Res. &amp; Labor (H1)</label>
+            </value>
+            <value>
+                <fullName>C30 Catalog (H2)</fullName>
+                <default>false</default>
+                <label>C30 Catalog (H2)</label>
+            </value>
+            <value>
+                <fullName>C60 CT (I1)</fullName>
+                <default>false</default>
+                <label>C60 CT (I1)</label>
+            </value>
+            <value>
+                <fullName>G56 Telecom (J1)</fullName>
+                <default>false</default>
+                <label>G56 Telecom (J1)</label>
+            </value>
+            <value>
+                <fullName>E10 LED Solutions (L1)</fullName>
+                <default>false</default>
+                <label>E10 LED Solutions (L1)</label>
+            </value>
+            <value>
+                <fullName>Lasers &amp; Fibers (U0)</fullName>
+                <default>false</default>
+                <label>Lasers &amp; Fibers (U0)</label>
+            </value>
+            <value>
+                <fullName>0400/BL (W2)</fullName>
+                <default>false</default>
+                <label>0400/BL (W2)</label>
+            </value>
+            <value>
+                <fullName>0400/Photonics PHF (W3)</fullName>
+                <default>false</default>
+                <label>0400/Photonics PHF (W3)</label>
+            </value>
+            <value>
+                <fullName>0400/SMM (W4)</fullName>
+                <default>false</default>
+                <label>0400/SMM (W4)</label>
+            </value>
+            <value>
+                <fullName>0400/SPCM (W5)</fullName>
+                <default>false</default>
+                <label>0400/SPCM (W5)</label>
+            </value>
+            <value>
+                <fullName>0400/HeNe Laser (W6)</fullName>
+                <default>false</default>
+                <label>0400/HeNe Laser (W6)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Catalog Option --></label>
+    <name>Catalog_Option__c</name>
+    <picklistValues>
+        <masterLabel>Near Infrared Range - R &lt;0.5% per surface AOI = 0 Deg λ = 725 - 1050nm</masterLabel>
+        <translation><!-- Near Infrared Range - R &lt;0.5% per surface AOI = 0 Deg λ = 725 - 1050nm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reflective Aluminum  RAL (AL) - R &gt; 85% AOI = 45 Deg λ = 400nm - 700nm</masterLabel>
+        <translation><!-- Reflective Aluminum  RAL (AL) - R &gt; 85% AOI = 45 Deg λ = 400nm - 700nm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uncoated</masterLabel>
+        <translation><!-- Uncoated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VIS-IR Silver mirror RAGV - R &gt;96% 0 Deg &lt; AOI &lt; 60 Deg λ = 500nm - 12μm</masterLabel>
+        <translation><!-- VIS-IR Silver mirror RAGV - R &gt;96% 0 Deg &lt; AOI &lt; 60 Deg λ = 500nm - 12μm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visible Range - R &lt;0.5% per surface AOI = 0 Deg λ = 450 - 700nm</masterLabel>
+        <translation><!-- Visible Range - R &lt;0.5% per surface AOI = 0 Deg λ = 450 - 700nm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YAG Fundamental ARHS: R &lt;0.2% per surface AOI = 0 Deg center wavelength 1064 nm</masterLabel>
+        <translation><!-- YAG Fundamental ARHS: R &lt;0.2% per surface AOI = 0 Deg center wavelength 1064 nm --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

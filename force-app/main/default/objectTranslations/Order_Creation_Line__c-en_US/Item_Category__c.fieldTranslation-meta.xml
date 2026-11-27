@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Item Category --></label>
+    <lookupFilter>
+        <errorMessage><!-- Item Category Site must match Order Product Site --></errorMessage>
+    </lookupFilter>
+    <name>Item_Category__c</name>
+    <relationshipLabel><!-- Order Creation Lines --></relationshipLabel>
+</CustomFieldTranslation>

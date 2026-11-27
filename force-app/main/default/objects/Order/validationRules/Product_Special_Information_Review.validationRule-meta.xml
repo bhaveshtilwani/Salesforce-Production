@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Special_Information_Review</fullName>
+    <active>true</active>
+    <description>If there is any product with special information the &apos;Product Information Reviewed&apos; checkbox must be TRUE.</description>
+    <errorConditionFormula>AND(
+Special_Information_Line_Items__c &gt;0, Product_Information_Reviewed__c = FALSE, 
+ISCHANGED(SFDC_Integration_Status__c),
+ISPICKVAL(SFDC_Integration_Status__c, &apos;In Progress&apos;),
+(ISPICKVAL(PRIORVALUE(SFDC_Integration_Status__c), &quot;&quot;)))</errorConditionFormula>
+    <errorMessage>Please review the products special information and then check the Product Information Reviewed box if you want to move forward in the process.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReadOnly_SAP_Asia_Order</fullName>
+    <active>true</active>
+    <description>ReadOnly_SAP_Asia_Order</description>
+    <errorConditionFormula>AND(
+  $RecordType.DeveloperName = &quot;SAP_Asia&quot;,
+  NOT(
+    OR(
+      $Profile.Name = &quot;System Administrator&quot;,
+      $Profile.Name = &quot;API/ADMIN/NON MFA&quot;
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>Orders with record type SAP Asia are read-only for your profile.</errorMessage>
+</ValidationRule>

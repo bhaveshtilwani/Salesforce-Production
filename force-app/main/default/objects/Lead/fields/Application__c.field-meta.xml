@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application__c</fullName>
+    <inlineHelpText>Please select one Application for the lead.  Minimally choose CISS - Other or LS/A - Other.  If the application is not listed contact your SFDC Administrator.</inlineHelpText>
+    <label>Application</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CISS - Aerial Imaging</fullName>
+                <default>false</default>
+                <label>CISS - Aerial Imaging</label>
+            </value>
+            <value>
+                <fullName>CISS - Appliances</fullName>
+                <default>false</default>
+                <label>CISS - Appliances</label>
+            </value>
+            <value>
+                <fullName>CISS - Automotive</fullName>
+                <default>false</default>
+                <label>CISS - Automotive</label>
+            </value>
+            <value>
+                <fullName>CISS - Colorimetry</fullName>
+                <default>false</default>
+                <label>CISS - Colorimetry</label>
+            </value>
+            <value>
+                <fullName>CISS - Consumer Electronics</fullName>
+                <default>false</default>
+                <label>CISS - Consumer Electronics</label>
+            </value>
+            <value>
+                <fullName>CISS - Curing</fullName>
+                <default>false</default>
+                <label>CISS - Curing</label>
+            </value>
+            <value>
+                <fullName>CISS - Detection</fullName>
+                <default>false</default>
+                <label>CISS - Detection</label>
+            </value>
+            <value>
+                <fullName>CISS - Drones / UAV</fullName>
+                <default>false</default>
+                <label>CISS - Drones / UAV</label>
+            </value>
+            <value>
+                <fullName>CISS - Gas Detection</fullName>
+                <default>false</default>
+                <label>CISS - Gas Detection</label>
+            </value>
+            <value>
+                <fullName>CISS - Industrial</fullName>
+                <default>false</default>
+                <label>CISS - Industrial</label>
+            </value>
+            <value>
+                <fullName>CISS - Other</fullName>
+                <default>false</default>
+                <label>CISS - Other</label>
+            </value>
+            <value>
+                <fullName>CISS - IR Detection</fullName>
+                <default>false</default>
+                <label>CISS - IR Detection</label>
+            </value>
+            <value>
+                <fullName>CISS - IR Imaging</fullName>
+                <default>false</default>
+                <label>CISS - IR Imaging</label>
+            </value>
+            <value>
+                <fullName>CISS - Laser Industry</fullName>
+                <default>false</default>
+                <label>CISS - Laser Industry</label>
+            </value>
+            <value>
+                <fullName>CISS - Laser Mtrl Proc</fullName>
+                <default>false</default>
+                <label>CISS - Laser Mtrl Proc</label>
+            </value>
+            <value>
+                <fullName>CISS - Lidar/range finding</fullName>
+                <default>false</default>
+                <label>CISS - Lidar/range finding</label>
+            </value>
+            <value>
+                <fullName>CISS - Lighting</fullName>
+                <default>false</default>
+                <label>CISS - Lighting</label>
+            </value>
+            <value>
+                <fullName>CISS - Machine Vis/Inspect</fullName>
+                <default>false</default>
+                <label>CISS - Machine Vis/Inspect</label>
+            </value>
+            <value>
+                <fullName>CISS - Motion/Presence Detection</fullName>
+                <default>false</default>
+                <label>CISS - Motion/Presence Detection</label>
+            </value>
+            <value>
+                <fullName>CISS - Optics &amp; Fabrication</fullName>
+                <default>false</default>
+                <label>CISS - Optics &amp; Fabrication</label>
+            </value>
+            <value>
+                <fullName>CISS - Photography</fullName>
+                <default>false</default>
+                <label>CISS - Photography</label>
+            </value>
+            <value>
+                <fullName>CISS - Photon Detection</fullName>
+                <default>false</default>
+                <label>CISS - Photon Detection</label>
+            </value>
+            <value>
+                <fullName>CISS - Printing</fullName>
+                <default>false</default>
+                <label>CISS - Printing</label>
+            </value>
+            <value>
+                <fullName>CISS - ResLab / Catalog</fullName>
+                <default>false</default>
+                <label>CISS - ResLab / Catalog</label>
+            </value>
+            <value>
+                <fullName>CISS - Safety Lighting</fullName>
+                <default>false</default>
+                <label>CISS - Safety Lighting</label>
+            </value>
+            <value>
+                <fullName>CISS - Safety Security</fullName>
+                <default>false</default>
+                <label>CISS - Safety Security</label>
+            </value>
+            <value>
+                <fullName>CISS - Smoke Detection</fullName>
+                <default>false</default>
+                <label>CISS - Smoke Detection</label>
+            </value>
+            <value>
+                <fullName>LS/A - Analytical</fullName>
+                <default>false</default>
+                <label>LS/A - Analytical</label>
+            </value>
+            <value>
+                <fullName>LS/A - BioMed Instr</fullName>
+                <default>false</default>
+                <label>LS/A - BioMed Instr</label>
+            </value>
+            <value>
+                <fullName>LS/A - Dental</fullName>
+                <default>false</default>
+                <label>LS/A - Dental</label>
+            </value>
+            <value>
+                <fullName>LS/A - Endoscopy</fullName>
+                <default>false</default>
+                <label>LS/A - Endoscopy</label>
+            </value>
+            <value>
+                <fullName>LS/A - Medical</fullName>
+                <default>false</default>
+                <label>LS/A - Medical</label>
+            </value>
+            <value>
+                <fullName>LS/A - Medical Imaging</fullName>
+                <default>false</default>
+                <label>LS/A - Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>LS/A - Medical Lighting</fullName>
+                <default>false</default>
+                <label>LS/A - Medical Lighting</label>
+            </value>
+            <value>
+                <fullName>LS/A - Microscopy/Fluorescence</fullName>
+                <default>false</default>
+                <label>LS/A - Microscopy/Fluorescence</label>
+            </value>
+            <value>
+                <fullName>LS/A - Ophthalmology</fullName>
+                <default>false</default>
+                <label>LS/A - Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>LS/A - Other</fullName>
+                <default>false</default>
+                <label>LS/A - Other</label>
+            </value>
+            <value>
+                <fullName>LS/A - Semiconductor</fullName>
+                <default>false</default>
+                <label>LS/A - Semiconductor</label>
+            </value>
+            <value>
+                <fullName>LS/A - Thermometry</fullName>
+                <default>false</default>
+                <label>LS/A - Thermometry</label>
+            </value>
+            <value>
+                <fullName>Customer Service - Other</fullName>
+                <default>false</default>
+                <label>Customer Service - Other</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Def/Aerosp - NO SFDC</fullName>
+                <default>false</default>
+                <label>Def/Aerosp - NO SFDC</label>
+            </value>
+            <value>
+                <fullName>C5ISR</fullName>
+                <default>false</default>
+                <label>C5ISR</label>
+            </value>
+            <value>
+                <fullName>HuD and HMD Optics</fullName>
+                <default>false</default>
+                <label>HuD and HMD Optics</label>
+            </value>
+            <value>
+                <fullName>Missiles / PGM / Missile Defense</fullName>
+                <default>false</default>
+                <label>Missiles / PGM / Missile Defense</label>
+            </value>
+            <value>
+                <fullName>Satellite</fullName>
+                <default>false</default>
+                <label>Satellite</label>
+            </value>
+            <value>
+                <fullName>Soldier Systems</fullName>
+                <default>false</default>
+                <label>Soldier Systems</label>
+            </value>
+            <value>
+                <fullName>Through Life Support</fullName>
+                <default>false</default>
+                <label>Through Life Support</label>
+            </value>
+            <value>
+                <fullName>LS/A - UVC Disinfection</fullName>
+                <default>false</default>
+                <label>LS/A - UVC Disinfection</label>
+            </value>
+            <value>
+                <fullName>Imaging - Scientific</fullName>
+                <default>false</default>
+                <label>Imaging - Scientific</label>
+            </value>
+            <value>
+                <fullName>Imaging - Intensified</fullName>
+                <default>false</default>
+                <label>Imaging - Intensified</label>
+            </value>
+            <value>
+                <fullName>Imaging - High-Speed</fullName>
+                <default>false</default>
+                <label>Imaging - High-Speed</label>
+            </value>
+            <value>
+                <fullName>Imaging - Industrial</fullName>
+                <default>false</default>
+                <label>Imaging - Industrial</label>
+            </value>
+            <value>
+                <fullName>ALS - Curing - OmniCure</fullName>
+                <default>false</default>
+                <label>ALS - Curing - OmniCure</label>
+            </value>
+            <value>
+                <fullName>ALS - Curing - Phoseon</fullName>
+                <default>false</default>
+                <label>ALS - Curing - Phoseon</label>
+            </value>
+            <value>
+                <fullName>ALS - Curing - Noblelight</fullName>
+                <default>false</default>
+                <label>ALS - Curing - Noblelight</label>
+            </value>
+            <value>
+                <fullName>ALS - Disinfection &amp; Oxidation</fullName>
+                <default>false</default>
+                <label>ALS - Disinfection &amp; Oxidation</label>
+            </value>
+            <value>
+                <fullName>ALS - IR Industrial Heating</fullName>
+                <default>false</default>
+                <label>ALS - IR Industrial Heating</label>
+            </value>
+            <value>
+                <fullName>Defense Other</fullName>
+                <default>false</default>
+                <label>Defense Other</label>
+            </value>
+            <value>
+                <fullName>Avionic HUDs</fullName>
+                <default>false</default>
+                <label>Avionic HUDs</label>
+            </value>
+            <value>
+                <fullName>Adhesion</fullName>
+                <default>false</default>
+                <label>Adhesion</label>
+            </value>
+            <value>
+                <fullName>Aesthetics</fullName>
+                <default>false</default>
+                <label>Aesthetics</label>
+            </value>
+            <value>
+                <fullName>Analog printing</fullName>
+                <default>false</default>
+                <label>Analog Printing</label>
+            </value>
+            <value>
+                <fullName>Analysis, Diagnostics &amp; Detection</fullName>
+                <default>false</default>
+                <label>Analysis, Diagnostics &amp; Detection</label>
+            </value>
+            <value>
+                <fullName>Coatings</fullName>
+                <default>false</default>
+                <label>Coatings</label>
+            </value>
+            <value>
+                <fullName>Composites</fullName>
+                <default>false</default>
+                <label>Composites</label>
+            </value>
+            <value>
+                <fullName>Converting</fullName>
+                <default>false</default>
+                <label>Converting</label>
+            </value>
+            <value>
+                <fullName>Digital printing</fullName>
+                <default>false</default>
+                <label>Digital printing</label>
+            </value>
+            <value>
+                <fullName>Disinfection</fullName>
+                <default>false</default>
+                <label>Disinfection</label>
+            </value>
+            <value>
+                <fullName>Food Processing</fullName>
+                <default>false</default>
+                <label>Food Processing</label>
+            </value>
+            <value>
+                <fullName>Heating &amp; drying</fullName>
+                <default>false</default>
+                <label>Heating &amp; Drying</label>
+            </value>
+            <value>
+                <fullName>Laser</fullName>
+                <default>false</default>
+                <label>Laser</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Oxidation</fullName>
+                <default>false</default>
+                <label>Oxidation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

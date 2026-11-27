@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPI__c</fullName>
+    <label>NPI</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_LineGlobal__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4th Gen Prime</fullName>
+                <default>false</default>
+                <label>4th Gen Prime</label>
+            </value>
+            <value>
+                <fullName>Cool Eye</fullName>
+                <default>false</default>
+                <label>Cool Eye</label>
+            </value>
+            <value>
+                <fullName>FTA</fullName>
+                <default>false</default>
+                <label>FTA</label>
+            </value>
+            <value>
+                <fullName>Gen X</fullName>
+                <default>false</default>
+                <label>Gen X</label>
+            </value>
+            <value>
+                <fullName>Gen Y</fullName>
+                <default>false</default>
+                <label>Gen Y</label>
+            </value>
+            <value>
+                <fullName>GPDM</fullName>
+                <default>false</default>
+                <label>GPDM</label>
+            </value>
+            <value>
+                <fullName>Lamp</fullName>
+                <default>false</default>
+                <label>Lamp</label>
+            </value>
+            <value>
+                <fullName>LCC APD</fullName>
+                <default>false</default>
+                <label>LCC APD</label>
+            </value>
+            <value>
+                <fullName>LLC APD</fullName>
+                <default>false</default>
+                <label>LLC APD</label>
+            </value>
+            <value>
+                <fullName>Quad Cavity Laser</fullName>
+                <default>false</default>
+                <label>Quad Cavity Laser</label>
+            </value>
+            <value>
+                <fullName>Reflector</fullName>
+                <default>false</default>
+                <label>Reflector</label>
+            </value>
+            <value>
+                <fullName>Shield</fullName>
+                <default>false</default>
+                <label>Shield</label>
+            </value>
+            <value>
+                <fullName>SMART Pyro</fullName>
+                <default>false</default>
+                <label>SMART Pyro</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>LCC APD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>LLC APD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Quad Cavity Laser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <valueName>Cool Eye</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <valueName>SMART Pyro</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

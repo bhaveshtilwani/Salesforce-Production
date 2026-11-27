@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- ZBIL for St Louis should be format &quot;BXXXX&quot;. &quot;B&quot; plus the ERP account you are creating the ZBIL for
+Shipping account for Montreal. Format should be the ERP Account of the bill-to plus S1, S2, etc -->
+    </help>
+    <label><!-- Manual ERP ID --></label>
+    <name>ZBIL_Ref_ID__c</name>
+</CustomFieldTranslation>

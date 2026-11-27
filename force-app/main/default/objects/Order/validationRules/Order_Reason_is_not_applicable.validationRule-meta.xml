@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Reason_is_not_applicable</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Site__c , &quot;Wiesbaden&quot;),OR( ISPICKVAL( Order_Type__c , &quot;Standard Sales Order&quot;),ISPICKVAL( Order_Type__c , &quot;Contract Call Off&quot;),ISPICKVAL( Order_Type__c , &quot;Contract Creation&quot;),ISPICKVAL( Order_Type__c , &quot;Repair&quot;))
+&amp;&amp; NOT(ISBLANK( Order_Reason__c))) &amp;&amp; Bypass_Validation_In_APEX__c = False ||
+AND(ISPICKVAL( Site__c , &quot;Hamble&quot;),OR( ISPICKVAL( Order_Type__c , &quot;Standard Sales Order&quot;),ISPICKVAL( Order_Type__c , &quot;Contract Call Off&quot;),ISPICKVAL( Order_Type__c , &quot;Contract Creation&quot;),ISPICKVAL( Order_Type__c , &quot;Repair&quot;))
+&amp;&amp; NOT(ISBLANK( Order_Reason__c))) &amp;&amp; Bypass_Validation_In_APEX__c = False ||
+AND(ISPICKVAL( Site__c , &quot;Munich&quot;),OR( ISPICKVAL( Order_Type__c , &quot;Standard Sales Order&quot;),ISPICKVAL( Order_Type__c , &quot;Contract Call Off&quot;),ISPICKVAL( Order_Type__c , &quot;Contract Creation&quot;),ISPICKVAL( Order_Type__c , &quot;Repair&quot;))
+&amp;&amp; NOT(ISBLANK( Order_Reason__c))) &amp;&amp; Bypass_Validation_In_APEX__c = False ||
+AND(ISPICKVAL(Site__c , &quot;Goettingen&quot;),OR( ISPICKVAL( Order_Type__c , &quot;Standard Sales Order&quot;),ISPICKVAL( Order_Type__c , &quot;Contract Call Off&quot;),ISPICKVAL( Order_Type__c , &quot;Contract Creation&quot;),ISPICKVAL( Order_Type__c , &quot;Repair&quot;))
+&amp;&amp; NOT(ISBLANK( Order_Reason__c))) &amp;&amp; Bypass_Validation_In_APEX__c = False ||
+AND(ISPICKVAL(Site__c , &quot;Salem&quot;),OR( ISPICKVAL( Order_Type__c , &quot;Standard Sales Order&quot;))
+&amp;&amp; NOT(ISBLANK( Order_Reason__c))) &amp;&amp; Bypass_Validation_In_APEX__c = False ||
+AND(ISPICKVAL(Site__c , &quot;Miamisburg&quot;),OR( ISPICKVAL( Order_Type__c , &quot;Standard Sales Order&quot;))
+&amp;&amp; NOT(ISBLANK( Order_Reason__c)))</errorConditionFormula>
+    <errorDisplayField>Order_Reason__c</errorDisplayField>
+    <errorMessage>Order Reason is not applicable for selected Order Type.</errorMessage>
+</ValidationRule>

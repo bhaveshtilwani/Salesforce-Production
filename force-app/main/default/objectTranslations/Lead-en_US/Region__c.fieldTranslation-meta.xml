@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Region --></label>
+    <name>Region__c</name>
+    <picklistValues>
+        <masterLabel>100 - NA</masterLabel>
+        <translation><!-- 100 - NA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>200 - EMEA</masterLabel>
+        <translation><!-- 200 - EMEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>300 - Asia</masterLabel>
+        <translation><!-- 300 - Asia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>400 - China</masterLabel>
+        <translation><!-- 400 - China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>500 - LA</masterLabel>
+        <translation><!-- 500 - LA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

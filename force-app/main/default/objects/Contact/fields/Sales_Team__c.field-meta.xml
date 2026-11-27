@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Team__c</fullName>
+    <label>Sales TeamOLD</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asia/Pac Sales</fullName>
+                <default>false</default>
+                <label>Asia/Pac Sales</label>
+            </value>
+            <value>
+                <fullName>Channel Sales</fullName>
+                <default>false</default>
+                <label>Channel Sales</label>
+            </value>
+            <value>
+                <fullName>CISS Americas</fullName>
+                <default>false</default>
+                <label>CISS Americas</label>
+            </value>
+            <value>
+                <fullName>CISS EMEA</fullName>
+                <default>false</default>
+                <label>CISS EMEA</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing Worldwide</fullName>
+                <default>false</default>
+                <label>Industrial Curing Worldwide</label>
+            </value>
+            <value>
+                <fullName>LS/A &amp; SEMI Americas</fullName>
+                <default>false</default>
+                <label>LS/A &amp; SEMI Americas</label>
+            </value>
+            <value>
+                <fullName>LS/A &amp; SEMI EMEA</fullName>
+                <default>false</default>
+                <label>LS/A &amp; SEMI EMEA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

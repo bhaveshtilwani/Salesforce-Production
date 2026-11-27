@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Account_denied_alert_for_America</name>
+        <label>Account denied alert for America</label>
+        <locationX>314</locationX>
+        <locationY>2663</locationY>
+        <actionName>Account.Account_Denied_Email_Alert_2</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.X18_Digit_ID__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Account.Account_Denied_Email_Alert_2</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_denied_alert_for_EMEA</name>
+        <label>Account denied alert for EMEA</label>
+        <locationX>578</locationX>
+        <locationY>2663</locationY>
+        <actionName>Account.Account_Denied_Email_EMEA</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.X18_Digit_ID__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Account.Account_Denied_Email_EMEA</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Account_Denied_for_alert_for_Asia</name>
+        <label>Account Denied alert for Asia</label>
+        <locationX>50</locationX>
+        <locationY>2663</locationY>
+        <actionName>Account.Account_Denied_Email_Alert_1</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.X18_Digit_ID__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Account.Account_Denied_Email_Alert_1</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Compare current Site Name with the Excelitas Site value on the triggering Account to check for a match.</description>
+        <name>Check_if_Site_Name_Matches_Triggering_Account_s_Excelitas_Site</name>
+        <label>Check if Site Name Matches Triggering Account&apos;s Excelitas Site</label>
+        <locationX>963</locationX>
+        <locationY>1463</locationY>
+        <defaultConnector>
+            <targetReference>Get_all_site_records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Site_Matches_Account_Excelitas_Site</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_all_site_records.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.PKI_Site__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>update_Excelitas_Value</targetReference>
+            </connector>
+            <label>Site Matches Account Excelitas Site</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This conditions checks if CS confirmed and forward to CFIN is true</description>
+        <name>CS_Confirmed</name>
+        <label>CS Confirmed</label>
+        <locationX>1502</locationX>
+        <locationY>2447</locationY>
+        <defaultConnectorLabel>FALSE_CS Confirmed</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_CS_Confirmed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CS_Confirmed_and_Forward_to_CFIN__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CS_HomeBase</targetReference>
+            </connector>
+            <label>TRUE_CS Confirmed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>To send the email alert depending on the Region</description>
+        <name>Email_depending_on_Region</name>
+        <label>Email depending on Region</label>
+        <locationX>446</locationX>
+        <locationY>2555</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Asia</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ASIA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_Denied_for_alert_for_Asia</targetReference>
+            </connector>
+            <label>Asia</label>
+        </rules>
+        <rules>
+            <name>America</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AMER</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_denied_alert_for_America</targetReference>
+            </connector>
+            <label>America</label>
+        </rules>
+        <rules>
+            <name>EMEA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Region__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EMEA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_denied_alert_for_EMEA</targetReference>
+            </connector>
+            <label>EMEA</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>It checks that ERP field Is Not Null</description>
+        <name>ERP_Is_Not_Null</name>
+        <label>ERP Is Not Null</label>
+        <locationX>875</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>Set_SCFIN_Defaults_TRUE</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_ERP Is Not Null</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_ERP_Is_Not_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Source_and_CFin_Code_Update</targetReference>
+            </connector>
+            <label>TRUE_ERP Is Not Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if Incoterm Has a value or not?</description>
+        <name>Incoterm_Is_Not_Null</name>
+        <label>Incoterm Is Not Null</label>
+        <locationX>875</locationX>
+        <locationY>1931</locationY>
+        <defaultConnector>
+            <targetReference>MK_Denial_True</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Incoterm Is Not Null</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Incoterm_Is_Not_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Incoterm__r.Name</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Ship_Term_Desc_1</targetReference>
+            </connector>
+            <label>TRUE_Incoterm Is Not Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
+        <name>Is_Bypass_Enabled</name>
+        <label>Is Bypass Enabled?</label>
+        <locationX>330</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>ERP_Is_Not_Null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_enabled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Is enabled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>It checks if MK Denial = False and Account type = DW Account type</description>
+        <name>MK_Denial_False</name>
+        <label>MK Denial = False</label>
+        <locationX>1304</locationX>
+        <locationY>2339</locationY>
+        <defaultConnector>
+            <targetReference>CS_Confirmed</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_MK Denial = False</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_MK_Denial_False</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MK_Denial__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.DW_Account_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Business Name</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_business_record_type</targetReference>
+            </connector>
+            <label>TRUE_MK Denial = False</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if MK Denial is true and Account type is Equals to DW Account Type</description>
+        <name>MK_Denial_True</name>
+        <label>MK Denial = True</label>
+        <locationX>875</locationX>
+        <locationY>2231</locationY>
+        <defaultConnector>
+            <targetReference>MK_Denial_False</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_MK Denial = True</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_MK_Denial_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.MK_Denial__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.DW_Account_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Business Name</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_global_record_type</targetReference>
+            </connector>
+            <label>TRUE_MK Denial = True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the “Set SCFIN Defaults?” value is TRUE. If yes, the flow will apply the SCFIN default settings.</description>
+        <name>Set_SCFIN_Defaults_TRUE</name>
+        <label>Set SCFIN Defaults? = &quot;TRUE&quot;</label>
+        <locationX>875</locationX>
+        <locationY>839</locationY>
+        <defaultConnector>
+            <targetReference>Site_Picklist_Is_Not_Blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set SCFIN Defaults? = &quot;TRUE&quot;</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_SCFIN_Defaults_TRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Set_CFIN_Defaults__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_default_CFIN_Fields</targetReference>
+            </connector>
+            <label>TRUE_Set SCFIN Defaults? = &quot;TRUE&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>It checks if Site Picklist Is Not Blank</description>
+        <name>Site_Picklist_Is_Not_Blank</name>
+        <label>Site Picklist Is Not Blank</label>
+        <locationX>875</locationX>
+        <locationY>1139</locationY>
+        <defaultConnector>
+            <targetReference>Incoterm_Is_Not_Null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Site Picklist Is Not Blank</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Site_Picklist_Is_Not_Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.PKI_Site__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_All_Sites</targetReference>
+            </connector>
+            <label>TRUE_Site Picklist Is Not Blank</label>
+        </rules>
+    </decisions>
+    <description>It fills missing &apos;D&amp;B SubAccount Name&apos;, updates when &apos;ERP Site&apos; is not null, applies CFIN default settings when enabled, validates Site picklist against Excelitas Site,</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Aspersite</name>
+        <dataType>String</dataType>
+        <expression>Case({!$Record.ERP_Site__c},
+&quot;Asslar&quot;, &quot;2000&quot;,
+&quot;Billerica&quot;, &quot;1200&quot;,
+&quot;Boulder&quot;, &quot;1000&quot;,
+&quot;ESG Optics&quot;, &quot;3000&quot;,
+&quot;Goettingen&quot;, &quot;2000&quot;,
+&quot;Hamble&quot;, &quot;2600&quot;,
+&quot;Montreal&quot;, &quot;1500&quot;,
+&quot;Munich&quot;, &quot;2000&quot;,
+&quot;Miamisburg&quot;, &quot;1000&quot;,
+&quot;ESG L&amp;D&quot;, &quot;3000&quot;,
+&quot;Salem&quot;, &quot;1000&quot;,
+&quot;Shenzhen&quot;, &quot;3100&quot;,
+&quot;St Asaph&quot;, &quot;2500&quot;,
+&quot;St Louis&quot;, &quot;1000&quot;,
+&quot;Toronto&quot;, &quot;1500&quot;,
+&quot;Wiesbaden&quot;, &quot;2100&quot;, 
+&quot;PCO Kelheim&quot;, &quot;2110&quot;,
+null)</expression>
+    </formulas>
+    <formulas>
+        <name>BusinessisTrue</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT(ISBLANK({!$Record.D_B_Business_Name__c}) )</expression>
+    </formulas>
+    <formulas>
+        <name>C</name>
+        <dataType>String</dataType>
+        <expression>&quot;C&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>ERPSiteCategory</name>
+        <dataType>String</dataType>
+        <expression>Case({!$Record.ERP_Site__c},
+&quot;Asslar&quot;, &quot;&quot;,
+&quot;Billerica&quot;, &quot;SS&quot;,
+&quot;Boulder&quot;, &quot;SS&quot;,
+&quot;ESG&quot;, &quot;SS&quot;,
+&quot;Goettingen&quot;, &quot;SS&quot;,
+&quot;Hamble&quot;, &quot;&quot;,
+&quot;Montreal&quot;, &quot;SS&quot;,
+&quot;Munich&quot;, &quot;SS&quot;,
+&quot;Miamisburg&quot;, &quot;SS&quot;,
+&quot;QSG&quot;, &quot;SS&quot;,
+&quot;Salem&quot;, &quot;SS&quot;,
+&quot;Shenzhen&quot;, &quot;SS&quot;,
+&quot;St Asaph&quot;, &quot;JS&quot;,
+&quot;St Louis&quot;, &quot;SS&quot;,
+&quot;Toronto&quot;, &quot;SS&quot;,
+&quot;Wiesbaden&quot;, &quot;SS&quot;, 
+null)</expression>
+    </formulas>
+    <formulas>
+        <name>FormulaDate</name>
+        <dataType>String</dataType>
+        <expression>&quot;12/31/9999&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Now</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <name>SiteMapping</name>
+        <dataType>String</dataType>
+        <expression>Case({!$Record.ERP_Site__c},
+&quot;Asslar&quot;, &quot;2101&quot;,
+&quot;Billerica&quot;, &quot;VMA&quot;,
+&quot;Boulder&quot;, &quot;209&quot;,
+&quot;ESG&quot;, &quot;EGS1&quot;,
+&quot;Goettingen&quot;, &quot;0003&quot;,
+&quot;Hamble&quot;, &quot;MAN.&quot;,
+&quot;Montreal&quot;, &quot;1000&quot;,
+&quot;Munich&quot;, &quot;0003&quot;,
+&quot;Miamisburg&quot;, &quot;4000&quot;,
+&quot;QSG&quot;, &quot;SG10&quot;,
+&quot;Salem&quot;, &quot;4000&quot;,
+&quot;Shenzhen&quot;, &quot;PEC1&quot;,
+&quot;St Asaph&quot;, &quot;LBD&quot;,
+&quot;St Louis&quot;, &quot;OPSL&quot;,
+&quot;Toronto&quot;, &quot;QAD&quot;,
+&quot;Wiesbaden&quot;, &quot;0400&quot;, 
+null)</expression>
+    </formulas>
+    <formulas>
+        <name>SiteRefrence</name>
+        <dataType>String</dataType>
+        <expression>Case({!$Record.ERP_Site__c},
+&quot;Asslar&quot;, &quot;LI1008_P&quot;,
+&quot;Billerica&quot;, &quot;AXBMG_P&quot;,
+&quot;Boulder&quot;, &quot;M2MMG_P&quot;,
+&quot;ESG Optics&quot;, &quot;SGQ500_Q&quot;,
+&quot;Goettingen&quot;, &quot;LI1008_P&quot;,
+&quot;Hamble&quot;, &quot;HMBLMG_P&quot;,
+&quot;Montreal&quot;, &quot;PRD200_P&quot;,
+&quot;Munich&quot;, &quot;LI1008_P&quot;,
+&quot;Miamisburg&quot;, &quot;PRD700_P&quot;,
+&quot;ESG L&amp;D&quot;, &quot;SG1500_P&quot;,
+&quot;Salem&quot;, &quot;PRD700_P&quot;,
+&quot;Shenzhen&quot;, &quot;SG1500_P&quot;,
+&quot;St Asaph&quot;, &quot;AXSAMG_P&quot;,
+&quot;St Louis&quot;, &quot;SG1500_P&quot;,
+&quot;Toronto&quot;, &quot;QADMG_P&quot;,
+&quot;Wiesbaden&quot;, &quot;LI1008_P&quot;, 
+null)</expression>
+    </formulas>
+    <formulas>
+        <name>Standard</name>
+        <dataType>String</dataType>
+        <expression>&quot;STANDARD&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>UpdateDate</name>
+        <dataType>String</dataType>
+        <expression>&quot;12/31/9999&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>UserHomebase</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$User.HomeBase__c} )</expression>
+    </formulas>
+    <formulas>
+        <name>X</name>
+        <dataType>String</dataType>
+        <expression>&quot;X&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Y</name>
+        <dataType>String</dataType>
+        <expression>&quot;Y&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>zeroOne</name>
+        <dataType>String</dataType>
+        <expression>&quot;01&quot;</expression>
+    </formulas>
+    <interviewLabel>Account: Upon Create &amp; Edit Actions Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account: Upon Create &amp; Edit Actions Flow</label>
+    <loops>
+        <description>It loops excelitas site id</description>
+        <name>Get_all_site_records</name>
+        <label>Get all site records</label>
+        <locationX>743</locationX>
+        <locationY>1355</locationY>
+        <collectionReference>Get_All_Sites</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_if_Site_Name_Matches_Triggering_Account_s_Excelitas_Site</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Incoterm_Is_Not_Null</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>It fetched all the excelitas site</description>
+        <name>Get_All_Sites</name>
+        <label>Get All Site</label>
+        <locationX>743</locationX>
+        <locationY>1247</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_all_site_records</targetReference>
+        </connector>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>It Fetches the business record type</description>
+        <name>Get_business_record_type</name>
+        <label>Get business record type</label>
+        <locationX>1106</locationX>
+        <locationY>2447</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Approved_Record_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Account</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Business Name</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>This record determines whether bypassing standard validations or logic is permitted.</description>
+        <name>Get_Bypass_record</name>
+        <label>Get Bypass record</label>
+        <locationX>330</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Bypass_Enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Account_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>It will get the Record type Equals global Customer</description>
+        <name>Get_global_record_type</name>
+        <label>Get global record type</label>
+        <locationX>446</locationX>
+        <locationY>2339</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Record_Type_to_Globals_customer</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Account</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Global Customer</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>if Mk denial = false and account type is equals to Dw Account type , It updates the Record type id to Business record type</description>
+        <name>Approved_Record_Type</name>
+        <label>Approved Record Type</label>
+        <locationX>1106</locationX>
+        <locationY>2555</locationY>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>Get_business_record_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If  true, it ensures the user’s HomeBase matches the record’s HomeBase</description>
+        <name>CS_HomeBase</name>
+        <label>CS HomeBase</label>
+        <locationX>1370</locationX>
+        <locationY>2555</locationY>
+        <inputAssignments>
+            <field>CS_HomeBase__c</field>
+            <value>
+                <elementReference>UserHomebase</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>IF MK Denial is true and Account type is Equals to DW Account Type then updates the record type id to Global Customer</description>
+        <name>Record_Type_to_Globals_customer</name>
+        <label>Record Type to Globals customer</label>
+        <locationX>446</locationX>
+        <locationY>2447</locationY>
+        <connector>
+            <targetReference>Email_depending_on_Region</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <elementReference>Get_global_record_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Checks whether the “ERP Site” field is not null. If it contains a value, the flow updates the specified field accordingly.</description>
+        <name>Source_and_CFin_Code_Update</name>
+        <label>Source and CFin Code Update</label>
+        <locationX>743</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Set_SCFIN_Defaults_TRUE</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CFIN_Company_Code__c</field>
+            <value>
+                <elementReference>Aspersite</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>KNB1_BUSAB__c</field>
+            <value>
+                <elementReference>ERPSiteCategory</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source_Company_Code__c</field>
+            <value>
+                <elementReference>SiteMapping</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Source_System__c</field>
+            <value>
+                <elementReference>SiteRefrence</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the default values for CFIN-related fields when the “Set SCFIN Defaults?” condition is TRUE. This step sets around 16 fields with predefined default values.</description>
+        <name>Update_default_CFIN_Fields</name>
+        <label>Update default CFIN Fields</label>
+        <locationX>743</locationX>
+        <locationY>947</locationY>
+        <connector>
+            <targetReference>Site_Picklist_Is_Not_Blank</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>BP_GROUP__c</field>
+            <value>
+                <stringValue>B3RD</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BP_ROLE__c</field>
+            <value>
+                <stringValue>C3RD</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>BP_Type__c</field>
+            <value>
+                <elementReference>C</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CFIN_Reconciliation_Account__c</field>
+            <value>
+                <stringValue>0012001000</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>KNB1_FDGRV__c</field>
+            <value>
+                <stringValue>CE</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>KNB1_XZVER__c</field>
+            <value>
+                <elementReference>X</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>KNB1_ZUAWA__c</field>
+            <value>
+                <stringValue>001</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>KNB5_MAHNA__c</field>
+            <value>
+                <stringValue>1002</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>KNB5_MANSP__c</field>
+            <value>
+                <stringValue>E</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Party_Type__c</field>
+            <value>
+                <stringValue>2</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Payment_Term__c</field>
+            <value>
+                <stringValue>AN30</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Standard_Address__c</field>
+            <value>
+                <elementReference>Y</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UKMBP_CMS_SGM_LIMIT_VALID_DATE__c</field>
+            <value>
+                <elementReference>FormulaDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UKMPB_CMS_CHECK_RULE__c</field>
+            <value>
+                <elementReference>zeroOne</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UKMPB_CMS_LIMIT_RULE__c</field>
+            <value>
+                <elementReference>Standard</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>UKMPB_CMS_RATING_VAL_DATE__c</field>
+            <value>
+                <elementReference>UpdateDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>update_Excelitas_Value</name>
+        <label>update Excelitas Value</label>
+        <locationX>831</locationX>
+        <locationY>1571</locationY>
+        <connector>
+            <targetReference>Get_all_site_records</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AutomationBypassDateTime__c</field>
+            <value>
+                <elementReference>Now</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Excelitas_Site_Lookup__c</field>
+            <value>
+                <elementReference>Get_all_site_records.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If the “Incoterm” field is not blank, the flow updates the “Shipping Term” field with the name from the related Incoterm record.</description>
+        <name>Update_Ship_Term_Desc_1</name>
+        <label>Update Ship_Term_Desc_1</label>
+        <locationX>743</locationX>
+        <locationY>2039</locationY>
+        <connector>
+            <targetReference>MK_Denial_True</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AutomationBypassDateTime__c</field>
+            <value>
+                <elementReference>Now</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Shipping_Terms_Desc_1__c</field>
+            <value>
+                <elementReference>$Record.Incoterm__r.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>204</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_record</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Matching_Site_Id</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

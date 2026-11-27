@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>M&amp;A Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;STAGE 0 – On Dashboard: Businesses that are going to trade in the next three months&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;These are on the docket projects we are actively working on&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;These are highest priority and cost money to evaluate, move very quickly&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Other than specific newsworthy updates outside this stage, these are projects we focus on at CEO staff level and AEA&lt;/p&gt;</info>
+        <picklistValueName>0 - On-Dashboard</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;STAGE 1 - Engaged: Coming to market in near future, sellers are contemplating strategic alternatives&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;We spoke with management and know they are looking at potential alternatives&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Do not have a CIM, likely speaking with bankers but no mandate&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Soon to be on the table&lt;/p&gt;</info>
+        <picklistValueName>1 - Engaged</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;STAGE 2 – Approaching: We approached the seller and signaled our interest&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Exploratory stage, collect information as we can (Preliminary research)&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Very early on research, first steps of reaching out to mgmt&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;If this company did go up for sale, would we be interested? &lt;/p&gt;</info>
+        <picklistValueName>2 - Approached</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;STAGE 3 - Hold: Likely will be the least commonly used stage&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Were in the process of selling the business recently&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;For idiosyncratic or macroeconomic reasons, transaction was halted&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;If sale process does not re-engage in near term moves to Stage 4 or Stage 6&lt;/p&gt;</info>
+        <picklistValueName>3 - Hold</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;STAGE 4 – Long-term Follow-up: Most business we look at are in this bucket (90-95%)&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;We already evaluated the business and did not proceed at the time&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;In theory we are interested but the business is not for sale&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Not an ongoing project on our end but any information we gather gets collected&lt;/p&gt;</info>
+        <picklistValueName>4 - Long Term Follow-up</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;STAGE 6 - CLOSED: There is no chance we are buying the business&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;We already completed the sale&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Someone else recently bought it&lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;Too problematic of a business (ownership structure, legal, environmental, etc) &lt;/p&gt;&lt;p&gt;-&lt;span style=&quot;font-size: 7pt;&quot;&gt;         &lt;/span&gt;The business is no longer a going concern&lt;/p&gt;</info>
+        <picklistValueName>6 - Closed</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Corp_Dev</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notes_Blank_on_FwdExt</fullName>
+    <active>true</active>
+    <description>Notes cannot be blank on Fwd external</description>
+    <errorConditionFormula>AND(
+        TEXT(Status) = &quot;Forwarded&quot;,
+         LEN( Notes__c ) = 0
+)</errorConditionFormula>
+    <errorDisplayField>Channel_Partner_Distributor__c</errorDisplayField>
+    <errorMessage>Please add Notes and indicate in the Channel Partner/Distributor Picklist where and to whom the Lead was forwarded to.
+Thank you</errorMessage>
+</ValidationRule>

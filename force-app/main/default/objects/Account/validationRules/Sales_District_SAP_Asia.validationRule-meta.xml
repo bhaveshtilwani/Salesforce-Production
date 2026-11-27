@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_District_SAP_Asia</fullName>
+    <active>false</active>
+    <description>require Sales District for Account Group = ZCUS, ZINT, Z003, Z004</description>
+    <errorConditionFormula>AND(
+    $User.Alias &lt;&gt; &quot;sconn&quot;,
+
+    ISBLANK(TEXT(Sales_District__c)),
+
+OR(
+ISPICKVAL( Account_Group__c, &quot;Intra-Div &amp; Inter-Co. - ZINT&quot;),
+ISPICKVAL( Account_Group__c, &quot;Third-Party - Cus. For Trade - Z003&quot;),
+        ISPICKVAL(Account_Group__c, &quot;Intra-Div &amp; Inter-Co For Trade - Z004&quot;)
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Sales_District__c</errorDisplayField>
+    <errorMessage>Please Select Sales District.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UpdateForecast</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>800</height>
+    <linkType>url</linkType>
+    <masterLabel>Update Forecast</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>http://optfretest001.perkinelmer.net/WebRunner/Run.aspx?app=applicationFolder/monthlyFcast.aaa&amp;url={!API_Partner_Server_URL_30}&amp;session={!API_Session_ID}</url>
+</WebLink>

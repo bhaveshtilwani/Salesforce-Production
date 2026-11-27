@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Triggers the email alert</description>
+        <name>Delegation_Notification</name>
+        <label>Delegation Notification</label>
+        <locationX>308</locationX>
+        <locationY>647</locationY>
+        <actionName>sbaa__Approver__c.Delegation_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>sbaa__Approver__c.Delegation_Notification</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
+        <name>If_Bypass_Enabled</name>
+        <label>If Bypass Enabled</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Update_Email</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_enable</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>If enable</label>
+        </rules>
+    </decisions>
+    <description>Sets &apos;Delegated Approver Email &apos;from &quot;Approver&apos;s delegated&quot; user email if &apos;Delegated Approver&apos; and &apos;End Date&apos; are not blank and any of them changed.</description>
+    <environments>Default</environments>
+    <interviewLabel>Delegation Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Delegation Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>It Creates Flow Error Logs Records</description>
+        <name>Create_Flow_Error_Logs_Records</name>
+        <label>Create Flow Error Logs Records</label>
+        <locationX>836</locationX>
+        <locationY>647</locationY>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FLOW_API_NAME__c</field>
+            <value>
+                <stringValue>Delegation_Notification_Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_ID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Name__c</field>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Flow_Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>This record determines whether bypassing standard validations or logic is permitted.</description>
+        <name>Get_Bypass_record</name>
+        <label>Get Bypass record</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_Bypass_Enabled</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approver_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sets Delegated Approver Email from Approver&apos;s delegated user email if Delegated Approver and End Date are not blank and any of them changed.</description>
+        <name>Update_Email</name>
+        <label>Update Email</label>
+        <locationX>308</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Delegation_Notification</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Delegated_Approver_Email__c</field>
+            <value>
+                <elementReference>$Record.sbaa__DelegatedApprover__r.sbaa__User__r.Email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_record</targetReference>
+        </connector>
+        <filterFormula>AND(
+NOT(ISBLANK({!$Record.sbaa__DelegationEnd__c})),
+NOT(ISBLANK({!$Record.sbaa__DelegatedApprover__c} )),
+OR(ISCHANGED ({!$Record.sbaa__DelegationEnd__c} ),
+ISCHANGED ({!$Record.sbaa__DelegatedApprover__c} )))</filterFormula>
+        <object>sbaa__Approver__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

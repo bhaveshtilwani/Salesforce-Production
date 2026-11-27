@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Cant_Approve_Manually_Portal_Request</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Status , &quot;Approved&quot;),
+ $User.ProfileId = &apos;00e38000000vxgf&apos;)</errorConditionFormula>
+    <errorMessage>Please follow the standard approval process.</errorMessage>
+</ValidationRule>

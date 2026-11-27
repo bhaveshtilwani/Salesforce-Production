@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>KUNN2</fullName>
+        <field>ERP_Partner_Function_Number_KUNN2__c</field>
+        <formula>Partner__r.Client_Side_ID__c</formula>
+        <name>KUNN2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>KUNN2</fullName>
+        <actions>
+            <name>KUNN2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>KUNN2 is updated when criteria is met</description>
+        <formula>AND( ISCHANGED( Partner__c ), NOT(OR(  Partner_Function_Type__r.Name = &quot;Contact Person (CP)&quot;,  Partner_Function_Type__r.Name = &quot;Enduser for F.Trade (EN)&quot;)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

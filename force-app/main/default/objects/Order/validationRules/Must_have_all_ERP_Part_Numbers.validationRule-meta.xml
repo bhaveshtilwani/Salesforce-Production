@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_have_all_ERP_Part_Numbers</fullName>
+    <active>true</active>
+    <description>AND(ISCHANGED(Status),ISPICKVAL(Status,&quot;Entered_in_ERP&quot;), Count_Blank_ERP_Part_Numbers__c &gt; 0)</description>
+    <errorConditionFormula>AND(ISCHANGED(Status),ISPICKVAL(Status,&quot;Entered_in_ERP&quot;), Count_Blank_ERP_Part_Numbers__c &gt; 0)</errorConditionFormula>
+    <errorMessage>You must enter an ERP Part Number for all products on this order before you can activate it.</errorMessage>
+</ValidationRule>

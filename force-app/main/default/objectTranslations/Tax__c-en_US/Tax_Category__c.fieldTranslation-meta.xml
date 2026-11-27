@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tax Category --></label>
+    <name>Tax_Category__c</name>
+    <picklistValues>
+        <masterLabel>A001 - Listing</masterLabel>
+        <translation><!-- A001 - Listing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A001 - Material Entered</masterLabel>
+        <translation><!-- A001 - Material Entered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMIW - Minimum SalesOrdrVal</masterLabel>
+        <translation><!-- AMIW - Minimum SalesOrdrVal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AMIZ - Minimum ValueSurchrg</masterLabel>
+        <translation><!-- AMIZ - Minimum ValueSurchrg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ATX1 - Output Tax</masterLabel>
+        <translation><!-- ATX1 - Output Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AUFS - VKP Calcultn Surchrg</masterLabel>
+        <translation><!-- AUFS - VKP Calcultn Surchrg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AUFX - VKP Calcultn Surchrg</masterLabel>
+        <translation><!-- AUFX - VKP Calcultn Surchrg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AZWR - Down Pay./Settlement</masterLabel>
+        <translation><!-- AZWR - Down Pay./Settlement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B001 - Exclusion</masterLabel>
+        <translation><!-- B001 - Exclusion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BO01 - Mat/Group Rebate</masterLabel>
+        <translation><!-- BO01 - Mat/Group Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BO02 - Material Rebate</masterLabel>
+        <translation><!-- BO02 - Material Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BO03 - Customer Rebate</masterLabel>
+        <translation><!-- BO03 - Customer Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BO04 - Hierarchy Rebate</masterLabel>
+        <translation><!-- BO04 - Hierarchy Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BO05 - Hierarchy rebate/mat</masterLabel>
+        <translation><!-- BO05 - Hierarchy rebate/mat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BO06 - Sales Indpndt Rebate</masterLabel>
+        <translation><!-- BO06 - Sales Indpndt Rebate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOLL - Bollo in Fattura</masterLabel>
+        <translation><!-- BOLL - Bollo in Fattura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTX1 - GST (Canada)</masterLabel>
+        <translation><!-- CTX1 - GST (Canada) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTX2 - PST (Canada)</masterLabel>
+        <translation><!-- CTX2 - PST (Canada) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTX3 - PST (Base+GST) Cdn</masterLabel>
+        <translation><!-- CTX3 - PST (Base+GST) Cdn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTXJ - Tax Jurisdict.Code</masterLabel>
+        <translation><!-- CTXJ - Tax Jurisdict.Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DIFF - Rounding Off</masterLabel>
+        <translation><!-- DIFF - Rounding Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DUPL - Cond.to be duplic.</masterLabel>
+        <translation><!-- DUPL - Cond.to be duplic. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ECCN - Partial Value</masterLabel>
+        <translation><!-- ECCN - Partial Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDI1 - Cust.expected price</masterLabel>
+        <translation><!-- EDI1 - Cust.expected price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDI2 - Cust.expected value</masterLabel>
+        <translation><!-- EDI2 - Cust.expected value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EK01 - Actual Costs</masterLabel>
+        <translation><!-- EK01 - Actual Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EK02 - Calculated costs</masterLabel>
+        <translation><!-- EK02 - Calculated costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EKNN - Net/Net PP IS-R</masterLabel>
+        <translation><!-- EKNN - Net/Net PP IS-R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EV00 - Ret. Price Cust.ISR</masterLabel>
+        <translation><!-- EV00 - Ret. Price Cust.ISR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EVAU - Ret.Markup SP Calc.</masterLabel>
+        <translation><!-- EVAU - Ret.Markup SP Calc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EVAX - Ret.Markup SP Calc.</masterLabel>
+        <translation><!-- EVAX - Ret.Markup SP Calc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EVP0 - Retail price</masterLabel>
+        <translation><!-- EVP0 - Retail price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EVP1 - Ret. Price 1 ISR</masterLabel>
+        <translation><!-- EVP1 - Ret. Price 1 ISR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FREI - Freight (Trade)</masterLabel>
+        <translation><!-- FREI - Freight (Trade) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GRWR - Statistical value</masterLabel>
+        <translation><!-- GRWR - Statistical value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HA00 - Percentage Discount</masterLabel>
+        <translation><!-- HA00 - Percentage Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HB00 - Discount (Value)</masterLabel>
+        <translation><!-- HB00 - Discount (Value) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HD00 - Freight</masterLabel>
+        <translation><!-- HD00 - Freight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI01 - Hierarchy</masterLabel>
+        <translation><!-- HI01 - Hierarchy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI02 - Hierarchy/Material</masterLabel>
+        <translation><!-- HI02 - Hierarchy/Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HM00 - Order value</masterLabel>
+        <translation><!-- HM00 - Order value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IBRX - Brazil tax calc.</masterLabel>
+        <translation><!-- IBRX - Brazil tax calc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICM3 - ICMS from SD</masterLabel>
+        <translation><!-- ICM3 - ICMS from SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICMI - Price+Tax (for NF)</masterLabel>
+        <translation><!-- ICMI - Price+Tax (for NF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICMO - ICMS offset</masterLabel>
+        <translation><!-- ICMO - ICMS offset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICMP - ICMS/ISS on price</masterLabel>
+        <translation><!-- ICMP - ICMS/ISS on price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICMR - Price+ICMS/ISS (NF)</masterLabel>
+        <translation><!-- ICMR - Price+ICMS/ISS (NF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICS3 - Sub.Trib. from SD</masterLabel>
+        <translation><!-- ICS3 - Sub.Trib. from SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICSO - ISS  offset</masterLabel>
+        <translation><!-- ICSO - ISS  offset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICZF - ADMS Disc. Zona Fr.</masterLabel>
+        <translation><!-- ICZF - ADMS Disc. Zona Fr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IFR3 - ICMS on freight SD</masterLabel>
+        <translation><!-- IFR3 - ICMS on freight SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IFS3 - ICMS ST freight SD</masterLabel>
+        <translation><!-- IFS3 - ICMS ST freight SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INDX - Inflation Index</masterLabel>
+        <translation><!-- INDX - Inflation Index --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IPI3 - IPI from SD</masterLabel>
+        <translation><!-- IPI3 - IPI from SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IPIC - Copy of IPI from SD</masterLabel>
+        <translation><!-- IPIC - Copy of IPI from SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IPIO - IPI offset</masterLabel>
+        <translation><!-- IPIO - IPI offset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISS3 - ISS from SD</masterLabel>
+        <translation><!-- ISS3 - ISS from SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IV01 - Inter-company Price</masterLabel>
+        <translation><!-- IV01 - Inter-company Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IV02 - Inter-company %</masterLabel>
+        <translation><!-- IV02 - Inter-company % --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1A1 - GI Perc. Region 1</masterLabel>
+        <translation><!-- J1A1 - GI Perc. Region 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1A2 - GI Perc. Region 2</masterLabel>
+        <translation><!-- J1A2 - GI Perc. Region 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1A3 - GI Perc. Region 3</masterLabel>
+        <translation><!-- J1A3 - GI Perc. Region 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1AL - Liber. w. Credit</masterLabel>
+        <translation><!-- J1AL - Liber. w. Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1AN - Liber. w/o. Credit</masterLabel>
+        <translation><!-- J1AN - Liber. w/o. Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1AP - VAT Perception I</masterLabel>
+        <translation><!-- J1AP - VAT Perception I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1AQ - VAT Perception II</masterLabel>
+        <translation><!-- J1AQ - VAT Perception II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1AR - VAT Surcharge RNI</masterLabel>
+        <translation><!-- J1AR - VAT Surcharge RNI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1AU - VAT</masterLabel>
+        <translation><!-- J1AU - VAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1AV - Internal Tax Sales</masterLabel>
+        <translation><!-- J1AV - Internal Tax Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1W1 - Withholding Tax 1</masterLabel>
+        <translation><!-- J1W1 - Withholding Tax 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1W2 - Withholding Tax 2</masterLabel>
+        <translation><!-- J1W2 - Withholding Tax 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>J1W3 - Withholding tax 3</masterLabel>
+        <translation><!-- J1W3 - Withholding tax 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JR1 - Tax Jur Code Level 1</masterLabel>
+        <translation><!-- JR1 - Tax Jur Code Level 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JR2 - Tax Jur Code Level 2</masterLabel>
+        <translation><!-- JR2 - Tax Jur Code Level 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JR3 - Tax Jur Code Level 3</masterLabel>
+        <translation><!-- JR3 - Tax Jur Code Level 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JR4 - Tax Jur Code Level 4</masterLabel>
+        <translation><!-- JR4 - Tax Jur Code Level 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JRC1 - Canadian GST</masterLabel>
+        <translation><!-- JRC1 - Canadian GST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JRC2 - Canadian PST</masterLabel>
+        <translation><!-- JRC2 - Canadian PST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JRC3 - Canadian PST(B+GST)</masterLabel>
+        <translation><!-- JRC3 - Canadian PST(B+GST) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K004 - Material</masterLabel>
+        <translation><!-- K004 - Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K005 - Customer/Material</masterLabel>
+        <translation><!-- K005 - Customer/Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K007 - Customer Discount</masterLabel>
+        <translation><!-- K007 - Customer Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K020 - Price Group</masterLabel>
+        <translation><!-- K020 - Price Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K029 - Material pricing grp</masterLabel>
+        <translation><!-- K029 - Material pricing grp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K030 - Customer/Mat.Pr.Grp</masterLabel>
+        <translation><!-- K030 - Customer/Mat.Pr.Grp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K031 - Price Grp/Mat.Pr.Grp</masterLabel>
+        <translation><!-- K031 - Price Grp/Mat.Pr.Grp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K032 - Price Group/Material</masterLabel>
+        <translation><!-- K032 - Price Group/Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KA00 - Sales deal</masterLabel>
+        <translation><!-- KA00 - Sales deal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KA02 - Promo Discount % 1</masterLabel>
+        <translation><!-- KA02 - Promo Discount % 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KA03 - Promo Discount % 2</masterLabel>
+        <translation><!-- KA03 - Promo Discount % 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KA04 - Promo Discount MD 1</masterLabel>
+        <translation><!-- KA04 - Promo Discount MD 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KA05 - Promo Discount MD 2</masterLabel>
+        <translation><!-- KA05 - Promo Discount MD 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KF00 - Freight</masterLabel>
+        <translation><!-- KF00 - Freight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KOFI - Accnt Determination</masterLabel>
+        <translation><!-- KOFI - Accnt Determination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KOFK - Acct Determ.with CO</masterLabel>
+        <translation><!-- KOFK - Acct Determ.with CO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KOFR - Accnt Det return</masterLabel>
+        <translation><!-- KOFR - Accnt Det return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KOSC - Accnt Deter (Subcon)</masterLabel>
+        <translation><!-- KOSC - Accnt Deter (Subcon) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KOTK - Accnt Determination</masterLabel>
+        <translation><!-- KOTK - Accnt Determination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KP00 - Pallet Discount</masterLabel>
+        <translation><!-- KP00 - Pallet Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KP01 - Incomp.Pallet Surch.</masterLabel>
+        <translation><!-- KP01 - Incomp.Pallet Surch. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KP02 - Mixed Pallet Disc.</masterLabel>
+        <translation><!-- KP02 - Mixed Pallet Disc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KP03 - Mixed Pallet Surch.</masterLabel>
+        <translation><!-- KP03 - Mixed Pallet Surch. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KUMU - Cumulation condition</masterLabel>
+        <translation><!-- KUMU - Cumulation condition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KV00 - Sales Costs (ISR)</masterLabel>
+        <translation><!-- KV00 - Sales Costs (ISR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KW00 - Group valuation</masterLabel>
+        <translation><!-- KW00 - Group valuation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCFR - License - France</masterLabel>
+        <translation><!-- LCFR - License - France --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCIT - VAT license Italy</masterLabel>
+        <translation><!-- LCIT - VAT license Italy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS15 - Tax 15%</masterLabel>
+        <translation><!-- MS15 - Tax 15% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW01 - Tax Trigger (RU)</masterLabel>
+        <translation><!-- MW01 - Tax Trigger (RU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW07 - Tax 7%</masterLabel>
+        <translation><!-- MW07 - Tax 7% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW15 - Factoring Disc. Tax</masterLabel>
+        <translation><!-- MW15 - Factoring Disc. Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWB1 - Berlin procedure A1</masterLabel>
+        <translation><!-- MWB1 - Berlin procedure A1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWB2 - Berlin procedure A2</masterLabel>
+        <translation><!-- MWB2 - Berlin procedure A2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWBO - Opt.tax Bollo in Fat</masterLabel>
+        <translation><!-- MWBO - Opt.tax Bollo in Fat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR1 - Sales Tax Manual</masterLabel>
+        <translation><!-- MWR1 - Sales Tax Manual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR2 - Sales Tax Sett. Man.</masterLabel>
+        <translation><!-- MWR2 - Sales Tax Sett. Man. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR3 - SlsTax Sett.Rev.Man.</masterLabel>
+        <translation><!-- MWR3 - SlsTax Sett.Rev.Man. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR4 - Sls Tax Manual Local</masterLabel>
+        <translation><!-- MWR4 - Sls Tax Manual Local --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR5 - SlsTax Sett.Man.Loc.</masterLabel>
+        <translation><!-- MWR5 - SlsTax Sett.Man.Loc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR6 - SlsTax Sett.Rev.Loc.</masterLabel>
+        <translation><!-- MWR6 - SlsTax Sett.Rev.Loc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR7 - GSM Manual      (RU)</masterLabel>
+        <translation><!-- MWR7 - GSM Manual      (RU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR8 - GSM cost manual (RU)</masterLabel>
+        <translation><!-- MWR8 - GSM cost manual (RU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWR9 - GSM costComp.man(RU)</masterLabel>
+        <translation><!-- MWR9 - GSM costComp.man(RU) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWSI - Output Tax</masterLabel>
+        <translation><!-- MWSI - Output Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWST - Output Tax</masterLabel>
+        <translation><!-- MWST - Output Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MWSV - Output VAT -SlsPrice</masterLabel>
+        <translation><!-- MWSV - Output VAT -SlsPrice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MX01 - I.E.P.S.  (MEXICO)</masterLabel>
+        <translation><!-- MX01 - I.E.P.S.  (MEXICO) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA00 - Free Goods SD</masterLabel>
+        <translation><!-- NA00 - Free Goods SD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NET1 - Net value full VAT</masterLabel>
+        <translation><!-- NET1 - Net value full VAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NET2 - Net value half VAT</masterLabel>
+        <translation><!-- NET2 - Net value half VAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NETP - Price</masterLabel>
+        <translation><!-- NETP - Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NETW - Value of Goods</masterLabel>
+        <translation><!-- NETW - Value of Goods --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PB00 - Price (Gross)</masterLabel>
+        <translation><!-- PB00 - Price (Gross) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PBEW - Value Transf. Sales</masterLabel>
+        <translation><!-- PBEW - Value Transf. Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PBFI - Value Transfer B.FI</masterLabel>
+        <translation><!-- PBFI - Value Transfer B.FI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PC00 - Profit ctr valuation</masterLabel>
+        <translation><!-- PC00 - Profit ctr valuation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCAM - Charge AMEX</masterLabel>
+        <translation><!-- PCAM - Charge AMEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCDI - Charge Diners</masterLabel>
+        <translation><!-- PCDI - Charge Diners --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCMC - Charge MasterCard</masterLabel>
+        <translation><!-- PCMC - Charge MasterCard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCVI - Charge VISA</masterLabel>
+        <translation><!-- PCVI - Charge VISA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PDIF - Diff.value (own)</masterLabel>
+        <translation><!-- PDIF - Diff.value (own) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PI01 - Inter-company Price</masterLabel>
+        <translation><!-- PI01 - Inter-company Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PI02 - Inter-company %</masterLabel>
+        <translation><!-- PI02 - Inter-company % --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKAR - Settlement Price Hdr</masterLabel>
+        <translation><!-- PKAR - Settlement Price Hdr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMIN - Minimum Price</masterLabel>
+        <translation><!-- PMIN - Minimum Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PN00 - Price (net)</masterLabel>
+        <translation><!-- PN00 - Price (net) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PN10 - Sales Price</masterLabel>
+        <translation><!-- PN10 - Sales Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PNET - Net value</masterLabel>
+        <translation><!-- PNET - Net value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPAG - MatlGroup Price Item</masterLabel>
+        <translation><!-- PPAG - MatlGroup Price Item --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPAR - Settlement Price Itm</masterLabel>
+        <translation><!-- PPAR - Settlement Price Itm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPSG - Hierarchy Price Item</masterLabel>
+        <translation><!-- PPSG - Hierarchy Price Item --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PPSV - Service Price Item</masterLabel>
+        <translation><!-- PPSV - Service Price Item --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR00 - Price</masterLabel>
+        <translation><!-- PR00 - Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR01 - Price incl.Sales Tax</masterLabel>
+        <translation><!-- PR01 - Price incl.Sales Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR02 - Graduated Price</masterLabel>
+        <translation><!-- PR02 - Graduated Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PR03 - Price interco</masterLabel>
+        <translation><!-- PR03 - Price interco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRA0 - Promo SP wholesale 1</masterLabel>
+        <translation><!-- PRA0 - Promo SP wholesale 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRA1 - Promo SP wholesale 2</masterLabel>
+        <translation><!-- PRA1 - Promo SP wholesale 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PREF - Preference</masterLabel>
+        <translation><!-- PREF - Preference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTAM - American Express</masterLabel>
+        <translation><!-- PTAM - American Express --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTBL - Invoice amount</masterLabel>
+        <translation><!-- PTBL - Invoice amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTCH - Payment Type - Check</masterLabel>
+        <translation><!-- PTCH - Payment Type - Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTCS - Payment Type - Cash</masterLabel>
+        <translation><!-- PTCS - Payment Type - Cash --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTDI - Diners Card</masterLabel>
+        <translation><!-- PTDI - Diners Card --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTEU - Eurocard</masterLabel>
+        <translation><!-- PTEU - Eurocard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTMC - Mastercard/Eurocard</masterLabel>
+        <translation><!-- PTMC - Mastercard/Eurocard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTVI - VISA Card</masterLabel>
+        <translation><!-- PTVI - VISA Card --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTVO - Voucher</masterLabel>
+        <translation><!-- PTVO - Voucher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>R100 - 100% discount</masterLabel>
+        <translation><!-- R100 - 100% discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RA00 - % Discount from Net</masterLabel>
+        <translation><!-- RA00 - % Discount from Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RA01 - % Disc.from Gross</masterLabel>
+        <translation><!-- RA01 - % Disc.from Gross --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RB00 - Discount (Value)</masterLabel>
+        <translation><!-- RB00 - Discount (Value) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RB10 - Complaint Discount</masterLabel>
+        <translation><!-- RB10 - Complaint Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RB11 - Cash and Carry Disc.</masterLabel>
+        <translation><!-- RB11 - Cash and Carry Disc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RB19 - Other Discounts</masterLabel>
+        <translation><!-- RB19 - Other Discounts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RC00 - Quantity Discount</masterLabel>
+        <translation><!-- RC00 - Quantity Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RD00 - Weight Discount</masterLabel>
+        <translation><!-- RD00 - Weight Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RH00 - Percent in Hundreds</masterLabel>
+        <translation><!-- RH00 - Percent in Hundreds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RJ01 - Rackjobbing-Picking</masterLabel>
+        <translation><!-- RJ01 - Rackjobbing-Picking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RL00 - Factoring Discount</masterLabel>
+        <translation><!-- RL00 - Factoring Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SD01 - Customer/Material</masterLabel>
+        <translation><!-- SD01 - Customer/Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SD02 - Customer/Matl/Plant</masterLabel>
+        <translation><!-- SD02 - Customer/Matl/Plant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SD03 - CountryOfDest/MatGrp</masterLabel>
+        <translation><!-- SD03 - CountryOfDest/MatGrp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SKTO - Cash Discount</masterLabel>
+        <translation><!-- SKTO - Cash Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SKTV - Cash Discount</masterLabel>
+        <translation><!-- SKTV - Cash Discount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRIG - Event Trigger</masterLabel>
+        <translation><!-- TRIG - Event Trigger --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTX1 - State Sales Tax</masterLabel>
+        <translation><!-- UTX1 - State Sales Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTX2 - County Sales Tax</masterLabel>
+        <translation><!-- UTX2 - County Sales Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTX3 - City Sales Tax</masterLabel>
+        <translation><!-- UTX3 - City Sales Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTXJ - Tax Jurisdict.Code</masterLabel>
+        <translation><!-- UTXJ - Tax Jurisdict.Code --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VA00 - Variant Price</masterLabel>
+        <translation><!-- VA00 - Variant Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VA01 - Variant Price</masterLabel>
+        <translation><!-- VA01 - Variant Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VASE - Variant Price</masterLabel>
+        <translation><!-- VASE - Variant Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VKA0 - Promo SP        IS-R</masterLabel>
+        <translation><!-- VKA0 - Promo SP        IS-R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VKA1 - Other promo SP  IS-R</masterLabel>
+        <translation><!-- VKA1 - Other promo SP  IS-R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VKAE - Parallel promo SP</masterLabel>
+        <translation><!-- VKAE - Parallel promo SP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VKP0 - Sales price</masterLabel>
+        <translation><!-- VKP0 - Sales price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VKP1 - Other Sales Pr. IS-R</masterLabel>
+        <translation><!-- VKP1 - Other Sales Pr. IS-R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VKPE - Parallel SP    IS-R</masterLabel>
+        <translation><!-- VKPE - Parallel SP    IS-R --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VPRS - Cost</masterLabel>
+        <translation><!-- VPRS - Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIA1 - Input Tax Dest. Ctry</masterLabel>
+        <translation><!-- WIA1 - Input Tax Dest. Ctry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIA2 - Output Tax Dep. Ctry</masterLabel>
+        <translation><!-- WIA2 - Output Tax Dep. Ctry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIA3 - Output Tax Dest.Ctry</masterLabel>
+        <translation><!-- WIA3 - Output Tax Dest.Ctry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WK00 - Targ.Val. Value Cont</masterLabel>
+        <translation><!-- WK00 - Targ.Val. Value Cont --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WUST - Sales Tax</masterLabel>
+        <translation><!-- WUST - Sales Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XR1 - Tax Jur Code Level 1</masterLabel>
+        <translation><!-- XR1 - Tax Jur Code Level 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XR2 - Tax Jur Code Level 2</masterLabel>
+        <translation><!-- XR2 - Tax Jur Code Level 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XR3 - Tax Jur Code Level 3</masterLabel>
+        <translation><!-- XR3 - Tax Jur Code Level 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XR4 - Tax Jur Code Level 4</masterLabel>
+        <translation><!-- XR4 - Tax Jur Code Level 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XR5 - Tax Jur Code Level 5</masterLabel>
+        <translation><!-- XR5 - Tax Jur Code Level 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XR6 - Tax Jur Code Level 6</masterLabel>
+        <translation><!-- XR6 - Tax Jur Code Level 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZBX1 - Royalty Expenses</masterLabel>
+        <translation><!-- ZBX1 - Royalty Expenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZC00 - Pay by phone fee</masterLabel>
+        <translation><!-- ZC00 - Pay by phone fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZCOM - Commission for Agent</masterLabel>
+        <translation><!-- ZCOM - Commission for Agent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZCP0 - Cost</masterLabel>
+        <translation><!-- ZCP0 - Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZCP1 - Price (Cost+%)</masterLabel>
+        <translation><!-- ZCP1 - Price (Cost+%) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZF00 - Freight Cost</masterLabel>
+        <translation><!-- ZF00 - Freight Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZF01 - Freight Cost (QTY)</masterLabel>
+        <translation><!-- ZF01 - Freight Cost (QTY) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZF02 - Freight (Interco)</masterLabel>
+        <translation><!-- ZF02 - Freight (Interco) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZH00 - Tariff Fee (Duty)</masterLabel>
+        <translation><!-- ZH00 - Tariff Fee (Duty) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZIPO - Commission for IPO</masterLabel>
+        <translation><!-- ZIPO - Commission for IPO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZK07 - Sales and Use Tax</masterLabel>
+        <translation><!-- ZK07 - Sales and Use Tax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZM00 - Mark-up % Std Cost</masterLabel>
+        <translation><!-- ZM00 - Mark-up % Std Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZNET - Net Value</masterLabel>
+        <translation><!-- ZNET - Net Value --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZO04 - Hier./customer</masterLabel>
+        <translation><!-- ZO04 - Hier./customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZO05 - Hier./cus/material</masterLabel>
+        <translation><!-- ZO05 - Hier./cus/material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZO06 - Hier./Cust/Profit C</masterLabel>
+        <translation><!-- ZO06 - Hier./Cust/Profit C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZO07 - Hier./Profit C</masterLabel>
+        <translation><!-- ZO07 - Hier./Profit C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZOFF - Offshore commission</masterLabel>
+        <translation><!-- ZOFF - Offshore commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZPR0 - Price for Heimann Co</masterLabel>
+        <translation><!-- ZPR0 - Price for Heimann Co --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZPR1 - Prices Stl/Mn</masterLabel>
+        <translation><!-- ZPR1 - Prices Stl/Mn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZPR3 - UnitPrice to Ext Cus</masterLabel>
+        <translation><!-- ZPR3 - UnitPrice to Ext Cus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZPR4 - UnitPrice(no mat#)</masterLabel>
+        <translation><!-- ZPR4 - UnitPrice(no mat#) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZPR5 - Approved Value(ZF8)</masterLabel>
+        <translation><!-- ZPR5 - Approved Value(ZF8) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZPR6 - NRE Price</masterLabel>
+        <translation><!-- ZPR6 - NRE Price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR00 - Stl Rep Commission</masterLabel>
+        <translation><!-- ZR00 - Stl Rep Commission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR01 - The Macinnis Company</masterLabel>
+        <translation><!-- ZR01 - The Macinnis Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR02 - Trilogy MarketingInc</masterLabel>
+        <translation><!-- ZR02 - Trilogy MarketingInc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR03 - C.W. Beach (RD Asso)</masterLabel>
+        <translation><!-- ZR03 - C.W. Beach (RD Asso) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR04 - C.W. Beach</masterLabel>
+        <translation><!-- ZR04 - C.W. Beach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR05 - C. W. Beach Co.</masterLabel>
+        <translation><!-- ZR05 - C. W. Beach Co. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR06 - S.States Mktg</masterLabel>
+        <translation><!-- ZR06 - S.States Mktg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR07 - Temper Tech Mktg Inc</masterLabel>
+        <translation><!-- ZR07 - Temper Tech Mktg Inc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR08 - Maxtech Mktg Ltd</masterLabel>
+        <translation><!-- ZR08 - Maxtech Mktg Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR09 - Davix Int&apos;l Ltd.</masterLabel>
+        <translation><!-- ZR09 - Davix Int&apos;l Ltd. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR10 - Marathon Electronics</masterLabel>
+        <translation><!-- ZR10 - Marathon Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR11 - Kobert Associates</masterLabel>
+        <translation><!-- ZR11 - Kobert Associates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR12 - Griot Group</masterLabel>
+        <translation><!-- ZR12 - Griot Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR13 - Adv.Tech.Services</masterLabel>
+        <translation><!-- ZR13 - Adv.Tech.Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR14 - Northstar Tech Sales</masterLabel>
+        <translation><!-- ZR14 - Northstar Tech Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR15 - Glenn Mar, Inc.</masterLabel>
+        <translation><!-- ZR15 - Glenn Mar, Inc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR16 - RepTek</masterLabel>
+        <translation><!-- ZR16 - RepTek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR17 - Jem Electronics, Inc</masterLabel>
+        <translation><!-- ZR17 - Jem Electronics, Inc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR18 - Sales Eng. Concepts</masterLabel>
+        <translation><!-- ZR18 - Sales Eng. Concepts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR19 - Groh Associates</masterLabel>
+        <translation><!-- ZR19 - Groh Associates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR21 - Hawkins Frederickson</masterLabel>
+        <translation><!-- ZR21 - Hawkins Frederickson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR22 - Acorn Electronics</masterLabel>
+        <translation><!-- ZR22 - Acorn Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR50 - PKI St. Louis</masterLabel>
+        <translation><!-- ZR50 - PKI St. Louis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR51 - B&amp;B Corporation</masterLabel>
+        <translation><!-- ZR51 - B&amp;B Corporation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR52 - Shinkoh</masterLabel>
+        <translation><!-- ZR52 - Shinkoh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR53 - Talviton</masterLabel>
+        <translation><!-- ZR53 - Talviton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR54 - Blue - Electric</masterLabel>
+        <translation><!-- ZR54 - Blue - Electric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR56 - Kinout Invest DevLtd</masterLabel>
+        <translation><!-- ZR56 - Kinout Invest DevLtd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR57 - Ota Taiwan Inc.</masterLabel>
+        <translation><!-- ZR57 - Ota Taiwan Inc. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR58 - Hutmacher &amp; Schlund</masterLabel>
+        <translation><!-- ZR58 - Hutmacher &amp; Schlund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR59 - Faster Electronica</masterLabel>
+        <translation><!-- ZR59 - Faster Electronica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR61 - Martinsson &amp; Co Inst</masterLabel>
+        <translation><!-- ZR61 - Martinsson &amp; Co Inst --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR62 - ATYS</masterLabel>
+        <translation><!-- ZR62 - ATYS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR63 - Pacer Electronics</masterLabel>
+        <translation><!-- ZR63 - Pacer Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR64 - Holst &amp; Fleischer</masterLabel>
+        <translation><!-- ZR64 - Holst &amp; Fleischer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR65 - Aviv Electronics Ltd</masterLabel>
+        <translation><!-- ZR65 - Aviv Electronics Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR66 - Other Foreign</masterLabel>
+        <translation><!-- ZR66 - Other Foreign --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR67 - Dalma Electronics OY</masterLabel>
+        <translation><!-- ZR67 - Dalma Electronics OY --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR68 - PKI Instruments</masterLabel>
+        <translation><!-- ZR68 - PKI Instruments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR70 - Temper/NorthStarGlen</masterLabel>
+        <translation><!-- ZR70 - Temper/NorthStarGlen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR71 - Toptronic</masterLabel>
+        <translation><!-- ZR71 - Toptronic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR75 - PerkinElmer OptoElec</masterLabel>
+        <translation><!-- ZR75 - PerkinElmer OptoElec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR76 - PKI Singapore</masterLabel>
+        <translation><!-- ZR76 - PKI Singapore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR77 - Other Far East</masterLabel>
+        <translation><!-- ZR77 - Other Far East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR79 - Laser ElectronicsPty</masterLabel>
+        <translation><!-- ZR79 - Laser ElectronicsPty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR80 - A.T.E.</masterLabel>
+        <translation><!-- ZR80 - A.T.E. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR81 - Innovtek Enterprise</masterLabel>
+        <translation><!-- ZR81 - Innovtek Enterprise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR82 - Eurodis Texim</masterLabel>
+        <translation><!-- ZR82 - Eurodis Texim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR83 - Seraphim (HongKong)</masterLabel>
+        <translation><!-- ZR83 - Seraphim (HongKong) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR84 - Seraphim (Taiwan)</masterLabel>
+        <translation><!-- ZR84 - Seraphim (Taiwan) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR85 - Lober S.A.</masterLabel>
+        <translation><!-- ZR85 - Lober S.A. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR86 - K&amp;K Ent.(FarEast)Ltd</masterLabel>
+        <translation><!-- ZR86 - K&amp;K Ent.(FarEast)Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR87 - Dae Hueng</masterLabel>
+        <translation><!-- ZR87 - Dae Hueng --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR90 - Nok PKI</masterLabel>
+        <translation><!-- ZR90 - Nok PKI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR93 - Kevin S.R.L.</masterLabel>
+        <translation><!-- ZR93 - Kevin S.R.L. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR95 - PKI China</masterLabel>
+        <translation><!-- ZR95 - PKI China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZR96 - Ciontek</masterLabel>
+        <translation><!-- ZR96 - Ciontek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZRE1 - Royalty Expenses</masterLabel>
+        <translation><!-- ZRE1 - Royalty Expenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZSU1 - Special Surcharge</masterLabel>
+        <translation><!-- ZSU1 - Special Surcharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZSU2 - Gas Surcharge (QTY)</masterLabel>
+        <translation><!-- ZSU2 - Gas Surcharge (QTY) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZSUR - Mark-up % for RM</masterLabel>
+        <translation><!-- ZSUR - Mark-up % for RM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZSV1 - Repair Ser. Acc. Det</masterLabel>
+        <translation><!-- ZSV1 - Repair Ser. Acc. Det --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZSV1 - Service Cost</masterLabel>
+        <translation><!-- ZSV1 - Service Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZSV2 - Evaluation Cost</masterLabel>
+        <translation><!-- ZSV2 - Evaluation Cost --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZX02 - Royalty Expenses</masterLabel>
+        <translation><!-- ZX02 - Royalty Expenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZZZ1 - Freight Cost (Excl)</masterLabel>
+        <translation><!-- ZZZ1 - Freight Cost (Excl) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.Name=&apos;Special Approval Request&apos;, ISPICKVAL(ApprovalStatus__c, &apos;Pending&apos;),IsRejected__c = True, ISBLANK(Re_Submitting_Comments__c))</errorConditionFormula>
+    <errorMessage>Since your request is rejected before, In order to resubmit this record please add the Resubmit Comment before submit the Case.</errorMessage>
+</ValidationRule>

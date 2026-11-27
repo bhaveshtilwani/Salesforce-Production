@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit__c</fullName>
+    <label>Business Unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Division__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Product_Line</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Advanced Industrial Sensing</controllingFieldValue>
+            <valueName>IR Sensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Industrial Sensing</controllingFieldValue>
+            <valueName>Photon Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated Optronics &amp; Avionics</controllingFieldValue>
+            <valueName>Integrated Optronics &amp; Avionics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems</controllingFieldValue>
+            <valueName>Disinfection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems</controllingFieldValue>
+            <valueName>Industrial Curing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems</controllingFieldValue>
+            <valueName>Thermal Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedTech &amp; Life Sciences</controllingFieldValue>
+            <valueName>Plasma Light Sources BU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedTech &amp; Life Sciences</controllingFieldValue>
+            <valueName>Solutions BU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Holistic Lithography BU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Imaging &amp; Laser Systems BU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Metrology &amp; Inspection BU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Precision Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Semiconductor Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General</controllingFieldValue>
+            <valueName>General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CS Division</controllingFieldValue>
+            <valueName>CS BU</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

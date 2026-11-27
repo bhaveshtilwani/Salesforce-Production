@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Organization --></label>
+    <name>Sales_Organization__c</name>
+    <picklistValues>
+        <masterLabel>0001 - Sales Org. 001 (0001)</masterLabel>
+        <translation><!-- 0001 - Sales Org. 001 (0001) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EGS1 - Sales Office - SGP (EGS1)</masterLabel>
+        <translation><!-- EGS1 - Sales Office - SGP (EGS1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPPH - Manila, Philippines (OPPH)</masterLabel>
+        <translation><!-- OPPH - Manila, Philippines (OPPH) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPSL - U.S. Distribution (OPSL)</masterLabel>
+        <translation><!-- OPSL - U.S. Distribution (OPSL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PEC1 - Sales Office - SHZ (PEC1)</masterLabel>
+        <translation><!-- PEC1 - Sales Office - SHZ (PEC1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SG10 - ESG (Optics) (SG10)</masterLabel>
+        <translation><!-- SG10 - ESG (Optics) (SG10) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

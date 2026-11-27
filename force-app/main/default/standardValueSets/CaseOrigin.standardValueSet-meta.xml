@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>true</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Walk-in</fullName>
+        <default>false</default>
+        <label>Walk-in</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Portal Request</fullName>
+        <default>false</default>
+        <label>Customer Portal Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WeChat</fullName>
+        <default>false</default>
+        <label>WeChat</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Direct goods receipt</fullName>
+        <default>false</default>
+        <label>Direct goods receipt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+    </standardValue>
+</StandardValueSet>

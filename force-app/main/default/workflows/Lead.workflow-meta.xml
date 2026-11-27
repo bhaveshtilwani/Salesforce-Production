@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Create_Reminder_14_days</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <ccEmails>scott.orr@excelitas.com</ccEmails>
+        <ccEmails>richard.ankcorn@excelitas.com</ccEmails>
+        <description>Account Create Reminder 14 days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Overdue_Lead_W_How_to_21_days</template>
+    </alerts>
+    <alerts>
+        <fullName>Account_Create_Reminder_7_days</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <ccEmails>scott.orr@Excelitas.com</ccEmails>
+        <ccEmails>Richard.Ankcorn@excelitas.com</ccEmails>
+        <description>Account Create Reminder 7 days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Overdue_Lead_W_How_to_14_days</template>
+    </alerts>
+    <alerts>
+        <fullName>Existing_Lead_Submitted_a_Website_inquiry</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <ccEmails>Scott.Orr@Excelitas.com</ccEmails>
+        <ccEmails>aldwin.alegre@excelitas.com</ccEmails>
+        <description>Existing Lead Submitted a Website inquiry</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/LeadsExsitingLeadUpdatefromWebsite</template>
+    </alerts>
+    <alerts>
+        <fullName>Existing_Lead_re_opened_User_Inactive</fullName>
+        <description>Existing Lead re-opened - User Inactive</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>steve.burek@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Exsiting_LEADORONTACT_Update</template>
+    </alerts>
+    <alerts>
+        <fullName>Existing_Old_Lead_re_opened</fullName>
+        <description>Existing Lead re-opened</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Exsiting_LEADORONTACT_Update</template>
+    </alerts>
+    <alerts>
+        <fullName>GDPR_Email</fullName>
+        <description>GDPR Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>JC_ALL/GDPR_Outbound</template>
+    </alerts>
+    <alerts>
+        <fullName>Lead_Assigned</fullName>
+        <description>Lead Assigned</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>eric.gelinas@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>salesforce.administrator@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>Lead_Forwarded_to_External_Contact</fullName>
+        <ccEmails>Thomas.Legrand@Excelitas.com</ccEmails>
+        <ccEmails>Scott.Orr@Excelitas.com</ccEmails>
+        <description>Lead Forwarded to External Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/LeadFWDtoEXTERNALNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>Lead_Reassigned</fullName>
+        <description>Lead Reassigned</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Open_Lead_Reassigned</template>
+    </alerts>
+    <alerts>
+        <fullName>Lead_assignment_to_Anton_G</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com, scott.orr.@excelitas.com</ccEmails>
+        <description>Lead assignment to Anton G</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>NewLeadEmail</fullName>
+        <ccEmails>jonathan.lese@perkinelmer.com</ccEmails>
+        <description>New Lead Email</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/LeadsNewassignmentnotificationSAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Lead_For_Queue_America</fullName>
+        <description>New Lead For Queue_America</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>allyson.budnik@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>harpreet.singh@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Lead_For_Queue_EMEA</fullName>
+        <description>New Lead For Queue EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>achim.greiner@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>johanna.svensson@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kristian.frazier@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Lead_is_assigned_to_you</fullName>
+        <ccEmails>Thomas.Legrand@Excelitas.com</ccEmails>
+        <ccEmails>Scott.Orr@Excelitas.com</ccEmails>
+        <description>New Lead is assigned to you</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Leads_Queue_AIS_Asia</fullName>
+        <description>New Leads Queue AIS Asia</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mei.li@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ricky.wong@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>All_JC/LeadsQueueNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>Open_Lead_New</fullName>
+        <description>Open Lead New</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Open_Lead_New</template>
+    </alerts>
+    <alerts>
+        <fullName>Open_Lead_Reminder_14_days</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <ccEmails>scott.orr@excelitas.com</ccEmails>
+        <ccEmails>richard.ankcorn@excelitas.com</ccEmails>
+        <ccEmails>jo.patron@excelitas.com</ccEmails>
+        <description>Open Lead Reminder 14 days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Open_Lead_14_Days_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Open_Lead_Reminder_7_days</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <ccEmails>scott.orr@Excelitas.com</ccEmails>
+        <ccEmails>Richard.Ankcorn@excelitas.com</ccEmails>
+        <ccEmails>jo.patron@excelitas.com</ccEmails>
+        <description>Open Lead Reminder 7 days</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Open_Lead_7_Days_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Overd_Lead</fullName>
+        <ccEmails>Thomas.legrand@excelitas.com</ccEmails>
+        <ccEmails>Scott.Orr@excelitas.com</ccEmails>
+        <ccEmails>Richard.ankcorn@excelitas.com</ccEmails>
+        <description>Overd Lead</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Overdue_Lead_W_How_to</template>
+    </alerts>
+    <alerts>
+        <fullName>Overdue_Lead</fullName>
+        <ccEmails>Thomas.Legrand@excelitas.com</ccEmails>
+        <description>Overdue Lead</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/LeadsNewassignmentnotificationSAMPLE</template>
+    </alerts>
+    <alerts>
+        <fullName>Overdue_Lead_notification</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <ccEmails>scott.orr@excelitas.com</ccEmails>
+        <description>Overdue Lead</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Overdue_Lead</template>
+    </alerts>
+    <alerts>
+        <fullName>Re_Assign_Lead_To_Queue_America</fullName>
+        <ccEmails>danica.martin@excelitas.com</ccEmails>
+        <ccEmails>JolyonKeith.Patron@excelitas.com</ccEmails>
+        <ccEmails>andrew.goodfellow@excelitas.com</ccEmails>
+        <description>Re Assign Lead To Queue America</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>allyson.budnik@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>harpreet.singh@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>All_JC/LeadsReassignmentnotificationExcelitasQueue</template>
+    </alerts>
+    <alerts>
+        <fullName>Re_Assign_Lead_To_Queue_EMEA</fullName>
+        <ccEmails>danica.martin@excelitas.com</ccEmails>
+        <ccEmails>JolyonKeith.Patron@excelitas.com</ccEmails>
+        <ccEmails>andrew.goodfellow@excelitas.com</ccEmails>
+        <description>Re Assign Lead To Queue EMEA</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>achim.greiner@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>johanna.svensson@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kristian.frazier@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>All_JC/LeadsReassignmentnotificationExcelitasQueue</template>
+    </alerts>
+    <alerts>
+        <fullName>Re_Assign_Leads_Queue_AIS_Asia</fullName>
+        <ccEmails>danica.martin@excelitas.com</ccEmails>
+        <ccEmails>JolyonKeith.Patron@excelitas.com</ccEmails>
+        <ccEmails>andrew.goodfellow@excelitas.com</ccEmails>
+        <description>Re Assign Leads Queue AIS Asia</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mei.li@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ricky.wong@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>All_JC/LeadsReassignmentnotificationExcelitasQueue</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Notif_to_Lead_Owner_Carlos_And_Omni_Email</fullName>
+        <ccEmails>Omnicure@Excelitas.com</ccEmails>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>Send Email Notif to Lead Owner And Omni Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ana.bailey@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/OMNI_LeadNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Notification_to_admin_user</fullName>
+        <description>Send Notification to admin users when lead is assigned to Salesforce Administrator User</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alona.droga@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>andrew.goodfellow@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>danica.martin@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jo.patron@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>richard.ankcorn@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sinead.oleary@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/LeadsNewassignmentnotificationExcelitas</template>
+    </alerts>
+    <alerts>
+        <fullName>X_Cite_Replacement</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <ccEmails>jennifer.melo@excelitas.com</ccEmails>
+        <ccEmails>Ben.Standish@excelitas.com</ccEmails>
+        <description>X-Cite Replacement</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>LEAD_TEMPLATES/X2_XCite_Replacement_Lamp_Imquiries</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Assign_To_S_ORR</fullName>
+        <field>OwnerId</field>
+        <lookupValue>steve.burek@excelitas.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Assign To S.ORR</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Contacted_DateTime_Update</fullName>
+        <field>Contacted_DateTime__c</field>
+        <formula>NOW()</formula>
+        <name>Contacted DateTime Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Follow_up_Action</fullName>
+        <description>Populate FUA with &quot;Contact&quot; if Exhibition Lead FUA is blank</description>
+        <field>Follow_Up_Action__c</field>
+        <literalValue>Contact</literalValue>
+        <name>Follow up Action</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Notes_on_X_Cite_Replacement</fullName>
+        <field>Notes__c</field>
+        <formula>&quot;Lead sent X-cite Replacement Email Template message.&quot;</formula>
+        <name>Lead Notes on X-Cite Replacement</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Lead_Source_Date</fullName>
+        <field>Lead_Source_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Lead Source Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Market</fullName>
+        <description>If Market do Not Market = Market, Email Opt Out = FALSE</description>
+        <field>HasOptedOutOfEmail</field>
+        <literalValue>0</literalValue>
+        <name>Market</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Owner_Change_to_MSteenberg</fullName>
+        <description>If Lead = x and Country X, assign to Monya</description>
+        <field>OwnerId</field>
+        <lookupValue>monya.steenberg@excelitas.com</lookupValue>
+        <lookupValueType>User</lookupValueType>
+        <name>Owner Change to MSteenberg</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Reion_Field_ASIA</fullName>
+        <description>Populate REgion based on Country Lead for ASIA</description>
+        <field>Territory__c</field>
+        <literalValue>ASIA</literalValue>
+        <name>Populate Reion Field ASIA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Territory_EMEA</fullName>
+        <description>Populate Territory based on Lead Country for EMEA</description>
+        <field>Territory__c</field>
+        <literalValue>EMEA</literalValue>
+        <name>Populate Territory EMEA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_Territory_Field</fullName>
+        <description>Populate Region Field Based on Country</description>
+        <field>Territory__c</field>
+        <literalValue>AMERICAS</literalValue>
+        <name>Populate Territory Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Priority</fullName>
+        <field>Priority__c</field>
+        <literalValue>High</literalValue>
+        <name>Priority</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Sales_TEam_NAme_LSA_AMERICAS</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>LSA &amp; Semi Americas</literalValue>
+        <name>Sales TEam NAme LSA AMERICAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Change_to_Open</fullName>
+        <field>Status</field>
+        <literalValue>Open</literalValue>
+        <name>Status Change to Open</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Time_Stamp</fullName>
+        <field>Status_Change_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Status Time Stamp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_ASIA</fullName>
+        <description>When Owner = X, Update with Asia Sales Team</description>
+        <field>Sales_Team__c</field>
+        <literalValue>Asia/Pac Sales</literalValue>
+        <name>UPDATE SALES TEAM ASIA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_CISS_AM</fullName>
+        <description>Based on Owner, Update Sales Team (CISS AMERICAS)</description>
+        <field>Sales_Team__c</field>
+        <literalValue>CISS Americas</literalValue>
+        <name>UPDATE SALES TEAM CISS AMERICAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_CISS_EMEA</fullName>
+        <description>Update Sales Team when Owner = X</description>
+        <field>Sales_Team__c</field>
+        <literalValue>CISS EMEA</literalValue>
+        <name>UPDATE SALES TEAM CISS EMEA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_Channel_Sales</fullName>
+        <description>Update Lead Team Name to Channel Sales based on Owner</description>
+        <field>Sales_Team__c</field>
+        <literalValue>Channel Sales</literalValue>
+        <name>UPDATE SALES TEAM Channel Sales</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_LATIN_AMERICA</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>Latin America Sales</literalValue>
+        <name>UPDATE SALES TEAM LATIN AMERICA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_LSA_EMEA</fullName>
+        <description>Update Sales Team when Owner = X</description>
+        <field>Sales_Team__c</field>
+        <literalValue>LSA &amp; Semi EMEA</literalValue>
+        <name>UPDATE SALES TEAM LSA EMEA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Application_LS_A_Analytical</fullName>
+        <field>Application__c</field>
+        <literalValue>LS/A - Analytical</literalValue>
+        <name>Update Application LS/A - Analytical</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_FUA_of_LEad_Source_WEbsite</fullName>
+        <description>Update Follow up Action</description>
+        <field>Follow_Up_Action__c</field>
+        <literalValue>Contact</literalValue>
+        <name>Update F-U Action of LEad Source WEbsite</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Gender_FEMALE</fullName>
+        <field>Gender__c</field>
+        <literalValue>Female</literalValue>
+        <name>Update Gender FEMALE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Gender_to_MALE</fullName>
+        <field>Gender__c</field>
+        <literalValue>Male</literalValue>
+        <name>Update Gender to MALE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_LSD</fullName>
+        <description>Update Lead Source Date when LEad is coming from WEbsite or Exhibition</description>
+        <field>Lead_Source_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Update LSD</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Lead_Source_to_Website</fullName>
+        <description>If an exsiting lead submits a new Website inquiry, Rule is to have the current Lead Source changed to Website.  This new Lead source will trigger Workflow rule for NEW Website Inq from existing LEad.</description>
+        <field>LeadSource</field>
+        <literalValue>Website</literalValue>
+        <name>Update Lead Source to Website</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Notes_on_Forward_External</fullName>
+        <field>Notes__c</field>
+        <name>Update Notes on Forward External</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Opt_Out_Checkbox</fullName>
+        <description>Based on Market/do not Market = Do Not Market</description>
+        <field>HasOptedOutOfEmail</field>
+        <literalValue>1</literalValue>
+        <name>Update Opt-Out Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Priority_of_Lead_Source_Website</fullName>
+        <field>Priority__c</field>
+        <literalValue>High</literalValue>
+        <name>Update Priority of Lead Source Website</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rec_Type_to_Comm</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Commercial_Lead</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Rec Type to Comm</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Record_Type_D_A</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>D_A_Lead</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type D&amp;A</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_Stamp</fullName>
+        <field>Double_Opt_In_TimeStamp__c</field>
+        <formula>NOW ()</formula>
+        <name>Update Time Stamp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X_Cite_Replacement_Status</fullName>
+        <field>Status</field>
+        <literalValue>Forwarded</literalValue>
+        <name>X-Cite Replacement Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>ALERT to ED</fullName>
+        <active>false</active>
+        <booleanFilter>(1 AND 2) Or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11 or 12 or 13 or 14</booleanFilter>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Commercial Lead</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Lockh</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Rayth</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Sand</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Eagle</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Hoenyw</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Harri</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Neo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Onco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Asels</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Tech n</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Elbi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>CACI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Company</field>
+            <operation>contains</operation>
+            <value>Optics</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Change Existing Lead to Website</fullName>
+        <actions>
+            <name>Update_Lead_Source_to_Website</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.pi__comments__c</field>
+            <operation>notEqual</operation>
+            <value>NULL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.pi__last_activity__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email Notification on new Lead</fullName>
+        <actions>
+            <name>New_Lead_is_assigned_to_you</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </criteriaItems>
+        <description>Trigger New Lead email once LEad is created with Status &quot;Open&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email Notification on new OMNI Lead</fullName>
+        <actions>
+            <name>Send_Email_Notif_to_Lead_Owner_Carlos_And_Omni_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Product_Sub_Family__c</field>
+            <operation>equals</operation>
+            <value>Omni</value>
+        </criteriaItems>
+        <description>Trigger New Lead email once LEad is created with Status &quot;Open&quot; and &quot;Omni Sub-Fam&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Follow up Action</fullName>
+        <actions>
+            <name>Follow_up_Action</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 AND 2)</booleanFilter>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Exhibition</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Follow_Up_Action__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>If Lead Action from Exhibition is blank, populate field with &quot;Contact&quot;</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>GDPR - Email Opt in</fullName>
+        <actions>
+            <name>Market</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Opted_in__c</field>
+            <operation>equals</operation>
+            <value>Market</value>
+        </criteriaItems>
+        <description>Evaluate if Lead comes back later from Optout, if Market Do not Market = Market, then email Opt Out = FALSE</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>GDPR - New email to Created Today Lead</fullName>
+        <actions>
+            <name>GDPR_Email</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>Lead.CreatedDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>equals</operation>
+            <value>Germany</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>equals</operation>
+            <value>United Kingdom</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>GDPR - Opt-out on DBL-Opt</fullName>
+        <actions>
+            <name>Update_Opt_Out_Checkbox</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Opted_in__c</field>
+            <operation>equals</operation>
+            <value>Do Not Market</value>
+        </criteriaItems>
+        <description>If lead response to GDPR = Do Not Market, Opt-out = True</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>GDPR - Update Time Stamp</fullName>
+        <actions>
+            <name>Update_Time_Stamp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Opted_in__c</field>
+            <operation>contains</operation>
+            <value>Market</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Opted_in__c</field>
+            <operation>contains</operation>
+            <value>Do Not Market</value>
+        </criteriaItems>
+        <description>Double Optin</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>If Status %22Forwarded%22%2C Notes cannot be blank%2E</fullName>
+        <actions>
+            <name>Update_Notes_on_Forward_External</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Forwarded</value>
+        </criteriaItems>
+        <description>If Status &quot;Forwarded&quot;, Notes cannot be blank.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Contacted DateTime</fullName>
+        <actions>
+            <name>Contacted_DateTime_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Contacted</value>
+        </criteriaItems>
+        <description>updates Contacted DateTime to NOW() when Status is moved to Contacted</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Lead</fullName>
+        <actions>
+            <name>Lead_Assigned</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Harpreet Singh</value>
+        </criteriaItems>
+        <description>Eric G</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Lead Andreas</fullName>
+        <actions>
+            <name>Lead_assignment_to_Anton_G</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Anton Gaedtke</value>
+        </criteriaItems>
+        <description>Andreas</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Overdue Lead</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Open</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Thomas Legrand</value>
+        </criteriaItems>
+        <description>When Lead is  in OPEN Status, Trigger email after 7 days if lead left untouched/status unchanged.  Regenerate until Status is no longer &quot;OPEN&quot;.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Create_Reminder_7_days</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Account_Create_Reminder_14_days</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Overd_Lead</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Lead.CreatedDate</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>PARDOT ACTIVITY</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.pi__last_activity__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Region Field AMERICAS</fullName>
+        <actions>
+            <name>Populate_Territory_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>United States of America,Canada,Anguilla,Antigua &amp; Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Brazil,British Virgin Islands,Cayman Islands,Chile,Colombia,Costa Rica,Cuba,Curacao,Dominica,Dominican Republic,Ecuador</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>El Salvador,Falkland Islands,French Guiana,Grenada,Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Pitcairn,Puerto Rico,Saint Barthélemy,Saint Kitts and Nevis,Saint Lucia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Suriname,Trinidad and Tobago,Turks and Caicos Islands,U.S. Virgin Islands,Uruguay,Venezuela</value>
+        </criteriaItems>
+        <description>Based on Lead Country, populate REGION with matching Country for Americas</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Region Field ASIA</fullName>
+        <actions>
+            <name>Populate_Reion_Field_ASIA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 OR 2) OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>American Samoa,Antarctica,Australia,Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Christmas Island,Cocos (Keeling) Islands,Cook Islands,Fiji,French Polynesia,French Southern Territories,Guam,Hong Kong S.A.R.,China</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>India,Indonesia,Japan,Kazakhstan,Kiribati,Kyrgyzstan,Laos,Macao S.A.R.,China,Malaysia,Maldives,Marshall Islands,Micronesia,Mongolia,Myanmar,Nauru,Nepal,New Caledonia,New Zealand,Niue,Norfolk Island,North Korea</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>Northern Mariana Islands,Pakistan,Palau,Papua New Guinea,Philippines,Samoa,Singapore,Solomon Islands,South Korea,Sri Lanka,Taiwan,Tajikistan,Thailand,Timor-Leste,Tonga,Tuvalu,Uzbekistan,Vanuatu,Viet Nam,Wallis and Futuna</value>
+        </criteriaItems>
+        <description>Based on Lead Country, populate REGION with matching Country for ASIA</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Populate Region Field EMEA</fullName>
+        <actions>
+            <name>Populate_Territory_EMEA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2 OR 3 Or 4 OR 5 Or 6</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>Afghanistan,Albania,Algeria,Andorra,Angola,Armenia,Austria,Azerbaijan,Bahrain,Belarus,Belgium,Benin,Bosnia and Herzegovina,Botswana,Bulgaria,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African Republic,Chad,Comoros,Congo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>Croatia,Cyprus,Czech Republic,Cote d&apos;Ivoire,Democratic Republic of the Congo,Denmark,Djibouti,Egypt,Equatorial Guinea,Eritrea,Estonia,Ethiopia,Faroe Islands,Finland,France,Gabon,Gambia,Georgia,Germany,Ghana,Gibraltar,Greece,Greenland</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>Guinea,Guinea-Bissau,Hungary,Iceland,Iran,Iraq,Ireland,Isle of Man,Israel,Italy,Jersey,Jordan,Kenya,Kuwait,Latvia,Lebanon,Lesotho,Liberia,Libya,Liechtenstein,Lithuania,Luxembourg,Macedonia,Madagascar,Malawi,Mali,Malta,Mauritania</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>Mauritius,Mayotte,Moldova,Monaco,Montenegro,Morocco,Mozambique,Namibia,Netherlands,Niger,Nigeria,Norway,Oman,Palestinian Territory,Poland,Portugal,Qatar,Romania,Russia,Rwanda,Réunion,Saint Helena,San Marino,Sao Tome &amp; Principe</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>Saudi Arabia,Senegal,Serbia,Seychelles,Sierra Leone,Slovakia,Slovenia,Somalia,South Africa,South Sudan,Spain,Sudan,Svalbard and Jan Mayen,Swaziland,Sweden,Switzerland,Syria,Tanzania,Togo,Tunisia,Turkey,Turkmenistan,Uganda,Ukraine</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Country</field>
+            <operation>contains</operation>
+            <value>United Arab Emirates,United Kingdom,Vatican,Western Sahara,Yemen,Zambia,Zimbabwe</value>
+        </criteriaItems>
+        <description>Based on Lead Country, populate REGION with matching Country for EMEA</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>S%2EORR_Assignment Change</fullName>
+        <actions>
+            <name>Assign_To_S_ORR</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Marketing Only - Closed</value>
+        </criteriaItems>
+        <description>When lead is set to Forwarded or Marketing Only - Closed, reassign lead to Scott Orr</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sales Team Name %26 Owner ASIA SALES TEAM</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_ASIA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Arthur Jong,Brian Liu,Brian NG,Eric Wang,Bright Lee,Erick Li,James Lim,Kotaro Suzuki,Mei Li,Ricky Wong,Serena Loh,Toru Hayashi</value>
+        </criteriaItems>
+        <description>Based on Owner, Rule will fetch Sales Team Name</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sales Team Name %26 Owner CISS AMERICAS</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_CISS_AM</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Alain Charlebois,Anna Kostic,Eric Gelinas,Gregory Gallinat,Guy Antley,Guy Cote,Harpreet Singh,Helene Dubois,Nidal Abbas,Caroline Duval,Guy Bittar</value>
+        </criteriaItems>
+        <description>Based on Owner, Rule will fetch Sales Team Name</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sales Team Name %26 Owner CISS EMEA</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_CISS_EMEA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Achim Greiner,Bernd Ullmann,Georg Zeitelhack,Hans Birzer,Isabel Haackert,Jaroslaw Czeladzinski,Jens Meyer,Jochen Wenk,Matthias Endig,Olaf Meyer,Sabine Weber,Steffi petropoulos,Stephan Fritsch,Thomas Lindner,Udo Kirchner</value>
+        </criteriaItems>
+        <description>Based on Owner, Rule will fetch Sales Team Name</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sales Team Name %26 Owner Channel Team</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_Channel_Sales</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Josep Tienda,Uwe Helwig,James Clements</value>
+        </criteriaItems>
+        <description>Based on Owner, Rule will fetch Sales Team Name</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sales Team Name %26 Owner LS%2FA AMERICAS</fullName>
+        <actions>
+            <name>Sales_TEam_NAme_LSA_AMERICAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Ben Standish,Peter Niedzielski,Shawn Eaton,Jennifer Melo,Scott Elderkin,Robert Trottini,TODD BRAINARD</value>
+        </criteriaItems>
+        <description>Based on Owner, Rule will fetch Sales Team Name</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sales Team Name %26 Owner LSA EMEA</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_LSA_EMEA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>Anton Gaedtke,Bruno Bosser,Dieter Randel,David McKibben,Doris Klapp,Eva Sommerschuh,Henning Gritz,Jochem Sihorsch,Juergen Zander,Karsten Fischer,Kristian Frazier,Peter Jacobs,Petra Arnold,Stephan Schmall,Thorsten Hirsch,Yacine Talji,Yvonne Reinl</value>
+        </criteriaItems>
+        <description>Based on Owner, Rule will fetch Sales Team Name</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Sales Team Name %26 Owner Latin America sales team</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_LATIN_AMERICA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.OwnerId</field>
+            <operation>equals</operation>
+            <value>carlos alvarez</value>
+        </criteriaItems>
+        <description>Based on Owner, Rule will fetch Sales Team Name</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Record Type Comm</fullName>
+        <actions>
+            <name>Update_Rec_Type_to_Comm</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>CISS - Aerial Imaging,CISS - Appliances,CISS - Automotive,CISS - Colorimetry,CISS - Consumer Electronics,CISS - Curing,CISS - Detection,CISS - Drones / UAV,CISS - Gas Detection,CISS - Industrial,CISS - Other,CISS - IR Detection</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>CISS - IR Imaging,CISS - Laser Industry,CISS - Laser Mtrl Proc,CISS - Lidar/range finding,CISS - Lighting,CISS - Machine Vis/Inspect,CISS - Motion/Presence Detection,CISS - Optics &amp; Fabrication,CISS - Photography,CISS - Photon Detection</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>CISS - Printing,CISS - ResLab / Catalog,CISS - Safety Lighting,CISS - Safety Security,CISS - Smoke Detection,LS/A - Analytical,LS/A - BioMed Instr,LS/A - Dental,LS/A - Endoscopy,LS/A - Medical,LS/A - Medical Imaging,LS/A - Medical Lighting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>LS/A - Microscopy/Fluorescence,LS/A - Ophthalmology,LS/A - Other,LS/A - Semiconductor,LS/A - Thermometry,Customer Service - Other</value>
+        </criteriaItems>
+        <description>updates Record Type to Commercial</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Record Type D%26A</fullName>
+        <actions>
+            <name>Update_Record_Type_D_A</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>Def/Aerosp - NO SFDC,Anti-Laser ,Automated Test Equipment,Avionics,Ballistic Missile,Beam Rider (2x),Bomb,Cabin Systems,CAD/PAD,Command and Control Systems,Countermeasure,Cruise Missile,Depot,Display,Driver Vision Enhancers,Electronic Warfa</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>GPS,Ground Vehicle,Heads Up Display,Helmet Mounted Display,IFF Transponder,Laser Range Finding,Laser Warning,LEP,LIDAR,Medical Therapeutic,Military,Miscellaneous,Missile Defense System,Missile Warning,Missile Warning &amp; Targeting</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>Multi-function sonar,MWS&amp;T,Navigation,Night vision,PGM,Power Grid Crowbar,Precision Guided Munition,Proximity Sensing,Radar,Research,Ring Laser Gyros (RLGs),SAL Seeker for 2.75&quot; rocket,SatComm/  Payload,Satellite</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>Scientific &amp; Earth Observation,Shipboard Electronics,Simulation,Soldier Systems,Sonar,STA,Stand Alone,Surveillance,Tactical Communications,Tactical Missile,Tactical Weapon,Tanks,Target Acquisition,Telecom,Through Life Support,Unidentified</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Application__c</field>
+            <operation>contains</operation>
+            <value>Vetronics,Weapon Sights</value>
+        </criteriaItems>
+        <description>updates Record Type to D&amp;A</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Status Time Stamp</fullName>
+        <actions>
+            <name>Status_Time_Stamp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update Status Time Stamp</description>
+        <formula>AND(
+ISCHANGED(Status)
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Web lead Priority and Action</fullName>
+        <actions>
+            <name>Update_FUA_of_LEad_Source_WEbsite</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Priority_of_Lead_Source_Website</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.LeadSource</field>
+            <operation>equals</operation>
+            <value>Website</value>
+        </criteriaItems>
+        <description>When lead is &quot;wed lead&quot;, set priorirty to &quot;HIGH&quot; and Action to &quot;Contact&quot;.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>X-Cite Replacement</fullName>
+        <actions>
+            <name>X_Cite_Replacement</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Lead_Notes_on_X_Cite_Replacement</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>X_Cite_Replacement_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Lead.Product_Sub_Family__c</field>
+            <operation>equals</operation>
+            <value>X-Cite Replacement</value>
+        </criteriaItems>
+        <description>Contact us Form to request Lightbulb/Lightguide Replacement</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

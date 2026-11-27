@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Segment__c</fullName>
+    <label>Market Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AA00-Automated Assembly</fullName>
+                <default>false</default>
+                <label>AA00-Automated Assembly</label>
+            </value>
+            <value>
+                <fullName>AD00-Adhesives/Chemicals Omni</fullName>
+                <default>false</default>
+                <label>AD00-Adhesives/Chemicals Omni</label>
+            </value>
+            <value>
+                <fullName>Adhesives</fullName>
+                <default>false</default>
+                <label>Adhesives</label>
+            </value>
+            <value>
+                <fullName>AI00-Analytical Instrumentation Omni</fullName>
+                <default>false</default>
+                <label>AI00-Analytical Instrumentation Omni</label>
+            </value>
+            <value>
+                <fullName>Analytical</fullName>
+                <default>false</default>
+                <label>Analytical</label>
+            </value>
+            <value>
+                <fullName>AS00-Aviation/Space</fullName>
+                <default>false</default>
+                <label>AS00-Aviation/Space</label>
+            </value>
+            <value>
+                <fullName>AU00-Automotive</fullName>
+                <default>false</default>
+                <label>AU00-Automotive</label>
+            </value>
+            <value>
+                <fullName>Biomedical Analysis</fullName>
+                <default>false</default>
+                <label>Biomedical Analysis</label>
+            </value>
+            <value>
+                <fullName>Catalogue</fullName>
+                <default>false</default>
+                <label>Catalogue</label>
+            </value>
+            <value>
+                <fullName>Coating</fullName>
+                <default>false</default>
+                <label>Coating</label>
+            </value>
+            <value>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+                <label>Consumer</label>
+            </value>
+            <value>
+                <fullName>Crystal</fullName>
+                <default>false</default>
+                <label>Crystal</label>
+            </value>
+            <value>
+                <fullName>CS00-Consumer</fullName>
+                <default>false</default>
+                <label>CS00-Consumer</label>
+            </value>
+            <value>
+                <fullName>DE00-Defense</fullName>
+                <default>false</default>
+                <label>DE00-Defense</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Dental</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>DP00-Digital Printing</fullName>
+                <default>false</default>
+                <label>DP00-Digital Printing</label>
+            </value>
+            <value>
+                <fullName>DT00-Competitor</fullName>
+                <default>false</default>
+                <label>DT00-Competitor</label>
+            </value>
+            <value>
+                <fullName>DT00-Distributor Omni</fullName>
+                <default>false</default>
+                <label>DT00-Distributor Omni</label>
+            </value>
+            <value>
+                <fullName>DT00-Distributor Omni and X-Cite</fullName>
+                <default>false</default>
+                <label>DT00-Distributor Omni and X-Cite</label>
+            </value>
+            <value>
+                <fullName>DT00-Distributor X-Cite</fullName>
+                <default>false</default>
+                <label>DT00-Distributor X-Cite</label>
+            </value>
+            <value>
+                <fullName>DT00-Distributor X-Cite &amp; SSL</fullName>
+                <default>false</default>
+                <label>DT00-Distributor X-Cite &amp; SSL</label>
+            </value>
+            <value>
+                <fullName>EL00-Electronics Omni</fullName>
+                <default>false</default>
+                <label>EL00-Electronics Omni</label>
+            </value>
+            <value>
+                <fullName>EL00-Electronics Omni and X-Cite</fullName>
+                <default>false</default>
+                <label>EL00-Electronics Omni and X-Cite</label>
+            </value>
+            <value>
+                <fullName>EL00-Electronics X-Cite</fullName>
+                <default>false</default>
+                <label>EL00-Electronics X-Cite</label>
+            </value>
+            <value>
+                <fullName>Endoscopy</fullName>
+                <default>false</default>
+                <label>Endoscopy</label>
+            </value>
+            <value>
+                <fullName>Excelitas</fullName>
+                <default>false</default>
+                <label>Excelitas</label>
+            </value>
+            <value>
+                <fullName>Flexo</fullName>
+                <default>false</default>
+                <label>Flexo</label>
+            </value>
+            <value>
+                <fullName>ILL0-Illumination</fullName>
+                <default>false</default>
+                <label>ILL0-Illumination</label>
+            </value>
+            <value>
+                <fullName>ILL0-Iluminination &amp; SSL</fullName>
+                <default>false</default>
+                <label>ILL0-Iluminination &amp; SSL</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Laser</fullName>
+                <default>false</default>
+                <label>Laser</label>
+            </value>
+            <value>
+                <fullName>Life Sciences</fullName>
+                <default>false</default>
+                <label>Life Sciences</label>
+            </value>
+            <value>
+                <fullName>LMP</fullName>
+                <default>false</default>
+                <label>LMP</label>
+            </value>
+            <value>
+                <fullName>LS00-Life Sciences (Burleigh)</fullName>
+                <default>false</default>
+                <label>LS00-Life Sciences (Burleigh)</label>
+            </value>
+            <value>
+                <fullName>Microwave</fullName>
+                <default>false</default>
+                <label>Microwave</label>
+            </value>
+            <value>
+                <fullName>Lumen Dynamics</fullName>
+                <default>false</default>
+                <label>Lumen Dynamics</label>
+            </value>
+            <value>
+                <fullName>Machine Vision</fullName>
+                <default>false</default>
+                <label>Machine Vision</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical Omni</fullName>
+                <default>false</default>
+                <label>MD00-Medical Omni</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical Omni &amp; SSL</fullName>
+                <default>false</default>
+                <label>MD00-Medical Omni &amp; SSL</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical Omni &amp; X-Cite</fullName>
+                <default>false</default>
+                <label>MD00-Medical Omni &amp; X-Cite</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical Omni &amp; X-Cite &amp; SSL</fullName>
+                <default>false</default>
+                <label>MD00-Medical Omni &amp; X-Cite &amp; SSL</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical SSL</fullName>
+                <default>false</default>
+                <label>MD00-Medical SSL</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical X-Cite</fullName>
+                <default>false</default>
+                <label>MD00-Medical X-Cite</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical X-CIte &amp; SSL</fullName>
+                <default>false</default>
+                <label>MD00-Medical X-CIte &amp; SSL</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Micro Optics</fullName>
+                <default>false</default>
+                <label>Micro Optics</label>
+            </value>
+            <value>
+                <fullName>ML00-Multiple Market Segments Omni</fullName>
+                <default>false</default>
+                <label>ML00-Multiple Market Segments Omni</label>
+            </value>
+            <value>
+                <fullName>ML00-Multiple Market Segments Omni and X-Cite</fullName>
+                <default>false</default>
+                <label>ML00-Multiple Market Segments Omni and X-Cite</label>
+            </value>
+            <value>
+                <fullName>OE00-Optoelectronic Omni &amp; Consumer SSL</fullName>
+                <default>false</default>
+                <label>OE00-Optoelectronic Omni &amp; Consumer SSL</label>
+            </value>
+            <value>
+                <fullName>OE00-Optoelectronics Omni</fullName>
+                <default>false</default>
+                <label>OE00-Optoelectronics Omni</label>
+            </value>
+            <value>
+                <fullName>Ophthalmology</fullName>
+                <default>false</default>
+                <label>Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other Medical</fullName>
+                <default>false</default>
+                <label>Other Medical</label>
+            </value>
+            <value>
+                <fullName>Photography</fullName>
+                <default>false</default>
+                <label>Photography</label>
+            </value>
+            <value>
+                <fullName>PL00-Plastics</fullName>
+                <default>false</default>
+                <label>PL00-Plastics</label>
+            </value>
+            <value>
+                <fullName>PR00- Analog Printing</fullName>
+                <default>false</default>
+                <label>PR00- Analog Printing</label>
+            </value>
+            <value>
+                <fullName>Printing</fullName>
+                <default>false</default>
+                <label>Printing</label>
+            </value>
+            <value>
+                <fullName>Projection</fullName>
+                <default>false</default>
+                <label>Projection</label>
+            </value>
+            <value>
+                <fullName>RS00-Reseller Omni</fullName>
+                <default>false</default>
+                <label>RS00-Reseller Omni</label>
+            </value>
+            <value>
+                <fullName>RS00-Reseller X-Cite</fullName>
+                <default>false</default>
+                <label>RS00-Reseller X-Cite</label>
+            </value>
+            <value>
+                <fullName>Safety &amp; Security</fullName>
+                <default>false</default>
+                <label>Safety &amp; Security</label>
+            </value>
+            <value>
+                <fullName>SC00-Security</fullName>
+                <default>false</default>
+                <label>SC00-Security</label>
+            </value>
+            <value>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+                <label>Semiconductor</label>
+            </value>
+            <value>
+                <fullName>SL00-Solar Panels</fullName>
+                <default>false</default>
+                <label>SL00-Solar Panels</label>
+            </value>
+            <value>
+                <fullName>SP00-Suppliers</fullName>
+                <default>false</default>
+                <label>SP00-Suppliers</label>
+            </value>
+            <value>
+                <fullName>SR00-Sales Representative</fullName>
+                <default>false</default>
+                <label>SR00-Sales Representative</label>
+            </value>
+            <value>
+                <fullName>TL00-Telecom</fullName>
+                <default>false</default>
+                <label>TL00-Telecom</label>
+            </value>
+            <value>
+                <fullName>UN00-University Omni &amp; X-Cite</fullName>
+                <default>false</default>
+                <label>UN00-University Omni &amp; X-Cite</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>VMS</fullName>
+                <default>false</default>
+                <label>VMS</label>
+            </value>
+            <value>
+                <fullName>X-Ray</fullName>
+                <default>false</default>
+                <label>X-Ray</label>
+            </value>
+            <value>
+                <fullName>Additive Manuf.</fullName>
+                <default>false</default>
+                <label>Additive Manuf.</label>
+            </value>
+            <value>
+                <fullName>Air treatment (VOCs)</fullName>
+                <default>false</default>
+                <label>Air treatment (VOCs)</label>
+            </value>
+            <value>
+                <fullName>Analytical instrum.</fullName>
+                <default>false</default>
+                <label>Analytical instrum.</label>
+            </value>
+            <value>
+                <fullName>Battery technology</fullName>
+                <default>false</default>
+                <label>Battery technology</label>
+            </value>
+            <value>
+                <fullName>Building &amp; furniture</fullName>
+                <default>false</default>
+                <label>Building &amp; furniture</label>
+            </value>
+            <value>
+                <fullName>Coating &amp; Converting</fullName>
+                <default>false</default>
+                <label>Coating &amp; Converting</label>
+            </value>
+            <value>
+                <fullName>F&amp;B Filling</fullName>
+                <default>false</default>
+                <label>F&amp;B Filling</label>
+            </value>
+            <value>
+                <fullName>Fiber components</fullName>
+                <default>false</default>
+                <label>Fiber components</label>
+            </value>
+            <value>
+                <fullName>Food processing</fullName>
+                <default>false</default>
+                <label>Food processing</label>
+            </value>
+            <value>
+                <fullName>Funct. Film&amp;Display</fullName>
+                <default>false</default>
+                <label>Funct. Film&amp;Display</label>
+            </value>
+            <value>
+                <fullName>Ind. process heat</fullName>
+                <default>false</default>
+                <label>Ind. process heat</label>
+            </value>
+            <value>
+                <fullName>Industrial laser</fullName>
+                <default>false</default>
+                <label>Industrial laser</label>
+            </value>
+            <value>
+                <fullName>Med. Products / Pkg.</fullName>
+                <default>false</default>
+                <label>Med. Products / Pkg.</label>
+            </value>
+            <value>
+                <fullName>Med./Cosm. Therapy</fullName>
+                <default>false</default>
+                <label>Med./Cosm. Therapy</label>
+            </value>
+            <value>
+                <fullName>Mobility parts&amp;assy</fullName>
+                <default>false</default>
+                <label>Mobility parts&amp;assy</label>
+            </value>
+            <value>
+                <fullName>Optical fiber</fullName>
+                <default>false</default>
+                <label>Optical fiber</label>
+            </value>
+            <value>
+                <fullName>PCBs &amp; other electr.</fullName>
+                <default>false</default>
+                <label>PCBs &amp; other electr.</label>
+            </value>
+            <value>
+                <fullName>Photovoltaics</fullName>
+                <default>false</default>
+                <label>Photovoltaics</label>
+            </value>
+            <value>
+                <fullName>soluva</fullName>
+                <default>false</default>
+                <label>soluva</label>
+            </value>
+            <value>
+                <fullName>water treatment</fullName>
+                <default>false</default>
+                <label>water treatment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

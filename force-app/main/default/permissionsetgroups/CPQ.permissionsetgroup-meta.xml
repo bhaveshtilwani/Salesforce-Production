@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>CPQ Perm Sets</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CPQ</label>
+    <permissionSets>APXTConga4__Composer_User</permissionSets>
+    <permissionSets>Additional_Approver_Permissions</permissionSets>
+    <permissionSets>Lightning_Permission_Sets</permissionSets>
+    <permissionSets>SBQQ__SteelBrickCPQUser</permissionSets>
+    <permissionSets>Standard_Salesforce_CPQ_User</permissionSets>
+    <permissionSets>sbaa__AdvancedApprovalsUser</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

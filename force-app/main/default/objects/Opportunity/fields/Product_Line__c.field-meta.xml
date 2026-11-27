@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Line__c</fullName>
+    <description>PKI Product Lines</description>
+    <label>Product LineXXX</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Electronic Systems</fullName>
+                <default>false</default>
+                <label>Advanced Electronic Systems</label>
+            </value>
+            <value>
+                <fullName>Advanced Imaging Systems</fullName>
+                <default>false</default>
+                <label>Advanced Imaging Systems</label>
+            </value>
+            <value>
+                <fullName>Advanced Laser Systems</fullName>
+                <default>false</default>
+                <label>Advanced Laser Systems</label>
+            </value>
+            <value>
+                <fullName>Advanced Optronics</fullName>
+                <default>false</default>
+                <label>Advanced Optronics</label>
+            </value>
+            <value>
+                <fullName>Biomedical Systems</fullName>
+                <default>false</default>
+                <label>Biomedical Systems</label>
+            </value>
+            <value>
+                <fullName>CPM &amp; IT &amp; PC</fullName>
+                <default>false</default>
+                <label>CPM &amp; IT &amp; PC</label>
+            </value>
+            <value>
+                <fullName>High Intensity Discharge Lighting</fullName>
+                <default>false</default>
+                <label>High Intensity Discharge Lighting</label>
+            </value>
+            <value>
+                <fullName>Industrial Systems &amp; Optics</fullName>
+                <default>false</default>
+                <label>Industrial Systems &amp; Optics</label>
+            </value>
+            <value>
+                <fullName>IR Sensing</fullName>
+                <default>false</default>
+                <label>IR Sensing</label>
+            </value>
+            <value>
+                <fullName>Land Equipment</fullName>
+                <default>false</default>
+                <label>Land Equipment</label>
+            </value>
+            <value>
+                <fullName>Laser Technology</fullName>
+                <default>false</default>
+                <label>Laser Technology</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Optical Systems</fullName>
+                <default>false</default>
+                <label>Optical Systems</label>
+            </value>
+            <value>
+                <fullName>Photon Detection</fullName>
+                <default>false</default>
+                <label>Photon Detection</label>
+            </value>
+            <value>
+                <fullName>Photonic Systems</fullName>
+                <default>false</default>
+                <label>Photonic Systems</label>
+            </value>
+            <value>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+                <label>Semiconductor</label>
+            </value>
+            <value>
+                <fullName>Solid State Lighting</fullName>
+                <default>false</default>
+                <label>Solid State Lighting</label>
+            </value>
+            <value>
+                <fullName>UV &amp; Microscopy</fullName>
+                <default>false</default>
+                <label>UV &amp; Microscopy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

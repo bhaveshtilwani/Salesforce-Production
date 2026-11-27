@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Coating_Engineer__c</fullName>
+    <description>Vertiba 4/25/14 - requested by REO to match existing functionality in RFQ Tracking sheet</description>
+    <label>Assigned Coating Engineer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amelia Zutz</fullName>
+                <default>false</default>
+                <label>Amelia Zutz</label>
+            </value>
+            <value>
+                <fullName>Danny Fisher</fullName>
+                <default>false</default>
+                <label>Danny Fisher</label>
+            </value>
+            <value>
+                <fullName>David Hodgson</fullName>
+                <default>false</default>
+                <label>David Hodgson</label>
+            </value>
+            <value>
+                <fullName>Eric Baltz</fullName>
+                <default>false</default>
+                <label>Eric Baltz</label>
+            </value>
+            <value>
+                <fullName>Garrett Metz</fullName>
+                <default>false</default>
+                <label>Garrett Metz</label>
+            </value>
+            <value>
+                <fullName>Jason Fish</fullName>
+                <default>false</default>
+                <label>Jason Fish</label>
+            </value>
+            <value>
+                <fullName>Jim Kraus</fullName>
+                <default>false</default>
+                <label>Jim Kraus</label>
+            </value>
+            <value>
+                <fullName>Lisa Rengnath</fullName>
+                <default>false</default>
+                <label>Lisa Rengnath</label>
+            </value>
+            <value>
+                <fullName>Louis Gerstenberger</fullName>
+                <default>false</default>
+                <label>Louis Gerstenberger</label>
+            </value>
+            <value>
+                <fullName>Sam Richman</fullName>
+                <default>false</default>
+                <label>Sam Richman</label>
+            </value>
+            <value>
+                <fullName>Zachary Patterson</fullName>
+                <default>false</default>
+                <label>Zachary Patterson</label>
+            </value>
+            <value>
+                <fullName>Quentin Turchette</fullName>
+                <default>false</default>
+                <label>Quentin Turchette</label>
+            </value>
+            <value>
+                <fullName>Carmin DeCiantis</fullName>
+                <default>false</default>
+                <label>Carmin DeCiantis</label>
+            </value>
+            <value>
+                <fullName>Chris Thompson</fullName>
+                <default>false</default>
+                <label>Chris Thompson</label>
+            </value>
+            <value>
+                <fullName>Daniel Regelson</fullName>
+                <default>false</default>
+                <label>Daniel Regelson</label>
+            </value>
+            <value>
+                <fullName>David Jenkins</fullName>
+                <default>false</default>
+                <label>David Jenkins</label>
+            </value>
+            <value>
+                <fullName>Ian Edmond</fullName>
+                <default>false</default>
+                <label>Ian Edmond</label>
+            </value>
+            <value>
+                <fullName>John Krause</fullName>
+                <default>false</default>
+                <label>John Krause</label>
+            </value>
+            <value>
+                <fullName>Kory Risky</fullName>
+                <default>false</default>
+                <label>Kory Risky</label>
+            </value>
+            <value>
+                <fullName>Mahilet Hailemichael</fullName>
+                <default>false</default>
+                <label>Mahilet Hailemichael</label>
+            </value>
+            <value>
+                <fullName>Scot Bohnenstiehl</fullName>
+                <default>false</default>
+                <label>Scot Bohnenstiehl</label>
+            </value>
+            <value>
+                <fullName>Iam Edmond</fullName>
+                <default>false</default>
+                <label>Iam Edmond</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

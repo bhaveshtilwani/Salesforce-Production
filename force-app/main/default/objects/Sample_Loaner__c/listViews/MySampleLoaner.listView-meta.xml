@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MySampleLoaner</fullName>
+    <columns>Contact__c</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Prospect__c</columns>
+    <columns>Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Start_Date__c</columns>
+    <columns>Product_Family__c</columns>
+    <columns>Production_Volume__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>Altaf Ramji</value>
+    </filters>
+    <label>My Sample Loaner</label>
+</ListView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Leads for Commercial SBU. --></description>
+        <label><!-- Commercial Lead --></label>
+        <name>Commercial_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- D&amp;A Lead for Defense and Aerospace SBU --></description>
+        <label><!-- D&amp;A Lead --></label>
+        <name>D_A_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lumen Data --></label>
+        <name>Lumen_Data</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This is used for creating Noblelight leads --></description>
+        <label><!-- Noblelight --></label>
+        <name>Noblelight</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Only Customer Service and Administrator can select Product Line &quot;Other Line CS&quot; for Lead records. --></errorMessage>
+        <name>CS_Line_Other_cannot_be_used</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_Company_Id_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to Update the LeadSource. Only Record Owner/System Admin can able to Update. --></errorMessage>
+        <name>LeadSourceValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lumen Market Segment is required for Lumen Leads. --></errorMessage>
+        <name>Lumen_Market_Segment_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Please add Notes and indicate in the Channel Partner/Distributor Picklist where and to whom the Lead was forwarded to.
+Thank you -->
+        </errorMessage>
+        <name>Notes_Blank_on_FwdExt</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a reason for moving the record to Closed --></errorMessage>
+        <name>Require_Closed_Reason_for_MktgOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unlisted Application can&apos;t be blank when Application field is &apos;Other&apos; or &apos;None&apos; --></errorMessage>
+        <name>Unlisted_Application_cannot_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unlisted Application Field must be blank. as Application field is filled in --></errorMessage>
+        <name>Unlisted_Application_must_be_blank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FinancialProfile --></label>
+        <name>FinancialProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map --></label>
+        <name>Map</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- News --></label>
+        <name>News</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SearchGoogle --></label>
+        <name>SearchGoogle</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZPR3_for_FOC</fullName>
+    <active>true</active>
+    <errorConditionFormula>ZPR3_Required__c = TRUE</errorConditionFormula>
+    <errorMessage>Please ensure all lines have Drop Ship Prices.</errorMessage>
+</ValidationRule>

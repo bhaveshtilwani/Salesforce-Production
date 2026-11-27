@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Big_Quote_Alert_D_A</fullName>
+        <description>Big Quote Alert D&amp;A</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>salesforce.administrator@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/Danny</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQU__CPQ_Quote_Approved</fullName>
+        <description>CPQ - Quote - Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SBQQ__SalesRep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQU__CPQ_Email_Templates/CPQU__CPQ_Quote_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>CPQU__CPQ_Quote_Rejected</fullName>
+        <description>CPQ - Quote - Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <field>SBQQ__SalesRep__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CPQU__CPQ_Email_Templates/CPQU__CPQ_Quote_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Division_Notifications_Advanced_Industrial_Sensing</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>Division Notifications Advanced Industrial Sensing</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>marcio.barreto@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/DecisionQuote</template>
+    </alerts>
+    <alerts>
+        <fullName>Division_Notifications_Advanced_Lighting_Systems</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>Division Notifications Advanced Lighting Systems</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>achuthan.ananthan@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/DecisionQuote</template>
+    </alerts>
+    <alerts>
+        <fullName>Division_Notifications_Integrated_Optronics_Avionics</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>Division Notifications Integrated Optronics &amp; Avionics</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>marcio.barreto@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/DecisionQuote</template>
+    </alerts>
+    <alerts>
+        <fullName>Division_Notifications_Life_Sciences_Medical</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>Division Notifications Life Sciences &amp; Medical</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>rebecca.single@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/DecisionQuote</template>
+    </alerts>
+    <alerts>
+        <fullName>Division_Notifications_Semiconductor_Equipment</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>Division Notifications Semiconductor Equipment</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>martin.lang@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/DecisionQuote</template>
+    </alerts>
+    <alerts>
+        <fullName>Team_VP_100K_Quote_Notification</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>Team VP &gt;100K Quote Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Sales_Rep_VP__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/VP100K</template>
+    </alerts>
+    <alerts>
+        <fullName>VP_Sales_1M_Quote_Notification</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>VP Sales &gt;1M Quote Notification</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/Danny</template>
+    </alerts>
+    <alerts>
+        <fullName>Yuri_250K_Quote_In_review_Notification</fullName>
+        <ccEmails>salesforce.administrator@excelitas.com</ccEmails>
+        <description>Yuri &gt;250K Quote In review Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>yuri.sikorski@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Request/Danny</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approved_date</fullName>
+        <field>Quote_Approved_Date__c</field>
+        <formula>Today()</formula>
+        <name>Approved date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CPQU__CPQ_Quote_Status_Approved</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>CPQ - Quote - Status = Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CPQU__CPQ_Quote_Status_Draft</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>CPQ - Quote - Status = Draft</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CPQU__CPQ_Quote_Status_In_Review</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>In Review</literalValue>
+        <name>CPQ - Quote - Status = In Review</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CPQU__CPQ_Quote_Status_Rejected</fullName>
+        <field>SBQQ__Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>CPQ - Quote - Status = Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CPQU__Watermark_false</fullName>
+        <field>SBQQ__WatermarkShown__c</field>
+        <literalValue>0</literalValue>
+        <name>CPQU - Watermark = false</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CPQU__Watermark_true</fullName>
+        <field>SBQQ__WatermarkShown__c</field>
+        <literalValue>1</literalValue>
+        <name>CPQU - Watermark = true</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Submited_Date_Stamp</fullName>
+        <field>Quote_Submit_date__c</field>
+        <formula>Today()</formula>
+        <name>Submited Date Stamp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Approved Date</fullName>
+        <actions>
+            <name>Approved_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <description>fills Quote Approved Date with today&apos;s date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Big Quote Notification</fullName>
+        <actions>
+            <name>VP_Sales_1M_Quote_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SubmittedDate__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__CustomerAmount__c</field>
+            <operation>greaterThan</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.Max_Quote_Value__c</field>
+            <operation>greaterThan</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <description>When a Quote &gt;1,000,000.00 is approved, notification sent to VP Sales</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Big Quote Notification - Rep TeamVP</fullName>
+        <actions>
+            <name>Team_VP_100K_Quote_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SubmittedDate__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__CustomerAmount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 100,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.Max_Quote_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 100,000&quot;</value>
+        </criteriaItems>
+        <description>When a Quote &gt;100,000.00 is approved, notification sent to Team VP</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Big Quote Notification D%26A</fullName>
+        <actions>
+            <name>Big_Quote_Alert_D_A</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>((1 AND 4 and 2) OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SubmittedDate__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__CustomerAmount__c</field>
+            <operation>greaterThan</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.Max_Quote_Value__c</field>
+            <operation>greaterThan</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.Sales_TeamNEW__c</field>
+            <operation>equals</operation>
+            <value>AO</value>
+        </criteriaItems>
+        <description>When a Quote &gt;1,000,000.00 is sent for approval, notification sent to D&amp;A VP Sales Ed Y.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQU__CPQU - Draft Quote %3D Watermark</fullName>
+        <actions>
+            <name>CPQU__Watermark_true</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TEXT(SBQQ__Status__c) == &quot;Draft&quot; &amp;&amp;  $Setup.CPQU__Settings__c.CPQU__Show_Watermark_on_Draft_Quotes__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CPQU__CPQU - Non-Draft Quote %3D No Watermark</fullName>
+        <actions>
+            <name>CPQU__Watermark_false</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>TEXT(SBQQ__Status__c) &lt;&gt; &quot;Draft&quot; &amp;&amp; $Setup.CPQU__Settings__c.CPQU__Show_Watermark_on_Draft_Quotes__c</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Submit Date Stamp</fullName>
+        <actions>
+            <name>Submited_Date_Stamp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>SBQQ__Quote__c.SBQQ__Status__c</field>
+            <operation>equals</operation>
+            <value>In Review</value>
+        </criteriaItems>
+        <description>Fills Quote Submit date with today&apos;s date when Status is moved to In Review</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

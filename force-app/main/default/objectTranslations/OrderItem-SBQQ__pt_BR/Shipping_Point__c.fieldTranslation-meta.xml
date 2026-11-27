@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Shipping Point --></label>
+    <name>Shipping_Point__c</name>
+    <picklistValues>
+        <masterLabel>(0400) Excelitas Wiesbaden</masterLabel>
+        <translation><!-- (0400) Excelitas Wiesbaden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(2000) General St Louis</masterLabel>
+        <translation><!-- (2000) General St Louis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(2999) Dumpy (administrative)</masterLabel>
+        <translation><!-- (2999) Dumpy (administrative) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(3000) General Manila</masterLabel>
+        <translation><!-- (3000) General Manila --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CMN1) Manila (for 3rd party)</masterLabel>
+        <translation><!-- (CMN1) Manila (for 3rd party) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(CPM1) CPM</masterLabel>
+        <translation><!-- (CPM1) CPM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(DS) Direct Ship Manila</masterLabel>
+        <translation><!-- (DS) Direct Ship Manila --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(EURO) Europe Direct Manila</masterLabel>
+        <translation><!-- (EURO) Europe Direct Manila --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(HK01) Consign. HK To Customer</masterLabel>
+        <translation><!-- (HK01) Consign. HK To Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ILC1) ILC1</masterLabel>
+        <translation><!-- (ILC1) ILC1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(IND1) Batam</masterLabel>
+        <translation><!-- (IND1) Batam --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(IND3) Batam - Lot 209</masterLabel>
+        <translation><!-- (IND3) Batam - Lot 209 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(INSG) Batam Via Singapore</masterLabel>
+        <translation><!-- (INSG) Batam Via Singapore --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(ORC1) ORC</masterLabel>
+        <translation><!-- (ORC1) ORC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(SCHN) Shenzhen (for 3rd party)</masterLabel>
+        <translation><!-- (SCHN) Shenzhen (for 3rd party) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(SGP1) Singapore - Ayer Rajah</masterLabel>
+        <translation><!-- (SGP1) Singapore - Ayer Rajah --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(SGP3) Singapore - Tractor Road</masterLabel>
+        <translation><!-- (SGP3) Singapore - Tractor Road --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(SGSL) SG-Tractor Road (for Yusen)</masterLabel>
+        <translation><!-- (SGSL) SG-Tractor Road (for Yusen) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(SLM1) Salem</masterLabel>
+        <translation><!-- (SLM1) Salem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(SZN1) PerkinElmer</masterLabel>
+        <translation><!-- (SZN1) PerkinElmer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(SZSL) Shenzhen (for Yusen)</masterLabel>
+        <translation><!-- (SZSL) Shenzhen (for Yusen) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(TPS1) TPS</masterLabel>
+        <translation><!-- (TPS1) TPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(UPS) 8UPS Freight</masterLabel>
+        <translation><!-- (UPS) 8UPS Freight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(USAD) USA Direct/RTS/Autoban Ma</masterLabel>
+        <translation><!-- (USAD) USA Direct/RTS/Autoban Ma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(VOT1) Voltarc</masterLabel>
+        <translation><!-- (VOT1) Voltarc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(WSZN) Wearnes HK Manufacturing</masterLabel>
+        <translation><!-- (WSZN) Wearnes HK Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(YH01) Consign. YCH To Customer</masterLabel>
+        <translation><!-- (YH01) Consign. YCH To Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boulder (1003)</masterLabel>
+        <translation><!-- Boulder (1003) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelitas Wiesbaden</masterLabel>
+        <translation><!-- Excelitas Wiesbaden --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Vaudreuil</masterLabel>
+        <translation><!-- General Vaudreuil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Vaudreuil (C000)</masterLabel>
+        <translation><!-- General Vaudreuil (C000) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LINOS Regen</masterLabel>
+        <translation><!-- LINOS Regen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPD Göttingen</masterLabel>
+        <translation><!-- LPD Göttingen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Miamisburg</masterLabel>
+        <translation><!-- Opto Miamisburg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Salem</masterLabel>
+        <translation><!-- Opto Salem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qioptiq Hamble</masterLabel>
+        <translation><!-- Qioptiq Hamble --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROP</masterLabel>
+        <translation><!-- ROP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salem Returns</masterLabel>
+        <translation><!-- Salem Returns --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

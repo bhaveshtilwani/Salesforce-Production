@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Field tested when evaluating the Condition --></help>
+    <label>テスト対象項目</label>
+    <name>sbaa__TestedField__c</name>
+    <picklistValues>
+        <masterLabel>Amount</masterLabel>
+        <translation><!-- Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Annual_Sales_at_Account_Name__c</masterLabel>
+        <translation><!-- Annual_Sales_at_Account_Name__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation_Amount__c</masterLabel>
+        <translation><!-- Cancellation_Amount__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancellation__c</masterLabel>
+        <translation><!-- Cancellation__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disc_Type_1__c</masterLabel>
+        <translation><!-- Disc_Type_1__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disc_Type_2__c</masterLabel>
+        <translation><!-- Disc_Type_2__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disc_Type_3__c</masterLabel>
+        <translation><!-- Disc_Type_3__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelitas_Product_Family__c</masterLabel>
+        <translation><!-- Excelitas_Product_Family__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelitas_Site_Country__c</masterLabel>
+        <translation><!-- Excelitas_Site_Country__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Expedite_Amount__c</masterLabel>
+        <translation><!-- Expedite_Amount__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal_Change_Req__c</masterLabel>
+        <translation><!-- Internal_Change_Req__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Name</masterLabel>
+        <translation><!-- Name --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OCD_Text__c</masterLabel>
+        <translation><!-- OCD_Text__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKI_Product_Family__c</masterLabel>
+        <translation><!-- PKI_Product_Family__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary_Business_Unit__c</masterLabel>
+        <translation><!-- Primary_Business_Unit__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary_Product_Division__c</masterLabel>
+        <translation><!-- Primary_Product_Division__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary_Product_Segment__c</masterLabel>
+        <translation><!-- Primary_Product_Segment__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Probability</masterLabel>
+        <translation><!-- Probability --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RecordTypeName__c</masterLabel>
+        <translation><!-- RecordTypeName__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested_Price_Change__c</masterLabel>
+        <translation><!-- Requested_Price_Change__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested_Quantity_Change__c</masterLabel>
+        <translation><!-- Requested_Quantity_Change__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Requested_Ship_Date_is_less_than_earlier__c</masterLabel>
+        <translation><!-- Requested_Ship_Date_is_less_than_earlier__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Required_Approval_for_Change_Date_QUAR__c</masterLabel>
+        <translation><!-- Required_Approval_for_Change_Date_QUAR__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Required_Approval_for_Change_Date_WITHIN__c</masterLabel>
+        <translation><!-- Required_Approval_for_Change_Date_WITHIN__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Required_Approval_for_Change_Date_YEAR__c</masterLabel>
+        <translation><!-- Required_Approval_for_Change_Date_YEAR__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Required_Approval_for_Change_Date__c</masterLabel>
+        <translation><!-- Required_Approval_for_Change_Date__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SSD_Text__c</masterLabel>
+        <translation><!-- SSD_Text__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales_Rep_Region__c</masterLabel>
+        <translation><!-- Sales_Rep_Region__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Strategic_Business_Unit__c</masterLabel>
+        <translation><!-- Strategic_Business_Unit__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terms_Requested__c</masterLabel>
+        <translation><!-- Terms_Requested__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Type</masterLabel>
+        <translation><!-- Type --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

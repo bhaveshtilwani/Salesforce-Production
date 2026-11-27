@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How strong is ETC&apos;s customer relationship? --></help>
+    <label><!-- ETC customer relationship? --></label>
+    <name>ETC_customer_relationship__c</name>
+    <picklistValues>
+        <masterLabel>Excellent / Strong Intimacy / Active</masterLabel>
+        <translation><!-- Excellent / Strong Intimacy / Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Customer / No Intimacy</masterLabel>
+        <translation><!-- New Customer / No Intimacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Previous Customer / Minor to Medium Intimacy</masterLabel>
+        <translation><!-- Previous Customer / Minor to Medium Intimacy --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

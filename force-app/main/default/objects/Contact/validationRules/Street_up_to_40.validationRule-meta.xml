@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Street_up_to_40</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (LEN( MailingStreet ) &gt; 40, (
+OR(Account.RecordType.Name = &quot;SAP Germany&quot;, Account.RecordType.Name = &quot;SAP NA Montreal&quot;, 
+Account.RecordType.Name = &quot;SAP Asia&quot;,
+Account.RecordType.Name = &quot;SAP NA Salem/MIA&quot;)
+)
+)</errorConditionFormula>
+    <errorDisplayField>MailingStreet</errorDisplayField>
+    <errorMessage>Street can&apos;t exceed 40 characters</errorMessage>
+</ValidationRule>

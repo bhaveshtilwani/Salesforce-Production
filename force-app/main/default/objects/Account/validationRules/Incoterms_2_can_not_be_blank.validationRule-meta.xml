@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incoterms_2_can_not_be_blank</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    $User.Alias&lt;&gt; &quot;sconn&quot;,
+
+    OR(
+        AND(
+            $RecordType.Name = &quot;SAP Germany&quot;,
+            OR(
+                ISPICKVAL(Account_Group__c , &quot;Customer int number assgnmnt - DEBI&quot;),
+                ISPICKVAL(Account_Group__c , &quot;QioDebitoren Europäische Union - DEEU&quot;)
+            ),
+            ISBLANK(Incoterm_2__c)
+        ),
+
+        AND(
+            $RecordType.Name = &quot;SAP NA Montreal&quot;,
+            ISPICKVAL(Account_Group__c , &quot;Bill To - 0001&quot;),
+            ISBLANK(Incoterm_2__c)
+        ),
+
+        AND(
+            $RecordType.Name = &quot;SAP Asia&quot;,
+            ISPICKVAL(Account_Group__c , &quot;Intra-Div &amp; Inter-Co. - ZINT&quot;),
+            ISBLANK(Incoterm_2__c)
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Incoterm_2__c</errorDisplayField>
+    <errorMessage>Incoterms 2 can not be blank</errorMessage>
+</ValidationRule>

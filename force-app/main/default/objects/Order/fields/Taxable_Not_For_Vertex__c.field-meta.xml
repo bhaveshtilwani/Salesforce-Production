@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Taxable_Not_For_Vertex__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  Bill_To_Account__r.Tax_Usage__c  =&quot;&quot;,&quot;True&quot;,&quot;False&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Taxable Customer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

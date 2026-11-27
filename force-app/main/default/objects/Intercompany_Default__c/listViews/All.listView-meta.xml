@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Buyer_Site__c</columns>
+    <columns>Vendor_Site__c</columns>
+    <columns>Purchase_Organization_Code__c</columns>
+    <columns>Purchase_Group_Code__c</columns>
+    <columns>Purchase_Order_Language__c</columns>
+    <columns>Vendor_Code__c</columns>
+    <columns>PO_Payment_Terms__c</columns>
+    <columns>PO_Currency__c</columns>
+    <columns>Vendor_Discount__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

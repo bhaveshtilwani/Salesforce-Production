@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toronto_Failed_Orders</fullName>
+    <columns>ERP_Sales_Order_Number__c</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>Integration_Error_Description__c</columns>
+    <columns>SFDC_Integration_Status__c</columns>
+    <columns>X18_Digit_ID_Order__c</columns>
+    <columns>Resend_Account_Codes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>Toronto</value>
+    </filters>
+    <filters>
+        <field>SFDC_Integration_Status__c</field>
+        <operation>equals</operation>
+        <value>Failed,In Progress</value>
+    </filters>
+    <label>Toronto Failed Orders</label>
+</ListView>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Group__c</fullName>
+    <label>Sales Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advanced Endo</fullName>
+                <default>false</default>
+                <label>Advanced Endo</label>
+            </value>
+            <value>
+                <fullName>Avionics &amp; Space</fullName>
+                <default>false</default>
+                <label>Avionics &amp; Space</label>
+            </value>
+            <value>
+                <fullName>Biotech</fullName>
+                <default>false</default>
+                <label>Biotech</label>
+            </value>
+            <value>
+                <fullName>Crystal Technology</fullName>
+                <default>false</default>
+                <label>Crystal Technology</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Defense Türkei</fullName>
+                <default>false</default>
+                <label>Defense Türkei</label>
+            </value>
+            <value>
+                <fullName>Dental Technology</fullName>
+                <default>false</default>
+                <label>Dental Technology</label>
+            </value>
+            <value>
+                <fullName>Driver Assistance</fullName>
+                <default>false</default>
+                <label>Driver Assistance</label>
+            </value>
+            <value>
+                <fullName>Flash - Salem</fullName>
+                <default>false</default>
+                <label>Flash - Salem</label>
+            </value>
+            <value>
+                <fullName>GB D&amp;A Diverse</fullName>
+                <default>false</default>
+                <label>GB D&amp;A Diverse</label>
+            </value>
+            <value>
+                <fullName>GB HC&amp;LS Diverse</fullName>
+                <default>false</default>
+                <label>GB HC&amp;LS Diverse</label>
+            </value>
+            <value>
+                <fullName>GB IM Diverse</fullName>
+                <default>false</default>
+                <label>GB IM Diverse</label>
+            </value>
+            <value>
+                <fullName>Hambles 1sales group</fullName>
+                <default>false</default>
+                <label>Hambles 1sales group</label>
+            </value>
+            <value>
+                <fullName>Industry Catalog</fullName>
+                <default>false</default>
+                <label>Industry Catalog</label>
+            </value>
+            <value>
+                <fullName>Land Equipment</fullName>
+                <default>false</default>
+                <label>Land Equipment</label>
+            </value>
+            <value>
+                <fullName>Laser Material Proc.</fullName>
+                <default>false</default>
+                <label>Laser Material Proc.</label>
+            </value>
+            <value>
+                <fullName>Machine Vision</fullName>
+                <default>false</default>
+                <label>Machine Vision</label>
+            </value>
+            <value>
+                <fullName>Obsolete</fullName>
+                <default>false</default>
+                <label>Obsolete</label>
+            </value>
+            <value>
+                <fullName>Operations München</fullName>
+                <default>false</default>
+                <label>Operations München</label>
+            </value>
+            <value>
+                <fullName>Operations Regen</fullName>
+                <default>false</default>
+                <label>Operations Regen</label>
+            </value>
+            <value>
+                <fullName>Ophtalmology</fullName>
+                <default>false</default>
+                <label>Ophtalmology</label>
+            </value>
+            <value>
+                <fullName>OPTEM</fullName>
+                <default>false</default>
+                <label>OPTEM</label>
+            </value>
+            <value>
+                <fullName>Optical Metrol.&amp;Insp</fullName>
+                <default>false</default>
+                <label>Optical Metrol.&amp;Insp</label>
+            </value>
+            <value>
+                <fullName>Optotecs Re/Gö</fullName>
+                <default>false</default>
+                <label>Optotecs Re/Gö</label>
+            </value>
+            <value>
+                <fullName>Photo and Lab Techn.</fullName>
+                <default>false</default>
+                <label>Photo and Lab Techn.</label>
+            </value>
+            <value>
+                <fullName>Printing Industry M.</fullName>
+                <default>false</default>
+                <label>Printing Industry M.</label>
+            </value>
+            <value>
+                <fullName>Productronics</fullName>
+                <default>false</default>
+                <label>Productronics</label>
+            </value>
+            <value>
+                <fullName>Research&amp;Laboratory</fullName>
+                <default>false</default>
+                <label>Research&amp;Laboratory</label>
+            </value>
+            <value>
+                <fullName>Semiconductor Techn.</fullName>
+                <default>false</default>
+                <label>Semiconductor Techn.</label>
+            </value>
+            <value>
+                <fullName>Sonstige Erlöse</fullName>
+                <default>false</default>
+                <label>Sonstige Erlöse</label>
+            </value>
+            <value>
+                <fullName>SSL</fullName>
+                <default>false</default>
+                <label>SSL</label>
+            </value>
+            <value>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+                <label>Telecommunications</label>
+            </value>
+            <value>
+                <fullName>Wafer Inspection</fullName>
+                <default>false</default>
+                <label>Wafer Inspection</label>
+            </value>
+            <value>
+                <fullName>Warning Systems</fullName>
+                <default>false</default>
+                <label>Warning Systems</label>
+            </value>
+            <value>
+                <fullName>X-Ray-Imaging</fullName>
+                <default>false</default>
+                <label>X-Ray-Imaging</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

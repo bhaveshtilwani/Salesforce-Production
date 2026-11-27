@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QAD_Due_QAD_Req__c</fullName>
+    <description>used to measure if QAD Due date is before or after required date</description>
+    <externalId>false</externalId>
+    <formula>QAD_Due_Date__c  -  QAD_Required_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>QAD Due Date - QAD Request Date</inlineHelpText>
+    <label>CSD - CRD</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

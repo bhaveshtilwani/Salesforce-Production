@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Leads Queue PM EMEA</name>
+    <queueMembers>
+        <users>
+            <user>isabel.haackert@excelitas.com</user>
+            <user>jochen.wenk@excelitas.com</user>
+            <user>matthias.endig@excelitas.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

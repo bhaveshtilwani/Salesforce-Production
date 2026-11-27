@@ -1,0 +1,76 @@
+<template>
+    <tr>
+        <td>
+            <template lwc:if={showMenuToggle}>
+                <lightning-button-stateful
+                    variant="text"
+                    icon-name-when-off="utility:add"
+                    icon-name-when-on="utility:dash"
+                    selected={showMenu}
+                    onclick={handleToggleMenu}
+                >
+                </lightning-button-stateful>
+            </template>
+        </td>
+        <template for:each={columnValues} for:item="column">
+            <td key={column.Id} data-label={column.MasterLabel}>
+                <template lwc:if={column.showMapProduct}>
+                    <lightning-button variant="base" label="Map Product" onclick={handleMapProduct}></lightning-button>
+                </template>
+                <template lwc:elseif={column.showOpenRecordButton}>
+                    <lightning-button
+                        variant="base"
+                        label={column.value}
+                        name={column.Field_API_Name__c}
+                        onclick={handleOpenRecord}
+                    ></lightning-button>
+                </template>
+                <template lwc:else>
+                    <div class="slds-truncate" title={column.value}>{column.value}</div>
+                </template>
+            </td>
+        </template>
+    </tr>
+    <template lwc:if={showMenu}>
+        <tr>
+            <td colspan={colspan}>
+                <div class="slds-var-p-bottom_small slds-var-p-horizontal_x-large">
+                    <template for:each={productSelectionEdits} for:item="productSelectionEdit">
+                        <c-product-selection-edit
+                            key={productSelectionEdit.RecordId}
+                            product={productSelectionEdit}
+                            is-ui-editable={isUiEditable}
+                            product-selection-edit-fields={productSelectionEditFields}
+                            custom-actions={customActions}
+                        ></c-product-selection-edit>
+                    </template>
+                    <div class="slds-var-m-top_small" style="display: flex; justify-content: space-between">
+                        <lightning-button-icon
+                            icon-name="utility:delete"
+                            variant="container"
+                            alternative-text="Delete"
+                            title="Delete"
+                            onclick={handleSplitOrderDelete}
+                            ><label>Delete</label></lightning-button-icon
+                        >
+                        <div class="slds-align_absolute-center">
+                            <lightning-button
+                                variant="base"
+                                label="Add Line"
+                                class="slds-var-m-right_large"
+                                onclick={handleSplitOrder}
+                            ></lightning-button>
+                            <lightning-button
+                                variant="base"
+                                label="Copy and Add"
+                                class="slds-var-m-right_large"
+                                onclick={handleCopyOrder}
+                            ></lightning-button>
+                            <lightning-button variant="brand" label="Select Product" onclick={handleSelectProduct}></lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </template>
+</template>

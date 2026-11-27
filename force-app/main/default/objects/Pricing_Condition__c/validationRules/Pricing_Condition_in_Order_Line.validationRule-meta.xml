@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing_Condition_in_Order_Line</fullName>
+    <active>true</active>
+    <errorConditionFormula>Item_Condition_Type__c =  Order_Product__r.Item_Condition_Type__c</errorConditionFormula>
+    <errorDisplayField>Item_Condition_Type__c</errorDisplayField>
+    <errorMessage>Item Condition is already in Order Line/Product</errorMessage>
+</ValidationRule>

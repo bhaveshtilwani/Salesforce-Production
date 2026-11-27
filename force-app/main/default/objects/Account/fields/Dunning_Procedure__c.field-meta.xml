@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dunning_Procedure__c</fullName>
+    <label>Dunning Procedure</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Account_Group__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excelitas Wiesbaden: 3-stufig Inland</fullName>
+                <default>false</default>
+                <label>Excelitas Wiesbaden: 3-stufig Inland</label>
+            </value>
+            <value>
+                <fullName>Excelitas Wiesbaden: 3-stufig Ausland</fullName>
+                <default>false</default>
+                <label>Excelitas Wiesbaden: 3-stufig Ausland</label>
+            </value>
+            <value>
+                <fullName>OPKG 4-stufige Mahnung, 14-täglich Ausland</fullName>
+                <default>false</default>
+                <label>OPKG 4-stufige Mahnung, 14-täglich Ausland</label>
+            </value>
+            <value>
+                <fullName>QPKG 4-stufige Mahnung, 14-täglich Inland</fullName>
+                <default>false</default>
+                <label>QPKG 4-stufige Mahnung, 14-täglich Inland</label>
+            </value>
+            <value>
+                <fullName>OPKG einstufiges Mahnverfahren Inland/Ausland</fullName>
+                <default>false</default>
+                <label>OPKG einstufiges Mahnverfahren Inland/Ausland</label>
+            </value>
+            <value>
+                <fullName>Hamble</fullName>
+                <default>false</default>
+                <label>Hamble</label>
+            </value>
+            <value>
+                <fullName>EGS1 - 3 Lvls, No Chrg, No Interest,7dys</fullName>
+                <default>false</default>
+                <label>EGS1 - 3 Lvls, No Chrg, No Interest,7dys</label>
+            </value>
+            <value>
+                <fullName>Four-Level Dunning Notice, Every 2 Weeks</fullName>
+                <default>false</default>
+                <label>Four-Level Dunning Notice, Every 2 Weeks</label>
+            </value>
+            <value>
+                <fullName>Four-Lvl Dunn Notice, Every 2 Wks,IS-RE</fullName>
+                <default>false</default>
+                <label>Four-Lvl Dunn Notice, Every 2 Wks,IS-RE</label>
+            </value>
+            <value>
+                <fullName>Payment Reminder, Every 2 weeks</fullName>
+                <default>false</default>
+                <label>Payment Reminder, Every 2 weeks</label>
+            </value>
+            <value>
+                <fullName>Shenzen-3 Lvls, No Int, Intrvl  2 wks</fullName>
+                <default>false</default>
+                <label>Shenzen-3 Lvls, No Int, Intrvl  2 wks</label>
+            </value>
+            <value>
+                <fullName>PCO: Dreistufige Mahnung, 14-tägig (Ausland)</fullName>
+                <default>false</default>
+                <label>PCO: Dreistufige Mahnung, 14-tägig (Ausland)</label>
+            </value>
+            <value>
+                <fullName>PCO: ZE, 1. u. 2.  Mahnung, 14-tägig (Inland)</fullName>
+                <default>false</default>
+                <label>PCO: ZE, 1. u. 2.  Mahnung, 14-tägig (Inland)</label>
+            </value>
+            <value>
+                <fullName>Four-level dunning notice, every two weeks</fullName>
+                <default>false</default>
+                <label>Four-level dunning notice, every two weeks</label>
+            </value>
+            <value>
+                <fullName>One-level dunning notice, every 30 days</fullName>
+                <default>false</default>
+                <label>One-level dunning notice, every 30 days</label>
+            </value>
+            <value>
+                <fullName>Dunning Procedure - Aggregated Scaled Dunning Charges</fullName>
+                <default>false</default>
+                <label>Dunning Procedure - Aggregated Scaled Dunning Charges</label>
+            </value>
+            <value>
+                <fullName>Dunning Procedure for SAP Real Estate Management</fullName>
+                <default>false</default>
+                <label>Dunning Procedure for SAP Real Estate Management</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Excelitas Wiesbaden: 3-stufig Inland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Excelitas Wiesbaden: 3-stufig Ausland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>OPKG 4-stufige Mahnung, 14-täglich Ausland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>QPKG 4-stufige Mahnung, 14-täglich Inland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>OPKG einstufiges Mahnverfahren Inland/Ausland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Bill To - W004</controllingFieldValue>
+            <controllingFieldValue>Bill To - H004</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Hamble</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Sold-to for upload(DO NOT USE) - Z001</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>EGS1 - 3 Lvls, No Chrg, No Interest,7dys</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Four-Level Dunning Notice, Every 2 Weeks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Four-Lvl Dunn Notice, Every 2 Wks,IS-RE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Payment Reminder, Every 2 weeks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Shenzen-3 Lvls, No Int, Intrvl  2 wks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>PCO: Dreistufige Mahnung, 14-tägig (Ausland)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>PCO: ZE, 1. u. 2.  Mahnung, 14-tägig (Inland)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Four-level dunning notice, every two weeks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>One-level dunning notice, every 30 days</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Dunning Procedure - Aggregated Scaled Dunning Charges</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <controllingFieldValue>Sold To/Ship To - 0001</controllingFieldValue>
+            <controllingFieldValue>Customer-Ship To Role</controllingFieldValue>
+            <valueName>Dunning Procedure for SAP Real Estate Management</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

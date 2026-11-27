@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<!--  
+AJAX
+ Gather Case Comments, Case Hisotry, Activities into one timeline  
+ write them into a cron logical list, that the user can scroll thru
+ -->
+<link  href="/dCSS/Theme2/default/common.css" type="text/css" rel="stylesheet" >
+<link  href="/dCSS/Theme2/default/custom.css" type="text/css" rel="stylesheet" >
+<script type="text/javascript" src="/js/functions.js"></script>
+<script type="text/javascript" src="/js/setup.js"></script>
+<script src="http://www.salesforce.com/services/lib/ajax/beta3.3/sforceclient.js" type="text/javascript"></script>
+<style type="text/css"rel="stylesheet" >
+body {
+    background-repeat: repeat-x;
+    background-position: left top;
+    font-size: 75%;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #FFF;
+}
+</style>
+<script language="javascript">
+<!--
+var cid = "{!Case_ID}";
+
+function initPage() {
+	sforceClient.init("{!API_Session_ID}", "{!API_Partner_Server_URL_60}");
+	var t = document.getElementById('Table1')
+	t.insertRow(t.rows.length).insertCell(0).innerHTML = 'Please wait...';
+	setTimeout('pageSetup()',100);
+}
+
+var qr;
+function pageSetup() {
+	// query as much info as we can about this case, report in a list ( scrolling...) 
+	// put everything in an array of objects so we can sort them and output in a common form
+	// see if this account exists
+	var list = new Array(); // the main list to hold data to display
+	
+	qr = sforceClient.query( "Select Id, CreatedDate, Field, NewValue, OldValue From casehistory where caseid = '" + cid + "'" );
+	if ( queryFailed(qr,"Caseistory") ) { jumpback(); return}
+	list = list.concat(qr.records);
+	
+	// get activities
+	qr = sforceClient.query( "Select Id, subject, CreatedDate From Task where WhatId = '" + cid + "'" );
+	if ( queryFailed(qr,"Task") ) {jumpback(); return}
+	list = list.concat(qr.records);
+
+
+	qr = sforceClient.query( "Select Id, CreatedById, CommentBody, CreatedDate From CaseComment where ParentId = '" + cid + "'" );
+	if ( queryFailed(qr,"CaseComment") ) {jumpback(); return}
+	list = list.concat(qr.records);
+
+	list.sort(sortDate); // sort  by date
+	var t = document.getElementById('Table1')
+	if ( t.rows.length > 0) { // clear the table remove the please wait...
+		t.deleteRow(t.rows.length-1); 
+	}
+	for (i=0;i<list.length;i++) {	
+		rowprint(list[i]); 
+	}
+	return; 
+}
+function queryFailed(qr,ta) { 
+	if (qr.className != "QueryResult") {
+		rowprint( qr.className ) ; 
+		rowprint("could not query " + ta  );
+		rowprint(qr.toString());
+		return 1;
+	} 
+	return 0;
+}
+
+function jumpback() { window.parent.parent.location.href = "/" + "{!Case_ID}"; }
+
+function sortDate(a,b) {
+	var r = a.get('CreatedDate') - b.get('CreatedDate');
+	return r;
+}
+
+function rowprint(so) {
+
+	var cells = [Sforce.Util.FormatDate (so.get('CreatedDate'), "M/d/yyyy hh:mm a")]; 
+
+	switch (so.name) { 
+		case "CaseHistory": cells.push(so.get('Field'));
+			cells.push(so.get('OldValue')  );
+			cells.push(so.get('NewValue')  );
+			break;
+		case "Task":
+			cells.push("Activity" ); 
+			cells.push(so.get('Subject')   ); 
+			break;
+		case "CaseComment": cells.push("Comment" );
+			cells.push(so.get('CommentBody').substring(0,55) );
+			break;
+		
+	} 
+	var t = document.getElementById('Table1');
+	var x = t.insertRow(t.rows.length);
+	if ( t.rows.length % 2 ) { x.style.backgroundColor="#DDDDDD" ;}
+	else { x.style.backgroundColor="#EEEEEE" ;} // for lighter grey
+
+	cell_add( x.insertCell(0),  cells[0]);	
+	cell_add( x.insertCell(1),  cells[1]);	
+	cell_add( x.insertCell(2),  cells[2]);	
+	cell_add( x.insertCell(3),  cells[3]);	
+}
+
+function cell_add ( y,l) {
+	if (l == undefined || l == null ) { l='&nbsp;';}
+	y.innerHTML = l;  y.style.cssText = "dataField"; 
+}
+function createTag(parent, name, keyvalPairs) {
+	var el = document.createElement(name);
+	for (key in keyvalPairs) {
+		el.setAttribute(key, keyvalPairs[key]);
+	}
+	parent.appendChild(el);
+}
+
+//-->
+</script>
+	</head>
+
+<body onload="initPage();">
+<TABLE WIDTH="100%" id="Table2" cellSpacing="0" cellPadding="1" border="0">
+	<TR>
+		<td><input name="done" value=" Back to Case " class="button" 
+			onclick="javascript:jumpback()" type="button"></td>
+		<td ><b>Review all Case History, Comments and Activities in cronological order</b></td>
+	</TR>
+	<tr><td><b>Case Number : {!Case_Number}</b></td><td>Subject : {!Case_Subject} </td>
+
+	</tr>
+</TABLE>
+<TABLE WIDTH="100%" id="Table1" cellSpacing="0" cellPadding="1" border="0">
+	<TR>
+	</TR>
+</TABLE>		
+</body>
+</html>

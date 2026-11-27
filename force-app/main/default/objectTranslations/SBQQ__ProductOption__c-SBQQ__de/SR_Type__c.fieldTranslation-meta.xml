@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SR Type --></label>
+    <name>SR_Type__c</name>
+    <picklistValues>
+        <masterLabel>SR-Accessories</masterLabel>
+        <translation><!-- SR-Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR-NRE</masterLabel>
+        <translation><!-- SR-NRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR-NRE Tooling</masterLabel>
+        <translation><!-- SR-NRE Tooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR-Prototype</masterLabel>
+        <translation><!-- SR-Prototype --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR-Regulatory</masterLabel>
+        <translation><!-- SR-Regulatory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR-System</masterLabel>
+        <translation><!-- SR-System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SR-Testing</masterLabel>
+        <translation><!-- SR-Testing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

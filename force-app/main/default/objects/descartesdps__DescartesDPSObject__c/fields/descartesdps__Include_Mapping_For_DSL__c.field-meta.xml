@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>descartesdps__Include_Mapping_For_DSL__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Include Mapping for my DSL.</description>
+    <inlineHelpText>Include Mapping for my DSL.</inlineHelpText>
+    <label>Include Mapping for DSL</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

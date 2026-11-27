@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sends an email notification to the active user</description>
+        <name>Email_Alert_for_Active_User</name>
+        <label>Email Alert for Active User</label>
+        <locationX>1634</locationX>
+        <locationY>755</locationY>
+        <actionName>Lead.Existing_Old_Lead_re_opened</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Assign_Active_Value</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Lead.Existing_Old_Lead_re_opened</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <description>Sends an email alert that the lead has been reassigned</description>
+        <name>Lead_Reassigned</name>
+        <label>Lead Reassigned</label>
+        <locationX>2162</locationX>
+        <locationY>647</locationY>
+        <actionName>Lead.Lead_Reassigned</actionName>
+        <actionType>emailAlert</actionType>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Lead.Lead_Reassigned</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <description>Sends an email notification that a new open lead has been created</description>
+        <name>New_Open_Lead</name>
+        <label>New Open Lead</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <actionName>Lead.Open_Lead_New</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Re_Run_Lead_Assignment_Rules</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Lead.Open_Lead_New</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <description>In case there is a delay or to make sure</description>
+        <name>Re_Run_Lead_Assignment_Rules</name>
+        <label>Re Run Lead Assignment Rules</label>
+        <locationX>50</locationX>
+        <locationY>863</locationY>
+        <actionName>RunLeadAssignmentRules</actionName>
+        <actionType>apex</actionType>
+        <faultConnector>
+            <targetReference>Create_Flow_Error_Logs_LARV2</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>leadIds</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>RunLeadAssignmentRules</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Run_Lead_Assignment_Rules</name>
+        <label>Run Lead Assignment Rules</label>
+        <locationX>1106</locationX>
+        <locationY>755</locationY>
+        <actionName>RunLeadAssignmentRules</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Assign_Value</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Create_Flow_Error_Logs_LAR</targetReference>
+        </faultConnector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>leadIds</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>RunLeadAssignmentRules</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Active_Value</name>
+        <label>Assign Active Value</label>
+        <locationX>1634</locationX>
+        <locationY>863</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Lead_Source_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varToday</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Comments</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_iCapture</name>
+        <label>Assign iCapture</label>
+        <locationX>1106</locationX>
+        <locationY>1295</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.iCapture_Comments__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>New_iCaptureComment</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Lead_iCapture</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_notes_Attended</name>
+        <label>Assign notes Attended</label>
+        <locationX>1370</locationX>
+        <locationY>1295</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Notes__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>New_NotesMarketingComment</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Lead_Notes_Attended</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Value</name>
+        <label>Assign Value</label>
+        <locationX>1106</locationX>
+        <locationY>863</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Lead_Source_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varToday</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Comments</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Comments</name>
+        <label>Check Comments</label>
+        <locationX>1502</locationX>
+        <locationY>1187</locationY>
+        <defaultConnector>
+            <targetReference>Update_Lead_Status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>iCapture_Exhibition_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.iCapture_Comments__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_iCapture</targetReference>
+            </connector>
+            <label>iCapture/Exhibition Changed</label>
+        </rules>
+        <rules>
+            <name>Webinar_Attended</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Notes__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>didNotAttend</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_notes_Attended</targetReference>
+            </connector>
+            <label>Webinar Attended</label>
+        </rules>
+        <rules>
+            <name>Marketing_Notes_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Notes__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>didNotAttend</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Lead_Notes</targetReference>
+            </connector>
+            <label>Not attended Marketing/Notes Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Branches logic based on whether the lead owner is active or inactive</description>
+        <name>Check_User_Active_Inactive</name>
+        <label>Check User Active / Inactive</label>
+        <locationX>1502</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>Check_Comments</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Inactive_Closed</name>
+            <conditionLogic>(3 AND (1 OR 2))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner:User.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Marketing Only - Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner:Group.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Run_Lead_Assignment_Rules</targetReference>
+            </connector>
+            <label>Inactive/Closed</label>
+        </rules>
+        <rules>
+            <name>Active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner:User.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Marketing Only - Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Email_Alert_for_Active_User</targetReference>
+            </connector>
+            <label>Active</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Flow triggering Decision</description>
+        <name>Flow_triggers</name>
+        <label>Flow triggers</label>
+        <locationX>1370</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>New_Lead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>NewLeadCriteria</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>005</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner:User.Id</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>005</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner:Group.Id</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Source_Date_to_Today</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>New Lead</label>
+        </rules>
+        <rules>
+            <name>Lead_Updated_Reopened</name>
+            <conditionLogic>(1 AND 2 AND 3 AND 4 AND 5 AND (6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12)) OR (1 AND 5 AND (6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12))</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CreatedDate</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.LastModifiedDate</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Marketing Only - Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Marketing Only - Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LastModifiedBy.Username</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>$Label.LeadCurrentUser</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Area_of_Interest__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_Line__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.pi__comments__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.pi__comments__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Product_Family__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Application__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Notes__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.iCapture_Comments__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_User_Active_Inactive</targetReference>
+            </connector>
+            <label>Lead is Updated or Reopened</label>
+        </rules>
+        <rules>
+            <name>Reassigned_Lead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ReassignedLeadCriteria</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lead_Reassigned</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Reassigned Lead</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>BYPASS ENABLING MECHANISM LOGIC</description>
+        <name>IS_BYPASS_ENABLED</name>
+        <label>IS BYPASS ENABLED ?</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Flow_triggers</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>BYPASS_TRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Records.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>BYPASS TRUE</label>
+        </rules>
+    </decisions>
+    <description>Revert Change related to AE Comments
+#INC-275551 Leads - internal and customer comments updated
+#INC-276925 Leads - stop re-assigning to Scott</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>didNotAttend</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+  CONTAINS(LOWER({!$Record.Notes__c}), &quot;did not attend&quot;),
+  CONTAINS(LOWER({!$Record.Notes__c}), &quot;not attend&quot;)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>New_AccountEngagementComment</name>
+        <dataType>String</dataType>
+        <expression>TRIM(
+    SUBSTITUTE(
+        $Record.pi__comments__c,
+        &apos;202&apos;,
+        BR() &amp; &apos;202&apos;
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>New_iCaptureComment</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!$Record__Prior.iCapture_Comments__c}),
+    /* first time, nothing to stack */
+    {!$Record.iCapture_Comments__c},
+    /* else: new on top, old below */
+    {!$Record.iCapture_Comments__c} &amp;
+    BR() &amp;
+    {!$Record__Prior.iCapture_Comments__c}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>New_NotesMarketingComment</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!$Record__Prior.Notes__c}),
+    /* first time, nothing to stack */
+    {!$Record.Notes__c},
+    /* else: new on top, old below */
+    {!$Record.Notes__c} &amp;
+    BR() &amp;
+    {!$Record__Prior.Notes__c}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>NewLeadCriteria</name>
+        <dataType>Boolean</dataType>
+        <expression>AND (
+ISNEW() ,  ISPICKVAL({!$Record.Status}, &apos;Open&apos;)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ReassignedLeadCriteria</name>
+        <dataType>Boolean</dataType>
+        <expression>AND  (ISCHANGED({!$Record.OwnerId}) , BEGINS({!$Record.OwnerId}, &apos;005&apos;))</expression>
+    </formulas>
+    <formulas>
+        <name>statusValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  ISPICKVAL({!$Record.Status}, &quot;Closed&quot;),
+  &quot;Open&quot;,
+  TEXT({!$Record.Status})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <name>varNow</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <name>varToday</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Lead Migrated Optimized Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead Migrated Optimized Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>It Creates Flow Error Logs Records</description>
+        <name>Create_Flow_Error_Logs_LAR</name>
+        <label>Create Flow Error Logs LAR</label>
+        <locationX>1370</locationX>
+        <locationY>863</locationY>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FLOW_API_NAME__c</field>
+            <value>
+                <stringValue>Lead_Optimization_Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_ID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Name__c</field>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Flow_Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <description>It Creates Flow Error Logs Records</description>
+        <name>Create_Flow_Error_Logs_LARV2</name>
+        <label>Create Flow Error Logs LAR V2</label>
+        <locationX>314</locationX>
+        <locationY>971</locationY>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FLOW_API_NAME__c</field>
+            <value>
+                <stringValue>Lead_Optimization_Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_ID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Name__c</field>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Flow_Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <description>It Creates Flow Error Logs Records</description>
+        <name>Create_Flow_Error_Logs_Records</name>
+        <label>Create Flow Error Logs Records</label>
+        <locationX>842</locationX>
+        <locationY>755</locationY>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Flow.FaultMessage</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FLOW_API_NAME__c</field>
+            <value>
+                <stringValue>Lead_Optimization_Flow</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Record_ID__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Timestamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Name__c</field>
+            <value>
+                <elementReference>$User.Username</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Flow_Error_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Get Bypass Metadata records</description>
+        <name>Get_Bypass_Records</name>
+        <label>Get Bypass Records</label>
+        <locationX>578</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IS_BYPASS_ENABLED</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lead_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the status field of the lead</description>
+        <name>Update_Lead_iCapture</name>
+        <label>Update Lead iCapture</label>
+        <locationX>1106</locationX>
+        <locationY>1403</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the status field of the lead</description>
+        <name>Update_Lead_Notes</name>
+        <label>Update Lead Notes</label>
+        <locationX>1634</locationX>
+        <locationY>1295</locationY>
+        <inputAssignments>
+            <field>Notes__c</field>
+            <value>
+                <elementReference>New_NotesMarketingComment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the status field of the lead</description>
+        <name>Update_Lead_Notes_Attended</name>
+        <label>Update Lead Notes Attended</label>
+        <locationX>1370</locationX>
+        <locationY>1403</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the status field of the lead</description>
+        <name>Update_Lead_Status</name>
+        <label>Update Lead Status</label>
+        <locationX>1898</locationX>
+        <locationY>1295</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Updates the &quot;Source Date&quot; field to the current date</description>
+        <name>Update_Source_Date_to_Today</name>
+        <label>Update Source Date to Today</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>New_Open_Lead</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Create_Flow_Error_Logs_Records</targetReference>
+        </faultConnector>
+        <inputAssignments>
+            <field>Lead_Source_Date__c</field>
+            <value>
+                <elementReference>Today</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_Records</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

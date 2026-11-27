@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParentId</fullName>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR (3 AND 4) OR (5 AND 6)</booleanFilter>
+        <filterItems>
+            <field>$Source.DW_Account_Type__c</field>
+            <operation>equals</operation>
+            <value>Customer Name</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.DW_Account_Type__c</field>
+            <operation>equals</operation>
+            <value>Business Name</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.DW_Account_Type__c</field>
+            <operation>equals</operation>
+            <value>Business Name</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.DW_Account_Type__c</field>
+            <operation>equals</operation>
+            <value>Global Customer</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.DW_Account_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Customer Name</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.DW_Account_Type__c</field>
+            <operation>notEqual</operation>
+            <value>Business Name</value>
+        </filterItems>
+        <infoMessage>Invalid Parent Account.
+Please select a valid parent based on Account Type.
+If unsure, use the &quot;Unknown&quot; parent account.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Hierarchy</type>
+</CustomField>

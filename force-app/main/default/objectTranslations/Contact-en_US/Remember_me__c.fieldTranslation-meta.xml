@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Remember Me --></label>
+    <name>Remember_me__c</name>
+    <picklistValues>
+        <masterLabel>Allow</masterLabel>
+        <translation><!-- Allow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do not allow</masterLabel>
+        <translation><!-- Do not allow --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

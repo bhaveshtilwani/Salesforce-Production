@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+  StageName,
+  &quot;Open&quot;, &quot;Open&quot;,
+  &quot;1 - Opportunity Validation&quot;, &quot;Open&quot;,
+  &quot;2 - Requirement Definition/Technical Evl&quot;, &quot;Open&quot;,
+  &quot;3 - Technical Qualification/Approval&quot;, &quot;Open&quot;,
+  &quot;4 - Commercial Negotiation&quot;, &quot;Open&quot;,
+  &quot;NFA&quot;, &quot;Open&quot;,
+  &quot;0 - On-Dashboard&quot;, &quot;Open&quot;,
+  &quot;1 - Engaged&quot;, &quot;Open&quot;,
+  &quot;2 - Approached&quot;, &quot;Open&quot;,
+  &quot;3 - Hold&quot;, &quot;Open&quot;,
+  &quot;4 - Long Term Follow-up&quot;, &quot;Open&quot;,
+  &quot;Cancelled&quot;, &quot;Open&quot;,
+  &quot;1 - Preliminary Discussions&quot;, &quot;Open&quot;,
+  &quot;2 - Budgetary Proposal&quot;, &quot;Open&quot;,
+  &quot;3 - Proposal Delivered&quot;, &quot;Open&quot;,
+  &quot;4 - We are ahead&quot;, &quot;Open&quot;,
+  &quot;5 - Order Pending&quot;, &quot;Open&quot;,
+  &quot;5 - Business Award – Won&quot;, &quot;Won&quot;,
+  &quot;6 - Production Order on Backlog&quot;, &quot;Won&quot;,
+&quot;Evaluation&quot;, &quot;Open&quot;,
+&quot;Technical Review &amp; Sampling&quot;, &quot;Open&quot;,
+&quot;Proposal Creation&quot;, &quot;Open&quot;,
+&quot;Negotiation Started&quot;, &quot;Open&quot;,
+&quot;Negotiation On Track&quot;, &quot;Open&quot;,
+  &quot;Won&quot;, &quot;Won&quot;,
+  &quot;Quoted for Service / Repair&quot;, &quot;Won&quot;,
+  &quot;6 - PO Received&quot;, &quot;Won&quot;,
+  &quot;Quote Sent&quot;, &quot;Open&quot;,
+  &quot;Closed Lost&quot;, &quot;Closed Lost/Other&quot;,
+  &quot;Closed – No Bid&quot;, &quot;Closed Lost/Other&quot;,
+  &quot;Closed \&quot;Other\&quot;&quot;, &quot;Closed Lost/Other&quot;,
+  &quot;Closed - No Response&quot;, &quot;Closed Lost/Other&quot;,
+  &quot;Closed - Expired&quot;, &quot;Closed Lost/Other&quot;,
+  &quot;5 - No Action&quot;, &quot;Closed Lost/Other&quot;,
+  &quot;Closed - Invalid Duplicate or Error&quot;, &quot;Closed Invalid&quot;,
+  &quot;6 - Closed&quot;, &quot;Closed Lost/Other&quot;,
+  &quot;Budget proposal / Demo Eval / Call Plan&quot;, &quot;Open&quot;,
+  &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Opportunity Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

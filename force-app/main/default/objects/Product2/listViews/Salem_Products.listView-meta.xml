@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salem_Products</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>PRODUCT2.FAMILY</columns>
+    <columns>Excelitas_Site__c</columns>
+    <columns>Excelitas_Selling_Site__c</columns>
+    <columns>Is_Standard_Product_V2__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Excelitas_Selling_Site__c</field>
+        <operation>equals</operation>
+        <value>Salem</value>
+    </filters>
+    <label>Salem Products</label>
+</ListView>

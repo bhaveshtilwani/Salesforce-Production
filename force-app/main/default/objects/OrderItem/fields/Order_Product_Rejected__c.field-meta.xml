@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Product_Rejected__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>BACKEND -- Used by Advance Approvals when an Order Product is rejected or revoked</description>
+    <label>Order Product Rejected</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

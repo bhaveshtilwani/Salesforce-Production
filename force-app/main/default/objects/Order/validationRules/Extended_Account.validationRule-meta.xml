@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Extended_Account</fullName>
+    <active>false</active>
+    <errorConditionFormula>Account_not_Extended__c = True</errorConditionFormula>
+    <errorMessage>Account not extended to Vendor Site. Please extend.</errorMessage>
+</ValidationRule>

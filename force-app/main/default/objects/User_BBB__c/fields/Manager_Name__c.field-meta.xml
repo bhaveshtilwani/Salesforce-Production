@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_Name__c</fullName>
+    <label>Manager Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dan Iadonisi</fullName>
+                <default>false</default>
+                <label>Dan Iadonisi</label>
+            </value>
+            <value>
+                <fullName>Danny Miller</fullName>
+                <default>false</default>
+                <label>Danny Miller</label>
+            </value>
+            <value>
+                <fullName>Anna Kostic</fullName>
+                <default>false</default>
+                <label>Anna Kostic</label>
+            </value>
+            <value>
+                <fullName>Joe Delfino</fullName>
+                <default>false</default>
+                <label>Joe Delfino</label>
+            </value>
+            <value>
+                <fullName>James Lim</fullName>
+                <default>false</default>
+                <label>James Lim</label>
+            </value>
+            <value>
+                <fullName>Jochen Wenk</fullName>
+                <default>false</default>
+                <label>Jochen Wenk</label>
+            </value>
+            <value>
+                <fullName>Anton Gaedtke</fullName>
+                <default>false</default>
+                <label>Anton Gaedtke</label>
+            </value>
+            <value>
+                <fullName>Carlos Alvarez</fullName>
+                <default>false</default>
+                <label>Carlos Alvarez</label>
+            </value>
+            <value>
+                <fullName>Todd Brainard</fullName>
+                <default>false</default>
+                <label>Todd Brainard</label>
+            </value>
+            <value>
+                <fullName>Ben Standish</fullName>
+                <default>false</default>
+                <label>Ben Standish</label>
+            </value>
+            <value>
+                <fullName>Harpreet Singh</fullName>
+                <default>false</default>
+                <label>Harpreet Singh</label>
+            </value>
+            <value>
+                <fullName>David McKibben</fullName>
+                <default>false</default>
+                <label>David McKibben</label>
+            </value>
+            <value>
+                <fullName>Yacine Talji</fullName>
+                <default>false</default>
+                <label>Yacine Talji</label>
+            </value>
+            <value>
+                <fullName>Karsten Fischer</fullName>
+                <default>false</default>
+                <label>Karsten Fischer</label>
+            </value>
+            <value>
+                <fullName>Olaf Meyer</fullName>
+                <default>false</default>
+                <label>Olaf Meyer</label>
+            </value>
+            <value>
+                <fullName>Frank Reissmann</fullName>
+                <default>false</default>
+                <label>Frank Reissmann</label>
+            </value>
+            <value>
+                <fullName>Ricky Wong</fullName>
+                <default>false</default>
+                <label>Ricky Wong</label>
+            </value>
+            <value>
+                <fullName>Isabel Haackert</fullName>
+                <default>false</default>
+                <label>Isabel Haackert</label>
+            </value>
+            <value>
+                <fullName>Josep Tienda</fullName>
+                <default>false</default>
+                <label>Josep Tienda</label>
+            </value>
+            <value>
+                <fullName>Joerg Hannig</fullName>
+                <default>false</default>
+                <label>Joerg Hannig</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Follow_Up_Action__c</fullName>
+    <label>Follow Up Action</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <label>Contact</label>
+            </value>
+            <value>
+                <fullName>Quote</fullName>
+                <default>false</default>
+                <label>Quote</label>
+            </value>
+            <value>
+                <fullName>Meet</fullName>
+                <default>false</default>
+                <label>Meet</label>
+            </value>
+            <value>
+                <fullName>--None--</fullName>
+                <default>false</default>
+                <label>--None--</label>
+            </value>
+            <value>
+                <fullName>Chrstmas Card</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Chrstmas Card</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>LINOS Catalog</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LINOS Catalog</label>
+            </value>
+            <value>
+                <fullName>Literature</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Literature</label>
+            </value>
+            <value>
+                <fullName>Newsletter CT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Newsletter CT</label>
+            </value>
+            <value>
+                <fullName>Newsletter Catalog</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Newsletter Catalog</label>
+            </value>
+            <value>
+                <fullName>Newsletter OI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Newsletter OI</label>
+            </value>
+            <value>
+                <fullName>Newsletter Optolines</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Newsletter Optolines</label>
+            </value>
+            <value>
+                <fullName>OptoLines Newsletter</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OptoLines Newsletter</label>
+            </value>
+            <value>
+                <fullName>Print Catalog</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Print Catalog</label>
+            </value>
+            <value>
+                <fullName>Print Optolines</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Print Optolines</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Vertragspreis</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Vertragspreise</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Vertragspreis</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Vertragspreise</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Vertragspreises</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Vertragspreise</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Vertragspreis</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Vertragspreisen</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Vertragspreisnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Character count cannot exceed 80 characters --></errorMessage>
+        <name>Character_Count_80_max</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Sie mÃ¼ssen entweder fÃ¼r &quot;&quot;Rabatt&quot;&quot;, &quot;&quot;Preis&quot;&quot; oder &quot;&quot;Rabattregelung&quot;&quot; eine Angabe machen.&quot;</errorMessage>
+        <name>SBQQ__Discount_or_price_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sie dÃ¼rfen nicht sowohl ein Produkt als auch einen Filter festlegen.</errorMessage>
+        <name>SBQQ__Either_product_or_filter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Wenn &quot;&quot;Filterfeld&quot;&quot; festgelegt wird, muss ein Operator angegeben werden.&quot;</errorMessage>
+        <name>SBQQ__Filter_requires_operators</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Sie mÃ¼ssen entweder ein Produkt oder ein Filterfeld angeben.</errorMessage>
+        <name>SBQQ__Product_or_filter_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tier Quantity must be whole numbers. Decimal values are not allowed. --></errorMessage>
+        <name>Tier_Quantity_No_Decimals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter valid quantity ranges for all four tiers. Each tier must have a minimum and maximum quantity, and the ranges must be consecutive without overlaps or gaps. --></errorMessage>
+        <name>Validate_Contracted_Price_Tiers</name>
+    </validationRules>
+</CustomObjectTranslation>

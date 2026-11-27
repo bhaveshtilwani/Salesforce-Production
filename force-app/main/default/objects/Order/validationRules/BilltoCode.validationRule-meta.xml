@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BilltoCode</fullName>
+    <active>true</active>
+    <description>Invalid Bill to Code, Sold to or Ship to Code combination (EX, EO, EU)</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Site__c, &apos;Toronto&apos;),
+ISPICKVAL(SFDC_Integration_Status__c, &apos;In Progress&apos;),
+OR(
+UPPER(LEFT(Ship_To_CodeLDGI__c,2))&lt;&gt;UPPER(LEFT( Sold_To_CodeLDGI__c,2)),
+UPPER(LEFT(Ship_To_CodeLDGI__c,2))&lt;&gt;UPPER(LEFT( Bill_to_CodeLDGI__c,2)),
+ISBLANK( Bill_to_CodeLDGI__c ),
+ISBLANK( Ship_To_CodeLDGI__c ),
+ISBLANK( Sold_To_CodeLDGI__c )
+),
+LEFT(Bill_to_CodeLDGI__c ,2)&lt;&gt;&quot;99&quot;)</errorConditionFormula>
+    <errorMessage>Sold to and Ship to account code prefix&apos;s must match
+(EX with EX, EO with EO, EU with EU)
+
+- Neither Sold to Code, Bill to Code or Ship to Code can be blank.</errorMessage>
+</ValidationRule>

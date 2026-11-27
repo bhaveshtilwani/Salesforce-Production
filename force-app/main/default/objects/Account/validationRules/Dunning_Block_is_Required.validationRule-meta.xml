@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dunning_Block_is_Required</fullName>
+    <active>true</active>
+    <description>This is not required 5/28 As per Corinna
+GER Accounts only</description>
+    <errorConditionFormula>AND(
+    $User.Alias&lt;&gt; &quot;sconn&quot;,
+
+    $RecordType.Name = &quot;SAP Germany&quot;,
+    CFIN_Completed_and_Confirmed__c = TRUE,
+
+    OR(
+        ISPICKVAL(Account_Group__c , &quot;Customer int number assgnmnt - DEBI&quot;),
+        ISPICKVAL(Account_Group__c , &quot;QioDebitoren Europäische Union - DEEU&quot;),
+        ISPICKVAL(Account_Group__c , &quot;Bill To - W004&quot;),
+        ISPICKVAL(Account_Group__c , &quot;Bill To - H004&quot;)
+    ),
+
+    ISBLANK(TEXT(Dunning_Block__c))
+)</errorConditionFormula>
+    <errorDisplayField>Dunning_Block__c</errorDisplayField>
+    <errorMessage>Dunning Block is Required.</errorMessage>
+</ValidationRule>

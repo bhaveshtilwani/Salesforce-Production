@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Function</fullName>
+    <columns>NAME</columns>
+    <columns>ERP_ID__c</columns>
+    <columns>Order__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Partner Function</label>
+</ListView>

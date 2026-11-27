@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Sub_Team__c</fullName>
+    <label>Sales Sub-Team</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Americas Channel Sales</fullName>
+                <default>false</default>
+                <label>Americas Channel Sales</label>
+            </value>
+            <value>
+                <fullName>Asia Channel Sales</fullName>
+                <default>false</default>
+                <label>Asia Channel Sales</label>
+            </value>
+            <value>
+                <fullName>Biotech and Analytical Americas</fullName>
+                <default>false</default>
+                <label>Biotech and Analytical Americas</label>
+            </value>
+            <value>
+                <fullName>Biotech and Analytical EMEA</fullName>
+                <default>false</default>
+                <label>Biotech and Analytical EMEA</label>
+            </value>
+            <value>
+                <fullName>Catalog and Technical Sales</fullName>
+                <default>false</default>
+                <label>Catalog and Technical Sales</label>
+            </value>
+            <value>
+                <fullName>CISS</fullName>
+                <default>false</default>
+                <label>CISS</label>
+            </value>
+            <value>
+                <fullName>CISS 1</fullName>
+                <default>false</default>
+                <label>CISS 1</label>
+            </value>
+            <value>
+                <fullName>CISS 2</fullName>
+                <default>false</default>
+                <label>CISS 2</label>
+            </value>
+            <value>
+                <fullName>EMEA Channel Sales</fullName>
+                <default>false</default>
+                <label>EMEA Channel Sales</label>
+            </value>
+            <value>
+                <fullName>GAM</fullName>
+                <default>false</default>
+                <label>GAM</label>
+            </value>
+            <value>
+                <fullName>GBS Photo &amp; Measurement</fullName>
+                <default>false</default>
+                <label>GBS Photo &amp; Measurement</label>
+            </value>
+            <value>
+                <fullName>Greater China</fullName>
+                <default>false</default>
+                <label>Greater China</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing Americas</fullName>
+                <default>false</default>
+                <label>Industrial Curing Americas</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing Asia</fullName>
+                <default>false</default>
+                <label>Industrial Curing Asia</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing EMEA</fullName>
+                <default>false</default>
+                <label>Industrial Curing EMEA</label>
+            </value>
+            <value>
+                <fullName>Inside Sales CISS</fullName>
+                <default>false</default>
+                <label>Inside Sales CISS</label>
+            </value>
+            <value>
+                <fullName>Inside Sales EMEA</fullName>
+                <default>false</default>
+                <label>Inside Sales EMEA</label>
+            </value>
+            <value>
+                <fullName>Inside Sales LSA &amp; Semi EMEA</fullName>
+                <default>false</default>
+                <label>Inside Sales LSA &amp; Semi EMEA</label>
+            </value>
+            <value>
+                <fullName>Japan</fullName>
+                <default>false</default>
+                <label>Japan</label>
+            </value>
+            <value>
+                <fullName>Korea</fullName>
+                <default>false</default>
+                <label>Korea</label>
+            </value>
+            <value>
+                <fullName>Latin America Sales</fullName>
+                <default>false</default>
+                <label>Latin America Sales</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Medical 1</fullName>
+                <default>false</default>
+                <label>Medical 1</label>
+            </value>
+            <value>
+                <fullName>Medical 2</fullName>
+                <default>false</default>
+                <label>Medical 2</label>
+            </value>
+            <value>
+                <fullName>SE Asia, India, Australia</fullName>
+                <default>false</default>
+                <label>SE Asia, India, Australia</label>
+            </value>
+            <value>
+                <fullName>SEMI/GAM</fullName>
+                <default>false</default>
+                <label>SEMI/GAM</label>
+            </value>
+            <value>
+                <fullName>Unknown Team</fullName>
+                <default>false</default>
+                <label>Unknown Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

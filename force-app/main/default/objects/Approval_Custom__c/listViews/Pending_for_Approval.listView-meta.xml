@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_for_Approval</fullName>
+    <columns>NAME</columns>
+    <columns>Business_Account_Name__c</columns>
+    <columns>Status__c</columns>
+    <columns>Order_Number__c</columns>
+    <columns>Order_Line_Number__c</columns>
+    <columns>Order_Product__c</columns>
+    <columns>Order_Approval_Type__c</columns>
+    <columns>Requested_Price_Change__c</columns>
+    <columns>Requested_Quantity_Change__c</columns>
+    <columns>Requested_Ship_Date_Change__c</columns>
+    <columns>Original_Unit_Price__c</columns>
+    <columns>Original_Quantity__c</columns>
+    <columns>Original_Customer_Requested_Date_CRD__c</columns>
+    <columns>Approver__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>Pending for Approval</label>
+</ListView>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Problem_Code__c</fullName>
+    <label>Problem Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA Not applicable</fullName>
+                <default>false</default>
+                <label>NA Not applicable</label>
+            </value>
+            <value>
+                <fullName>Admin Customer Order Error</fullName>
+                <default>false</default>
+                <label>Admin Customer Order Error</label>
+            </value>
+            <value>
+                <fullName>Admin Engineering Error</fullName>
+                <default>false</default>
+                <label>Admin Engineering Error</label>
+            </value>
+            <value>
+                <fullName>Admin Finance Error</fullName>
+                <default>false</default>
+                <label>Admin Finance Error</label>
+            </value>
+            <value>
+                <fullName>Admin Operation Error</fullName>
+                <default>false</default>
+                <label>Admin Operation Error</label>
+            </value>
+            <value>
+                <fullName>Admin Order Entry Error</fullName>
+                <default>false</default>
+                <label>Admin Order Entry Error</label>
+            </value>
+            <value>
+                <fullName>Admin Singapore. Order Entry Error</fullName>
+                <default>false</default>
+                <label>Admin Singapore. Order Entry Error</label>
+            </value>
+            <value>
+                <fullName>Admin Marketing Error</fullName>
+                <default>false</default>
+                <label>Admin Marketing Error</label>
+            </value>
+            <value>
+                <fullName>Admin Product Man Error</fullName>
+                <default>false</default>
+                <label>Admin Product Man Error</label>
+            </value>
+            <value>
+                <fullName>Admin Quality error</fullName>
+                <default>false</default>
+                <label>Admin Quality error</label>
+            </value>
+            <value>
+                <fullName>Admin Sales Error</fullName>
+                <default>false</default>
+                <label>Admin Sales Error</label>
+            </value>
+            <value>
+                <fullName>Admin Shipping Damage</fullName>
+                <default>false</default>
+                <label>Admin Shipping Damage</label>
+            </value>
+            <value>
+                <fullName>Admin Shipping Error</fullName>
+                <default>false</default>
+                <label>Admin Shipping Error</label>
+            </value>
+            <value>
+                <fullName>Admin Shipping Error Singapore</fullName>
+                <default>false</default>
+                <label>Admin Shipping Error Singapore</label>
+            </value>
+            <value>
+                <fullName>Admin SR Team Error</fullName>
+                <default>false</default>
+                <label>Admin SR Team Error</label>
+            </value>
+            <value>
+                <fullName>Admin Tech Support Error</fullName>
+                <default>false</default>
+                <label>Admin Tech Support Error</label>
+            </value>
+            <value>
+                <fullName>Application Support</fullName>
+                <default>false</default>
+                <label>Application Support</label>
+            </value>
+            <value>
+                <fullName>Calibration</fullName>
+                <default>false</default>
+                <label>Calibration</label>
+            </value>
+            <value>
+                <fullName>Calibration and Repair</fullName>
+                <default>false</default>
+                <label>Calibration and Repair</label>
+            </value>
+            <value>
+                <fullName>Customer Feedback about Product</fullName>
+                <default>false</default>
+                <label>Customer Feedback about Product</label>
+            </value>
+            <value>
+                <fullName>Demo Feedback</fullName>
+                <default>false</default>
+                <label>Demo Feedback</label>
+            </value>
+            <value>
+                <fullName>Evaluate - Does Not Meet Specifications</fullName>
+                <default>false</default>
+                <label>Evaluate - Does Not Meet Specifications</label>
+            </value>
+            <value>
+                <fullName>General Education</fullName>
+                <default>false</default>
+                <label>General Education</label>
+            </value>
+            <value>
+                <fullName>Information Request</fullName>
+                <default>false</default>
+                <label>Information Request</label>
+            </value>
+            <value>
+                <fullName>Lead sent to Sales</fullName>
+                <default>false</default>
+                <label>Lead sent to Sales</label>
+            </value>
+            <value>
+                <fullName>Loaned Demo</fullName>
+                <default>false</default>
+                <label>Loaned Demo</label>
+            </value>
+            <value>
+                <fullName>Manuals</fullName>
+                <default>false</default>
+                <label>Manuals</label>
+            </value>
+            <value>
+                <fullName>Opened in Error</fullName>
+                <default>false</default>
+                <label>Opened in Error</label>
+            </value>
+            <value>
+                <fullName>Out of Box Failure</fullName>
+                <default>false</default>
+                <label>Out of Box Failure</label>
+            </value>
+            <value>
+                <fullName>Negative Feedback</fullName>
+                <default>false</default>
+                <label>Negative Feedback</label>
+            </value>
+            <value>
+                <fullName>Positive Feedback</fullName>
+                <default>false</default>
+                <label>Positive Feedback</label>
+            </value>
+            <value>
+                <fullName>Recycling</fullName>
+                <default>false</default>
+                <label>Recycling</label>
+            </value>
+            <value>
+                <fullName>Return for Credit</fullName>
+                <default>false</default>
+                <label>Return for Credit</label>
+            </value>
+            <value>
+                <fullName>Return of Consignment</fullName>
+                <default>false</default>
+                <label>Return of Consignment</label>
+            </value>
+            <value>
+                <fullName>Return of Demo</fullName>
+                <default>false</default>
+                <label>Return of Demo</label>
+            </value>
+            <value>
+                <fullName>Return of Loaner</fullName>
+                <default>false</default>
+                <label>Return of Loaner</label>
+            </value>
+            <value>
+                <fullName>Scheduled Maintenance</fullName>
+                <default>false</default>
+                <label>Scheduled Maintenance</label>
+            </value>
+            <value>
+                <fullName>Service Centre Calibration</fullName>
+                <default>false</default>
+                <label>Service Centre Calibration</label>
+            </value>
+            <value>
+                <fullName>Service Centre Calibration and Repair</fullName>
+                <default>false</default>
+                <label>Service Centre Calibration and Repair</label>
+            </value>
+            <value>
+                <fullName>Service Centre Repair</fullName>
+                <default>false</default>
+                <label>Service Centre Repair</label>
+            </value>
+            <value>
+                <fullName>SR Related Issue</fullName>
+                <default>false</default>
+                <label>SR Related Issue</label>
+            </value>
+            <value>
+                <fullName>Trade In Previous Unit needed repair/ TS Lead</fullName>
+                <default>false</default>
+                <label>Trade In Previous Unit needed repair/ TS Lead</label>
+            </value>
+            <value>
+                <fullName>Trade In - Trade Up/ TS Lead</fullName>
+                <default>false</default>
+                <label>Trade In - Trade Up/ TS Lead</label>
+            </value>
+            <value>
+                <fullName>Trade in - Trade Up Program</fullName>
+                <default>false</default>
+                <label>Trade in - Trade Up Program</label>
+            </value>
+            <value>
+                <fullName>Unit Does Not Power Up - Not Functional</fullName>
+                <default>false</default>
+                <label>Unit Does Not Power Up - Not Functional</label>
+            </value>
+            <value>
+                <fullName>Upgrade Required</fullName>
+                <default>false</default>
+                <label>Upgrade Required</label>
+            </value>
+            <value>
+                <fullName>Environmental Issue</fullName>
+                <default>false</default>
+                <label>Environmental Issue</label>
+            </value>
+            <value>
+                <fullName>Call Cancelled</fullName>
+                <default>false</default>
+                <label>Call Cancelled</label>
+            </value>
+            <value>
+                <fullName>Consignment</fullName>
+                <default>false</default>
+                <label>Consignment</label>
+            </value>
+            <value>
+                <fullName>Scorecard Passed</fullName>
+                <default>false</default>
+                <label>Scorecard Passed</label>
+            </value>
+            <value>
+                <fullName>Scorecard Failed</fullName>
+                <default>false</default>
+                <label>Scorecard Failed</label>
+            </value>
+            <value>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <fullName>Service Center Repai</fullName>
+                <default>false</default>
+                <label>Service Center Repai</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

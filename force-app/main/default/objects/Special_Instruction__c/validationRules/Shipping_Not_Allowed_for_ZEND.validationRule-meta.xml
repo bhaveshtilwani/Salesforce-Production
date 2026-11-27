@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Not_Allowed_for_ZEND</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Account__r.Account_Group__c ,&quot;End Customers - ZEND&quot;),
+  Text_Type__r.Name = &quot;Shipping instruction - Customer Master (0002)&quot;)</errorConditionFormula>
+    <errorDisplayField>Text_Type__c</errorDisplayField>
+    <errorMessage>Text Type isn&apos;t valid for Account Group</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides read-only access to QAD Booked Date field on Order and Order Product objects.</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Order.QAD_Booked_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OrderItem.QAD_Booked_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>QAD Booked Date Read Only Access</label>
+</PermissionSet>

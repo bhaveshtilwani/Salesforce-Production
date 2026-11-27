@@ -1,0 +1,96 @@
+<template>
+    <template lwc:if={showModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <template if:true={showSpinner}>
+                <div class="spinnerContainer">
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </div>
+            </template>
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-modal__title">Create Standard Mapping</h2>
+                </header>
+                <div class="slds-modal__content" style="overflow: visible">
+                    <div class="slds-m-around_medium slds-p-around_medium">
+                        <lightning-combobox
+                            name="customerRegion"
+                            label="Customer Region"
+                            value={customerRegionSelection}
+                            placeholder="Select Customer Region"
+                            options={customerRegionPicklistValues}
+                            onchange={handleCustomerRegionChange}
+                        >
+                        </lightning-combobox>
+                        <div class="slds-text-title">{mappingResult}</div>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col">
+                                <label class="slds-form-element__label" for="standardProduct">Standard Product</label>
+                                <c-lwc-custom-lookup
+                                    id="standardProduct"
+                                    ltng-icon-name="standard:product"
+                                    query-object-api-name="Product2"
+                                    selection={standardProductSelection}
+                                    is-disabled={disableStandardProduct}
+                                    main-object-api-name="Product2"
+                                    id-field="Id"
+                                    name-field="Name"
+                                    scroll-after-n-items="5"
+                                    result-display-size="20"
+                                    placeholder="Search Product..."
+                                    nothing-found-subtitle="No Products were found"
+                                    additional-seach-keyword-fields=""
+                                    onselectionchange={handleStandardProductChange}
+                                    additional-fields=""
+                                    additional-where-clause={standardProductWhereClause}
+                                >
+                                </c-lwc-custom-lookup>
+                            </div>
+                            <div class="slds-col">
+                                <label class="slds-form-element__label" for="erpProduct">ERP Product</label>
+                                <c-lwc-custom-lookup
+                                    id="erpProduct"
+                                    ltng-icon-name="standard:product"
+                                    query-object-api-name="Product2"
+                                    selection={erpProductSelection}
+                                    is-disabled={disableERPProduct}
+                                    main-object-api-name="Product2"
+                                    id-field="Id"
+                                    name-field="Name"
+                                    scroll-after-n-items="5"
+                                    result-display-size="20"
+                                    placeholder="Search Product..."
+                                    nothing-found-subtitle="No Products were found"
+                                    additional-seach-keyword-fields=""
+                                    onselectionchange={handleERPProductChange}
+                                    additional-fields="Product_Description__c"
+                                    additional-where-clause={erpProductWhereClause}
+                                >
+                                </c-lwc-custom-lookup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <div class="slds-align_absolute-center">
+                        <lightning-button
+                            variant="destructive-text"
+                            label="Cancel"
+                            title="Cancel"
+                            onclick={handleCancel}
+                            class="slds-m-right_x-small"
+                        ></lightning-button>
+                        <lightning-button
+                            variant="brand"
+                            label="Create Mapping"
+                            title="Create Mapping"
+                            disabled={disableCreateButton}
+                            onclick={handleCreateMapping}
+                            class="slds-m-left_x-small"
+                        ></lightning-button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

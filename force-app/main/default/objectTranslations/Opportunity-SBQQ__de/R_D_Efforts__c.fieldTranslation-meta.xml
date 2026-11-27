@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- R&amp;D Efforts --></label>
+    <name>R_D_Efforts__c</name>
+    <picklistValues>
+        <masterLabel>Development</masterLabel>
+        <translation><!-- Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hybrid receiver team</masterLabel>
+        <translation><!-- Hybrid receiver team --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medium</masterLabel>
+        <translation><!-- Medium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimal</masterLabel>
+        <translation><!-- Minimal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minimal for documentation</masterLabel>
+        <translation><!-- Minimal for documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation><!-- Yes --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

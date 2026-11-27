@@ -1,0 +1,22 @@
+<template>
+    <lightning-quick-action-panel header="Order Syncback">
+         <template if:true={isLoading}>
+             <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+         </template>
+         <div style="height: 300px;" if:true={showSuccess}>
+             <!--
+					<lightning-datatable key-field="SerialNo" data={allSearchResult} max-row-selection="1"
+						onrowselection={handleRowSelected} columns={columns}>
+					</lightning-datatable>-->
+                    <center><b>
+                        Order Sync Success....!
+                    </b></center>
+                    
+				</div>
+        <div if:true={showErrorTable}>
+					<lightning-datatable key-field="SerialNo" data={errorData} hide-checkbox-column
+						 columns={errorColumns}>
+					</lightning-datatable>
+				</div>
+    </lightning-quick-action-panel>
+</template>

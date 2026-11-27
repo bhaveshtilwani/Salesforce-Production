@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TripReportsIown</fullName>
+    <columns>NAME</columns>
+    <columns>Trip_Report_Owner__c</columns>
+    <columns>AccountName__c</columns>
+    <columns>Date_of_Visit__c</columns>
+    <columns>Trip_Type__c</columns>
+    <columns>Prospect_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Trip_Report_Owner__c</field>
+        <operation>equals</operation>
+        <value>$USER</value>
+    </filters>
+    <label>Trip Reports I own</label>
+</ListView>

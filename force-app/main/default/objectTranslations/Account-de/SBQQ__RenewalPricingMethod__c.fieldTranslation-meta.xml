@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Bei Auswahl von &quot;&quot;Gleich&quot;&quot; behalten Sie den Preis bei, der beim letzten Mal bezahlt wurde. WÃ¤hlen Sie &quot;&quot;Liste&quot;&quot;, um den aktuellen Listenpreis zu verwenden. Bei &quot;&quot;Aufschlag&quot;&quot; gilt der beim letzten Mal bezahlte Preis zuzÃ¼glich eines bestimmten Aufschlags.&quot;</help>
+    <label>Preisfestlegung VerlÃ¤ngerung</label>
+    <name>SBQQ__RenewalPricingMethod__c</name>
+    <picklistValues>
+        <masterLabel>List</masterLabel>
+        <translation>Liste</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Same</masterLabel>
+        <translation>Gleich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uplift</masterLabel>
+        <translation>Aufschlag</translation>
+    </picklistValues>
+</CustomFieldTranslation>

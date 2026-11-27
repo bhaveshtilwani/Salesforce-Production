@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Language_Blank</name>
+        <label>Language Blank</label>
+        <locationX>411</locationX>
+        <locationY>369</locationY>
+        <defaultConnector>
+            <targetReference>Site_Blaank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Blank</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Language__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Language</targetReference>
+            </connector>
+            <label>Blank</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Site_Blaank</name>
+        <label>Site Blank</label>
+        <locationX>621</locationX>
+        <locationY>177</locationY>
+        <defaultConnector>
+            <targetReference>Text_Are_Blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Blank_SIte</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Site</targetReference>
+            </connector>
+            <label>Blank Site</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Text_Are_Blank</name>
+        <label>Text Are Blank</label>
+        <locationX>854</locationX>
+        <locationY>379</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Blank_Area</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Text_Area__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Text_Area</targetReference>
+            </connector>
+            <label>Blank Area</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Order Header Text - Manual {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Order Header Text - Manual</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Language</name>
+        <label>Update Language</label>
+        <locationX>418</locationX>
+        <locationY>171</locationY>
+        <connector>
+            <targetReference>Site_Blaank</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Language__c</field>
+            <value>
+                <elementReference>$Record.Order__r.Bill_To_Account__r.Language_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Name</name>
+        <label>Update Name</label>
+        <locationX>257</locationX>
+        <locationY>368</locationY>
+        <connector>
+            <targetReference>Language_Blank</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>$Record.Text_Type__r.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Site</name>
+        <label>Update Site</label>
+        <locationX>634</locationX>
+        <locationY>371</locationY>
+        <connector>
+            <targetReference>Text_Are_Blank</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Site__c</field>
+            <value>
+                <elementReference>$Record.Order__r.Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Text_Area</name>
+        <label>Update Text Area</label>
+        <locationX>862</locationX>
+        <locationY>202</locationY>
+        <inputAssignments>
+            <field>Text_Area__c</field>
+            <value>
+                <stringValue>Sales Area Text</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>46</locationX>
+        <locationY>53</locationY>
+        <connector>
+            <targetReference>Update_Name</targetReference>
+        </connector>
+        <object>Order_Header_Text__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

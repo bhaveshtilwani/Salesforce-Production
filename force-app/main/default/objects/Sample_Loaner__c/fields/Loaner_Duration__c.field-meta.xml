@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loaner_Duration__c</fullName>
+    <inlineHelpText>This field will be available ONLY as a Read ONLY for historical data . Please use &quot;Loaner Due Date&quot; to specify duration of the Loaner.  This change was required to accommodate new Auto Notification feature.</inlineHelpText>
+    <label>Loaner Duration</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 Week</fullName>
+                <default>false</default>
+                <label>1 Week</label>
+            </value>
+            <value>
+                <fullName>1 Month</fullName>
+                <default>false</default>
+                <label>1 Month</label>
+            </value>
+            <value>
+                <fullName>2 Months</fullName>
+                <default>false</default>
+                <label>2 Months</label>
+            </value>
+            <value>
+                <fullName>3 Months</fullName>
+                <default>false</default>
+                <label>3 Months</label>
+            </value>
+            <value>
+                <fullName>4 Months</fullName>
+                <default>false</default>
+                <label>4 Months</label>
+            </value>
+            <value>
+                <fullName>+4 Months</fullName>
+                <default>false</default>
+                <label>+4 Months</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

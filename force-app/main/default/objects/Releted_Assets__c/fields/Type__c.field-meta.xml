@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billable Repair</fullName>
+                <default>false</default>
+                <label>Billable Repair</label>
+            </value>
+            <value>
+                <fullName>Calibration</fullName>
+                <default>false</default>
+                <label>Calibration</label>
+            </value>
+            <value>
+                <fullName>Calibration and Repair</fullName>
+                <default>false</default>
+                <label>Calibration and Repair</label>
+            </value>
+            <value>
+                <fullName>Consignment Return</fullName>
+                <default>false</default>
+                <label>Consignment Return</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Evaluation</fullName>
+                <default>false</default>
+                <label>Evaluation</label>
+            </value>
+            <value>
+                <fullName>Exchange / Replace</fullName>
+                <default>false</default>
+                <label>Exchange / Replace</label>
+            </value>
+            <value>
+                <fullName>Loaner Return</fullName>
+                <default>false</default>
+                <label>Loaner Return</label>
+            </value>
+            <value>
+                <fullName>No Charge Billable</fullName>
+                <default>false</default>
+                <label>No Charge Billable</label>
+            </value>
+            <value>
+                <fullName>Scrap / Recycling</fullName>
+                <default>false</default>
+                <label>Scrap / Recycling</label>
+            </value>
+            <value>
+                <fullName>SR Calibration</fullName>
+                <default>false</default>
+                <label>SR Calibration</label>
+            </value>
+            <value>
+                <fullName>SR Repair</fullName>
+                <default>false</default>
+                <label>SR Repair</label>
+            </value>
+            <value>
+                <fullName>Trade In</fullName>
+                <default>false</default>
+                <label>Trade In</label>
+            </value>
+            <value>
+                <fullName>Warranty Repair</fullName>
+                <default>false</default>
+                <label>Warranty Repair</label>
+            </value>
+            <value>
+                <fullName>Warranty Replace Part</fullName>
+                <default>false</default>
+                <label>Warranty Replace Part</label>
+            </value>
+            <value>
+                <fullName>Extended Warranty Repair Dist only</fullName>
+                <default>false</default>
+                <label>Extended Warranty Repair Dist only</label>
+            </value>
+            <value>
+                <fullName>90 Day Warranty Repair</fullName>
+                <default>false</default>
+                <label>90 Day Warranty Repair</label>
+            </value>
+            <value>
+                <fullName>Transfer Standard Calibration NCB</fullName>
+                <default>false</default>
+                <label>Transfer Standard Calibration NCB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

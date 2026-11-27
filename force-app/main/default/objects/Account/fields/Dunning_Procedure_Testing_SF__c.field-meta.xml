@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dunning_Procedure_Testing_SF__c</fullName>
+    <label>Dunning Procedure(Testing SF)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Excelitas Wiesbaden: 3-stufig Inland</fullName>
+                <default>false</default>
+                <label>Excelitas Wiesbaden: 3-stufig Inland</label>
+            </value>
+            <value>
+                <fullName>Excelitas Wiesbaden: 3-stufig Ausland</fullName>
+                <default>false</default>
+                <label>Excelitas Wiesbaden: 3-stufig Ausland</label>
+            </value>
+            <value>
+                <fullName>OPKG 4-stufige Mahnung, 14-täglich Ausland</fullName>
+                <default>false</default>
+                <label>OPKG 4-stufige Mahnung, 14-täglich Ausland</label>
+            </value>
+            <value>
+                <fullName>QPKG 4-stufige Mahnung, 14-täglich Inland</fullName>
+                <default>false</default>
+                <label>QPKG 4-stufige Mahnung, 14-täglich Inland</label>
+            </value>
+            <value>
+                <fullName>OPKG einstufiges Mahnverfahren Inland/Ausland</fullName>
+                <default>false</default>
+                <label>OPKG einstufiges Mahnverfahren Inland/Ausland</label>
+            </value>
+            <value>
+                <fullName>Hamble</fullName>
+                <default>false</default>
+                <label>Hamble</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

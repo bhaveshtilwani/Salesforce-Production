@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Customer Values:
+C3RD Customer Third-party
+CCMT Collections management 
+CCOL Credit management. 
+CICO Intercompany
+CZOT One-time customer
+
+Vendors Values:
+V3RD Third-party
+VICO Intercomp
+VEMP Employee
+VZOT One-time vend -->
+    </help>
+    <label><!-- BP Role --></label>
+    <name>BP_ROLE__c</name>
+    <picklistValues>
+        <masterLabel>C3RD</masterLabel>
+        <translation><!-- C3RD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCMT</masterLabel>
+        <translation><!-- CCMT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCOL</masterLabel>
+        <translation><!-- CCOL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CICO</masterLabel>
+        <translation><!-- CICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZOT</masterLabel>
+        <translation><!-- CZOT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>V3RD</masterLabel>
+        <translation><!-- V3RD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VEMP</masterLabel>
+        <translation><!-- VEMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VICO</masterLabel>
+        <translation><!-- VICO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VZOT</masterLabel>
+        <translation><!-- VZOT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

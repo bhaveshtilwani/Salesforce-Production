@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Proximal Cause --></label>
+    <name>Proximal_Cause__c</name>
+    <picklistValues>
+        <masterLabel>Assembly Error (LDGI Assy Error)</masterLabel>
+        <translation><!-- Assembly Error (LDGI Assy Error) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defective Part (Part not Manufactured by LDGI)</masterLabel>
+        <translation><!-- Defective Part (Part not Manufactured by LDGI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Design Error</masterLabel>
+        <translation><!-- Design Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation Incorrect / Lack of Clarity</masterLabel>
+        <translation><!-- Documentation Incorrect / Lack of Clarity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Influence</masterLabel>
+        <translation><!-- External Influence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Known Issue - Upgrade Required</masterLabel>
+        <translation><!-- Known Issue - Upgrade Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing Error (Part Manufactured by LDGI)</masterLabel>
+        <translation><!-- Manufacturing Error (Part Manufactured by LDGI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA Not applicable</masterLabel>
+        <translation><!-- NA Not applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Normal End of Life (NEOL)</masterLabel>
+        <translation><!-- Normal End of Life (NEOL) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable (no Failure)</masterLabel>
+        <translation><!-- Not Applicable (no Failure) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operator Error</masterLabel>
+        <translation><!-- Operator Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scheduled Maintenance</masterLabel>
+        <translation><!-- Scheduled Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Issue</masterLabel>
+        <translation><!-- Software Issue --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

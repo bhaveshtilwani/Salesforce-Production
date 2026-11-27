@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Feld im Nachschlageobjekt, das der Produktaktion beim Nachschlagen von Produkten entspricht. Das Feld muss ein Nachschlagefeld fÃ¼r das Produktobjekt sein.&quot;</help>
+    <label>&quot;Feld &quot;&quot;Nachschlageprodukt&quot;&quot;&quot;</label>
+    <name>SBQQ__LookupProductField__c</name>
+    <picklistValues>
+        <masterLabel>SBQQ__Product__c</masterLabel>
+        <translation>SBQQ__Product__c</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Light Guides --></label>
+    <name>Light_Guides__c</name>
+    <picklistValues>
+        <masterLabel>1.5 meters</masterLabel>
+        <translation><!-- 1.5 meters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 meters</masterLabel>
+        <translation><!-- 3 meters --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Power Fiber Light Guides</masterLabel>
+        <translation><!-- High Power Fiber Light Guides --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Light Guide Retort Stand</masterLabel>
+        <translation><!-- Light Guide Retort Stand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liquid filled Light Guides</masterLabel>
+        <translation><!-- Liquid filled Light Guides --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

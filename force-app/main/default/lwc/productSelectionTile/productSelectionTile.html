@@ -1,0 +1,82 @@
+<template>
+    <div class="slds-tile slds-tile_board">
+        <div class="slds-box slds-box_x-small slds-grid slds-theme_default">
+            <div class="slds-col slds-grid slds-size_11-of-12 slds-grid_vertical slds-gutters">
+                <div class="slds-col">
+                    <h2 class="slds-truncate slds-text-heading_small slds-var-p-bottom_x-small" style="color: green; font-weight: bold">
+                        {product.Name}
+                    </h2>
+                </div>
+                <template for:each={fieldsValues} for:item="fieldValue">
+                    <div key={fieldValue.Id} class="slds-col">
+                        <template lwc:if={fieldValue.includeCurrencySymbol}>
+                            <p class="slds-truncate">
+                                {fieldValue.MasterLabel}: {product.CurrencyIsoCode}&nbsp;
+                                <lightning-formatted-number
+                                    value={fieldValue.value}
+                                    maximum-fraction-digits="2"
+                                    minimum-fraction-digits="2"
+                                ></lightning-formatted-number>
+                            </p>
+                        </template>
+                        <template lwc:else>
+                            <p class="slds-truncate">{fieldValue.MasterLabel}: {fieldValue.value}</p>
+                        </template>
+                    </div>
+                </template>
+                <div class="slds-col">
+                    <h2 class="slds-truncate slds-var-p-bottom_x-small">
+                        <strong>Total Price:</strong> {product.CurrencyIsoCode}&nbsp;
+                        <lightning-formatted-number
+                            value={product.TotalPrice}
+                            maximum-fraction-digits="2"
+                            minimum-fraction-digits="2"
+                        ></lightning-formatted-number>
+                    </h2>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-12 slds-grid slds-grid_vertical slds-gutters slds-grid_align-space">
+                <div class="slds-col slds-size_1-of-1">
+                    <lightning-button-icon
+                        icon-name="utility:edit"
+                        variant="container"
+                        alternative-text="Edit"
+                        title="Edit"
+                        onclick={handleEdit}
+                        ><label>Edit</label></lightning-button-icon
+                    >
+                </div>
+                <template lwc:if={showPricingConditions}>
+                    <div class="slds-col slds-size_1-of-1">
+                        <!-- <lightning-button-icon
+                            icon-name="utility:money"
+                            variant="container"
+                            alternative-text="Pricing Conditions"
+                            title="Pricing Conditions"
+                            onclick={handlePricingConditionsPopup}
+                            ><label>Pricing Conditions</label></lightning-button-icon
+                        > -->
+                        <lightning-button
+                            variant="base"
+                            label={numberOfPricingConditions}
+                            title="Pricing Conditions"
+                            icon-name="utility:money"
+                            class="slds-col slds-size_1-of-1"
+                            onclick={handlePricingConditionsPopup}
+                        ></lightning-button>
+                    </div>
+                </template>
+                <div class="slds-col slds-size_1-of-1">
+                    <lightning-button-icon
+                        icon-name="utility:delete"
+                        variant="container"
+                        alternative-text="Delete"
+                        title="Delete"
+                        onclick={handleDelete}
+                        ><label>Delete</label></lightning-button-icon
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

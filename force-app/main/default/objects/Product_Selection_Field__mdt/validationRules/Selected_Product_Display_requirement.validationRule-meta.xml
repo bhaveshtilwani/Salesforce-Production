@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selected_Product_Display_requirement</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+    NOT(Product_Selection_Editable__c),
+    NOT(Result_Table__c),
+    Selected_Product_Display__c 
+)</errorConditionFormula>
+    <errorDisplayField>Selected_Product_Display__c</errorDisplayField>
+    <errorMessage>To display a field in the selected product tile it needs to be either part of the result table or be editable in product selection</errorMessage>
+</ValidationRule>

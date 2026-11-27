@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Adv_Optronics</fullName>
+    <columns>NAME</columns>
+    <columns>sbaa__Approver__c</columns>
+    <columns>sbaa__Active__c</columns>
+    <columns>sbaa__ApprovalRecipients__c</columns>
+    <columns>sbaa__ApprovalStep__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>Surv</value>
+    </filters>
+    <filters>
+        <field>sbaa__Approver__c</field>
+        <operation>notContain</operation>
+        <value>-</value>
+    </filters>
+    <label>Adv Optronics</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

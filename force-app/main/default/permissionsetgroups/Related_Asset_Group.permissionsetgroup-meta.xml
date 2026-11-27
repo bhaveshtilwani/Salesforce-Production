@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>All Related Asset Permission for All RecordTypes</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Related Asset Group</label>
+    <permissionSets>RA_Demo_Related_Asset</permissionSets>
+    <permissionSets>RA_Service_Request_Medical</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

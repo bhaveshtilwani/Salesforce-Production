@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_LDGI_Related_Assets_Forms</fullName>
+    <availability>online</availability>
+    <description>Created by Conga Solution Manager. Record link: https://excelitas.my.salesforce.com/a1OQp000002eBObMAM.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>LDGI Related Assets Forms</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_520}
+&amp;Id={!Releted_Assets__c.Id}
+
+&amp;QueryId=[AssetPartsUsed]0Q_069EAE936072,
+[AssetReport1]0Q_067EAE459839,
+[AssetReportParent]0Q_066EAE772069
+
+&amp;TemplateId=0T_100EAE331670
+
+&amp;RelatedGroup=RelatedAssetForms</url>
+    <width>900</width>
+</WebLink>

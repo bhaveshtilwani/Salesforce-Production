@@ -1,0 +1,328 @@
+<apex:page standardController="Case"
+           extensions="CasePDFControllerNoblelight"
+           renderAs="pdf"
+           applyHtmlTag="false"
+           applyBodyTag="false"
+           showHeader="false">
+    
+    
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        
+        <head>
+            
+            <style type="text/css">
+                
+                @page {
+                margin: 60px 30px 80px 30px;
+                
+                @bottom-left {
+                content: "Excelitas Confidential";
+                font-size: 9px;
+                color: #666;
+                }
+                
+                @bottom-right {
+                content: "Page " counter(page) " of " counter(pages);
+                font-size: 9px;
+                color: #666;
+                }
+                }
+                
+                body{
+                font-family: Arial, sans-serif;
+                font-size: 10px;
+                color:#333;
+                }
+                
+                .container{
+                padding:10px 15px;
+                }
+                
+                /* HEADER */
+                .header-table{
+                width:100%;
+                border-collapse:collapse;
+                margin-bottom:15px;
+                }
+                
+                .logo{
+                width:20%;
+                vertical-align:middle;
+                }
+                
+                .title{
+                width:80%;
+                text-align:left;
+                font-size:22px;
+                font-weight:bold;
+                vertical-align:middle;
+                }
+                
+                /* SECTION TITLE */
+                .section-title{
+                font-size:12px;
+                font-weight:bold;
+                margin-top:18px;
+                margin-bottom:6px;
+                color:#1b6d85;
+                border-bottom:1px solid #ddd;
+                padding-bottom:3px;
+                }
+                
+                table{
+                width:100%;
+                border-collapse:collapse;
+                margin-bottom:10px;
+                table-layout:fixed;
+                }
+                
+                td, th{
+                border:1px solid #d0d0d0;
+                padding:6px;
+                vertical-align:top;
+                word-wrap:break-word;
+                overflow-wrap:break-word;
+                }
+                
+                th{
+                background:#f4f4f4;
+                }
+                .label{
+                width:30%;
+                background:#fafafa;
+                font-weight:bold;
+                }
+                
+                
+            </style>
+            
+        </head>
+        
+        <body>
+            
+            <div class="container">
+                
+                <!-- HEADER -->
+                <table class="header-table">
+                    
+                    <tr>
+                        
+                        <td class="logo">
+                            <img src="{!URLFOR($Resource.ExcelitasLogo)}" width="120"/>
+                        </td>
+                        
+                        <td class="title">
+                            PRODUCT RETURN SHEET
+                        </td>
+                        
+                    </tr>
+                    
+                </table>
+                
+                <!-- CASE INFO -->
+                <table style="border:none; margin-bottom:10px;">
+                    
+                    <tr>
+                        
+                        <td style="border:none;">
+                            <b>Case No:</b>
+                            <apex:outputText value="{!caseRec.CaseNumber}" />
+                        </td>
+                        
+                        <td style="border:none;">
+                            <b>Case ID:</b>
+                            <apex:outputText value="{!caseRec.Id}" />
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td colspan="2" style="border:none;">
+                            <b>Title:</b>
+                            <apex:outputText value="{!caseRec.Subject}" />
+                        </td>
+                        
+                    </tr>
+                    
+                </table>
+                
+                <!-- GENERAL INFORMATION -->
+                <div class="section-title">General Information</div>
+                
+                <table>
+                    
+                    <tr>
+                        <td class="label">Customer</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Account.Name}" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">Contact</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Contact.Name}" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">Email</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Contact.Email}" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">Owner</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Owner.Name}" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">Type</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Type}" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">Priority</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Priority}" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">Status</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Status}" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">Entry Date</td>
+                        <td>
+                            <apex:outputText value="{0,date,MM/dd/yyyy}">
+                                <apex:param value="{!caseRec.CreatedDate}" />
+                            </apex:outputText>
+                        </td>
+                    </tr>
+                      <tr>
+                        <td class="label">SAP Notification Number</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.SAP_Notification__c}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Customer Reference</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Customer_Reference__c}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Product Line</td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Product_SubfamilyNL__c}" />
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                <!-- CASE PRODUCT -->
+                <div class="section-title">Case Product</div>
+                
+                <table>
+                    
+                    <tr>
+                        <th>Product Code</th>
+                        <th>Serial #</th>
+                        <th>Quantity</th>
+                        <th>Product Description</th>
+                        <th>Service Order</th>
+                    </tr>
+                    
+                    <apex:repeat value="{!relatedAssets}" var="ra">
+                        
+                        <tr>
+                            
+                            <td>
+                                {!ra.Asset__r.Name}
+                            </td>
+                            
+                            <td>
+                                {!ra.Asset__r.SerialNumber}
+                            </td>
+                            
+                            <td>
+                                {!ra.Quantity__c}
+                            </td>
+                            
+                            <td>
+                                {!ra.Asset__r.ProductDescription}
+                            </td>
+                           
+                            <td>
+                                {!ra.Service_Order__c}
+                            </td>
+                            
+                        </tr>
+                        
+                    </apex:repeat>
+                    
+                </table>
+                
+                <!-- CONTACT DETAILS -->
+                <div class="section-title">Contact Details</div>
+                
+                
+                <table>
+                    <colgroup>
+                        <col style="width:20%;" />
+                        <col style="width:35%;" />
+                        <col style="width:45%;" />
+                    </colgroup>
+                    
+                    
+                    <tr>
+                        <th>Role</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Customer Contact</td>
+                        
+                        <td>
+                            <apex:outputText value="{!caseRec.Contact.Name}" />
+                        </td>
+                        
+                        <td>
+                            <apex:outputText value="{!caseRec.Contact.Email}" />
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Case Owner</td>
+                        
+                        <td>
+                            <apex:outputText value="{!caseRec.Owner.Name}" />
+                        </td>
+                        <td>
+                            <apex:outputText value="{!caseRec.Owner.Email}" />
+                        </td>
+                        <td></td>
+                        
+                    </tr>
+                    
+                </table>
+
+               <div style="margin-top:20px; border-top:1px solid #d0d0d0;"></div>
+                
+            </div>
+            
+        </body>
+    </html>
+    
+</apex:page>

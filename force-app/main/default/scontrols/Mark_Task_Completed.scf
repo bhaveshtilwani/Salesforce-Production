@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <!-- Bump to a supported API version -->
+    <script src="/soap/ajax/64.0/connection.js" type="text/javascript"></script>
+    <script>
+    //************************************************************************
+    // s-Control Name: Mark Task Completed
+    // Author: Jon Keener
+    // Created Date: 6/22/2007
+    //
+    // Change Log:
+    // Updated By: Danica		
+    // Date: 8/29/2025
+    //************************************************************************
+      var taskId = "{!Task.Id}";
+      var retUrlLightning = "/lightning/r/Task/" + taskId + "/view";
+      var retUrlClassic   = "/" + taskId;
+
+      function markTaskComplete() {
+        // Use correct object API name casing
+        var task = new sforce.SObject("Task");
+        task.Id = taskId;
+        task.Status = "06 - Done";
+
+        // Update the Task
+        sforce.connection.update([task], handleUpdate);
+      }
+
+      function handleUpdate(updateResult) {
+        var ok = false;
+        if (updateResult && updateResult.length) {
+          try { ok = updateResult[0].getBoolean("success"); } catch(e) {}
+        }
+
+        if (!ok) {
+          alert("Failed to update task status to complete.");
+        }
+
+        // In Lightning, avoid cross-window access; just navigate THIS window.
+        // Prefer the Lightning record URL; fall back to Classic-style URL.
+        try {
+          window.location.assign(retUrlLightning);
+        } catch (e1) {
+          try {
+            window.location.assign(retUrlClassic);
+          } catch (e2) {
+            // Last resort: set href
+            window.location.href = retUrlClassic;
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body onload="markTaskComplete();">
+    <center>
+      <br><br><br>
+      <span style="font-size:75%; font-family: Arial, Helvetica, sans-serif;">
+        Marking Task Complete... Please wait.
+      </span>
+      <br><br>
+      <div id="waitingimage_div">
+        <img id="waitingimage" src="/img/waiting_dots.gif" alt="Please wait..." title="Please wait..." height="20" width="196">
+      </div>
+      <table width="250" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+          <td>
+            <span style="font-size:75%; font-family: Arial, Helvetica, sans-serif;">
+              <div id="output" class="error"></div>
+            </span>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

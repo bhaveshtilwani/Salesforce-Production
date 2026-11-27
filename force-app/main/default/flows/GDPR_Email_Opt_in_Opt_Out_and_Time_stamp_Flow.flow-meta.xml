@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Check market field is market or do not market</description>
+        <name>Check_market_field</name>
+        <label>Check market field</label>
+        <locationX>440</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_field_is_Market</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Opted_in__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Market</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Double_opt_in_and_Email_opt_out_onMarket</targetReference>
+            </connector>
+            <label>If field is Market</label>
+        </rules>
+        <rules>
+            <name>If_field_is_do_not_market</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Opted_in__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Do Not Market</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Double_opt_in_and_email_opt_out_on_do_not_market</targetReference>
+            </connector>
+            <label>If field is do not market</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
+        <name>Is_Bypass_enabled</name>
+        <label>Is Bypass enabled</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Check_market_field</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Bypass_is_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_metadata.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Bypass is true</label>
+        </rules>
+    </decisions>
+    <description>When ‘Market/Do not Market’ equals ‘Market’, update ‘Double Opt-In (Timestamp)’ with the current Date Time and set ‘Email Opt Out’ = False. OR When ‘Market/Do not Market’ equals ‘Do Not Market’, update ‘Double Opt-In (Timestamp)’ with the current Date Time and set ‘Email Opt Out’ = True.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CalculateNow</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <interviewLabel>GDPR - Email Opt in/ Opt Out and Time stamp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>GDPR - Email Opt in/ Opt Out and Time stamp</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This record determines whether bypassing standard validations or logic is permitted.</description>
+        <name>Get_Bypass_metadata</name>
+        <label>Get Bypass metadata</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Bypass_enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lead_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>If Market do Not Market = Do Not Market, Email Opt Out = True</description>
+        <name>Update_Double_opt_in_and_email_opt_out_on_do_not_market</name>
+        <label>Update Double opt in and email opt out on do not market</label>
+        <locationX>440</locationX>
+        <locationY>611</locationY>
+        <inputAssignments>
+            <field>Double_Opt_In_TimeStamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HasOptedOutOfEmail</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If Market do Not Market = Market, Email Opt Out = FALSE</description>
+        <name>Update_Double_opt_in_and_Email_opt_out_onMarket</name>
+        <label>Update Double opt-in and Email opt out on market</label>
+        <locationX>176</locationX>
+        <locationY>611</locationY>
+        <inputAssignments>
+            <field>Double_Opt_In_TimeStamp__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>HasOptedOutOfEmail</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_metadata</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Opted_in__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Market</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Opted_in__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Do Not Market</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REO_Category__c</fullName>
+    <label>REO Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closure Notification</fullName>
+                <default>false</default>
+                <label>Closure Notification</label>
+            </value>
+            <value>
+                <fullName>Customer Survey</fullName>
+                <default>false</default>
+                <label>Customer Survey</label>
+            </value>
+            <value>
+                <fullName>Christmas Card</fullName>
+                <default>false</default>
+                <label>Christmas Card</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sbaa__All</fullName>
+    <columns>sbaa__Active__c</columns>
+    <columns>sbaa__TargetObject__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>NAME</columns>
+    <columns>Order_Approval_Type__c</columns>
+    <columns>sbaa__ApprovalChain__c</columns>
+    <columns>sbaa__ApprovalStep__c</columns>
+    <columns>sbaa__ConditionsMet__c</columns>
+    <columns>sbaa__Approver__c</columns>
+    <columns>sbaa__AdvancedCondition__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>sbaa__TargetObject__c</field>
+        <operation>equals</operation>
+        <value>SBQQ__Quote__c</value>
+    </filters>
+    <filters>
+        <field>sbaa__Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All</label>
+</ListView>

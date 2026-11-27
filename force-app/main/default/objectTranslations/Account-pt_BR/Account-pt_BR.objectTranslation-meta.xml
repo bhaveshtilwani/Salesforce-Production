@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- Billerica --></description>
+        <label><!-- Ax Billerica --></label>
+        <name>Ax_Billerica</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Accounts used for Prospect Opportunities and Quotes --></description>
+        <label><!-- Business Name --></label>
+        <name>Business_Account_Name</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- C2 Teledyne --></label>
+        <name>C2_Teledyne</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type for M&amp;A Process --></description>
+        <label><!-- Corp Dev --></label>
+        <name>Corp_Dev</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect Asia Customer --></label>
+        <name>Prospect_Asia_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect Boulder Customer --></label>
+        <name>Prospect_Boulder_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect Germany Customer --></label>
+        <name>Prospect_Germany_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect Montreal Customer --></label>
+        <name>Prospect_Montreal_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QAD - LDGI --></label>
+        <name>QAD</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Representative (LDGI) --></label>
+        <name>Representative_LDGI</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- S4 - Boulder --></label>
+        <name>S4_Boulder</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- St Louis,QSG,ESG,Shenzhen,Manila --></description>
+        <label><!-- SAP Asia --></label>
+        <name>SAP_Asia</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAP Germany --></label>
+        <name>SAP_Germany</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAP NA Montreal --></label>
+        <name>SAP_NA_Montreal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAP NA Salem/MIA --></label>
+        <name>SAP_NA_Salem_MIA</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This is used for creating Noblelight customers --></description>
+        <label><!-- SAP Noblelight --></label>
+        <name>SAP_Noblelight</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Global Customer (C1) --></description>
+        <label><!-- Global Customer --></label>
+        <name>SF</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Account Assignment Group is not applicable for the selected account group. --></errorMessage>
+        <name>Account_Assignment_Group_Not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Assignment Group can not be blank --></errorMessage>
+        <name>Account_Assignment_Group_can_not_be_blnk</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sorry, you are only allowed to choose ZBIL Account. --></errorMessage>
+        <name>Account_Group_ZBIL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please limit the Account Name to 35 characters --></errorMessage>
+        <name>Account_Name_character_limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Accounting Clerk is required for selected account group. --></errorMessage>
+        <name>Accounting_Clerk_Is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Accounting Clerk is not applicable for selected Account Group. --></errorMessage>
+        <name>Accounting_Clerk_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing address cannot be changed for accounts existing in QAD --></errorMessage>
+        <name>Billing_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- New Account – Please provide a Billing Address before saving.
+Lead Conversion – Ensure the Lead has a valid address before converting. -->
+        </errorMessage>
+        <name>Billing_Address_Cannot_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter Address fields --></errorMessage>
+        <name>Billing_Address_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- City for SAP sites must be 35 characters or less. --></errorMessage>
+        <name>Billing_City_Character_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing City is required. --></errorMessage>
+        <name>Billing_City_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Country is required. --></errorMessage>
+        <name>Billing_Country_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone can only be up to 16 characters. --></errorMessage>
+        <name>Billing_Phone_up_to_16</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Postal Code is required. --></errorMessage>
+        <name>Billing_PostalCode_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing State is required --></errorMessage>
+        <name>Billing_State_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Street field for SAP/CFIN must be 35 characters or less;
+Please break down the address in fields &quot;Address 1&quot;, 2, 3 if more space is required. -->
+        </errorMessage>
+        <name>Billing_Street_Character_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Street is Required --></errorMessage>
+        <name>Billing_Street_can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- QAD Zip is only up to 10 characters --></errorMessage>
+        <name>Billing_ZIP_Character_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Set CFIN Defaults and Fill all Billing Fields --></errorMessage>
+        <name>Billing_and_CFIN_Defaults</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To change an Account Name, contact your Salesforce Administrator. --></errorMessage>
+        <name>Cant_Edit_Account_Name_After_Create</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit the Account Name.  Please contact your administrator. --></errorMessage>
+        <name>Cant_Edit_Account_Name_after_creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Can not edit Account when Integration is in process --></errorMessage>
+        <name>Cant_edit_while_integration_in_Process</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- You cannot change the Credit limit once it has initially been set on BP Insert.
+
+
+Should the Credit Limit be changed, please do so directly in CFIN. -->
+        </errorMessage>
+        <name>Cred_Limit_Action_If_Edit_Not_Insert</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Credit Limit required --></errorMessage>
+        <name>Credit_Limit_Not_Required_ZBIL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Pricing Procedure Cannot be Blank for selected Account Group --></errorMessage>
+        <name>Cust_Pricing_Proc_not_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Pricing Procedure not Required for Selected Account Group --></errorMessage>
+        <name>Cust_Pricing_Procedure_Not_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Class is not applicable for selected Account Group. --></errorMessage>
+        <name>Customer_Class_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Group 1 is not applicable for selected Account Group. --></errorMessage>
+        <name>Customer_Group_1_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Group 2 is not applicable for selected Account Group. --></errorMessage>
+        <name>Customer_Group_2_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Group 3 is not Applicable for selected Account Group. --></errorMessage>
+        <name>Customer_Group_3_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Class can not be blank. --></errorMessage>
+        <name>Customer_class_can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Delivering Plant cannot be blank for Account Group ZINT. --></errorMessage>
+        <name>Delivering_Plant_Required_for_ZINT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Carrier Account Number is required for DAP-C and EXW-C. --></errorMessage>
+        <name>Delivery_Term_AX</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Carrier Account Number is only required for DAP-C and EXW-C. --></errorMessage>
+        <name>Delivery_Term_AX2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tick to trigger Division Extension --></errorMessage>
+        <name>Divison_Extension</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dunning Block is Required. --></errorMessage>
+        <name>Dunning_Block_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dunning Clerk is not applicable for selected Account Group. --></errorMessage>
+        <name>Dunning_Clerk_is_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dunning Procedure is Required. --></errorMessage>
+        <name>Dunning_Procedure_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EBITDA Not Greater than 100% --></errorMessage>
+        <name>EBITDA_Not_Greater_than_100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERP ID has been generated, ERP Site edit is not allowed. --></errorMessage>
+        <name>ERP_Site_Update_Not_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Embargo Country – Please contact ITC --></errorMessage>
+        <name>Embargo_Country</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fax can only be up to 31 characters. --></errorMessage>
+        <name>Fax_up_to_31</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Account not needed for C1 Accounts --></errorMessage>
+        <name>Global_Customer_No_Parent_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterm Part 2 is not applicable for the selected account group. --></errorMessage>
+        <name>Incoterm2_Is_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterm Part 1 is not applicable for the selected account group. --></errorMessage>
+        <name>Incoterm_Is_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterms 2 can not be blank --></errorMessage>
+        <name>Incoterms_2_can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterms can not be blank --></errorMessage>
+        <name>Incoterms_can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Federal Tax ID Number is required for US Accounts --></errorMessage>
+        <name>LDGI_Fed_Tax_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Remarks is required for US Accounts --></errorMessage>
+        <name>LDGI_Remarks</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_Company_Id_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Legal Company Names is required. --></errorMessage>
+        <name>Legal_Company_Name_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Record is with CFIN, Edit is not Allowed. --></errorMessage>
+        <name>Lock_Account_when_with_CFIN</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please indicate the manual ERP ID to be pushed to the ERP. --></errorMessage>
+        <name>Manual_ERP_ID_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- QAD Account Name cannot exceed 56 characters. Add rest of the name in address fields --></errorMessage>
+        <name>Name_of_QAD_Accounts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Term is not applicable for the selected account group. --></errorMessage>
+        <name>Payment_Term_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Term required --></errorMessage>
+        <name>Payment_Term_Not_Required_ZBIL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The account approval status is Pending; synchronization is not allowed. --></errorMessage>
+        <name>Pending_Account_Approval_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone can only be up to 16 characters. --></errorMessage>
+        <name>Phone_up_to_16</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Accepted is PO Box + Postal Code or Company Postal Code Only --></errorMessage>
+        <name>Postal_Code_PO_BOX</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postal Code is Required. --></errorMessage>
+        <name>Postal_Code_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postal Code can only be up to 10 characters. --></errorMessage>
+        <name>Postal_Code_up_to_10_characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Price List Type Required. --></errorMessage>
+        <name>Price_List_Type_Germany</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reconciliation Account Required for selected account group. --></errorMessage>
+        <name>Reconciliation_Account_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reconciliation Account isn&apos;t allowed to changed. --></errorMessage>
+        <name>Reconciliation_Account_Locked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reconciliation Account Required for selected account group. --></errorMessage>
+        <name>Reconciliation_Account_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Reconciliation Account is not applicable for selected Account Group. --></errorMessage>
+        <name>Reconciliation_Account_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Max Length Acceptable is only up to 30 Characters --></errorMessage>
+        <name>Release_by_BAFA_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Risk Class required --></errorMessage>
+        <name>Risk_Class_Not_Required_ZBIL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account group Can not be edited/modified. --></errorMessage>
+        <name>SAP_Account_Group_Can_Not_Be_Changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select correct value for Partial Delivery Per Item. --></errorMessage>
+        <name>SAP_GER_complete_Delivery_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales District is Required for ZCUS and ZINT Account Group. --></errorMessage>
+        <name>Sales_District_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select Sales District. --></errorMessage>
+        <name>Sales_District_SAP_Asia</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sales Group is not applicable for selected Account Group. --></errorMessage>
+        <name>Sales_Group_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Seles Group is required for selected account group --></errorMessage>
+        <name>Sales_Group_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter Sales Team --></errorMessage>
+        <name>Sales_Team_Required_for_C2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ship to Account Number is xxxxxSxx --></errorMessage>
+        <name>Ship_To_Acc_No_should_have_S</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ship to account number is not applicable for selected account group. --></errorMessage>
+        <name>Ship_To_Account_Number_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ship To Account number is required for the selected account group. --></errorMessage>
+        <name>Ship_To_Account_Number_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ERP Ship to account must have a bill to account as parent from same site. --></errorMessage>
+        <name>Ship_To_Acct_must_have_Bill_To_as_Parent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Condition is not applicable for selected Account Group. --></errorMessage>
+        <name>Shipping_Condition_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Conditions can not be blank --></errorMessage>
+        <name>Shipping_Conditions_can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The sold to customer creation process in New Nirvana is moved to SAP. Please Mature Sold to customer in Fiori. --></errorMessage>
+        <name>Sold_to_cannot_be_created</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sort Key is Required. --></errorMessage>
+        <name>Sort_Key_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sync in Progress. Creating and Editing are not allowed. Wait for the sync to finish to continue. --></errorMessage>
+        <name>Sync_in_Progress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Transaction Comments cannot be greater than 75 Characters each --></errorMessage>
+        <name>TR_Comment_greater_75</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tax Classification is not applicable for selected Account Group. --></errorMessage>
+        <name>Tax_Classification_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tax Classification can not be blank for seletected Account Group. --></errorMessage>
+        <name>Tax_Classification_can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tax Code 6 is not applicable for selected Account Group. --></errorMessage>
+        <name>Tax_Code_6_is_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Tax Jurisdiction is required for Canada. --></errorMessage>
+        <name>Tax_Jurisdiction_Is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Terms can not be blank. --></errorMessage>
+        <name>Terms_of_payment_Can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For United States Business Accounts, ZIP/Postal Code must be exactly 5 or 10 digits. --></errorMessage>
+        <name>US_Zip_Code_Validation_Business_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- VAT Number can not be blank and must be 4 to 20 characters long. --></errorMessage>
+        <name>VAT_Number_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- VAT registration Number can not be blank --></errorMessage>
+        <name>VAT_registration_No_can_not_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid URL. --></errorMessage>
+        <name>Website_Format_validation_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Germany Division is required! --></errorMessage>
+        <name>Wiesbaden_division_salesgrp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ZBIL ERP IDs begins with B. --></errorMessage>
+        <name>ZBIL_ERP_ID_starts_with_B</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Email is required for ZBIL. --></errorMessage>
+        <name>ZBIL_Email_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- US Zip code must be in the &apos;99999&apos; 0r &apos;99999-9999&apos; format. --></errorMessage>
+        <name>Zip_Code_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please review the phone number. Should be less than 16 digits and contain only numbers and special characters --></errorMessage>
+        <name>phone_number_digits</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Attach_file_account_info --></label>
+        <name>Attach_file_account_info</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- BBBDetails --></label>
+        <name>BBBDetails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CFIN_Complete --></label>
+        <name>CFIN_Complete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Credit_Check --></label>
+        <name>Credit_Check</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Customer_Parts --></label>
+        <name>Customer_Parts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DB --></label>
+        <name>DB</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FinancialProfile --></label>
+        <name>FinancialProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FindDuplicates --></label>
+        <name>FindDuplicates</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map --></label>
+        <name>Map</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- NewProspect --></label>
+        <name>NewProspect</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- News --></label>
+        <name>News</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OpenActivitiestocloseforecastGap --></label>
+        <name>OpenActivitiestocloseforecastGap</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Renew_Assets --></label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_CFIN --></label>
+        <name>Send_to_CFIN</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Weather --></label>
+        <name>Weather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_To_Prospect_Insight --></label>
+        <name>pi__Send_To_Prospect_Insight</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- test1 --></label>
+        <name>test1</name>
+    </webLinks>
+</CustomObjectTranslation>

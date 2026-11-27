@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>euCheckVat__All_Countries</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>euCheckVat__Country__c</columns>
+    <columns>NamespacePrefix</columns>
+    <columns>euCheckVat__RegularExpression__c</columns>
+    <columns>euCheckVat__ValidationMessage__c</columns>
+    <columns>IsProtected</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Countries</label>
+</ListView>

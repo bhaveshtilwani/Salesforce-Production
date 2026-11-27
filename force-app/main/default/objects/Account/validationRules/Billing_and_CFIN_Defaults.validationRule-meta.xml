@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_and_CFIN_Defaults</fullName>
+    <active>true</active>
+    <description>Set CFIN &amp; Billing Information is required for Bill To Account Groups</description>
+    <errorConditionFormula>AND(
+    $User.Alias&lt;&gt; &quot;sconn&quot;,
+
+  NOT(OR($RecordType.Name = &quot;SAP Noblelight&quot;,
+					 $RecordType.Name = &quot;S4 - Boulder&quot;,
+					$RecordType.Name = &quot;SAP Asia&quot;,
+					$RecordType.Name = &quot;SAP Germany&quot;,
+					$RecordType.Name = &quot;SAP NA Montreal&quot;)),
+
+  OR(
+    ISPICKVAL(Account_Group__c , &quot;Bill To - H004&quot;),
+    ISPICKVAL(Account_Group__c , &quot;Bill To - 0001&quot;),
+    ISPICKVAL(Account_Group__c , &quot;Payer/Bill-to Entry - 0003&quot;),
+    ISPICKVAL(Account_Group__c , &quot;Bill To - W004&quot;),
+    ISPICKVAL(Account_Group__c , &quot;QioDebitoren Europäische Union - DEEU&quot;),
+    $RecordType.Name = &quot;Ax Billerica&quot;
+  ),
+
+  OR(
+    ISBLANK(Person_Name__c),
+    ISBLANK(EMAIL_ADDRESS__c),
+    Set_CFIN_Defaults__c = FALSE
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Person_Name__c</errorDisplayField>
+    <errorMessage>Set CFIN Defaults and Fill all Billing Fields</errorMessage>
+</ValidationRule>

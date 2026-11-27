@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Equipment Type --></label>
+    <name>Equipment_Type__c</name>
+    <picklistValues>
+        <masterLabel>Area</masterLabel>
+        <translation><!-- Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Imaging Device</masterLabel>
+        <translation><!-- Custom Imaging Device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Light Delivery Device</masterLabel>
+        <translation><!-- Custom Light Delivery Device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED</masterLabel>
+        <translation><!-- LED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lamp</masterLabel>
+        <translation><!-- Lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spot</masterLabel>
+        <translation><!-- Spot --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,119 @@
+<template>
+    <div class="slds-form-element">
+        <label if:true={label} class="slds-form-element__label" for="combobox">{label}</label>
+        <div class="slds-form-element__control">
+            <template if:true={isOutputField}>
+                <template for:each={selection} for:item="item">
+                    <a key={item.id} name={item.id} onclick={handleOutputFieldClick}>{item.title}</a>
+                </template>
+            </template>
+
+            <template if:false={isOutputField}>
+                <div class={containerClass}>
+                    <div class={dropdownClass} aria-expanded={isExpanded} aria-haspopup="listbox" role="combobox">
+                        <!-- Search input start -->
+                        <div role="none">
+                            <div class={comboboxDivClass}>
+                                <template if:false={isMultiEntry}>
+                                    <lightning-icon
+                                        icon-name={selectIconName}
+                                        size="small"
+                                        alternative-text="Selected item icon"
+                                        class={selectIconClass}
+                                        if:true={selectIconName}
+                                    ></lightning-icon>
+                                </template>
+
+                                <!-- Text input -->
+                                <input
+                                    type="text"
+                                    id="customLookup"
+                                    name="customLookup"
+                                    class={inputClass}
+                                    aria-autocomplete="list"
+                                    aria-controls="listbox"
+                                    autocomplete="off"
+                                    role="textbox"
+                                    placeholder={placeholder}
+                                    value={inputValue}
+                                    readonly={isInputReadonly}
+                                    title={tooltipValue}
+                                    onfocus={handleFocus}
+                                    onblur={handleBlur}
+                                    oninput={handleInput}
+                                    disabled={isDisabled}
+                                />
+
+                                <!-- Search icon -->
+                                <lightning-icon icon-name="utility:search" size="x-small" alternative-text="Search icon" class={searchIconClass}>
+                                </lightning-icon>
+
+                                <!-- Clear selection button icon for single entry lookups -->
+                                <template if:false={disableRemoveOption}>
+                                    <button title="Remove selected option" type="button" onclick={handleClearSelection} class={clearSelectionButtonClass}>
+                                        <lightning-icon
+                                            icon-name="utility:close"
+                                            size="x-small"
+                                            alternative-text="Remove selected option"
+                                            class="slds-button__icon"
+                                        ></lightning-icon>
+                                    </button>
+                                </template>
+                            </div>
+                        </div>
+                        <!-- Search input end -->
+
+                        <!-- Result list box start -->
+                        <div id="listbox" role="listbox" onclick={handleComboboxClick}>
+                            <ul class={listboxClass} role="presentation" onscroll={handleListboxScrolling}>
+                                <template for:each={searchResults} for:item="result">
+                                    <li key={result.id} role="presentation" class="slds-listbox__item">
+                                        <span
+                                            class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta"
+                                            role="option"
+                                            onclick={handleResultClick}
+                                            data-recordid={result.id}
+                                        >
+                                            <span class="slds-media__figure">
+                                                <lightning-icon icon-name={result.icon} size="small" if:true={result.icon}></lightning-icon>
+                                            </span>
+                                            <span class="slds-media__body" title={result.tooltip}>
+                                                <span class="slds-listbox__option-text slds-listbox__option-text_entity">{result.title}</span>
+                                                <span if:true={result.subtitle} class="slds-listbox__option-meta slds-listbox__option-meta_entity"
+                                                    >{result.subtitle}</span
+                                                >
+                                            </span>
+                                        </span>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                        <!-- Result list box end -->
+                    </div>
+                </div>
+
+                <!-- Multi-selection start -->
+                <template if:true={isMultiEntry}>
+                    <div id="selection" role="listbox" aria-orientation="horizontal">
+                        <ul class="slds-listbox slds-listbox_inline slds-p-top_xxx-small" role="group" aria-label="Selected Options:">
+                            <template for:each={selection} for:item="item">
+                                <li key={item.id} role="presentation" class="slds-listbox__item">
+                                    <lightning-pill label={item.title} onremove={handleRemoveSelectedItem} name={item.id}>
+                                        <lightning-icon icon-name={item.icon}></lightning-icon>
+                                    </lightning-pill>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </template>
+                <!-- Multi-selection end -->
+            </template>
+
+            <!-- Errors start -->
+            <template for:each={errors} for:item="error">
+                <label key={error.id} role="alert" class="slds-form-element__label slds-m-top_xx-small form-error">{error.message}</label>
+            </template>
+            <!-- Errors end -->
+        </div>
+    </div>
+</template>

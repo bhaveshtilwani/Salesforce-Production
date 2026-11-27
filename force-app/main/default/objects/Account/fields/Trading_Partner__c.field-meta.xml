@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trading_Partner__c</fullName>
+    <label>Trading Partner</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ERP_Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Qioptiq Holding Deutschla - (1800)</fullName>
+                <default>false</default>
+                <label>Qioptiq Holding Deutschla - (1800)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH - (2200)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GMBH - (2200)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Management GMBH - (2150)</fullName>
+                <default>false</default>
+                <label>Qioptiq Management GMBH - (2150)</label>
+            </value>
+            <value>
+                <fullName>Excelitas SG PTE LTD - (2420)</fullName>
+                <default>false</default>
+                <label>Excelitas SG PTE LTD - (2420)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Limited - (2450)</fullName>
+                <default>false</default>
+                <label>Qioptiq Limited - (2450)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics Limited - (2500)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics Limited - (2500)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq UK Holdings Limited - (2545)</fullName>
+                <default>false</default>
+                <label>Qioptiq UK Holdings Limited - (2545)</label>
+            </value>
+            <value>
+                <fullName>Excelitas GMBH - (2560)</fullName>
+                <default>false</default>
+                <label>Excelitas GMBH - (2560)</label>
+            </value>
+            <value>
+                <fullName>PT Excelitas Techn Batam - (2640)</fullName>
+                <default>false</default>
+                <label>PT Excelitas Techn Batam - (2640)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Techn Shenzhen - (2660)</fullName>
+                <default>false</default>
+                <label>Excelitas Techn Shenzhen - (2660)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Philippines - (2670)</fullName>
+                <default>false</default>
+                <label>Excelitas Philippines - (2670)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Canada Inc. - (2590)</fullName>
+                <default>false</default>
+                <label>Excelitas Canada Inc. - (2590)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co - (2550)</fullName>
+                <default>false</default>
+                <label>Excelitas Technologies Co - (2550)</label>
+            </value>
+            <value>
+                <fullName>Excelitas TECHN BV 1 - (2700)</fullName>
+                <default>false</default>
+                <label>Excelitas TECHN BV 1 - (2700)</label>
+            </value>
+            <value>
+                <fullName>Research Electro Optics - (2710)</fullName>
+                <default>false</default>
+                <label>Research Electro Optics - (2710)</label>
+            </value>
+            <value>
+                <fullName>Axsun Technologies - (2720)</fullName>
+                <default>false</default>
+                <label>Axsun Technologies - (2720)</label>
+            </value>
+            <value>
+                <fullName>AXSUN TECHNOLOGIES - (1200)</fullName>
+                <default>false</default>
+                <label>AXSUN TECHNOLOGIES - (1200)</label>
+            </value>
+            <value>
+                <fullName>EXCELITAS CANADA INC. - (1500)</fullName>
+                <default>false</default>
+                <label>EXCELITAS CANADA INC. - (1500)</label>
+            </value>
+            <value>
+                <fullName>EXCELITAS GMBH - (2100)</fullName>
+                <default>false</default>
+                <label>EXCELITAS GMBH - (2100)</label>
+            </value>
+            <value>
+                <fullName>EXCELITAS PCO GMBH - (2110)</fullName>
+                <default>false</default>
+                <label>EXCELITAS PCO GMBH - (2110)</label>
+            </value>
+            <value>
+                <fullName>EXCELITAS PHILIPPINES - (3300)</fullName>
+                <default>false</default>
+                <label>EXCELITAS PHILIPPINES - (3300)</label>
+            </value>
+            <value>
+                <fullName>EXCELITAS SINGAPORE PTE LTD - (3000)</fullName>
+                <default>false</default>
+                <label>EXCELITAS SINGAPORE PTE LTD - (3000)</label>
+            </value>
+            <value>
+                <fullName>EXCELITAS TECHNOLOGIES CORP - (1000)</fullName>
+                <default>false</default>
+                <label>EXCELITAS TECHNOLOGIES CORP - (1000)</label>
+            </value>
+            <value>
+                <fullName>EXCELITAS TECHNOLOGIES SHENZHE - (3100)</fullName>
+                <default>false</default>
+                <label>EXCELITAS TECHNOLOGIES SHENZHE - (3100)</label>
+            </value>
+            <value>
+                <fullName>PT EXCELITAS TECHNOLOGIES BATA - (3200)</fullName>
+                <default>false</default>
+                <label>PT EXCELITAS TECHNOLOGIES BATA - (3200)</label>
+            </value>
+            <value>
+                <fullName>QIOPTIQ LIMITED - (2500)</fullName>
+                <default>false</default>
+                <label>QIOPTIQ LIMITED - (2500)</label>
+            </value>
+            <value>
+                <fullName>QIOPTIQ PHOTONICS LTD - (2600)</fullName>
+                <default>false</default>
+                <label>QIOPTIQ PHOTONICS LTD - (2600)</label>
+            </value>
+            <value>
+                <fullName>QIOPTIQ Photonics GMBH (QPKG) - (2000)</fullName>
+                <default>false</default>
+                <label>QIOPTIQ Photonics GMBH (QPKG) - (2000)</label>
+            </value>
+            <value>
+                <fullName>RESEARCH ELECTRO OPTICS - (1100)</fullName>
+                <default>false</default>
+                <label>RESEARCH ELECTRO OPTICS - (1100)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Canada Inc. - (2680)</fullName>
+                <default>false</default>
+                <label>Excelitas Canada Inc. - (2680)</label>
+            </value>
+            <value>
+                <fullName>Excelitas SG PTE LTD (2650)</fullName>
+                <default>false</default>
+                <label>Excelitas SG PTE LTD - (2650)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co - (2580)</fullName>
+                <default>false</default>
+                <label>Excelitas Technologies Co - (2580)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co - (2610)</fullName>
+                <default>false</default>
+                <label>Excelitas Technologies Co - (2610)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co - (2630)</fullName>
+                <default>false</default>
+                <label>Excelitas Technologies Co - (2630)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co - (2690)</fullName>
+                <default>false</default>
+                <label>Excelitas Technologies Co - (2690)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co - (2730)</fullName>
+                <default>false</default>
+                <label>Excelitas Technologies Co - (2730)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Limited - (2540)</fullName>
+                <default>false</default>
+                <label>Qioptiq Limited - (2540)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH - (2300)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GMBH - (2300)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH - (2310)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GMBH - (2310)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH - (2400)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GMBH - (2400)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH - (2410)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GMBH - (2410)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH - (2430)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GMBH - (2430)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH - (2510)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GMBH - (2510)</label>
+            </value>
+            <value>
+                <fullName>Axsun Technologies (Billerica) - (US089)</fullName>
+                <default>false</default>
+                <label>Axsun Technologies (Billerica) - (US089)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Asslar - (DE069)</fullName>
+                <default>false</default>
+                <label>Excelitas Asslar - (DE069)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Batam - (ID019)</fullName>
+                <default>false</default>
+                <label>Excelitas Batam - (ID019)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Covina - (US069)</fullName>
+                <default>false</default>
+                <label>Excelitas Covina - (US069)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Fremont - (US139)</fullName>
+                <default>false</default>
+                <label>Excelitas Fremont - (US139)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Montreal - (CA029)</fullName>
+                <default>false</default>
+                <label>Excelitas Montreal - (CA029)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Munich - (DE059)</fullName>
+                <default>false</default>
+                <label>Excelitas Munich - (DE059)</label>
+            </value>
+            <value>
+                <fullName>Excelitas PCO GmbH - (DE019)</fullName>
+                <default>false</default>
+                <label>Excelitas PCO GmbH - (DE019)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Philippines - (PH039)</fullName>
+                <default>false</default>
+                <label>Excelitas Philippines - (PH039)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Shenzhen - (CN019)</fullName>
+                <default>false</default>
+                <label>Excelitas Shenzhen - (CN019)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Singapore - Optics - (SG059)</fullName>
+                <default>false</default>
+                <label>Excelitas Singapore - Optics - (SG059)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Singapore - (SG019)</fullName>
+                <default>false</default>
+                <label>Excelitas Singapore - (SG019)</label>
+            </value>
+            <value>
+                <fullName>Excelitas St. Louis - (US049)</fullName>
+                <default>false</default>
+                <label>Excelitas St. Louis - (US049)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Wiesbanden - (DE029)</fullName>
+                <default>false</default>
+                <label>Excelitas Wiesbanden - (DE029)</label>
+            </value>
+            <value>
+                <fullName>France S.A.S (Q) - (FRA059)</fullName>
+                <default>false</default>
+                <label>France S.A.S (Q) - (FRA059)</label>
+            </value>
+            <value>
+                <fullName>Gesellschaft G00000 - (1)</fullName>
+                <default>false</default>
+                <label>Gesellschaft G00000 - (1)</label>
+            </value>
+            <value>
+                <fullName>HQ - (US102)</fullName>
+                <default>false</default>
+                <label>HQ - (US102)</label>
+            </value>
+            <value>
+                <fullName>Hamble - (GB069)</fullName>
+                <default>false</default>
+                <label>Hamble - (GB069)</label>
+            </value>
+            <value>
+                <fullName>Kecskemet - (HU059)</fullName>
+                <default>false</default>
+                <label>Kecskemet - (HU059)</label>
+            </value>
+            <value>
+                <fullName>Luxembourg S.a.R.L (Q) - (LUX059)</fullName>
+                <default>false</default>
+                <label>Luxembourg S.a.R.L (Q) - (LUX059)</label>
+            </value>
+            <value>
+                <fullName>Luxembourg Thor2 S.A.(Q) - (LUX069)</fullName>
+                <default>false</default>
+                <label>Luxembourg Thor2 S.A.(Q) - (LUX069)</label>
+            </value>
+            <value>
+                <fullName>Miamisburg - (US039)</fullName>
+                <default>false</default>
+                <label>Miamisburg - (US039)</label>
+            </value>
+            <value>
+                <fullName>Netherlands Holding BV - 1 - (NL019)</fullName>
+                <default>false</default>
+                <label>Netherlands Holding BV - 1 - (NL019)</label>
+            </value>
+            <value>
+                <fullName>Netherlands Holding BV 1 – USD - (NL119)</fullName>
+                <default>false</default>
+                <label>Netherlands Holding BV 1 – USD - (NL119)</label>
+            </value>
+            <value>
+                <fullName>Netherlands Holding BV - 2 - (NL029)</fullName>
+                <default>false</default>
+                <label>Netherlands Holding BV - 2 - (NL029)</label>
+            </value>
+            <value>
+                <fullName>Netherlands Holding BV - 3 - (NL039)</fullName>
+                <default>false</default>
+                <label>Netherlands Holding BV - 3 - (NL039)</label>
+            </value>
+            <value>
+                <fullName>Netherlands Holding BV - 4 - (NL049)</fullName>
+                <default>false</default>
+                <label>Netherlands Holding BV - 4 - (NL049)</label>
+            </value>
+            <value>
+                <fullName>Pfaffenhofen - (DE039)</fullName>
+                <default>false</default>
+                <label>Pfaffenhofen - (DE039)</label>
+            </value>
+            <value>
+                <fullName>QCN - (CN059)</fullName>
+                <default>false</default>
+                <label>QCN - (CN059)</label>
+            </value>
+            <value>
+                <fullName>QEL - (GB089)</fullName>
+                <default>false</default>
+                <label>QEL - (GB089)</label>
+            </value>
+            <value>
+                <fullName>QHD - (DE089)</fullName>
+                <default>false</default>
+                <label>QHD - (DE089)</label>
+            </value>
+            <value>
+                <fullName>QM - (DE079)</fullName>
+                <default>false</default>
+                <label>QM - (DE079)</label>
+            </value>
+            <value>
+                <fullName>QNA - (US055)</fullName>
+                <default>false</default>
+                <label>QNA - (US055)</label>
+            </value>
+            <value>
+                <fullName>QUKHL - (GB079)</fullName>
+                <default>false</default>
+                <label>QUKHL - (GB079)</label>
+            </value>
+            <value>
+                <fullName>Research Electro-Optics, Inc. - (US079)</fullName>
+                <default>false</default>
+                <label>Research Electro-Optics, Inc. - (US079)</label>
+            </value>
+            <value>
+                <fullName>Rochester (QDI) - (US059)</fullName>
+                <default>false</default>
+                <label>Rochester (QDI) - (US059)</label>
+            </value>
+            <value>
+                <fullName>Rochester (QROC) - (US058)</fullName>
+                <default>false</default>
+                <label>Rochester (QROC) - (US058)</label>
+            </value>
+            <value>
+                <fullName>Salem - (US019)</fullName>
+                <default>false</default>
+                <label>Salem - (US019)</label>
+            </value>
+            <value>
+                <fullName>St Asaph - (GB059)</fullName>
+                <default>false</default>
+                <label>St Asaph - (GB059)</label>
+            </value>
+            <value>
+                <fullName>Toronto - (CA039)</fullName>
+                <default>false</default>
+                <label>Toronto - (CA039)</label>
+            </value>
+            <value>
+                <fullName>Wheeling - (US419)</fullName>
+                <default>false</default>
+                <label>Wheeling - (US419)</label>
+            </value>
+            <value>
+                <fullName>Axsun Technologies</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Axsun Technologies</label>
+            </value>
+            <value>
+                <fullName>Axsun Technologies (2720)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Axsun Technologies (2720)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Canada Inc.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Canada Inc.</label>
+            </value>
+            <value>
+                <fullName>Excelitas Canada Inc. (2590)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Canada Inc. (2590)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Canada Inc. (2680)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Canada Inc. (2680)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Canada Inc., Mississ</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Canada Inc., Mississ</label>
+            </value>
+            <value>
+                <fullName>Excelitas GMBH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas GMBH</label>
+            </value>
+            <value>
+                <fullName>Excelitas GMBH (2560)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas GMBH (2560)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Philippines</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Philippines</label>
+            </value>
+            <value>
+                <fullName>Excelitas Philippines (2670)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Philippines (2670)</label>
+            </value>
+            <value>
+                <fullName>Excelitas SG PTE LTD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas SG PTE LTD</label>
+            </value>
+            <value>
+                <fullName>Excelitas SG PTE LTD (2420)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas SG PTE LTD (2420)</label>
+            </value>
+            <value>
+                <fullName>Excelitas TC, Covina - (2600)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas TC, Covina - (2600)</label>
+            </value>
+            <value>
+                <fullName>Excelitas TC, Wheeling - (2620)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas TC, Wheeling - (2620)</label>
+            </value>
+            <value>
+                <fullName>Excelitas TECHN BV 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas TECHN BV 1</label>
+            </value>
+            <value>
+                <fullName>Excelitas TECHN BV 1 (2700)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas TECHN BV 1 (2700)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Techn Shenzhen</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Techn Shenzhen</label>
+            </value>
+            <value>
+                <fullName>Excelitas Techn Shenzhen (2660)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Techn Shenzhen (2660)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Technologies Co</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co (2550)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Technologies Co (2550)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co (2580)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Technologies Co (2580)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co (2610)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Technologies Co (2610)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co (2630)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Technologies Co (2630)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co (2690)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Technologies Co (2690)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Co (2730)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Excelitas Technologies Co (2730)</label>
+            </value>
+            <value>
+                <fullName>Fiktive Gesellschaft &quot;Fremde&quot; - (999999)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fiktive Gesellschaft &quot;Fremde&quot; - (999999)</label>
+            </value>
+            <value>
+                <fullName>Intercompany A/R Excelitas Techn., Singapore</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Intercompany A/R Excelitas Techn., Singapore</label>
+            </value>
+            <value>
+                <fullName>Intercompany A/R, Excelitas Tech Corp., Fremont US</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Intercompany A/R, Excelitas Tech Corp., Fremont US</label>
+            </value>
+            <value>
+                <fullName>Intercompany A/R, Excelitas Technologies GmbH KG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Intercompany A/R, Excelitas Technologies GmbH KG</label>
+            </value>
+            <value>
+                <fullName>Intercompany A/R, QPKG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Intercompany A/R, QPKG</label>
+            </value>
+            <value>
+                <fullName>PT Excelitas Techn Batam</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PT Excelitas Techn Batam</label>
+            </value>
+            <value>
+                <fullName>PT Excelitas Techn Batam (2640)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PT Excelitas Techn Batam (2640)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Coatings - (2470)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Coatings - (2470)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Holding Deutschla</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Holding Deutschla</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Holding Deutschla (1800)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Holding Deutschla (1800)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Holding GmbH - (2000)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Holding GmbH - (2000)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Inc., Rochester - (2480)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Inc., Rochester - (2480)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq KFT - (2440)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq KFT - (2440)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq KG ELCOS - (2570)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq KG ELCOS - (2570)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Limited</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Limited</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Limited (2540)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Limited (2540)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Ltd., St. Asaph - (2450)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Ltd., St. Asaph - (2450)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Management GMBH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Management GMBH</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Management GMBH (2150)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Management GMBH (2150)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GMBH</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH (2200)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GMBH (2200)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH (2300)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GMBH (2300)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH (2310)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GMBH (2310)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH (2400)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GMBH (2400)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH (2410)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GMBH (2410)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH (2430)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GMBH (2430)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GMBH (2510)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GMBH (2510)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GmbH &amp; Co. K - (2140)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics GmbH &amp; Co. K - (2140)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics Limited</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics Limited</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics Limited (2500)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics Limited (2500)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics SAS, France - (2320)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Photonics SAS, France - (2320)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Polymer Inc. - (2490)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Polymer Inc. - (2490)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Real Estate GmbH - (2100)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Real Estate GmbH - (2100)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Space Technology - (2460)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Space Technology - (2460)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Systems GmbH - (2160)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq Systems GmbH - (2160)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq UK Holdings Limited</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq UK Holdings Limited</label>
+            </value>
+            <value>
+                <fullName>Qioptiq UK Holdings Limited (2545)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qioptiq UK Holdings Limited (2545)</label>
+            </value>
+            <value>
+                <fullName>Research Electro Optics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Research Electro Optics</label>
+            </value>
+            <value>
+                <fullName>Research Electro Optics (2710)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Research Electro Optics (2710)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Axsun Technologies (Billerica) - (US089)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Asslar - (DE069)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Batam - (ID019)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Covina - (US069)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Fremont - (US139)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Montreal - (CA029)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Munich - (DE059)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas PCO GmbH - (DE019)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Philippines - (PH039)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Shenzhen - (CN019)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Singapore - Optics - (SG059)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Singapore - (SG019)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas St. Louis - (US049)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Excelitas Wiesbanden - (DE029)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>France S.A.S (Q) - (FRA059)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Gesellschaft G00000 - (1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>HQ - (US102)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Hamble - (GB069)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Kecskemet - (HU059)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Luxembourg S.a.R.L (Q) - (LUX059)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Luxembourg Thor2 S.A.(Q) - (LUX069)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Miamisburg - (US039)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Netherlands Holding BV - 1 - (NL019)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Netherlands Holding BV 1 – USD - (NL119)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Netherlands Holding BV - 2 - (NL029)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Netherlands Holding BV - 3 - (NL039)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Netherlands Holding BV - 4 - (NL049)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Pfaffenhofen - (DE039)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>QCN - (CN059)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>QEL - (GB089)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>QHD - (DE089)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>QM - (DE079)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>QNA - (US055)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>QUKHL - (GB079)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Research Electro-Optics, Inc. - (US079)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Rochester (QDI) - (US059)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Rochester (QROC) - (US058)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Salem - (US019)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>St Asaph - (GB059)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Toronto - (CA039)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Wheeling - (US419)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Holding Deutschla - (1800)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Photonics GMBH - (2200)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Management GMBH - (2150)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas SG PTE LTD - (2420)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Limited - (2450)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Photonics Limited - (2500)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq UK Holdings Limited - (2545)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas GMBH - (2560)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>PT Excelitas Techn Batam - (2640)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Techn Shenzhen - (2660)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Philippines - (2670)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Canada Inc. - (2590)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Technologies Co - (2550)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas TECHN BV 1 - (2700)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Research Electro Optics - (2710)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Axsun Technologies - (2720)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Canada Inc. - (2680)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas SG PTE LTD (2650)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Technologies Co - (2580)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Technologies Co - (2610)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Technologies Co - (2630)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Technologies Co - (2690)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Excelitas Technologies Co - (2730)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Limited - (2540)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Photonics GMBH - (2300)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Photonics GMBH - (2310)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Photonics GMBH - (2400)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Photonics GMBH - (2410)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Photonics GMBH - (2430)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Qioptiq Photonics GMBH - (2510)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>AXSUN TECHNOLOGIES - (1200)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>EXCELITAS CANADA INC. - (1500)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>EXCELITAS GMBH - (2100)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>EXCELITAS PCO GMBH - (2110)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>EXCELITAS PHILIPPINES - (3300)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>EXCELITAS SINGAPORE PTE LTD - (3000)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>EXCELITAS TECHNOLOGIES CORP - (1000)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>EXCELITAS TECHNOLOGIES SHENZHE - (3100)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>PT EXCELITAS TECHNOLOGIES BATA - (3200)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>QIOPTIQ LIMITED - (2500)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>QIOPTIQ PHOTONICS LTD - (2600)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>QIOPTIQ Photonics GMBH (QPKG) - (2000)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>RESEARCH ELECTRO OPTICS - (1100)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

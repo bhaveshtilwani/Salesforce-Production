@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QAD_Sales_Order_Status__c</fullName>
+    <label>QAD Sales Order Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HD - Credit Hold</fullName>
+                <default>false</default>
+                <label>HD - Credit Hold</label>
+            </value>
+            <value>
+                <fullName>Z2 - Tax Hold</fullName>
+                <default>false</default>
+                <label>Z2 - Tax Hold</label>
+            </value>
+            <value>
+                <fullName>Z3 - Confirm Shipment Info</fullName>
+                <default>false</default>
+                <label>Z3 - Confirm Shipment Info</label>
+            </value>
+            <value>
+                <fullName>Z4 - Awaiting Revised PO</fullName>
+                <default>false</default>
+                <label>Z4 - Awaiting Revised PO</label>
+            </value>
+            <value>
+                <fullName>Z5 - Letter of Credit</fullName>
+                <default>false</default>
+                <label>Z5 - Letter of Credit</label>
+            </value>
+            <value>
+                <fullName>Z6 - Customer Hold</fullName>
+                <default>false</default>
+                <label>Z6 - Customer Hold</label>
+            </value>
+            <value>
+                <fullName>Z7 - Prepaid</fullName>
+                <default>false</default>
+                <label>Z7 - Prepaid</label>
+            </value>
+            <value>
+                <fullName>Z8 - Waiting for info from Customer</fullName>
+                <default>false</default>
+                <label>Z8 - Waiting for info from Customer</label>
+            </value>
+            <value>
+                <fullName>Z9 - Hold - Other</fullName>
+                <default>false</default>
+                <label>Z9 - Hold - Other</label>
+            </value>
+            <value>
+                <fullName>ZC - Credit Card Check</fullName>
+                <default>false</default>
+                <label>ZC - Credit Card Check</label>
+            </value>
+            <value>
+                <fullName>ZD - Pending Clarifications of Discount</fullName>
+                <default>false</default>
+                <label>ZD - Pending Clarifications of Discount</label>
+            </value>
+            <value>
+                <fullName>ZE - Pricing Issue</fullName>
+                <default>false</default>
+                <label>ZE - Pricing Issue</label>
+            </value>
+            <value>
+                <fullName>ZH - Part # Hold</fullName>
+                <default>false</default>
+                <label>ZH - Part # Hold</label>
+            </value>
+            <value>
+                <fullName>ZS - Stop Ship</fullName>
+                <default>false</default>
+                <label>ZS - Stop Ship</label>
+            </value>
+            <value>
+                <fullName>ZZ - Waiting for Lead Time</fullName>
+                <default>false</default>
+                <label>ZZ - Waiting for Lead Time</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>ZP - Pending terms resubmit</fullName>
+                <default>false</default>
+                <label>ZP - Pending terms resubmit</label>
+            </value>
+            <value>
+                <fullName>- Order OK to ship</fullName>
+                <default>false</default>
+                <label>- Order OK to ship</label>
+            </value>
+            <value>
+                <fullName>HD - Hold Status - Order Not OK to ship</fullName>
+                <default>false</default>
+                <label>HD - Hold Status - Order Not OK to ship</label>
+            </value>
+            <value>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <label>Closed Lost</label>
+            </value>
+            <value>
+                <fullName>Closed Duplicate</fullName>
+                <default>false</default>
+                <label>Closed Duplicate</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Opened in Error</fullName>
+                <default>false</default>
+                <label>Opened in Error</label>
+            </value>
+            <value>
+                <fullName>Closed QC call off done- deleted</fullName>
+                <default>false</default>
+                <label>Closed QC call off done- deleted</label>
+            </value>
+            <value>
+                <fullName>Closed Debooking</fullName>
+                <default>false</default>
+                <label>Closed Debooking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

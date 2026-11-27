@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_DA__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( SubApplication__c , &quot;Automated Test Equipment&quot;) , &quot;Defense&quot;, 
+IF( ISPICKVAL( SubApplication__c , &quot;Ballistic Missile&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Countermeasure&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Fuze&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Gas Turbine Engine&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Ground Vehicle&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;HEL&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Helmet Mounted Display&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;HH Surveillance&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Laser Range Finding&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Laser Warning&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Military HuD&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Miscellaneous&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Missile Defense System&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Missile Warning &amp; Targeting&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Night Vision Goggles&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Power Grid Crowbar&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Precision Guided Munition&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Proximity Sensing&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Pulsed Power&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Radar&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Simulation&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Soldier Systems&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Sonar&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Surveillance&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Tactical Missile&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Target Acquisition&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Technology&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Through Life Support&quot;) , &quot;Defense&quot;,
+IF( ISPICKVAL( SubApplication__c , &quot;Weapon Sights&quot;) , &quot;Defense&quot;, 
+IF( ISPICKVAL( SubApplication__c , &quot;Commercial HuD&quot;) , &quot;Commercial Aero&quot;, 
+IF( ISPICKVAL( SubApplication__c , &quot;GPS&quot;) , &quot;Space&quot;, 
+IF( ISPICKVAL( SubApplication__c , &quot;Lasercom&quot;) , &quot;Space&quot;, 
+IF( ISPICKVAL( SubApplication__c , &quot;Satellite&quot;) , &quot;Space&quot;, null
+
+))))))))))))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Market</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

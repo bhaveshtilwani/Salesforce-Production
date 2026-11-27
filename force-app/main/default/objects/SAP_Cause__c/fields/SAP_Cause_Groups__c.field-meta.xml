@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_Cause_Groups__c</fullName>
+    <label>SAP Cause Group</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cause not detectable</fullName>
+                <default>false</default>
+                <label>Cause not detectable</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Environment</fullName>
+                <default>false</default>
+                <label>Environment</label>
+            </value>
+            <value>
+                <fullName>External/Transport</fullName>
+                <default>false</default>
+                <label>External/Transport</label>
+            </value>
+            <value>
+                <fullName>Machine/Equipment</fullName>
+                <default>false</default>
+                <label>Machine/Equipment</label>
+            </value>
+            <value>
+                <fullName>Man</fullName>
+                <default>false</default>
+                <label>Man</label>
+            </value>
+            <value>
+                <fullName>Management/Documentation</fullName>
+                <default>false</default>
+                <label>Management/Documentation</label>
+            </value>
+            <value>
+                <fullName>Material</fullName>
+                <default>false</default>
+                <label>Material</label>
+            </value>
+            <value>
+                <fullName>Measurement</fullName>
+                <default>false</default>
+                <label>Measurement</label>
+            </value>
+            <value>
+                <fullName>Method/Process</fullName>
+                <default>false</default>
+                <label>Method/Process</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

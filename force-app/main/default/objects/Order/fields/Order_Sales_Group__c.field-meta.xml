@@ -1,0 +1,1642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Sales_Group__c</fullName>
+    <label>Order - Sales Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Order_Sales_Office__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(A00) NA PKI Direct</fullName>
+                <default>false</default>
+                <label>(A00) NA PKI Direct</label>
+            </value>
+            <value>
+                <fullName>(A01) Azpect Photonics</fullName>
+                <default>false</default>
+                <label>(A01) Azpect Photonics</label>
+            </value>
+            <value>
+                <fullName>(B00) NA West Griot Group</fullName>
+                <default>false</default>
+                <label>(B00) NA West Griot Group</label>
+            </value>
+            <value>
+                <fullName>(B01) MAX TECH SALES-IL,WI</fullName>
+                <default>false</default>
+                <label>(B01) MAX TECH SALES-IL,WI</label>
+            </value>
+            <value>
+                <fullName>(B02) MARATHON-GA,AL,MS,TN</fullName>
+                <default>false</default>
+                <label>(B02) MARATHON-GA,AL,MS,TN</label>
+            </value>
+            <value>
+                <fullName>(B03) MAXTECH;OH,IN,KY,WV</fullName>
+                <default>false</default>
+                <label>(B03) MAXTECH;OH,IN,KY,WV</label>
+            </value>
+            <value>
+                <fullName>(B04) Ciontek</fullName>
+                <default>false</default>
+                <label>(B04) Ciontek</label>
+            </value>
+            <value>
+                <fullName>(B05) TRILOGY;MI</fullName>
+                <default>false</default>
+                <label>(B05) TRILOGY;MI</label>
+            </value>
+            <value>
+                <fullName>(B06) HAWKINS;FL</fullName>
+                <default>false</default>
+                <label>(B06) HAWKINS;FL</label>
+            </value>
+            <value>
+                <fullName>(B07) CASE-NORTHSTAR MN,SD</fullName>
+                <default>false</default>
+                <label>(B07) CASE-NORTHSTAR MN,SD</label>
+            </value>
+            <value>
+                <fullName>(B08) ACORN ELEC; MO,AR,IA</fullName>
+                <default>false</default>
+                <label>(B08) ACORN ELEC; MO,AR,IA</label>
+            </value>
+            <value>
+                <fullName>(B09) HOUSE;TX,OK,LA</fullName>
+                <default>false</default>
+                <label>(B09) HOUSE;TX,OK,LA</label>
+            </value>
+            <value>
+                <fullName>(B10) C.W.Beach Company-NY</fullName>
+                <default>false</default>
+                <label>(B10) C.W.Beach Company-NY</label>
+            </value>
+            <value>
+                <fullName>(B11) MACINNIS; MA,CT,VT</fullName>
+                <default>false</default>
+                <label>(B11) MACINNIS; MA,CT,VT</label>
+            </value>
+            <value>
+                <fullName>(B12) S.States Mktg</fullName>
+                <default>false</default>
+                <label>(B12) S.States Mktg</label>
+            </value>
+            <value>
+                <fullName>(B13) Adv.Tech.Services</fullName>
+                <default>false</default>
+                <label>(B13) Adv.Tech.Services</label>
+            </value>
+            <value>
+                <fullName>(B14) RepTek</fullName>
+                <default>false</default>
+                <label>(B14) RepTek</label>
+            </value>
+            <value>
+                <fullName>(B15) Sales Eng. Concepts</fullName>
+                <default>false</default>
+                <label>(B15) Sales Eng. Concepts</label>
+            </value>
+            <value>
+                <fullName>(B17) Trilogy Tech Inc.</fullName>
+                <default>false</default>
+                <label>(B17) Trilogy Tech Inc.</label>
+            </value>
+            <value>
+                <fullName>(B18) Omega Sales;DE,NJ,PA</fullName>
+                <default>false</default>
+                <label>(B18) Omega Sales;DE,NJ,PA</label>
+            </value>
+            <value>
+                <fullName>(B19) ATM Mid-Atlantic</fullName>
+                <default>false</default>
+                <label>(B19) ATM Mid-Atlantic</label>
+            </value>
+            <value>
+                <fullName>(B21) Alliance Group One</fullName>
+                <default>false</default>
+                <label>(B21) Alliance Group One</label>
+            </value>
+            <value>
+                <fullName>(B22) KMA Consulting; BR</fullName>
+                <default>false</default>
+                <label>(B22) KMA Consulting; BR</label>
+            </value>
+            <value>
+                <fullName>(B50) NA House Accounts</fullName>
+                <default>false</default>
+                <label>(B50) NA House Accounts</label>
+            </value>
+            <value>
+                <fullName>(B88) Anchor Engineering</fullName>
+                <default>false</default>
+                <label>(B88) Anchor Engineering</label>
+            </value>
+            <value>
+                <fullName>(B54) Blue Electric</fullName>
+                <default>false</default>
+                <label>(B54) Blue Electric</label>
+            </value>
+            <value>
+                <fullName>(B59) Fast Electronics</fullName>
+                <default>false</default>
+                <label>(B59) Fast Electronics</label>
+            </value>
+            <value>
+                <fullName>(B61) Martinsson</fullName>
+                <default>false</default>
+                <label>(B61) Martinsson</label>
+            </value>
+            <value>
+                <fullName>(B62) ATYS</fullName>
+                <default>false</default>
+                <label>(B62) ATYS</label>
+            </value>
+            <value>
+                <fullName>(B63) Pacer</fullName>
+                <default>false</default>
+                <label>(B63) Pacer</label>
+            </value>
+            <value>
+                <fullName>(B64) Holst &amp; Fleischer</fullName>
+                <default>false</default>
+                <label>(B64) Holst &amp; Fleischer</label>
+            </value>
+            <value>
+                <fullName>(B66) Other Europe</fullName>
+                <default>false</default>
+                <label>(B66) Other Europe</label>
+            </value>
+            <value>
+                <fullName>(B67) Dalma</fullName>
+                <default>false</default>
+                <label>(B67) Dalma</label>
+            </value>
+            <value>
+                <fullName>(B71) Toptronic</fullName>
+                <default>false</default>
+                <label>(B71) Toptronic</label>
+            </value>
+            <value>
+                <fullName>(B75) PerkinElmer Opto</fullName>
+                <default>false</default>
+                <label>(B75) PerkinElmer Opto</label>
+            </value>
+            <value>
+                <fullName>(B85) Lober</fullName>
+                <default>false</default>
+                <label>(B85) Lober</label>
+            </value>
+            <value>
+                <fullName>(B93) Kevin</fullName>
+                <default>false</default>
+                <label>(B93) Kevin</label>
+            </value>
+            <value>
+                <fullName>(B20) AS PKI Direct</fullName>
+                <default>false</default>
+                <label>(B20) AS PKI Direct</label>
+            </value>
+            <value>
+                <fullName>(B51) B &amp; B</fullName>
+                <default>false</default>
+                <label>(B51) B &amp; B</label>
+            </value>
+            <value>
+                <fullName>(B52) Shinkoh</fullName>
+                <default>false</default>
+                <label>(B52) Shinkoh</label>
+            </value>
+            <value>
+                <fullName>(B57) OTA</fullName>
+                <default>false</default>
+                <label>(B57) OTA</label>
+            </value>
+            <value>
+                <fullName>(B76) PKI Singapore</fullName>
+                <default>false</default>
+                <label>(B76) PKI Singapore</label>
+            </value>
+            <value>
+                <fullName>(B77) Other Asia</fullName>
+                <default>false</default>
+                <label>(B77) Other Asia</label>
+            </value>
+            <value>
+                <fullName>(B79) Laser Electronics</fullName>
+                <default>false</default>
+                <label>(B79) Laser Electronics</label>
+            </value>
+            <value>
+                <fullName>(B83) Seraphim (Hong Kong)</fullName>
+                <default>false</default>
+                <label>(B83) Seraphim (Hong Kong)</label>
+            </value>
+            <value>
+                <fullName>(B84) Seraphim (Taiwan)</fullName>
+                <default>false</default>
+                <label>(B84) Seraphim (Taiwan)</label>
+            </value>
+            <value>
+                <fullName>(B86) K &amp; K Far East</fullName>
+                <default>false</default>
+                <label>(B86) K &amp; K Far East</label>
+            </value>
+            <value>
+                <fullName>(B87) Dae Huang</fullName>
+                <default>false</default>
+                <label>(B87) Dae Huang</label>
+            </value>
+            <value>
+                <fullName>(B90) Neopt</fullName>
+                <default>false</default>
+                <label>(B90) Neopt</label>
+            </value>
+            <value>
+                <fullName>(C00) PKI China / X.C.</fullName>
+                <default>false</default>
+                <label>(C00) PKI China / X.C.</label>
+            </value>
+            <value>
+                <fullName>(APD) Avalanche Photodiode</fullName>
+                <default>false</default>
+                <label>(APD) Avalanche Photodiode</label>
+            </value>
+            <value>
+                <fullName>(751) CPM</fullName>
+                <default>false</default>
+                <label>(751) CPM</label>
+            </value>
+            <value>
+                <fullName>(121) Q-ARC (Phontonics)</fullName>
+                <default>false</default>
+                <label>(121) Q-ARC (Phontonics)</label>
+            </value>
+            <value>
+                <fullName>(610) Salem(HPG)</fullName>
+                <default>false</default>
+                <label>(610) Salem(HPG)</label>
+            </value>
+            <value>
+                <fullName>(10) Triggercoil</fullName>
+                <default>false</default>
+                <label>(10) Triggercoil</label>
+            </value>
+            <value>
+                <fullName>(110) ILC Flash Mfg</fullName>
+                <default>false</default>
+                <label>(110) ILC Flash Mfg</label>
+            </value>
+            <value>
+                <fullName>(20) QUSA</fullName>
+                <default>false</default>
+                <label>(20) QUSA</label>
+            </value>
+            <value>
+                <fullName>(21) QUSA &amp; TC</fullName>
+                <default>false</default>
+                <label>(21) QUSA &amp; TC</label>
+            </value>
+            <value>
+                <fullName>(30) PFL</fullName>
+                <default>false</default>
+                <label>(30) PFL</label>
+            </value>
+            <value>
+                <fullName>(90) PCB Assembly</fullName>
+                <default>false</default>
+                <label>(90) PCB Assembly</label>
+            </value>
+            <value>
+                <fullName>(D00) analytical system</fullName>
+                <default>false</default>
+                <label>(D00) analytical system</label>
+            </value>
+            <value>
+                <fullName>(D01) analytical component</fullName>
+                <default>false</default>
+                <label>(D01) analytical component</label>
+            </value>
+            <value>
+                <fullName>(HNL) HeNe Lasers Trading</fullName>
+                <default>false</default>
+                <label>(HNL) HeNe Lasers Trading</label>
+            </value>
+            <value>
+                <fullName>(800) Pressure Sensors</fullName>
+                <default>false</default>
+                <label>(800) Pressure Sensors</label>
+            </value>
+            <value>
+                <fullName>(410) Cermax Lamp</fullName>
+                <default>false</default>
+                <label>(410) Cermax Lamp</label>
+            </value>
+            <value>
+                <fullName>(411) Cermax Trading</fullName>
+                <default>false</default>
+                <label>(411) Cermax Trading</label>
+            </value>
+            <value>
+                <fullName>(450) ILC-HPG</fullName>
+                <default>false</default>
+                <label>(450) ILC-HPG</label>
+            </value>
+            <value>
+                <fullName>(460) Cermax Video</fullName>
+                <default>false</default>
+                <label>(460) Cermax Video</label>
+            </value>
+            <value>
+                <fullName>(LS1) LED Solution</fullName>
+                <default>false</default>
+                <label>(LS1) LED Solution</label>
+            </value>
+            <value>
+                <fullName>(LS2) LED Component</fullName>
+                <default>false</default>
+                <label>(LS2) LED Component</label>
+            </value>
+            <value>
+                <fullName>(C01) PKI China MS</fullName>
+                <default>false</default>
+                <label>(C01) PKI China MS</label>
+            </value>
+            <value>
+                <fullName>(310) ORC</fullName>
+                <default>false</default>
+                <label>(310) ORC</label>
+            </value>
+            <value>
+                <fullName>(311) ORC Trading</fullName>
+                <default>false</default>
+                <label>(311) ORC Trading</label>
+            </value>
+            <value>
+                <fullName>(62) PDA Trading</fullName>
+                <default>false</default>
+                <label>(62) PDA Trading</label>
+            </value>
+            <value>
+                <fullName>(66) PD Trading</fullName>
+                <default>false</default>
+                <label>(66) PD Trading</label>
+            </value>
+            <value>
+                <fullName>(510) PE-Photovac</fullName>
+                <default>false</default>
+                <label>(510) PE-Photovac</label>
+            </value>
+            <value>
+                <fullName>(520) PE-Lamps</fullName>
+                <default>false</default>
+                <label>(520) PE-Lamps</label>
+            </value>
+            <value>
+                <fullName>(530) PE-Nelson</fullName>
+                <default>false</default>
+                <label>(530) PE-Nelson</label>
+            </value>
+            <value>
+                <fullName>(540) PE-AA</fullName>
+                <default>false</default>
+                <label>(540) PE-AA</label>
+            </value>
+            <value>
+                <fullName>(710) Reticon</fullName>
+                <default>false</default>
+                <label>(710) Reticon</label>
+            </value>
+            <value>
+                <fullName>(711) Reticon Trading</fullName>
+                <default>false</default>
+                <label>(711) Reticon Trading</label>
+            </value>
+            <value>
+                <fullName>(620) Salem</fullName>
+                <default>false</default>
+                <label>(620) Salem</label>
+            </value>
+            <value>
+                <fullName>(621) Salem Trading</fullName>
+                <default>false</default>
+                <label>(621) Salem Trading</label>
+            </value>
+            <value>
+                <fullName>(251) Sensors Salem Trad</fullName>
+                <default>false</default>
+                <label>(251) Sensors Salem Trad</label>
+            </value>
+            <value>
+                <fullName>(40) LEGO</fullName>
+                <default>false</default>
+                <label>(40) LEGO</label>
+            </value>
+            <value>
+                <fullName>(41) A90</fullName>
+                <default>false</default>
+                <label>(41) A90</label>
+            </value>
+            <value>
+                <fullName>(43) Vactec Trading - PC</fullName>
+                <default>false</default>
+                <label>(43) Vactec Trading - PC</label>
+            </value>
+            <value>
+                <fullName>(44) UV Sensor</fullName>
+                <default>false</default>
+                <label>(44) UV Sensor</label>
+            </value>
+            <value>
+                <fullName>(50) IRD</fullName>
+                <default>false</default>
+                <label>(50) IRD</label>
+            </value>
+            <value>
+                <fullName>(60) Diode Array</fullName>
+                <default>false</default>
+                <label>(60) Diode Array</label>
+            </value>
+            <value>
+                <fullName>(80) Thermopile</fullName>
+                <default>false</default>
+                <label>(80) Thermopile</label>
+            </value>
+            <value>
+                <fullName>(552) Telecom Minidil</fullName>
+                <default>false</default>
+                <label>(552) Telecom Minidil</label>
+            </value>
+            <value>
+                <fullName>(70) Accelerometer</fullName>
+                <default>false</default>
+                <label>(70) Accelerometer</label>
+            </value>
+            <value>
+                <fullName>(811) Voltarc Trading</fullName>
+                <default>false</default>
+                <label>(811) Voltarc Trading</label>
+            </value>
+            <value>
+                <fullName>(AI2) AI Trading</fullName>
+                <default>false</default>
+                <label>(AI2) AI Trading</label>
+            </value>
+            <value>
+                <fullName>(AS0) AS Component</fullName>
+                <default>false</default>
+                <label>(AS0) AS Component</label>
+            </value>
+            <value>
+                <fullName>(AS1) AS Assembly</fullName>
+                <default>false</default>
+                <label>(AS1) AS Assembly</label>
+            </value>
+            <value>
+                <fullName>(BS0) BS Component</fullName>
+                <default>false</default>
+                <label>(BS0) BS Component</label>
+            </value>
+            <value>
+                <fullName>(BS1) BS Assembly</fullName>
+                <default>false</default>
+                <label>(BS1) BS Assembly</label>
+            </value>
+            <value>
+                <fullName>(BS2) BS Trading</fullName>
+                <default>false</default>
+                <label>(BS2) BS Trading</label>
+            </value>
+            <value>
+                <fullName>(CO2) CO Trading</fullName>
+                <default>false</default>
+                <label>(CO2) CO Trading</label>
+            </value>
+            <value>
+                <fullName>(LE0) LE Component</fullName>
+                <default>false</default>
+                <label>(LE0) LE Component</label>
+            </value>
+            <value>
+                <fullName>(LE1) LE Assembly</fullName>
+                <default>false</default>
+                <label>(LE1) LE Assembly</label>
+            </value>
+            <value>
+                <fullName>(LE2) LE Trading</fullName>
+                <default>false</default>
+                <label>(LE2) LE Trading</label>
+            </value>
+            <value>
+                <fullName>(LT0) LT Component</fullName>
+                <default>false</default>
+                <label>(LT0) LT Component</label>
+            </value>
+            <value>
+                <fullName>(LT1) LT Assembly</fullName>
+                <default>false</default>
+                <label>(LT1) LT Assembly</label>
+            </value>
+            <value>
+                <fullName>(LT2) LT Trading</fullName>
+                <default>false</default>
+                <label>(LT2) LT Trading</label>
+            </value>
+            <value>
+                <fullName>(MI0) MI Component</fullName>
+                <default>false</default>
+                <label>(MI0) MI Component</label>
+            </value>
+            <value>
+                <fullName>(MI1) MI Assembly</fullName>
+                <default>false</default>
+                <label>(MI1) MI Assembly</label>
+            </value>
+            <value>
+                <fullName>(MI2) MI Trading</fullName>
+                <default>false</default>
+                <label>(MI2) MI Trading</label>
+            </value>
+            <value>
+                <fullName>(OI0) OI Component</fullName>
+                <default>false</default>
+                <label>(OI0) OI Component</label>
+            </value>
+            <value>
+                <fullName>(OI1) OI Assembly</fullName>
+                <default>false</default>
+                <label>(OI1) OI Assembly</label>
+            </value>
+            <value>
+                <fullName>(OI2) OI Trading</fullName>
+                <default>false</default>
+                <label>(OI2) OI Trading</label>
+            </value>
+            <value>
+                <fullName>(PO0) PO Component</fullName>
+                <default>false</default>
+                <label>(PO0) PO Component</label>
+            </value>
+            <value>
+                <fullName>(PO1) PO Assembly</fullName>
+                <default>false</default>
+                <label>(PO1) PO Assembly</label>
+            </value>
+            <value>
+                <fullName>(PO2) PO Trading</fullName>
+                <default>false</default>
+                <label>(PO2) PO Trading</label>
+            </value>
+            <value>
+                <fullName>(SC0) SC Component</fullName>
+                <default>false</default>
+                <label>(SC0) SC Component</label>
+            </value>
+            <value>
+                <fullName>(SC1) SC Assembly</fullName>
+                <default>false</default>
+                <label>(SC1) SC Assembly</label>
+            </value>
+            <value>
+                <fullName>(SC2) SC Trading</fullName>
+                <default>false</default>
+                <label>(SC2) SC Trading</label>
+            </value>
+            <value>
+                <fullName>(ST0) ST Component</fullName>
+                <default>false</default>
+                <label>(ST0) ST Component</label>
+            </value>
+            <value>
+                <fullName>(ST1) ST Assembly</fullName>
+                <default>false</default>
+                <label>(ST1) ST Assembly</label>
+            </value>
+            <value>
+                <fullName>(UV1) BL Assembly</fullName>
+                <default>false</default>
+                <label>(UV1) BL Assembly</label>
+            </value>
+            <value>
+                <fullName>(100) NA PKI Direct</fullName>
+                <default>false</default>
+                <label>(100) NA PKI Direct</label>
+            </value>
+            <value>
+                <fullName>(110) EU PKI Direct</fullName>
+                <default>false</default>
+                <label>(110) EU PKI Direct</label>
+            </value>
+            <value>
+                <fullName>(120) AS PKI Direct</fullName>
+                <default>false</default>
+                <label>(120) AS PKI Direct</label>
+            </value>
+            <value>
+                <fullName>(200) NA West Griot Group</fullName>
+                <default>false</default>
+                <label>(200) NA West Griot Group</label>
+            </value>
+            <value>
+                <fullName>(207) CASE-NORTHSTAR MN,SD</fullName>
+                <default>false</default>
+                <label>(207) CASE-NORTHSTAR MN,SD</label>
+            </value>
+            <value>
+                <fullName>(210) C.W.Beach Company-NY</fullName>
+                <default>false</default>
+                <label>(210) C.W.Beach Company-NY</label>
+            </value>
+            <value>
+                <fullName>(212) S.States Mktg</fullName>
+                <default>false</default>
+                <label>(212) S.States Mktg</label>
+            </value>
+            <value>
+                <fullName>(214) RepTek</fullName>
+                <default>false</default>
+                <label>(214) RepTek</label>
+            </value>
+            <value>
+                <fullName>(219) ALLIANCE GROUP ONE</fullName>
+                <default>false</default>
+                <label>(219) ALLIANCE GROUP ONE</label>
+            </value>
+            <value>
+                <fullName>(266) Other Europe</fullName>
+                <default>false</default>
+                <label>(266) Other Europe</label>
+            </value>
+            <value>
+                <fullName>(309) Pacer Components Plc</fullName>
+                <default>false</default>
+                <label>(309) Pacer Components Plc</label>
+            </value>
+            <value>
+                <fullName>(312) HTDS</fullName>
+                <default>false</default>
+                <label>(312) HTDS</label>
+            </value>
+            <value>
+                <fullName>(314) Tech Niko Ltd</fullName>
+                <default>false</default>
+                <label>(314) Tech Niko Ltd</label>
+            </value>
+            <value>
+                <fullName>(400) PKI China / X.C.</fullName>
+                <default>false</default>
+                <label>(400) PKI China / X.C.</label>
+            </value>
+            <value>
+                <fullName>(402) NOK PKI (NEopt)</fullName>
+                <default>false</default>
+                <label>(402) NOK PKI (NEopt)</label>
+            </value>
+            <value>
+                <fullName>(404) B&amp;B Corp</fullName>
+                <default>false</default>
+                <label>(404) B&amp;B Corp</label>
+            </value>
+            <value>
+                <fullName>(503) Warsash Pty Ltd</fullName>
+                <default>false</default>
+                <label>(503) Warsash Pty Ltd</label>
+            </value>
+            <value>
+                <fullName>(504) ADM</fullName>
+                <default>false</default>
+                <label>(504) ADM</label>
+            </value>
+            <value>
+                <fullName>(202) Qubitekk</fullName>
+                <default>false</default>
+                <label>(202) Qubitekk</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>(PA) PDA Trading</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(62) PDA Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(PD) PD Trading</controllingFieldValue>
+            <controllingFieldValue>(SS) Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(66) PD Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(PE) Pekin Elmer</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(510) PE-Photovac</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(PE) Pekin Elmer</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(520) PE-Lamps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(PE) Pekin Elmer</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(530) PE-Nelson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(PE) Pekin Elmer</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(540) PE-AA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(PO) Precision Optics</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(PO0) PO Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(PO) Precision Optics</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(PO1) PO Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(PO) Precision Optics</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(PO2) PO Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(RT) Reticon</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(710) Reticon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(RT) Reticon</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(711) Reticon Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SC) Semiconductor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(SC0) SC Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SC) Semiconductor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(SC1) SC Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SC) Semiconductor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(SC2) SC Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SL) Salem(HPG)</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(620) Salem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SL) Salem(HPG)</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(621) Salem Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SM) Sensors Salem Trad</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(251) Sensors Salem Trad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SS) Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(40) LEGO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SS) Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(41) A90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SS) Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(43) Vactec Trading - PC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SS) Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(44) UV Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SS) Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(50) IRD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SS) Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(60) Diode Array</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(SS) Sensor</controllingFieldValue>
+            <controllingFieldValue>(TP) Thermopiles</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(80) Thermopile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(ST) Surv &amp; Target Acq</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(ST0) ST Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(ST) Surv &amp; Target Acq</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(ST1) ST Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FQ) Q-ARC (Phontonics)</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(121) Q-ARC (Phontonics)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FQ) Q-ARC (Phontonics)</controllingFieldValue>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(610) Salem(HPG)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(TE) Telecom</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(552) Telecom Minidil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(10) Triggercoil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(110) ILC Flash Mfg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(20) QUSA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(21) QUSA &amp; TC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(30) PFL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(90) PCB Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(D00) analytical system</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(FT) Flashtubes</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(D01) analytical component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(TP) Thermopiles</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(70) Accelerometer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(HE) HeNe Lasers</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(HNL) HeNe Lasers Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(UV) Biomedical Lighting</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(UV1) BL Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(IC) IC Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(800) Pressure Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(VT) Voltarc</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(811) Voltarc Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(IL) ILC</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(410) Cermax Lamp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(IL) ILC</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(411) Cermax Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(IL) ILC</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(450) ILC-HPG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(IL) ILC</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(460) Cermax Video</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(LE) Land Equipment</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(LE0) LE Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(LE) Land Equipment</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(LE1) LE Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(LE) Land Equipment</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(LE2) LE Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(LS) LED</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(LS1) LED Solution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(LS) LED</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(LS2) LED Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(LT) Laser Technology</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(LT0) LT Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(LT) Laser Technology</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(LT1) LT Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(LT) Laser Technology</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(LT2) LT Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(ME) Medical Sensor</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(C01) PKI China MS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(MI) Medical Imaging</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(MI0) MI Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(MI) Medical Imaging</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(MI1) MI Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(MI) Medical Imaging</controllingFieldValue>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(MI2) MI Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(A00) NA PKI Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(A01) Azpect Photonics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B00) NA West Griot Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B01) MAX TECH SALES-IL,WI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B02) MARATHON-GA,AL,MS,TN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B03) MAXTECH;OH,IN,KY,WV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B04) Ciontek</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B05) TRILOGY;MI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B06) HAWKINS;FL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B07) CASE-NORTHSTAR MN,SD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B08) ACORN ELEC; MO,AR,IA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B09) HOUSE;TX,OK,LA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B10) C.W.Beach Company-NY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B11) MACINNIS; MA,CT,VT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B12) S.States Mktg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B13) Adv.Tech.Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B14) RepTek</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B15) Sales Eng. Concepts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B17) Trilogy Tech Inc.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B18) Omega Sales;DE,NJ,PA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B19) ATM Mid-Atlantic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B21) Alliance Group One</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B22) KMA Consulting; BR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B50) NA House Accounts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B88) Anchor Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B54) Blue Electric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B59) Fast Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B61) Martinsson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B62) ATYS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B63) Pacer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B64) Holst &amp; Fleischer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B66) Other Europe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B67) Dalma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B71) Toptronic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B75) PerkinElmer Opto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B85) Lober</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B93) Kevin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B20) AS PKI Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B51) B &amp; B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B52) Shinkoh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B57) OTA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B76) PKI Singapore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B77) Other Asia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B79) Laser Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B83) Seraphim (Hong Kong)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B84) Seraphim (Taiwan)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B86) K &amp; K Far East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B87) Dae Huang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(B90) Neopt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(C00) PKI China / X.C.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(AP) Avalanche Photodiode</controllingFieldValue>
+            <valueName>(APD) Avalanche Photodiode</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(CP) CPM</controllingFieldValue>
+            <valueName>(751) CPM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(OR) ORC</controllingFieldValue>
+            <valueName>(310) ORC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(OR) ORC</controllingFieldValue>
+            <valueName>(311) ORC Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(AI) Advanced Imaging Sys</controllingFieldValue>
+            <valueName>(AI2) AI Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(AS) Avionics &amp; Space</controllingFieldValue>
+            <valueName>(AS0) AS Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(AS) Avionics &amp; Space</controllingFieldValue>
+            <valueName>(AS1) AS Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(BS) Biomedical Systems</controllingFieldValue>
+            <valueName>(BS0) BS Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(BS) Biomedical Systems</controllingFieldValue>
+            <valueName>(BS1) BS Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(BS) Biomedical Systems</controllingFieldValue>
+            <valueName>(BS2) BS Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(CO) Catalog &amp; Other</controllingFieldValue>
+            <valueName>(CO2) CO Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(OI) Optical Inspection</controllingFieldValue>
+            <valueName>(OI0) OI Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(OI) Optical Inspection</controllingFieldValue>
+            <valueName>(OI1) OI Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <controllingFieldValue>(OI) Optical Inspection</controllingFieldValue>
+            <valueName>(OI2) OI Trading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(100) NA PKI Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(110) EU PKI Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(120) AS PKI Direct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(200) NA West Griot Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(207) CASE-NORTHSTAR MN,SD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(210) C.W.Beach Company-NY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(212) S.States Mktg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(214) RepTek</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(219) ALLIANCE GROUP ONE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(266) Other Europe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(309) Pacer Components Plc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(312) HTDS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(314) Tech Niko Ltd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(400) PKI China / X.C.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(402) NOK PKI (NEopt)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(404) B&amp;B Corp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(503) Warsash Pty Ltd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(504) ADM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>(1000) Americas</controllingFieldValue>
+            <controllingFieldValue>(2000) Europe</controllingFieldValue>
+            <controllingFieldValue>(3000) Asia</controllingFieldValue>
+            <valueName>(202) Qubitekk</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

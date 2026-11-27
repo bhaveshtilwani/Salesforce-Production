@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Check bypass flag is enabled to prevent flow processing.</description>
+        <name>Is_Bypass_Enabled</name>
+        <label>Is Bypass Enabled?</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Update_ERP_partner_function_number</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Bypass_Is_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Bypass Is True</label>
+        </rules>
+    </decisions>
+    <description>When the field &apos;Partner__c&apos; is changed, update &apos;ERP Partner Function Number&apos; with the related &apos;ERP&apos; Id, but only if &apos;Partner Function Type&apos; is not ‘Contact Person (CP)’ or ‘Enduser for F.Trade (EN)’.</description>
+    <environments>Default</environments>
+    <interviewLabel>KUNN2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>KUNN2</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Retrieve the bypass record from custom metadata to determine if the bypass is enabled.</description>
+        <name>Get_Bypass_Record</name>
+        <label>Get Bypass Record</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Bypass_Enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Partner_Fuction_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update ERP partner function number</description>
+        <name>Update_ERP_partner_function_number</name>
+        <label>Update ERP partner function number</label>
+        <locationX>308</locationX>
+        <locationY>503</locationY>
+        <inputAssignments>
+            <field>ERP_Partner_Function_Number_KUNN2__c</field>
+            <value>
+                <elementReference>$Record.Partner__r.Client_Side_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_Record</targetReference>
+        </connector>
+        <filterFormula>AND( ISCHANGED( {!$Record.Partner__c} ), NOT(OR(  {!$Record.Partner_Function_Type__r.Name} = &quot;Contact Person (CP)&quot;,  {!$Record.Partner_Function_Type__r.Name} = &quot;Enduser for F.Trade (EN)&quot;)))</filterFormula>
+        <object>Partner_Function__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CS BU</fullName>
+        <default>false</default>
+        <label>CS BU</label>
+    </customValue>
+    <customValue>
+        <fullName>Disinfection</fullName>
+        <default>false</default>
+        <label>Disinfection</label>
+    </customValue>
+    <customValue>
+        <fullName>General</fullName>
+        <default>false</default>
+        <label>General</label>
+    </customValue>
+    <customValue>
+        <fullName>Holistic Lithography BU</fullName>
+        <default>false</default>
+        <label>Holistic Lithography BU</label>
+    </customValue>
+    <customValue>
+        <fullName>Imaging &amp; Laser Systems BU</fullName>
+        <default>false</default>
+        <label>Imaging &amp; Laser Systems BU</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Curing</fullName>
+        <default>false</default>
+        <label>Industrial Curing</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrated Optronics &amp; Avionics</fullName>
+        <default>false</default>
+        <label>Integrated Optronics &amp; Avionics</label>
+    </customValue>
+    <customValue>
+        <fullName>IR Sensing</fullName>
+        <default>false</default>
+        <label>IR Sensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma Light Sources BU</fullName>
+        <default>false</default>
+        <label>Plasma Light Sources BU</label>
+    </customValue>
+    <customValue>
+        <fullName>Solutions BU</fullName>
+        <default>false</default>
+        <label>Solutions BU</label>
+    </customValue>
+    <customValue>
+        <fullName>Metrology &amp; Inspection BU</fullName>
+        <default>false</default>
+        <label>Metrology &amp; Inspection BU</label>
+    </customValue>
+    <customValue>
+        <fullName>Photon Detection</fullName>
+        <default>false</default>
+        <label>Photon Detection</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Manufacturing</fullName>
+        <default>false</default>
+        <label>Precision Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor Equipment</fullName>
+        <default>false</default>
+        <label>Semiconductor Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Thermal Processing</fullName>
+        <default>false</default>
+        <label>Thermal Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Frequency Switches &amp; Defense Sensors</fullName>
+        <default>false</default>
+        <label>Frequency Switches &amp; Defense Sensors</label>
+    </customValue>
+    <customValue>
+        <fullName>Photodiodes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Photodiodes</label>
+    </customValue>
+    <customValue>
+        <fullName>High-Performance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High-Performance</label>
+    </customValue>
+    <customValue>
+        <fullName>Pyroelectric Sensors</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pyroelectric Sensors</label>
+    </customValue>
+    <customValue>
+        <fullName>Supplier</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Supplier</label>
+    </customValue>
+    <customValue>
+        <fullName>High Performance</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Performance</label>
+    </customValue>
+    <customValue>
+        <fullName>Other: Excelitas R&amp;D</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other: Excelitas R&amp;D</label>
+    </customValue>
+    <customValue>
+        <fullName>optical inspection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>optical inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Pyroelectric Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pyroelectric Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Optics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Commercial Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>CPM and IT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CPM and IT</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Systems &amp; Optics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Systems &amp; Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics &amp; Lasers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics &amp; Lasers</label>
+    </customValue>
+    <customValue>
+        <fullName>DISTY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DISTY</label>
+    </customValue>
+    <customValue>
+        <fullName>--None--</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>--None--</label>
+    </customValue>
+    <customValue>
+        <fullName>photon detecgion</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>photon detecgion</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Line CS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other Line CS</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics and Laser Technology}</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics and Laser Technology}</label>
+    </customValue>
+    <customValue>
+        <fullName>}Photon Detection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>}Photon Detection</label>
+    </customValue>
+    <customValue>
+        <fullName>}</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>}</label>
+    </customValue>
+    <customValue>
+        <fullName>}SSL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>}SSL</label>
+    </customValue>
+    <customValue>
+        <fullName>}IR Sensing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>}IR Sensing</label>
+    </customValue>
+    <customValue>
+        <fullName>}Photonic Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>}Photonic Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>}HIDL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>}HIDL</label>
+    </customValue>
+    <customValue>
+        <fullName>Land Equipment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Land Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Optronics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Optronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Electronic Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Electronic Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Laser Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Laser Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Lasers Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Lasers Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics and Laser TechnologyAdvanced Lasers Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics and Laser TechnologyAdvanced Lasers Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Lasers System</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Lasers System</label>
+    </customValue>
+    <customValue>
+        <fullName>High Intensity Discharge Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Intensity Discharge Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Imaging Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Imaging Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics and Laser TechnologyAdvanced Imaging Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics and Laser TechnologyAdvanced Imaging Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics and Laser Technology,Advanced Imaging Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics and Laser Technology,Advanced Imaging Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Imaging Systems,Advanced Imaging Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Imaging Systems,Advanced Imaging Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Illumination</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Illumination</label>
+    </customValue>
+    <customValue>
+        <fullName>Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Illumination,Detection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Illumination,Detection</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Advanced Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Semicon-Inspection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semicon-Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomed-Laser</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biomed-Laser</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Plasma Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Cermax</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Cermax</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Cermax / solar simulation; pe 175 pe300 potential.</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Cermax / solar simulation; pe 175 pe300 potential.</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Flash</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Flash</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Cermax</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical Cermax</label>
+    </customValue>
+    <customValue>
+        <fullName>Photonics Flash</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Photonics Flash</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid State Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Solid State Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>TBD</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TBD</label>
+    </customValue>
+    <customValue>
+        <fullName>Solid State Technologies</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Solid State Technologies</label>
+    </customValue>
+    <customValue>
+        <fullName>UV and Microscopy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UV and Microscopy</label>
+    </customValue>
+    <customValue>
+        <fullName>Mil/Aero/Gov</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mil/Aero/Gov</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomedical Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biomedical Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>SSL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>SSL</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics and Laser Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics and Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Photonic Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Photonic Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>HIDL</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>HIDL</label>
+    </customValue>
+    <customValue>
+        <fullName>High Voltage Power</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>High Voltage Power</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Systems &amp; Optics,Laser Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Systems &amp; Optics,Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>UV and Microscopy,Solid State Technologies</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>UV and Microscopy,Solid State Technologies</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Line</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other Line</label>
+    </customValue>
+    <customValue>
+        <fullName>Customized Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Customized Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Defense &amp; Aerospace Other</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Defense &amp; Aerospace Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Energetic &amp; Power Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Energetic &amp; Power Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Sciences &amp; Medical Products</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Life Sciences &amp; Medical Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Sciences &amp; Medical Solutions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Life Sciences &amp; Medical Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Other BU</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Other BU</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical &amp; Industrial Optics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical &amp; Industrial Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical &amp; Industrial Optics Boulder</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical &amp; Industrial Optics Boulder</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor &amp; Laser Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semiconductor &amp; Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor &amp; Laser Technology Boulder</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semiconductor &amp; Laser Technology Boulder</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor &amp; Laser Technology Singapore</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semiconductor &amp; Laser Technology Singapore</label>
+    </customValue>
+    <customValue>
+        <fullName>Holistic Lithography</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Holistic Lithography</label>
+    </customValue>
+    <customValue>
+        <fullName>Metrology &amp; Inspection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Metrology &amp; Inspection</label>
+    </customValue>
+    <customValue>
+        <fullName>Imaging &amp; Laser Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Imaging &amp; Laser Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Plasma Light Sources</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Plasma Light Sources</label>
+    </customValue>
+    <customValue>
+        <fullName>Solutions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Solutions</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Semiconductor</label>
+    </customValue>
+    <customValue>
+        <fullName>Electroform</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Electroform</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Lighting</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Commercial Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Short Arc</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Short Arc</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomedical</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Biomedical</label>
+    </customValue>
+    <customValue>
+        <fullName>Lithography System</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lithography System</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Imaging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medical Imaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Comp.</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Industrial Comp.</label>
+    </customValue>
+    <customValue>
+        <fullName>Detection</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Detection</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecom</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Telecom</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Consumer Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics &amp; Laser Technology</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Optics &amp; Laser Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Photonics Systems</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Photonics Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Thermopile</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Thermopile</label>
+    </customValue>
+    <masterLabel>Business Unit</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

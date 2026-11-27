@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignNumb_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>Campaign.Campaing_Number__c  &amp;  IF( Campaign.IsActive, &apos;True&apos;, &apos;False&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CampaignNumb&amp;Status</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

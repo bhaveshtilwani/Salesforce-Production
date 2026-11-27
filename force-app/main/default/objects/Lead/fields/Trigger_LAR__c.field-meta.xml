@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trigger_LAR__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is used for triggering LAR&apos;s after lead is updated when the fields from pardot are recieved after 2 minutes</description>
+    <label>Trigger LAR</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

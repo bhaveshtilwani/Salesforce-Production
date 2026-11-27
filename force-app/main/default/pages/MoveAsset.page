@@ -1,0 +1,44 @@
+<apex:page standardController="Asset" extensions="MoveAsset">
+    <apex:sectionHeader title="Move Asset" subtitle="{!Asset.Name}"/>
+
+    <apex:form id="movePanel">
+        <apex:pageMessages />
+    
+        <apex:pageBlock mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}" reRender="movePanel"/>
+                <apex:commandButton value="Cancel" action="{!cancel}" immediate="true"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="newAccount" value="New Account"/>
+                    <apex:inputField id="newAccount" value="{!asset.AccountId}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="previousAccount" value="Previous Account"/>
+                    <apex:outputField id="previousAccount" value="{!assetHistory.Previous_Account__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="newContact" value="New Contact"/>
+                    <apex:inputField id="newContact" value="{!asset.ContactId}" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="previousContact" value="Previous Contact"/>
+                    <apex:outputField id="previousContact" value="{!assetHistory.Previous_Contact__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!Asset.Status}"/>
+                <apex:inputField value="{!Asset.Loan_Opportunity__c}"/>
+                <apex:inputField value="{!Asset.Expected_Return_Date__c}"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel for="previousLoanCase" value="Previous Loan Case"/>
+                    <apex:outputField id="previousLoanCase" value="{!assetHistory.Loan_Case__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!assetHistory.Move_Date__c}" required="true"/>
+                <apex:inputField value="{!Asset.Loan_Case__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!assetHistory.Move_Notes__c}" style="width:80%;"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

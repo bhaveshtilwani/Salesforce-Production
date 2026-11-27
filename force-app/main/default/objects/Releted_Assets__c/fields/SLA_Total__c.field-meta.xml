@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLA_Total__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(SLA_Start_1__c),0,BLANKVALUE(BLANKVALUE(SLA_Stop_1__c,TODAY())-SLA_Start_1__c,-1)+1)
+-
+IF(ISBLANK(SLA_Start_1__c),0,1) /* Subtract 1 day once item received to align timer with QAD (Received day counts as day 0)*/
++
+IF(ISBLANK(SLA_Start_2__c),0,BLANKVALUE(BLANKVALUE(SLA_Stop_2__c,TODAY())-SLA_Start_2__c,-1)+1)
+-
+IF(ISBLANK(SLA_Start_2__c),0,1) /* Subtract 1 day once PO approved to align timer with QAD (PO approved day doesnt count)*/
+-
+IF(SLA_Stop_1__c=SLA_Start_2__c,1,0)
+-
+IF(ISBLANK(SLA_Paused__c),0,TODAY()-SLA_Paused__c)
+-
+SLA_Days_Paused__c
+-
+SLA_Weekends_Holidays__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SLA Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Subtype --></label>
+    <name>Case_Subtype__c</name>
+    <picklistValues>
+        <masterLabel>External Repair</masterLabel>
+        <translation><!-- External Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Visit</masterLabel>
+        <translation><!-- Field Visit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair in House</masterLabel>
+        <translation><!-- Repair in House --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Support</masterLabel>
+        <translation><!-- Technical Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>W/O Return Shipment</masterLabel>
+        <translation><!-- W/O Return Shipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With Return Shipment</masterLabel>
+        <translation><!-- With Return Shipment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

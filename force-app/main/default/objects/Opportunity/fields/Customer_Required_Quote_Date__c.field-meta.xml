@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Required_Quote_Date__c</fullName>
+    <description>Requirement from Customer to get Quote on or before this date.</description>
+    <inlineHelpText>Requirement from Customer to get Quote on or before this date.  
+This field is provided for user to keep track of customer requirement regarding expected Quote Date.</inlineHelpText>
+    <label>Customer Required Quote Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

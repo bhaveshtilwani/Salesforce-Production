@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Vertrag, der von dieser VerlÃ¤ngerungs-Opportunity verlÃ¤ngert wird. Sind dieser Opportunity mehrere VertrÃ¤ge zugeordnet, referenziert dieses Feld den Mastervertrag.&quot;</help>
+    <label>VerlÃ¤ngerter Vertrag</label>
+    <name>SBQQ__RenewedContract__c</name>
+    <relationshipLabel>VerlÃ¤ngerungs-Opportunities</relationshipLabel>
+</CustomFieldTranslation>

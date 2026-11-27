@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SR_Product_Line_Description__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( TEXT( Line_of_Business__c ) ,&quot;X-Cite&quot;, &quot;SR Xcite&quot;, &quot;OMNI&quot;, &quot;SR OMNI&quot;,&quot;Cermax&quot;, &quot;SR-CerMax&quot;, &quot;SSL&quot;, &quot;SR-SSL&quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SR Product Line Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

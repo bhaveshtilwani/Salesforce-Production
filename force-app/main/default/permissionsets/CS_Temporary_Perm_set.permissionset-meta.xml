@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To temporarily resolve the Permission wipe out from all objects by SFDC.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CS Temporary Perm set</label>
+    <license>ServiceUserPsl</license>
+</PermissionSet>

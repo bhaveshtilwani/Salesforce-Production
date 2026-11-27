@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_Exists</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( Type_Exist_for_Customer__c , &quot;Yes&quot;)</errorConditionFormula>
+    <errorMessage>There is an existing Special Instruction of this Text Type.  Please edit the existing.</errorMessage>
+</ValidationRule>

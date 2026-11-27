@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Angebot</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Angebote</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Angebot</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Angebote</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Angebots</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Angebote</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Angebot</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Angeboten</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Calculating Fields --></label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Angebotsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Please enter the address fields on Business name account --></errorMessage>
+        <name>Address_required_while_creating_quote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Primary Contact is a required field and it must be a Contact that is related to the Account on the Quote. Please update the value of this field. --></errorMessage>
+        <name>Contact_must_be_Related_to_Quote_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Legal Company Name is mandatory on business name account of this quote. --></errorMessage>
+        <name>Legal_company_name_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This quote has been deactivated and can no longer be edited. Please contact your System Administrator if changes are required. --></errorMessage>
+        <name>Lock_Quote_When_Deactivated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account and Opportunity cannot be changed once the Quote is Approved. Please contact your System Administrator if a change is required. --></errorMessage>
+        <name>Prevent_Account_Opportunity_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Approved Quotes cannot be recalled or Re-submitted again for Approval. --></errorMessage>
+        <name>Prevent_Recall_After_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quotes that are approved cannot be edited --></errorMessage>
+        <name>QuotePreventupdatewhensubmitted_nirvana</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quotes that are approved or pending approval cannot be edited unless the approval request is recalled. --></errorMessage>
+        <name>Quote_Prevent_update_when_submitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account and Opportunity are required and must be related. --></errorMessage>
+        <name>Required_Opp_and_Acc_in_Relation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The End Date must come after the Start Date. --></errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Laufzeitende erstes Segment muss zwischen Start- und Enddatum des Angebots liegen</errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The subscription term must be a positive number. --></errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_Create_CRF --></label>
+        <name>Conga_Composer_Create_CRF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Create_Quote --></label>
+        <name>Conga_Composer_Create_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_REO_Create_CRF --></label>
+        <name>Conga_Composer_REO_Create_CRF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Preview_Approval --></label>
+        <name>Preview_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recall_Approval --></label>
+        <name>Recall_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CalculateQuote --></label>
+        <name>SBQQ__CalculateQuote</name>
+    </webLinks>
+    <webLinks>
+        <label>Mit ZugehÃ¶rigen duplizieren</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>Mit ZugehÃ¶rigen duplizieren</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrderFromQuote --></label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportLines --></label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>Angebotsklauseln Ã¤ndern</label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshMultiplePrices --></label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshPrices --></label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Credit_Application --></label>
+        <name>Send_Credit_Application</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_for_Approval --></label>
+        <name>Submit_for_Approval</name>
+    </webLinks>
+</CustomObjectTranslation>

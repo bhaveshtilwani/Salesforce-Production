@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Dunning the customer every 30 days. Fixed value &quot;1002&quot; --></help>
+    <label><!-- Dunning Procedure --></label>
+    <name>KNB5_MAHNA__c</name>
+    <picklistValues>
+        <masterLabel>1002</masterLabel>
+        <translation><!-- 1002 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

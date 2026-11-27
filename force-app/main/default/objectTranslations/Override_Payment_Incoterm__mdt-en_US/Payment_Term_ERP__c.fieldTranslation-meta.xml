@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payment Term ERP --></label>
+    <name>Payment_Term_ERP__c</name>
+    <picklistValues>
+        <masterLabel>AD01</masterLabel>
+        <translation><!-- AD01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APPD</masterLabel>
+        <translation><!-- APPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N001</masterLabel>
+        <translation><!-- N001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NT00</masterLabel>
+        <translation><!-- NT00 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

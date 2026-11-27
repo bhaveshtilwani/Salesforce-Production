@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Product_Delete</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK( ERP_Sales_Order_Number__c )),
+ Order_Item_Delete__c = TRUE)</errorConditionFormula>
+    <errorMessage>Order Product Delete Not Allowed.</errorMessage>
+</ValidationRule>

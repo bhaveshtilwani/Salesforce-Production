@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Pwin__c</fullName>
+    <formula>CASE(ETC_customer_relationship__c ,
+&quot;Excellent / Strong Intimacy / Active&quot;, 0.25,
+&quot;Previous Customer / Minor to Medium Intimacy&quot;, 0.15,
+&quot;New Customer / No Intimacy&quot;, 0.05,
+3) +
+
+CASE( ETC_position__c ,
+&quot;Sole Source / Incumbent&quot;, 0.25,
+&quot;Well within our market / Go-To for this capability&quot;, 0.15,
+&quot;ETC actively trying to enter this market / capability&quot;, 0.05,
+3) +
+
+CASE( ETC_technical_solution__c ,
+&quot;Technology Leader&quot;, 0.2,
+&quot;Shaped Requirements&quot;, 0.15,
+&quot;Equal to Competition&quot;, 0.1,
+&quot;Worse than Competition&quot;, 0.05,
+&quot;No Solution Exists&quot;, 0,
+5) +
+
+CASE( ETC_price__c ,
+&quot;Better Than (Lower)&quot;, 0.15,
+&quot;Equal To&quot;, 0.1,
+&quot;Worse than (Higher)&quot;, 0,
+3) +
+
+
+CASE( ETC_schedule__c ,
+&quot;Better Than (Shorter)&quot;, 0.15,
+&quot;Equal To&quot;, 0.1,
+&quot;Worse than (Longer)&quot;, 0,
+3)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Pwin</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

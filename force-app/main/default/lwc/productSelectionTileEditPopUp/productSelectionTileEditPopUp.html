@@ -1,0 +1,55 @@
+<template>
+    <template lwc:if={showModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+            <template if:true={showSpinner}>
+                <div class="spinnerContainer">
+                    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </div>
+            </template>
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-modal__title">Edit Selected Product</h2>
+                </header>
+                <div class="slds-modal__content">
+                    <div class="slds-var-p-bottom_small slds-var-p-horizontal_xx-large">
+                        <template for:each={productSelectionEdits} for:item="productSelectionEdit">
+                            <c-product-selection-tile-edit-pop-up-unit
+                                key={productSelectionEdit.UIid}
+                                product={productSelectionEdit}
+                                oneditdelete={handleOnEditDelete}
+                                edit-fields={editFields}
+                                custom-actions={customActions}
+                            ></c-product-selection-tile-edit-pop-up-unit>
+                        </template>
+                    </div>
+                </div>
+                <footer class="slds-modal__footer">
+                    <div class="slds-align_absolute-center">
+                        <lightning-button
+                            variant="destructive-text"
+                            label="Cancel"
+                            title="Cancel"
+                            onclick={handleCancel}
+                        ></lightning-button>
+                        <lightning-button
+                            variant="base"
+                            label="Add Line"
+                            title="Add Line"
+                            onclick={handleSplitOrder}
+                            class="slds-var-m-horizontal_small"
+                        ></lightning-button>
+                        <lightning-button
+                            variant="base"
+                            label="Copy and Add"
+                            title="Copy and Add"
+                            onclick={handleCopyOrder}
+                            class="slds-var-m-horizontal_small"
+                        ></lightning-button>
+                        <lightning-button variant="brand" label="Save" title="Save" onclick={handleSave}></lightning-button>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

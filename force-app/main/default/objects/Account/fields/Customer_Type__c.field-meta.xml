@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Type__c</fullName>
+    <description>This is for Wiesbaden reporting only</description>
+    <inlineHelpText>For Wiesbaden only</inlineHelpText>
+    <label>Customer Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ERP_Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Enduser</fullName>
+                <default>false</default>
+                <label>Enduser</label>
+            </value>
+            <value>
+                <fullName>Institut</fullName>
+                <default>false</default>
+                <label>Institut</label>
+            </value>
+            <value>
+                <fullName>OEM customer</fullName>
+                <default>false</default>
+                <label>OEM customer</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Complimenter</fullName>
+                <default>false</default>
+                <label>Complimenter</label>
+            </value>
+            <value>
+                <fullName>Direct Customer</fullName>
+                <default>false</default>
+                <label>Direct Customer</label>
+            </value>
+            <value>
+                <fullName>Formulator</fullName>
+                <default>false</default>
+                <label>Formulator</label>
+            </value>
+            <value>
+                <fullName>House Account</fullName>
+                <default>false</default>
+                <label>House Account</label>
+            </value>
+            <value>
+                <fullName>Internal Account</fullName>
+                <default>false</default>
+                <label>Internal Account</label>
+            </value>
+            <value>
+                <fullName>Large Distributor</fullName>
+                <default>false</default>
+                <label>Large Distributor</label>
+            </value>
+            <value>
+                <fullName>OEM and Integrator</fullName>
+                <default>false</default>
+                <label>OEM and Integrator</label>
+            </value>
+            <value>
+                <fullName>Private Label</fullName>
+                <default>false</default>
+                <label>Private Label</label>
+            </value>
+            <value>
+                <fullName>Representative</fullName>
+                <default>false</default>
+                <label>Representative</label>
+            </value>
+            <value>
+                <fullName>Ship To Account</fullName>
+                <default>false</default>
+                <label>Ship To Account</label>
+            </value>
+            <value>
+                <fullName>Small Distributor</fullName>
+                <default>false</default>
+                <label>Small Distributor</label>
+            </value>
+            <value>
+                <fullName>Competitor compa</fullName>
+                <default>false</default>
+                <label>Competitor compa</label>
+            </value>
+            <value>
+                <fullName>Corporate Office</fullName>
+                <default>false</default>
+                <label>Corporate Office</label>
+            </value>
+            <value>
+                <fullName>Cust. Contract.</fullName>
+                <default>false</default>
+                <label>Cust. Contract.</label>
+            </value>
+            <value>
+                <fullName>Distributors</fullName>
+                <default>false</default>
+                <label>Distributors</label>
+            </value>
+            <value>
+                <fullName>Equipment Suppli</fullName>
+                <default>false</default>
+                <label>Equipment Suppli</label>
+            </value>
+            <value>
+                <fullName>Final customer</fullName>
+                <default>false</default>
+                <label>Final customer</label>
+            </value>
+            <value>
+                <fullName>Food Mfg</fullName>
+                <default>false</default>
+                <label>Food Mfg</label>
+            </value>
+            <value>
+                <fullName>Gym/Fitness</fullName>
+                <default>false</default>
+                <label>Gym/Fitness</label>
+            </value>
+            <value>
+                <fullName>Heraeus Group</fullName>
+                <default>false</default>
+                <label>Heraeus Group</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+                <label>Hotel</label>
+            </value>
+            <value>
+                <fullName>Ind Sales Rep/Ag</fullName>
+                <default>false</default>
+                <label>Ind Sales Rep/Ag</label>
+            </value>
+            <value>
+                <fullName>Kindergarten</fullName>
+                <default>false</default>
+                <label>Kindergarten</label>
+            </value>
+            <value>
+                <fullName>Medical practice</fullName>
+                <default>false</default>
+                <label>Medical practice</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pharmacy</fullName>
+                <default>false</default>
+                <label>Pharmacy</label>
+            </value>
+            <value>
+                <fullName>Pri/Second Educ</fullName>
+                <default>false</default>
+                <label>Pri/Second Educ</label>
+            </value>
+            <value>
+                <fullName>Public Office</fullName>
+                <default>false</default>
+                <label>Public Office</label>
+            </value>
+            <value>
+                <fullName>Trade</fullName>
+                <default>false</default>
+                <label>Trade</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Formulator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Competitor compa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Corporate Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Cust. Contract.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Distributors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Equipment Suppli</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Final customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Food Mfg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Gym/Fitness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Heraeus Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Hospital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Hotel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Ind Sales Rep/Ag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Kindergarten</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Medical practice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>OEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Pharmacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Pri/Second Educ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Public Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Noblelight</controllingFieldValue>
+            <valueName>Trade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Competitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Complimenter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Direct Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>House Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Internal Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Large Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>OEM and Integrator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Private Label</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Representative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Ship To Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toronto</controllingFieldValue>
+            <valueName>Small Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Enduser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Institut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>OEM customer</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

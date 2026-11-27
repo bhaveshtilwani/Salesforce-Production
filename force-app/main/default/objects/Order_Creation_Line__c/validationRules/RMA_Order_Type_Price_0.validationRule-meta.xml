@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RMA_Order_Type_Price_0</fullName>
+    <active>true</active>
+    <description>Set price to 0 for all RMA repair order lines (e.g., Line 10).</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Order_Creation__r.Site__c , &quot;Boulder&quot;),
+OR(
+ISPICKVAL( Order_Creation__r.Order_Type__c , &quot;Repair Orders (Charged)&quot;) ,
+ISPICKVAL( Order_Creation__r.Order_Type__c , &quot;Repair Orders (No charge)&quot;) ,
+ISPICKVAL( Order_Creation__r.Order_Type__c , &quot;Goods Return As Is (ZASI)&quot;) ,
+ISPICKVAL( Order_Creation__r.Order_Type__c , &quot;Ret. Replacement Scrap&quot;)) ,
+NOT(
+BEGINS( Product2__r.Name , &quot;12&quot;)
+ ),
+     UnitPrice__c  &lt;&gt; 0
+)</errorConditionFormula>
+    <errorMessage>This order type and product are not eligible for pricing.</errorMessage>
+</ValidationRule>

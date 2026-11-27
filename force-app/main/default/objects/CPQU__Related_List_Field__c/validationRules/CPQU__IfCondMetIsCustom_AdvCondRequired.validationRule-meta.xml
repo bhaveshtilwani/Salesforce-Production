@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQU__IfCondMetIsCustom_AdvCondRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(CPQU__Conditions_Met__c) = &quot;Custom&quot; &amp;&amp; ISBLANK(CPQU__Advanced_Condition__c)</errorConditionFormula>
+    <errorDisplayField>CPQU__Advanced_Condition__c</errorDisplayField>
+    <errorMessage>Advanced Condition is required if Conditions Met is &quot;Custom&quot;.</errorMessage>
+</ValidationRule>

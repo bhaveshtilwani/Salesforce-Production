@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Pricing Procedure --></label>
+    <name>Customer_Pricing_Procedure__c</name>
+    <picklistValues>
+        <masterLabel>AECMA customer (W)</masterLabel>
+        <translation><!-- AECMA customer (W) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRM customer (R)</masterLabel>
+        <translation><!-- DRM customer (R) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GG Cust Std (ISHTSW) (G)</masterLabel>
+        <translation><!-- GG Cust Std (ISHTSW) (G) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interco Pricing (5)</masterLabel>
+        <translation><!-- Interco Pricing (5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intercompany XR01 (Q)</masterLabel>
+        <translation><!-- Intercompany XR01 (Q) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Transfer (3)</masterLabel>
+        <translation><!-- Internal Transfer (3) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mand ExtCustPrice (6)</masterLabel>
+        <translation><!-- Mand ExtCustPrice (6) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mark-up Cost (2)</masterLabel>
+        <translation><!-- Mark-up Cost (2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NF Standard (N)</masterLabel>
+        <translation><!-- NF Standard (N) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NF Weight-Dependent (M)</masterLabel>
+        <translation><!-- NF Weight-Dependent (M) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shenzhen Standard (4)</masterLabel>
+        <translation><!-- Shenzhen Standard (4) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard (1)</masterLabel>
+        <translation><!-- Standard (1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard PCO (P)</masterLabel>
+        <translation><!-- Standard PCO (P) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAO, obsolete (T)</masterLabel>
+        <translation><!-- TAO, obsolete (T) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

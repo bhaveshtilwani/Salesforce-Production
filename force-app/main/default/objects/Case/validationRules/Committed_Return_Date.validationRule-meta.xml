@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Committed_Return_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+Contact_Confirmed_Receipt__c = TRUE,
+ISPICKVAL( Type , &quot;Tool Loaner&quot;),
+ISNULL(  Committed_Return_Date__c  ))</errorConditionFormula>
+    <errorDisplayField>Committed_Return_Date__c</errorDisplayField>
+    <errorMessage>Please indicate the date.</errorMessage>
+</ValidationRule>

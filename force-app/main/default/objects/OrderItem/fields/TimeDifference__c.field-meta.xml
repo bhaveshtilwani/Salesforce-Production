@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TimeDifference__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+YEAR(Customer_Requested_Date__c)&lt;YEAR(Requested_Ship_Date_Change__c), &quot;Next year&quot;,
+IF(
+CEILING( MONTH ( Customer_Requested_Date__c ) / 3 )=CEILING( MONTH ( Requested_Ship_Date_Change__c ) / 3 )-1,
+&quot;Next Quarter&quot;,
+
+IF(CEILING( MONTH ( Customer_Requested_Date__c ) / 3 )=CEILING( MONTH ( Requested_Ship_Date_Change__c ) / 3 )-2
+,&quot;In 2 Quarters&quot;,
+
+IF(
+CEILING( MONTH ( Customer_Requested_Date__c ) / 3 )=CEILING( MONTH ( Requested_Ship_Date_Change__c ) / 3 )-3,
+&quot;In 3 Quarters&quot;,
+
+IF(ADDMONTHS(Customer_Requested_Date__c,1)&lt;=Requested_Ship_Date_Change__c, &quot;Next Month&quot;, &quot;Current&quot;)))))</formula>
+    <label>TimeDifference</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Contacts_Olga_CIBF</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Lead_Source_Detail__c</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>CONTACT.LEAD_SOURCE</columns>
+    <columns>CONTACT.LAST_UPDATE</columns>
+    <columns>ContactStatus__c</columns>
+    <columns>Contact_StatusIMG__c</columns>
+    <columns>Contact_Owner_Lumen__c</columns>
+    <columns>CONTACT.FIRST_NAME</columns>
+    <columns>CONTACT.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Lead_Source_Detail__c</field>
+        <operation>equals</operation>
+        <value>CIBF 2026</value>
+    </filters>
+    <label>All Contacts - Olga - CIBF 2026</label>
+</ListView>

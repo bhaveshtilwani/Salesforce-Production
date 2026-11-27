@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>West-east Route</label>
+    <protected>false</protected>
+    <values>
+        <field>Route_ID__c</field>
+        <value xsi:type="xsd:string">000043,000043,000043,000043,000043,000043</value>
+    </values>
+    <values>
+        <field>Site__c</field>
+        <value xsi:type="xsd:string">Salem,Miamisburg,St Louis,QSG,ESG,Shenzhen</value>
+    </values>
+</CustomMetadata>

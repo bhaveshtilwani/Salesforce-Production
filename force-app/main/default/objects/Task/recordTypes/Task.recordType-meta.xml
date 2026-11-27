@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Task</fullName>
+    <active>true</active>
+    <label>Task</label>
+    <picklistValues>
+        <picklist>Duration__c</picklist>
+        <values>
+            <fullName>120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>01 - ASAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02 - High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03 - Medium</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>04 - Low</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>01- Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>02 - Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03 - Auto Responded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04 - Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05 - Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06 - Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07 - In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08 - Dispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09 - On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Queued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 - Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 - Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13 - Unassigned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - Unscheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 - Acknowledged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>01- Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02- Conference Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03 - Correspondence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04 - Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05 - Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06 - Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07 - Onsite Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08 - Prepare Presentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09 - To Do</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>10 - Appointment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

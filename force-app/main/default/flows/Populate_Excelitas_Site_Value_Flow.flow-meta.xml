@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
+        <name>If_Bypass_Enabled</name>
+        <label>If Bypass Enabled?</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_to_Billerica</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Enabled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>If Enabled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to St Louis only when the order’s site is St Louis.</description>
+        <name>Set_Excelitas_Site_St_Louis</name>
+        <label>Set  Excelitas Site St Louis</label>
+        <locationX>2543</locationX>
+        <locationY>1367</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_To_ESGOptics</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set  Excelitas Site To St Louis</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_To_St_Louis</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>St Louis</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_st_Louis_type</targetReference>
+            </connector>
+            <label>TRUE_Set  Excelitas Site To St Louis</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Billerica only when the order’s site is Billerica.</description>
+        <name>Set_Excelitas_Site_to_Billerica</name>
+        <label>Set Excelitas Site to Billerica</label>
+        <locationX>439</locationX>
+        <locationY>503</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_to_Montreal</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set Excelitas Site to Billerica</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_to_Billerica</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Billerica</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_billerica_site_type</targetReference>
+            </connector>
+            <label>TRUE_Set Excelitas Site to Billerica</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Boulder only when the order’s site is Boulder.</description>
+        <name>Set_Excelitas_Site_To_Boulder</name>
+        <label>Set  Excelitas Site To Boulder</label>
+        <locationX>3476</locationX>
+        <locationY>1799</locationY>
+        <defaultConnectorLabel>FALSE_Set  Excelitas Site To Boulder</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_To_Boulder</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Boulder</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Boulder_type</targetReference>
+            </connector>
+            <label>TRUE_Set  Excelitas Site To Boulder</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to QSG only when the order’s site is QSG.</description>
+        <name>Set_Excelitas_Site_To_ESG</name>
+        <label>Set  Excelitas Site To ESG L&amp;D</label>
+        <locationX>3047</locationX>
+        <locationY>1583</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_to_Shenzhen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set  Excelitas Site To QSG</defaultConnectorLabel>
+        <rules>
+            <name>Set_Excelitas_Site_To_ESG_L_D</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ESG L&amp;D</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_excelitas_ESG_L_D</targetReference>
+            </connector>
+            <label>Set  Excelitas Site To ESG L&amp;D</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to ESG only when the order’s site is ESG.</description>
+        <name>Set_Excelitas_Site_To_ESGOptics</name>
+        <label>Set  Excelitas Site To ESG Optics</label>
+        <locationX>2799</locationX>
+        <locationY>1475</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_To_ESG</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set  Excelitas Site To ESG</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_To_ESGOptics</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ESG Optics</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_ESG_Optics</targetReference>
+            </connector>
+            <label>TRUE_Set  Excelitas Site To ESG Optics</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Göttingen only when the order’s site is Göttingen.</description>
+        <name>Set_Excelitas_Site_to_G_ttingen</name>
+        <label>Set Excelitas Site to Göttingen</label>
+        <locationX>1758</locationX>
+        <locationY>1043</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_To_Salem</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set Excelitas Site to Göttingen</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_to_G_ttingen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Goettingen</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Goettingen_type</targetReference>
+            </connector>
+            <label>TRUE_Set Excelitas Site to Göttingen</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Hamble only when the order’s site is Hamble.</description>
+        <name>Set_Excelitas_Site_to_Hamble</name>
+        <label>Set Excelitas Site to Hamble</label>
+        <locationX>1231</locationX>
+        <locationY>827</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_To_Munich</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set Excelitas Site to Hamble</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_to_Hamble</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hamble</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Hamble_type</targetReference>
+            </connector>
+            <label>TRUE_Set Excelitas Site to Hamble</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Miamisburg only when the order’s site is Miamisburg.</description>
+        <name>Set_Excelitas_Site_To_Miamisburg</name>
+        <label>Set  Excelitas Site To Miamisburg</label>
+        <locationX>2283</locationX>
+        <locationY>1259</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_St_Louis</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set  Excelitas Site To Miamisburg</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_To_Miamisburg</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Miamisburg</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Miamisburg_type</targetReference>
+            </connector>
+            <label>TRUE_Set  Excelitas Site To Miamisburg</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Montreal only when the order’s site is Montreal.</description>
+        <name>Set_Excelitas_Site_to_Montreal</name>
+        <label>Set Excelitas Site to Montreal</label>
+        <locationX>703</locationX>
+        <locationY>611</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_to_Wiesbaden</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set Excelitas Site to Montreal</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_to_Montreal</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Montreal</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Montreal</targetReference>
+            </connector>
+            <label>TRUE_Set Excelitas Site to Montreal</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Munich only when the order’s site is Munich.</description>
+        <name>Set_Excelitas_Site_To_Munich</name>
+        <label>Set  Excelitas Site To Munich</label>
+        <locationX>1495</locationX>
+        <locationY>935</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_to_G_ttingen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set  Excelitas Site To Munich</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_To_Munich</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Munich</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Munich_type</targetReference>
+            </connector>
+            <label>TRUE_Set  Excelitas Site To Munich</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Salem only when the order’s site is Salem.</description>
+        <name>Set_Excelitas_Site_To_Salem</name>
+        <label>Set  Excelitas Site To Salem</label>
+        <locationX>2021</locationX>
+        <locationY>1151</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_To_Miamisburg</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set  Excelitas Site To Salem</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_To_Salem</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Salem</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Salem_type</targetReference>
+            </connector>
+            <label>TRUE_Set  Excelitas Site To Salem</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Shenzhen only when the order’s site is Shenzhen.</description>
+        <name>Set_Excelitas_Site_to_Shenzhen</name>
+        <label>Set Excelitas Site to Shenzhen</label>
+        <locationX>3278</locationX>
+        <locationY>1691</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_To_Boulder</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set Excelitas Site to Shenzhen</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_to_Shenzhen</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Shenzhen</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_Shenzhen_type</targetReference>
+            </connector>
+            <label>TRUE_Set Excelitas Site to Shenzhen</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>This flow updates the Excelitas site to Wiesbaden only when the order’s site is Wiesbaden.</description>
+        <name>Set_Excelitas_Site_to_Wiesbaden</name>
+        <label>Set  Excelitas Site to Wiesbaden</label>
+        <locationX>967</locationX>
+        <locationY>719</locationY>
+        <defaultConnector>
+            <targetReference>Set_Excelitas_Site_to_Hamble</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>FALSE_Set  Excelitas Site to Wiesbaden</defaultConnectorLabel>
+        <rules>
+            <name>TRUE_Set_Excelitas_Site_to_Wiesbaden</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Wiesbaden</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Excelitas_wiesbaden_type</targetReference>
+            </connector>
+            <label>TRUE_Set  Excelitas Site to Wiesbaden</label>
+        </rules>
+    </decisions>
+    <description>Sets the Order’s &apos;Excelitas Site&apos; field based on the related &quot;ERP Site&quot;</description>
+    <environments>Default</environments>
+    <interviewLabel>Populate Excelitas Site Value {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Populate Excelitas Site Value</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This record determines whether bypassing standard validations or logic is permitted.</description>
+        <name>Get_Bypass_Record</name>
+        <label>Get Bypass Record</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_Bypass_Enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Order_Flow_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Billerica.</description>
+        <name>Get_Excelitas_billerica_site_type</name>
+        <label>Get Excelitas billerica site type</label>
+        <locationX>176</locationX>
+        <locationY>611</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_to_Billerica</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Billerica</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Boulder.</description>
+        <name>Get_Excelitas_Boulder_type</name>
+        <label>Get Excelitas Boulder type</label>
+        <locationX>3344</locationX>
+        <locationY>1907</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_to_Boulder</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Boulder</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is QSG .</description>
+        <name>Get_excelitas_ESG_L_D</name>
+        <label>Get excelitas ESG L&amp;D</label>
+        <locationX>2816</locationX>
+        <locationY>1691</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_To_ESG_L_D</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ESG L&amp;D</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is ESG .</description>
+        <name>Get_Excelitas_ESG_Optics</name>
+        <label>Get Excelitas ESG Optics</label>
+        <locationX>2552</locationX>
+        <locationY>1583</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_To_ESG_Optics</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ESG Optics</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Goettingen.</description>
+        <name>Get_Excelitas_Goettingen_type</name>
+        <label>Get Excelitas Goettingen type</label>
+        <locationX>1496</locationX>
+        <locationY>1151</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_to_G_ttingen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Goettingen</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Hamble  .</description>
+        <name>Get_Excelitas_Hamble_type</name>
+        <label>Get Excelitas Hamble type</label>
+        <locationX>968</locationX>
+        <locationY>935</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_to_Hamble</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Hamble</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Miamisburg .</description>
+        <name>Get_Excelitas_Miamisburg_type</name>
+        <label>Get Excelitas Miamisburg type</label>
+        <locationX>2024</locationX>
+        <locationY>1367</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_To_Miamisburg</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Miamisburg</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Montreal.</description>
+        <name>Get_Excelitas_Montreal</name>
+        <label>Get Excelitas Montreal</label>
+        <locationX>440</locationX>
+        <locationY>719</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_to_Montreal</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Montreal</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Munich  .</description>
+        <name>Get_Excelitas_Munich_type</name>
+        <label>Get Excelitas Munich type</label>
+        <locationX>1232</locationX>
+        <locationY>1043</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_To_Munich</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Munich</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Salem.</description>
+        <name>Get_Excelitas_Salem_type</name>
+        <label>Get Excelitas Salem type</label>
+        <locationX>1760</locationX>
+        <locationY>1259</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_To_Salem</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Salem</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is Shenzhen.</description>
+        <name>Get_Excelitas_Shenzhen_type</name>
+        <label>Get Excelitas Shenzhen type</label>
+        <locationX>3080</locationX>
+        <locationY>1799</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_to_Shenzhen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Shenzhen</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is st Louis</description>
+        <name>Get_Excelitas_st_Louis_type</name>
+        <label>Get Excelitas st Louis type</label>
+        <locationX>2288</locationX>
+        <locationY>1475</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_To_St_Louis</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>St Louis</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the Excelitas site type when the site name is wiesbaden .</description>
+        <name>Get_Excelitas_wiesbaden_type</name>
+        <label>Get Excelitas wiesbaden type</label>
+        <locationX>704</locationX>
+        <locationY>827</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Excelitas_Site_value_to_Wiesbaden</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Wiesbaden </stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Excelitas_Site__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the ESG site.</description>
+        <name>Set_Excelitas_Site_To_ESG_Optics</name>
+        <label>Set  Excelitas Site To ESG Optics</label>
+        <locationX>2552</locationX>
+        <locationY>1691</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_ESG_Optics.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the St Louis site.</description>
+        <name>Set_Excelitas_Site_To_St_Louis</name>
+        <label>Set  Excelitas Site To St Louis</label>
+        <locationX>2288</locationX>
+        <locationY>1583</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_st_Louis_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Billerica site.</description>
+        <name>Set_Excelitas_Site_value_to_Billerica</name>
+        <label>Set Excelitas Site value to Billerica</label>
+        <locationX>176</locationX>
+        <locationY>719</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_billerica_site_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Boulder site.</description>
+        <name>Set_Excelitas_Site_value_to_Boulder</name>
+        <label>Set Excelitas Site value to Boulder</label>
+        <locationX>3344</locationX>
+        <locationY>2015</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Boulder_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the QSG site.</description>
+        <name>Set_Excelitas_Site_value_To_ESG_L_D</name>
+        <label>Set  Excelitas Site value To ESG L&amp;D</label>
+        <locationX>2816</locationX>
+        <locationY>1799</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_excelitas_ESG_L_D.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Göttingen site.</description>
+        <name>Set_Excelitas_Site_value_to_G_ttingen</name>
+        <label>Set Excelitas Site value  to Göttingen</label>
+        <locationX>1496</locationX>
+        <locationY>1259</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Goettingen_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Hamble site.</description>
+        <name>Set_Excelitas_Site_value_to_Hamble</name>
+        <label>Set Excelitas Site value to Hamble</label>
+        <locationX>968</locationX>
+        <locationY>1043</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Hamble_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Miamisburg site.</description>
+        <name>Set_Excelitas_Site_value_To_Miamisburg</name>
+        <label>Set  Excelitas Site value To Miamisburg</label>
+        <locationX>2024</locationX>
+        <locationY>1475</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Miamisburg_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Montreal site.</description>
+        <name>Set_Excelitas_Site_value_to_Montreal</name>
+        <label>Set Excelitas Site value to Montreal</label>
+        <locationX>440</locationX>
+        <locationY>827</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Montreal.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Munich site.</description>
+        <name>Set_Excelitas_Site_value_To_Munich</name>
+        <label>Set  Excelitas Site value To Munich</label>
+        <locationX>1232</locationX>
+        <locationY>1151</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Munich_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Salem site.</description>
+        <name>Set_Excelitas_Site_value_To_Salem</name>
+        <label>Set  Excelitas Site value To Salem</label>
+        <locationX>1760</locationX>
+        <locationY>1367</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Salem_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Shenzhen site.</description>
+        <name>Set_Excelitas_Site_value_to_Shenzhen</name>
+        <label>Set Excelitas Site value to Shenzhen</label>
+        <locationX>3080</locationX>
+        <locationY>1907</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_Shenzhen_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Sets the Order’s Excelitas Site field to the Wiesbaden site.</description>
+        <name>Set_Excelitas_Site_value_to_Wiesbaden</name>
+        <label>Set  Excelitas Site value to Wiesbaden</label>
+        <locationX>704</locationX>
+        <locationY>935</locationY>
+        <inputAssignments>
+            <field>Excelitas_Site__c</field>
+            <value>
+                <elementReference>Get_Excelitas_wiesbaden_type.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_Record</targetReference>
+        </connector>
+        <object>Order</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

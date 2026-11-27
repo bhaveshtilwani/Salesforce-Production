@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- This is the Name given for the location the items will be shipped to. It may be different from both Sold to and Bill to addresses.
+This field will default to the Sold to name if left blank. -->
+    </help>
+    <label><!-- Ship to Name --></label>
+    <name>Ship_to_Name__c</name>
+    <relationshipLabel><!-- Orders (Ship to Name) --></relationshipLabel>
+</CustomFieldTranslation>

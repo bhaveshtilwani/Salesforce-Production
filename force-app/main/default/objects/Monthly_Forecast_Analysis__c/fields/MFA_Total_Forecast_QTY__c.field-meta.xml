@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MFA_Total_Forecast_QTY__c</fullName>
+    <externalId>false</externalId>
+    <formula>if ((AND(MFA_Actual_Sales_QTY__c  &lt;&gt; 0,MFA_Sales_To_Date__c  &lt;= 0)),(MFA_Additional_Demand_QTY__c + MFA_Backlog_To_Date_QTY__c ),(MFA_Additional_Demand_QTY__c + MFA_Backlog_To_Date_QTY__c +  MFA_Actual_Sales_QTY__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Forecast - QTY</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

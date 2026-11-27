@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_My_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Business Name</value>
+    </filters>
+    <label>My Accounts D&amp;A</label>
+    <sharedTo>
+        <role>Mgr_Sales_Operations_D_A</role>
+        <role>TEMP_D_A_ROLE</role>
+        <role>VP_DA_Land</role>
+    </sharedTo>
+</ListView>

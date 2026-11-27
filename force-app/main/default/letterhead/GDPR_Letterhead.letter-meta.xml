@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Letterhead xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <backgroundColor>#CCCCCC</backgroundColor>
+    <bodyColor>#FFFFFF</bodyColor>
+    <bottomLine>
+        <color>#009900</color>
+        <height>0</height>
+    </bottomLine>
+    <description>Letterhead created for GDPR email templates with rebranded graphics</description>
+    <footer>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>100</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <logo>New_Header_and_Fotter_for_gdpr_outbound/New_Footer.png</logo>
+        <verticalAlignment>Top</verticalAlignment>
+    </footer>
+    <header>
+        <backgroundColor>#99FF99</backgroundColor>
+        <height>0</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <logo>New_Header_and_Fotter_for_gdpr_outbound/New_header.png</logo>
+        <verticalAlignment>Top</verticalAlignment>
+    </header>
+    <middleLine>
+        <color>#33FF33</color>
+        <height>0</height>
+    </middleLine>
+    <name>GDPR Letterhead</name>
+    <topLine>
+        <color>#33CC00</color>
+        <height>0</height>
+    </topLine>
+</Letterhead>

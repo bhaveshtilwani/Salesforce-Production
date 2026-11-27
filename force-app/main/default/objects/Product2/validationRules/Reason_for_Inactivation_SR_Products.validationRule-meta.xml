@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Inactivation_SR_Products</fullName>
+    <active>true</active>
+    <description>Reason for Inactivation for SR Products</description>
+    <errorConditionFormula>IF( AND( RecordTypeId = &quot;012VA000000WIUrYAO&quot;,
+        ISCHANGED(IsActive),
+          IsActive = False,
+            ISBLANK(Reason_for_Inactivation__c)
+        ), 
+true, false)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Inactivation__c</errorDisplayField>
+    <errorMessage>Please provide a reason for Inactivation</errorMessage>
+</ValidationRule>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Order_Confirmation_All_Sites</fullName>
+    <availability>online</availability>
+    <description>Originally created by Conga Solution Manager. Date of last use of Update Button from Conga Solution record: https://excelitas.my.salesforce.com/a1OQp000000wKsnMAE
+14-Mar-2025 02:56:09 PM</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Order Confirmation All Sites</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_520}
+&amp;Id={!Order.Id}
+
+&amp;QueryId=[OrderProdQuery]0Q_048EAE552687,
+[OrderSpecialInstruct]0Q_050EAE476921,
+[ItemTxt02]0Q_058EAE601452,
+[OrderHdrCarrierTxt]0Q_051EAE308189,
+[CSInfo]0Q_053EAE393906,
+[CSInfo2]0Q_052EAE854127,
+[OrderHeaderTX02]0Q_057EAE807684,
+[OrdrHeaderCarriertxt]0Q_054EAE309867,
+[BillingAccntDetails]0Q_049EAE082711,
+[ExternalPickPackText]0Q_061EAE706274,
+[MontrealHeaderCarrie]0Q_051EAE308189,
+[CustomerSvsContactIn]0Q_052EAE854127,
+[CustSvsRepInfo]0Q_053EAE393906
+
+&amp;templateid={!Order.Order_Confirmation_Template_Selection__c}
+&amp;AC0=1
+&amp;AC1=Sent+Order+Confirmation
+&amp;LG3=1
+&amp;LG4=1
+&amp;SC1=Attachments
+&amp;DefaultPDF=1
+&amp;CongaEmailTemplateId=a1HQp000001wwz7MAA
+&amp;OFN=&amp;amp;amp;OFN=+Order+Confirmation+{!Order.ERP_Sales_Order_Number__c}
+&amp;EmailBCC={!User.Email}
+&amp;EmailToID={!Contact.Id}
+&amp;AttachmentParentID={!Order.Id}
+&amp;attachmentid={!Order.T_Cs_Template_Selection__c}
+&amp;DS7=2</url>
+    <width>900</width>
+</WebLink>

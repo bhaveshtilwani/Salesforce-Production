@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Terms Requested --></label>
+    <name>Terms_Requested__c</name>
+    <picklistValues>
+        <masterLabel>100% Payment on Delivery (0 Days Net)</masterLabel>
+        <translation><!-- 100% Payment on Delivery (0 Days Net) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>100% Payment with Order</masterLabel>
+        <translation><!-- 100% Payment with Order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>100% Prior to Shipment</masterLabel>
+        <translation><!-- 100% Prior to Shipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14 Days 1%, 45 Days Net</masterLabel>
+        <translation><!-- 14 Days 1%, 45 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14 Days 2%, 60 Days Net</masterLabel>
+        <translation><!-- 14 Days 2%, 60 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14 Days Net</masterLabel>
+        <translation><!-- 14 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Days 1%, 60 Days Net</masterLabel>
+        <translation><!-- 30 Days 1%, 60 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Days EOM</masterLabel>
+        <translation><!-- 30 Days EOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>30 Days Net</masterLabel>
+        <translation><!-- 30 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45 Days EOM</masterLabel>
+        <translation><!-- 45 Days EOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45 Days Net</masterLabel>
+        <translation><!-- 45 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>60 Days Net</masterLabel>
+        <translation><!-- 60 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>75 Days Net</masterLabel>
+        <translation><!-- 75 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>90 Days Net</masterLabel>
+        <translation><!-- 90 Days Net --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CFR (Cost and Freight)</masterLabel>
+        <translation><!-- CFR (Cost and Freight) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIF (Cost, Insurance and Freight)</masterLabel>
+        <translation><!-- CIF (Cost, Insurance and Freight) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIP (Carriage and Insurance Paid To)</masterLabel>
+        <translation><!-- CIP (Carriage and Insurance Paid To) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPT (Carriage Paid To)</masterLabel>
+        <translation><!-- CPT (Carriage Paid To) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Card Payment</masterLabel>
+        <translation><!-- Credit Card Payment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DAP (Delivered at Place)</masterLabel>
+        <translation><!-- DAP (Delivered at Place) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DDP (Delivered Duty Paid)</masterLabel>
+        <translation><!-- DDP (Delivered Duty Paid) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DPU (Delivered at Place Unloaded)</masterLabel>
+        <translation><!-- DPU (Delivered at Place Unloaded) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXW (Ex Works)</masterLabel>
+        <translation><!-- EXW (Ex Works) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAS (Free Alongside Ship)</masterLabel>
+        <translation><!-- FAS (Free Alongside Ship) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FCA (Free Carrier)</masterLabel>
+        <translation><!-- FCA (Free Carrier) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOB (Free on Board)</masterLabel>
+        <translation><!-- FOB (Free on Board) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Downpayment</masterLabel>
+        <translation><!-- Partial Downpayment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

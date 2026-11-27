@@ -1,0 +1,42 @@
+<template>
+     <lightning-quick-action-panel header="Serial Number Search">
+         <template if:true={isLoading}>
+             <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+         </template>
+         
+         <div class="slds-grid slds-wrap slds-grid_vertical-align-center">
+             <div class="slds-col"><lightning-input type="text" variant="standard" name="Serial Number" class="validate" data-id="serialNumber" onchange={handleInputChange} label="Serial Number" required></lightning-input></div>
+             <div class="slds-m-around_small slds-p-top_medium"><Strong>AND</Strong></div>
+             <div class="slds-col"><lightning-input type="text" variant="standard" name="Material Number" class="validate" data-id="materialNumber" onchange={handleInputChange} label="Material Number" required></lightning-input></div>
+             <div class="slds-col slds-size_1-of-1 slds-m-around_small slds-p-top_medium"><center><Strong>OR</Strong></center></div>
+             <div class="slds-col slds-size_1-of-1"><lightning-input type="text" variant="standard" data-id="salesOrderNumber" name="Sales Order Number" onchange={handleInputChange} label="Sales Order Number"></lightning-input></div>
+             <div class="slds-col slds-size_1-of-1 slds-m-around_small slds-p-top_medium">
+                 <lightning-button variant="success" label="Search Details" title="Search Details" onclick={handleSearch}></lightning-button>
+             </div>
+         </div>
+         <div style="height: 300px;" if:true={allSearchResult.length}>
+					<lightning-datatable key-field="SerialNo" data={allSearchResult} max-row-selection="1"
+						onrowselection={handleRowSelected} columns={columns}>
+					</lightning-datatable>
+				</div>
+                <div if:true={showErrorTable}>
+					<lightning-datatable key-field="SerialNo" data={errorData} hide-checkbox-column
+						 columns={errorColumns}>
+					</lightning-datatable>
+				</div>
+        <div slot="footer">
+            <lightning-button
+                variant="neutral"
+                label="Cancel"
+                onclick={closeQuickAction}
+            ></lightning-button>
+            <lightning-button
+            disabled={disableSaveButton}
+            onclick={handleSubmit}
+                variant="brand"
+                label="Save"
+                class="slds-m-left_x-small"
+            ></lightning-button>
+        </div>
+    </lightning-quick-action-panel>
+</template>

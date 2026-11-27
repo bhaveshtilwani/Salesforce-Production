@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montreal_Orders</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>ERP_Order_Status__c</columns>
+    <columns>ERP_Sales_Order_Number__c</columns>
+    <columns>Order_Type__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>SFDC_Integration_Status__c</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDER.PO_DATE</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>Reference_Order_Type__c</columns>
+    <columns>ORDERS.LAST_UPDATE</columns>
+    <columns>ORDERS.CREATED_DATE</columns>
+    <columns>PRICEBOOK2.NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Excelitas_Site__c</field>
+        <operation>equals</operation>
+        <value>Montreal</value>
+    </filters>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.SAP_NA_Montreal</value>
+    </filters>
+    <label>Montreal Orders</label>
+</ListView>

@@ -1,0 +1,561 @@
+<template>
+
+    <lightning-card>
+
+        <div class="slds-p-around_medium">
+
+            <!-- ENGLISH INTRO -->
+            <div>
+
+                <h1 class="slds-text-heading_large">
+                    Excelitas Noblelight
+                </h1>
+
+                <h2 class="slds-text-heading_medium slds-m-top_small">
+                    Customer Claim Management
+                </h2>
+
+                <hr class="slds-m-vertical_medium"/>
+
+                <p>
+                    Welcome to our Excelitas Noblelight customer complaint online form.
+                </p>
+
+                <p class="slds-m-top_small">
+                    Please enter information about your concern in the fields provided.
+                </p>
+
+                <p class="slds-m-top_small">
+                    <b>
+                        *All mandatory fields are marked in bold and marked with an *
+                    </b>
+                </p>
+
+
+                <p class="slds-m-top_small">
+                    Our Excelitas Noblelight complaints team will receive your request and process it immediately.
+                </p>
+
+            </div>
+
+            <hr class="slds-m-vertical_large"/>
+
+            <!-- GERMAN INTRO -->
+            <div>
+
+                <h1 class="slds-text-heading_large">
+                    Excelitas Noblelight
+                </h1>
+
+                <h2 class="slds-text-heading_medium slds-m-top_small">
+                    Kundenreklamationsmanagement
+                </h2>
+
+                <hr class="slds-m-vertical_medium"/>
+
+                <p>
+                    Willkommen zum Excelitas Noblelight Kundenreklamations Online-Formular.
+                </p>
+
+                <p class="slds-m-top_small">
+                    Bitte geben Sie in den zur Verfügung gestellten Feldern Informationen zu Ihrem Anliegen ein.
+                </p>
+
+                <p class="slds-m-top_small">
+                    <b>
+                        Alle Pflichtfelder sind fett markiert und mit einem * gekennzeichnet.
+                    </b>
+                </p>
+
+                <p class="slds-m-top_small">
+                    Unser Excelitas Noblelight Reklamationsteam erhält Ihre Anfrage und wird diese umgehend bearbeiten.
+                </p>
+
+            </div>
+
+            <hr class="slds-m-vertical_large"/>
+
+            <!-- LANGUAGE -->
+            <lightning-combobox
+                required
+                label="Language / Sprache"
+                value={language}
+                options={languageOptions}
+                onchange={handleChange}
+                data-field="language">
+            </lightning-combobox>
+
+            <!-- FORM -->
+            <template if:true={languageSelected}>
+
+                <div>
+                    <h2 class="slds-text-heading_medium slds-m-top_large">
+                        <b>
+                        {currentLabels.generalInfoHeader}
+                        </b>
+                    </h2>
+                    <p>{currentLabels.generalInfoText}</p>
+                </div>
+                <br/>
+                <template if:true={showForm}>
+
+                    <!-- COMPANY -->
+                    <lightning-input
+                        required
+                        label={currentLabels.company}
+                        value={company}
+                        onchange={handleChange}
+                        data-field="company">
+                    </lightning-input>
+
+                    <!-- NAME -->
+                    <lightning-input
+                        required
+                        label={currentLabels.customerName}
+                        value={customerName}
+                        onchange={handleChange}
+                        data-field="customerName">
+                    </lightning-input>
+
+                    <!-- EMAIL -->
+                    <lightning-input
+                        required
+                        type="email"
+                        label={currentLabels.email}
+                        value={email}
+                        onchange={handleChange}
+                        data-field="email">
+                    </lightning-input>
+
+                    <!-- REGION -->
+                    <lightning-combobox
+                        required
+                        label={currentLabels.region}
+                        value={region}
+                        options={regionOptions}
+                        onchange={handleChange}
+                        data-field="region">
+                    </lightning-combobox>
+
+                    <!-- CLAIM REASON -->
+                    <lightning-combobox
+                        required
+                        label={currentLabels.claimReason}
+                        value={claimReason}
+                        options={claimReasonOptions}
+                        onchange={handleChange}
+                        data-field="claimReason">
+                    </lightning-combobox>
+
+
+                    <!-- REFERENCE -->
+                    <lightning-input
+                        label={currentLabels.reference}
+                        value={referenceNumber}
+                        onchange={handleChange}
+                        data-field="referenceNumber">
+                    </lightning-input>
+
+                    <!-- CONTACT PERSON -->
+                    <lightning-input
+                        label={currentLabels.contactPerson}
+                        value={contactPerson}
+                        onchange={handleChange}
+                        data-field="contactPerson">
+                    </lightning-input>
+
+                    <!-- DESCRIPTION -->
+                    <lightning-textarea
+                        required
+                        label={currentLabels.description}
+                        value={description}
+                        onchange={handleChange}
+                        data-field="description">
+                    </lightning-textarea>
+
+                    
+
+<!-- COMMERCIAL COMPLAINT -->
+<template if:true={showCommercialSection}>
+
+    <h2 class="slds-text-heading_medium slds-m-top_large">
+        <b>{currentLabels.commercialHeader}</b>
+        <br/>
+    </h2>
+
+    <lightning-input
+        required
+        label={shippingInvoiceLabelCommercial}
+        value={shippingInvoiceNumber}
+        onchange={handleChange}
+        data-field="shippingInvoiceNumber">
+    </lightning-input>
+
+    <!-- <lightning-input
+        type="file"
+        multiple
+        label="Attachments (max. 7 mb)"
+        onchange={handleFileChange}>
+    </lightning-input> -->
+
+</template>
+
+<!-- LOGISTIC ISSUE -->
+<template if:true={showLogisticSection}>
+
+    <h2 class="slds-text-heading_medium slds-m-top_large">
+        <b>
+        {currentLabels.logisticHeader}
+        </b>
+        <br/>
+
+    </h2>
+
+    <!-- <lightning-input
+        type="file"
+        multiple
+        label="Picture of the transport damage (max. 7 mb)"
+        onchange={handleFileChange}>
+    </lightning-input> -->
+
+    <lightning-input
+        required
+        label={shippingInvoiceLabelLogistic}
+        value={shippingInvoiceNumber}
+        onchange={handleChange}
+        data-field="shippingInvoiceNumber">
+    </lightning-input>
+
+    <lightning-radio-group
+        required
+        label={currentLabels.acceptanceReserve}
+        options={acceptanceOptions}
+        value={acceptanceReserve}
+        onchange={handleChange}
+        data-field="acceptanceReserve">
+    </lightning-radio-group>
+
+</template>
+
+<!-- TECHNICAL COMPLAINT -->
+<template if:true={showTechnicalSection}>
+
+    <h2 class="slds-text-heading_medium slds-m-top_large">
+        <b>
+        {currentLabels.technicalHeader}
+        </b>
+        <br/>
+    </h2>
+
+    <!-- PRODUCT -->
+    <lightning-combobox
+        required
+        label={currentLabels.product}
+        value={product}
+        options={productOptions}
+        onchange={handleChange}
+        data-field="product">
+    </lightning-combobox>
+
+    <!-- TECHNOLOGY -->
+<!-- LAMP TECHNOLOGY -->
+<template if:true={showLampFields}>
+
+    <lightning-combobox
+        required
+        label={currentLabels.technology}
+        value={technology}
+        options={technologyOptions}
+        onchange={handleChange}
+        data-field="technology">
+    </lightning-combobox>
+
+</template>
+
+<!-- SYSTEM TECHNOLOGY -->
+<template if:true={showSystemFields}>
+
+    <lightning-combobox
+        required
+        label={currentLabels.systemTechnology}
+        value={technology}
+        options={systemTechnologyOptions}
+        onchange={handleChange}
+        data-field="technology">
+    </lightning-combobox>
+
+</template>
+
+    <!-- SHIPPING -->
+    <lightning-input
+        label={shippingInvoiceLabelTechnical}
+        value={shippingInvoiceNumber}
+        onchange={handleChange}
+        data-field="shippingInvoiceNumber">
+    </lightning-input>
+
+    <!-- TECHNICAL IMAGE -->
+    <!-- <lightning-input
+        type="file"
+        multiple
+        label="Image of the technical fault (max. 7 mb)"
+        onchange={handleFileChange}>
+    </lightning-input> -->
+
+    <!-- PRODUCT SPECIFIC -->
+    <template if:true={showProductSpecificSection}>
+
+        <h2 class="slds-text-heading_medium slds-m-top_large">
+            <b>
+            {currentLabels.productSpecificHeader}
+            </b>
+            <br/>
+        </h2>
+
+        <!-- MATERIAL -->
+        <template if:false={showSoluvaFields}>
+    <lightning-input
+        required
+        label={currentLabels.materialNumber}
+        value={materialNumber}
+        onchange={handleChange}
+        data-field="materialNumber">
+    </lightning-input>
+</template>
+
+        <!-- QUANTITY -->
+        <lightning-input
+            required
+            label={currentLabels.quantity}
+            value={quantity}
+            onchange={handleChange}
+            data-field="quantity">
+        </lightning-input>
+        
+       <template if:true={showOperatingHours}>
+    <lightning-input
+        required
+        label={currentLabels.operatingHours}
+        value={operatingHours}
+        onchange={handleChange}
+        data-field="operatingHours">
+    </lightning-input>
+</template>
+
+
+        <!-- INFRARED -->
+        <template if:true={showInfraredFields}>
+
+            <lightning-input
+                required
+                label={currentLabels.dateCode}
+                value={dateCode}
+                onchange={handleChange}
+                data-field="dateCode">
+            </lightning-input>
+
+            <lightning-combobox
+                required
+                label={currentLabels.operatingPosition}
+                value={operatingPosition}
+                options={operatingPositionOptions}
+                onchange={handleChange}
+                data-field="operatingPosition">
+            </lightning-combobox>
+
+            <lightning-input
+                required
+                label={currentLabels.operatingHours}
+                value={operatingHours}
+                onchange={handleChange}
+                data-field="operatingHours">
+            </lightning-input>
+
+            <lightning-input
+                label={currentLabels.operatingMode}
+                value={operatingMode}
+                onchange={handleChange}
+                data-field="operatingMode">
+            </lightning-input>
+
+        </template>
+
+        <!-- UV -->
+        <template if:true={showUVFields}>
+
+
+            <lightning-combobox
+                required
+                label={currentLabels.operatingPosition}
+                value={operatingPosition}
+                options={operatingPositionOptions}
+                onchange={handleChange}
+                data-field="operatingPosition">
+            </lightning-combobox>
+
+            <lightning-input
+                required
+                label={currentLabels.serialNumber}
+                value={serialNumber}
+                onchange={handleChange}
+                data-field="serialNumber">
+            </lightning-input>
+
+            <lightning-input
+                required
+                label={currentLabels.operatingMode}
+                value={operatingMode}
+                onchange={handleChange}
+                data-field="operatingMode">
+            </lightning-input>
+
+            <lightning-input
+                required
+                label={currentLabels.operatingHours}
+                value={operatingHours}
+                onchange={handleChange}
+                data-field="operatingHours">
+            </lightning-input>
+
+            <lightning-input
+                label={currentLabels.powerSupply}
+                value={powerSupply}
+                onchange={handleChange}
+                data-field="powerSupply">
+            </lightning-input>
+
+            <lightning-textarea
+                label={currentLabels.ignitionDevices}
+                value={ignitionDevices}
+                onchange={handleChange}
+                data-field="ignitionDevices">
+            </lightning-textarea>
+
+        </template>
+
+        <!-- OPTIC -->
+        <template if:true={showOpticFields}>
+
+            <lightning-input
+                required
+                label={currentLabels.dateCode}
+                value={dateCode}
+                onchange={handleChange}
+                data-field="dateCode">
+            </lightning-input>
+
+            <lightning-input
+                required
+                label={currentLabels.serialNumber}
+                value={serialNumber}
+                onchange={handleChange}
+                data-field="serialNumber">
+            </lightning-input>
+
+            <lightning-input
+                required
+                label={currentLabels.operatingHours}
+                value={operatingHours}
+                onchange={handleChange}
+                data-field="operatingHours">
+            </lightning-input>
+
+        </template>
+
+
+        <!-- SOLUVA -->
+        <template if:true={showSoluvaFields}>
+
+            <lightning-input
+                required
+                label={currentLabels.serialNumber}
+                value={serialNumber}
+                onchange={handleChange}
+                data-field="serialNumber">
+            </lightning-input>
+
+        </template>
+
+    </template>
+
+</template>
+
+
+<template if:true={isLoading}>
+    <div class="loading-container">
+        <lightning-spinner
+            alternative-text="Creating Case..."
+            size="large">
+        </lightning-spinner>
+
+        <div class="loading-text">
+            Creating Case... Please wait
+        </div>
+    </div>
+</template>
+
+                    <!-- SUBMIT -->
+<lightning-button
+    label={currentLabels.submit}
+    variant="brand"
+    onclick={submitForm}
+    disabled={isLoading}>
+</lightning-button>
+
+                </template>
+
+            </template>
+
+            <!-- SUCCESS -->
+            <template if:true={successMessage}>
+                <div class="slds-text-color_success slds-m-top_medium">
+                    {successMessage}
+                </div>
+            </template>
+
+            <!-- ERROR -->
+            <template if:true={errorMessage}>
+                <div class="slds-text-color_error slds-m-top_medium">
+                    {errorMessage}
+                </div>
+            </template>
+            
+
+    
+            <template if:true={showUploadSection}>
+
+                <div class="slds-m-top_large">
+
+                    <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                        {currentLabels.attachments}
+                    </h2>
+
+                    <p> Attachments / Picture of the transport damage / Image of the technical fault </p>
+                    <br/>
+                    <lightning-file-upload
+                        label={currentLabels.attachments}
+                        name="fileUploader"
+                        accept=".png,.jpg,.jpeg,.pdf"
+                        onuploadfinished={handleUploadFinished}
+                        multiple>
+                    </lightning-file-upload>
+
+                    <div class="slds-m-top_large">
+
+                        <lightning-button
+                            label={currentLabels.done}
+                            variant="brand"
+                            onclick={handleDone}>
+                        </lightning-button>
+
+                    </div>
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

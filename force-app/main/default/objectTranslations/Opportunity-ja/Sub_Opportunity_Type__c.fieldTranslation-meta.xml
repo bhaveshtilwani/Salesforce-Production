@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Opportunity Type --></label>
+    <name>Sub_Opportunity_Type__c</name>
+    <picklistValues>
+        <masterLabel>NRE</masterLabel>
+        <translation><!-- NRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-production</masterLabel>
+        <translation><!-- Pre-production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production ramp-up</masterLabel>
+        <translation><!-- Production ramp-up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sample / Prototype</masterLabel>
+        <translation><!-- Sample / Prototype --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tooling</masterLabel>
+        <translation><!-- Tooling --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

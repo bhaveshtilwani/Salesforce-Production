@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Classification__c</fullName>
+    <label>Tax Classification</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ERP_Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 - Output Tax at 0%</fullName>
+                <default>false</default>
+                <label>0 - Output Tax at 0%</label>
+            </value>
+            <value>
+                <fullName>0 - Exempt</fullName>
+                <default>false</default>
+                <label>0 - Exempt</label>
+            </value>
+            <value>
+                <fullName>1 - Liable PST+GST Taxes</fullName>
+                <default>false</default>
+                <label>1 - Liable PST+GST Taxes</label>
+            </value>
+            <value>
+                <fullName>5 - Output Tax (std)</fullName>
+                <default>false</default>
+                <label>5 - Output Tax (std)</label>
+            </value>
+            <value>
+                <fullName>9 - No Tax-Out of scope</fullName>
+                <default>false</default>
+                <label>9 - No Tax-Out of scope</label>
+            </value>
+            <value>
+                <fullName>E - export Vat 0% sales</fullName>
+                <default>false</default>
+                <label>E - export Vat 0% sales</label>
+            </value>
+            <value>
+                <fullName>R - Domestic Vat13,6%</fullName>
+                <default>false</default>
+                <label>R - Domestic Vat13,6%</label>
+            </value>
+            <value>
+                <fullName>Z - No Tax-Outofscope-XT</fullName>
+                <default>false</default>
+                <label>Z - No Tax-Outofscope-XT</label>
+            </value>
+            <value>
+                <fullName>Y - XT 7%</fullName>
+                <default>false</default>
+                <label>Y - XT 7%</label>
+            </value>
+            <value>
+                <fullName>6 - Output Tax 8%</fullName>
+                <default>false</default>
+                <label>6 - Output Tax 8%</label>
+            </value>
+            <value>
+                <fullName>7 - Output Tax 9%</fullName>
+                <default>false</default>
+                <label>7 - Output Tax 9%</label>
+            </value>
+            <value>
+                <fullName>3 - Output Tax at 3%</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3 - Output Tax at 3%</label>
+            </value>
+            <value>
+                <fullName>4 - Output Tax (old)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>4 - Output Tax (old)</label>
+            </value>
+            <value>
+                <fullName>A - Inland Vat 0% sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A - Inland Vat 0% sales</label>
+            </value>
+            <value>
+                <fullName>B - Shz Vat 0% sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B - Shz Vat 0% sales</label>
+            </value>
+            <value>
+                <fullName>D - DomesticVat16,6%(Old</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>D - DomesticVat16,6%(Old</label>
+            </value>
+            <value>
+                <fullName>I - Inland Vat17,6%(Old)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>I - Inland Vat17,6%(Old)</label>
+            </value>
+            <value>
+                <fullName>S - Shz Vat 17,6% (Old)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>S - Shz Vat 17,6% (Old)</label>
+            </value>
+            <value>
+                <fullName>X - XT 0%</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>X - XT 0%</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Manila</controllingFieldValue>
+            <valueName>0 - Output Tax at 0%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>0 - Exempt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>1 - Liable PST+GST Taxes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>5 - Output Tax (std)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>9 - No Tax-Out of scope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>E - export Vat 0% sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>R - Domestic Vat13,6%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>Z - No Tax-Outofscope-XT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>Y - XT 7%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>6 - Output Tax 8%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>7 - Output Tax 9%</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

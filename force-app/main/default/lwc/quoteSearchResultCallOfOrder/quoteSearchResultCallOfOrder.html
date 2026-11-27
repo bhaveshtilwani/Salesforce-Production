@@ -1,0 +1,108 @@
+<!--
+    @description       : This Quote Search Result Call Of Order LWC(Child) is called from Quote Search LWC(Parent) for rendering order result
+    @author            : Jade Global
+    @last modified on  : 02-18-2021
+    @last modified by  : Jade Global
+    Modifications Log
+    Ver   Date         Author        Modification
+    1.0   02-18-2021   Jade Global   Initial Version
+-->
+<template>
+    <header>
+        <div class="slds-text-heading_medium"
+            style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px;">
+            <p style="font-weight: bold;">Order Selection Section</p>
+        </div>
+    </header>
+    <br />
+    <div style="width: 100%; overflow-x: scroll;">
+        <table class={strTableClass}>
+            <thead>
+                <tr class="slds-text-heading--label">
+                    <th class="slds-is-sortable" scope="col">
+                        <span class="slds-truncate" style="text-transform: capitalize;font-size: 13px;">Select</span>
+                    </th>
+                    <th class="slds-is-sortable" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="Opportunity Number">Order Number</div>
+                    </th>
+                    <th class="slds-is-sortable" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="Opportunity Number">Order Type</div>
+                    </th>
+                    <th class="slds-is-sortable" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="ERP SO Status">ERP SO Status</div>
+                    </th>
+                    <th class="slds-is-sortable" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="ERP SO#">ERP SO#</div>
+                    </th>
+                    <th class="slds-is-sortable" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="SFDC Integration Status">SFDC Integration Status</div>
+                    </th>
+                    <th align="center" class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="SFDC Account Name">SFDC Account Name</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="Currency Code">Currency Code</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="Order Amount">Order Amount</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="Agreement Number">Agreement Number</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="PO Number">PO Number</div>
+                    </th>
+                    <th class="slds-is-sortable slds-wrap" scope="col">
+                        <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="Order Status">Order Status</div>
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={tempQuoteOrderResult} for:item="con" for:index="index">
+                    <tr class="slds-hint-parent" key={con.orderId}>
+                        <td class="slds-truncate" scope="col">
+                            <div class="slds-truncate">
+                                <lightning-input type="checkbox" value={con.orderId} onclick={handleSelectedRows}></lightning-input>
+                            </div>
+                        </td>
+                        <td class="slds-truncate" scope="col" data-label="Order Number">
+                            <div>{con.orderNumber}</div>
+                        </td>
+                        <td class="slds-truncate" scope="col" data-label="Order Type">
+                            <div>{con.OrderType}</div>
+                        </td>
+                        <td class="slds-truncate" scope="col" data-label="ERP SO Status">
+                            <div>{con.ERPOrderStatus}</div>
+                        </td>
+                        <td class="slds-truncate" scope="col" data-label="ERP SO#">
+                            <div>{con.ERPSalesOrderNo}</div>
+                        </td>
+                        <td class="slds-truncate" scope="col" data-label="SFDC Integration Status">
+                            <div>{con.SFDCIntegrationStatus}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col" data-label="SFDC Account Name">
+                            <div>{con.qAccountName}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col" data-label="Currency Code">
+                            <div>{con.currencyISOCode}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col" data-label="Order Amount">
+                            <div>{con.orderAmount}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col" data-label="Agreement Number">
+                            <div>{con.agreementNumber}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col" data-label="PO Number">
+                            <div>{con.orderPONumber}</div>
+                        </td>
+                        <td width="40%" class="slds-truncate" scope="col" data-label="Order Status">
+                            <div>{con.orderStatus}</div>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>    
+</template>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Pricing_Procedure__c</fullName>
+    <description>For Asia Customers</description>
+    <label>Customer Pricing Procedure</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Account_Group__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard (1)</fullName>
+                <default>false</default>
+                <label>Standard (1)</label>
+            </value>
+            <value>
+                <fullName>Mark-up Cost (2)</fullName>
+                <default>false</default>
+                <label>Mark-up Cost (2)</label>
+            </value>
+            <value>
+                <fullName>Internal Transfer (3)</fullName>
+                <default>false</default>
+                <label>Internal Transfer (3)</label>
+            </value>
+            <value>
+                <fullName>Shenzhen Standard (4)</fullName>
+                <default>false</default>
+                <label>Shenzhen Standard (4)</label>
+            </value>
+            <value>
+                <fullName>Interco Pricing (5)</fullName>
+                <default>false</default>
+                <label>Interco Pricing (5)</label>
+            </value>
+            <value>
+                <fullName>Mand ExtCustPrice (6)</fullName>
+                <default>false</default>
+                <label>Mand ExtCustPrice (6)</label>
+            </value>
+            <value>
+                <fullName>Standard PCO (P)</fullName>
+                <default>false</default>
+                <label>Standard PCO (P)</label>
+            </value>
+            <value>
+                <fullName>Intercompany XR01 (Q)</fullName>
+                <default>false</default>
+                <label>Intercompany XR01 (Q)</label>
+            </value>
+            <value>
+                <fullName>TAO, obsolete (T)</fullName>
+                <default>false</default>
+                <label>TAO, obsolete (T)</label>
+            </value>
+            <value>
+                <fullName>GG Cust Std (ISHTSW) (G)</fullName>
+                <default>false</default>
+                <label>GG Cust Std (ISHTSW) (G)</label>
+            </value>
+            <value>
+                <fullName>NF Weight-Dependent (M)</fullName>
+                <default>false</default>
+                <label>NF Weight-Dependent (M)</label>
+            </value>
+            <value>
+                <fullName>NF Standard (N)</fullName>
+                <default>false</default>
+                <label>NF Standard (N)</label>
+            </value>
+            <value>
+                <fullName>DRM customer (R)</fullName>
+                <default>false</default>
+                <label>DRM customer (R)</label>
+            </value>
+            <value>
+                <fullName>AECMA customer (W)</fullName>
+                <default>false</default>
+                <label>AECMA customer (W)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>Standard (1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>Mark-up Cost (2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>Internal Transfer (3)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>Shenzhen Standard (4)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>Interco Pricing (5)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>Mand ExtCustPrice (6)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>Standard PCO (P)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>Intercompany XR01 (Q)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>TAO, obsolete (T)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>GG Cust Std (ISHTSW) (G)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>NF Weight-Dependent (M)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>NF Standard (N)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>DRM customer (R)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sold To - P001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party (OPSL) - 0001</controllingFieldValue>
+            <controllingFieldValue>Sold-to party - ZCUS</controllingFieldValue>
+            <controllingFieldValue>Ship-to party - 0002</controllingFieldValue>
+            <controllingFieldValue>Billing email address - ZBIL</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co. - ZINT</controllingFieldValue>
+            <controllingFieldValue>One-time cust.(int.no.assgnmt) - CPD</controllingFieldValue>
+            <controllingFieldValue>Third-Party - Cus. For Trade - Z003</controllingFieldValue>
+            <controllingFieldValue>Intra-Div &amp; Inter-Co For Trade - Z004</controllingFieldValue>
+            <controllingFieldValue>Hierarchy Node - 0012</controllingFieldValue>
+            <controllingFieldValue>3rd Party Agent - ZAGT</controllingFieldValue>
+            <controllingFieldValue>Customer-Sold To Role</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <controllingFieldValue>QioDebitoren Europäische Union - DEEU</controllingFieldValue>
+            <controllingFieldValue>Sold to - W001</controllingFieldValue>
+            <controllingFieldValue>Sold to - H001</controllingFieldValue>
+            <valueName>AECMA customer (W)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

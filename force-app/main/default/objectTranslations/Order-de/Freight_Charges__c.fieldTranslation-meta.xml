@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Sum of freight charges in Freight object
+Note: This amount is already converted to USD. -->
+    </help>
+    <label><!-- Freight Charges --></label>
+    <name>Freight_Charges__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Credit_Status__c</fullName>
+    <label>Overall Credit Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Not Approved</fullName>
+                <default>false</default>
+                <label>Not Approved</label>
+            </value>
+            <value>
+                <fullName>Approved, Part Relsd</fullName>
+                <default>false</default>
+                <label>Approved, Part Relsd</label>
+            </value>
+            <value>
+                <fullName>Released</fullName>
+                <default>false</default>
+                <label>Released</label>
+            </value>
+            <value>
+                <fullName>Not Performed</fullName>
+                <default>false</default>
+                <label>Not Performed</label>
+            </value>
+            <value>
+                <fullName>Credit check executed. Partial Release</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Credit check executed. Partial Release</label>
+            </value>
+            <value>
+                <fullName>Credit check was executed, document OK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Credit check was executed, document OK</label>
+            </value>
+            <value>
+                <fullName>Credit check was executed, document not OK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Credit check was executed, document not OK</label>
+            </value>
+            <value>
+                <fullName>Document released by credit representative</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Document released by credit representative</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

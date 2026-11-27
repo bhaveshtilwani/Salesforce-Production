@@ -1,0 +1,20 @@
+<apex:page standardController="Contact" lightningStylesheets="true">
+
+<apex:form >
+
+  <apex:pageBlock title="Contact Moved to a Different Company/Account">
+
+        <apex:pageBlockSection title="New Contact Details" columns="2">
+      <apex:inputField value="{! Contact.Move_to_Account__c}"/>
+      <apex:inputField value="{! Contact.New_Email_Address__c}"/>      
+    </apex:pageBlockSection>
+        
+    <apex:pageBlockButtons location="bottom">
+      <apex:commandButton action="{!save}" value="Recreate Contact to Account"/>
+    </apex:pageBlockButtons>
+    
+  </apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

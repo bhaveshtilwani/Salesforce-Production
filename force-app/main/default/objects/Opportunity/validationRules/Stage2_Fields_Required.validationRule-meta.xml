@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage2_Fields_Required</fullName>
+    <active>true</active>
+    <description>The Fields are required in Stage 2 for NPI Opportunity</description>
+    <errorConditionFormula>AND(
+        NOT(ISPICKVAL(Type, &quot;Existing Customer / add-on order&quot;)), 
+    OR(
+        ISPICKVAL(StageName, &quot;2 - Requirement Definition/Technical Evl&quot;),
+        ISPICKVAL(StageName, &quot;3 - Technical Qualification/Approval&quot;),
+        ISPICKVAL(StageName, &quot;4 - Commercial Negotiation&quot;),
+        ISPICKVAL(StageName, &quot;5 - Business Award – Won&quot;),
+        ISPICKVAL(StageName, &quot;6 - Production Order on Backlog&quot;),
+        ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+        CONTAINS(TEXT(StageName), &quot;Other&quot;)
+    ),
+    OR(
+        $RecordType.DeveloperName = &quot;NPI_Opportunity&quot;,
+        $RecordType.DeveloperName = &quot;Semi_Opportunity&quot;
+    ),
+    OR(
+        ISBLANK(Full_Production_Annual_Value__c),
+        ISBLANK(Revenue_Forecast_Year_1__c),
+        ISBLANK(Revenue_Forecast_Year_2__c),
+        ISBLANK(Revenue_Forecast_Year_3__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>Please complete all value fields before advancing to Stage 2 on an NPI opportunity.
+- Full Production Annual Value
+- Revenue Forecast Year 1
+- Revenue Forecast Year 2
+- Revenue Forecast Year 3</errorMessage>
+</ValidationRule>

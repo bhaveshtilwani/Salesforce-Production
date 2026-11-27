@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region__c</fullName>
+    <label>Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>100 - NA</fullName>
+                <default>false</default>
+                <label>100 - NA</label>
+            </value>
+            <value>
+                <fullName>200 - EMEA</fullName>
+                <default>false</default>
+                <label>200 - EMEA</label>
+            </value>
+            <value>
+                <fullName>300 - Asia</fullName>
+                <default>false</default>
+                <label>300 - Asia</label>
+            </value>
+            <value>
+                <fullName>400 - China</fullName>
+                <default>false</default>
+                <label>400 - China</label>
+            </value>
+            <value>
+                <fullName>500 - LA</fullName>
+                <default>false</default>
+                <label>500 - LA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

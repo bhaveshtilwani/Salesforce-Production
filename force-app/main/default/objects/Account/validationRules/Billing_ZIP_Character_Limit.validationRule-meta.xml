@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_ZIP_Character_Limit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+LEN( BillingPostalCode ) &gt; 10,
+RecordType.Name = &quot;QAD - LDGI&quot;
+)</errorConditionFormula>
+    <errorDisplayField>BillingPostalCode</errorDisplayField>
+    <errorMessage>QAD Zip is only up to 10 characters</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Partial Delivery Per Item --></label>
+    <name>Partial_Delivery_Per_Item__c</name>
+    <picklistValues>
+        <masterLabel>Create delivery with qty greater than 0</masterLabel>
+        <translation><!-- Create delivery with qty greater than 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create only one delivery (also with quantity = 0)</masterLabel>
+        <translation><!-- Create only one delivery (also with quantity = 0) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No limit to subsequent deliveries</masterLabel>
+        <translation><!-- No limit to subsequent deliveries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Only complete delivery allowed</masterLabel>
+        <translation><!-- Only complete delivery allowed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial delivery allowed</masterLabel>
+        <translation><!-- Partial delivery allowed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

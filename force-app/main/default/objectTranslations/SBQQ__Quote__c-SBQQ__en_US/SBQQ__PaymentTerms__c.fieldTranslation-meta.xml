@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Terms that govern payment of the items in this quote. --></help>
+    <label><!-- Payment Terms --></label>
+    <name>SBQQ__PaymentTerms__c</name>
+    <picklistValues>
+        <masterLabel>Determined by Site</masterLabel>
+        <translation><!-- Determined by Site --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

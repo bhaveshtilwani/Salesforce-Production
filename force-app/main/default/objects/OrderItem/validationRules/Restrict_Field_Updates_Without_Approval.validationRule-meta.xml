@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Field_Updates_Without_Approval</fullName>
+    <active>true</active>
+    <description>Prevents users without permissions to update Quantity, Customer Requested Date, or Unit Price fields unless the Approval Override checkbox is checked.</description>
+    <errorConditionFormula>AND(
+NOT( ISCHANGED( Approval_Override__c ) ),
+NOT( $Permission.Allow_Order_Product_Fields_Override ), 
+OR( ISCHANGED( Quantity ), ISCHANGED( Customer_Requested_Date__c ), ISCHANGED( UnitPrice ) )
+)</errorConditionFormula>
+    <errorMessage>Quantity, Customer Requested Date, or Unit Price can only be modified through an Approval.</errorMessage>
+</ValidationRule>

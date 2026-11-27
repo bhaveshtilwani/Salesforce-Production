@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- &quot;List of Values - AINT - IntercompanyAN00 - Net ZeroAN07 - Net 7AN15 - Net 15AN30 - Net 30AN45 - Net 45AN60 - Net 60AN75 - Net 75AN90 - Net 90APPD - Prepaid&quot; --></help>
+    <label><!-- Payment Terms --></label>
+    <name>Payment_Term__c</name>
+    <picklistValues>
+        <masterLabel>AINT</masterLabel>
+        <translation><!-- AINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AN00</masterLabel>
+        <translation><!-- AN00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AN07</masterLabel>
+        <translation><!-- AN07 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AN15</masterLabel>
+        <translation><!-- AN15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AN30</masterLabel>
+        <translation><!-- AN30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AN45</masterLabel>
+        <translation><!-- AN45 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AN60</masterLabel>
+        <translation><!-- AN60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AN75</masterLabel>
+        <translation><!-- AN75 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AN90</masterLabel>
+        <translation><!-- AN90 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>APPD</masterLabel>
+        <translation><!-- APPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation><!-- None --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

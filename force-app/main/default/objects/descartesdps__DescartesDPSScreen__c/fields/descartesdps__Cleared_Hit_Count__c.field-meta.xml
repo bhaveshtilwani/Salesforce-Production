@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>descartesdps__Cleared_Hit_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Cleared Hit Count</label>
+    <summaryFilterItems>
+        <field>descartesdps__DescartesDPSScreenResult__c.descartesdps__Status__c</field>
+        <operation>equals</operation>
+        <value>Cleared</value>
+    </summaryFilterItems>
+    <summaryForeignKey>descartesdps__DescartesDPSScreenResult__c.descartesdps__DescartesDPSScreen__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

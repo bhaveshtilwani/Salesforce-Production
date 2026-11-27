@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SGD 650 - ESG Optics</label>
+    <protected>false</protected>
+    <values>
+        <field>ECC_System_Name__c</field>
+        <value xsi:type="xsd:string">SGD 650</value>
+    </values>
+    <values>
+        <field>Excelitas_Site__c</field>
+        <value xsi:type="xsd:string">ESG Optics</value>
+    </values>
+    <values>
+        <field>Region__c</field>
+        <value xsi:type="xsd:string">Asia</value>
+    </values>
+    <values>
+        <field>System_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

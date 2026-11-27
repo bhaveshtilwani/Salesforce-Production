@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KNB1_ZUAWA__c</fullName>
+    <defaultValue>&quot;001&quot;</defaultValue>
+    <description>Indicates the layout rule for the Allocation field in the document line item. Can be sorted by Posting Date or Document Date. Default value 001 - Posting Date</description>
+    <inlineHelpText>Dropdown - Fixed value 001</inlineHelpText>
+    <label>Key for Sorting</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001</fullName>
+                <default>true</default>
+                <label>001</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

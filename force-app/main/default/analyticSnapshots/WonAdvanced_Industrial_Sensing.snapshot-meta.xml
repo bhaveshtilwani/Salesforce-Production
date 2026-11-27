@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticSnapshot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Won Report Snapshot</description>
+    <groupColumn>GRAND_SUMMARY</groupColumn>
+    <mappings>
+        <sourceField>JobName</sourceField>
+        <sourceType>snapshot</sourceType>
+        <targetField>Monthly_Won_Report__c.Name</targetField>
+    </mappings>
+    <mappings>
+        <aggregateType>Average</aggregateType>
+        <sourceField>AGE</sourceField>
+        <sourceType>summary</sourceType>
+        <targetField>Monthly_Won_Report__c.Average_Age__c</targetField>
+    </mappings>
+    <mappings>
+        <aggregateType>Average</aggregateType>
+        <sourceField>Opportunity.Actual_Days_to_Close__c</sourceField>
+        <sourceType>summary</sourceType>
+        <targetField>Monthly_Won_Report__c.Average_of_Actual_Days_Close__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>JobName</sourceField>
+        <sourceType>snapshot</sourceType>
+        <targetField>Monthly_Won_Report__c.Division__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>ExecutionTime</sourceField>
+        <sourceType>snapshot</sourceType>
+        <targetField>Monthly_Won_Report__c.Snapshot_Date__c</targetField>
+    </mappings>
+    <mappings>
+        <aggregateType>Sum</aggregateType>
+        <sourceField>AGE</sourceField>
+        <sourceType>summary</sourceType>
+        <targetField>Monthly_Won_Report__c.Sum_of_Age__c</targetField>
+    </mappings>
+    <mappings>
+        <aggregateType>Sum</aggregateType>
+        <sourceField>AMOUNT.CONVERT</sourceField>
+        <sourceType>summary</sourceType>
+        <targetField>Monthly_Won_Report__c.Sum_of_Amount__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>RowCount</sourceField>
+        <sourceType>summary</sourceType>
+        <targetField>Monthly_Won_Report__c.Won_Opp_Count__c</targetField>
+    </mappings>
+    <name>Advanced Industrial Sensing</name>
+    <runningUser>salesforce.administrator@excelitas.com</runningUser>
+    <sourceReport>unfiled$public/Snapshot_AIS_Won_NBOs_Last_Month_AvA</sourceReport>
+    <targetObject>Monthly_Won_Report__c</targetObject>
+</AnalyticSnapshot>

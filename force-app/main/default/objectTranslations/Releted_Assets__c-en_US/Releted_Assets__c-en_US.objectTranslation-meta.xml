@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related Asset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related Assets</value>
+    </caseValues>
+    <recordTypes>
+        <description><!-- Demo Related Asset --></description>
+        <label><!-- Demo Related Asset --></label>
+        <name>Demo_Related_Asset</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Select for Noblelight Service --></description>
+        <label><!-- Service --></label>
+        <name>Service</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Select for Medical Devices or Medical Components --></description>
+        <label><!-- Service Request Med Related Asset --></label>
+        <name>Service_Request_Med_Related_Asset</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Request Related Asset --></label>
+        <name>Service_Request_Related_Asset</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Assigned Quality/Service Contact field is required. --></errorMessage>
+        <name>Case_Assigned_Quality_cannot_be_blank</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_LDGI_Related_Assets_Forms --></label>
+        <name>Conga_Composer_LDGI_Related_Assets_Forms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mark_As_Closed --></label>
+        <name>Mark_As_Closed</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mark_As_Received --></label>
+        <name>Mark_As_Received</name>
+    </webLinks>
+</CustomObjectTranslation>

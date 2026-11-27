@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_compact_layout</fullName>
+    <fields>Name</fields>
+    <fields>Requested_By__c</fields>
+    <fields>Requested_Date__c</fields>
+    <fields>Account__c</fields>
+    <label>Opportunity compact layout</label>
+</CompactLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Gibt die Art des Angebots an.</help>
+    <label><!-- Type --></label>
+    <name>SBQQ__Type__c</name>
+    <picklistValues>
+        <masterLabel>Amendment</masterLabel>
+        <translation>Ã„nderung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract</masterLabel>
+        <translation><!-- Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit/Debit Memo</masterLabel>
+        <translation><!-- Credit/Debit Memo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote</masterLabel>
+        <translation>Angebot</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-Quote</masterLabel>
+        <translation>Erneutes Angebot</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renewal</masterLabel>
+        <translation>VertragsverlÃ¤ngerung</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,68 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="spinnerContainer">
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </div>
+    </template>
+    <template lwc:if={showTable}>
+        <lightning-tabset active-tab-value={defaultActiveTab}>
+            <lightning-tab value="standardTab" label={standardProductsLabel}>
+                <div class="slds-border_right slds-border_left slds-var-m-top_small">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col"></th>
+                                <template for:each={columns} for:item="column">
+                                    <th key={column.Id} scope="col">
+                                        <div class="slds-truncate" title={column.MasterLabel}>{column.MasterLabel}</div>
+                                    </th>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={standardProducts} for:item="product">
+                                <c-product-selection-row
+                                    key={product.RecordId}
+                                    order-creation-id={orderCreationId}
+                                    product={product}
+                                    columns={columns}
+                                    product-selection-edit-fields={productSelectionEditFields}
+                                    custom-actions={customActions}
+                                    order-site={orderCreation.Excelitas_Site__r.Name}
+                                ></c-product-selection-row>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-tab>
+            <lightning-tab value="erpTab" label={erpProductsLabel}>
+                <div class="slds-border_right slds-border_left slds-var-m-top_small">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col"></th>
+                                <template for:each={columns} for:item="column">
+                                    <th key={column.Id} scope="col">
+                                        <div class="slds-truncate" title={column.MasterLabel}>{column.MasterLabel}</div>
+                                    </th>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={erpProducts} for:item="product">
+                                <c-product-selection-row
+                                    key={product.RecordId}
+                                    order-creation-id={orderCreationId}
+                                    product={product}
+                                    columns={columns}
+                                    product-selection-edit-fields={productSelectionEditFields}
+                                    custom-actions={customActions}
+                                ></c-product-selection-row>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-tab>
+        </lightning-tabset>
+    </template>
+</template>

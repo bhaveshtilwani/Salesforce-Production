@@ -1,0 +1,4461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_Damage_Code_Texts__c</fullName>
+    <label>SAP Damage Code Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Damage_Code_Groups__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A0 AC Line Lo</fullName>
+                <default>false</default>
+                <label>A0 AC Line Lo</label>
+            </value>
+            <value>
+                <fullName>A1 AC Line Hi</fullName>
+                <default>false</default>
+                <label>A1 AC Line Hi</label>
+            </value>
+            <value>
+                <fullName>A2 PC Short</fullName>
+                <default>false</default>
+                <label>A2 PC Short</label>
+            </value>
+            <value>
+                <fullName>A3 No Ignition</fullName>
+                <default>false</default>
+                <label>A3 No Ignition</label>
+            </value>
+            <value>
+                <fullName>A4 Lamp Out</fullName>
+                <default>false</default>
+                <label>A4 Lamp Out</label>
+            </value>
+            <value>
+                <fullName>A5 Lamp Air Pressure</fullName>
+                <default>false</default>
+                <label>A5 Lamp Air Pressure</label>
+            </value>
+            <value>
+                <fullName>A6 Cable Disconnect</fullName>
+                <default>false</default>
+                <label>A6 Cable Disconnect</label>
+            </value>
+            <value>
+                <fullName>AD PS Overtemp</fullName>
+                <default>false</default>
+                <label>AD PS Overtemp</label>
+            </value>
+            <value>
+                <fullName>Air intake / leaky lamp body</fullName>
+                <default>false</default>
+                <label>Air intake / leaky lamp body</label>
+            </value>
+            <value>
+                <fullName>amalgam, gold spot nok</fullName>
+                <default>false</default>
+                <label>amalgam, gold spot nok</label>
+            </value>
+            <value>
+                <fullName>Anode defective</fullName>
+                <default>false</default>
+                <label>Anode defective</label>
+            </value>
+            <value>
+                <fullName>Anode out of centerline or loose</fullName>
+                <default>false</default>
+                <label>Anode out of centerline or loose</label>
+            </value>
+            <value>
+                <fullName>Anode voltage or UV-Intensity out of spec</fullName>
+                <default>false</default>
+                <label>Anode voltage or UV-Intensity out of spec</label>
+            </value>
+            <value>
+                <fullName>Appearance – cosmetic deviation</fullName>
+                <default>false</default>
+                <label>Appearance – cosmetic deviation</label>
+            </value>
+            <value>
+                <fullName>Arcing</fullName>
+                <default>false</default>
+                <label>Arcing</label>
+            </value>
+            <value>
+                <fullName>assembly error</fullName>
+                <default>false</default>
+                <label>assembly error</label>
+            </value>
+            <value>
+                <fullName>assembly nok</fullName>
+                <default>false</default>
+                <label>assembly nok</label>
+            </value>
+            <value>
+                <fullName>B0 No Reset (N)</fullName>
+                <default>false</default>
+                <label>B0 No Reset (N)</label>
+            </value>
+            <value>
+                <fullName>B1 No Reset (W)</fullName>
+                <default>false</default>
+                <label>B1 No Reset (W)</label>
+            </value>
+            <value>
+                <fullName>B2 No Reset (T)</fullName>
+                <default>false</default>
+                <label>B2 No Reset (T)</label>
+            </value>
+            <value>
+                <fullName>B3 EXT Interlock</fullName>
+                <default>false</default>
+                <label>B3 EXT Interlock</label>
+            </value>
+            <value>
+                <fullName>B4 SYS Air Pressure</fullName>
+                <default>false</default>
+                <label>B4 SYS Air Pressure</label>
+            </value>
+            <value>
+                <fullName>B5 RF Detector Open</fullName>
+                <default>false</default>
+                <label>B5 RF Detector Open</label>
+            </value>
+            <value>
+                <fullName>B6 RF Detector Shorted</fullName>
+                <default>false</default>
+                <label>B6 RF Detector Shorted</label>
+            </value>
+            <value>
+                <fullName>B7 RF Detected</fullName>
+                <default>false</default>
+                <label>B7 RF Detected</label>
+            </value>
+            <value>
+                <fullName>B8 SW4 Configuration</fullName>
+                <default>false</default>
+                <label>B8 SW4 Configuration</label>
+            </value>
+            <value>
+                <fullName>B9 SYS Fault</fullName>
+                <default>false</default>
+                <label>B9 SYS Fault</label>
+            </value>
+            <value>
+                <fullName>base nok</fullName>
+                <default>false</default>
+                <label>base nok</label>
+            </value>
+            <value>
+                <fullName>base not fixed</fullName>
+                <default>false</default>
+                <label>base not fixed</label>
+            </value>
+            <value>
+                <fullName>base tilted</fullName>
+                <default>false</default>
+                <label>base tilted</label>
+            </value>
+            <value>
+                <fullName>batch size nok</fullName>
+                <default>false</default>
+                <label>batch size nok</label>
+            </value>
+            <value>
+                <fullName>Belt Slips</fullName>
+                <default>false</default>
+                <label>Belt Slips</label>
+            </value>
+            <value>
+                <fullName>Belt Tracking</fullName>
+                <default>false</default>
+                <label>Belt Tracking</label>
+            </value>
+            <value>
+                <fullName>Blower Pressure</fullName>
+                <default>false</default>
+                <label>Blower Pressure</label>
+            </value>
+            <value>
+                <fullName>BOM/Packaging Error</fullName>
+                <default>false</default>
+                <label>BOM/Packaging Error</label>
+            </value>
+            <value>
+                <fullName>Box assembling nok or wrong aperture</fullName>
+                <default>false</default>
+                <label>Box assembling nok or wrong aperture</label>
+            </value>
+            <value>
+                <fullName>broken</fullName>
+                <default>false</default>
+                <label>broken</label>
+            </value>
+            <value>
+                <fullName>Broken Bulb</fullName>
+                <default>false</default>
+                <label>Broken Bulb</label>
+            </value>
+            <value>
+                <fullName>burling stress crack</fullName>
+                <default>false</default>
+                <label>burling stress crack</label>
+            </value>
+            <value>
+                <fullName>C0 Fil A Stuck</fullName>
+                <default>false</default>
+                <label>C0 Fil A Stuck</label>
+            </value>
+            <value>
+                <fullName>C1 Fil A Open</fullName>
+                <default>false</default>
+                <label>C1 Fil A Open</label>
+            </value>
+            <value>
+                <fullName>C2 Fil A Lo</fullName>
+                <default>false</default>
+                <label>C2 Fil A Lo</label>
+            </value>
+            <value>
+                <fullName>C3 Fil A Hi</fullName>
+                <default>false</default>
+                <label>C3 Fil A Hi</label>
+            </value>
+            <value>
+                <fullName>C4 Fil B Stuck</fullName>
+                <default>false</default>
+                <label>C4 Fil B Stuck</label>
+            </value>
+            <value>
+                <fullName>C5 Fil B Open</fullName>
+                <default>false</default>
+                <label>C5 Fil B Open</label>
+            </value>
+            <value>
+                <fullName>C6 Fil B Lo</fullName>
+                <default>false</default>
+                <label>C6 Fil B Lo</label>
+            </value>
+            <value>
+                <fullName>C7 Fil B Hi</fullName>
+                <default>false</default>
+                <label>C7 Fil B Hi</label>
+            </value>
+            <value>
+                <fullName>Cable Disconnect</fullName>
+                <default>false</default>
+                <label>Cable Disconnect</label>
+            </value>
+            <value>
+                <fullName>Cathode defective</fullName>
+                <default>false</default>
+                <label>Cathode defective</label>
+            </value>
+            <value>
+                <fullName>Cathode defective / Exhausted</fullName>
+                <default>false</default>
+                <label>Cathode defective / Exhausted</label>
+            </value>
+            <value>
+                <fullName>cement nok</fullName>
+                <default>false</default>
+                <label>cement nok</label>
+            </value>
+            <value>
+                <fullName>coating dimension fault</fullName>
+                <default>false</default>
+                <label>coating dimension fault</label>
+            </value>
+            <value>
+                <fullName>coating nok</fullName>
+                <default>false</default>
+                <label>coating nok</label>
+            </value>
+            <value>
+                <fullName>coating scratched</fullName>
+                <default>false</default>
+                <label>coating scratched</label>
+            </value>
+            <value>
+                <fullName>Connection cable defective</fullName>
+                <default>false</default>
+                <label>Connection cable defective</label>
+            </value>
+            <value>
+                <fullName>Connection cable other fault</fullName>
+                <default>false</default>
+                <label>Connection cable other fault</label>
+            </value>
+            <value>
+                <fullName>Connection coupling defective</fullName>
+                <default>false</default>
+                <label>Connection coupling defective</label>
+            </value>
+            <value>
+                <fullName>connection incorrect</fullName>
+                <default>false</default>
+                <label>connection incorrect</label>
+            </value>
+            <value>
+                <fullName>Connector Fault</fullName>
+                <default>false</default>
+                <label>Connector Fault</label>
+            </value>
+            <value>
+                <fullName>connector incorrect</fullName>
+                <default>false</default>
+                <label>connector incorrect</label>
+            </value>
+            <value>
+                <fullName>Connector plug/socket faulty</fullName>
+                <default>false</default>
+                <label>Connector plug/socket faulty</label>
+            </value>
+            <value>
+                <fullName>contact charred</fullName>
+                <default>false</default>
+                <label>contact charred</label>
+            </value>
+            <value>
+                <fullName>contaminated</fullName>
+                <default>false</default>
+                <label>contaminated</label>
+            </value>
+            <value>
+                <fullName>contamination in spectrum</fullName>
+                <default>false</default>
+                <label>contamination in spectrum</label>
+            </value>
+            <value>
+                <fullName>Control cabinet Cable connections def.</fullName>
+                <default>false</default>
+                <label>Control cabinet Cable connections def.</label>
+            </value>
+            <value>
+                <fullName>control cabinet defective</fullName>
+                <default>false</default>
+                <label>control cabinet defective</label>
+            </value>
+            <value>
+                <fullName>Control cabinet Filter mats clogged</fullName>
+                <default>false</default>
+                <label>Control cabinet Filter mats clogged</label>
+            </value>
+            <value>
+                <fullName>Control cabinet fuse defective</fullName>
+                <default>false</default>
+                <label>Control cabinet fuse defective</label>
+            </value>
+            <value>
+                <fullName>Control cabinet Motor prot. switch def.</fullName>
+                <default>false</default>
+                <label>Control cabinet Motor prot. switch def.</label>
+            </value>
+            <value>
+                <fullName>Cooling, air filter dirty</fullName>
+                <default>false</default>
+                <label>Cooling, air filter dirty</label>
+            </value>
+            <value>
+                <fullName>Cooling system other fault</fullName>
+                <default>false</default>
+                <label>Cooling system other fault</label>
+            </value>
+            <value>
+                <fullName>Cracked Base</fullName>
+                <default>false</default>
+                <label>Cracked Base</label>
+            </value>
+            <value>
+                <fullName>Cracked Seal</fullName>
+                <default>false</default>
+                <label>Cracked Seal</label>
+            </value>
+            <value>
+                <fullName>Cure Issue</fullName>
+                <default>false</default>
+                <label>Cure Issue</label>
+            </value>
+            <value>
+                <fullName>Cure Issues</fullName>
+                <default>false</default>
+                <label>Cure Issues</label>
+            </value>
+            <value>
+                <fullName>current too high</fullName>
+                <default>false</default>
+                <label>current too high</label>
+            </value>
+            <value>
+                <fullName>current too low</fullName>
+                <default>false</default>
+                <label>current too low</label>
+            </value>
+            <value>
+                <fullName>D1 T102 On</fullName>
+                <default>false</default>
+                <label>D1 T102 On</label>
+            </value>
+            <value>
+                <fullName>D2 lamp defect</fullName>
+                <default>false</default>
+                <label>D2 lamp defect</label>
+            </value>
+            <value>
+                <fullName>D2 T103 On</fullName>
+                <default>false</default>
+                <label>D2 T103 On</label>
+            </value>
+            <value>
+                <fullName>D3 T104 On</fullName>
+                <default>false</default>
+                <label>D3 T104 On</label>
+            </value>
+            <value>
+                <fullName>D4 T105 On</fullName>
+                <default>false</default>
+                <label>D4 T105 On</label>
+            </value>
+            <value>
+                <fullName>D5 T106 On</fullName>
+                <default>false</default>
+                <label>D5 T106 On</label>
+            </value>
+            <value>
+                <fullName>Data cable defective</fullName>
+                <default>false</default>
+                <label>Data cable defective</label>
+            </value>
+            <value>
+                <fullName>Data cable other fault</fullName>
+                <default>false</default>
+                <label>Data cable other fault</label>
+            </value>
+            <value>
+                <fullName>Data cable plug/socket defective</fullName>
+                <default>false</default>
+                <label>Data cable plug/socket defective</label>
+            </value>
+            <value>
+                <fullName>defective contact</fullName>
+                <default>false</default>
+                <label>defective contact</label>
+            </value>
+            <value>
+                <fullName>Device Net Fault</fullName>
+                <default>false</default>
+                <label>Device Net Fault</label>
+            </value>
+            <value>
+                <fullName>devitrification</fullName>
+                <default>false</default>
+                <label>devitrification</label>
+            </value>
+            <value>
+                <fullName>diffuse burning</fullName>
+                <default>false</default>
+                <label>diffuse burning</label>
+            </value>
+            <value>
+                <fullName>Dispatch Error</fullName>
+                <default>false</default>
+                <label>Dispatch Error</label>
+            </value>
+            <value>
+                <fullName>Display Locked</fullName>
+                <default>false</default>
+                <label>Display Locked</label>
+            </value>
+            <value>
+                <fullName>doping nok</fullName>
+                <default>false</default>
+                <label>doping nok</label>
+            </value>
+            <value>
+                <fullName>Do T101 On</fullName>
+                <default>false</default>
+                <label>Do T101 On</label>
+            </value>
+            <value>
+                <fullName>Drift / Noise / unstable</fullName>
+                <default>false</default>
+                <label>Drift / Noise / unstable</label>
+            </value>
+            <value>
+                <fullName>drift out of max tolerance</fullName>
+                <default>false</default>
+                <label>drift out of max tolerance</label>
+            </value>
+            <value>
+                <fullName>E0 Initializing</fullName>
+                <default>false</default>
+                <label>E0 Initializing</label>
+            </value>
+            <value>
+                <fullName>E0 T101 Lo</fullName>
+                <default>false</default>
+                <label>E0 T101 Lo</label>
+            </value>
+            <value>
+                <fullName>E10 Air Pressure Fault</fullName>
+                <default>false</default>
+                <label>E10 Air Pressure Fault</label>
+            </value>
+            <value>
+                <fullName>E10 Motor Temp Interlock</fullName>
+                <default>false</default>
+                <label>E10 Motor Temp Interlock</label>
+            </value>
+            <value>
+                <fullName>E11 No Ignition</fullName>
+                <default>false</default>
+                <label>E11 No Ignition</label>
+            </value>
+            <value>
+                <fullName>E11 RF Sensor Short</fullName>
+                <default>false</default>
+                <label>E11 RF Sensor Short</label>
+            </value>
+            <value>
+                <fullName>E12 Filament Input Voltage High</fullName>
+                <default>false</default>
+                <label>E12 Filament Input Voltage High</label>
+            </value>
+            <value>
+                <fullName>E12 Lamp Out</fullName>
+                <default>false</default>
+                <label>E12 Lamp Out</label>
+            </value>
+            <value>
+                <fullName>E13 Filament Input Voltage Low</fullName>
+                <default>false</default>
+                <label>E13 Filament Input Voltage Low</label>
+            </value>
+            <value>
+                <fullName>E13 No RF Detector</fullName>
+                <default>false</default>
+                <label>E13 No RF Detector</label>
+            </value>
+            <value>
+                <fullName>E14 Filament A Current Low</fullName>
+                <default>false</default>
+                <label>E14 Filament A Current Low</label>
+            </value>
+            <value>
+                <fullName>E14 RF Detector A</fullName>
+                <default>false</default>
+                <label>E14 RF Detector A</label>
+            </value>
+            <value>
+                <fullName>E15 Filament B Current Low</fullName>
+                <default>false</default>
+                <label>E15 Filament B Current Low</label>
+            </value>
+            <value>
+                <fullName>E15 RF Detector B</fullName>
+                <default>false</default>
+                <label>E15 RF Detector B</label>
+            </value>
+            <value>
+                <fullName>E16 No Line Sync</fullName>
+                <default>false</default>
+                <label>E16 No Line Sync</label>
+            </value>
+            <value>
+                <fullName>E16 RMS Filament Voltage Low</fullName>
+                <default>false</default>
+                <label>E16 RMS Filament Voltage Low</label>
+            </value>
+            <value>
+                <fullName>E17 External Interlock A</fullName>
+                <default>false</default>
+                <label>E17 External Interlock A</label>
+            </value>
+            <value>
+                <fullName>E17 RMS Filament Voltage High</fullName>
+                <default>false</default>
+                <label>E17 RMS Filament Voltage High</label>
+            </value>
+            <value>
+                <fullName>E18 External Interlock B</fullName>
+                <default>false</default>
+                <label>E18 External Interlock B</label>
+            </value>
+            <value>
+                <fullName>E18 Filament A Current High</fullName>
+                <default>false</default>
+                <label>E18 Filament A Current High</label>
+            </value>
+            <value>
+                <fullName>E19 Filament B Current High</fullName>
+                <default>false</default>
+                <label>E19 Filament B Current High</label>
+            </value>
+            <value>
+                <fullName>E19 Process Interlock</fullName>
+                <default>false</default>
+                <label>E19 Process Interlock</label>
+            </value>
+            <value>
+                <fullName>E1 Mag A Current High</fullName>
+                <default>false</default>
+                <label>E1 Mag A Current High</label>
+            </value>
+            <value>
+                <fullName>E1 OK</fullName>
+                <default>false</default>
+                <label>E1 OK</label>
+            </value>
+            <value>
+                <fullName>E1 T102 Lo</fullName>
+                <default>false</default>
+                <label>E1 T102 Lo</label>
+            </value>
+            <value>
+                <fullName>E20 Mag Voltage High</fullName>
+                <default>false</default>
+                <label>E20 Mag Voltage High</label>
+            </value>
+            <value>
+                <fullName>E20 PBA Interlock</fullName>
+                <default>false</default>
+                <label>E20 PBA Interlock</label>
+            </value>
+            <value>
+                <fullName>E21 Mag Voltage Low</fullName>
+                <default>false</default>
+                <label>E21 Mag Voltage Low</label>
+            </value>
+            <value>
+                <fullName>E21 XBA Interlock</fullName>
+                <default>false</default>
+                <label>E21 XBA Interlock</label>
+            </value>
+            <value>
+                <fullName>E22 No Confirmation</fullName>
+                <default>false</default>
+                <label>E22 No Confirmation</label>
+            </value>
+            <value>
+                <fullName>E22 RF Sensor Short/open</fullName>
+                <default>false</default>
+                <label>E22 RF Sensor Short/open</label>
+            </value>
+            <value>
+                <fullName>E23 Balancer Calibration</fullName>
+                <default>false</default>
+                <label>E23 Balancer Calibration</label>
+            </value>
+            <value>
+                <fullName>E23 I60xM Test Fail</fullName>
+                <default>false</default>
+                <label>E23 I60xM Test Fail</label>
+            </value>
+            <value>
+                <fullName>E24 No Bulb Ignition</fullName>
+                <default>false</default>
+                <label>E24 No Bulb Ignition</label>
+            </value>
+            <value>
+                <fullName>E24 P-Cell Shorted</fullName>
+                <default>false</default>
+                <label>E24 P-Cell Shorted</label>
+            </value>
+            <value>
+                <fullName>E25 Not used</fullName>
+                <default>false</default>
+                <label>E25 Not used</label>
+            </value>
+            <value>
+                <fullName>E25 Photocell Short</fullName>
+                <default>false</default>
+                <label>E25 Photocell Short</label>
+            </value>
+            <value>
+                <fullName>E26 Excessive Moding</fullName>
+                <default>false</default>
+                <label>E26 Excessive Moding</label>
+            </value>
+            <value>
+                <fullName>E26 Photocell Open</fullName>
+                <default>false</default>
+                <label>E26 Photocell Open</label>
+            </value>
+            <value>
+                <fullName>E27 E-Stop Open</fullName>
+                <default>false</default>
+                <label>E27 E-Stop Open</label>
+            </value>
+            <value>
+                <fullName>E27 V Mag Detected</fullName>
+                <default>false</default>
+                <label>E27 V Mag Detected</label>
+            </value>
+            <value>
+                <fullName>E28 IGBT DS</fullName>
+                <default>false</default>
+                <label>E28 IGBT DS</label>
+            </value>
+            <value>
+                <fullName>E28 V Mag Low</fullName>
+                <default>false</default>
+                <label>E28 V Mag Low</label>
+            </value>
+            <value>
+                <fullName>E29 IGBT Over Current</fullName>
+                <default>false</default>
+                <label>E29 IGBT Over Current</label>
+            </value>
+            <value>
+                <fullName>E29 Open HV Circuit</fullName>
+                <default>false</default>
+                <label>E29 Open HV Circuit</label>
+            </value>
+            <value>
+                <fullName>E2 Mag B Current High</fullName>
+                <default>false</default>
+                <label>E2 Mag B Current High</label>
+            </value>
+            <value>
+                <fullName>E2 Mag Not Set Up</fullName>
+                <default>false</default>
+                <label>E2 Mag Not Set Up</label>
+            </value>
+            <value>
+                <fullName>E2 T103 Lo</fullName>
+                <default>false</default>
+                <label>E2 T103 Lo</label>
+            </value>
+            <value>
+                <fullName>E30 Air Temp Low</fullName>
+                <default>false</default>
+                <label>E30 Air Temp Low</label>
+            </value>
+            <value>
+                <fullName>E30 Low Control Voltage</fullName>
+                <default>false</default>
+                <label>E30 Low Control Voltage</label>
+            </value>
+            <value>
+                <fullName>E31 Can&apos;t Stay @ Power</fullName>
+                <default>false</default>
+                <label>E31 Can&apos;t Stay @ Power</label>
+            </value>
+            <value>
+                <fullName>E31 Communication Timeout</fullName>
+                <default>false</default>
+                <label>E31 Communication Timeout</label>
+            </value>
+            <value>
+                <fullName>E32 A/D Conversion Error</fullName>
+                <default>false</default>
+                <label>E32 A/D Conversion Error</label>
+            </value>
+            <value>
+                <fullName>E32 K100 Fault</fullName>
+                <default>false</default>
+                <label>E32 K100 Fault</label>
+            </value>
+            <value>
+                <fullName>E33 Air Temp High</fullName>
+                <default>false</default>
+                <label>E33 Air Temp High</label>
+            </value>
+            <value>
+                <fullName>E33 Cable Interlock</fullName>
+                <default>false</default>
+                <label>E33 Cable Interlock</label>
+            </value>
+            <value>
+                <fullName>E34 Factory Use</fullName>
+                <default>false</default>
+                <label>E34 Factory Use</label>
+            </value>
+            <value>
+                <fullName>E34 RAM</fullName>
+                <default>false</default>
+                <label>E34 RAM</label>
+            </value>
+            <value>
+                <fullName>E35 Comm. Bus Open</fullName>
+                <default>false</default>
+                <label>E35 Comm. Bus Open</label>
+            </value>
+            <value>
+                <fullName>E35 IGBT Temp Sensor</fullName>
+                <default>false</default>
+                <label>E35 IGBT Temp Sensor</label>
+            </value>
+            <value>
+                <fullName>E36 Invalid Row/Col</fullName>
+                <default>false</default>
+                <label>E36 Invalid Row/Col</label>
+            </value>
+            <value>
+                <fullName>E36 Net Work Power Fault</fullName>
+                <default>false</default>
+                <label>E36 Net Work Power Fault</label>
+            </value>
+            <value>
+                <fullName>E37 ROM Obsolete</fullName>
+                <default>false</default>
+                <label>E37 ROM Obsolete</label>
+            </value>
+            <value>
+                <fullName>E38 ROM Defect</fullName>
+                <default>false</default>
+                <label>E38 ROM Defect</label>
+            </value>
+            <value>
+                <fullName>E39 ROM Mismatch</fullName>
+                <default>false</default>
+                <label>E39 ROM Mismatch</label>
+            </value>
+            <value>
+                <fullName>E3 Cable Interlock</fullName>
+                <default>false</default>
+                <label>E3 Cable Interlock</label>
+            </value>
+            <value>
+                <fullName>E3 Not Used</fullName>
+                <default>false</default>
+                <label>E3 Not Used</label>
+            </value>
+            <value>
+                <fullName>E3 T104 Lo</fullName>
+                <default>false</default>
+                <label>E3 T104 Lo</label>
+            </value>
+            <value>
+                <fullName>E40 Duplicate I/O ID</fullName>
+                <default>false</default>
+                <label>E40 Duplicate I/O ID</label>
+            </value>
+            <value>
+                <fullName>E41 I25x Test Fail</fullName>
+                <default>false</default>
+                <label>E41 I25x Test Fail</label>
+            </value>
+            <value>
+                <fullName>E42 E Stop Open</fullName>
+                <default>false</default>
+                <label>E42 E Stop Open</label>
+            </value>
+            <value>
+                <fullName>E43 Xformer Overheat</fullName>
+                <default>false</default>
+                <label>E43 Xformer Overheat</label>
+            </value>
+            <value>
+                <fullName>E44 Cockroach</fullName>
+                <default>false</default>
+                <label>E44 Cockroach</label>
+            </value>
+            <value>
+                <fullName>E45 RF Det A Short</fullName>
+                <default>false</default>
+                <label>E45 RF Det A Short</label>
+            </value>
+            <value>
+                <fullName>E46 RF Det B Short</fullName>
+                <default>false</default>
+                <label>E46 RF Det B Short</label>
+            </value>
+            <value>
+                <fullName>E47 Line Freq. Error</fullName>
+                <default>false</default>
+                <label>E47 Line Freq. Error</label>
+            </value>
+            <value>
+                <fullName>E48 EEPROM Failure</fullName>
+                <default>false</default>
+                <label>E48 EEPROM Failure</label>
+            </value>
+            <value>
+                <fullName>E49 Mag Cal Failure</fullName>
+                <default>false</default>
+                <label>E49 Mag Cal Failure</label>
+            </value>
+            <value>
+                <fullName>E4 Air Pressure interlock</fullName>
+                <default>false</default>
+                <label>E4 Air Pressure interlock</label>
+            </value>
+            <value>
+                <fullName>E4 Not Used</fullName>
+                <default>false</default>
+                <label>E4 Not Used</label>
+            </value>
+            <value>
+                <fullName>E4 T105 Lo</fullName>
+                <default>false</default>
+                <label>E4 T105 Lo</label>
+            </value>
+            <value>
+                <fullName>E50 Lamp Test</fullName>
+                <default>false</default>
+                <label>E50 Lamp Test</label>
+            </value>
+            <value>
+                <fullName>E51 No Calibration</fullName>
+                <default>false</default>
+                <label>E51 No Calibration</label>
+            </value>
+            <value>
+                <fullName>E52 Slave Not Ready</fullName>
+                <default>false</default>
+                <label>E52 Slave Not Ready</label>
+            </value>
+            <value>
+                <fullName>E53 Turned On Late</fullName>
+                <default>false</default>
+                <label>E53 Turned On Late</label>
+            </value>
+            <value>
+                <fullName>E54 Slave Off-Line</fullName>
+                <default>false</default>
+                <label>E54 Slave Off-Line</label>
+            </value>
+            <value>
+                <fullName>E55 Not With Row</fullName>
+                <default>false</default>
+                <label>E55 Not With Row</label>
+            </value>
+            <value>
+                <fullName>E56 No Master</fullName>
+                <default>false</default>
+                <label>E56 No Master</label>
+            </value>
+            <value>
+                <fullName>E57 Mode Manager #1</fullName>
+                <default>false</default>
+                <label>E57 Mode Manager #1</label>
+            </value>
+            <value>
+                <fullName>E58 Mode Manager #2</fullName>
+                <default>false</default>
+                <label>E58 Mode Manager #2</label>
+            </value>
+            <value>
+                <fullName>E59 Mode Manager #3</fullName>
+                <default>false</default>
+                <label>E59 Mode Manager #3</label>
+            </value>
+            <value>
+                <fullName>E5 IGBT Over Temp</fullName>
+                <default>false</default>
+                <label>E5 IGBT Over Temp</label>
+            </value>
+            <value>
+                <fullName>E5 Not Used</fullName>
+                <default>false</default>
+                <label>E5 Not Used</label>
+            </value>
+            <value>
+                <fullName>E5 T106 Lo</fullName>
+                <default>false</default>
+                <label>E5 T106 Lo</label>
+            </value>
+            <value>
+                <fullName>E60 Mode Manager #4</fullName>
+                <default>false</default>
+                <label>E60 Mode Manager #4</label>
+            </value>
+            <value>
+                <fullName>E61 Mode Manager #5</fullName>
+                <default>false</default>
+                <label>E61 Mode Manager #5</label>
+            </value>
+            <value>
+                <fullName>E62 PWR Imbalance</fullName>
+                <default>false</default>
+                <label>E62 PWR Imbalance</label>
+            </value>
+            <value>
+                <fullName>E6 Power Supply Over Temp</fullName>
+                <default>false</default>
+                <label>E6 Power Supply Over Temp</label>
+            </value>
+            <value>
+                <fullName>E6 T101 Hi</fullName>
+                <default>false</default>
+                <label>E6 T101 Hi</label>
+            </value>
+            <value>
+                <fullName>E6 V Control Low</fullName>
+                <default>false</default>
+                <label>E6 V Control Low</label>
+            </value>
+            <value>
+                <fullName>E7 Power Supply Low Temp</fullName>
+                <default>false</default>
+                <label>E7 Power Supply Low Temp</label>
+            </value>
+            <value>
+                <fullName>E7 T102 Hi</fullName>
+                <default>false</default>
+                <label>E7 T102 Hi</label>
+            </value>
+            <value>
+                <fullName>E7 V Control High</fullName>
+                <default>false</default>
+                <label>E7 V Control High</label>
+            </value>
+            <value>
+                <fullName>E8 EEPROM Fault</fullName>
+                <default>false</default>
+                <label>E8 EEPROM Fault</label>
+            </value>
+            <value>
+                <fullName>E8 I Fil Low</fullName>
+                <default>false</default>
+                <label>E8 I Fil Low</label>
+            </value>
+            <value>
+                <fullName>E8 T103 Hi</fullName>
+                <default>false</default>
+                <label>E8 T103 Hi</label>
+            </value>
+            <value>
+                <fullName>E9 I Fil High</fullName>
+                <default>false</default>
+                <label>E9 I Fil High</label>
+            </value>
+            <value>
+                <fullName>E9 Internal Fan Fault</fullName>
+                <default>false</default>
+                <label>E9 Internal Fan Fault</label>
+            </value>
+            <value>
+                <fullName>E9 T104 Hi</fullName>
+                <default>false</default>
+                <label>E9 T104 Hi</label>
+            </value>
+            <value>
+                <fullName>EA T105 Hi</fullName>
+                <default>false</default>
+                <label>EA T105 Hi</label>
+            </value>
+            <value>
+                <fullName>EB T106 Hi</fullName>
+                <default>false</default>
+                <label>EB T106 Hi</label>
+            </value>
+            <value>
+                <fullName>EC Mag A Failed</fullName>
+                <default>false</default>
+                <label>EC Mag A Failed</label>
+            </value>
+            <value>
+                <fullName>ED Mag B Failed</fullName>
+                <default>false</default>
+                <label>ED Mag B Failed</label>
+            </value>
+            <value>
+                <fullName>Electrical Assembly</fullName>
+                <default>false</default>
+                <label>Electrical Assembly</label>
+            </value>
+            <value>
+                <fullName>Electrical Contact</fullName>
+                <default>false</default>
+                <label>Electrical Contact</label>
+            </value>
+            <value>
+                <fullName>electrode blackened</fullName>
+                <default>false</default>
+                <label>electrode blackened</label>
+            </value>
+            <value>
+                <fullName>Electrode Damaged</fullName>
+                <default>false</default>
+                <label>Electrode Damaged</label>
+            </value>
+            <value>
+                <fullName>electrode missing</fullName>
+                <default>false</default>
+                <label>electrode missing</label>
+            </value>
+            <value>
+                <fullName>Electrode Obstructed</fullName>
+                <default>false</default>
+                <label>Electrode Obstructed</label>
+            </value>
+            <value>
+                <fullName>electrode pasting nok</fullName>
+                <default>false</default>
+                <label>electrode pasting nok</label>
+            </value>
+            <value>
+                <fullName>Emission window damaged</fullName>
+                <default>false</default>
+                <label>Emission window damaged</label>
+            </value>
+            <value>
+                <fullName>Emission window destroyed</fullName>
+                <default>false</default>
+                <label>Emission window destroyed</label>
+            </value>
+            <value>
+                <fullName>Emission window dirty</fullName>
+                <default>false</default>
+                <label>Emission window dirty</label>
+            </value>
+            <value>
+                <fullName>Emission window other fault</fullName>
+                <default>false</default>
+                <label>Emission window other fault</label>
+            </value>
+            <value>
+                <fullName>Error cused by environment</fullName>
+                <default>false</default>
+                <label>Error cused by environment</label>
+            </value>
+            <value>
+                <fullName>External Blower</fullName>
+                <default>false</default>
+                <label>External Blower</label>
+            </value>
+            <value>
+                <fullName>External Contamination</fullName>
+                <default>false</default>
+                <label>External Contamination</label>
+            </value>
+            <value>
+                <fullName>External Dimensions</fullName>
+                <default>false</default>
+                <label>External Dimensions</label>
+            </value>
+            <value>
+                <fullName>External Interlock</fullName>
+                <default>false</default>
+                <label>External Interlock</label>
+            </value>
+            <value>
+                <fullName>extinguihes during operation</fullName>
+                <default>false</default>
+                <label>extinguihes during operation</label>
+            </value>
+            <value>
+                <fullName>F0 Invalid ID</fullName>
+                <default>false</default>
+                <label>F0 Invalid ID</label>
+            </value>
+            <value>
+                <fullName>F1 DUP PS ID #</fullName>
+                <default>false</default>
+                <label>F1 DUP PS ID #</label>
+            </value>
+            <value>
+                <fullName>F2 No Master P.S.*</fullName>
+                <default>false</default>
+                <label>F2 No Master P.S.*</label>
+            </value>
+            <value>
+                <fullName>F3 No Master P.S.</fullName>
+                <default>false</default>
+                <label>F3 No Master P.S.</label>
+            </value>
+            <value>
+                <fullName>F4 Missing Status</fullName>
+                <default>false</default>
+                <label>F4 Missing Status</label>
+            </value>
+            <value>
+                <fullName>F5 Invalid Status</fullName>
+                <default>false</default>
+                <label>F5 Invalid Status</label>
+            </value>
+            <value>
+                <fullName>false material</fullName>
+                <default>false</default>
+                <label>false material</label>
+            </value>
+            <value>
+                <fullName>faulty wiring</fullName>
+                <default>false</default>
+                <label>faulty wiring</label>
+            </value>
+            <value>
+                <fullName>FC SYS Error 1</fullName>
+                <default>false</default>
+                <label>FC SYS Error 1</label>
+            </value>
+            <value>
+                <fullName>FD SYS Error 2</fullName>
+                <default>false</default>
+                <label>FD SYS Error 2</label>
+            </value>
+            <value>
+                <fullName>FE SYS Error 3</fullName>
+                <default>false</default>
+                <label>FE SYS Error 3</label>
+            </value>
+            <value>
+                <fullName>FF Bus Error</fullName>
+                <default>false</default>
+                <label>FF Bus Error</label>
+            </value>
+            <value>
+                <fullName>Filament Distortion</fullName>
+                <default>false</default>
+                <label>Filament Distortion</label>
+            </value>
+            <value>
+                <fullName>Filament Failure</fullName>
+                <default>false</default>
+                <label>Filament Failure</label>
+            </value>
+            <value>
+                <fullName>flexible stranded wire color nok</fullName>
+                <default>false</default>
+                <label>flexible stranded wire color nok</label>
+            </value>
+            <value>
+                <fullName>flexible stranded wire diameter nok</fullName>
+                <default>false</default>
+                <label>flexible stranded wire diameter nok</label>
+            </value>
+            <value>
+                <fullName>flexible stranded wire invert</fullName>
+                <default>false</default>
+                <label>flexible stranded wire invert</label>
+            </value>
+            <value>
+                <fullName>flexible stranded wire length nok</fullName>
+                <default>false</default>
+                <label>flexible stranded wire length nok</label>
+            </value>
+            <value>
+                <fullName>Float defective</fullName>
+                <default>false</default>
+                <label>Float defective</label>
+            </value>
+            <value>
+                <fullName>foil lift</fullName>
+                <default>false</default>
+                <label>foil lift</label>
+            </value>
+            <value>
+                <fullName>foreign particle in lamp tube</fullName>
+                <default>false</default>
+                <label>foreign particle in lamp tube</label>
+            </value>
+            <value>
+                <fullName>Gas diminiched / Sputtered material / Diffuse discharge</fullName>
+                <default>false</default>
+                <label>Gas diminiched / Sputtered material / Diffuse discharge</label>
+            </value>
+            <value>
+                <fullName>Gas Leak</fullName>
+                <default>false</default>
+                <label>Gas Leak</label>
+            </value>
+            <value>
+                <fullName>Gas Leak - Base</fullName>
+                <default>false</default>
+                <label>Gas Leak - Base</label>
+            </value>
+            <value>
+                <fullName>Gas Leak - Frit</fullName>
+                <default>false</default>
+                <label>Gas Leak - Frit</label>
+            </value>
+            <value>
+                <fullName>Gas Leak - General</fullName>
+                <default>false</default>
+                <label>Gas Leak - General</label>
+            </value>
+            <value>
+                <fullName>Gas Leak - Seal</fullName>
+                <default>false</default>
+                <label>Gas Leak - Seal</label>
+            </value>
+            <value>
+                <fullName>Gas Leak - Tip Off</fullName>
+                <default>false</default>
+                <label>Gas Leak - Tip Off</label>
+            </value>
+            <value>
+                <fullName>geometrical dimensions out of tolerance</fullName>
+                <default>false</default>
+                <label>geometrical dimensions out of tolerance</label>
+            </value>
+            <value>
+                <fullName>glow discharge</fullName>
+                <default>false</default>
+                <label>glow discharge</label>
+            </value>
+            <value>
+                <fullName>Housing board faulty</fullName>
+                <default>false</default>
+                <label>Housing board faulty</label>
+            </value>
+            <value>
+                <fullName>Housing connection Lamp damaged</fullName>
+                <default>false</default>
+                <label>Housing connection Lamp damaged</label>
+            </value>
+            <value>
+                <fullName>Housing dirty inside</fullName>
+                <default>false</default>
+                <label>Housing dirty inside</label>
+            </value>
+            <value>
+                <fullName>Housing leaky cooling inside</fullName>
+                <default>false</default>
+                <label>Housing leaky cooling inside</label>
+            </value>
+            <value>
+                <fullName>housing loose components</fullName>
+                <default>false</default>
+                <label>housing loose components</label>
+            </value>
+            <value>
+                <fullName>Housing mechanically damaged</fullName>
+                <default>false</default>
+                <label>Housing mechanically damaged</label>
+            </value>
+            <value>
+                <fullName>Housing Wiring faulty</fullName>
+                <default>false</default>
+                <label>Housing Wiring faulty</label>
+            </value>
+            <value>
+                <fullName>identification marking nok</fullName>
+                <default>false</default>
+                <label>identification marking nok</label>
+            </value>
+            <value>
+                <fullName>ignition aid wire nok</fullName>
+                <default>false</default>
+                <label>ignition aid wire nok</label>
+            </value>
+            <value>
+                <fullName>ignition delay</fullName>
+                <default>false</default>
+                <label>ignition delay</label>
+            </value>
+            <value>
+                <fullName>ignition voltage too high</fullName>
+                <default>false</default>
+                <label>ignition voltage too high</label>
+            </value>
+            <value>
+                <fullName>Incorrect gas fill</fullName>
+                <default>false</default>
+                <label>Incorrect gas fill</label>
+            </value>
+            <value>
+                <fullName>Incorrect settings</fullName>
+                <default>false</default>
+                <label>Incorrect settings</label>
+            </value>
+            <value>
+                <fullName>insulation  damaged</fullName>
+                <default>false</default>
+                <label>insulation  damaged</label>
+            </value>
+            <value>
+                <fullName>Intensity too low</fullName>
+                <default>false</default>
+                <label>Intensity too low</label>
+            </value>
+            <value>
+                <fullName>Internal Contamination</fullName>
+                <default>false</default>
+                <label>Internal Contamination</label>
+            </value>
+            <value>
+                <fullName>Inverter Fault</fullName>
+                <default>false</default>
+                <label>Inverter Fault</label>
+            </value>
+            <value>
+                <fullName>IR: Carbon ribbon: Hot spots</fullName>
+                <default>false</default>
+                <label>IR: Carbon ribbon: Hot spots</label>
+            </value>
+            <value>
+                <fullName>IR: Carbon ribbon: ripply / twisty</fullName>
+                <default>false</default>
+                <label>IR: Carbon ribbon: ripply / twisty</label>
+            </value>
+            <value>
+                <fullName>IR: Carbon ribbon: sparks</fullName>
+                <default>false</default>
+                <label>IR: Carbon ribbon: sparks</label>
+            </value>
+            <value>
+                <fullName>IR: Carbon ribbon: torn</fullName>
+                <default>false</default>
+                <label>IR: Carbon ribbon: torn</label>
+            </value>
+            <value>
+                <fullName>IR: Carbon ribbon: vibrating</fullName>
+                <default>false</default>
+                <label>IR: Carbon ribbon: vibrating</label>
+            </value>
+            <value>
+                <fullName>IR: weld between stick and back-up filament</fullName>
+                <default>false</default>
+                <label>IR: weld between stick and back-up filament</label>
+            </value>
+            <value>
+                <fullName>IR: weld between stick and buffer spring nok</fullName>
+                <default>false</default>
+                <label>IR: weld between stick and buffer spring nok</label>
+            </value>
+            <value>
+                <fullName>IR: weld between stick and heating filament</fullName>
+                <default>false</default>
+                <label>IR: weld between stick and heating filament</label>
+            </value>
+            <value>
+                <fullName>IR: weld joint nok</fullName>
+                <default>false</default>
+                <label>IR: weld joint nok</label>
+            </value>
+            <value>
+                <fullName>IR: weld molybdenum nok</fullName>
+                <default>false</default>
+                <label>IR: weld molybdenum nok</label>
+            </value>
+            <value>
+                <fullName>IR heating filament: cracked</fullName>
+                <default>false</default>
+                <label>IR heating filament: cracked</label>
+            </value>
+            <value>
+                <fullName>IR heating filament: oxidized</fullName>
+                <default>false</default>
+                <label>IR heating filament: oxidized</label>
+            </value>
+            <value>
+                <fullName>IR heating filament: rating nok</fullName>
+                <default>false</default>
+                <label>IR heating filament: rating nok</label>
+            </value>
+            <value>
+                <fullName>IR heating filament: resistance nok</fullName>
+                <default>false</default>
+                <label>IR heating filament: resistance nok</label>
+            </value>
+            <value>
+                <fullName>IR heating filament: sagged</fullName>
+                <default>false</default>
+                <label>IR heating filament: sagged</label>
+            </value>
+            <value>
+                <fullName>IR heating filament: short-circuit</fullName>
+                <default>false</default>
+                <label>IR heating filament: short-circuit</label>
+            </value>
+            <value>
+                <fullName>IR heating filament: stretched</fullName>
+                <default>false</default>
+                <label>IR heating filament: stretched</label>
+            </value>
+            <value>
+                <fullName>IR heating filament: total length nok</fullName>
+                <default>false</default>
+                <label>IR heating filament: total length nok</label>
+            </value>
+            <value>
+                <fullName>IR SW: slice broken / missing</fullName>
+                <default>false</default>
+                <label>IR SW: slice broken / missing</label>
+            </value>
+            <value>
+                <fullName>IR SW: slice gap nok</fullName>
+                <default>false</default>
+                <label>IR SW: slice gap nok</label>
+            </value>
+            <value>
+                <fullName>IR SW: slice scrolling</fullName>
+                <default>false</default>
+                <label>IR SW: slice scrolling</label>
+            </value>
+            <value>
+                <fullName>label incorrect / missing</fullName>
+                <default>false</default>
+                <label>label incorrect / missing</label>
+            </value>
+            <value>
+                <fullName>label missing</fullName>
+                <default>false</default>
+                <label>label missing</label>
+            </value>
+            <value>
+                <fullName>lamp broken</fullName>
+                <default>false</default>
+                <label>lamp broken</label>
+            </value>
+            <value>
+                <fullName>lamp exploded</fullName>
+                <default>false</default>
+                <label>lamp exploded</label>
+            </value>
+            <value>
+                <fullName>lamp leaky</fullName>
+                <default>false</default>
+                <label>lamp leaky</label>
+            </value>
+            <value>
+                <fullName>Lamp Out</fullName>
+                <default>false</default>
+                <label>Lamp Out</label>
+            </value>
+            <value>
+                <fullName>Lead wire / connector / pin assignment - NOK</fullName>
+                <default>false</default>
+                <label>Lead wire / connector / pin assignment - NOK</label>
+            </value>
+            <value>
+                <fullName>Leaky connection</fullName>
+                <default>false</default>
+                <label>Leaky connection</label>
+            </value>
+            <value>
+                <fullName>leaky  lamp body</fullName>
+                <default>false</default>
+                <label>leaky  lamp body</label>
+            </value>
+            <value>
+                <fullName>Leaky lamp body / Crack</fullName>
+                <default>false</default>
+                <label>Leaky lamp body / Crack</label>
+            </value>
+            <value>
+                <fullName>Leaky pump</fullName>
+                <default>false</default>
+                <label>Leaky pump</label>
+            </value>
+            <value>
+                <fullName>Leaky return cooling line</fullName>
+                <default>false</default>
+                <label>Leaky return cooling line</label>
+            </value>
+            <value>
+                <fullName>Leaky supply cooling line</fullName>
+                <default>false</default>
+                <label>Leaky supply cooling line</label>
+            </value>
+            <value>
+                <fullName>liftime to short</fullName>
+                <default>false</default>
+                <label>liftime to short</label>
+            </value>
+            <value>
+                <fullName>Low sensor faulty</fullName>
+                <default>false</default>
+                <label>Low sensor faulty</label>
+            </value>
+            <value>
+                <fullName>Magnetron Fault</fullName>
+                <default>false</default>
+                <label>Magnetron Fault</label>
+            </value>
+            <value>
+                <fullName>marking incorrect / missing</fullName>
+                <default>false</default>
+                <label>marking incorrect / missing</label>
+            </value>
+            <value>
+                <fullName>material defective</fullName>
+                <default>false</default>
+                <label>material defective</label>
+            </value>
+            <value>
+                <fullName>material incorrect</fullName>
+                <default>false</default>
+                <label>material incorrect</label>
+            </value>
+            <value>
+                <fullName>Misaligned Components</fullName>
+                <default>false</default>
+                <label>Misaligned Components</label>
+            </value>
+            <value>
+                <fullName>Misalignment - Filament</fullName>
+                <default>false</default>
+                <label>Misalignment - Filament</label>
+            </value>
+            <value>
+                <fullName>Misalignment - Glass Parts</fullName>
+                <default>false</default>
+                <label>Misalignment - Glass Parts</label>
+            </value>
+            <value>
+                <fullName>Misalignment - Internal Parts</fullName>
+                <default>false</default>
+                <label>Misalignment - Internal Parts</label>
+            </value>
+            <value>
+                <fullName>Misalignment - Lamp</fullName>
+                <default>false</default>
+                <label>Misalignment - Lamp</label>
+            </value>
+            <value>
+                <fullName>Module burnt</fullName>
+                <default>false</default>
+                <label>Module burnt</label>
+            </value>
+            <value>
+                <fullName>Module Connection faulty</fullName>
+                <default>false</default>
+                <label>Module Connection faulty</label>
+            </value>
+            <value>
+                <fullName>Module Hotspot</fullName>
+                <default>false</default>
+                <label>Module Hotspot</label>
+            </value>
+            <value>
+                <fullName>Module low flow</fullName>
+                <default>false</default>
+                <label>Module low flow</label>
+            </value>
+            <value>
+                <fullName>Module other fault</fullName>
+                <default>false</default>
+                <label>Module other fault</label>
+            </value>
+            <value>
+                <fullName>Module overheated</fullName>
+                <default>false</default>
+                <label>Module overheated</label>
+            </value>
+            <value>
+                <fullName>Module partly without function</fullName>
+                <default>false</default>
+                <label>Module partly without function</label>
+            </value>
+            <value>
+                <fullName>Module without function</fullName>
+                <default>false</default>
+                <label>Module without function</label>
+            </value>
+            <value>
+                <fullName>No Belt Movement</fullName>
+                <default>false</default>
+                <label>No Belt Movement</label>
+            </value>
+            <value>
+                <fullName>No Display</fullName>
+                <default>false</default>
+                <label>No Display</label>
+            </value>
+            <value>
+                <fullName>No Exhaust</fullName>
+                <default>false</default>
+                <label>No Exhaust</label>
+            </value>
+            <value>
+                <fullName>No fault found</fullName>
+                <default>false</default>
+                <label>No fault found</label>
+            </value>
+            <value>
+                <fullName>No function</fullName>
+                <default>false</default>
+                <label>No function</label>
+            </value>
+            <value>
+                <fullName>no ignition</fullName>
+                <default>false</default>
+                <label>no ignition</label>
+            </value>
+            <value>
+                <fullName>No ignition or extinguishes during operation</fullName>
+                <default>false</default>
+                <label>No ignition or extinguishes during operation</label>
+            </value>
+            <value>
+                <fullName>Noise / Drift / unstable baseline</fullName>
+                <default>false</default>
+                <label>Noise / Drift / unstable baseline</label>
+            </value>
+            <value>
+                <fullName>No Power</fullName>
+                <default>false</default>
+                <label>No Power</label>
+            </value>
+            <value>
+                <fullName>No Problem Found</fullName>
+                <default>false</default>
+                <label>No Problem Found</label>
+            </value>
+            <value>
+                <fullName>No Speed Control</fullName>
+                <default>false</default>
+                <label>No Speed Control</label>
+            </value>
+            <value>
+                <fullName>Not suitable for the process</fullName>
+                <default>false</default>
+                <label>Not suitable for the process</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other fault</fullName>
+                <default>false</default>
+                <label>Other fault</label>
+            </value>
+            <value>
+                <fullName>Other faults cooling line</fullName>
+                <default>false</default>
+                <label>Other faults cooling line</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Out of Specifications</fullName>
+                <default>false</default>
+                <label>Out of Specifications</label>
+            </value>
+            <value>
+                <fullName>out of tolerance</fullName>
+                <default>false</default>
+                <label>out of tolerance</label>
+            </value>
+            <value>
+                <fullName>packaging damaged</fullName>
+                <default>false</default>
+                <label>packaging damaged</label>
+            </value>
+            <value>
+                <fullName>packaging wrong</fullName>
+                <default>false</default>
+                <label>packaging wrong</label>
+            </value>
+            <value>
+                <fullName>Packing incorrect/damaged</fullName>
+                <default>false</default>
+                <label>Packing incorrect/damaged</label>
+            </value>
+            <value>
+                <fullName>Packing incorrect / damaged</fullName>
+                <default>false</default>
+                <label>Packing incorrect / damaged</label>
+            </value>
+            <value>
+                <fullName>Parts Missing</fullName>
+                <default>false</default>
+                <label>Parts Missing</label>
+            </value>
+            <value>
+                <fullName>PCB defect</fullName>
+                <default>false</default>
+                <label>PCB defect</label>
+            </value>
+            <value>
+                <fullName>PCB defect out of specs.</fullName>
+                <default>false</default>
+                <label>PCB defect out of specs.</label>
+            </value>
+            <value>
+                <fullName>Performance Failure</fullName>
+                <default>false</default>
+                <label>Performance Failure</label>
+            </value>
+            <value>
+                <fullName>pinch broken</fullName>
+                <default>false</default>
+                <label>pinch broken</label>
+            </value>
+            <value>
+                <fullName>pinch cavity</fullName>
+                <default>false</default>
+                <label>pinch cavity</label>
+            </value>
+            <value>
+                <fullName>pinch contaminated</fullName>
+                <default>false</default>
+                <label>pinch contaminated</label>
+            </value>
+            <value>
+                <fullName>pinch cracked</fullName>
+                <default>false</default>
+                <label>pinch cracked</label>
+            </value>
+            <value>
+                <fullName>pinch out of centerline</fullName>
+                <default>false</default>
+                <label>pinch out of centerline</label>
+            </value>
+            <value>
+                <fullName>pinch partly broken</fullName>
+                <default>false</default>
+                <label>pinch partly broken</label>
+            </value>
+            <value>
+                <fullName>pinch stress crack</fullName>
+                <default>false</default>
+                <label>pinch stress crack</label>
+            </value>
+            <value>
+                <fullName>Poor braid connection</fullName>
+                <default>false</default>
+                <label>Poor braid connection</label>
+            </value>
+            <value>
+                <fullName>Power, faulty adjustment</fullName>
+                <default>false</default>
+                <label>Power, faulty adjustment</label>
+            </value>
+            <value>
+                <fullName>Power, other fault</fullName>
+                <default>false</default>
+                <label>Power, other fault</label>
+            </value>
+            <value>
+                <fullName>Power, too low</fullName>
+                <default>false</default>
+                <label>Power, too low</label>
+            </value>
+            <value>
+                <fullName>Power Error</fullName>
+                <default>false</default>
+                <label>Power Error</label>
+            </value>
+            <value>
+                <fullName>Power Imbalance</fullName>
+                <default>false</default>
+                <label>Power Imbalance</label>
+            </value>
+            <value>
+                <fullName>power rating too high</fullName>
+                <default>false</default>
+                <label>power rating too high</label>
+            </value>
+            <value>
+                <fullName>power rating too low</fullName>
+                <default>false</default>
+                <label>power rating too low</label>
+            </value>
+            <value>
+                <fullName>Power Supply Temp</fullName>
+                <default>false</default>
+                <label>Power Supply Temp</label>
+            </value>
+            <value>
+                <fullName>Pressure shock absorber defective</fullName>
+                <default>false</default>
+                <label>Pressure shock absorber defective</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU board defective</fullName>
+                <default>false</default>
+                <label>PSU/MCU board defective</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU Case damaged</fullName>
+                <default>false</default>
+                <label>PSU/MCU Case damaged</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU Control voltage faulty</fullName>
+                <default>false</default>
+                <label>PSU/MCU Control voltage faulty</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU Data plug defective</fullName>
+                <default>false</default>
+                <label>PSU/MCU Data plug defective</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU Ethernet-CAN error</fullName>
+                <default>false</default>
+                <label>PSU/MCU Ethernet-CAN error</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU fan defective</fullName>
+                <default>false</default>
+                <label>PSU/MCU fan defective</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU incorrect software</fullName>
+                <default>false</default>
+                <label>PSU/MCU incorrect software</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU loose contact</fullName>
+                <default>false</default>
+                <label>PSU/MCU loose contact</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU other fault</fullName>
+                <default>false</default>
+                <label>PSU/MCU other fault</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU short circuit</fullName>
+                <default>false</default>
+                <label>PSU/MCU short circuit</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU software errors</fullName>
+                <default>false</default>
+                <label>PSU/MCU software errors</label>
+            </value>
+            <value>
+                <fullName>PSU/MCU soiled</fullName>
+                <default>false</default>
+                <label>PSU/MCU soiled</label>
+            </value>
+            <value>
+                <fullName>PSU channel defectice</fullName>
+                <default>false</default>
+                <label>PSU channel defectice</label>
+            </value>
+            <value>
+                <fullName>PSU display defective</fullName>
+                <default>false</default>
+                <label>PSU display defective</label>
+            </value>
+            <value>
+                <fullName>PSU Emergency stop defective</fullName>
+                <default>false</default>
+                <label>PSU Emergency stop defective</label>
+            </value>
+            <value>
+                <fullName>PSU End resistance faulty</fullName>
+                <default>false</default>
+                <label>PSU End resistance faulty</label>
+            </value>
+            <value>
+                <fullName>PSU filter mat clogged</fullName>
+                <default>false</default>
+                <label>PSU filter mat clogged</label>
+            </value>
+            <value>
+                <fullName>PSU lamp ID faulty</fullName>
+                <default>false</default>
+                <label>PSU lamp ID faulty</label>
+            </value>
+            <value>
+                <fullName>PSU power supply defective</fullName>
+                <default>false</default>
+                <label>PSU power supply defective</label>
+            </value>
+            <value>
+                <fullName>PSU Spring terminals defective</fullName>
+                <default>false</default>
+                <label>PSU Spring terminals defective</label>
+            </value>
+            <value>
+                <fullName>Pump other faults</fullName>
+                <default>false</default>
+                <label>Pump other faults</label>
+            </value>
+            <value>
+                <fullName>Pump Running noises</fullName>
+                <default>false</default>
+                <label>Pump Running noises</label>
+            </value>
+            <value>
+                <fullName>pump stem stress crack</fullName>
+                <default>false</default>
+                <label>pump stem stress crack</label>
+            </value>
+            <value>
+                <fullName>Remote Control fault</fullName>
+                <default>false</default>
+                <label>Remote Control fault</label>
+            </value>
+            <value>
+                <fullName>RF Fault</fullName>
+                <default>false</default>
+                <label>RF Fault</label>
+            </value>
+            <value>
+                <fullName>RF Interlock</fullName>
+                <default>false</default>
+                <label>RF Interlock</label>
+            </value>
+            <value>
+                <fullName>sealing foil blown</fullName>
+                <default>false</default>
+                <label>sealing foil blown</label>
+            </value>
+            <value>
+                <fullName>sealing foil cracked</fullName>
+                <default>false</default>
+                <label>sealing foil cracked</label>
+            </value>
+            <value>
+                <fullName>sealing foil crinkly</fullName>
+                <default>false</default>
+                <label>sealing foil crinkly</label>
+            </value>
+            <value>
+                <fullName>sealing foil oxidised</fullName>
+                <default>false</default>
+                <label>sealing foil oxidised</label>
+            </value>
+            <value>
+                <fullName>Secondary Optics Covering</fullName>
+                <default>false</default>
+                <label>Secondary Optics Covering</label>
+            </value>
+            <value>
+                <fullName>Secondary optics destroyed</fullName>
+                <default>false</default>
+                <label>Secondary optics destroyed</label>
+            </value>
+            <value>
+                <fullName>Secondary Optics other fault</fullName>
+                <default>false</default>
+                <label>Secondary Optics other fault</label>
+            </value>
+            <value>
+                <fullName>Secondary optics torn</fullName>
+                <default>false</default>
+                <label>Secondary optics torn</label>
+            </value>
+            <value>
+                <fullName>shockwatch activ</fullName>
+                <default>false</default>
+                <label>shockwatch activ</label>
+            </value>
+            <value>
+                <fullName>Short-circuit connection (splice)</fullName>
+                <default>false</default>
+                <label>Short-circuit connection (splice)</label>
+            </value>
+            <value>
+                <fullName>Shutter defect</fullName>
+                <default>false</default>
+                <label>Shutter defect</label>
+            </value>
+            <value>
+                <fullName>surface defective</fullName>
+                <default>false</default>
+                <label>surface defective</label>
+            </value>
+            <value>
+                <fullName>Switch cabinet loose contact</fullName>
+                <default>false</default>
+                <label>Switch cabinet loose contact</label>
+            </value>
+            <value>
+                <fullName>Switch cabinet mechanical damage</fullName>
+                <default>false</default>
+                <label>Switch cabinet mechanical damage</label>
+            </value>
+            <value>
+                <fullName>Switch cabinet phase error (conn. side)</fullName>
+                <default>false</default>
+                <label>Switch cabinet phase error (conn. side)</label>
+            </value>
+            <value>
+                <fullName>Switch cabinet wiring fault</fullName>
+                <default>false</default>
+                <label>Switch cabinet wiring fault</label>
+            </value>
+            <value>
+                <fullName>System Blower</fullName>
+                <default>false</default>
+                <label>System Blower</label>
+            </value>
+            <value>
+                <fullName>Timer NOK</fullName>
+                <default>false</default>
+                <label>Timer NOK</label>
+            </value>
+            <value>
+                <fullName>total length nok</fullName>
+                <default>false</default>
+                <label>total length nok</label>
+            </value>
+            <value>
+                <fullName>transport damage</fullName>
+                <default>false</default>
+                <label>transport damage</label>
+            </value>
+            <value>
+                <fullName>tube bended</fullName>
+                <default>false</default>
+                <label>tube bended</label>
+            </value>
+            <value>
+                <fullName>tube black (laminary)</fullName>
+                <default>false</default>
+                <label>tube black (laminary)</label>
+            </value>
+            <value>
+                <fullName>tube black (spot)</fullName>
+                <default>false</default>
+                <label>tube black (spot)</label>
+            </value>
+            <value>
+                <fullName>tube bloated</fullName>
+                <default>false</default>
+                <label>tube bloated</label>
+            </value>
+            <value>
+                <fullName>tube brown</fullName>
+                <default>false</default>
+                <label>tube brown</label>
+            </value>
+            <value>
+                <fullName>tube contaminated (inside)</fullName>
+                <default>false</default>
+                <label>tube contaminated (inside)</label>
+            </value>
+            <value>
+                <fullName>tube contaminated (outside)</fullName>
+                <default>false</default>
+                <label>tube contaminated (outside)</label>
+            </value>
+            <value>
+                <fullName>tube dent</fullName>
+                <default>false</default>
+                <label>tube dent</label>
+            </value>
+            <value>
+                <fullName>tube dimension nok</fullName>
+                <default>false</default>
+                <label>tube dimension nok</label>
+            </value>
+            <value>
+                <fullName>tube splintered</fullName>
+                <default>false</default>
+                <label>tube splintered</label>
+            </value>
+            <value>
+                <fullName>tube stress crack</fullName>
+                <default>false</default>
+                <label>tube stress crack</label>
+            </value>
+            <value>
+                <fullName>tube surface nok</fullName>
+                <default>false</default>
+                <label>tube surface nok</label>
+            </value>
+            <value>
+                <fullName>tube white</fullName>
+                <default>false</default>
+                <label>tube white</label>
+            </value>
+            <value>
+                <fullName>tube white (spot)</fullName>
+                <default>false</default>
+                <label>tube white (spot)</label>
+            </value>
+            <value>
+                <fullName>unascertainable</fullName>
+                <default>false</default>
+                <label>unascertainable</label>
+            </value>
+            <value>
+                <fullName>Unauthorized opening of housing</fullName>
+                <default>false</default>
+                <label>Unauthorized opening of housing</label>
+            </value>
+            <value>
+                <fullName>Upgrade Only</fullName>
+                <default>false</default>
+                <label>Upgrade Only</label>
+            </value>
+            <value>
+                <fullName>users instruction missing</fullName>
+                <default>false</default>
+                <label>users instruction missing</label>
+            </value>
+            <value>
+                <fullName>users instruction wrong</fullName>
+                <default>false</default>
+                <label>users instruction wrong</label>
+            </value>
+            <value>
+                <fullName>UV Intensity out of spec</fullName>
+                <default>false</default>
+                <label>UV Intensity out of spec</label>
+            </value>
+            <value>
+                <fullName>UV intensity too high</fullName>
+                <default>false</default>
+                <label>UV intensity too high</label>
+            </value>
+            <value>
+                <fullName>UV intensity too low</fullName>
+                <default>false</default>
+                <label>UV intensity too low</label>
+            </value>
+            <value>
+                <fullName>Visible crack</fullName>
+                <default>false</default>
+                <label>Visible crack</label>
+            </value>
+            <value>
+                <fullName>Vis lamp defect</fullName>
+                <default>false</default>
+                <label>Vis lamp defect</label>
+            </value>
+            <value>
+                <fullName>voilent arc</fullName>
+                <default>false</default>
+                <label>voilent arc</label>
+            </value>
+            <value>
+                <fullName>voltage too high</fullName>
+                <default>false</default>
+                <label>voltage too high</label>
+            </value>
+            <value>
+                <fullName>voltage too low</fullName>
+                <default>false</default>
+                <label>voltage too low</label>
+            </value>
+            <value>
+                <fullName>wire dismantled</fullName>
+                <default>false</default>
+                <label>wire dismantled</label>
+            </value>
+            <value>
+                <fullName>Wiring / connector / pin assignment - NOK</fullName>
+                <default>false</default>
+                <label>Wiring / connector / pin assignment - NOK</label>
+            </value>
+            <value>
+                <fullName>without operation</fullName>
+                <default>false</default>
+                <label>without operation</label>
+            </value>
+            <value>
+                <fullName>wrong - coding, - wiring, - base welding</fullName>
+                <default>false</default>
+                <label>wrong - coding, - wiring, - base welding</label>
+            </value>
+            <value>
+                <fullName>wrong material</fullName>
+                <default>false</default>
+                <label>wrong material</label>
+            </value>
+            <value>
+                <fullName>Wrong or improper alignment</fullName>
+                <default>false</default>
+                <label>Wrong or improper alignment</label>
+            </value>
+            <value>
+                <fullName>wrong packaging /wrong label</fullName>
+                <default>false</default>
+                <label>wrong packaging /wrong label</label>
+            </value>
+            <value>
+                <fullName>Collective blocking</fullName>
+                <default>false</default>
+                <label>Collective blocking</label>
+            </value>
+            <value>
+                <fullName>Flow monitor alarm</fullName>
+                <default>false</default>
+                <label>Flow monitor alarm</label>
+            </value>
+            <value>
+                <fullName>Float switch insufficient water level</fullName>
+                <default>false</default>
+                <label>Float switch insufficient water level</label>
+            </value>
+            <value>
+                <fullName>Compressor MPS triggered</fullName>
+                <default>false</default>
+                <label>Compressor MPS triggered</label>
+            </value>
+            <value>
+                <fullName>Pump MPS triggered</fullName>
+                <default>false</default>
+                <label>Pump MPS triggered</label>
+            </value>
+            <value>
+                <fullName>High-pressure malfunction cooling circuit</fullName>
+                <default>false</default>
+                <label>High-pressure malfunction cooling circuit</label>
+            </value>
+            <value>
+                <fullName>Low-pressure malfunction cooling circuit</fullName>
+                <default>false</default>
+                <label>Low-pressure malfunction cooling circuit</label>
+            </value>
+            <value>
+                <fullName>Problem with CAN communication at: [xx]</fullName>
+                <default>false</default>
+                <label>Problem with CAN communication at: [xx]</label>
+            </value>
+            <value>
+                <fullName>Overcurrent at: [xx]</fullName>
+                <default>false</default>
+                <label>Overcurrent at: [xx]</label>
+            </value>
+            <value>
+                <fullName>Undercurrent at: [xx]</fullName>
+                <default>false</default>
+                <label>Undercurrent at: [xx]</label>
+            </value>
+            <value>
+                <fullName>Overvoltage at: [xx]</fullName>
+                <default>false</default>
+                <label>Overvoltage at: [xx]</label>
+            </value>
+            <value>
+                <fullName>Undervoltage at: [xx]</fullName>
+                <default>false</default>
+                <label>Undervoltage at: [xx]</label>
+            </value>
+            <value>
+                <fullName>UV LED unit x: Insufficient cooling water flow rate</fullName>
+                <default>false</default>
+                <label>UV LED unit x: Insufficient cooling water flow rate</label>
+            </value>
+            <value>
+                <fullName>UV LED unit x: Overheating, emergency cut-out</fullName>
+                <default>false</default>
+                <label>UV LED unit x: Overheating, emergency cut-out</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>MCU: Insufficient voltage supply</fullName>
+                <default>false</default>
+                <label>MCU: Insufficient voltage supply</label>
+            </value>
+            <value>
+                <fullName>MCU: Error ON/OFF signal</fullName>
+                <default>false</default>
+                <label>MCU: Error ON/OFF signal</label>
+            </value>
+            <value>
+                <fullName>MCU: Malfunction sheet guide plate</fullName>
+                <default>false</default>
+                <label>MCU: Malfunction sheet guide plate</label>
+            </value>
+            <value>
+                <fullName>Rotary encoder: Safety signal error</fullName>
+                <default>false</default>
+                <label>Rotary encoder: Safety signal error</label>
+            </value>
+            <value>
+                <fullName>Rotary encoder: Speed below limit</fullName>
+                <default>false</default>
+                <label>Rotary encoder: Speed below limit</label>
+            </value>
+            <value>
+                <fullName>Rotary encoder: Not detected</fullName>
+                <default>false</default>
+                <label>Rotary encoder: Not detected</label>
+            </value>
+            <value>
+                <fullName>PSU: Overtemperature at: [xx]</fullName>
+                <default>false</default>
+                <label>PSU: Overtemperature at: [xx]</label>
+            </value>
+            <value>
+                <fullName>PSU: Error enable signals press centre</fullName>
+                <default>false</default>
+                <label>PSU: Error enable signals press centre</label>
+            </value>
+            <value>
+                <fullName>PSU: Plausibility error with hardware ON/OFF signal</fullName>
+                <default>false</default>
+                <label>PSU: Plausibility error with hardware ON/OFF signal</label>
+            </value>
+            <value>
+                <fullName>PSU: Switch-on error at: [xx]</fullName>
+                <default>false</default>
+                <label>PSU: Switch-on error at: [xx]</label>
+            </value>
+            <value>
+                <fullName>PSU: Error AC input voltage at: [xx]</fullName>
+                <default>false</default>
+                <label>PSU: Error AC input voltage at: [xx]</label>
+            </value>
+            <value>
+                <fullName>UV-Thermopile Board</fullName>
+                <default>false</default>
+                <label>UV-Thermopile Board</label>
+            </value>
+            <value>
+                <fullName>Sensor Control Board</fullName>
+                <default>false</default>
+                <label>Sensor Control Board</label>
+            </value>
+            <value>
+                <fullName>Air Inlet Temp. Board</fullName>
+                <default>false</default>
+                <label>Air Inlet Temp. Board</label>
+            </value>
+            <value>
+                <fullName>Improper configuration</fullName>
+                <default>false</default>
+                <label>Improper configuration</label>
+            </value>
+            <value>
+                <fullName>Engine Assy. PWB</fullName>
+                <default>false</default>
+                <label>Engine Assy. PWB</label>
+            </value>
+            <value>
+                <fullName>CPU PWB</fullName>
+                <default>false</default>
+                <label>CPU PWB</label>
+            </value>
+            <value>
+                <fullName>BLOWER PWR MODULE</fullName>
+                <default>false</default>
+                <label>BLOWER PWR MODULE</label>
+            </value>
+            <value>
+                <fullName>Front Control PWB</fullName>
+                <default>false</default>
+                <label>Front Control PWB</label>
+            </value>
+            <value>
+                <fullName>Fan Assembly</fullName>
+                <default>false</default>
+                <label>Fan Assembly</label>
+            </value>
+            <value>
+                <fullName>EEPROM PWB</fullName>
+                <default>false</default>
+                <label>EEPROM PWB</label>
+            </value>
+            <value>
+                <fullName>Connector PWB</fullName>
+                <default>false</default>
+                <label>Connector PWB</label>
+            </value>
+            <value>
+                <fullName>Communication Interface</fullName>
+                <default>false</default>
+                <label>Communication Interface</label>
+            </value>
+            <value>
+                <fullName>Interlock &amp; Safety Circuits</fullName>
+                <default>false</default>
+                <label>Interlock &amp; Safety Circuits</label>
+            </value>
+            <value>
+                <fullName>Electrical / Cabling</fullName>
+                <default>false</default>
+                <label>Electrical / Cabling</label>
+            </value>
+            <value>
+                <fullName>Mechanics / Housing</fullName>
+                <default>false</default>
+                <label>Mechanics / Housing</label>
+            </value>
+            <value>
+                <fullName>Magnetron</fullName>
+                <default>false</default>
+                <label>Magnetron</label>
+            </value>
+            <value>
+                <fullName>Photocell</fullName>
+                <default>false</default>
+                <label>Photocell</label>
+            </value>
+            <value>
+                <fullName>Pressure switch</fullName>
+                <default>false</default>
+                <label>Pressure switch</label>
+            </value>
+            <value>
+                <fullName>Reflector</fullName>
+                <default>false</default>
+                <label>Reflector</label>
+            </value>
+            <value>
+                <fullName>Bulb</fullName>
+                <default>false</default>
+                <label>Bulb</label>
+            </value>
+            <value>
+                <fullName>Modular Blower Assy.</fullName>
+                <default>false</default>
+                <label>Modular Blower Assy.</label>
+            </value>
+            <value>
+                <fullName>Improper Air Flow</fullName>
+                <default>false</default>
+                <label>Improper Air Flow</label>
+            </value>
+            <value>
+                <fullName>Poor or improper maintenance</fullName>
+                <default>false</default>
+                <label>Poor or improper maintenance</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <valueName>assembly nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <valueName>electrode blackened</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <valueName>Electrode Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <valueName>electrode missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <valueName>electrode pasting nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <valueName>false material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>sealing foil blown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>sealing foil cracked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>sealing foil crinkly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>sealing foil oxidised</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVD_ED_Electrode</controllingFieldValue>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>total length nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>No Problem Found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Parts Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>Improper configuration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>Engine Assy. PWB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>CPU PWB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>BLOWER PWR MODULE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>Front Control PWB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>Fan Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>EEPROM PWB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>Connector PWB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>Communication Interface</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <valueName>Interlock &amp; Safety Circuits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Electrical / Cabling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHP10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHP6 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Mechanics / Housing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>contamination in spectrum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>current too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>current too low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>defective contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>diffuse burning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>doping nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>drift out of max tolerance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>extinguihes during operation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>glow discharge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>ignition delay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>ignition voltage too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>lamp exploded</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>liftime to short</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>OF_A_Nox / Nox module</controllingFieldValue>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>no ignition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>power rating too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>power rating too low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>UV intensity too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>UV intensity too low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <valueName>voilent arc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>voltage too high</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Function</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>voltage too low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Cure Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Magnetron</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Photocell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Pressure switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Reflector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Bulb</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Modular Blower Assy.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Improper Air Flow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark II</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LHI6 Mark II</controllingFieldValue>
+            <valueName>Poor or improper maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <valueName>amalgam, gold spot nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>devitrification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>foreign particle in lamp tube</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>identification marking nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>lamp broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>lamp leaky</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>pinch broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>pinch cavity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>pinch contaminated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>pinch cracked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>pinch out of centerline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>pinch partly broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>pinch stress crack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <valueName>pump stem stress crack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube bended</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube black (laminary)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube black (spot)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube bloated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube brown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube contaminated (inside)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube contaminated (outside)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube dent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube dimension nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube splintered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube stress crack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube surface nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube white</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>tube white (spot)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Body</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>wrong material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>batch size nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>label incorrect / missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>label missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>packaging damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>packaging wrong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>shockwatch activ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>transport damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>users instruction missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Packaging</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Packaging</controllingFieldValue>
+            <valueName>users instruction wrong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <valueName>UV-Thermopile Board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <valueName>Sensor Control Board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LHI10 Mark III</controllingFieldValue>
+            <valueName>Air Inlet Temp. Board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_unascertainable</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_unascertainable</controllingFieldValue>
+            <valueName>unascertainable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_System</controllingFieldValue>
+            <valueName>assembly error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_System</controllingFieldValue>
+            <valueName>Error cused by environment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_System</controllingFieldValue>
+            <valueName>faulty wiring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_System</controllingFieldValue>
+            <valueName>Incorrect settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_System</controllingFieldValue>
+            <valueName>Not suitable for the process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_System</controllingFieldValue>
+            <valueName>Other fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <valueName>Belt Slips</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <valueName>Belt Tracking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <valueName>No Belt Movement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <valueName>No Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <valueName>No Exhaust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>No Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <valueName>No Speed Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <valueName>Remote Control fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <valueName>RF Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_Conveyor</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>Upgrade Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon flash module</controllingFieldValue>
+            <controllingFieldValue>OF_A_Fiberlight module</controllingFieldValue>
+            <controllingFieldValue>OF_A_Nox / Nox module</controllingFieldValue>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Power supply</controllingFieldValue>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>No fault found</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon flash module</controllingFieldValue>
+            <valueName>No function</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon flash module</controllingFieldValue>
+            <valueName>Out of Specifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon flash module</controllingFieldValue>
+            <valueName>Packing incorrect / damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>Arcing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>Blower Pressure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <valueName>External Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>Lamp Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <valueName>Power Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <valueName>Power Imbalance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>Power Supply Temp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>RF Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F300S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F450T</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_F500S</controllingFieldValue>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>System Blower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Fiberlight module</controllingFieldValue>
+            <valueName>D2 lamp defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Fiberlight module</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Fiberlight module</controllingFieldValue>
+            <controllingFieldValue>OF_A_Nox / Nox module</controllingFieldValue>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Power supply</controllingFieldValue>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Packing incorrect/damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Fiberlight module</controllingFieldValue>
+            <controllingFieldValue>OF_A_Nox / Nox module</controllingFieldValue>
+            <valueName>PCB defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Fiberlight module</controllingFieldValue>
+            <valueName>Shutter defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Fiberlight module</controllingFieldValue>
+            <valueName>Vis lamp defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Nox / Nox module</controllingFieldValue>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>geometrical dimensions out of tolerance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Nox / Nox module</controllingFieldValue>
+            <valueName>leaky  lamp body</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Nox / Nox module</controllingFieldValue>
+            <valueName>UV Intensity out of spec</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Nox / Nox module</controllingFieldValue>
+            <valueName>Wiring / connector / pin assignment - NOK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>Anode defective</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>Appearance – cosmetic deviation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>Cathode defective</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Dispatch Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>Drift / Noise / unstable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <valueName>Incorrect gas fill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>Intensity too low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>Leaky lamp body / Crack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>No ignition or extinguishes during operation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>wrong - coding, - wiring, - base welding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Hollow cathode lamp</controllingFieldValue>
+            <valueName>wrong packaging /wrong label</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>A0 AC Line Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>A1 AC Line Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>A2 PC Short</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>A3 No Ignition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>A4 Lamp Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>A5 Lamp Air Pressure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>A6 Cable Disconnect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>AD PS Overtemp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B0 No Reset (N)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B1 No Reset (W)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B2 No Reset (T)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B3 EXT Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B4 SYS Air Pressure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B5 RF Detector Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B6 RF Detector Shorted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B7 RF Detected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B8 SW4 Configuration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>B9 SYS Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>C0 Fil A Stuck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>C1 Fil A Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>C2 Fil A Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>C3 Fil A Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>C4 Fil B Stuck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>C5 Fil B Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>C6 Fil B Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>C7 Fil B Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>D1 T102 On</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>D2 T103 On</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>D3 T104 On</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>D4 T105 On</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>D5 T106 On</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>Display Locked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>Do T101 On</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E0 T101 Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E1 T102 Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E2 T103 Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E3 T104 Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E4 T105 Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E5 T106 Lo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E6 T101 Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E7 T102 Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E8 T103 Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>E9 T104 Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>EA T105 Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>EB T106 Hi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>EC Mag A Failed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>ED Mag B Failed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>F0 Invalid ID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>F1 DUP PS ID #</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>F2 No Master P.S.*</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>F3 No Master P.S.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>F4 Missing Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>F5 Invalid Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>FC SYS Error 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>FD SYS Error 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>FE SYS Error 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_F600S</controllingFieldValue>
+            <valueName>FF Bus Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>BOM/Packaging Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <valueName>Connector Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>External Contamination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <valueName>Filament Distortion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <valueName>Filament Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <valueName>Gas Leak - Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <valueName>Gas Leak - Seal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Internal Contamination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Misalignment - Glass Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Performance Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Mercury_lamp</controllingFieldValue>
+            <valueName>Poor braid connection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>Cure Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>Device Net Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E10 Air Pressure Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E11 RF Sensor Short</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E12 Filament Input Voltage High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E13 Filament Input Voltage Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E14 Filament A Current Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E15 Filament B Current Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E16 RMS Filament Voltage Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E17 RMS Filament Voltage High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E18 Filament A Current High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E19 Filament B Current High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E1 Mag A Current High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E20 Mag Voltage High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E21 Mag Voltage Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E22 RF Sensor Short/open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E23 Balancer Calibration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E24 No Bulb Ignition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E25 Photocell Short</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E26 Photocell Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E27 E-Stop Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E28 IGBT DS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E29 IGBT Over Current</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E2 Mag B Current High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E30 Low Control Voltage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E31 Communication Timeout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E32 K100 Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E33 Cable Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E34 RAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E35 IGBT Temp Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E36 Net Work Power Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E3 Not Used</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E4 Not Used</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E5 IGBT Over Temp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E6 Power Supply Over Temp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E7 Power Supply Low Temp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E8 EEPROM Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH10</controllingFieldValue>
+            <valueName>E9 Internal Fan Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <valueName>Electrode Obstructed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <valueName>Gas Leak - Frit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <valueName>Gas Leak - General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <valueName>Gas Leak - Tip Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_PID_lamp</controllingFieldValue>
+            <valueName>Misaligned Components</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>Cable Disconnect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>External Blower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>Inverter Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_LH6</controllingFieldValue>
+            <valueName>Magnetron Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <valueName>Electrical Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <valueName>Gas Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <valueName>Misalignment - Filament</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Tungsten_Halogen_lamp</controllingFieldValue>
+            <valueName>Misalignment - Lamp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E0 Initializing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E10 Motor Temp Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E11 No Ignition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E12 Lamp Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E13 No RF Detector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E14 RF Detector A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E15 RF Detector B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E16 No Line Sync</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E17 External Interlock A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E18 External Interlock B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E19 Process Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E1 OK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E20 PBA Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E21 XBA Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E22 No Confirmation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E23 I60xM Test Fail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E24 P-Cell Shorted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E25 Not used</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E26 Excessive Moding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E27 V Mag Detected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E28 V Mag Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E29 Open HV Circuit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E2 Mag Not Set Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E30 Air Temp Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E31 Can&apos;t Stay @ Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E32 A/D Conversion Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E33 Air Temp High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E34 Factory Use</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E35 Comm. Bus Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E36 Invalid Row/Col</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E37 ROM Obsolete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E38 ROM Defect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E39 ROM Mismatch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E3 Cable Interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E40 Duplicate I/O ID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E41 I25x Test Fail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E42 E Stop Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E43 Xformer Overheat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E44 Cockroach</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E45 RF Det A Short</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E46 RF Det B Short</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E47 Line Freq. Error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E48 EEPROM Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E49 Mag Cal Failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E4 Air Pressure interlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E50 Lamp Test</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E51 No Calibration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E52 Slave Not Ready</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E53 Turned On Late</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E54 Slave Off-Line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E55 Not With Row</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E56 No Master</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E57 Mode Manager #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E58 Mode Manager #2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E59 Mode Manager #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E5 Not Used</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E60 Mode Manager #4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E61 Mode Manager #5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E62 PWR Imbalance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E6 V Control Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E7 V Control High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E8 I Fil Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_MW_VPS</controllingFieldValue>
+            <valueName>E9 I Fil High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Broken Bulb</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Cracked Base</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Cracked Seal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Electrical Contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>External Dimensions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Xenon_flash_lamp</controllingFieldValue>
+            <valueName>Misalignment - Internal Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <valueName>Collective blocking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <valueName>Flow monitor alarm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <valueName>Float switch insufficient water level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <valueName>Compressor MPS triggered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <valueName>Pump MPS triggered</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <valueName>High-pressure malfunction cooling circuit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Chiller UV5000x Series</controllingFieldValue>
+            <valueName>Low-pressure malfunction cooling circuit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_Power supply</controllingFieldValue>
+            <valueName>PCB defect out of specs.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>base nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>base not fixed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>base tilted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>cement nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>connection incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>connector incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>contact charred</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>flexible stranded wire color nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>flexible stranded wire diameter nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>flexible stranded wire invert</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>flexible stranded wire length nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Function</controllingFieldValue>
+            <valueName>foil lift</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <valueName>ignition aid wire nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>insulation  damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>marking incorrect / missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Assembly</controllingFieldValue>
+            <controllingFieldValue>UVP_ED_Assembly</controllingFieldValue>
+            <valueName>material incorrect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>Short-circuit connection (splice)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_ED_Connection</controllingFieldValue>
+            <controllingFieldValue>IP_EIR_Connection</controllingFieldValue>
+            <valueName>wire dismantled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Assembly</controllingFieldValue>
+            <controllingFieldValue>UVP_ED_Assembly</controllingFieldValue>
+            <valueName>broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Assembly</controllingFieldValue>
+            <controllingFieldValue>UVP_ED_Assembly</controllingFieldValue>
+            <valueName>contaminated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Assembly</controllingFieldValue>
+            <controllingFieldValue>UVP_ED_Assembly</controllingFieldValue>
+            <valueName>material defective</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Assembly</controllingFieldValue>
+            <controllingFieldValue>UVP_ED_Assembly</controllingFieldValue>
+            <valueName>out of tolerance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Assembly</controllingFieldValue>
+            <controllingFieldValue>UVP_ED_Assembly</controllingFieldValue>
+            <valueName>surface defective</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Assembly</controllingFieldValue>
+            <controllingFieldValue>UVP_ED_Assembly</controllingFieldValue>
+            <valueName>without operation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Coating</controllingFieldValue>
+            <controllingFieldValue>UVD_ED_Coating</controllingFieldValue>
+            <valueName>coating dimension fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Coating</controllingFieldValue>
+            <controllingFieldValue>UVD_ED_Coating</controllingFieldValue>
+            <valueName>coating nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Coating</controllingFieldValue>
+            <controllingFieldValue>UVD_ED_Coating</controllingFieldValue>
+            <valueName>coating scratched</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: Carbon ribbon: Hot spots</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: Carbon ribbon: ripply / twisty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: Carbon ribbon: sparks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: Carbon ribbon: torn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: Carbon ribbon: vibrating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: weld between stick and back-up filament</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: weld between stick and buffer spring nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: weld between stick and heating filament</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: weld joint nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR: weld molybdenum nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR heating filament: cracked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR heating filament: oxidized</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR heating filament: rating nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR heating filament: resistance nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR heating filament: sagged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR heating filament: short-circuit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR heating filament: stretched</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR heating filament: total length nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR SW: slice broken / missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR SW: slice gap nok</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Filament</controllingFieldValue>
+            <valueName>IR SW: slice scrolling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IP_EIR_Body</controllingFieldValue>
+            <valueName>burling stress crack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Air intake / leaky lamp body</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Anode out of centerline or loose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Anode voltage or UV-Intensity out of spec</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Box assembling nok or wrong aperture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Cathode defective / Exhausted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Gas diminiched / Sputtered material / Diffuse discharge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Lead wire / connector / pin assignment - NOK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Noise / Drift / unstable baseline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Timer NOK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Visible crack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OF_A_D-lamp</controllingFieldValue>
+            <valueName>Wrong or improper alignment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <valueName>Problem with CAN communication at: [xx]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <valueName>Overcurrent at: [xx]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <valueName>Undercurrent at: [xx]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <valueName>Overvoltage at: [xx]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <valueName>Undervoltage at: [xx]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <valueName>UV LED unit x: Insufficient cooling water flow rate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <valueName>UV LED unit x: Overheating, emergency cut-out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_UV5000x Series</controllingFieldValue>
+            <valueName>Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>MCU: Insufficient voltage supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>MCU: Error ON/OFF signal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>MCU: Malfunction sheet guide plate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>Rotary encoder: Safety signal error</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>Rotary encoder: Speed below limit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>Rotary encoder: Not detected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>PSU: Overtemperature at: [xx]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>PSU: Error enable signals press centre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>PSU: Plausibility error with hardware ON/OFF signal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>PSU: Switch-on error at: [xx]</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UVP_LED_Control Cabinet UV5000x Series</controllingFieldValue>
+            <valueName>PSU: Error AC input voltage at: [xx]</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

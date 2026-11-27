@@ -1,0 +1,326 @@
+<!-- sldsValidatorIgnore -->
+<!--
+    @description       : This Quote Search LWC is called from lightning Quote Search tab
+    @author            : Jade Global
+    @last modified on  : 04-11-2021
+    @last modified by  : Jade Global
+    Modifications Log
+    Ver   Date         Author        Modification
+    1.0   02-18-2021   Jade Global   Initial Version
+-->
+<template>
+    <template if:false={loaded}>
+        <lightning-spinner style="position: fixed;" variant="brand" size="large" alternative-text="Loading...">
+        </lightning-spinner>
+    </template>
+    <template if:false={isRedirected}>
+        <lightning-card>
+            <header class="slds-modal__header">
+                <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate"
+                    style="text-align: left;font-weight: bold;font-size: large;line-height:1px"> Quote to Order Search
+                </h2>
+            </header>
+            <!--Search Criteria-->
+            <div class="slds-card__body slds-card__body_inner">
+                <p style="text-align: left;font-weight: bold">Use any one of the below criteria section to search the
+                    approved Quotes</p>
+                <br /><br />
+                <div class="slds-form">
+                    <div>
+                        <template if:true={inSF1}>
+                            <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                <legend class="slds-form-element__legend slds-form-element__label"
+                                    style={textLabelAlign}>Site Type:</legend>
+                                <div class="slds-form-element__control">
+                                    <!--<lightning-combobox name="site" options={siteOptions} onchange={handleSiteTypeChange}></lightning-combobox>-->
+                                    <c-lwc-custom-lookup id="ExcelitasSite" ltng-icon-name="standard:account"
+                                        query-object-api-name="Excelitas_Site__c"
+                                        main-object-api-name="Excelitas_Site__c" id-field="Id" name-field="Name"
+                                        scroll-after-n-items=5 result-display-size=10 placeholder="Search Site..."
+                                        nothing-found-subtitle="No Sites were found"
+                                        additional-seach-keyword-fields="Name" onselectionchange={handleSiteTypeChange}>
+                                    </c-lwc-custom-lookup>
+                                </div>
+                            </div>
+                        </template>
+                        <template if:false={inSF1}>
+                            <lightning-layout vertical-align="center" style="padding-bottom: 10px;">
+                                <lightning-layout-item size="2" >
+                                    <legend class="slds-form-element__legend slds-form-element__label"
+                                        style={textLabelAlign}>Site Type:</legend>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="3" class="left-align">
+                                    <!--<lightning-combobox name="site" options={siteOptions} onchange={handleSiteTypeChange}></lightning-combobox>-->
+                                    <c-lwc-custom-lookup id="ExcelitasSite1" ltng-icon-name="standard:account"
+                                        query-object-api-name="Excelitas_Site__c"
+                                        main-object-api-name="Excelitas_Site__c" id-field="Id" name-field="Name"
+                                        scroll-after-n-items=5 result-display-size=10 placeholder="Search Site..."
+                                        nothing-found-subtitle="No Sites were found"
+                                        additional-seach-keyword-fields="Name" onselectionchange={handleSiteTypeChange}>
+                                    </c-lwc-custom-lookup>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </template>
+                        <template if:true={inSF1}>
+                            <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                <legend class="slds-form-element__legend slds-form-element__label"
+                                    style={textLabelAlign}>Order Type:</legend>
+                                <div class="slds-form-element__control">
+                                    <lightning-combobox name="orderType" options={orderTypeOptions}
+                                        onchange={handleOrderTypeChange}></lightning-combobox>
+                                </div>
+                            </div>
+                        </template>
+                        <template if:false={inSF1}>
+                            <lightning-layout vertical-align="center" style="padding-bottom: 10px;">
+                                <lightning-layout-item size="2" class="right-align">
+                                    <legend class="slds-form-element__legend slds-form-element__label"
+                                        style={textLabelAlign}>Order Type:</legend>
+                                </lightning-layout-item>
+                                <lightning-layout-item size="3" class="left-align">
+                                    <lightning-combobox name="orderType" options={orderTypeOptions}
+                                        onchange={handleOrderTypeChange}></lightning-combobox>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </template>
+                        <!--show generic fields-->
+                        <template if:true={showOrderFields}>
+                            <template if:true={inSF1}>
+                                <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                    <legend class="slds-form-element__legend slds-form-element__label strWidthSelect"
+                                        style={textLabelAlign2}>SFDC Account Name:</legend>
+                                    <template if:false={inSF1}><span style={textOR}>(OR)</span></template>
+                                    <div class={strwidthLookup}>
+                                        <c-lwc-custom-lookup id="Account1" ltng-icon-name="standard:account"
+                                            query-object-api-name="Account" main-object-api-name="Account" id-field="Id"
+                                            name-field="Name" scroll-after-n-items=5 result-display-size=10
+                                            placeholder="Search Account..." additional-seach-keyword-fields="Name"
+                                            additional-fields="Client_Side_ID__c,BillingCountry,BillingState,BillingCity"
+                                            nothing-found-subtitle="No accounts were found with the given name"
+                                            onselectionchange={handleAccountChange} selection={selection} additional-where-clause={whereAccname}>
+                                        </c-lwc-custom-lookup>
+                                        <template if:true={inSF1}>(OR)</template>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:false={inSF1}>
+                                <lightning-layout vertical-align="center">
+                                    <lightning-layout-item size="2" class="right-align">
+                                        <legend class="slds-form-element__legend slds-form-element__label"
+                                            style={textLabelAlign2}>SFDC Account Name:</legend>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3" class="left-align">
+                                        <c-lwc-custom-lookup id="Account" ltng-icon-name="standard:account"
+                                            query-object-api-name="Account" main-object-api-name="Account" id-field="Id"
+                                            name-field="Name" scroll-after-n-items=5 result-display-size=10
+                                            placeholder="Search Account..." additional-seach-keyword-fields="Name"
+                                            additional-fields="Client_Side_ID__c,BillingCountry,BillingState,BillingCity"
+                                            nothing-found-subtitle="No accounts were found with the given name"
+                                            onselectionchange={handleAccountChange} selection={selection} additional-where-clause={whereAccname}>
+                                        </c-lwc-custom-lookup>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="1" class="left-align" style="padding-left:5px">
+                                        (OR)
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                            </template>
+                            <template if:true={inSF1}>
+                                <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                    <legend class="slds-form-element__legend slds-form-element__label"
+                                        style={textLabelAlign1}>Quote Number:</legend>
+                                    <lightning-input data-id="text-input-id" type="text" id="text-input-id-3"
+                                        disabled={checkQuoteNumberStatus} onchange={handleQuoteNumberChange}
+                                        class={strWidthClass} style="line-height: 10px;"></lightning-input>
+                                    (OR)
+                                </div>
+                            </template>
+                            <template if:false={inSF1}>
+                                <lightning-layout vertical-align="center">
+                                    <lightning-layout-item size="2" class="right-align">
+
+                                        <legend class="slds-form-element__legend slds-form-element__label"
+                                            style={textLabelAlign1}>Quote Number:</legend>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3" class="left-align">
+                                        <lightning-input data-id="text-input-id" type="text" id="text-input-id-33"
+                                            disabled={checkQuoteNumberStatus} onchange={handleQuoteNumberChange}
+                                            style="line-height: 10px;"></lightning-input>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="1" class="left-align" style="padding-left:5px">
+                                        (OR)
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                            </template>
+                        </template>
+                        <!--show generic fields-->
+                        <!--call of order-->
+                        <template if:true={showCallOfOrderFields}>
+                            <template if:true={inSF1}>
+                                <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                    <legend class="slds-form-element__legend slds-form-element__label"
+                                        style={textLabelAlign3}>PO Number:</legend>
+                                    <lightning-input type="text" data-id="text-input-id" id="text-input-id-5"
+                                        onchange={handlePoNumberChange} class={strWidthClass} style="line-height:1px">
+                                    </lightning-input>
+                                </div>
+                            </template>
+                            <template if:false={inSF1}>
+                                <lightning-layout vertical-align="center">
+                                    <lightning-layout-item size="2" class="right-align">
+                                        <legend class="slds-form-element__legend slds-form-element__label"
+                                            style={textLabelAlign3}>PO Number:</legend>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3" class="left-align">
+                                        <lightning-input type="text" data-id="text-input-id" id="text-input-id-55"
+                                            onchange={handlePoNumberChange} style="line-height:1px"></lightning-input>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                            </template>
+
+                            <template if:true={inSF1}>
+                                <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                    <legend class="slds-form-element__legend slds-form-element__label"
+                                        style={textLabelAlign3}>Order Number:</legend>
+
+                                    <lightning-input type="text" data-id="text-input-id" id="text-input-id-6"
+                                        onchange={handleAgreementNumberChange} class={strWidthClass}
+                                        style="line-height:15px"></lightning-input>
+                                </div>
+                            </template>
+                            <template if:false={inSF1}>
+                                <lightning-layout vertical-align="center" style="padding-bottom: 10px;">
+                                    <lightning-layout-item size="2" class="right-align">
+                                        <legend class="slds-form-element__legend slds-form-element__label"
+                                            style={textLabelAlign3}>Order Number:</legend>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3" class="left-align">
+                                        <lightning-input type="text" data-id="text-input-id" id="text-input-id-66"
+                                            onchange={handleAgreementNumberChange} style="line-height:15px">
+                                        </lightning-input>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                            </template>
+
+                        </template>
+                        <!--call of order-->
+                        <!--append order lines-->
+                        <template if:true={showAppendOrderLineFields}>
+                            <template if:true={inSF1}>
+                                <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                    <legend class="slds-form-element__legend slds-form-element__label">Order Number:
+                                    </legend>
+                                    <lightning-input type="text" data-id="text-input-id" id="text-input-id-7"
+                                        onchange={handleOrderNumberChange} class={strWidthClass}></lightning-input>
+                                </div>
+                            </template>
+                            <template if:false={inSF1}>
+                                <lightning-layout vertical-align="center">
+                                    <lightning-layout-item size="2" class="right-align">
+                                        <legend class="slds-form-element__legend slds-form-element__label"
+                                            style={textLabelAlign1}>Order Number:</legend>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item size="3" class="left-align">
+                                        <lightning-input type="text" data-id="text-input-id" id="text-input-id-77"
+                                            onchange={handleOrderNumberChange} style="line-height:1px">
+                                        </lightning-input>
+                                    </lightning-layout-item>
+                                </lightning-layout>
+                            </template>
+                        </template>
+                        <!--append order lines-->
+                        <!-- Desktop Actions -->
+                        <template if:false={inSF1}>
+                            <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                <div class="slds-form-element__control">
+                                    <lightning-button variant="brand" label="Cancel" class="slds-m-left_x-small"
+                                        onclick={handleCancelQuoteCriteria}></lightning-button>
+                                    <lightning-button variant="brand" label="Search Quotes/Orders"
+                                        onclick={handleSearchQuoteOrder} class="slds-m-left_x-small">
+                                    </lightning-button>
+                                </div>
+                            </div>
+                        </template>
+
+                        <!-- Mobile Actions -->
+                        <template if:true={inSF1}>
+                            <div class="slds-form-element slds-form-element_horizontal slds-form-element_1-col">
+                                <div class="slds-form-element__control">
+                                    <div style="margin-bottom:20px;">
+                                        <lightning-button variant="brand" label="Cancel" class="slds-m-left_x-small"
+                                            onclick={handleCancelQuoteCriteria}>
+                                        </lightning-button>
+                                        <lightning-button variant="brand" label="Search Quotes/Orders"
+                                            disabled={checkSearchOrderStatus} onclick={handleSearchQuoteOrder}
+                                            class="slds-m-left_x-small">
+                                        </lightning-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                    <!--Search Criteria-->
+                    <!--Result Table-->
+                    <template if:true={showResult}>
+                        <c-quote-search-result temp-quote-order-result={tempQuoteOrderResult}
+                            onselectedrow={handleSelecctedRows}>
+                        </c-quote-search-result>
+                    </template>
+
+                    <!--Result Call of Order Table-->
+                    <template if:true={showCallOfOrderResult}>
+                        <c-quote-search-result-call-of-order temp-quote-order-result={tempQuoteOrderResult}
+                            onselectedrow={handleSelecctedRows}></c-quote-search-result-call-of-order>
+                    </template>
+                    <!--Result Replacement Table-->
+                    <template if:true={showReplacementResult}>
+                        <c-quote-search-result-replacement temp-quote-order-result={tempQuoteOrderResult}
+                            onselectedrow={handleSelecctedRows}>
+                        </c-quote-search-result-replacement>
+                    </template>
+
+                    <!--Result Table Actions-->
+                    <!-- Actions for Desktop-->
+                    <template if:false={inSF1}>
+                        <div class="slds-m-top_small slds-m-bottom_medium slds-align_absolute-center">
+                            <!--<template if:false={showAppendLinesBTN}>-->
+                            <lightning-button variant="brand" label="Quote/Order Converter" class="slds-m-left_x-small"
+                                onclick={handleQuoteOrderConverter}>
+                            </lightning-button>
+                            <!--</template>-->
+                            <lightning-button variant="brand" label="Create UnQuoted Order" class="slds-m-left_x-small"
+                                data-name="unquoted" onclick={handleQuoteOrderConverter}>
+                            </lightning-button>
+                        </div>
+                    </template>
+
+                    <!-- Actions for Mobile-->
+                    <template if:true={inSF1}>
+                        <div class="slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+                            <lightning-layout multiple-rows>
+                                <!--<template if:false={showAppendLinesBTN}>-->
+                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="4"
+                                    large-device-size="3" padding="around-small">
+                                    <div class="slds-text-align_center">
+                                        <lightning-button variant="brand" label="Quote/Order Converter"
+                                            class="slds-m-left_x-small" onclick={handleQuoteOrderConverter}>
+                                        </lightning-button>
+                                    </div>
+                                </lightning-layout-item>
+                                <!--</template>-->
+                                <lightning-layout-item size="12" small-device-size="6" medium-device-size="4"
+                                    large-device-size="3" padding="around-small">
+                                    <div class="slds-text-align_center">
+                                        <lightning-button variant="brand" label="Create UnQuoted Order"
+                                            data-name="unquoted" class="slds-m-left_x-small"
+                                            onclick={handleQuoteOrderConverter}>
+                                        </lightning-button>
+                                    </div>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+</template>

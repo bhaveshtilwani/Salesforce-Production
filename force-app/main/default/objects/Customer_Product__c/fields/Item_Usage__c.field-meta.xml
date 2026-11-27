@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Usage__c</fullName>
+    <label>Item Usage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(DEF) Defence</fullName>
+                <default>false</default>
+                <label>(DEF) Defence</label>
+            </value>
+            <value>
+                <fullName>(E) Replacement</fullName>
+                <default>false</default>
+                <label>(E) Replacement</label>
+            </value>
+            <value>
+                <fullName>(FAI) First Article Inspec</fullName>
+                <default>false</default>
+                <label>(FAI) First Article Inspec</label>
+            </value>
+            <value>
+                <fullName>(FAT) First Article Test</fullName>
+                <default>false</default>
+                <label>(FAT) First Article Test</label>
+            </value>
+            <value>
+                <fullName>(FIM) Free Issue Material</fullName>
+                <default>false</default>
+                <label>(FIM) Free Issue Material</label>
+            </value>
+            <value>
+                <fullName>(FLP) First Lot Production</fullName>
+                <default>false</default>
+                <label>(FLP) First Lot Production</label>
+            </value>
+            <value>
+                <fullName>(M) Sample</fullName>
+                <default>false</default>
+                <label>(M) Sample</label>
+            </value>
+            <value>
+                <fullName>(NRM) Norm</fullName>
+                <default>false</default>
+                <label>(NRM) Norm</label>
+            </value>
+            <value>
+                <fullName>(RW) ReWork</fullName>
+                <default>false</default>
+                <label>(RW) ReWork</label>
+            </value>
+            <value>
+                <fullName>(S) Series</fullName>
+                <default>false</default>
+                <label>(S) Series</label>
+            </value>
+            <value>
+                <fullName>(TBA) To Be Advised</fullName>
+                <default>false</default>
+                <label>(TBA) To Be Advised</label>
+            </value>
+            <value>
+                <fullName>(Z01) FOC under Warranty</fullName>
+                <default>false</default>
+                <label>(Z01) FOC under Warranty</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

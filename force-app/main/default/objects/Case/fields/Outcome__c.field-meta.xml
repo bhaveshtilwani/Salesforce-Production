@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome__c</fullName>
+    <label>Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No follow ups</fullName>
+                <default>false</default>
+                <label>No follow ups</label>
+            </value>
+            <value>
+                <fullName>Workshop done</fullName>
+                <default>false</default>
+                <label>Workshop done</label>
+            </value>
+            <value>
+                <fullName>Interest generated</fullName>
+                <default>false</default>
+                <label>Interest generated</label>
+            </value>
+            <value>
+                <fullName>Quote needed</fullName>
+                <default>false</default>
+                <label>Quote needed</label>
+            </value>
+            <value>
+                <fullName>Order received</fullName>
+                <default>false</default>
+                <label>Order received</label>
+            </value>
+            <value>
+                <fullName>ACC trials needed</fullName>
+                <default>false</default>
+                <label>ACC trials needed</label>
+            </value>
+            <value>
+                <fullName>ACC trials successful</fullName>
+                <default>false</default>
+                <label>ACC trials successful</label>
+            </value>
+            <value>
+                <fullName>ACC trial not successful</fullName>
+                <default>false</default>
+                <label>ACC trial not successful</label>
+            </value>
+            <value>
+                <fullName>Issue solved</fullName>
+                <default>false</default>
+                <label>Issue solved</label>
+            </value>
+            <value>
+                <fullName>Issue resolved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Issue resolved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Initialize_Timer</name>
+        <label>Initialize Timer</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.last_Status_Changed_Time__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Record_is_Updated</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Commercial_Processing_Minutes</name>
+        <label>Update Commercial Processing Minutes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Commercial_Processing_Duration__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>fMinutesSpent</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Last_Status_Time</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Coordination_Minutes</name>
+        <label>Update Coordination Minutes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Coordination_Duration__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>fMinutesSpent</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Last_Status_Time</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Data_Colleciton_Minutes</name>
+        <label>Update Data Colleciton Minutes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Data_Collection_Duration__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>fMinutesSpent</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Last_Status_Time</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Last_Status_Time</name>
+        <label>Update Last Status Time</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.last_Status_Changed_Time__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Tech_Processing_Minutes</name>
+        <label>Update Tech Processing Minutes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Technical_Processing_Duration__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>fMinutesSpent</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Last_Status_Time</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Techn_Evaluation_Minutes</name>
+        <label>Update Techn Evaluation Minutes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Technical_Evaluation_Duration__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>fMinutesSpent</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Last_Status_Time</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Waiting_for_details_Minutes</name>
+        <label>Update Waiting for details Minutes</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Waiting_for_details_Duration__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>fMinutesSpent</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Last_Status_Time</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Previous_Status</name>
+        <label>Check Previous Status</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Last_Status_Time</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Data_Collection</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Data Collection</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Data_Colleciton_Minutes</targetReference>
+            </connector>
+            <label>Data Collection</label>
+        </rules>
+        <rules>
+            <name>Coordination</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coordination</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Coordination_Minutes</targetReference>
+            </connector>
+            <label>Coordination</label>
+        </rules>
+        <rules>
+            <name>Waitng_for_details</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Waiting for details</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Waiting_for_details_Minutes</targetReference>
+            </connector>
+            <label>Waitng for details</label>
+        </rules>
+        <rules>
+            <name>Technical_Evaluation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Technical Evaluation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Techn_Evaluation_Minutes</targetReference>
+            </connector>
+            <label>Technical Evaluation</label>
+        </rules>
+        <rules>
+            <name>Commercial_processing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Commercial Processing</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Commercial_Processing_Minutes</targetReference>
+            </connector>
+            <label>Commercial processing</label>
+        </rules>
+        <rules>
+            <name>Technical_Processing</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Technical Processing</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Tech_Processing_Minutes</targetReference>
+            </connector>
+            <label>Technical Processing</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Did_Status_Change</name>
+        <label>Did Status Change?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Did_Status_Change</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Previous_Status</targetReference>
+            </connector>
+            <label>Outcome 1 of Did Status Change?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Timer_Initialized</name>
+        <label>Is Timer Initialized?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Did_Status_Change</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Check_if_Empty</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.last_Status_Changed_Time__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Initialize_Timer</targetReference>
+            </connector>
+            <label>Check if Empty</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>fMinutesSpent</name>
+        <dataType>Number</dataType>
+        <expression>( NOW() - $Record.Last_Status_Changed_Time__c ) * 1440</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Case Status Duration Tracker {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Status Duration Tracker</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Record_is_Updated</name>
+        <label>Record is Updated</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Records</name>
+        <label>Update Records</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Timer_Initialized</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Service</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Already_populate_Correct_Details</name>
+        <label>Already populate Correct Details?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_ERP_and_Target_BP</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Customer_ERP_ID__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Related_c3.Client_Side_ID__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Target_BP_Number__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Related_c3.Target_BP_Number__c</elementReference>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_C3_Available</name>
+        <label>Is C3 Available?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_ERP_and_Target_BP_as_Blank</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>C3_is_there</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Related_c3.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Already_populate_Correct_Details</targetReference>
+            </connector>
+            <label>C3 is there</label>
+        </rules>
+    </decisions>
+    <description>Populate ERP ID and Target BP no on CWR Quote</description>
+    <environments>Default</environments>
+    <interviewLabel>Populate ERP ID and Target BP no on CWR Quote {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Populate ERP ID and Target BP no on CWR Quote</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Related_c3</name>
+        <label>Get Related c3</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_C3_Available</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3 AND 4 AND((6 AND 7) OR (5 AND (6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18)))</filterLogic>
+        <filters>
+            <field>ParentId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SBQQ__Quote__r.SBQQ__Account__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Excelitas_Site_Lookup__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Excelitas_Site__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Client_Side_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Target_BP_Number__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DW_Account_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer Name</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DW_Account_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Prospect Customer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Prospect Customer</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold to - W001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold to - H001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold To - P001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold To/Ship To - 0001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold-to party (OPSL) - 0001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold-to party - ZCUS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Bill To - 0001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer-Sold To Role</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer int number assgnmnt - DEBI</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>QioDebitoren Europäische Union - DEEU</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>End Customers - ZEND</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_ERP_and_Target_BP</name>
+        <label>Update ERP and Target BP</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Customer_ERP_ID__c</field>
+            <value>
+                <elementReference>Get_Related_c3.Client_Side_ID__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Target_BP_Number__c</field>
+            <value>
+                <elementReference>Get_Related_c3.Target_BP_Number__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_ERP_and_Target_BP_as_Blank</name>
+        <label>Update ERP and Target BP as Blank</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Customer_ERP_ID__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Target_BP_Number__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Source__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>SBQQ__QuoteLine__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <connector>
+                <targetReference>Get_Related_c3</targetReference>
+            </connector>
+            <pathType>AsyncAfterCommit</pathType>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

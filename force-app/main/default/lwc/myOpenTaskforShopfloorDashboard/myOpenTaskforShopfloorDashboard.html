@@ -1,0 +1,77 @@
+<template>
+
+    <lightning-card title="My Open Tasks">
+
+        <lightning-button-icon
+            slot="actions"
+            icon-name="utility:refresh"
+            alternative-text="Refresh"
+            title="Refresh"
+            onclick={handleRefresh}>
+        </lightning-button-icon>
+
+        <template if:true={isLoading}>
+            <lightning-spinner
+                alternative-text="Loading"
+                size="medium">
+            </lightning-spinner>
+        </template>
+
+        <template if:true={hasData}>
+
+            <div class="tableWrapper">
+
+                <lightning-datatable
+                    key-field="taskId"
+                    data={pagedData}
+                    columns={columns}
+                    hide-checkbox-column
+                    column-widths-mode="fixed">
+                </lightning-datatable>
+
+            </div>
+
+        </template>
+
+        <template if:false={hasData}>
+
+            <div class="emptyState">
+
+                <lightning-icon
+                    icon-name="utility:info"
+                    size="small">
+                </lightning-icon>
+
+                <p> No data for now </p>
+
+            </div>
+
+        </template>
+
+        <template if:true={showPagination}>
+
+            <div class="pagination">
+
+                <lightning-button
+                    label="Previous"
+                    onclick={handlePrevious}
+                    disabled={disablePrevious}>
+                </lightning-button>
+
+                <span>
+                    Page {pageNumber} of {totalPages}
+                </span>
+
+                <lightning-button
+                    label="Next"
+                    onclick={handleNext}
+                    disabled={disableNext}>
+                </lightning-button>
+
+            </div>
+
+        </template>
+
+    </lightning-card>
+
+</template>

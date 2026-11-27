@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Produktregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Produktregeln</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Produktregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Produktregeln</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Produktregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Produktregeln</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Produktregel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Produktregeln</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name der Produktregel</nameFieldLabel>
+    <validationRules>
+        <errorMessage>&quot;Das Feld &quot;&quot;Umfang&quot;&quot; muss bei Produktregeln vom Typ &quot;&quot;Filter&quot;&quot; auf &quot;&quot;Produkt&quot;&quot; zeigen.&quot;</errorMessage>
+        <name>SBQQ__FilterTypeScope</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Nur Regeln mit dem Umfang &quot;&quot;Produkt&quot;&quot; kÃ¶nnen Ã¼ber Evaluierungsereignisse des Typs &quot;&quot;Bearbeiten&quot;&quot; oder &quot;&quot;Laden&quot;&quot; verfÃ¼gen&quot;</errorMessage>
+        <name>SBQQ__ProductEvaluationEventValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Das Feld &quot;&quot;Evaluierungsereignis&quot;&quot; muss einen Wert enthalten.&quot;</errorMessage>
+        <name>SBQQ__RequiredEvaluationEvent</name>
+    </validationRules>
+    <webLinks>
+        <label>Mit ZugehÃ¶rigen duplizieren</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>Mit ZugehÃ¶rigen duplizieren</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

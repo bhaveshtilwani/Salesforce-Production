@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Running_User</name>
+        <label>Running User</label>
+        <locationX>566</locationX>
+        <locationY>192</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Not_Teledyne</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy.Sales_TeamNEW__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Teledyne Sales</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_Sales_Team</targetReference>
+            </connector>
+            <label>Not Teledyne</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Assign Sales Team {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Assign Sales Team</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Account_Sales_Team</name>
+        <label>Update Account Sales Team</label>
+        <locationX>819</locationX>
+        <locationY>192</locationY>
+        <inputAssignments>
+            <field>Sales_TeamNEW__c</field>
+            <value>
+                <elementReference>$Record.CreatedBy.Sales_TeamNEW__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>109</locationX>
+        <locationY>73</locationY>
+        <connector>
+            <targetReference>Running_User</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DW_Account_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Business Name</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>300</triggerOrder>
+</Flow>

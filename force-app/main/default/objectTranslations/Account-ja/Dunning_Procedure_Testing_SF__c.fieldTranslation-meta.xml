@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dunning Procedure(Testing SF) --></label>
+    <name>Dunning_Procedure_Testing_SF__c</name>
+    <picklistValues>
+        <masterLabel>Excelitas Wiesbaden: 3-stufig Ausland</masterLabel>
+        <translation><!-- Excelitas Wiesbaden: 3-stufig Ausland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelitas Wiesbaden: 3-stufig Inland</masterLabel>
+        <translation><!-- Excelitas Wiesbaden: 3-stufig Inland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hamble</masterLabel>
+        <translation><!-- Hamble --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPKG 4-stufige Mahnung, 14-täglich Ausland</masterLabel>
+        <translation><!-- OPKG 4-stufige Mahnung, 14-täglich Ausland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPKG einstufiges Mahnverfahren Inland/Ausland</masterLabel>
+        <translation><!-- OPKG einstufiges Mahnverfahren Inland/Ausland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QPKG 4-stufige Mahnung, 14-täglich Inland</masterLabel>
+        <translation><!-- QPKG 4-stufige Mahnung, 14-täglich Inland --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

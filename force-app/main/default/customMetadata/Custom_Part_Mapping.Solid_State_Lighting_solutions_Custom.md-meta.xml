@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Solid State Lighting solutions  - Custom</label>
+    <protected>false</protected>
+    <values>
+        <field>Extra_Charge_Code__c</field>
+        <value xsi:type="xsd:string">9LEDMISC</value>
+    </values>
+    <values>
+        <field>NRE_Charges__c</field>
+        <value xsi:type="xsd:string">96LEDNRE</value>
+    </values>
+    <values>
+        <field>Product_Line__c</field>
+        <value xsi:type="xsd:string">Solid State Lighting Solutions</value>
+    </values>
+    <values>
+        <field>SAP_Material_Number__c</field>
+        <value xsi:type="xsd:string">SDCP</value>
+    </values>
+</CustomMetadata>

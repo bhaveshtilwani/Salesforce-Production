@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Closed Reason --></label>
+    <name>Closed_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Cannot contact</masterLabel>
+        <translation><!-- Cannot contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duplicate</masterLabel>
+        <translation><!-- Duplicate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>For Another GBU</masterLabel>
+        <translation><!-- For Another GBU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soliciting Us</masterLabel>
+        <translation><!-- Soliciting Us --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>They’re no longer interested</masterLabel>
+        <translation><!-- They’re no longer interested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>They’re trying to sell to us</masterLabel>
+        <translation><!-- They’re trying to sell to us --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>We can’t support their interest</masterLabel>
+        <translation><!-- We can’t support their interest --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

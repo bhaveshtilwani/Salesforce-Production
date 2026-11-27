@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cust_Pricing_Proc_not_blank</fullName>
+    <active>false</active>
+    <description>For Asia
+0001,ZCUS,ZINT,ZPD,Z003,Z004</description>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;SAP Asia&quot;,
+ISPICKVAL(Customer_Pricing_Procedure__c, &quot;&quot;),
+OR(
+
+ISPICKVAL( Account_Group__c , &quot;Intra-Div &amp; Inter-Co. - ZINT&quot;),
+ISPICKVAL( Account_Group__c , &quot;One-time cust.(int.no.assgnmt) - CPD&quot;),
+ISPICKVAL( Account_Group__c , &quot;Third-Party - Cus. For Trade - Z003&quot;),
+ISPICKVAL( Account_Group__c , &quot;Intra-Div &amp; Inter-Co For Trade - Z004&quot;)))</errorConditionFormula>
+    <errorDisplayField>Customer_Pricing_Procedure__c</errorDisplayField>
+    <errorMessage>Customer Pricing Procedure Cannot be Blank for selected Account Group</errorMessage>
+</ValidationRule>

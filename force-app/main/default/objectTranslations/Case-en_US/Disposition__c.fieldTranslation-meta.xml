@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter the REO group accountable for the feedback --></help>
+    <label><!-- Disposition --></label>
+    <name>Disposition__c</name>
+    <picklistValues>
+        <masterLabel>Accounting</masterLabel>
+        <translation><!-- Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Support</masterLabel>
+        <translation><!-- Customer Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Control</masterLabel>
+        <translation><!-- Document Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering – COAT</masterLabel>
+        <translation><!-- Engineering – COAT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering – FAB</masterLabel>
+        <translation><!-- Engineering – FAB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning</masterLabel>
+        <translation><!-- Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Line - FQC</masterLabel>
+        <translation><!-- Production Line - FQC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Line – Assembly</masterLabel>
+        <translation><!-- Production Line – Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Line – Infrared Optics (IR)</masterLabel>
+        <translation><!-- Production Line – Infrared Optics (IR) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Line – Laser Optics (LO)</masterLabel>
+        <translation><!-- Production Line – Laser Optics (LO) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Line – Lasers</masterLabel>
+        <translation><!-- Production Line – Lasers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Line – New Product Development(NPI)</masterLabel>
+        <translation><!-- Production Line – New Product Development(NPI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Line – Prisms &amp; Flats (P&amp;F)</masterLabel>
+        <translation><!-- Production Line – Prisms &amp; Flats (P&amp;F) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Line – Ring Laser Gyroscope (RLG)</masterLabel>
+        <translation><!-- Production Line – Ring Laser Gyroscope (RLG) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purchasing</masterLabel>
+        <translation><!-- Purchasing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality - FQC</masterLabel>
+        <translation><!-- Quality - FQC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality - General</masterLabel>
+        <translation><!-- Quality - General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales</masterLabel>
+        <translation><!-- Sales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse - Inventory Control</masterLabel>
+        <translation><!-- Warehouse - Inventory Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse - Receiving</masterLabel>
+        <translation><!-- Warehouse - Receiving --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse - Shipping</masterLabel>
+        <translation><!-- Warehouse - Shipping --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

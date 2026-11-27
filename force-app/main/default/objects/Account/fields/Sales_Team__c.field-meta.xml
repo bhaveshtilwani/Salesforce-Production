@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Team__c</fullName>
+    <label>Sales TeamOLD</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Central and South America Sales</fullName>
+                <default>false</default>
+                <label>Central and South America Sales</label>
+            </value>
+            <value>
+                <fullName>WW Channel Sales</fullName>
+                <default>false</default>
+                <label>WW Channel Sales</label>
+            </value>
+            <value>
+                <fullName>CISS Americas</fullName>
+                <default>false</default>
+                <label>CISS Americas</label>
+            </value>
+            <value>
+                <fullName>CISS EMEA</fullName>
+                <default>false</default>
+                <label>CISS EMEA</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing WW</fullName>
+                <default>false</default>
+                <label>Industrial Curing WW</label>
+            </value>
+            <value>
+                <fullName>LSA and Semi Americas</fullName>
+                <default>false</default>
+                <label>LSA and Semi Americas</label>
+            </value>
+            <value>
+                <fullName>LSA and Semi EMEA</fullName>
+                <default>false</default>
+                <label>LSA and Semi EMEA</label>
+            </value>
+            <value>
+                <fullName>Unknown Team</fullName>
+                <default>false</default>
+                <label>Unknown Team</label>
+            </value>
+            <value>
+                <fullName>AXSUN</fullName>
+                <default>false</default>
+                <label>AXSUN</label>
+            </value>
+            <value>
+                <fullName>Asia Sales Team</fullName>
+                <default>false</default>
+                <label>Asia Sales Team</label>
+            </value>
+            <value>
+                <fullName>3rd Party Partners</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3rd Party Partners</label>
+            </value>
+            <value>
+                <fullName>Aerospace</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Aerospace</label>
+            </value>
+            <value>
+                <fullName>Asia/Pac Sales</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Asia/Pac Sales</label>
+            </value>
+            <value>
+                <fullName>Biomedical</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biomedical</label>
+            </value>
+            <value>
+                <fullName>Biotech &amp; Analytical</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biotech &amp; Analytical</label>
+            </value>
+            <value>
+                <fullName>Biotech &amp; Analytical Americas1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biotech &amp; Analytical Americas1</label>
+            </value>
+            <value>
+                <fullName>Biotech &amp; Analytical EMEA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biotech &amp; Analytical EMEA</label>
+            </value>
+            <value>
+                <fullName>Biotech/Life Sciences</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biotech/Life Sciences</label>
+            </value>
+            <value>
+                <fullName>CISS 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CISS 1</label>
+            </value>
+            <value>
+                <fullName>CISS 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CISS 2</label>
+            </value>
+            <value>
+                <fullName>Catalog</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Catalog</label>
+            </value>
+            <value>
+                <fullName>Channel Sales Americas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Channel Sales Americas</label>
+            </value>
+            <value>
+                <fullName>Channel Sales Asia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Channel Sales Asia</label>
+            </value>
+            <value>
+                <fullName>Channel Sales EMEA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Channel Sales EMEA</label>
+            </value>
+            <value>
+                <fullName>Comm &amp; Tech</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Comm &amp; Tech</label>
+            </value>
+            <value>
+                <fullName>Commercial Lighting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Commercial Lighting</label>
+            </value>
+            <value>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Consumer</label>
+            </value>
+            <value>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Consumer Electronics</label>
+            </value>
+            <value>
+                <fullName>DELETE Biotech &amp; Analytical Americas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DELETE Biotech &amp; Analytical Americas</label>
+            </value>
+            <value>
+                <fullName>GBS Photo &amp; Measurement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GBS Photo &amp; Measurement</label>
+            </value>
+            <value>
+                <fullName>Greater China</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Greater China</label>
+            </value>
+            <value>
+                <fullName>ISS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ISS</label>
+            </value>
+            <value>
+                <fullName>Industial Curing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industial Curing</label>
+            </value>
+            <value>
+                <fullName>Industrail Lighting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrail Lighting</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing Americas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial Curing Americas</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing Asia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial Curing Asia</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing EMEA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial Curing EMEA</label>
+            </value>
+            <value>
+                <fullName>Industrial Imaging</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial Imaging</label>
+            </value>
+            <value>
+                <fullName>Industrial Lighting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial Lighting</label>
+            </value>
+            <value>
+                <fullName>Industrial Sensors</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industrial Sensors</label>
+            </value>
+            <value>
+                <fullName>Japan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Japan</label>
+            </value>
+            <value>
+                <fullName>Korea</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Korea</label>
+            </value>
+            <value>
+                <fullName>Lighting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lighting</label>
+            </value>
+            <value>
+                <fullName>Lithography</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lithography</label>
+            </value>
+            <value>
+                <fullName>LithographyIndustrial Lighting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LithographyIndustrial Lighting</label>
+            </value>
+            <value>
+                <fullName>Machine Vision</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Machine Vision</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Medical 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical 1</label>
+            </value>
+            <value>
+                <fullName>Medical 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical 2</label>
+            </value>
+            <value>
+                <fullName>Medical Americas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical Americas</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Ophthalmology</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>Optem</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Optem</label>
+            </value>
+            <value>
+                <fullName>Photonics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Photonics</label>
+            </value>
+            <value>
+                <fullName>Photovoltaic</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Photovoltaic</label>
+            </value>
+            <value>
+                <fullName>SE Asia, India, Australia</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SE Asia, India, Australia</label>
+            </value>
+            <value>
+                <fullName>Semi</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Semi</label>
+            </value>
+            <value>
+                <fullName>Semi/GAM Americas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Semi/GAM Americas</label>
+            </value>
+            <value>
+                <fullName>Semi/GAM EMEA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Semi/GAM EMEA</label>
+            </value>
+            <value>
+                <fullName>Specialty Lighting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Specialty Lighting</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Telecom</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

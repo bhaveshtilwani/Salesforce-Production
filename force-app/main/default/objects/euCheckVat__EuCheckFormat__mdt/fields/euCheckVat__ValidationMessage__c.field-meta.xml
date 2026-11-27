@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>euCheckVat__ValidationMessage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Default English message to display when the VAT number is not the correct format.
+This could be overwritten (to be implemented) by country-specific custom labels:
+EUCHECK_FORMAT_MESSAGE_BE, EUCHECK_FORMAT_MESSAGE_NL, EUCHECK_FORMAT_MESSAGE_FR etc...</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <label>Validation Message</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

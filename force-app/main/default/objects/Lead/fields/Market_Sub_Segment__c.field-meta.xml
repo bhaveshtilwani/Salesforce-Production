@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Sub_Segment__c</fullName>
+    <label>Market Sub-Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adhesives/Chemicals</fullName>
+                <default>false</default>
+                <label>Adhesives/Chemicals</label>
+            </value>
+            <value>
+                <fullName>Analytical Instrumentation</fullName>
+                <default>false</default>
+                <label>Analytical Instrumentation</label>
+            </value>
+            <value>
+                <fullName>Automated Assembly</fullName>
+                <default>false</default>
+                <label>Automated Assembly</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Aviation/Space</fullName>
+                <default>false</default>
+                <label>Aviation/Space</label>
+            </value>
+            <value>
+                <fullName>Biomedical</fullName>
+                <default>false</default>
+                <label>Biomedical</label>
+            </value>
+            <value>
+                <fullName>Blue-Ray DVD</fullName>
+                <default>false</default>
+                <label>Blue-Ray DVD</label>
+            </value>
+            <value>
+                <fullName>Bluetooth Headsets</fullName>
+                <default>false</default>
+                <label>Bluetooth Headsets</label>
+            </value>
+            <value>
+                <fullName>Calibration</fullName>
+                <default>false</default>
+                <label>Calibration</label>
+            </value>
+            <value>
+                <fullName>Cannula/Needle Assembly</fullName>
+                <default>false</default>
+                <label>Cannula/Needle Assembly</label>
+            </value>
+            <value>
+                <fullName>Catheters</fullName>
+                <default>false</default>
+                <label>Catheters</label>
+            </value>
+            <value>
+                <fullName>CCM (Compact Camera Module)</fullName>
+                <default>false</default>
+                <label>CCM (Compact Camera Module)</label>
+            </value>
+            <value>
+                <fullName>Cellular Manipulation</fullName>
+                <default>false</default>
+                <label>Cellular Manipulation</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Digital Printing</fullName>
+                <default>false</default>
+                <label>Digital Printing</label>
+            </value>
+            <value>
+                <fullName>Display</fullName>
+                <default>false</default>
+                <label>Display</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>DSC/Rheology</fullName>
+                <default>false</default>
+                <label>DSC/Rheology</label>
+            </value>
+            <value>
+                <fullName>Electronic Contract Manufacturers</fullName>
+                <default>false</default>
+                <label>Electronic Contract Manufacturers</label>
+            </value>
+            <value>
+                <fullName>Electronic Encoders</fullName>
+                <default>false</default>
+                <label>Electronic Encoders</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Electrophysiology</fullName>
+                <default>false</default>
+                <label>Electrophysiology</label>
+            </value>
+            <value>
+                <fullName>Equipment Manufacturers</fullName>
+                <default>false</default>
+                <label>Equipment Manufacturers</label>
+            </value>
+            <value>
+                <fullName>Fiber Coating</fullName>
+                <default>false</default>
+                <label>Fiber Coating</label>
+            </value>
+            <value>
+                <fullName>Fiber Optics</fullName>
+                <default>false</default>
+                <label>Fiber Optics</label>
+            </value>
+            <value>
+                <fullName>Full Cure - Multiple Pass</fullName>
+                <default>false</default>
+                <label>Full Cure - Multiple Pass</label>
+            </value>
+            <value>
+                <fullName>Full Cure - Single Pass - Labels</fullName>
+                <default>false</default>
+                <label>Full Cure - Single Pass - Labels</label>
+            </value>
+            <value>
+                <fullName>Full Cure - Single Pass - Marking/Coding</fullName>
+                <default>false</default>
+                <label>Full Cure - Single Pass - Marking/Coding</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>General Bonding</fullName>
+                <default>false</default>
+                <label>General Bonding</label>
+            </value>
+            <value>
+                <fullName>General Fluorescence</fullName>
+                <default>false</default>
+                <label>General Fluorescence</label>
+            </value>
+            <value>
+                <fullName>Glass Bonding</fullName>
+                <default>false</default>
+                <label>Glass Bonding</label>
+            </value>
+            <value>
+                <fullName>HDD/Storage Device</fullName>
+                <default>false</default>
+                <label>HDD/Storage Device</label>
+            </value>
+            <value>
+                <fullName>Hearing Aid Assembly</fullName>
+                <default>false</default>
+                <label>Hearing Aid Assembly</label>
+            </value>
+            <value>
+                <fullName>Heart Surgery Device</fullName>
+                <default>false</default>
+                <label>Heart Surgery Device</label>
+            </value>
+            <value>
+                <fullName>Illumination</fullName>
+                <default>false</default>
+                <label>Illumination</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Ink-Jet Cartridge</fullName>
+                <default>false</default>
+                <label>Ink-Jet Cartridge</label>
+            </value>
+            <value>
+                <fullName>Insulin Pens</fullName>
+                <default>false</default>
+                <label>Insulin Pens</label>
+            </value>
+            <value>
+                <fullName>Laser Device</fullName>
+                <default>false</default>
+                <label>Laser Device</label>
+            </value>
+            <value>
+                <fullName>LCD/LCM displays (COG,COF)</fullName>
+                <default>false</default>
+                <label>LCD/LCM displays (COG,COF)</label>
+            </value>
+            <value>
+                <fullName>Life Sciences (Burleigh)</fullName>
+                <default>false</default>
+                <label>Life Sciences (Burleigh)</label>
+            </value>
+            <value>
+                <fullName>Live Cell Fluorescence</fullName>
+                <default>false</default>
+                <label>Live Cell Fluorescence</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Medical/Endoscopes</fullName>
+                <default>false</default>
+                <label>Medical/Endoscopes</label>
+            </value>
+            <value>
+                <fullName>Medical Contract Manufacturers</fullName>
+                <default>false</default>
+                <label>Medical Contract Manufacturers</label>
+            </value>
+            <value>
+                <fullName>Medical Instruments</fullName>
+                <default>false</default>
+                <label>Medical Instruments</label>
+            </value>
+            <value>
+                <fullName>Mems</fullName>
+                <default>false</default>
+                <label>Mems</label>
+            </value>
+            <value>
+                <fullName>Micromanipulation</fullName>
+                <default>false</default>
+                <label>Micromanipulation</label>
+            </value>
+            <value>
+                <fullName>Mobile Phone – Microspeaker</fullName>
+                <default>false</default>
+                <label>Mobile Phone – Microspeaker</label>
+            </value>
+            <value>
+                <fullName>Motor Winding/Balancing</fullName>
+                <default>false</default>
+                <label>Motor Winding/Balancing</label>
+            </value>
+            <value>
+                <fullName>OLED</fullName>
+                <default>false</default>
+                <label>OLED</label>
+            </value>
+            <value>
+                <fullName>OmniCure Sales Rep</fullName>
+                <default>false</default>
+                <label>OmniCure Sales Rep</label>
+            </value>
+            <value>
+                <fullName>Optical</fullName>
+                <default>false</default>
+                <label>Optical</label>
+            </value>
+            <value>
+                <fullName>Optical/Contact Lens Assembly</fullName>
+                <default>false</default>
+                <label>Optical/Contact Lens Assembly</label>
+            </value>
+            <value>
+                <fullName>Optical Lens</fullName>
+                <default>false</default>
+                <label>Optical Lens</label>
+            </value>
+            <value>
+                <fullName>Optical Lens Assembly</fullName>
+                <default>false</default>
+                <label>Optical Lens Assembly</label>
+            </value>
+            <value>
+                <fullName>Optical Switch</fullName>
+                <default>false</default>
+                <label>Optical Switch</label>
+            </value>
+            <value>
+                <fullName>Optoelectronics</fullName>
+                <default>false</default>
+                <label>Optoelectronics</label>
+            </value>
+            <value>
+                <fullName>Optogenetics</fullName>
+                <default>false</default>
+                <label>Optogenetics</label>
+            </value>
+            <value>
+                <fullName>OPU (Optical Pick Up)</fullName>
+                <default>false</default>
+                <label>OPU (Optical Pick Up)</label>
+            </value>
+            <value>
+                <fullName>Otoscope</fullName>
+                <default>false</default>
+                <label>Otoscope</label>
+            </value>
+            <value>
+                <fullName>Oxygen Masks</fullName>
+                <default>false</default>
+                <label>Oxygen Masks</label>
+            </value>
+            <value>
+                <fullName>Pathology</fullName>
+                <default>false</default>
+                <label>Pathology</label>
+            </value>
+            <value>
+                <fullName>PCB Assembly</fullName>
+                <default>false</default>
+                <label>PCB Assembly</label>
+            </value>
+            <value>
+                <fullName>Photo-Resist</fullName>
+                <default>false</default>
+                <label>Photo-Resist</label>
+            </value>
+            <value>
+                <fullName>Pinning - Single Pass</fullName>
+                <default>false</default>
+                <label>Pinning - Single Pass</label>
+            </value>
+            <value>
+                <fullName>Plastics (ie. Injection Moulding)</fullName>
+                <default>false</default>
+                <label>Plastics (ie. Injection Moulding)</label>
+            </value>
+            <value>
+                <fullName>Quantitative Microscopy</fullName>
+                <default>false</default>
+                <label>Quantitative Microscopy</label>
+            </value>
+            <value>
+                <fullName>R&amp;D</fullName>
+                <default>false</default>
+                <label>R&amp;D</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Research &amp; Development</fullName>
+                <default>false</default>
+                <label>Research &amp; Development</label>
+            </value>
+            <value>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+                <label>Reseller</label>
+            </value>
+            <value>
+                <fullName>Sales Representative</fullName>
+                <default>false</default>
+                <label>Sales Representative</label>
+            </value>
+            <value>
+                <fullName>Sensors</fullName>
+                <default>false</default>
+                <label>Sensors</label>
+            </value>
+            <value>
+                <fullName>Speakers</fullName>
+                <default>false</default>
+                <label>Speakers</label>
+            </value>
+            <value>
+                <fullName>Stent</fullName>
+                <default>false</default>
+                <label>Stent</label>
+            </value>
+            <value>
+                <fullName>Stereolithography</fullName>
+                <default>false</default>
+                <label>Stereolithography</label>
+            </value>
+            <value>
+                <fullName>Suppliers</fullName>
+                <default>false</default>
+                <label>Suppliers</label>
+            </value>
+            <value>
+                <fullName>Surgical Instruments</fullName>
+                <default>false</default>
+                <label>Surgical Instruments</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>TOSA/ROSA</fullName>
+                <default>false</default>
+                <label>TOSA/ROSA</label>
+            </value>
+            <value>
+                <fullName>Tube Sets/IV/Fluid Delivery</fullName>
+                <default>false</default>
+                <label>Tube Sets/IV/Fluid Delivery</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <label>University</label>
+            </value>
+            <value>
+                <fullName>VCSELS</fullName>
+                <default>false</default>
+                <label>VCSELS</label>
+            </value>
+            <value>
+                <fullName>WDM Modules</fullName>
+                <default>false</default>
+                <label>WDM Modules</label>
+            </value>
+            <value>
+                <fullName>Windshield</fullName>
+                <default>false</default>
+                <label>Windshield</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

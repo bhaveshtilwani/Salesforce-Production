@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Maps Partner Function to lookup in the Order Creation and creates Partner Function records on order conversion.</description>
+    <label>Order Creation Partner Function</label>
+    <pluralLabel>Order Creation Partner Functions</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

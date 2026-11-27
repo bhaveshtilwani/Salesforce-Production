@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_SubfamilyNL__c</fullName>
+    <label>Profit Center</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ED COMPONENT</fullName>
+                <default>false</default>
+                <label>ED COMPONENT</label>
+            </value>
+            <value>
+                <fullName>ED System</fullName>
+                <default>false</default>
+                <label>ED System</label>
+            </value>
+            <value>
+                <fullName>ED Custom</fullName>
+                <default>false</default>
+                <label>ED Custom</label>
+            </value>
+            <value>
+                <fullName>LED COMPONENT</fullName>
+                <default>false</default>
+                <label>LED COMPONENT</label>
+            </value>
+            <value>
+                <fullName>LED Custom</fullName>
+                <default>false</default>
+                <label>LED Custom</label>
+            </value>
+            <value>
+                <fullName>LED System</fullName>
+                <default>false</default>
+                <label>LED System</label>
+            </value>
+            <value>
+                <fullName>MW COMPONENT</fullName>
+                <default>false</default>
+                <label>MW COMPONENT</label>
+            </value>
+            <value>
+                <fullName>MW System</fullName>
+                <default>false</default>
+                <label>MW System</label>
+            </value>
+            <value>
+                <fullName>MW Custom</fullName>
+                <default>false</default>
+                <label>MW Custom</label>
+            </value>
+            <value>
+                <fullName>E.IR COMPONENT</fullName>
+                <default>false</default>
+                <label>E.IR COMPONENT</label>
+            </value>
+            <value>
+                <fullName>EIR System</fullName>
+                <default>false</default>
+                <label>EIR System</label>
+            </value>
+            <value>
+                <fullName>EIR Custom</fullName>
+                <default>false</default>
+                <label>EIR Custom</label>
+            </value>
+            <value>
+                <fullName>OPT COMPONENTS</fullName>
+                <default>false</default>
+                <label>OPT COMPONENTS</label>
+            </value>
+            <value>
+                <fullName>OPT Custom</fullName>
+                <default>false</default>
+                <label>OPT Custom</label>
+            </value>
+            <value>
+                <fullName>OPT System</fullName>
+                <default>false</default>
+                <label>OPT System</label>
+            </value>
+            <value>
+                <fullName>FLASH COMP.</fullName>
+                <default>false</default>
+                <label>FLASH COMP.</label>
+            </value>
+            <value>
+                <fullName>FLASH Custom.</fullName>
+                <default>false</default>
+                <label>FLASH Custom.</label>
+            </value>
+            <value>
+                <fullName>FLASH system.</fullName>
+                <default>false</default>
+                <label>FLASH system.</label>
+            </value>
+            <value>
+                <fullName>OMNICURE COMPONENTS</fullName>
+                <default>false</default>
+                <label>OMNICURE COMPONENTS</label>
+            </value>
+            <value>
+                <fullName>OMNICURE Custom</fullName>
+                <default>false</default>
+                <label>OMNICURE Custom</label>
+            </value>
+            <value>
+                <fullName>OMNICURE System</fullName>
+                <default>false</default>
+                <label>OMNICURE System</label>
+            </value>
+            <value>
+                <fullName>PHOSEON COMPONENTS</fullName>
+                <default>false</default>
+                <label>PHOSEON COMPONENTS</label>
+            </value>
+            <value>
+                <fullName>PHOSEON Custom</fullName>
+                <default>false</default>
+                <label>PHOSEON Custom</label>
+            </value>
+            <value>
+                <fullName>PHOSEON System</fullName>
+                <default>false</default>
+                <label>PHOSEON System</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

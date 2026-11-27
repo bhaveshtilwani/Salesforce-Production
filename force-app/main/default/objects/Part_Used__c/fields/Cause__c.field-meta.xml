@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cause__c</fullName>
+    <label>Cause</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA Not Applicable</fullName>
+                <default>false</default>
+                <label>NA Not Applicable</label>
+            </value>
+            <value>
+                <fullName>Assembly Error</fullName>
+                <default>false</default>
+                <label>Assembly Error</label>
+            </value>
+            <value>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+                <label>Customer Request</label>
+            </value>
+            <value>
+                <fullName>Defective Part</fullName>
+                <default>false</default>
+                <label>Defective Part</label>
+            </value>
+            <value>
+                <fullName>Design Error</fullName>
+                <default>false</default>
+                <label>Design Error</label>
+            </value>
+            <value>
+                <fullName>Documentation Incorrect / Lack of Clarity</fullName>
+                <default>false</default>
+                <label>Documentation Incorrect / Lack of Clarity</label>
+            </value>
+            <value>
+                <fullName>Drawing Error / Misinterpretation</fullName>
+                <default>false</default>
+                <label>Drawing Error / Misinterpretation</label>
+            </value>
+            <value>
+                <fullName>External Influence</fullName>
+                <default>false</default>
+                <label>External Influence</label>
+            </value>
+            <value>
+                <fullName>Known Issue - Upgrade Required</fullName>
+                <default>false</default>
+                <label>Known Issue - Upgrade Required</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Error</fullName>
+                <default>false</default>
+                <label>Manufacturing Error</label>
+            </value>
+            <value>
+                <fullName>Materials Defective</fullName>
+                <default>false</default>
+                <label>Materials Defective</label>
+            </value>
+            <value>
+                <fullName>Normal End of Life (NEOL)</fullName>
+                <default>false</default>
+                <label>Normal End of Life (NEOL)</label>
+            </value>
+            <value>
+                <fullName>Operator Error</fullName>
+                <default>false</default>
+                <label>Operator Error</label>
+            </value>
+            <value>
+                <fullName>Process Ineffective</fullName>
+                <default>false</default>
+                <label>Process Ineffective</label>
+            </value>
+            <value>
+                <fullName>Requirements Ambiguous / Unclear</fullName>
+                <default>false</default>
+                <label>Requirements Ambiguous / Unclear</label>
+            </value>
+            <value>
+                <fullName>Scheduled Maintenance</fullName>
+                <default>false</default>
+                <label>Scheduled Maintenance</label>
+            </value>
+            <value>
+                <fullName>Shipping Error</fullName>
+                <default>false</default>
+                <label>Shipping Error</label>
+            </value>
+            <value>
+                <fullName>Software Issue</fullName>
+                <default>false</default>
+                <label>Software Issue</label>
+            </value>
+            <value>
+                <fullName>Supplier Error</fullName>
+                <default>false</default>
+                <label>Supplier Error</label>
+            </value>
+            <value>
+                <fullName>Tools &amp; Equipment Inadequate / Faulty</fullName>
+                <default>false</default>
+                <label>Tools &amp; Equipment Inadequate / Faulty</label>
+            </value>
+            <value>
+                <fullName>Training Ineffective</fullName>
+                <default>false</default>
+                <label>Training Ineffective</label>
+            </value>
+            <value>
+                <fullName>Training Not Provided</fullName>
+                <default>false</default>
+                <label>Training Not Provided</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

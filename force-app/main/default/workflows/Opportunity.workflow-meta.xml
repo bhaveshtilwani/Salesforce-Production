@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>AlertonNewOpportunityCreationonDatawarehouseAccount</fullName>
+        <description>Alert on New Opportunity Creation on Datawarehouse Account</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>salesforce.administrator@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/OpportunityCreatedforDWAccount</template>
+    </alerts>
+    <alerts>
+        <fullName>CISS_AMER_OPP_WON</fullName>
+        <ccEmails>Thomas.Legrand@excelitas.com</ccEmails>
+        <description>CISS AMER GAM &amp; CISS OPP WON</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>anna.kostic@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>harpreet.singh@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>NewProspectCreatedPhotonics</fullName>
+        <description>New Prospect Created (Photonics)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>lisa.lapointe@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sanjay.sawant@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/NewOpportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>NewProspectisCreatedAnalytical</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <description>New Prospect is Created (Analytical)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>james.clements@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sanjay.sawant@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/NewOpportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>NewProspectisCreatedDN</fullName>
+        <description>New Prospect is Created (DN)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>salesforce.administrator@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/NewOpportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>NewProspectisCreatedITAR</fullName>
+        <description>New Prospect is Created (ITAR)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>salesforce.administrator@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/NewProspectforMilitaryApplication</template>
+    </alerts>
+    <alerts>
+        <fullName>NewProspectisCreatedIndustrialComponents</fullName>
+        <description>New Prospect is Created (Industrial Components)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>salesforce.administrator@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/NewOpportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>NewProspectisCreatedIndustrialFlash</fullName>
+        <description>New Prospect is Created (Industrial Flash)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>lisa.lapointe@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sanjay.sawant@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/NewOpportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>NewProspectisCreatedME</fullName>
+        <description>New Prospect is Created (ME)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>salesforce.administrator@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/NewOpportunity</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_10_SSL</fullName>
+        <ccEmails>Thomas.Legrand@Excelitas.com</ccEmails>
+        <description>OPP ALERT 10 - SSL</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mark.gaston@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>oliver.scheuss@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>paul.brierley@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_11_HIDL_Analytical</fullName>
+        <ccEmails>Thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 11 - HIDL Analytical</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mark.gaston@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>paul.brierley@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_12_HIDL_HVP</fullName>
+        <ccEmails>Steve.Klibansky@Excelitas.com; thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 12 - HIDL HVP</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>paul.brierley@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_13_Asia_Pac</fullName>
+        <ccEmails>Thomas.Legrand@Excelitas.com</ccEmails>
+        <description>OPP ALERT 13 - Asia Pac</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>jameslim@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_13_HIDL_CERMAX1</fullName>
+        <ccEmails>THomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 13 - HIDL CERMAX1</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>james.clements@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>paul.brierley@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_14_HIDL_FLASH</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 14 - HIDL FLASH</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>paul.brierley@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>peter.bednarczyk@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_15_IR_Sensing</fullName>
+        <ccEmails>Thomas.Legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 15 - IR Sensing</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>juergen.schilz@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>wolfgang.schmidt@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_16_Catalog</fullName>
+        <ccEmails>ian.alcock@excelitas.com; thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 16 - Catalog</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>isabel.haackert@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_17_Precision_Optics</fullName>
+        <ccEmails>ian.alcock@excelitas.com, thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 17 - Precision Optics</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ralf.mahlmann@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_18_Laser_Tech</fullName>
+        <ccEmails>ian.alcock@excelitas.com, thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 18 - Laser Tech</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>chris.madin@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>volker.melzer@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_19_Optical_Insp</fullName>
+        <ccEmails>ian.alcock@excelitas.com, thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 19 - Optical Insp</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>thomas.schaeffler@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_20_Photon</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 20 - Photon</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>denis.boudreau@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>juergen.schilz@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_21_SPCM</fullName>
+        <ccEmails>thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 21 - SPCM</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>juergen.schilz@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>richard.simons@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_22_BIOMED_SYS</fullName>
+        <ccEmails>Bernhard.Lorenz@excelitas.com, thomas.legrand@excelitas.com</ccEmails>
+        <ccEmails>Axel.kasper@excelitas.com</ccEmails>
+        <description>OPP ALERT 22 BIOMED SYS</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_23_Medical_Imaging</fullName>
+        <ccEmails>bernhard.lorenz@excelitas.com; thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 23 - Medical Imaging</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joachim.koenig@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_24_SEMI</fullName>
+        <ccEmails>mario.ledig@excelitas.com; bernhard.lorenz@excelitas.com, thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 24 - SEMI</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_25_UV_M</fullName>
+        <ccEmails>Mike.Kay@excelitas.com; thomas.legrand@excelitas.com</ccEmails>
+        <description>OPP ALERT 25 - UV&amp;M</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>oliver.scheuss@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>paul.brierley@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>OPP_ALERT_27_LS_A_SEMI_AMER</fullName>
+        <ccEmails>Thomas.Legrand@salesforce.com</ccEmails>
+        <description>OPP ALERT 27 - LS/A SEMI AMER</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>ben.standish@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>todd.brainard@excelitas.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opportunity_80</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_80</fullName>
+        <ccEmails>thomas.legrand@excelitas.com, danny.miller@excelitas.com, richard.ankcorn@excelitas.com</ccEmails>
+        <description>Opportunity &gt;80%</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Stage_Change_4_and_Up</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Owner_Changed</fullName>
+        <description>Opportunity Owner Changed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>JC_ALL/Opp_Owner_Changed</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>CPQU__Contracted_True</fullName>
+        <field>SBQQ__Contracted__c</field>
+        <literalValue>1</literalValue>
+        <name>CPQU - Contracted True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prospect_Owner_AES_Sales</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>AES</literalValue>
+        <name>Prospect Owner AES Sales</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prospect_Owner_AO_Sales</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>AO</literalValue>
+        <name>Prospect Owner AO Sales</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prospect_Owner_AXSUN_Sales</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>AXSUN</literalValue>
+        <name>Prospect Owner AXSUN Sales</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prospect_Owner_CISS_AMERICAS</fullName>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <field>Sales_Team__c</field>
+        <literalValue>CISS Americas</literalValue>
+        <name>Prospect Owner CISS AMERICAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prospect_Owner_CISS_EMEA</fullName>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <field>Sales_Team__c</field>
+        <literalValue>CISS EMEA</literalValue>
+        <name>Prospect Owner CISS EMEA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prospect_Owner_Customer_Service</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>Customer Service</literalValue>
+        <name>Prospect Owner Customer Service</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prospect_Owner_Land_Sales</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>Land</literalValue>
+        <name>Prospect Owner Land Sales</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Prospect_Owner_LatAm_Sales</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>Latin America Sales</literalValue>
+        <name>Prospect Owner LatAm Sales</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_ASIA</fullName>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <field>Sales_Team__c</field>
+        <literalValue>Asia Sales Team</literalValue>
+        <name>UPDATE SALES TEAM ASIA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_LSA_AMERICAS</fullName>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <field>Sales_Team__c</field>
+        <literalValue>LSA and Semi Americas</literalValue>
+        <name>UPDATE SALES TEAM LSA AMERICAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_SALES_TEAM_LSA_EMEA</fullName>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <field>Sales_Team__c</field>
+        <literalValue>LSA and Semi EMEA</literalValue>
+        <name>UPDATE SALES TEAM LSA EMEA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UPDATE_Sales_Team_Channel_Sales</fullName>
+        <field>Sales_Team__c</field>
+        <literalValue>WW Channel Sales</literalValue>
+        <name>UPDATE Sales Team Channel Sales</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Amount_to_full_Prod_Val</fullName>
+        <field>Amount</field>
+        <formula>Full_Production_Annual_Value__c</formula>
+        <name>Update Amount to full Prod Val</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>CPQU__CPQU - Closed Won %3D Contracted</fullName>
+        <actions>
+            <name>CPQU__Contracted_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>$Setup.CPQU__Settings__c.CPQU__Auto_Generate_Contract__c &amp;&amp;  NOT(ISBLANK(SBQQ__PrimaryQuote__c)) &amp;&amp;  CONTAINS($Setup.CPQU__Settings__c.CPQU__Auto_Generate_Contract_Opp_Stage__c, TEXT(StageName) &amp; &quot;,&quot;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 1 - Created for DW Account</fullName>
+        <actions>
+            <name>AlertonNewOpportunityCreationonDatawarehouseAccount</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>DW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>notEqual</operation>
+            <value>Parent</value>
+        </criteriaItems>
+        <description>This rules will get fired if the opportunity is created under datawarehouse account</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 10 - Probability Alert - SSL</fullName>
+        <actions>
+            <name>OPP_ALERT_10_SSL</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Solid State Lighting</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to SSL PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 11 - Probability Alert - HIDL Analytical</fullName>
+        <actions>
+            <name>OPP_ALERT_11_HIDL_Analytical</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Analytical</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to HIDL PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 12 - Probability Alert - HIDL High Voltage Power</fullName>
+        <actions>
+            <name>OPP_ALERT_12_HIDL_HVP</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>High Voltage Power</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to HIDL HVP PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 13 - Probability Alert - HIDL CERMAX</fullName>
+        <actions>
+            <name>OPP_ALERT_13_HIDL_CERMAX1</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Industrial Cermax,Medical Cermax</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to HIDL CERMAX PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 14 - Probability Alert - HIDL FLASH</fullName>
+        <actions>
+            <name>OPP_ALERT_14_HIDL_FLASH</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Industrial Flash,Photonics Flash</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to HIDL FLASH PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 15 - Probability Alert - IR Sensing</fullName>
+        <actions>
+            <name>OPP_ALERT_15_IR_Sensing</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 350,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Pyroelectric Sensors,Thermopile</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to IR Sensing PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 16 - Probability Alert - Catalog</fullName>
+        <actions>
+            <name>OPP_ALERT_16_Catalog</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Catalog &amp; Other</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to IR Sensing PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 17 - Probability Alert - Precision Optics</fullName>
+        <actions>
+            <name>OPP_ALERT_17_Precision_Optics</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Precision Optics</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to Prec. Optics PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 18 - Probability Alert - Laser Tech</fullName>
+        <actions>
+            <name>OPP_ALERT_18_Laser_Tech</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 100,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Laser Technology</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to Laser Tech PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 19 - Probability Alert - Optical Insp</fullName>
+        <actions>
+            <name>OPP_ALERT_19_Optical_Insp</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 400,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Optical Inspection</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to Opt Insp PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 2 - Update Amount to full Prod Val</fullName>
+        <actions>
+            <name>Update_Amount_to_full_Prod_Val</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>equals</operation>
+            <value>USD 0</value>
+        </criteriaItems>
+        <description>In order to make data cleaner, when Full Prod Value is updated, copy $ to Amount field.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 20 - Probability Alert - Photon</fullName>
+        <actions>
+            <name>OPP_ALERT_20_Photon</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 250,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>High Performance,Photodiodes</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to Photon PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 21 - Probability Alert - SPCM</fullName>
+        <actions>
+            <name>OPP_ALERT_21_SPCM</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 100,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>SPCM</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to SPCM PROD VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 22 - Probability Alert - Biomed Sys</fullName>
+        <actions>
+            <name>OPP_ALERT_22_BIOMED_SYS</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Biomedical Systems</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to Biomed Sys VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 23 - Probability Alert - Medical Imaging</fullName>
+        <actions>
+            <name>OPP_ALERT_23_Medical_Imaging</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Medical Imaging</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to Medical Imaging VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 24 - Probability Alert - SEMI</fullName>
+        <actions>
+            <name>OPP_ALERT_24_SEMI</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Semiconductor Technology</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to SEMI VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 25 - Probability Alert - UV%26M</fullName>
+        <actions>
+            <name>OPP_ALERT_25_UV_M</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Product_Family__c</field>
+            <operation>contains</operation>
+            <value>Biomedical Lighting,Industrial Curing</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to UV&amp;M VP &amp; Prod Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 26 - CISS AMER</fullName>
+        <actions>
+            <name>CISS_AMER_OPP_WON</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.OwnerId</field>
+            <operation>contains</operation>
+            <value>harpreet Singh,Nidal Abbas,Guy Bittar,Guy Cote,Eric Gelinas</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to CISS Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 27 - LS%2FA AMER</fullName>
+        <actions>
+            <name>OPP_ALERT_27_LS_A_SEMI_AMER</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>LS/A &amp; Semi Americas</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to LS/A SEMI AMER Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 28 - Asia Pac</fullName>
+        <actions>
+            <name>OPP_ALERT_13_Asia_Pac</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>Asia/Pac Sales</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to Asia Pac Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 29 - CISS EMEA</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>CISS EMEA</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to CISS EMEA Manager</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 3 - Probability Alert</fullName>
+        <actions>
+            <name>Opportunity_80</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>contains</operation>
+            <value>4 - Commercial Negotiation,5 - Business Award – Won,6 - Production Order on Backlog</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Full_Production_Annual_Value__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>&quot;USD 1,000,000&quot;</value>
+        </criteriaItems>
+        <description>When Opportunity changes to &gt;80%, trigger email alert to Sales VP.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 30 - Prospect Owner LatAm Sales</fullName>
+        <actions>
+            <name>Prospect_Owner_LatAm_Sales</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>Latin America Sales</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 31 - Prospect Owner AO Sales</fullName>
+        <actions>
+            <name>Prospect_Owner_AO_Sales</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>AO</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 32 - Prospect Owner Land Sales</fullName>
+        <actions>
+            <name>Prospect_Owner_Land_Sales</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>LAND</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 33 - Prospect Owner AES Sales</fullName>
+        <actions>
+            <name>Prospect_Owner_AES_Sales</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>AES</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 34 - Prospect Owner AXSUN Sales</fullName>
+        <actions>
+            <name>Prospect_Owner_AXSUN_Sales</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>AXSUN</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 35 - Prospect Owner Customer Service</fullName>
+        <actions>
+            <name>Prospect_Owner_Customer_Service</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Profile_Name__c</field>
+            <operation>equals</operation>
+            <value>C3-Customer Service</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 4 - Prospect Owner CISS AMERICAS</fullName>
+        <actions>
+            <name>Prospect_Owner_CISS_AMERICAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>CISS Americas</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 5 - Prospect Owner CISS EMEA</fullName>
+        <actions>
+            <name>Prospect_Owner_CISS_EMEA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>CISS EMEA</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 6 - Prospect Owner LSA AMERICAS</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_LSA_AMERICAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>LSA and Semi Americas</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 7 - Prospect Owner LSA EMEA</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_LSA_EMEA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>LSA and Semi EMEA</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 8 - Prospect Owner ASIA PAC</fullName>
+        <actions>
+            <name>UPDATE_SALES_TEAM_ASIA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>Asia Sales Team</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Opp 9 - Prospect Owner CHANNEL</fullName>
+        <actions>
+            <name>UPDATE_Sales_Team_Channel_Sales</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>User.Sales_Team__c</field>
+            <operation>equals</operation>
+            <value>WW Channel Sales</value>
+        </criteriaItems>
+        <description>If Prosp Owner = X then Update Sales Team</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <tasks>
+        <fullName>ApproveCustomQuote</fullName>
+        <assignedTo>Product Leader</assignedTo>
+        <assignedToType>opportunityTeam</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>02 - High</priority>
+        <protected>false</protected>
+        <status>01- Not Started</status>
+        <subject>Approve Custom Quote</subject>
+    </tasks>
+    <tasks>
+        <fullName>ChangeAccountType</fullName>
+        <assignedTo>salesforce.administrator@excelitas.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Change Account Type to SBL.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>02 - High</priority>
+        <protected>false</protected>
+        <status>01- Not Started</status>
+        <subject>Change Account Type</subject>
+    </tasks>
+</Workflow>

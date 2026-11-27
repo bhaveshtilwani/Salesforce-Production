@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Source_Detail__c</fullName>
+    <label>Lead Source Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AAO</fullName>
+                <default>false</default>
+                <label>AAO</label>
+            </value>
+            <value>
+                <fullName>AKL Laser Tech</fullName>
+                <default>false</default>
+                <label>AKL Laser Tech</label>
+            </value>
+            <value>
+                <fullName>Automation Show</fullName>
+                <default>false</default>
+                <label>Automation Show</label>
+            </value>
+            <value>
+                <fullName>BioPhotonics</fullName>
+                <default>false</default>
+                <label>BioPhotonics</label>
+            </value>
+            <value>
+                <fullName>Cat Request</fullName>
+                <default>false</default>
+                <label>Cat Request</label>
+            </value>
+            <value>
+                <fullName>CES</fullName>
+                <default>false</default>
+                <label>CES</label>
+            </value>
+            <value>
+                <fullName>CIOE</fullName>
+                <default>false</default>
+                <label>CIOE</label>
+            </value>
+            <value>
+                <fullName>CMEF</fullName>
+                <default>false</default>
+                <label>CMEF</label>
+            </value>
+            <value>
+                <fullName>CMEF Spring</fullName>
+                <default>false</default>
+                <label>CMEF Spring</label>
+            </value>
+            <value>
+                <fullName>Compamed</fullName>
+                <default>false</default>
+                <label>Compamed</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>Cyto Conference</fullName>
+                <default>false</default>
+                <label>Cyto Conference</label>
+            </value>
+            <value>
+                <fullName>Del Mar Electronics Show</fullName>
+                <default>false</default>
+                <label>Del Mar Electronics Show</label>
+            </value>
+            <value>
+                <fullName>Dental</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>DGAO Conference</fullName>
+                <default>false</default>
+                <label>DGAO Conference</label>
+            </value>
+            <value>
+                <fullName>DPG SAMOP</fullName>
+                <default>false</default>
+                <label>DPG SAMOP</label>
+            </value>
+            <value>
+                <fullName>DPG SKM</fullName>
+                <default>false</default>
+                <label>DPG SKM</label>
+            </value>
+            <value>
+                <fullName>DPG Spring</fullName>
+                <default>false</default>
+                <label>DPG Spring</label>
+            </value>
+            <value>
+                <fullName>Electronica China</fullName>
+                <default>false</default>
+                <label>Electronica China</label>
+            </value>
+            <value>
+                <fullName>Electronica Munich</fullName>
+                <default>false</default>
+                <label>Electronica Munich</label>
+            </value>
+            <value>
+                <fullName>Electro-Optics</fullName>
+                <default>false</default>
+                <label>Electro-Optics</label>
+            </value>
+            <value>
+                <fullName>Email Inquiry</fullName>
+                <default>false</default>
+                <label>Email Inquiry</label>
+            </value>
+            <value>
+                <fullName>Fachdental Leipzig</fullName>
+                <default>false</default>
+                <label>Fachdental Leipzig</label>
+            </value>
+            <value>
+                <fullName>Fachdental Südwest</fullName>
+                <default>false</default>
+                <label>Fachdental Südwest</label>
+            </value>
+            <value>
+                <fullName>Global Spec.com</fullName>
+                <default>false</default>
+                <label>Global Spec.com</label>
+            </value>
+            <value>
+                <fullName>InterOpto Japan</fullName>
+                <default>false</default>
+                <label>InterOpto Japan</label>
+            </value>
+            <value>
+                <fullName>IPC APEX</fullName>
+                <default>false</default>
+                <label>IPC APEX</label>
+            </value>
+            <value>
+                <fullName>Landing Page</fullName>
+                <default>false</default>
+                <label>Landing Page</label>
+            </value>
+            <value>
+                <fullName>LASER China</fullName>
+                <default>false</default>
+                <label>LASER China</label>
+            </value>
+            <value>
+                <fullName>Laser Focus World</fullName>
+                <default>false</default>
+                <label>Laser Focus World</label>
+            </value>
+            <value>
+                <fullName>LASER Munich</fullName>
+                <default>false</default>
+                <label>LASER Munich</label>
+            </value>
+            <value>
+                <fullName>LME</fullName>
+                <default>false</default>
+                <label>LME</label>
+            </value>
+            <value>
+                <fullName>MachVis Request</fullName>
+                <default>false</default>
+                <label>MachVis Request</label>
+            </value>
+            <value>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+                <label>Magazine</label>
+            </value>
+            <value>
+                <fullName>MD&amp;M East</fullName>
+                <default>false</default>
+                <label>MD&amp;M East</label>
+            </value>
+            <value>
+                <fullName>MD&amp;M Minn</fullName>
+                <default>false</default>
+                <label>MD&amp;M Minn</label>
+            </value>
+            <value>
+                <fullName>MD&amp;M West</fullName>
+                <default>false</default>
+                <label>MD&amp;M West</label>
+            </value>
+            <value>
+                <fullName>Med Device &amp; Diagnostic</fullName>
+                <default>false</default>
+                <label>Med Device &amp; Diagnostic</label>
+            </value>
+            <value>
+                <fullName>Medica</fullName>
+                <default>false</default>
+                <label>Medica</label>
+            </value>
+            <value>
+                <fullName>Medical MEMS &amp; Sensors</fullName>
+                <default>false</default>
+                <label>Medical MEMS &amp; Sensors</label>
+            </value>
+            <value>
+                <fullName>Med Product Mfg</fullName>
+                <default>false</default>
+                <label>Med Product Mfg</label>
+            </value>
+            <value>
+                <fullName>Micro Mfg</fullName>
+                <default>false</default>
+                <label>Micro Mfg</label>
+            </value>
+            <value>
+                <fullName>Neuroscience</fullName>
+                <default>false</default>
+                <label>Neuroscience</label>
+            </value>
+            <value>
+                <fullName>Optatech</fullName>
+                <default>false</default>
+                <label>Optatech</label>
+            </value>
+            <value>
+                <fullName>Photonics Festival Taiwan</fullName>
+                <default>false</default>
+                <label>Photonics Festival Taiwan</label>
+            </value>
+            <value>
+                <fullName>Physics Instructor Meeting</fullName>
+                <default>false</default>
+                <label>Physics Instructor Meeting</label>
+            </value>
+            <value>
+                <fullName>Precision Fair</fullName>
+                <default>false</default>
+                <label>Precision Fair</label>
+            </value>
+            <value>
+                <fullName>Qmed.com</fullName>
+                <default>false</default>
+                <label>Qmed.com</label>
+            </value>
+            <value>
+                <fullName>Q-Shop Order</fullName>
+                <default>false</default>
+                <label>Q-Shop Order</label>
+            </value>
+            <value>
+                <fullName>Q-Shop Reg</fullName>
+                <default>false</default>
+                <label>Q-Shop Reg</label>
+            </value>
+            <value>
+                <fullName>Q-Shop RFQ</fullName>
+                <default>false</default>
+                <label>Q-Shop RFQ</label>
+            </value>
+            <value>
+                <fullName>Quality Magazine</fullName>
+                <default>false</default>
+                <label>Quality Magazine</label>
+            </value>
+            <value>
+                <fullName>RSNA</fullName>
+                <default>false</default>
+                <label>RSNA</label>
+            </value>
+            <value>
+                <fullName>Sensor + Test</fullName>
+                <default>false</default>
+                <label>Sensor + Test</label>
+            </value>
+            <value>
+                <fullName>Sensor Expo</fullName>
+                <default>false</default>
+                <label>Sensor Expo</label>
+            </value>
+            <value>
+                <fullName>SME Micro Mfg</fullName>
+                <default>false</default>
+                <label>SME Micro Mfg</label>
+            </value>
+            <value>
+                <fullName>SPIE BiOS</fullName>
+                <default>false</default>
+                <label>SPIE BiOS</label>
+            </value>
+            <value>
+                <fullName>SPIE Optics + Photonics</fullName>
+                <default>false</default>
+                <label>SPIE Optics + Photonics</label>
+            </value>
+            <value>
+                <fullName>SPIE Photonics West</fullName>
+                <default>false</default>
+                <label>SPIE Photonics West</label>
+            </value>
+            <value>
+                <fullName>The Assembly Show</fullName>
+                <default>false</default>
+                <label>The Assembly Show</label>
+            </value>
+            <value>
+                <fullName>Vision Stuttgart</fullName>
+                <default>false</default>
+                <label>Vision Stuttgart</label>
+            </value>
+            <value>
+                <fullName>Vision Sys Des</fullName>
+                <default>false</default>
+                <label>Vision Sys Des</label>
+            </value>
+            <value>
+                <fullName>JEC</fullName>
+                <default>false</default>
+                <label>JEC</label>
+            </value>
+            <value>
+                <fullName>Analytica</fullName>
+                <default>false</default>
+                <label>Analytica</label>
+            </value>
+            <value>
+                <fullName>IFAT</fullName>
+                <default>false</default>
+                <label>IFAT</label>
+            </value>
+            <value>
+                <fullName>CIBF 2026</fullName>
+                <default>false</default>
+                <label>CIBF 2026</label>
+            </value>
+            <value>
+                <fullName>Watertech</fullName>
+                <default>false</default>
+                <label>Watertech</label>
+            </value>
+            <value>
+                <fullName>China Glass 2026</fullName>
+                <default>false</default>
+                <label>China Glass 2026</label>
+            </value>
+            <value>
+                <fullName>Exhibition - Mobile Sales</fullName>
+                <default>false</default>
+                <label>Exhibition - Mobile Sales</label>
+            </value>
+            <value>
+                <fullName>2026_05_Three Pillars of Effective Infrared Drying for Coating Webinar</fullName>
+                <default>false</default>
+                <label>2026_05_Three Pillars of Effective Infrared Drying for Coating Webinar</label>
+            </value>
+            <value>
+                <fullName>Anuga FoodTec</fullName>
+                <default>false</default>
+                <label>Anuga FoodTec</label>
+            </value>
+            <value>
+                <fullName>Aquatech</fullName>
+                <default>false</default>
+                <label>Aquatech</label>
+            </value>
+            <value>
+                <fullName>ESPS</fullName>
+                <default>false</default>
+                <label>ESPS</label>
+            </value>
+            <value>
+                <fullName>Fakuma</fullName>
+                <default>false</default>
+                <label>Fakuma</label>
+            </value>
+            <value>
+                <fullName>Fogra</fullName>
+                <default>false</default>
+                <label>Fogra</label>
+            </value>
+            <value>
+                <fullName>ICE</fullName>
+                <default>false</default>
+                <label>ICE</label>
+            </value>
+            <value>
+                <fullName>Iculta</fullName>
+                <default>false</default>
+                <label>Iculta</label>
+            </value>
+            <value>
+                <fullName>Messe K</fullName>
+                <default>false</default>
+                <label>Messe K</label>
+            </value>
+            <value>
+                <fullName>SPW</fullName>
+                <default>false</default>
+                <label>SPW</label>
+            </value>
+            <value>
+                <fullName>2026_05_Leveraging IR Technology to Solve Industrial Challenges Webinar</fullName>
+                <default>false</default>
+                <label>2026_05_Leveraging IR Technology to Solve Industrial Challenges Webinar</label>
+            </value>
+            <value>
+                <fullName>LOUPE Americas</fullName>
+                <default>false</default>
+                <label>LOUPE Americas</label>
+            </value>
+            <value>
+                <fullName>AMTS</fullName>
+                <default>false</default>
+                <label>AMTS</label>
+            </value>
+            <value>
+                <fullName>2026_07 UV Curing Solutions for Converting Webinar</fullName>
+                <default>false</default>
+                <label>2026_07 UV Curing Solutions for Converting Webinar</label>
+            </value>
+            <value>
+                <fullName>2026_08 Fast-Track Production with UV Foam-in-Place Webinar</fullName>
+                <default>false</default>
+                <label>2026_08 Fast-Track Production with UV Foam-in-Place Webinar</label>
+            </value>
+            <value>
+                <fullName>DLR</fullName>
+                <default>false</default>
+                <label>DLR</label>
+            </value>
+            <value>
+                <fullName>Innovation Day</fullName>
+                <default>false</default>
+                <label>Innovation Day</label>
+            </value>
+            <value>
+                <fullName>Jena Laser Days</fullName>
+                <default>false</default>
+                <label>Jena Laser Days</label>
+            </value>
+            <value>
+                <fullName>Cefla</fullName>
+                <default>false</default>
+                <label>Cefla</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_StatusIMG__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(
+CASE(ContactStatus__c ,
+&quot;Moved Company&quot;,
+&quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068Qp00000FCs7F&amp;operationContext=CHATTER&amp;contentId=05TQp00000QpSrJ&quot;,
+&quot;Inactive&quot;,
+&quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068Qp00000FCnSY&amp;operationContext=CHATTER&amp;contentId=05TQp00000QpEDU&quot;,
+&quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068Qp00000FCs2P&amp;operationContext=CHATTER&amp;contentId=05TQp00000QpOUM&quot;), &quot;Jo&quot;, 50 ,100)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contact Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

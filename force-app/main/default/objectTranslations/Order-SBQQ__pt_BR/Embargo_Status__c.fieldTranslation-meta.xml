@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Embargo Status --></label>
+    <name>Embargo_Status__c</name>
+    <picklistValues>
+        <masterLabel>Blocked</masterLabel>
+        <translation><!-- Blocked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Relevant, No Check</masterLabel>
+        <translation><!-- Not Relevant, No Check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Blocked</masterLabel>
+        <translation><!-- Partially Blocked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Pending</masterLabel>
+        <translation><!-- Partially Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending</masterLabel>
+        <translation><!-- Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending - Not yet checked</masterLabel>
+        <translation><!-- Pending - Not yet checked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Released</masterLabel>
+        <translation><!-- Released --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

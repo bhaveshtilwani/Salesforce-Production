@@ -1,0 +1,15 @@
+<apex:page standardController="SBQQ__QuoteLine__c" sidebar="false" showChat="false" showHeader="false" >
+    <apex:includeScript value="/apex/dsfs__DocuSign_JavaScript" />
+    <script type='text/javascript' src='/canvas/sdk/js/publisher.js'></script>
+    
+    <script>
+    function DSGetPageIDFromHref() {
+        return '{!SBQQ__QuoteLine__c.Id}';
+    }
+    
+    (function(){
+        DocuSign_CreateEnvelope();
+        setTimeout( function(){Sfdc.canvas.publisher.publish({ name: "publisher.close", payload:{ refresh: "true" }});}, 1000 );
+    })();
+    </script>
+</apex:page>

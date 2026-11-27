@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_To_Address__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Ship to address for Billerica site (AX system).</inlineHelpText>
+    <label>Ship To Address</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Related_Address__c.Account__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Ship_To_Account__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Related_Address__c.Address_Type__c</field>
+            <operation>equals</operation>
+            <value>Delivery, Alt. delivery</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Site__c</field>
+            <operation>equals</operation>
+            <value>Billerica</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Related_Address__c</referenceTo>
+    <relationshipLabel>Order Creations (Ship To Address)</relationshipLabel>
+    <relationshipName>Order_Creations1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

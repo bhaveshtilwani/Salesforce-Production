@@ -1,0 +1,290 @@
+<apex:component controller="OrderConfirmation" access="global">
+    <apex:attribute name="order" type="Order" description="Order"/>
+    <apex:attribute name="orderIdParam" type="Id" assignTo="{!OrderId}" description="Order id"/>
+
+    <apex:panelGrid columns="4" width="100%" styleClass="summarySection" cellpadding="2" columnClasses="labelCol,dataCol,labelCol,dataCol">
+        <apex:facet name="header">Order Information</apex:facet>
+        <apex:outputLabel value="Order Number:"/>
+        <apex:outputField value="{!order.ERP_Sales_Order_Number__c}"/>
+
+        <apex:outputLabel value="Credit Terms:"/>
+        <apex:outputText value="{!order.Account_Credit_Terms__c}"/>
+<!--       <apex:outputText value="{!RIGHT(opportunity.Account.Terms__c,LEN(opportunity.Account.Terms__c)-FIND('-',opportunity.Account.Terms__c))}"/>
+-->
+        <apex:outputLabel value="Quote Number:"/>
+        <apex:outputField value="{!order.QAD_Quote_Number__c}"/>
+
+        <apex:outputLabel value="Remarks:"/>
+        <apex:outputField value="{!order.Remarks__c}"/>
+
+        <apex:outputLabel value="Order Date:"/>
+        <apex:outputField value="{!order.Order_Date__c}"/>
+
+        <apex:outputLabel value="Purchase Order:"/>
+        <apex:outputField value="{!order.PoNumber}"/>
+
+        <apex:outputLabel value="CSR:"/>
+        <apex:outputField value="{!order.CreatedBy.Name}"/>
+
+        <apex:outputLabel value="Ship Via:"/>
+        <apex:outputField value="{!order.Ship_Via__c}"/>
+
+        <apex:outputLabel value="Attention:"/>
+        <apex:outputField value="{!order.Contact__r.Name}"/>
+        
+        <apex:outputLabel value="Shipping Vendor:"/>
+        <apex:outputField value="{!order.Shipping_Vendor__c}"/>
+
+        <apex:outputLabel value="FOB Point"/>
+        <apex:outputField value="{!order.Incoterm1__c}"/>
+
+        <apex:outputLabel value="Tel:"/>
+        <apex:outputField value="{!order.Contact_Phone__c}"/>
+        
+        
+	<!--	
+        <apex:outputLabel value="Transaction / Order Comments:"/>
+        <apex:outputField value="{!order.Transaction_Order_Comments__c}"/>
+        
+        <apex:outputLabel value="Transaction /Order Comments 2:"/>
+        <apex:outputField value="{!order.Transaction_Order_Comments_2__c}"/>
+        
+        <apex:outputLabel value="Transaction /Order Comments 3:"/>
+        <apex:outputField value="{!order.Transaction_Order_Comments_3__c}"/>
+        
+        <apex:outputLabel value="Transaction /Order Comments 4:"/>
+        <apex:outputField value="{!order.Transaction_Order_Comments_4__c}"/>-->
+    </apex:panelGrid> 
+
+<!--  -->
+    <apex:panelGrid columns="2" width="100%" columnClasses="summaryColumn,summaryColumn">
+        <apex:panelGrid columns="1" width="100%" styleClass="summarySection" cellpadding="4">
+            <apex:facet name="header">Bill To: {!Order.Bill_To_Code__c}</apex:facet>
+            <apex:outputText value="{5}<br/>{0}<br/>{1}, {2} {3}<br/>{4}" escape="false">
+                <apex:param value="{!order.Bill_To_AccountLDGI__r.BillingStreet}"/>
+                <apex:param value="{!order.Bill_To_AccountLDGI__r.BillingCity}"/>
+                <apex:param value="{!order.Bill_To_AccountLDGI__r.BillingState}"/>
+                <apex:param value="{!order.Bill_To_AccountLDGI__r.BillingPostalCode}"/>
+                <apex:param value="{!order.Bill_To_AccountLDGI__r.BillingCountry}"/>
+                <apex:param value="{!order.Bill_To_AccountLDGI__r.Name}"/>
+            </apex:outputText>
+        </apex:panelGrid> 
+ <!--       
+       <apex:panelGrid columns="2" width="100%" columnClasses="summaryColumn,summaryColumn">
+        <apex:panelGrid columns="1" width="100%" styleClass="summarySection" cellpadding="4">
+            <apex:facet name="header">Sold To: {!quote.QAD_Sold_to_Code__c}</apex:facet>
+            <apex:outputText value="{5}<br/>{0}<br/>{1}, {2} {3}<br/>{4}" escape="false">
+                <apex:param value="{!quote.qSoldtoStreet__c}"/>
+                <apex:param value="{!quote.qSoldtoCity__c}"/>
+                <apex:param value="{!quote.qSoldtoState__c}"/>
+                <apex:param value="{!quote.qSoldtoZip__c}"/>
+                <apex:param value="{!quote.qSoldtoCountry__c}"/>
+                <apex:param value="{!quote.QAD_Sold_to_Name__c}"/>
+            </apex:outputText>
+        </apex:panelGrid> 
+ -->
+
+ 
+        <apex:panelGrid columns="1" width="100%" styleClass="summarySection" cellpadding="4">
+            <apex:facet name="header">Ship To: {!order.Ship_To_CodeLDGI__c}</apex:facet>
+            <apex:outputText value="{5}<br/>{0}<br/>{1}, {2} {3}<br/>{4}" escape="false">
+                <apex:param value="{!order.Ship_To_Account__r.billingStreet}"/>
+                <apex:param value="{!order.Ship_To_Account__r.billingCity}"/>
+                <apex:param value="{!order.Ship_To_Account__r.billingState}"/>
+                <apex:param value="{!order.Ship_To_Account__r.billingPostalCode}"/>
+                <apex:param value="{!order.Ship_To_Account__r.billingCountry}"/>
+                <apex:param value="{!order.Ship_To_Account__r.Name}"/>
+            </apex:outputText>
+        </apex:panelGrid> 
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="1" width="100%" styleClass="body" cellpadding="1">
+        <apex:outputPanel />
+       <apex:outputLabel value="Comments:"/>
+        <apex:outputText value="{0}<br/>{1}<br/>{2}<br/>{3}" escape="false">
+             <apex:param value="{!order.Transaction_Order_Comments__c}"/>
+			<apex:param value="{!order.Transaction_Order_Comments_2__c}"/>
+             <apex:param value="{!order.Transaction_Order_Comments_3__c}"/>
+             <apex:param value="{!order.Transaction_Order_Comments_4__c}"/> 
+       </apex:outputText>
+    </apex:panelGrid>    
+    
+    <apex:panelGrid columns="1" width="100%" styleClass="summarySection" cellpadding="1">
+        <apex:facet name="header">Order Line Items</apex:facet>
+        <apex:dataTable value="{!orderItems}" var="oli" width="100%" styleClass="summaryTable" cellpadding="4">
+           <!-- Previous <apex:column headerValue="Part #" value="{!oli.Product_Name__c}"/> -->
+            <apex:column headerValue="Part #">
+               <!-- <apex:outputText value="{!oli.Product_Name__c}"/><br/>
+                <apex:outputText value="{!oli.Product2.QAD_Micromove_product_code__c}"
+                    rendered="{!NOT(ISBLANK(oli.Product2.QAD_Micromove_product_code__c))}"/> -->
+                <apex:outputText value="{!IF(ISBLANK(oli.Product2.QAD_Micromove_product_code__c),
+                             oli.Product_Name__c,
+                             oli.Product2.QAD_Micromove_product_code__c)}"/>
+            </apex:column>
+            <apex:column headerValue="Product" value="{!oli.Part_Number__c}"/>
+            <apex:column headerValue="Quantity" value="{!oli.Quantity}"/>
+            <apex:column headerValue="Sales Price" value="{!oli.UnitPrice}"/>
+            <apex:column headerValue="Subtotal" value="{!oli.Subtotal_Dec__c}"/>
+            <apex:column headerValue="Discount" value="{!oli.Total_Line_Discount__c}"/>    
+     <!--   <apex:column headerValue="Subtotal" value=" {!qli.Subtotal}"/>
+            <apex:column headerValue="Discount" value="{!qli.Discount}"/>  --> 
+            <apex:column headerValue="Total Price" value="{!oli.Line_Total_Price__c}"/>
+            <apex:column headerValue="Ship Date (d/m/y)" value="{!oli.QAD_Due_Date__c}"/>
+            <apex:column headerValue="Cst Rev" value="{!oli.Cst_Rev__c}"/>
+            <apex:column headerValue="Current Rev" value="{!oli.Current_Rev__c}"/>
+        </apex:dataTable>
+    </apex:panelGrid>
+
+
+    <apex:panelGrid columns="3" width="100%" styleClass="summarySection" cellpadding="2" columnClasses="emptyCol,labelCol,dataCol">
+        
+        <apex:outputPanel />
+        
+        <apex:outputLabel value="Line Total:"/>
+        <apex:outputText value="{0} {1,number,###,###,###,###,##0.00}">
+            <apex:param value="{!order.CurrencyIsoCode}"/>
+            <apex:param value="{!order.Total_Price__c}"/>
+        </apex:outputText>
+
+        
+        <apex:outputPanel />
+        <apex:outputLabel value="Freight:"/>
+        <apex:outputText value="{0} {1,number,###,###,###,###,##0.00}">
+            <apex:param value="{!order.CurrencyIsoCode}"/>
+            <apex:param value="{!order.Freight_Amount__c}"/>
+        </apex:outputText>
+
+        <apex:outputPanel />
+
+        <apex:outputLabel value="Tax:"/>
+        <apex:outputText value="{0} {1,number,###,###,###,###,##0.00}">
+            <apex:param value="{!order.CurrencyIsoCode}"/>
+            <apex:param value="{!order.Tax__c}"/>
+        </apex:outputText>
+        
+        <apex:outputPanel />
+        
+        <apex:outputLabel value="Energy Surcharge:"/>
+        <apex:outputText value="{0} {1,number,###,###,###,###,##0.00}">
+            <apex:param value="{!order.CurrencyIsoCode}"/>
+            <apex:param value="{!order.Fuel_Surcharge_Amount__c}"/>
+        </apex:outputText>
+        
+        <apex:outputPanel />
+        <apex:outputLabel value="Total:"/>
+        <apex:outputText value="{0} {1,number,###,###,###,###,##0.00}">
+            <apex:param value="{!order.CurrencyIsoCode}"/>
+            <apex:param value="{!order.Grand_Total__c}"/>
+        </apex:outputText>
+				
+    </apex:panelGrid> 
+
+    <div style="border-bottom:1px solid;width:100%">&nbsp;</div>
+    <apex:panelGrid columns="1" width="100%" styleClass="summarySection" cellpadding="2">
+        
+       <apex:outputText value="{0}" escape="false">
+             <apex:param value="{!order.Order_Confirmation_Text__c}"/>
+       </apex:outputText>
+
+    </apex:panelGrid>
+
+    
+    <div style="page-break-after:always;"/>
+    <apex:panelGrid columns="1" width="100%" styleClass="summarySection" cellpadding="2">
+        <apex:facet name="header">Sales Terms &amp; Conditions</apex:facet>
+
+        <p>
+            No Return of Merchandise will be accepted without a return merchandise authorization (RMA).Monthly Interest of 2% will be added to overdue accounts.<br/>
+            GST/HST number: 10158 7582 RT0001<br/>
+            Incoterms: ICC 2000
+        </p>
+        
+    <p>
+        <strong>Energy Surcharge Terms and Conditions:</strong><br/>
+        Due to ongoing volatility in global energy and commodity markets, a temporary Energy Surcharge has been applied to this order.<br/>
+        The surcharge appears as a separate line item. Excelitas reserves the right to modify the surcharge on future quotes and orders based on energy or commodity cost fluctuations and other market factors.
+    </p>
+        <p><strong>GENERAL TERMS AND CONDITIONS OF SALE</strong></p>
+        <p>All quotations and sales of products (“Products”) made by Excelitas Technologies (“Seller”) to the customer identified on the offer, order form, invoice or sales acknowledgement form to which these terms and conditions are attached (“Buyer”) are subject to these terms and conditions (the “Terms”).</p>
+
+        <ol>
+            <li><strong>Acceptance of Terms</strong>. BUYER’S ACCEPTANCE OF ANY SALES QUOTATION OR OFFER IS EXPRESSLY CONDITIONED ON BUYER'S ASSENT TO THESE TERMS AND EACH AND ALL OF THE TERMS AND CONDITIONS SET FORTH IN SELLER'S QUOTATION. BUYER'S ASSENT TO THESE TERMS SHALL BE CONCLUSIVELY PRESUMED UPON BUYER’S SUBMISSION OF ITS PURCHASE ORDER. SELLER’S ACCEPTANCE OF BUYER’S PURCHASE ORDER IS EXPRESSLY CONDITIONED ON BUYER’S ASSENT TO THESE TERMS. IF BUYER'S PURCHASE ORDER OR OTHER CORRESPONDENCE CONTAINS TERMS OR CONDITIONS CONTRARY TO OR IN ADDITION TO THE TERMS AND CONDITIONS CONTAINED HEREIN OR IN SELLER'S QUOTATION OR OFFER, ACCEPTANCE OF ANY ORDER BY SELLER SHALL NOT BE CONSTRUED AS ASSENT TO SUCH CONTRARY OR ADDITIONAL TERMS AND CONDITIONS OR CONSTITUTE A WAIVER BY SELLER OF ANY OF THE TERMS AND CONDITIONS CONTAINED HEREIN OR IN SELLER'S QUOTATION OR OFFER. ANY CONFLICTING OR ADDITIONAL TERMS AND CONDITIONS PROVIDED BY BUYER ARE HEREBY REJECTED.</li>
+            <li><strong>Orders</strong>. Each purchase order (“Order”) submitted by Buyer shall include: (a) identification of the Products ordered by Buyer; (b) the requested delivery date; (c) any preferred shipping instructions and the shipping destination; (d) the price of Products ordered; (e) the billing location; and (f) Buyer’s tax status (exempt or non-exempt). Shipments of Products must be scheduled within twelve (12) months from the date ordered. Seller’s standard order acceptance process is to acknowledge acceptance or propose modifications to Orders within five (5) business days of receipt.</li>
+            <li>
+                <strong>Order Cancellation</strong>.
+                <ul>
+                    <li><u>Cancellation by Buyer</u>. No Order cancellations by Buyer are permitted.</li>
+                    <li><u>Bankruptcy</u>. Seller reserves the right to cancel all or part of any accepted Order if bankruptcy proceedings are initiated by or against Buyer.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Delivery and Shipment</strong>.
+                <ul>
+                    <li><u>Proposed Delivery Dates</u>. All proposed delivery and proposed shipment dates provided by Seller to Buyer are estimates only. Seller will make reasonable efforts to meet the delivery date(s) quoted.</li>
+                    <li><u>Packing and Loss or Damage in Transit</u>. Products will be packed for shipment in a manner suitable to the method of shipment specified by Buyer, or to the method selected by Seller in the absence of instructions from Buyer. Should Buyer request any special packing, the request will be fulfilled at Buyer’s expense.</li>
+                    <li><u>Force Majeure</u>. Seller shall not be liable for any delay or failure to perform due to any cause beyond its control. Such causes include, but are not limited to, strikes, acts of God, acts or omissions of Buyer, interruptions of transportation, inability to obtain necessary labor, materials, or facilities, or Seller’s voluntary or mandatory compliance with any governmental act, regulation, or request. Any delivery schedule shall be extended by a period of time equal to the time lost because of any excusable delay. In the event Seller is unable to perform for a period of more than sixty (60) days because of any cause beyond its control, Seller may terminate the Order without any liability to Buyer.</li>
+                    <li><u>Buyer Caused Delay</u>. In the event that delivery is delayed due to any cause within Buyer’s control, including but not limited to any Buyer request for delay honored by Seller, any warehousing, freight, insurance and other costs incurred by Seller in conjunction with any shipment so delayed shall be borne by Buyer.</li>
+                    <li><u>Payment Due For Partial Deliveries</u>. If Seller is unable to provide the entire quantity of Products ordered by Buyer, Seller may, in Seller’s sole discretion and without any liability to Buyer, allocate Products among Buyer and other customers or potential customers and make deliveries in installments, and the Order shall be severable as to such installments(s). In the event of such allocation, any payments due pursuant to Section 5 shall be pro-rated in accordance with the quantity of Products delivered to Buyer.</li>
+                    <li><u>Delivery</u>. All deliveries are EXW (Incoterms 2010) Seller’s manufacturing facility, and all risk of loss or damage to Products in transit is upon Buyer. All Products shall be deemed irrevocably accepted upon delivery. Title shall pass to Buyer upon delivery. Seller retains a security interest in the Products until Buyer makes full payment. If requested by Seller, Buyer agrees to execute any financing statements necessary to perfect such security interest.</li>
+                    <li><u>Inspection</u>. Buyer shall inspect the Products immediately upon receipt and shall, within five (5) business days after receipt, give written notice to Seller of any claim for shortage or that the Products do not conform to the Order. If Buyer shall fail to give such notice, all claims for shipment shortage and non-conformance with the Order shall be deemed waived.</li>
+                    <li><u>Return of Products</u>. Return of Products, defective or otherwise, will not be accepted by Seller without (i) written notification from Buyer to Seller within 30 days of receipt of invoice and (ii) receipt of a return material authorization (“RMA”) from Seller. Products authorized to be returned shall be shipped DAP (Incoterms 2010) Seller’s facility. When return of nonconforming goods has been accepted by Seller, conforming shipment may be made in accordance with this Section 4 without further liability on Seller's part. Buyer shall bear all risk of loss or damage to returned Products while in transit. Seller reserves the right to examine any alleged non-conformance. Buyer will be liable for restocking charges in the event Products are returned to the Seller that are not defective and are in accordance with these terms.</li>
+                </ul>
+            </li>
+            <li><strong>Prices; Payment; Credit Terms</strong>. Buyer shall bear, in addition to the purchase price, the amount of any freight, insurance, handling and other duties levied on the shipment of Products. Buyer agrees to remit payment in full to the address provided on the Seller's invoice for all shipments, including shipments of any portion of the Products ordered, upon receipt of invoice. Payment is due net thirty (30) days from the date of Seller’s invoice. All payments shall be made in U.S. Dollars. This obligation shall not be contingent upon the completion of any installation services included in the purchase price. No cash discounts will be granted. Account balances not paid when due shall bear simple interest until paid at the lower of 1.5% per month or the maximum prevailing legal interest rate calculated from date of delinquency. In the event Seller finds it necessary to refer an account to an attorney or an agent for collection of delinquent accounts, Buyer shall pay all costs of collection including, without limitation, reasonable attorneys’ fees. Seller reserves the right at any time to revoke any credit extended to Buyer, change the credit terms provided herein or cancel Buyer’s order because of Buyer’s failure to pay for any Products when due or for any reason deemed good and sufficient by Seller and in such event all subsequent shipments shall be suspended until Buyer’s account is current or so declared, or cancelled at Seller’s option. If Seller chooses to change Buyer’s credit terms and, within thirty (30) days of receipt of written notice of change to credit terms, Buyer fails to agree to and comply with different terms of credit, and/or fails to give adequate assurance of due performance, Seller may (a) by notice to Buyer, treat such failure or refusal as a repudiation by Buyer of the portion of the purchase order not then fully performed, whereupon Seller may cancel all further deliveries and any amounts unpaid hereunder shall immediately become due and payable; or (b) make shipments under reservation of a demand for advance payment or payment against tender of documents of title. If Seller cancels Buyer’s Order due to Buyer’s non-performance, Seller shall invoice Buyer for the price applicable to the quantity actually purchased.</li>
+            <li><strong>Taxes</strong>. Buyer is responsible for the payment of all taxes which may be assessed or levied on or on account of Products sold hereunder to Buyer, whether termed a gross receipts tax, use tax, property tax, sales tax or otherwise. Where Buyer claims that a transaction is not subject to any such tax, that Buyer is exempt, or that Seller is not required to collect such tax, Buyer agrees to provide Seller with any documentation necessary to support such a claim, to allow Seller to document its decision not to collect such tax(es), and to indemnify and hold Seller harmless from and against any and all fines, penalties, interest, taxes, and other expenses, including, without limitation, reasonable attorney’s fees, incurred by Seller as a result of reliance upon Buyer’s position.</li>
+            <li><strong>Tooling and Tools</strong>. The terms "Tooling" and "Tools" shall include all items such as molds, dies, forms, jigs, mandrels, fixtures and other special equipment, except machinery, which are required to produce the Products. Tooling and/or setup charges may include the total tooling cost for tool usage and setup. All tools shall remain the property of Seller. Seller agrees to maintain such tools in good working order, normal wear and tear and damage by fire or other casualty excepted, during the performance of the Order, and thereafter, Seller will have the right to dispose of them at Seller’s sole discretion. Buyer will be responsible for (a) costs resulting from alterations of tools requested by Buyer or alterations necessary to complete the order and (b) costs for additional tools or tooling incurred when Buyer requires faster delivery and/or greater volume of units than that for which the original tools were designed.</li>
+            <li>
+                <strong>Intellectual Property Rights; Confidentiality</strong>.
+                <ul>
+                    <li>In all cases, the intellectual property rights in and to, and all technology relating to the Products supplied to Buyer, including but not limited to, their design and all improvements thereto shall be and remain the exclusive property of Seller.</li>
+                    <li>In connection with these Terms, each party may have access to or be exposed to information of the other party that is not generally known to the public, such as software, product plans, pricing, marketing and sales information, customer lists, "know-how," or trade secrets, which may be designated as confidential or which, under the circumstances surrounding disclosure, ought to be treated as confidential (collectively, "Confidential Information"). Confidential Information may not be shared with third parties unless such disclosure is to the receiving party's personnel, including employees, agents and subcontractors, on a "need-to-know" basis in connection with these Terms, and such party has agreed to treat such Confidential Information under terms at least as restrictive as those herein. Each party agrees to take the necessary precautions to maintain the confidentiality of the other party's Confidential Information by using at least the same degree of care as such party employs with respect to its own Confidential Information of a similar nature, but in no case less than a commercially reasonable standard of care to maintain confidentiality. The foregoing shall not apply to information that (i) was known by one party prior to its receipt from the other or is or becomes public knowledge through no fault of the recipient; or (ii) is rightfully received by the recipient from a third party without a duty of confidentiality. If a recipient is required by a court or government agency to disclose Confidential Information, the recipient shall provide advance notice to the other party before making such a disclosure.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Limited Warranty</strong>.
+                <ul>
+                    <li>Seller warrants that the Products as delivered shall, for the Warranty Period (as defined below), be free from material defects in materials and workmanship and shall substantially conform in all material respects to the applicable Product Specification. Unless otherwise specified, the “Warranty Period” shall be period of twelve (12) months from the date of shipment to Buyer; provided that: (i) the Warranty Period for Lithium Fluoride PID lamps is thirty (30) days; (ii) the Warranty Period for Magnesium Fluoride PID lamps is six (6) months; and (iii) the Warranty Period for MVS flashlamps (part number 302-XXXX) is six (6) months.</li>
+                    <li>For any material breach of the foregoing warranty, Seller shall, at its option, refund the purchase price, repair or replace the nonconforming Products, provided written notice of non-conformance is received by Seller within the Warranty Period. Nonconforming Products shall be, with Seller’s prior written authorization, returned to Seller within the Warranty Period. Buyer shall bear all risk of loss or damage to returned Products while in transit. Seller reserves the right to examine any alleged non-conformance and perform a failure analysis to determine if the alleged non-conformance is a result of breach of the foregoing warranty. Upon verification by Seller that the Products do not conform to this warranty, Seller will reimburse Buyer for the cost of transporting the Products to Seller’s manufacturing plant. The foregoing states Seller’s sole and exclusive obligation and Buyer’s sole and exclusive remedy for breach of the foregoing warranty. In the event no defect or breach of warranty is discovered by Seller upon receipt of returned Products, the Products will be returned to Buyer at Buyer’s expense and Buyer will reimburse Seller for the transportation charge, labor, and associated charges incurred in testing the allegedly defective Products. Any replacement provided to Buyer will not extend the Warranty Period for the Products in question. Other than in the event of breach of the foregoing warranty, Products may not be returned to Seller.</li>
+                    <li>Except in the case of an authorized distributor of Seller that is authorized in writing by Seller to extend this warranty to distributor’s customers, the warranty under this Section 9 applies only to Buyer and not to any subsequent owner of a Product.</li>
+                    <li>Exclusions and limitations:</li>
+                    <li>
+                        <ul>
+                            <li>The warranty excludes any equipment or accessories identified on the applicable price lists, offers, quotations, and/or special promotional materials as not being covered by this warranty. Included within this category are items produced by third-party manufacturers.</li>
+                            <li>This warranty does not cover loss, damage, or defects resulting from: transportation to the Buyer's facility, improper or inadequate use conditions and/or maintenance by Buyer, Buyer-supplied software or interfacing, unauthorized modification or misuse, or operation outside of the environmental specifications for the Product.</li>
+                            <li>No warranty is made with respect to used, reconstructed, refurbished or previously owned Products, which will be so marked and shall be sold “As Is”.</li>
+                            <li>The warranty herein applies only to Products within the country of original delivery. Products transferred outside the country of original delivery, either by Seller at the direction of Buyer or by Buyer’s actions subsequent to delivery, may be subject to additional charges prior to warranty repair or replacement of such Products based on the actual location of such Products and Seller’s warranty and/or service surcharges for such location(s).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>DISCLAIMER OF WARRANTY. EXCEPT FOR THE WARRANTIES EXPRESSLY SET FORTH IN SECTION 9, SELLER EXPRESSLY DISCLAIMS ALL OTHER WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUARY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, COURSE OF DEALING, USAGE IN TRADE, TITLE AND NON-INFRINGEMENT.</strong></li>
+            <li><strong>LIMITATION OF LIABILITY</strong>. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL SELLER BE LIABLE TO BUYER, OR TO ANY PARTY CLAIMING THROUGH OR UNDER BUYER, FOR ANY LOST PROFITS OR FOR ANY INDIRECT, SPECIAL, INCIDENTAL, EXEMPLARY, CONSEQUENTIAL OR PUNITIVE DAMAGES OF ANY KIND, INCLUDING USE OR INABILITY TO USE ANY PRODUCTS BY BUYER WHETHER BASED ON CONTRACT, TORT, STRICT LIABILITY OR OTHERWISE, ARISING OUT OF THE DESIGN, MANUFACTURE, SALE, DELIVERY, INSTALLATION, SERVICE OR USE OF THE PRODUCTS, EVEN IF SELLER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SELLER’S TOTAL CUMULATIVE LIABILITY IS LIMITED TO THE AMOUNTS PAID BY BUYER TO SELLER UNDER THE APPLICABLE PURCHASE ORDER FOR THE PRODUCTS GIVING RISE TO THE LIABILITY. NO ACTION SHALL BE BROUGHT BY BUYER MORE THAN ONE (1) YEAR AFTER THE ACCRUAL OF SUCH CAUSE OF ACTION. BUYER ACKNOWLEDGES THAT THE FOREGOING LIMITATIONS ARE AN ESSENTIAL ELEMENT OF THE AGREEMENT BETWEEN THE PARTIES PURSUANT TO THESE TERMS AND THAT IN THE ABSENCE OF SUCH LIMITATIONS THE PRICING AND OTHER TERMS SET FORTH IN THESE TERMS WOULD BE SUBSTANTIALLY DIFFERENT.</li>
+            <li>
+                <strong>Patent Indemnity</strong>.
+                <ul>
+                    <li>Seller agrees to (i) defend Buyer from and against any suit or legal proceeding which may be brought against Buyer alleging infringement by Buyer of any valid, issued United States patent arising directly as a result of Buyer’s use of the Products sold hereunder for their intended purposes, and (ii) pay all damages finally awarded against Buyer by a court of competent jurisdiction and all reasonable attorneys’ fees assessed against Buyer in any such suit or legal proceeding, provided Buyer has complied with the conditions set forth in Section 12.c.</li>
+                    <li>Seller’s indemnity obligations do not apply where the alleged infringement is the result of (i) additions or changes in or to the Product made by Buyer or any third party; (ii) combination of the Products with third-party equipment, hardware, software or other materials or items; (iii) Seller’s compliance with specifications furnished by Buyer; or (iv) Buyer’s continued use of the Products after delivery of notice by Seller to cease use of the Products (the “Excluded Activities”).</li>
+                    <li>Buyer shall promptly notify Seller in writing of any claim for which it seeks indemnification hereunder. Seller shall have the right to solely control the defense (including any settlements) of any such claim. At Seller’s request, Buyer will provide reasonable cooperation with respect to any defense or settlement.</li>
+                    <li>In the event that any portion of the Product is held or believed by Seller to infringe a valid, issued United States patent(such portion to be deemed the “Infringing Materials”), then Seller may, at its own expense and at its option: (i) procure for Buyer the right to continue using the Infringing Materials; (ii) modify the Infringing Materials to avoid and eliminate such infringement or misappropriation; (iii) replace the Infringing Materials with an equally satisfactory non- infringing product; or (iv) if none of the foregoing remedies is commercially feasible, remove the Infringing Materials and refund to Buyer the purchase price therefor less a reasonable amount for use, damage or obsolescence.</li>
+                    <li>This Section 12 contains Buyer’s sole and exclusive remedy and Seller’s entire liability, with respect to infringement, misappropriation, or violation of third party intellectual property rights relating to the Products.</li>
+                    <li>Buyer agrees to indemnify, defend, and hold Seller harmless from and against all liabilities, obligations, losses, damages, fines, claims, penalties, actions, suits, judgments, costs, expenses, and disbursements (including reasonable attorneys’ fees) arising from the Excluded Activities.</li>
+                </ul>
+            </li>
+            <li><strong>Authority to Export</strong>. Any or all Products may be subject to export or resale restrictions or regulation, and Buyer agrees to comply with all such regulations or restrictions and any other applicable laws and regulations regarding use of the Products. Prior to shipment of any Products, Buyer shall provide Seller with all documentation necessary for shipment to the destination country. Buyer shall indemnify and hold harmless Seller for any violation or alleged violation by Buyer of any such restrictions, regulations or applicable laws.</li>
+            <li>
+                <strong>General</strong>.
+                <ul>
+                    <li></li>
+                    <li><u>Governing Law</u>. These Terms shall be governed by and construed in accordance with applicable U.S. federal law and the laws of the Commonwealth of Massachusetts, U.S.A. without regard to its principles of conflict of laws. Any disputes relating to these Terms shall be adjudicated in the state or federal courts in the Commonwealth of Massachusetts, U.S.A., and both parties hereby consent to the exclusive jurisdiction of said courts for purposes of any such litigation. The parties expressly agree to waive application of the 1980 United Nations Convention on Contracts for the International Sale of Goods or the United Nations Convention on the Limitation Period in the International Sale of Goods, as amended.</li>
+                    <li><u>Assignment</u>. Buyer may not assign, transfer or delegate any of its rights or obligations herein without the prior written consent of Seller, and any purported assignment of such rights or obligations without such consent shall be null and void. These Terms shall be binding on any permitted successor or assign.</li>
+                    <li><u>Severability</u>. If any provision herein is deemed unenforceable, such provision will be changed to accomplish the objectives of such provision to the greatest extent possible under applicable law and the other provisions shall remain in full force and effect.</li>
+                    <li><u>Survival</u>. Sections 3.a (Buyer Cancellation), 5 (Prices; Payment; Credit Terms), 8.a (Intellectual Property Rights), 9.b,c and d (Limited Warranty); 10 (Disclaimer of Warranty), 11 (Limitation of Liability), 13 (Authority to Export) and 14 (General) of these Terms shall survive any termination or cancellation of an Order or return for refund of any Products. The parties’ obligations under Section 8.b (Confidentiality) will survive for 3 years; provided, however, that Confidential Information that constitutes a trade secret will continue to be subject to the obligations of nondisclosure and non-use until such Confidential Information is no longer a trade secret by no wrongdoing of the receiving party or any third party.</li>
+                    <li><u>No Waiver</u>. Seller’s failure to or delay in exercising any of its rights hereunder shall not constitute or be deemed a waiver or forfeiture of such rights. All waivers must be in writing. Any waiver or failure to enforce any provision of this Agreement on one occasion will not be deemed a waiver of any other provision or of such provision on any other occasion.</li>
+                    <li><u>Relationship of the Parties</u>. Buyer’s relationship to Seller is that of an independent contractor, and neither party is an agent, partner or employee of the other.</li>
+                    <li><u>Entire Contract</u>. These Terms and the offer, quotation, invoice, purchase order or sales acknowledgement form supplied by Seller to which these Terms are attached constitute the entire agreement between the parties regarding the subject hereof and supersede all prior or contemporaneous agreements, understandings, and communication, whether written or oral. These Terms may be amended only by a written document signed by both parties that specifically references these Terms.</li>
+                </ul>
+            </li>
+        </ol>
+
+    </apex:panelGrid>
+</apex:component>

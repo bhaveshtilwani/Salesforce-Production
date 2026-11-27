@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AX_Returns_RMA_Site</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Site__c , &quot;Billerica&quot;),
+ISPICKVAL( Order_Type__c , &quot;Customer Return&quot;),
+ISPICKVAL ( RMA_Site__c  , &quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>RMA_Site__c</errorDisplayField>
+    <errorMessage>RMA Site required for Customer Returns</errorMessage>
+</ValidationRule>

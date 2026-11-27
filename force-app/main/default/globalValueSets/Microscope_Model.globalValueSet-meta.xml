@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>50i</fullName>
+        <default>false</default>
+        <label>50i</label>
+    </customValue>
+    <customValue>
+        <fullName>80i</fullName>
+        <default>false</default>
+        <label>80i</label>
+    </customValue>
+    <customValue>
+        <fullName>90i</fullName>
+        <default>false</default>
+        <label>90i</label>
+    </customValue>
+    <customValue>
+        <fullName>AE31</fullName>
+        <default>false</default>
+        <label>AE31</label>
+    </customValue>
+    <customValue>
+        <fullName>all other “TE”</fullName>
+        <default>false</default>
+        <label>all other “TE”</label>
+    </customValue>
+    <customValue>
+        <fullName>AX70</fullName>
+        <default>false</default>
+        <label>AX70</label>
+    </customValue>
+    <customValue>
+        <fullName>AxioExaminer</fullName>
+        <default>false</default>
+        <label>AxioExaminer</label>
+    </customValue>
+    <customValue>
+        <fullName>AxioImager</fullName>
+        <default>false</default>
+        <label>AxioImager</label>
+    </customValue>
+    <customValue>
+        <fullName>AxioObserver</fullName>
+        <default>false</default>
+        <label>AxioObserver</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiophot</fullName>
+        <default>false</default>
+        <label>Axiophot</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiophot2</fullName>
+        <default>false</default>
+        <label>Axiophot2</label>
+    </customValue>
+    <customValue>
+        <fullName>Axioplan 1</fullName>
+        <default>false</default>
+        <label>Axioplan 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Axioplan 2</fullName>
+        <default>false</default>
+        <label>Axioplan 2</label>
+    </customValue>
+    <customValue>
+        <fullName>AxioScan</fullName>
+        <default>false</default>
+        <label>AxioScan</label>
+    </customValue>
+    <customValue>
+        <fullName>AxioScope A1</fullName>
+        <default>false</default>
+        <label>AxioScope A1</label>
+    </customValue>
+    <customValue>
+        <fullName>Axioskop 1</fullName>
+        <default>false</default>
+        <label>Axioskop 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Axioskop 2</fullName>
+        <default>false</default>
+        <label>Axioskop 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Axioskop 20</fullName>
+        <default>false</default>
+        <label>Axioskop 20</label>
+    </customValue>
+    <customValue>
+        <fullName>Axioskop 2FS</fullName>
+        <default>false</default>
+        <label>Axioskop 2FS</label>
+    </customValue>
+    <customValue>
+        <fullName>Axioskop 40</fullName>
+        <default>false</default>
+        <label>Axioskop 40</label>
+    </customValue>
+    <customValue>
+        <fullName>Axioskop 50</fullName>
+        <default>false</default>
+        <label>Axioskop 50</label>
+    </customValue>
+    <customValue>
+        <fullName>AxioTech</fullName>
+        <default>false</default>
+        <label>AxioTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert 10</fullName>
+        <default>false</default>
+        <label>Axiovert 10</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert 100</fullName>
+        <default>false</default>
+        <label>Axiovert 100</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert 135</fullName>
+        <default>false</default>
+        <label>Axiovert 135</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert 200</fullName>
+        <default>false</default>
+        <label>Axiovert 200</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert 25</fullName>
+        <default>false</default>
+        <label>Axiovert 25</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert 35</fullName>
+        <default>false</default>
+        <label>Axiovert 35</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert 40</fullName>
+        <default>false</default>
+        <label>Axiovert 40</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert 400</fullName>
+        <default>false</default>
+        <label>Axiovert 400</label>
+    </customValue>
+    <customValue>
+        <fullName>AxioVert A1</fullName>
+        <default>false</default>
+        <label>AxioVert A1</label>
+    </customValue>
+    <customValue>
+        <fullName>Axiovert S100TV</fullName>
+        <default>false</default>
+        <label>Axiovert S100TV</label>
+    </customValue>
+    <customValue>
+        <fullName>AxioZoom</fullName>
+        <default>false</default>
+        <label>AxioZoom</label>
+    </customValue>
+    <customValue>
+        <fullName>AZ100</fullName>
+        <default>false</default>
+        <label>AZ100</label>
+    </customValue>
+    <customValue>
+        <fullName>BA400</fullName>
+        <default>false</default>
+        <label>BA400</label>
+    </customValue>
+    <customValue>
+        <fullName>BX41</fullName>
+        <default>false</default>
+        <label>BX41</label>
+    </customValue>
+    <customValue>
+        <fullName>BX43</fullName>
+        <default>false</default>
+        <label>BX43</label>
+    </customValue>
+    <customValue>
+        <fullName>BX46</fullName>
+        <default>false</default>
+        <label>BX46</label>
+    </customValue>
+    <customValue>
+        <fullName>BX50</fullName>
+        <default>false</default>
+        <label>BX50</label>
+    </customValue>
+    <customValue>
+        <fullName>BX51</fullName>
+        <default>false</default>
+        <label>BX51</label>
+    </customValue>
+    <customValue>
+        <fullName>BX51WI</fullName>
+        <default>false</default>
+        <label>BX51WI</label>
+    </customValue>
+    <customValue>
+        <fullName>BX53</fullName>
+        <default>false</default>
+        <label>BX53</label>
+    </customValue>
+    <customValue>
+        <fullName>BX60</fullName>
+        <default>false</default>
+        <label>BX60</label>
+    </customValue>
+    <customValue>
+        <fullName>BX61</fullName>
+        <default>false</default>
+        <label>BX61</label>
+    </customValue>
+    <customValue>
+        <fullName>BX61WI</fullName>
+        <default>false</default>
+        <label>BX61WI</label>
+    </customValue>
+    <customValue>
+        <fullName>BX63</fullName>
+        <default>false</default>
+        <label>BX63</label>
+    </customValue>
+    <customValue>
+        <fullName>Ci</fullName>
+        <default>false</default>
+        <label>Ci</label>
+    </customValue>
+    <customValue>
+        <fullName>CK40</fullName>
+        <default>false</default>
+        <label>CK40</label>
+    </customValue>
+    <customValue>
+        <fullName>CKX41</fullName>
+        <default>false</default>
+        <label>CKX41</label>
+    </customValue>
+    <customValue>
+        <fullName>CKX53</fullName>
+        <default>false</default>
+        <label>CKX53</label>
+    </customValue>
+    <customValue>
+        <fullName>CX41</fullName>
+        <default>false</default>
+        <label>CX41</label>
+    </customValue>
+    <customValue>
+        <fullName>Diaphot</fullName>
+        <default>false</default>
+        <label>Diaphot</label>
+    </customValue>
+    <customValue>
+        <fullName>Discovery.v12</fullName>
+        <default>false</default>
+        <label>Discovery.v12</label>
+    </customValue>
+    <customValue>
+        <fullName>Discovery.v20</fullName>
+        <default>false</default>
+        <label>Discovery.v20</label>
+    </customValue>
+    <customValue>
+        <fullName>Discovery.v8</fullName>
+        <default>false</default>
+        <label>Discovery.v8</label>
+    </customValue>
+    <customValue>
+        <fullName>DM2000</fullName>
+        <default>false</default>
+        <label>DM2000</label>
+    </customValue>
+    <customValue>
+        <fullName>DM2500</fullName>
+        <default>false</default>
+        <label>DM2500</label>
+    </customValue>
+    <customValue>
+        <fullName>DM3000</fullName>
+        <default>false</default>
+        <label>DM3000</label>
+    </customValue>
+    <customValue>
+        <fullName>DM4000-6000</fullName>
+        <default>false</default>
+        <label>DM4000-6000</label>
+    </customValue>
+    <customValue>
+        <fullName>DM4B</fullName>
+        <default>false</default>
+        <label>DM4B</label>
+    </customValue>
+    <customValue>
+        <fullName>DM6B</fullName>
+        <default>false</default>
+        <label>DM6B</label>
+    </customValue>
+    <customValue>
+        <fullName>DMI4000</fullName>
+        <default>false</default>
+        <label>DMI4000</label>
+    </customValue>
+    <customValue>
+        <fullName>DMI6000B</fullName>
+        <default>false</default>
+        <label>DMI6000B</label>
+    </customValue>
+    <customValue>
+        <fullName>DMi8 – Automated w/FIM</fullName>
+        <default>false</default>
+        <label>DMi8 – Automated w/FIM</label>
+    </customValue>
+    <customValue>
+        <fullName>DMi8 – Manual</fullName>
+        <default>false</default>
+        <label>DMi8 – Manual</label>
+    </customValue>
+    <customValue>
+        <fullName>DMIL</fullName>
+        <default>false</default>
+        <label>DMIL</label>
+    </customValue>
+    <customValue>
+        <fullName>DMIRB</fullName>
+        <default>false</default>
+        <label>DMIRB</label>
+    </customValue>
+    <customValue>
+        <fullName>DMIRE2</fullName>
+        <default>false</default>
+        <label>DMIRE2</label>
+    </customValue>
+    <customValue>
+        <fullName>DMIRM</fullName>
+        <default>false</default>
+        <label>DMIRM</label>
+    </customValue>
+    <customValue>
+        <fullName>DMLB</fullName>
+        <default>false</default>
+        <label>DMLB</label>
+    </customValue>
+    <customValue>
+        <fullName>DMLFS</fullName>
+        <default>false</default>
+        <label>DMLFS</label>
+    </customValue>
+    <customValue>
+        <fullName>DMR</fullName>
+        <default>false</default>
+        <label>DMR</label>
+    </customValue>
+    <customValue>
+        <fullName>DMRXA</fullName>
+        <default>false</default>
+        <label>DMRXA</label>
+    </customValue>
+    <customValue>
+        <fullName>DMRXA2</fullName>
+        <default>false</default>
+        <label>DMRXA2</label>
+    </customValue>
+    <customValue>
+        <fullName>E400</fullName>
+        <default>false</default>
+        <label>E400</label>
+    </customValue>
+    <customValue>
+        <fullName>E600</fullName>
+        <default>false</default>
+        <label>E600</label>
+    </customValue>
+    <customValue>
+        <fullName>E800</fullName>
+        <default>false</default>
+        <label>E800</label>
+    </customValue>
+    <customValue>
+        <fullName>FN1</fullName>
+        <default>false</default>
+        <label>FN1</label>
+    </customValue>
+    <customValue>
+        <fullName>For “white light TIRF”</fullName>
+        <default>false</default>
+        <label>For “white light TIRF”</label>
+    </customValue>
+    <customValue>
+        <fullName>IX3 series (w/ RFA)</fullName>
+        <default>false</default>
+        <label>IX3 series (w/ RFA)</label>
+    </customValue>
+    <customValue>
+        <fullName>IX3 series (w/ RFA-L)</fullName>
+        <default>false</default>
+        <label>IX3 series (w/ RFA-L)</label>
+    </customValue>
+    <customValue>
+        <fullName>IX50</fullName>
+        <default>false</default>
+        <label>IX50</label>
+    </customValue>
+    <customValue>
+        <fullName>IX51</fullName>
+        <default>false</default>
+        <label>IX51</label>
+    </customValue>
+    <customValue>
+        <fullName>IX70</fullName>
+        <default>false</default>
+        <label>IX70</label>
+    </customValue>
+    <customValue>
+        <fullName>IX71</fullName>
+        <default>false</default>
+        <label>IX71</label>
+    </customValue>
+    <customValue>
+        <fullName>IX81</fullName>
+        <default>false</default>
+        <label>IX81</label>
+    </customValue>
+    <customValue>
+        <fullName>Labophot</fullName>
+        <default>false</default>
+        <label>Labophot</label>
+    </customValue>
+    <customValue>
+        <fullName>LSM</fullName>
+        <default>false</default>
+        <label>LSM</label>
+    </customValue>
+    <customValue>
+        <fullName>M10</fullName>
+        <default>false</default>
+        <label>M10</label>
+    </customValue>
+    <customValue>
+        <fullName>M165FC</fullName>
+        <default>false</default>
+        <label>M165FC</label>
+    </customValue>
+    <customValue>
+        <fullName>M205FA</fullName>
+        <default>false</default>
+        <label>M205FA</label>
+    </customValue>
+    <customValue>
+        <fullName>MVX10</fullName>
+        <default>false</default>
+        <label>MVX10</label>
+    </customValue>
+    <customValue>
+        <fullName>MZ10F</fullName>
+        <default>false</default>
+        <label>MZ10F</label>
+    </customValue>
+    <customValue>
+        <fullName>MZ16F</fullName>
+        <default>false</default>
+        <label>MZ16F</label>
+    </customValue>
+    <customValue>
+        <fullName>MZ16FA</fullName>
+        <default>false</default>
+        <label>MZ16FA</label>
+    </customValue>
+    <customValue>
+        <fullName>MZ9.5</fullName>
+        <default>false</default>
+        <label>MZ9.5</label>
+    </customValue>
+    <customValue>
+        <fullName>MZFLIII</fullName>
+        <default>false</default>
+        <label>MZFLIII</label>
+    </customValue>
+    <customValue>
+        <fullName>Ni</fullName>
+        <default>false</default>
+        <label>Ni</label>
+    </customValue>
+    <customValue>
+        <fullName>SMZ1270</fullName>
+        <default>false</default>
+        <label>SMZ1270</label>
+    </customValue>
+    <customValue>
+        <fullName>SMZ1270i</fullName>
+        <default>false</default>
+        <label>SMZ1270i</label>
+    </customValue>
+    <customValue>
+        <fullName>SMZ1500</fullName>
+        <default>false</default>
+        <label>SMZ1500</label>
+    </customValue>
+    <customValue>
+        <fullName>SMZ18</fullName>
+        <default>false</default>
+        <label>SMZ18</label>
+    </customValue>
+    <customValue>
+        <fullName>SMZ25</fullName>
+        <default>false</default>
+        <label>SMZ25</label>
+    </customValue>
+    <customValue>
+        <fullName>SMZ800</fullName>
+        <default>false</default>
+        <label>SMZ800</label>
+    </customValue>
+    <customValue>
+        <fullName>SMZ800N</fullName>
+        <default>false</default>
+        <label>SMZ800N</label>
+    </customValue>
+    <customValue>
+        <fullName>Stemi SV11</fullName>
+        <default>false</default>
+        <label>Stemi SV11</label>
+    </customValue>
+    <customValue>
+        <fullName>Stereo Lumar</fullName>
+        <default>false</default>
+        <label>Stereo Lumar</label>
+    </customValue>
+    <customValue>
+        <fullName>SZX10</fullName>
+        <default>false</default>
+        <label>SZX10</label>
+    </customValue>
+    <customValue>
+        <fullName>SZX12</fullName>
+        <default>false</default>
+        <label>SZX12</label>
+    </customValue>
+    <customValue>
+        <fullName>SZX16</fullName>
+        <default>false</default>
+        <label>SZX16</label>
+    </customValue>
+    <customValue>
+        <fullName>SZX7</fullName>
+        <default>false</default>
+        <label>SZX7</label>
+    </customValue>
+    <customValue>
+        <fullName>TE2000</fullName>
+        <default>false</default>
+        <label>TE2000</label>
+    </customValue>
+    <customValue>
+        <fullName>Ti</fullName>
+        <default>false</default>
+        <label>Ti</label>
+    </customValue>
+    <customValue>
+        <fullName>Ti2 (w/Ti-LAPP)</fullName>
+        <default>false</default>
+        <label>Ti2 (w/Ti-LAPP)</label>
+    </customValue>
+    <customValue>
+        <fullName>TMF</fullName>
+        <default>false</default>
+        <label>TMF</label>
+    </customValue>
+    <customValue>
+        <fullName>TS100</fullName>
+        <default>false</default>
+        <label>TS100</label>
+    </customValue>
+    <masterLabel>Microscope Model</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

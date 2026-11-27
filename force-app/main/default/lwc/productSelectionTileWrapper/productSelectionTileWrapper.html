@@ -1,0 +1,29 @@
+<template>
+    <div class="slds-var-m-around_small">
+        <h2 class="slds-text-heading_small slds-var-p-vertical_small"><strong>Selected Products</strong></h2>
+        <div class="slds-box_small slds-theme_shade">
+            <div class="slds-grid slds-gutters slds-wrap">
+                <template for:each={products} for:item="product">
+                    <div key={product.UIid} class="slds-col slds-size_1-of-4">
+                        <c-product-selection-tile
+                            product={product}
+                            fields-to-show={fieldsToShow}
+                            custom-actions={customActions}
+                            ontileedit={handleTileEdit}
+                            ontiledelete={handleTileDelete}
+                            onpricingconditions={handlePricingConditions}
+                        ></c-product-selection-tile>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <h2 lwc:if={showTotalPrice} class="slds-var-p-vertical_small slds-text-align_right slds-var-m-horizontal_small">
+            <strong>Total Order Price:</strong> {orderCreation.CurrencyIsoCode}&nbsp;
+            <lightning-formatted-number
+                value={totalPrice}
+                maximum-fraction-digits="2"
+                minimum-fraction-digits="2"
+            ></lightning-formatted-number>
+        </h2>
+    </div>
+</template>

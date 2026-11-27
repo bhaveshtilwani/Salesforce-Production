@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BBBDetails</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>BBB Details</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>http://optfretest001.excelitas.com/WebRunner/Run.aspx?app=applicationFolder/BBB.aaa&amp;url={!API.Partner_Server_URL_30}&amp;session={!API.Session_ID}&amp;account={!Account.Id}&amp;dwid={!Account.Data_Warehouse_ID__c}</url>
+</WebLink>

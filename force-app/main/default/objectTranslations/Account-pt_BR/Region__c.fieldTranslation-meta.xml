@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- 100 - Nortth America
+200 - EMEA
+300 - Asia
+400 - China &amp; Taiwan
+500 - Latin America -->
+    </help>
+    <label><!-- Region --></label>
+    <name>Region__c</name>
+    <picklistValues>
+        <masterLabel>100</masterLabel>
+        <translation><!-- 100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>200</masterLabel>
+        <translation><!-- 200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>300</masterLabel>
+        <translation><!-- 300 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>400</masterLabel>
+        <translation><!-- 400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>500</masterLabel>
+        <translation><!-- 500 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Americas</masterLabel>
+        <translation><!-- Americas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asia Other</masterLabel>
+        <translation><!-- Asia Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asia/Pac</masterLabel>
+        <translation><!-- Asia/Pac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>China/HK</masterLabel>
+        <translation><!-- China/HK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EMEA</masterLabel>
+        <translation><!-- EMEA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Europe</masterLabel>
+        <translation><!-- Europe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japan</masterLabel>
+        <translation><!-- Japan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ROW</masterLabel>
+        <translation><!-- ROW --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

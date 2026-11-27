@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Schedule_Line_Category__c</fullName>
+    <label>Schedule Line Category</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>(AE) MRP</fullName>
+                <default>false</default>
+                <label>(AE) MRP</label>
+            </value>
+            <value>
+                <fullName>(AN) ALE Standard</fullName>
+                <default>false</default>
+                <label>(AN) ALE Standard</label>
+            </value>
+            <value>
+                <fullName>(AQ) MRP</fullName>
+                <default>false</default>
+                <label>(AQ) MRP</label>
+            </value>
+            <value>
+                <fullName>(AR) Advanced Returns</fullName>
+                <default>false</default>
+                <label>(AR) Advanced Returns</label>
+            </value>
+            <value>
+                <fullName>(AT) Inquiry sched.line</fullName>
+                <default>false</default>
+                <label>(AT) Inquiry sched.line</label>
+            </value>
+            <value>
+                <fullName>(BN) No mat.planning</fullName>
+                <default>false</default>
+                <label>(BN) No mat.planning</label>
+            </value>
+            <value>
+                <fullName>(BN) No MRP</fullName>
+                <default>false</default>
+                <label>(BN) No MRP</label>
+            </value>
+            <value>
+                <fullName>(BP) MRP</fullName>
+                <default>false</default>
+                <label>(BP) MRP</label>
+            </value>
+            <value>
+                <fullName>(BT) No inventory mgmt</fullName>
+                <default>false</default>
+                <label>(BT) No inventory mgmt</label>
+            </value>
+            <value>
+                <fullName>(BV) Consumption MRP</fullName>
+                <default>false</default>
+                <label>(BV) Consumption MRP</label>
+            </value>
+            <value>
+                <fullName>(C0) ConsgtIssue/w/o AvCh</fullName>
+                <default>false</default>
+                <label>(C0) ConsgtIssue/w/o AvCh</label>
+            </value>
+            <value>
+                <fullName>(C1) ConsgtIssue/w. AvCh.</fullName>
+                <default>false</default>
+                <label>(C1) ConsgtIssue/w. AvCh.</label>
+            </value>
+            <value>
+                <fullName>(C2) Repost retPck/w/o AC</fullName>
+                <default>false</default>
+                <label>(C2) Repost retPck/w/o AC</label>
+            </value>
+            <value>
+                <fullName>(C3) Repost retPck/w. AC</fullName>
+                <default>false</default>
+                <label>(C3) Repost retPck/w. AC</label>
+            </value>
+            <value>
+                <fullName>(CB) Indiv.Purchase Order</fullName>
+                <default>false</default>
+                <label>(CB) Indiv.Purchase Order</label>
+            </value>
+            <value>
+                <fullName>(CD) Without delivery</fullName>
+                <default>false</default>
+                <label>(CD) Without delivery</label>
+            </value>
+            <value>
+                <fullName>(CN) No mat.planning</fullName>
+                <default>false</default>
+                <label>(CN) No mat.planning</label>
+            </value>
+            <value>
+                <fullName>(CP) MRP</fullName>
+                <default>false</default>
+                <label>(CP) MRP</label>
+            </value>
+            <value>
+                <fullName>(CS) Leg</fullName>
+                <default>false</default>
+                <label>(CS) Leg</label>
+            </value>
+            <value>
+                <fullName>(CT) No inv.mgmt/no GdsIs</fullName>
+                <default>false</default>
+                <label>(CT) No inv.mgmt/no GdsIs</label>
+            </value>
+            <value>
+                <fullName>(CV) Consumption MRP</fullName>
+                <default>false</default>
+                <label>(CV) Consumption MRP</label>
+            </value>
+            <value>
+                <fullName>(CX) No inventory mgmt</fullName>
+                <default>false</default>
+                <label>(CX) No inventory mgmt</label>
+            </value>
+            <value>
+                <fullName>(D0) Consignment Returns</fullName>
+                <default>false</default>
+                <label>(D0) Consignment Returns</label>
+            </value>
+            <value>
+                <fullName>(DN) Returns</fullName>
+                <default>false</default>
+                <label>(DN) Returns</label>
+            </value>
+            <value>
+                <fullName>(E0) StoTranToCons.w/o AC</fullName>
+                <default>false</default>
+                <label>(E0) StoTranToCons.w/o AC</label>
+            </value>
+            <value>
+                <fullName>(E1) StoTranToCons. w. AC</fullName>
+                <default>false</default>
+                <label>(E1) StoTranToCons. w. AC</label>
+            </value>
+            <value>
+                <fullName>(E2) StoTranRetPck.w/o AC</fullName>
+                <default>false</default>
+                <label>(E2) StoTranRetPck.w/o AC</label>
+            </value>
+            <value>
+                <fullName>(E3) StoTranRetPck. w. AC</fullName>
+                <default>false</default>
+                <label>(E3) StoTranRetPck. w. AC</label>
+            </value>
+            <value>
+                <fullName>(E4) StoTranToCons. ExtAg</fullName>
+                <default>false</default>
+                <label>(E4) StoTranToCons. ExtAg</label>
+            </value>
+            <value>
+                <fullName>(E5) MRP external agent</fullName>
+                <default>false</default>
+                <label>(E5) MRP external agent</label>
+            </value>
+            <value>
+                <fullName>(EP) Cust. requirements</fullName>
+                <default>false</default>
+                <label>(EP) Cust. requirements</label>
+            </value>
+            <value>
+                <fullName>(F0) ConsPickup w/o AvCh</fullName>
+                <default>false</default>
+                <label>(F0) ConsPickup w/o AvCh</label>
+            </value>
+            <value>
+                <fullName>(F1) ConsPickup w. AvCh</fullName>
+                <default>false</default>
+                <label>(F1) ConsPickup w. AvCh</label>
+            </value>
+            <value>
+                <fullName>(F2) RetPckPickup w/o AC</fullName>
+                <default>false</default>
+                <label>(F2) RetPckPickup w/o AC</label>
+            </value>
+            <value>
+                <fullName>(F3) RetPckPickup w. AvCh</fullName>
+                <default>false</default>
+                <label>(F3) RetPckPickup w. AvCh</label>
+            </value>
+            <value>
+                <fullName>(IA) Repair Delivery</fullName>
+                <default>false</default>
+                <label>(IA) Repair Delivery</label>
+            </value>
+            <value>
+                <fullName>(IR) Return for Repairs</fullName>
+                <default>false</default>
+                <label>(IR) Return for Repairs</label>
+            </value>
+            <value>
+                <fullName>(K0) TF consgmt lending</fullName>
+                <default>false</default>
+                <label>(K0) TF consgmt lending</label>
+            </value>
+            <value>
+                <fullName>(K1) TR consgmt ret. del.</fullName>
+                <default>false</default>
+                <label>(K1) TR consgmt ret. del.</label>
+            </value>
+            <value>
+                <fullName>(L1) MRP</fullName>
+                <default>false</default>
+                <label>(L1) MRP</label>
+            </value>
+            <value>
+                <fullName>(L2) MRP</fullName>
+                <default>false</default>
+                <label>(L2) MRP</label>
+            </value>
+            <value>
+                <fullName>(LB) Dlv.to stock of mat.</fullName>
+                <default>false</default>
+                <label>(LB) Dlv.to stock of mat.</label>
+            </value>
+            <value>
+                <fullName>(LN) No mat.planning</fullName>
+                <default>false</default>
+                <label>(LN) No mat.planning</label>
+            </value>
+            <value>
+                <fullName>(LP) Dlv. from project</fullName>
+                <default>false</default>
+                <label>(LP) Dlv. from project</label>
+            </value>
+            <value>
+                <fullName>(LR) Return del.to vendor</fullName>
+                <default>false</default>
+                <label>(LR) Return del.to vendor</label>
+            </value>
+            <value>
+                <fullName>(NC) Intercompany replen.</fullName>
+                <default>false</default>
+                <label>(NC) Intercompany replen.</label>
+            </value>
+            <value>
+                <fullName>(NN) Replenishmnt w/o MRP</fullName>
+                <default>false</default>
+                <label>(NN) Replenishmnt w/o MRP</label>
+            </value>
+            <value>
+                <fullName>(NR) Replen. returns</fullName>
+                <default>false</default>
+                <label>(NR) Replen. returns</label>
+            </value>
+            <value>
+                <fullName>(NS) Backlog CrossC Ret</fullName>
+                <default>false</default>
+                <label>(NS) Backlog CrossC Ret</label>
+            </value>
+            <value>
+                <fullName>(PN) ArtSel. w/o MRP</fullName>
+                <default>false</default>
+                <label>(PN) ArtSel. w/o MRP</label>
+            </value>
+            <value>
+                <fullName>(PP) ArtSel with MRP</fullName>
+                <default>false</default>
+                <label>(PP) ArtSel with MRP</label>
+            </value>
+            <value>
+                <fullName>(RN) Returns w/o planning</fullName>
+                <default>false</default>
+                <label>(RN) Returns w/o planning</label>
+            </value>
+            <value>
+                <fullName>(S0)</fullName>
+                <default>false</default>
+                <label>(S0)</label>
+            </value>
+            <value>
+                <fullName>(S1)</fullName>
+                <default>false</default>
+                <label>(S1)</label>
+            </value>
+            <value>
+                <fullName>(S2)</fullName>
+                <default>false</default>
+                <label>(S2)</label>
+            </value>
+            <value>
+                <fullName>(SP) SPE Returns</fullName>
+                <default>false</default>
+                <label>(SP) SPE Returns</label>
+            </value>
+            <value>
+                <fullName>(Z1)</fullName>
+                <default>false</default>
+                <label>(Z1)</label>
+            </value>
+            <value>
+                <fullName>(Z2) Repair customer Mat</fullName>
+                <default>false</default>
+                <label>(Z2) Repair customer Mat</label>
+            </value>
+            <value>
+                <fullName>(Z5) Repair</fullName>
+                <default>false</default>
+                <label>(Z5) Repair</label>
+            </value>
+            <value>
+                <fullName>(Z6) Replacement</fullName>
+                <default>false</default>
+                <label>(Z6) Replacement</label>
+            </value>
+            <value>
+                <fullName>(Z7) AS IS</fullName>
+                <default>false</default>
+                <label>(Z7) AS IS</label>
+            </value>
+            <value>
+                <fullName>(Z8) Consumption MRP</fullName>
+                <default>false</default>
+                <label>(Z8) Consumption MRP</label>
+            </value>
+            <value>
+                <fullName>(Z9) migration backlog</fullName>
+                <default>false</default>
+                <label>(Z9) migration backlog</label>
+            </value>
+            <value>
+                <fullName>(ZA) No mat.planning</fullName>
+                <default>false</default>
+                <label>(ZA) No mat.planning</label>
+            </value>
+            <value>
+                <fullName>(ZA) No mrp+schedule Mn</fullName>
+                <default>false</default>
+                <label>(ZA) No mrp+schedule Mn</label>
+            </value>
+            <value>
+                <fullName>(ZB) EB Intra-Divisionv</fullName>
+                <default>false</default>
+                <label>(ZB) EB Intra-Divisionv</label>
+            </value>
+            <value>
+                <fullName>(ZB) Indiv.Purchase Order</fullName>
+                <default>false</default>
+                <label>(ZB) Indiv.Purchase Order</label>
+            </value>
+            <value>
+                <fullName>(ZC) MRP w/o availability</fullName>
+                <default>false</default>
+                <label>(ZC) MRP w/o availability</label>
+            </value>
+            <value>
+                <fullName>(ZC) No inventory mgmt</fullName>
+                <default>false</default>
+                <label>(ZC) No inventory mgmt</label>
+            </value>
+            <value>
+                <fullName>(ZD)</fullName>
+                <default>false</default>
+                <label>(ZD)</label>
+            </value>
+            <value>
+                <fullName>(ZD) 3rd party returns</fullName>
+                <default>false</default>
+                <label>(ZD) 3rd party returns</label>
+            </value>
+            <value>
+                <fullName>(ZE)</fullName>
+                <default>false</default>
+                <label>(ZE)</label>
+            </value>
+            <value>
+                <fullName>(ZE) MRP w/o ato - no DN</fullName>
+                <default>false</default>
+                <label>(ZE) MRP w/o ato - no DN</label>
+            </value>
+            <value>
+                <fullName>(ZF) PassThru Returns</fullName>
+                <default>false</default>
+                <label>(ZF) PassThru Returns</label>
+            </value>
+            <value>
+                <fullName>(ZG) MRP w/o ATP :RM COGS</fullName>
+                <default>false</default>
+                <label>(ZG) MRP w/o ATP :RM COGS</label>
+            </value>
+            <value>
+                <fullName>(ZN) No mat.planning</fullName>
+                <default>false</default>
+                <label>(ZN) No mat.planning</label>
+            </value>
+            <value>
+                <fullName>(ZN) Returns of samples</fullName>
+                <default>false</default>
+                <label>(ZN) Returns of samples</label>
+            </value>
+            <value>
+                <fullName>(ZP) copy of PD</fullName>
+                <default>false</default>
+                <label>(ZP) copy of PD</label>
+            </value>
+            <value>
+                <fullName>(ZP) EG&amp;G samples</fullName>
+                <default>false</default>
+                <label>(ZP) EG&amp;G samples</label>
+            </value>
+            <value>
+                <fullName>(ZQ) EB Intra-Divisio Qio</fullName>
+                <default>false</default>
+                <label>(ZQ) EB Intra-Divisio Qio</label>
+            </value>
+            <value>
+                <fullName>(ZR) RMA Returns</fullName>
+                <default>false</default>
+                <label>(ZR) RMA Returns</label>
+            </value>
+            <value>
+                <fullName>(ZS) MRP w/o ATP(901)</fullName>
+                <default>false</default>
+                <label>(ZS) MRP w/o ATP(901)</label>
+            </value>
+            <value>
+                <fullName>(ZT)</fullName>
+                <default>false</default>
+                <label>(ZT)</label>
+            </value>
+            <value>
+                <fullName>(ZX) No inventory mgmt</fullName>
+                <default>false</default>
+                <label>(ZX) No inventory mgmt</label>
+            </value>
+            <value>
+                <fullName>(ZZ)</fullName>
+                <default>false</default>
+                <label>(ZZ)</label>
+            </value>
+            <value>
+                <fullName>MRP, Scheduled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MRP, Scheduled (CP)</label>
+            </value>
+            <value>
+                <fullName>MRP, Scheduled (CP)</fullName>
+                <default>false</default>
+                <label>MRP, Scheduled (CP)</label>
+            </value>
+            <value>
+                <fullName>No MRP,Not Scheduled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No MRP,Not Scheduled (CN)</label>
+            </value>
+            <value>
+                <fullName>No MRP,Not Scheduled (CN)</fullName>
+                <default>false</default>
+                <label>No MRP,Not Scheduled (CN)</label>
+            </value>
+            <value>
+                <fullName>Returns</fullName>
+                <default>false</default>
+                <label>Returns</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(AE) MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(AN) ALE Standard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(AQ) MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(AT) Inquiry sched.line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(BN) No MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(BP) MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(BT) No inventory mgmt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(BV) Consumption MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(C0) ConsgtIssue/w/o AvCh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(C1) ConsgtIssue/w. AvCh.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(C2) Repost retPck/w/o AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(C3) Repost retPck/w. AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(CB) Indiv.Purchase Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(CD) Without delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(CN) No mat.planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(CP) MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(CS) Leg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(CT) No inv.mgmt/no GdsIs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(CV) Consumption MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(CX) No inventory mgmt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(D0) Consignment Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(DN) Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(E0) StoTranToCons.w/o AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(E1) StoTranToCons. w. AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(E2) StoTranRetPck.w/o AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(E3) StoTranRetPck. w. AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(E4) StoTranToCons. ExtAg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(E5) MRP external agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(EP) Cust. requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(F0) ConsPickup w/o AvCh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(F1) ConsPickup w. AvCh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(F2) RetPckPickup w/o AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(F3) RetPckPickup w. AvCh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(IA) Repair Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(IR) Return for Repairs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(K0) TF consgmt lending</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(K1) TR consgmt ret. del.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(L1) MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(L2) MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(LB) Dlv.to stock of mat.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(LN) No mat.planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(LP) Dlv. from project</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(LR) Return del.to vendor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(NC) Intercompany replen.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(NN) Replenishmnt w/o MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(NR) Replen. returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(NS) Backlog CrossC Ret</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(PN) ArtSel. w/o MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(PP) ArtSel with MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(RN) Returns w/o planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(S0)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(S1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(S2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(SP) SPE Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZA) No mat.planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZA) No mrp+schedule Mn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZB) EB Intra-Divisionv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZB) Indiv.Purchase Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZC) MRP w/o availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZC) No inventory mgmt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZD)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZD) 3rd party returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZE)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZE) MRP w/o ato - no DN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZF) PassThru Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZG) MRP w/o ATP :RM COGS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZN) No mat.planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZN) Returns of samples</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZP) copy of PD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZP) EG&amp;G samples</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZQ) EB Intra-Divisio Qio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZR) RMA Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(ZS) MRP w/o ATP(901)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZT)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZX) No inventory mgmt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(ZZ)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(BN) No mat.planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(Z1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(Z2) Repair customer Mat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(Z8) Consumption MRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>(Z9) migration backlog</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <valueName>MRP, Scheduled (CP)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <valueName>No MRP,Not Scheduled (CN)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <valueName>Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(AR) Advanced Returns</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(Z5) Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(Z6) Replacement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>(Z7) AS IS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

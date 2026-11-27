@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Account Group - Code	Account Group - Description --></help>
+    <label><!-- Account Group --></label>
+    <name>Account_Group__c</name>
+    <picklistValues>
+        <masterLabel>3rd Party Agent - ZAGT</masterLabel>
+        <translation><!-- 3rd Party Agent - ZAGT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill To - 0001</masterLabel>
+        <translation><!-- Bill To - 0001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill To - H004</masterLabel>
+        <translation><!-- Bill To - H004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill To - P004</masterLabel>
+        <translation><!-- Bill To - P004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill To - QAD</masterLabel>
+        <translation><!-- Bill To - QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bill To - W004</masterLabel>
+        <translation><!-- Bill To - W004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billing email address - ZBIL</masterLabel>
+        <translation><!-- Billing email address - ZBIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Country of Ultimate Dest - Z004</masterLabel>
+        <translation><!-- Country of Ultimate Dest - Z004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Service Responsible (ZM) - Z001</masterLabel>
+        <translation><!-- Customer Service Responsible (ZM) - Z001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer int number assgnmnt - DEBI</masterLabel>
+        <translation><!-- Customer int number assgnmnt - DEBI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer-Bill To</masterLabel>
+        <translation><!-- Customer-Bill To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer-Bill To Role</masterLabel>
+        <translation><!-- Customer-Bill To Role --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer-Payer</masterLabel>
+        <translation><!-- Customer-Payer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer-Ship To</masterLabel>
+        <translation><!-- Customer-Ship To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer-Ship To Role</masterLabel>
+        <translation><!-- Customer-Ship To Role --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer-Sold To Role</masterLabel>
+        <translation><!-- Customer-Sold To Role --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End Customers - ZEND</masterLabel>
+        <translation><!-- End Customers - ZEND --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hierarchy Node - 0012</masterLabel>
+        <translation><!-- Hierarchy Node - 0012 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intra-Div &amp; Inter-Co For Trade - Z004</masterLabel>
+        <translation><!-- Intra-Div &amp; Inter-Co For Trade - Z004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intra-Div &amp; Inter-Co. - ZINT</masterLabel>
+        <translation><!-- Intra-Div &amp; Inter-Co. - ZINT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>One-time cust.(int.no.assgnmt) - CPD</masterLabel>
+        <translation><!-- One-time cust.(int.no.assgnmt) - CPD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payer/Bill-to Entry - 0003</masterLabel>
+        <translation><!-- Payer/Bill-to Entry - 0003 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospect Customer</masterLabel>
+        <translation><!-- Prospect Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospective customer - H005</masterLabel>
+        <translation><!-- Prospective customer - H005 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospective customer - W005</masterLabel>
+        <translation><!-- Prospective customer - W005 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QioDebitoren Europäische Union - DEEU</masterLabel>
+        <translation><!-- QioDebitoren Europäische Union - DEEU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qioptiq Rechnungsempfänger - 0004</masterLabel>
+        <translation><!-- Qioptiq Rechnungsempfänger - 0004 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qioptiq Warenempfänger -0002</masterLabel>
+        <translation><!-- Qioptiq Warenempfänger -0002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Person Responsible (ZT) - Z001</masterLabel>
+        <translation><!-- Sales Person Responsible (ZT) - Z001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Person Responsible (ZT) - Z002</masterLabel>
+        <translation><!-- Sales Person Responsible (ZT) - Z002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship To - 0002</masterLabel>
+        <translation><!-- Ship To - 0002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship To - H002</masterLabel>
+        <translation><!-- Ship To - H002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship To - P002</masterLabel>
+        <translation><!-- Ship To - P002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship To - QAD</masterLabel>
+        <translation><!-- Ship To - QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship To - W002</masterLabel>
+        <translation><!-- Ship To - W002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship-to party - 0002</masterLabel>
+        <translation><!-- Ship-to party - 0002 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold To - P001</masterLabel>
+        <translation><!-- Sold To - P001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold To/Ship To - 0001</masterLabel>
+        <translation><!-- Sold To/Ship To - 0001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold to - H001</masterLabel>
+        <translation><!-- Sold to - H001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold to - W001</masterLabel>
+        <translation><!-- Sold to - W001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold-to for upload(DO NOT USE) - Z001</masterLabel>
+        <translation><!-- Sold-to for upload(DO NOT USE) - Z001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold-to party (OPSL) - 0001</masterLabel>
+        <translation><!-- Sold-to party (OPSL) - 0001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sold-to party - ZCUS</masterLabel>
+        <translation><!-- Sold-to party - ZCUS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third-Party - Cus. For Trade - Z003</masterLabel>
+        <translation><!-- Third-Party - Cus. For Trade - Z003 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

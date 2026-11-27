@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Hamble_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>CS - Hamble</label>
+    <queue>CS_Hamble</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

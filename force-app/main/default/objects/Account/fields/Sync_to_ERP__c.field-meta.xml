@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_to_ERP__c</fullName>
+    <formula>AND(
+  $User.Profile_Name__c = &quot;System Administrator&quot;,
+OR(
+NOT(ISBLANK( Client_Side_ID__c )),
+AND(
+ISBLANK( Client_Side_ID__c ),
+OR(
+ ISPICKVAL( Account_Group__c , &quot;Country of Ultimate Dest - Z004&quot;),
+ ISPICKVAL( Account_Group__c , &quot;End Customers - ZEND&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Prospective customer - H005&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Prospective customer - W005&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Qioptiq Rechnungsempfänger - 0004&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Qioptiq Warenempfänger -0002&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Ship To - 0002&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Ship To - H002&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Ship To - W002&quot;),
+ ISPICKVAL( Account_Group__c , &quot;ZT and ZM Partners - Z001&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sync to ERP</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

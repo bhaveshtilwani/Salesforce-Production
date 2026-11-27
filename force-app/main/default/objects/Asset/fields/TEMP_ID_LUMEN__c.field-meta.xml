@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TEMP_ID_LUMEN__c</fullName>
+    <description>Temporary field to assist with data load lumen assets</description>
+    <externalId>true</externalId>
+    <label>TEMP ID LUMEN</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

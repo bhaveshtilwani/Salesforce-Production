@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Description of Repairs --></label>
+    <name>Description_of_Repairs__c</name>
+    <picklistValues>
+        <masterLabel>Calibration</masterLabel>
+        <translation><!-- Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evaluation</masterLabel>
+        <translation><!-- Evaluation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Inquiry</masterLabel>
+        <translation><!-- General Inquiry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NA Not applicable</masterLabel>
+        <translation><!-- NA Not applicable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Charge Evaluation</masterLabel>
+        <translation><!-- No Charge Evaluation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Charge Upgrade</masterLabel>
+        <translation><!-- No Charge Upgrade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parts Replaced</masterLabel>
+        <translation><!-- Parts Replaced --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Reconditioned</masterLabel>
+        <translation><!-- Product Reconditioned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade</masterLabel>
+        <translation><!-- Upgrade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

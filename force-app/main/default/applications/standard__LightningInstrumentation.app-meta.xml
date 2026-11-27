@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>LightningInstrumentation</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_Page_Default</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>S2-Regional Sales VP</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Customer_Service_Home_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Mark_1_User_home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Mark-User New</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Marketing_Home_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>M1-Marketing</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Customer_Service_Home_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>C3-Customer Service</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_Page_Default</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>S3-Regional Sales Director</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_Page_Default</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>S1-SVP Commercial Sales</profile>
+    </profileActionOverrides>
+    <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>Account_BBB__c</tabs>
+    <tabs>sbaa__ApprovalCondition__c</tabs>
+    <tabs>SBQQ__QuoteLine__c</tabs>
+    <tabs>sbaa__Approval__c</tabs>
+    <tabs>Customer_Group__c</tabs>
+    <tabs>Mode_of_delivery__c</tabs>
+    <tabs>Dunning_Clerk__c</tabs>
+    <tabs>Shipping_Company__c</tabs>
+    <tabs>Export_Classification__c</tabs>
+    <tabs>Item_Condition_Type__c</tabs>
+    <tabs>WBS_Element__c</tabs>
+    <tabs>Special_Instruction__c</tabs>
+    <tabs>Trip_Report__c</tabs>
+    <tabs>Invoice__c</tabs>
+    <tabs>Log_Customer_Requests__c</tabs>
+    <tabs>Revenue_Recognition_Mapping__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

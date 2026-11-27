@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_to_Contacted_Delay__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT( FLOOR(Contacted_DateTime__c - CreatedDate)
+)  &amp; &quot; Days &quot; &amp;
+TEXT(
+ROUND(MOD((Contacted_DateTime__c - CreatedDate)*24,24),0)
+         )  &amp;&quot; Hours &quot; &amp;
+TEXT(
+ROUND(MOD((Contacted_DateTime__c - CreatedDate)*1440,60),0)
+) &amp;&quot; Minutes &quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Open to Contacted (Days)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

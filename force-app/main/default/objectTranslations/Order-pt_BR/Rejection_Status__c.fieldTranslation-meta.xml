@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rejection Status --></label>
+    <name>Rejection_Status__c</name>
+    <picklistValues>
+        <masterLabel>Completely processed</masterLabel>
+        <translation><!-- Completely processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Everything Rejected</masterLabel>
+        <translation><!-- Everything Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not yet processed</masterLabel>
+        <translation><!-- Not yet processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nothing Rejected</masterLabel>
+        <translation><!-- Nothing Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Rejected</masterLabel>
+        <translation><!-- Partially Rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially processed</masterLabel>
+        <translation><!-- Partially processed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

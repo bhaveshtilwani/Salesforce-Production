@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Opportunity Status --></label>
+    <name>Sub_Opportunity_Status__c</name>
+    <picklistValues>
+        <masterLabel>Being quoted</masterLabel>
+        <translation><!-- Being quoted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially approved</masterLabel>
+        <translation><!-- Partially approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quoted - pending feedback</masterLabel>
+        <translation><!-- Quoted - pending feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipped - approved</masterLabel>
+        <translation><!-- Shipped - approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipped - pending feedback</masterLabel>
+        <translation><!-- Shipped - pending feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipped - rejected</masterLabel>
+        <translation><!-- Shipped - rejected --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ops_Hold_Reason__c</fullName>
+    <label>Ops Hold Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blanket order exclude from Ops Hod</fullName>
+                <default>false</default>
+                <label>Blanket order exclude from Ops Hod</label>
+            </value>
+            <value>
+                <fullName>Can not partial ship</fullName>
+                <default>false</default>
+                <label>Can not partial ship</label>
+            </value>
+            <value>
+                <fullName>Capacity: Machine</fullName>
+                <default>false</default>
+                <label>Capacity: Machine</label>
+            </value>
+            <value>
+                <fullName>Capacity: Labor</fullName>
+                <default>false</default>
+                <label>Capacity: Labor</label>
+            </value>
+            <value>
+                <fullName>Commercial Hold Other</fullName>
+                <default>false</default>
+                <label>Commercial Hold Other</label>
+            </value>
+            <value>
+                <fullName>CRD&lt;Lead Time</fullName>
+                <default>false</default>
+                <label>CRD&lt;Lead Time</label>
+            </value>
+            <value>
+                <fullName>Customer Furnished Material</fullName>
+                <default>false</default>
+                <label>Customer Furnished Material</label>
+            </value>
+            <value>
+                <fullName>Licensing/ Regulatory</fullName>
+                <default>false</default>
+                <label>Licensing/ Regulatory</label>
+            </value>
+            <value>
+                <fullName>Machine Down</fullName>
+                <default>false</default>
+                <label>Machine Down</label>
+            </value>
+            <value>
+                <fullName>Material Shortage</fullName>
+                <default>false</default>
+                <label>Material Shortage</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Unconfirmed Order</fullName>
+                <default>false</default>
+                <label>Unconfirmed Order</label>
+            </value>
+            <value>
+                <fullName>Yield Variation</fullName>
+                <default>false</default>
+                <label>Yield Variation</label>
+            </value>
+            <value>
+                <fullName>Covid-19</fullName>
+                <default>false</default>
+                <label>Covid-19</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

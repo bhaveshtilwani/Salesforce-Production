@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Case Reason --></label>
+    <name>Case_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Cancellation</masterLabel>
+        <translation><!-- Cancellation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carrier damaged package</masterLabel>
+        <translation><!-- Carrier damaged package --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carrier delivered to wrong consignee</masterLabel>
+        <translation><!-- Carrier delivered to wrong consignee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carrier guidelines not followed</masterLabel>
+        <translation><!-- Carrier guidelines not followed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catalogue/Brochure information incorrect/unclear</masterLabel>
+        <translation><!-- Catalogue/Brochure information incorrect/unclear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collections</masterLabel>
+        <translation><!-- Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Complaint</masterLabel>
+        <translation><!-- Complaint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance Documents</masterLabel>
+        <translation><!-- Compliance Documents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliment</masterLabel>
+        <translation><!-- Compliment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conflict Minerals document copies</masterLabel>
+        <translation><!-- Conflict Minerals document copies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Portal Request</masterLabel>
+        <translation><!-- Customer Portal Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Request</masterLabel>
+        <translation><!-- Customer Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer can&apos;t order via web / has technical issues</masterLabel>
+        <translation><!-- Customer can&apos;t order via web / has technical issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer doesn&apos;t easily find the information on company website</masterLabel>
+        <translation><!-- Customer doesn&apos;t easily find the information on company website --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Datasheet request</masterLabel>
+        <translation><!-- Datasheet request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Early delivery compared to CRD</masterLabel>
+        <translation><!-- Early delivery compared to CRD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Existing Return status request</masterLabel>
+        <translation><!-- Existing Return status request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Feedback</masterLabel>
+        <translation><!-- Feedback --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Follow up existing order status</masterLabel>
+        <translation><!-- Follow up existing order status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITC / Trade Compliance related</masterLabel>
+        <translation><!-- ITC / Trade Compliance related --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect batch size</masterLabel>
+        <translation><!-- Incorrect batch size --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect carrier or forwarder used</masterLabel>
+        <translation><!-- Incorrect carrier or forwarder used --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect shipping papers</masterLabel>
+        <translation><!-- Incorrect shipping papers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Request</masterLabel>
+        <translation><!-- Internal Request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Request - Various</masterLabel>
+        <translation><!-- Internal Request - Various --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lack of product knowledge</masterLabel>
+        <translation><!-- Lack of product knowledge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Time</masterLabel>
+        <translation><!-- Lead Time --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Long leadtime</masterLabel>
+        <translation><!-- Long leadtime --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOQ too high</masterLabel>
+        <translation><!-- MOQ too high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing CoO/CoC</masterLabel>
+        <translation><!-- Missing CoO/CoC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing custom invoice</masterLabel>
+        <translation><!-- Missing custom invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missing delivery papers</masterLabel>
+        <translation><!-- Missing delivery papers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Branch</masterLabel>
+        <translation><!-- New Branch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Business</masterLabel>
+        <translation><!-- New Business --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Contract</masterLabel>
+        <translation><!-- New Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Return request</masterLabel>
+        <translation><!-- New Return request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New order submission</masterLabel>
+        <translation><!-- New order submission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New quote request</masterLabel>
+        <translation><!-- New quote request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No pre-alert on delivery advance or delay against CSD</masterLabel>
+        <translation><!-- No pre-alert on delivery advance or delay against CSD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No reply on WEB request</masterLabel>
+        <translation><!-- No reply on WEB request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No response to query</masterLabel>
+        <translation><!-- No response to query --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Order Confirmation</masterLabel>
+        <translation><!-- Order Confirmation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packing policy from customer not compliant</masterLabel>
+        <translation><!-- Packing policy from customer not compliant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Price too high</masterLabel>
+        <translation><!-- Price too high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem</masterLabel>
+        <translation><!-- Problem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product EOL</masterLabel>
+        <translation><!-- Product EOL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pull-In</masterLabel>
+        <translation><!-- Pull-In --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Push-Out</masterLabel>
+        <translation><!-- Push-Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Question</masterLabel>
+        <translation><!-- Question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote status request</masterLabel>
+        <translation><!-- Quote status request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote still valid/ extensions</masterLabel>
+        <translation><!-- Quote still valid/ extensions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Response time too long</masterLabel>
+        <translation><!-- Response time too long --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RoHs Certificate request</masterLabel>
+        <translation><!-- RoHs Certificate request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety stock not met</masterLabel>
+        <translation><!-- Safety stock not met --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sample request</masterLabel>
+        <translation><!-- Sample request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipment delivered to wrong destination</masterLabel>
+        <translation><!-- Shipment delivered to wrong destination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping documents copy request</masterLabel>
+        <translation><!-- Shipping documents copy request --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping instruction not followed</masterLabel>
+        <translation><!-- Shipping instruction not followed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stock check</masterLabel>
+        <translation><!-- Stock check --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Support</masterLabel>
+        <translation><!-- Technical Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unfavorable Incoterm</masterLabel>
+        <translation><!-- Unfavorable Incoterm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Website not detailed regarding specifications</masterLabel>
+        <translation><!-- Website not detailed regarding specifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong freight charge</masterLabel>
+        <translation><!-- Wrong freight charge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong product received</masterLabel>
+        <translation><!-- Wrong product received --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong quantity received/ short shipment</masterLabel>
+        <translation><!-- Wrong quantity received/ short shipment --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

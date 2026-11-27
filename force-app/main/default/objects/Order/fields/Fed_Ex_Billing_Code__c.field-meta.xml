@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fed_Ex_Billing_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    CONTAINS(Lower(TEXT(Shipping_Vendor__c)),&quot;3rd&quot;),&quot;3`  `&quot; +  Ship_Via__c + 
+    if(AND(Total_Lines_Shipped_SUM__c &lt; 1, Freight_Amount__c &gt; 0),&quot;` FC: $&quot; + TEXT(Freight_Amount__c),&quot;&quot;),
+ if(
+    CONTAINS(Lower(TEXT(Shipping_Vendor__c)),&quot;col&quot;),&quot; 2`  `&quot; +  Ship_Via__c + 
+    if(AND(Total_Lines_Shipped_SUM__c &lt; 1, Freight_Amount__c &gt; 0),&quot;` FC: $&quot; + TEXT(Freight_Amount__c),&quot;&quot;),
+    &quot;1`  `&quot; + if(AND(Total_Lines_Shipped_SUM__c &lt; 1, Freight_Amount__c &gt; 0),&quot;` FC: $&quot; + TEXT(Freight_Amount__c),&quot;&quot;)
+ )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fed_Ex_Billing_Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

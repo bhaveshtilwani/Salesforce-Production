@@ -1,0 +1,3646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Request_Med_Related_Asset</fullName>
+    <active>true</active>
+    <description>Select for Medical Devices or Medical Components</description>
+    <label>Service Request Med Related Asset</label>
+    <picklistValues>
+        <picklist>Accountability__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LDGI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Damage_Code_Groups__c</picklist>
+        <values>
+            <fullName>IP_EIR_Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP_EIR_Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP_EIR_Coating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP_EIR_Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP_EIR_Filament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP_EIR_Function</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP_EIR_Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP_EIR_unascertainable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_D-lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_Fiberlight module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_Hollow cathode lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_Mercury_lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_Nox %2F Nox module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_PID_lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_Power supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_Tungsten_Halogen_lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_Xenon flash module</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OF_A_Xenon_flash_lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVD_ED_Coating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVD_ED_Electrode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_ED_Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_ED_Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_ED_Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_ED_Function</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_ED_Packaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_ED_unascertainable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_LED_System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_MW_Conveyor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_MW_F300S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_MW_F450T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_MW_F500S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_MW_F600S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_MW_LH10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_MW_LH6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UVP_MW_VPS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Description_of_Repairs__c</picklist>
+        <values>
+            <fullName>Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Charge Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Charge Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Replaced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Reconditioned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Disposition__c</picklist>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair on Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Returns- do not use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rework</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use As Is</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Failure_Mode__c</picklist>
+        <values>
+            <fullName>Customer Service Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drift - Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E1 Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FTI %28Failure to Ignite%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Functional Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISI4000 Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LG Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Light Source - Extinguish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Light Source - Low Output</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Light Source - Non Passive Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material %2F Part Incorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Fault Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled %26 Preventative Maintenance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Verification__c</picklist>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR01 - Gaurang Dashi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR03 - David Vuong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR04 - Faris Gorges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR06 - Raymund Castro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR10 - Sunny Gu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR13 - Gowsala Ponnudurai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR14 - Winston Qu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR15 - Helen Guo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR16 - Thanh Nguyen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR23 - Rajwinder Kaur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR24 - Winnie Song</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inspection_Code_Prefix__c</picklist>
+        <values>
+            <fullName>ASSY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DAMAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DURA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FUNC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HANDLING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARKING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MECH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTRL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NFF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RETURN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RLG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPECTRAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inspection_Code__c</picklist>
+        <values>
+            <fullName>AS01 - ASSY-Defective Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS02 - ASSY-Misaligned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS03 - ASSY-Missing Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS04 - ASSY-No Optical Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS06 - ASSY-Wrong Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS10 - ASSY-ER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS11 - ASSY-CONTACT FAIL - DIG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS12 - ASSY-CONTACT FAIL - DECONTACT DAMAGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS13 - ASSY-CONTACT FAIL - ER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS14 - ASSY-CONTACT FAIL - FOD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS15 - ASSY-CONTACT FAIL - SCRATCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS16 - ASSY-CONTACT FAIL - SURFACE FIGURE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS17 - ASSY-Incomplete Bonding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS18 - ASSY-Corrosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS19 - ASSY-Plating or Passivation Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO01 - COAT-Chamber Malfunction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DA01 - RMA-ONLY-DAMAGE-Customer-induced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DA02 - RMA-ONLY-DAMAGE-Shipping %28From Customer%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DA03 - RMA-ONLY-DAMAGE-Shipping %28Internal%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC04 - DOCS-Process Sheet error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC05 - RMA-ONLY-DOCS-Shipper Errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC06 - DOCS-Part Quantity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC07 - DOCS-DCP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC08 - DOCS-Missed PS Signoff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM01 - DIM-Angle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM02 - DIM-Bevel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM03 - DIM-Diameter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM05 - DIM-Part Size %28Thickness%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM06 - DIM-Undefined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM07 - DIM-Wedge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DU01 - DURA-Abrasion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DU02 - DURA-Adhesion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DU04 - DURA-Humidity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DU05 - DURA-LDT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DU06 - DURA-Salt Fog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DU07 - DURA-Part Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DU08 - DURA-Witness Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FT01 - FUNC-Electrical Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FT02 - FUNC-Test Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HA01 - HANDLING-Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME02 - MECH-Burrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME04 - MECH-Paint Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME06 - MECH-Thread</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MK01 - MARKING-Arrow Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MK02 - MARKING-Arrowed Wrong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MK05 - MARKING-Mark Location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MK06 - MARKING-Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MK07 - MARKING-Serialization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ML01 - MTRL-Bubbles%2FInclusions%2FStriae</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT01 - MET-Beam Deviation %26 Wedge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT02 - MET-Irregularity Reflected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT03 - MET-Irregularity Transmitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT04 - MET-Power Reflected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT05 - MET-Power Transmitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT06 - MET-PV Reflected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT07 - MET-PV Transmitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT08 - MET-Roughness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT09 - MET - ROC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT10 - MET - Absorption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT11 - MET-Transmission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT12 - MET - Reflection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT13 - MET-Scatter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT14 - MET - Optical Path Length</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT15 - MET - Extinction Ratio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NFF  - NFF-No Fault Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA02 - PACK-Label Wrong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA04 - Pack-Batch Size</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RE02 - RMA-ONLY-RETURN-For Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RE03 - RMA-ONLY-RETURN-For Rework</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RL01 - RLG - CNC OD Chips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RL02 - RLG - CNC OD Fractures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RL03 - RLG - CNC Interior Chips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RL04 - RLG - CNC Interior Fractures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RL05 - RLG - Etch Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP03 - SPECTRAL-Double-coated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP06 - SPECTRAL - Coated Wrong Side</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP07 - SPECTRAL-Non-conforming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ01 - SQ -Particulate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ02 - SQ-Chips%2FFractures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ03 - SQ-Coating Bubbles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ04 - SQ-Delaminating%2F Peeling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ05 - SQ-Dig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ07 - SQ-Incomplete Polish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ09 - SQ-Non-Uniform Coating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ13 - SQ-Scratch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ15 - SQ-Sleek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ17 - SQ-Stain%2FDiscolor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQ20 - SQ-FOD%28Trapped Fiber%2FDebris%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mark_As_Received__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Type__c</picklist>
+        <values>
+            <fullName>Billable No Charge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billable Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Problem_Code__c</picklist>
+        <values>
+            <fullName>Admin Customer Order Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Engineering Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Finance Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Marketing Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Operation Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Order Entry Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Product Man Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Quality error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin SR Team Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Sales Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Shipping Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Shipping Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Shipping Error Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Singapore%2E Order Entry Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Tech Support Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibration and Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Feedback about Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demo Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluate - Does Not Meet Specifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead sent to Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loaned Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manuals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opened in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Box Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positive Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return for Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return of Consignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return of Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return of Loaner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR Related Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scorecard Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scorecard Passed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Center Repai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Centre Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Centre Calibration and Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Centre Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade In - Trade Up%2F TS Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade In Previous Unit needed repair%2F TS Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade in - Trade Up Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit Does Not Power Up - Not Functional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Proximal_Cause__c</picklist>
+        <values>
+            <fullName>Assembly Error %28LDGI Assy Error%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Part %28Part not Manufactured by LDGI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Incorrect %2F Lack of Clarity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Influence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Known Issue - Upgrade Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing Error %28Part Manufactured by LDGI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal End of Life %28NEOL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable %28no Failure%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operator Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Quality_Review_Findings__c</picklist>
+        <values>
+            <fullName>Agree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disagree</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Queue__c</picklist>
+        <values>
+            <fullName>Awaiting Return %28Inventory%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awaiting Return %28Non-Inventory%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluated and Quoted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repaired Under Risk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RA_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed%3A Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opened in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting for Return</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RMA_Case_Resolution__c</picklist>
+        <values>
+            <fullName>Alternative solution found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond repair - Customer to scrap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond repair - Receive product to scrap%2Frecycle and invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond repair - Replace under warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond repair - scrap%2Frecycle and invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond repair - scrap%2Frecycle without invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beyond repair - send back and invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibrate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibrate SR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibrate Transfer Standard NCB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibrate and Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignment Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct product delivered - Receive and credit on receipt of replacement order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct product delivered - Receive and credit possible if replacement order sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct product delivered - Reject</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Correct quantity delivered - Reject</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer can scrap themselves - Reject</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No fault found - send back and invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not yet time to re-calibrate - Reject</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product delivered on time - Reject</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receive and credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receive and credit%3B re-activate original order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receive and replace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receive product to scrap %2F recycle and invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receive without credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair NCB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair SR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair and invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair under 90 day warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair under extended warranty %28Disti only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair under warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return for inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undamaged product delivered - Reject</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade not possible - Reject</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working product delivered - Reject</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_For_Return__c</picklist>
+        <values>
+            <fullName>Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return of Demo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return of Loaner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Recycle%2FScrap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Receiver__c</picklist>
+        <values>
+            <fullName>Abby Russell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ana Bailey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chris Burley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drew Kruspe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jeevanjot Singh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jennifer Melo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kavita Aswani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kebere Mengesha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Michelle Gal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nathalie Laliberte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitamber Sawal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robert Shumilak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sandra Dixon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Centre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sumiksh Trehan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ton La</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vincent Analikwu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wayne Jenkins</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SAP_Damage_Code_Texts__c</picklist>
+        <values>
+            <fullName>A0 AC Line Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A1 AC Line Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A2 PC Short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A3 No Ignition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A4 Lamp Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A5 Lamp Air Pressure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A6 Cable Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AD PS Overtemp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air intake %2F leaky lamp body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anode defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anode out of centerline or loose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anode voltage or UV-Intensity out of spec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appearance %E2%80%93 cosmetic deviation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arcing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B0 No Reset %28N%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B1 No Reset %28W%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B2 No Reset %28T%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B3 EXT Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B4 SYS Air Pressure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B5 RF Detector Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B6 RF Detector Shorted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B7 RF Detected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B8 SW4 Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B9 SYS Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOM%2FPackaging Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt Slips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belt Tracking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blower Pressure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Box assembling nok or wrong aperture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Bulb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C0 Fil A Stuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C1 Fil A Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C2 Fil A Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C3 Fil A Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C4 Fil B Stuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C5 Fil B Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C6 Fil B Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C7 Fil B Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable Disconnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cathode defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cathode defective %2F Exhausted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connection cable defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connection cable other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connection coupling defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connector Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connector plug%2Fsocket faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control cabinet Cable connections def%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control cabinet Filter mats clogged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control cabinet Motor prot%2E switch def%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control cabinet fuse defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooling system other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooling%2C air filter dirty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cure Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cure Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D1 T102 On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D2 T103 On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D2 lamp defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D3 T104 On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D4 T105 On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D5 T106 On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data cable defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data cable other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data cable plug%2Fsocket defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Device Net Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispatch Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display Locked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do T101 On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drift %2F Noise %2F unstable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E0 Initializing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E0 T101 Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E1 Mag A Current High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E1 OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E1 T102 Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E10 Air Pressure Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E10 Motor Temp Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E11 No Ignition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E11 RF Sensor Short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E12 Filament Input Voltage High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E12 Lamp Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E13 Filament Input Voltage Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E13 No RF Detector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E14 Filament A Current Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E14 RF Detector A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E15 Filament B Current Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E15 RF Detector B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E16 No Line Sync</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E16 RMS Filament Voltage Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E17 External Interlock A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E17 RMS Filament Voltage High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E18 External Interlock B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E18 Filament A Current High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E19 Filament B Current High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E19 Process Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E2 Mag B Current High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E2 Mag Not Set Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E2 T103 Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E20 Mag Voltage High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E20 PBA Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E21 Mag Voltage Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E21 XBA Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E22 No Confirmation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E22 RF Sensor Short%2Fopen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E23 Balancer Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E23 I60xM Test Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E24 No Bulb Ignition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E24 P-Cell Shorted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E25 Not used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E25 Photocell Short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E26 Excessive Moding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E26 Photocell Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E27 E-Stop Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E27 V Mag Detected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E28 IGBT DS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E28 V Mag Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E29 IGBT Over Current</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E29 Open HV Circuit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E3 Cable Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E3 Not Used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E3 T104 Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E30 Air Temp Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E30 Low Control Voltage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E31 Can%27t Stay %40 Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E31 Communication Timeout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E32 A%2FD Conversion Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E32 K100 Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E33 Air Temp High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E33 Cable Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E34 Factory Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E34 RAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E35 Comm%2E Bus Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E35 IGBT Temp Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E36 Invalid Row%2FCol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E36 Net Work Power Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E37 ROM Obsolete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E38 ROM Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E39 ROM Mismatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E4 Air Pressure interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E4 Not Used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E4 T105 Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E40 Duplicate I%2FO ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E41 I25x Test Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E42 E Stop Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E43 Xformer Overheat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E44 Cockroach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E45 RF Det A Short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E46 RF Det B Short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E47 Line Freq%2E Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E48 EEPROM Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E49 Mag Cal Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E5 IGBT Over Temp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E5 Not Used</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E5 T106 Lo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E50 Lamp Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E51 No Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E52 Slave Not Ready</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E53 Turned On Late</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E54 Slave Off-Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E55 Not With Row</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E56 No Master</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E57 Mode Manager %231</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E58 Mode Manager %232</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E59 Mode Manager %233</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E6 Power Supply Over Temp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E6 T101 Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E6 V Control Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E60 Mode Manager %234</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E61 Mode Manager %235</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E62 PWR Imbalance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E7 Power Supply Low Temp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E7 T102 Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E7 V Control High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E8 EEPROM Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E8 I Fil Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E8 T103 Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E9 I Fil High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E9 Internal Fan Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E9 T104 Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EA T105 Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EB T106 Hi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EC Mag A Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ED Mag B Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrode Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrode Obstructed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emission window damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emission window destroyed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emission window dirty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emission window other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error cused by environment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Blower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Contamination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Dimensions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F0 Invalid ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F1 DUP PS ID %23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F2 No Master P%2ES%2E*</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F3 No Master P%2ES%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F4 Missing Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F5 Invalid Status</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FC SYS Error 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FD SYS Error 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FE SYS Error 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FF Bus Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filament Distortion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filament Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Float defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Leak - Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Leak - Frit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Leak - General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Leak - Seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Leak - Tip Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas diminiched %2F Sputtered material %2F Diffuse discharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing Wiring faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing board faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing connection Lamp damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing dirty inside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing leaky cooling inside</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing mechanically damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR SW%3A slice broken %2F missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR SW%3A slice gap nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR SW%3A slice scrolling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR heating filament%3A cracked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR heating filament%3A oxidized</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR heating filament%3A rating nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR heating filament%3A resistance nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR heating filament%3A sagged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR heating filament%3A short-circuit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR heating filament%3A stretched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR heating filament%3A total length nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A Carbon ribbon%3A Hot spots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A Carbon ribbon%3A ripply %2F twisty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A Carbon ribbon%3A sparks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A Carbon ribbon%3A torn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A Carbon ribbon%3A vibrating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A weld between stick and back-up filament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A weld between stick and buffer spring nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A weld between stick and heating filament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A weld joint nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR%3A weld molybdenum nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect gas fill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incorrect settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intensity too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Contamination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inverter Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lamp Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead wire %2F connector %2F pin assignment - NOK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaky connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaky lamp body %2F Crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaky pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaky return cooling line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaky supply cooling line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low sensor faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnetron Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misaligned Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misalignment - Filament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misalignment - Glass Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misalignment - Internal Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misalignment - Lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Connection faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module Hotspot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module burnt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module low flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module overheated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module partly without function</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Module without function</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Belt Movement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Exhaust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Problem Found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Speed Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No fault found</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No function</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No ignition or extinguishes during operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise %2F Drift %2F unstable baseline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not suitable for the process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other faults cooling line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Specifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCB defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCB defect out of specs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU Emergency stop defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU End resistance faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU Spring terminals defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU channel defectice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU display defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU filter mat clogged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU lamp ID faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU power supply defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU Case damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU Control voltage faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU Data plug defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU Ethernet-CAN error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU board defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU fan defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU incorrect software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU loose contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU short circuit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU software errors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSU%2FMCU soiled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packing incorrect %2F damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packing incorrect%2Fdamaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor braid connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Imbalance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Supply Temp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power%2C faulty adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power%2C other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power%2C too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pressure shock absorber defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Running noises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump other faults</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RF Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RF Interlock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Control fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Optics Covering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Optics other fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary optics destroyed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary optics torn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short-circuit connection %28splice%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shutter defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch cabinet loose contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch cabinet mechanical damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch cabinet phase error %28conn%2E side%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch cabinet wiring fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System Blower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timer NOK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV Intensity out of spec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV intensity too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV intensity too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unauthorized opening of housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vis lamp defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visible crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wiring %2F connector %2F pin assignment - NOK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong or improper alignment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>amalgam%2C gold spot nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assembly error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>assembly nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>base nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>base not fixed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>base tilted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>batch size nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>burling stress crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>cement nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>coating dimension fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>coating nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>coating scratched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>connection incorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>connector incorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>contact charred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>contaminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>contamination in spectrum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>control cabinet defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>current too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>current too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>defective contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>devitrification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>diffuse burning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>doping nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>drift out of max tolerance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>electrode blackened</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>electrode missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>electrode pasting nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>extinguihes during operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>false material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>faulty wiring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>flexible stranded wire color nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>flexible stranded wire diameter nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>flexible stranded wire invert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>flexible stranded wire length nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>foil lift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>foreign particle in lamp tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>geometrical dimensions out of tolerance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>glow discharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>housing loose components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>identification marking nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ignition aid wire nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ignition delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ignition voltage too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>insulation  damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>label incorrect %2F missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>label missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>lamp broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>lamp exploded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>lamp leaky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>leaky  lamp body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>liftime to short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>marking incorrect %2F missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>material defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>material incorrect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>no ignition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>out of tolerance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>packaging damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>packaging wrong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pinch broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pinch cavity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pinch contaminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pinch cracked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pinch out of centerline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pinch partly broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pinch stress crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>power rating too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>power rating too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>pump stem stress crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>sealing foil blown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>sealing foil cracked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>sealing foil crinkly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>sealing foil oxidised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>shockwatch activ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>surface defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>total length nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>transport damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube bended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube black %28laminary%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube black %28spot%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube bloated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube brown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube contaminated %28inside%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube contaminated %28outside%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube dent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube dimension nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube splintered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube stress crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube surface nok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube white</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>tube white %28spot%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>unascertainable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>users instruction missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>users instruction wrong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>voilent arc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>voltage too high</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>voltage too low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>wire dismantled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>without operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>wrong - coding%2C - wiring%2C - base welding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>wrong material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>wrong packaging %2Fwrong label</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Opened in Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold - Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Tech Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Technician_1__c</picklist>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR01 - Gaurang Dashi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR03 - David Vuong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR04 - Faris Gorges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR06 - Raymund Castro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR10 - Sunny Gu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR13 - Gowsala Ponnudurai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR14 - Winston Qu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR15 - Helen Guo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR16 - Thanh Nguyen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR23 - Rajwinder Kaur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR24 - Winnie Song</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Technician_2__c</picklist>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR01 - Gaurang Dashi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR03 - David Vuong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR04 - Faris Gorges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR06 - Raymund Castro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR10 - Sunny Gu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR13 - Gowsala Ponnudurai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR14 - Winston Qu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR15 - Helen Guo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR16 - Thanh Nguyen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR23 - Rajwinder Kaur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR24 - Winnie Song</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Technician_3__c</picklist>
+        <values>
+            <fullName>NA Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR01 - Gaurang Dashi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR03 - David Vuong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR04 - Faris Gorges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR06 - Raymund Castro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR10 - Sunny Gu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR13 - Gowsala Ponnudurai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR14 - Winston Qu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR15 - Helen Guo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR16 - Thanh Nguyen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR23 - Rajwinder Kaur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR24 - Winnie Song</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>To_Do__c</picklist>
+        <values>
+            <fullName>Arrange return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibrate product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check if customer wants product back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check if customer will scrap product themselves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check if customer will send replacement order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Close case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create billable outbound SO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create non-billable outbound SO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deliver part to Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspect Returned Product - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspect Returned Product - Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inspect returned product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice %26 close case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue credit %26 close case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prepare Deviation Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Respond to question</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Respond to quotation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review case details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrap%2Frecycle product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send replacement without invoice %26 close case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship back with invoice %26 close case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship back without invoice %26 close case</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>90 Day Warranty Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billable Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calibration and Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consignment Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange %2F Replace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended Warranty Repair Dist only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loaner Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Charge Billable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR Calibration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scrap %2F Recycling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Standard Calibration NCB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty Replace Part</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Email Address</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Email Addresses</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only one Primary Email Address is allowed. --></errorMessage>
+        <name>Primary_Email_Address</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>AR- 3rd Parties-Alternate (1111001)</label>
+    <protected>false</protected>
+    <values>
+        <field>Recon_Account_ID__c</field>
+        <value xsi:type="xsd:string">0001111001,0001111001,0001111001,0001111001,0001111001,0001111001</value>
+    </values>
+    <values>
+        <field>Site__c</field>
+        <value xsi:type="xsd:string">ESG Optics,ESG L&amp;D,Shenzhen,Manila,St Louis,Wiesbaden</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Business Unit --></label>
+    <name>Business_Unit__c</name>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation><!-- Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customized Systems</masterLabel>
+        <translation><!-- Customized Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disinfection</masterLabel>
+        <translation><!-- Disinfection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HNG</masterLabel>
+        <translation><!-- HNG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Holistic Lithography</masterLabel>
+        <translation><!-- Holistic Lithography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR Sensing</masterLabel>
+        <translation><!-- IR Sensing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imaging &amp; Laser Systems</masterLabel>
+        <translation><!-- Imaging &amp; Laser Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial Curing</masterLabel>
+        <translation><!-- Industrial Curing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metrology &amp; Inspection</masterLabel>
+        <translation><!-- Metrology &amp; Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photon Detection</masterLabel>
+        <translation><!-- Photon Detection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plasma Light Sources</masterLabel>
+        <translation><!-- Plasma Light Sources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Precision Manufacturing</masterLabel>
+        <translation><!-- Precision Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semiconductor Equipment</masterLabel>
+        <translation><!-- Semiconductor Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solutions</masterLabel>
+        <translation><!-- Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal Processing</masterLabel>
+        <translation><!-- Thermal Processing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

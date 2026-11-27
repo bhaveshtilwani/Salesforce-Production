@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unloading_Name_Exists</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Unloading_Name_Exists__c,&quot;Yes&quot;)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Unloading Name already exist for this Account</errorMessage>
+</ValidationRule>

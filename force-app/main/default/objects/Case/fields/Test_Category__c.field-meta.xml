@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Category__c</fullName>
+    <label>Test Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Additive manufacturing and 3D printing</fullName>
+                <default>false</default>
+                <label>Additive manufacturing and 3D printing</label>
+            </value>
+            <value>
+                <fullName>Air treatment</fullName>
+                <default>false</default>
+                <label>Air treatment</label>
+            </value>
+            <value>
+                <fullName>Battery</fullName>
+                <default>false</default>
+                <label>Battery</label>
+            </value>
+            <value>
+                <fullName>Coatings (other)</fullName>
+                <default>false</default>
+                <label>Coatings (other)</label>
+            </value>
+            <value>
+                <fullName>Coil coatings</fullName>
+                <default>false</default>
+                <label>Coil coatings</label>
+            </value>
+            <value>
+                <fullName>Composites</fullName>
+                <default>false</default>
+                <label>Composites</label>
+            </value>
+            <value>
+                <fullName>Curing (other)</fullName>
+                <default>false</default>
+                <label>Curing (other)</label>
+            </value>
+            <value>
+                <fullName>Debonding</fullName>
+                <default>false</default>
+                <label>Debonding</label>
+            </value>
+            <value>
+                <fullName>Deburring</fullName>
+                <default>false</default>
+                <label>Deburring</label>
+            </value>
+            <value>
+                <fullName>Disinfection</fullName>
+                <default>false</default>
+                <label>Disinfection</label>
+            </value>
+            <value>
+                <fullName>Drying</fullName>
+                <default>false</default>
+                <label>Drying</label>
+            </value>
+            <value>
+                <fullName>Electronics and electromechanical assembly</fullName>
+                <default>false</default>
+                <label>Electronics and electromechanical assembly</label>
+            </value>
+            <value>
+                <fullName>Embossing</fullName>
+                <default>false</default>
+                <label>Embossing</label>
+            </value>
+            <value>
+                <fullName>Flooring – Vinyl, Tiles etc.</fullName>
+                <default>false</default>
+                <label>Flooring – Vinyl, Tiles etc.</label>
+            </value>
+            <value>
+                <fullName>Food heating</fullName>
+                <default>false</default>
+                <label>Food heating</label>
+            </value>
+            <value>
+                <fullName>Forming</fullName>
+                <default>false</default>
+                <label>Forming</label>
+            </value>
+            <value>
+                <fullName>Functional films and display manufacturing</fullName>
+                <default>false</default>
+                <label>Functional films and display manufacturing</label>
+            </value>
+            <value>
+                <fullName>Glass and ceramic decorating and coatings</fullName>
+                <default>false</default>
+                <label>Glass and ceramic decorating and coatings</label>
+            </value>
+            <value>
+                <fullName>Glass fiber, ribbon, and cable</fullName>
+                <default>false</default>
+                <label>Glass fiber, ribbon, and cable</label>
+            </value>
+            <value>
+                <fullName>Heating (others)</fullName>
+                <default>false</default>
+                <label>Heating (others)</label>
+            </value>
+            <value>
+                <fullName>Laminating</fullName>
+                <default>false</default>
+                <label>Laminating</label>
+            </value>
+            <value>
+                <fullName>Medical products coatings</fullName>
+                <default>false</default>
+                <label>Medical products coatings</label>
+            </value>
+            <value>
+                <fullName>Metal decorating, coating, and assembly</fullName>
+                <default>false</default>
+                <label>Metal decorating, coating, and assembly</label>
+            </value>
+            <value>
+                <fullName>Pipe coating</fullName>
+                <default>false</default>
+                <label>Pipe coating</label>
+            </value>
+            <value>
+                <fullName>Plastic decorating, coating, and assembly</fullName>
+                <default>false</default>
+                <label>Plastic decorating, coating, and assembly</label>
+            </value>
+            <value>
+                <fullName>Powder coating</fullName>
+                <default>false</default>
+                <label>Powder coating</label>
+            </value>
+            <value>
+                <fullName>Pressure sensitive adhesives</fullName>
+                <default>false</default>
+                <label>Pressure sensitive adhesives</label>
+            </value>
+            <value>
+                <fullName>Printing: inks and coatings</fullName>
+                <default>false</default>
+                <label>Printing: inks and coatings</label>
+            </value>
+            <value>
+                <fullName>Textiles and fabrics</fullName>
+                <default>false</default>
+                <label>Textiles and fabrics</label>
+            </value>
+            <value>
+                <fullName>Water treatment</fullName>
+                <default>false</default>
+                <label>Water treatment</label>
+            </value>
+            <value>
+                <fullName>Welding</fullName>
+                <default>false</default>
+                <label>Welding</label>
+            </value>
+            <value>
+                <fullName>Wood coating</fullName>
+                <default>false</default>
+                <label>Wood coating</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

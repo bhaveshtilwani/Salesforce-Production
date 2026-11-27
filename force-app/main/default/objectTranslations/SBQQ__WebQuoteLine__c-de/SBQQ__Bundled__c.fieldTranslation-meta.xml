@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Gibt an, dass das Produkt in diesem Belegposten mit einem anderen Produkt in diesem Angebot in einem Paket gebÃ¼ndelt ist. Bei in Paketen gebÃ¼ndelten Belegposten lautet der Preis Null und die Ã„nderung von Preis oder Menge ist nicht mÃ¶glich.&quot;</help>
+    <label>GebÃ¼ndelt</label>
+    <name>SBQQ__Bundled__c</name>
+</CustomFieldTranslation>

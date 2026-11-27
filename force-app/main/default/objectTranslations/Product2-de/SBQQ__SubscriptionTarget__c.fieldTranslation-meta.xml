@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Verwenden Sie dieses Feld, um ein Produkt zu Ã¼berschreiben, das bei der Berechnung von &quot;&quot;Prozent vom Gesamtwert&quot;&quot; berÃ¼cksichtigt wird. Verweisen Sie diese Nachschlagefunktion auf ein Produkt mit einem Listenpreis, den Sie fÃ¼r &quot;&quot;Prozent vom Gesamtwert&quot;&quot;-Berechnungen des aktuellen Produkts verwenden mÃ¶chten.&quot;</help>
+    <label>&quot;Ziel fÃ¼r &quot;&quot;Prozent vom Gesamtwert&quot;&quot;&quot;</label>
+    <name>SBQQ__SubscriptionTarget__c</name>
+    <relationshipLabel><!-- Subscription Targeting Products --></relationshipLabel>
+</CustomFieldTranslation>

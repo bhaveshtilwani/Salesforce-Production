@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LDGI_Remarks</fullName>
+    <active>false</active>
+    <description>Remarks is required if US Account</description>
+    <errorConditionFormula>AND(
+ $RecordType.Name = &quot;QAD - LDGI&quot;,
+ ISPICKVAL(BillingCountryCode , &quot;US&quot;),
+ISBLANK(Remarks__c))</errorConditionFormula>
+    <errorDisplayField>Remarks__c</errorDisplayField>
+    <errorMessage>Remarks is required for US Accounts</errorMessage>
+</ValidationRule>

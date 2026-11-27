@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_in_Progress</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+
+OR(
+ISPICKVAL( SFDC_Integration_Status__c , &quot;In Progress&quot;),
+ISPICKVAL(SFDC_Integration_Status__c , &quot;In Process&quot;)),
+Automation_ByPassed__c = false,
+AND(
+$User.ProfileId &lt;&gt;&apos;00e30000000e7Mv&apos;,
+$User.ProfileId &lt;&gt;&apos;00e3t000002IytQ&apos;,
+$User.ProfileId &lt;&gt;&apos;00e3t000001KXYc&apos;))</errorConditionFormula>
+    <errorMessage>Sync in Progress. Creating and Editing not allowed. Wait for the sync to finish to continue.</errorMessage>
+</ValidationRule>

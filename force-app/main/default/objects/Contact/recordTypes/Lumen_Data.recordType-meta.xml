@@ -1,0 +1,2935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lumen_Data</fullName>
+    <active>true</active>
+    <label>Lumen Data</label>
+    <picklistValues>
+        <picklist>Academic_Title__c</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E Dr%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_UnitGlobal__c</picklist>
+        <values>
+            <fullName>CS BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disinfection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holistic Lithography BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR Sensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imaging %26 Laser Systems BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Curing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Optronics %26 Avionics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metrology %26 Inspection BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photon Detection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plasma Light Sources BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solutions BU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Processing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Business_Unit__c</picklist>
+        <values>
+            <fullName>Advanced Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biomed-Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Image Tubes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Cermax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Flash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Cermax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photocells</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photodiodes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photonics Flash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pyroelectric Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semicon-Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid State Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermopile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UV and Microscopy</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel_Partner_Distributor__c</picklist>
+        <values>
+            <fullName>A%26P Instrument Co</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABM Elektronik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACAL BFi Nordic AB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMB Technic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMS Technologies AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APM Technica AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accutrol Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerostar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agentek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ainnotech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alkon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alliance Group One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allied Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alpha Source%2C Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alpha UV Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ammirata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Argo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arktake</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrow Central Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlas Specialty Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aunion Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azpect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B%26B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B%26B Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B%2ERoman %282001%29 Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BBC Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEIJING RICHYSENSING ELECTRONICS%2FHOPE SEA IMPORT %26 EXPORT LIMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beijing Image Vision Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beijing Microwave %26 Lingzhi %28China%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beijing Norking Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beijing Ruizhi Liwei Trade Co</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Best Scientific Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BioVision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BlueRidge Industrial Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bohan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Braemac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brandon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brilliant Token Co%2E%2CLtd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulbtronics Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EE%2E Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%2EW%2E Beach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CADMET%2C INC%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARLTON-BATES COMPANY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CN Compectron%2FCompsul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CVI Melles Griot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW Beach Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadence Technologies Pte Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China Daheng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chun Wan Trading Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chung Wang Trading Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cointek Assessoria Technica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Constanta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crisel Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNR Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daheng New Epoch Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Danh Huy Co%2E%2CLtd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diagramm Halbach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Didimy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DigiKey-Pacer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digikey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Directed Light</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECM Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECOTEC TECHNOLOGY LIMITED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EHD Imaging GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EKK Eagle Industries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMS Associates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EPLUS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EQ Photonics GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ETIA-TECH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edmund Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Efsen Engineering A%2FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electro Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elvitec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Etia-Tech %28China%29 Co%2E%2CLtd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eurosep Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAST Electronica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FOCUS PRECISION INSTRUMENTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fast Drying Systems SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fast Elettronica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Spectrum Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G4 Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUANGZHOU TURBOLIGHT ELECTRONICS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gammadata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gentec BeNeLux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Electronics  Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Globetek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gloor Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Griot Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guido Ammirata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guido Ammirata S%2Er%2El%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOPE SEA IMPORT %26 EXPORT LIMIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HTDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hitech Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holst %26 Fleischer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hutmacher %26 Schlund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-Wave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I2S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I2S Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IGB-Tech GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDEG GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR System Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Globe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iberoptics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Image S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Image S Spa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infaimon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inno-V Global Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inpro Technologies Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insight Scientific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Island Optical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JC Lampes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jenton International Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Juha Elektro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KLV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kennedy Webster Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kevin McBride</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kimsoptec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lab-Pro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lahat Technologies Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser SOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser SOS UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Technology S%2EL%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lelko technologies Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lober</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lukas Microscope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lumex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MGC Lighting Group UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MICRO-TECH INSTRUMENTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MacInnis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marl International Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marubun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maxtech Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maxtech sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Melss Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Memcom Advanced Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mestec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micos Iberia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro Optical Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microscope World</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microsystems s%2Er%2El%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mictrotron N%2EV%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Millison International Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miyakawa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monolitic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Movetec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multipix</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mutronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neopt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nevis Technology Co%2E%2C Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nevis Technology Co%2E%2C Ltd%2E %28Optem%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Age Instruments %26 Materials Pvt %2E Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newroad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northstar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OCJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onset Electro-Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opto Science Inc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optoprim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ozdizan Elektronik</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P%2EC%2E Protect Co%2E%2C Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PC Protect Co%2E%2CLtd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PKI China %2F X%2EC%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROFiber Networking s%2Er%2Eo%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTC International Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacer UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pacer USA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parameter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parameter AB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pentad Scientific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photon Lines %28France%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photon Lines %28UK%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phototronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phototronic HK Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phototronic Hong Kong Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phototronic Hong Kong Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Please Select when Forwarded External</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Poly Dispensing Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polytec GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precimation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precimation AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prolog Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QuantumTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiant Optronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radiant Source Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rauscher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rayscience Innovative Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rep Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Precision Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Richard Schahl GmbH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Richardson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STARK Scientific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUZHOU OKN TECHNOLOGY CO%2E%2C LTD%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVS-Vistek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanei-Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Barbara Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schillinger %28SAI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schmidt Scientific  Taiwan Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scientific Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scitech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seraphim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seraphim Engineering Co</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seraphim Engineering Co Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seraphim Engineering Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shanghai Ximing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ShenZhen New Creators Electronic Technology Co%2E%2C Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shenzhen Muchang Optoelectronics Co%2E%2C Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shinyoung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SiChuan Hofoo Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sichuan Hofoo Electronic Co Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Six Sigma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sizensee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solsta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern States Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spectropol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stemmer Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sumida Components %28formerly Stelco%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunnew Technology Co%2E%2C Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TED - Tokyo Electron Devices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEO %28 Titan Electro Optics%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TJ Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taihei Boeki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Niko Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Texim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Texim Europe BV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Griot Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The MacInnis Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thomas Technology Group %28TTG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tibe Oy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tom Ridino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trafomo A%2FS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TriTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trilogy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>U-VIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VLT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vadeno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision Light Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vital Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W%2E H%2E Nuhsbaum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warsash Scientific</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warsash Scientific Co%2E%2C Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wyldar Machine Tools</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X%2E Cheng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YOU THINK TECHNOLOGY CO%2E%2C LTD%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zen Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>uv technik meyer gmbh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Özdisan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Özdisan Elektronik</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ContactStatus__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moved Company</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Department_SAP_Asia__c</picklist>
+        <values>
+            <fullName>Administration %280005%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Department %280009%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Department %280010%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managing Director %280001%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organization %280004%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production %280006%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchasing %280002%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Assurance %280007%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales %280003%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secretaries %280008%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Department__c</picklist>
+        <values>
+            <fullName>Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managing Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality assurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>R%26D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secretaries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DivisionGlobal__c</picklist>
+        <values>
+            <fullName>Advanced Electronic Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Industrial Sensing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Lighting Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Division</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense %26 Aerospace Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrated Optronics %26 Avionics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedTech %26 Life Sciences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor Equipment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Function__c</picklist>
+        <values>
+            <fullName>CPACK%2C PreAlert Inv%2E %28Z2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDP Manager %2808%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Board %2801%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fin%2E Accounting Manager %2809%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of Personnel %2804%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of Purchasing %2802%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of Sales %2803%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Head of the Canteen %2806%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janitor %2805%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Manager %2810%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Assistant %2807%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOA %28Z1%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LID__Level__c</picklist>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LID__No_longer_at_Company__c</picklist>
+        <values>
+            <fullName>Ignore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not at Company</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Language__c</picklist>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advert%2FMedia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Dev Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eCommerce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source_Detail__c</picklist>
+        <values>
+            <fullName>2018 QPL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2024_10_29 Webinar%3A Multiplex Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025_03 %E2%80%93 Multiplex Imaging in Quality Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025_04 %E2%80%93 Accelerate your Manufacturing Process with UV and IR Technologies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025_10 Discover 21st Century Laser-free Confocal Microscopy Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025_11_Infrared for Industrial Processing_French_Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025_11_Optimized UV Coating Solutions for Rugged Industrial Environments_ Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2025_12 Webinar - Bridging the Spectral Divide%3A Imaging from UV to SWIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2026_04_UV Empowering Modern Manufacturing Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2026_05_Leveraging IR Technology to Solve Industrial Challenges Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2026_05_Three Pillars of Effective Infrared Drying for Coating Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AACR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AKL 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AKL Laser Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARVO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytica 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anuga FoodTec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aquatech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIOMEDevice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BioPhotonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biophysical Society</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIBF 2026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIOE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMEF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMEF 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CMEF Spring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CYTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cat Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cell Bio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China Glass 2026</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compamed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyto Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DGaO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPCE 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPG SAMOP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPG SAMOP 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPG SKM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DPG SKM 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense %2B Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Del Mar Electronics Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Pathology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECR 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECR 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electro-Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronica China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronica Munich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eurolab 2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exhibition - Mobile Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FENS 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FINAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FOM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fachdental Leipzig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fachdental Südwest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fakuma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Focal Point Newsletter Registration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fogra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formnext</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FuturePrint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Spec%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HRMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IEEE Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IFAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILRC LiDAR Conf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPC APEX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IPPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IWCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iculta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InterOpto Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KES %E2%80%93 Kor Elec Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kimes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean Society of Laser Processing 2025</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LASER China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LASER China 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LASER Munich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LASYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIGNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOUPE Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LabelExpo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landing Page</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Focus World</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lasertage 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lopec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBSJ 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD%26M East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD%26M Midwest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD%26M West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MachVis Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Med Device %26 Diagnostic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Med Product Mfg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical MEMS %26 Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Messe K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro Mfg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neuroscience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newsletter Subscriptions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPIE Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optatec 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optatech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OptecNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIV 2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIV Course</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIV Course 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PaintExpo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phot West 2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photokina 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photonics China 2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photonics Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photonics Festival Taiwan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photonics West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photonics West 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photoniktage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photoniktage Berlin 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physics Instructor Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Fair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Productronica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q-Shop Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q-Shop RFQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q-Shop Reg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qmed%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Magazine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RSNA 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RadTech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RadTech Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for Quotation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rodenstock Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SME Micro Mfg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPIE BiOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPIE Optics %2B Photonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPIE Photonics West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensor %2B Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors Converge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors Expo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Coating Expo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TEC 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teck Briefs Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Assembly Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UKP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VISION 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision Stuttgart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vision Sys Des</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>W3%2B 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Watertech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zdravookhraneniye 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iFLEX Software Download</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Market_Segment__c</picklist>
+        <values>
+            <fullName>Biomedical Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalogue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crystal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endoscopy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Excelitas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Goyo Lences</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Innolight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lumen Dynamics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM_QROC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ophthalmology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TMC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varioptics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X-Ray</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Marketing_Permissions__c</picklist>
+        <values>
+            <fullName>Annual Tradeshows</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly Newsletter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partys</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NDA_Type__c</picklist>
+        <values>
+            <fullName>Mutual NDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unilateral NDA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Method_of_Contact__c</picklist>
+        <values>
+            <fullName>Any</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_LineGlobal__c</picklist>
+        <values>
+            <fullName>Advanced Sensor Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerial %26 Laser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerial Imaging %26 Laser Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Analytical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biomedical Light Engines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Camera Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog and Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cermax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing LED - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing LED Phoseon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curing Omnicure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customized Systems - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disinfection - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fibers %26 Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Freq Stds and Switches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Voltage Power</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Curing - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Engines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lightsources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metrology %26 Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Microwave - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modules %26 Objectives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noblelight Other - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optics %26 Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optics %26 Imaging Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optronics Platforms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photodiodes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Optronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precision Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pyroelectric Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solid State Lighting Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solidtron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Processing - Noblelight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermopile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>REO_Category__c</picklist>
+        <values>
+            <fullName>Christmas Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closure Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Survey</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remember_me__c</picklist>
+        <values>
+            <fullName>Allow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do not allow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Responsibility__c</picklist>
+        <values>
+            <fullName>Accounting%2C Purchasing or Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEO%2C President%2C Owner%2C Managing Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineer %26 Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance %26 Technical Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production and Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality and Health %26 Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research and Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales and Marketing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_TeamNEW__c</picklist>
+        <values>
+            <fullName>AES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asia Sales Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AvS%2FSTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CISS Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CISS EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central and South America Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Semi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Curing Worldwide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSA Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LSA EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latin America Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teledyne Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WW Channel Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Team__c</picklist>
+        <values>
+            <fullName>Asia%2FPac Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CISS Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CISS EMEA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial Curing Worldwide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LS%2FA %26 SEMI Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LS%2FA %26 SEMI EMEA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SegmentGlobal__c</picklist>
+        <values>
+            <fullName>Advanced Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CS Segment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense %26 Aerospace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MedTech %26 Semiconductor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Territory__c</picklist>
+        <values>
+            <fullName>AMERICAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMEA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_Lumen__c</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchasing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Representative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Dealer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Account_Opportunity_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(SBQQ__Status__c, &quot;Approved&quot;),
+    NOT($Profile.Name = &quot;System Administrator&quot;),
+    OR(
+        ISCHANGED(SBQQ__Account__c),
+        ISCHANGED(SBQQ__Opportunity2__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>Account and Opportunity cannot be changed once the Quote is Approved. Please contact your System Administrator if a change is required.</errorMessage>
+</ValidationRule>

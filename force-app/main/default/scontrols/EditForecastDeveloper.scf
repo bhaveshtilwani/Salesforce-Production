@@ -1,0 +1,377 @@
+<html>
+<head>
+    <script type="text/javascript" src="/soap/ajax/8.0/connection.js"></script>
+    <script type="text/javascript" src="/js/functions.js"></script>
+    <script src="/js/dojo/0.3.1/dojo.js"></script>
+
+    <script type="text/javascript">
+        function setup() {
+            if (!sforce.connection.sessionId) {
+                var sid = getCookie("sid");
+                if (sid) {
+                    sforce.connection.sessionId = sid;
+                } else {
+                    window.location = "/?startURL=" + window.location;
+                    return;
+                }
+            }
+
+            displayLastUpdated();
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        dojo.require("dojo.widget.*");
+        dojo.require("dojo.widget.InlineEditBox");
+        dojo.require("dojo.event.*");
+        dojo.require("dojo.widget.TabContainer");
+        dojo.require("dojo.widget.LinkPane");
+        dojo.require("dojo.widget.ContentPane");
+        dojo.require("dojo.widget.LayoutContainer");
+
+
+        var currentId = null;
+
+        function saveHandler(fieldId) {
+            var editable = dojo.widget.byId("Customer_Part__c." + fieldId);
+            var sobj = new sforce.SObject("Customer_Part__c");
+            sobj.Id = currentId;
+            sobj[fieldId] = editable.text.value;
+            sforce.connection.update([sobj],
+               {onSuccess: saveSuccess, onFailure: saveFailed});
+        }
+
+        function saveSuccess(result) {
+            if (result[0].getBoolean("success")) {
+                setStatus("saved ...");
+            } else {
+                setStatus("saved failed");
+            }
+        }
+
+        function saveFailed(error) {
+            setStatus("OOPS something went wrong " + error);
+        }
+
+        function setStatus(message) {
+            document.getElementById("status").innerHTML = message;
+        }
+
+        function displayLastUpdated() {
+            doSearch();
+            var result = sforce.connection.query("select id from Customer_Part__c limit 1");
+            if (result.getArray("records").length == 1) {
+                display(result.getArray("records")[0].Id);
+            }
+        }
+
+        function doSearch() {
+            var filter = document.getElementById("search-input").value;
+
+            sforce.connection.query("select Name,id from Customer_Part__c where Name like '" +
+                                    filter + "%' limit 15", {
+                onSuccess : function(result) {
+                    var it = new sforce.QueryResultIterator(result);
+                    var sb = new sforce.StringBuffer();
+                    while (it.hasNext()) {
+                        var sobject = it.next();
+                        sb.append("<img src='/img/report.gif'/> ");
+                        sb.append(makeDisplayLink(sobject)).append("<br>");
+                    }
+                    document.getElementById("search.list.view").innerHTML = sb.toString();
+                },
+                onFailure : function (error) {
+                    document.getElementById("search.list.view").innerHTML =
+                    "oops something went wrong " + error;
+                }
+            });
+        }
+
+        function display(id) {
+
+            
+            var res = sforce.connection.retrieve("Name,CP_Part_Cust_Name__c,CP_Cust_Original_ID__c,PM_Product_Number__c,Product_Line__c,Part_Description__c,Product_Family__c,CP_Selling_Site__c,Product_Sub_Family__c,CP_PKI_Mfg_Site__c,Sales_Rep__c,CreatedById,CreatedDate,LastModifiedById,LastModifiedDate", "Customer_Part__c", [id]);
+
+            
+                var value = res[0]["Name"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[Name]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.Name").innerHTML = value;
+            
+                var value = res[0]["CP_Part_Cust_Name__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[CP_Part_Cust_Name__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.CP_Part_Cust_Name__c").innerHTML = value;
+            
+                var value = res[0]["CP_Cust_Original_ID__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[CP_Cust_Original_ID__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.CP_Cust_Original_ID__c").innerHTML = value;
+            
+                var value = res[0]["PM_Product_Number__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[PM_Product_Number__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.PM_Product_Number__c").innerHTML = value;
+            
+                var value = res[0]["Product_Line__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[Product_Line__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.Product_Line__c").innerHTML = value;
+            
+                var value = res[0]["Part_Description__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[Part_Description__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.Part_Description__c").innerHTML = value;
+            
+                var value = res[0]["Product_Family__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[Product_Family__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.Product_Family__c").innerHTML = value;
+            
+                var value = res[0]["CP_Selling_Site__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[CP_Selling_Site__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.CP_Selling_Site__c").innerHTML = value;
+            
+                var value = res[0]["Product_Sub_Family__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[Product_Sub_Family__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.Product_Sub_Family__c").innerHTML = value;
+            
+                var value = res[0]["CP_PKI_Mfg_Site__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[CP_PKI_Mfg_Site__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.CP_PKI_Mfg_Site__c").innerHTML = value;
+            
+                var value = res[0]["Sales_Rep__c"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[Sales_Rep__c]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.Sales_Rep__c").innerHTML = value;
+            
+                var value = res[0]["CreatedById"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[CreatedById]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.CreatedById").innerHTML = value;
+            
+                var value = res[0]["CreatedDate"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[CreatedDate]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.CreatedDate").innerHTML = value;
+            
+                var value = res[0]["LastModifiedById"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[LastModifiedById]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.LastModifiedById").innerHTML = value;
+            
+                var value = res[0]["LastModifiedDate"];
+                if (value === null) {
+                    value = "<span class='editPrompt'>[LastModifiedDate]</span>" ;
+                }
+                document.getElementById("Customer_Part__c.LastModifiedDate").innerHTML = value;
+            
+
+            document.getElementById("Customer_Part__c.title").innerHTML = res[0].Name;
+            currentId = id;
+        }
+
+        function makeDisplayLink(sobj) {
+            return "<a href='javascript: display(\"" + sobj.Id + "\"); void 0;'>" +
+                   sobj.Name + "</a>";
+        }
+
+        function handleSearchKeydown(e) {
+            if (e.keyCode == 13) { //enter
+                doSearch();
+            }
+        }
+
+        
+        dojo.addOnLoad(setup);
+    </script>
+
+    <style type="text/css">
+       body, td {
+         margin:0px;
+         color:#333;
+       }
+
+       body {
+           background-repeat: repeat-x;
+           background-position: left top;
+           font-size: 75%;
+           font-family: 'Arial', 'Helvetica', sans-serif;
+           background-color: #FFF;
+       }
+
+       .searchBox {
+          padding:12px 8px 2px 8px;
+          background-color:#E8E8E8;
+          border-top:2px #FFF solid;
+          margin-bottom:10px;
+          font-size: 60%;
+        }
+
+        .detailPage {
+          margin-right:2px;
+          padding:6px 20px 0 20px;
+          background-color:#F3F3EC;
+        }
+
+        .detailPageBlock {
+          border-bottom:1px solid #E3DEB8;
+          width: 30%;
+        }
+
+        .labelCol {
+          padding:2px 10px 2px 2px;
+          text-align:right;
+          font-size: 75%;
+          font-weight: bold;
+          color:#333;
+          width: 20%;
+          border-bottom:1px solid #E3DEB8;
+        }
+
+        .titleBlock {
+            background-color: #4579B5;
+            border-color: #4579B5;
+            font-size: 100%;
+        }
+        .editPrompt {
+           font-size: 75%;
+           color: darkgray;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<table width="100%">
+    <tr>
+        <td width="20%" valign="top" class="searchBox">
+            <h3>Search</h3>
+            <input width="100" name="search-input"
+                   id="search-input" onkeydown="handleSearchKeydown(event)"></input>
+            <input type="submit" name="search-input-go"
+                   id="search-input-go" value="GO" onclick="doSearch()"/>
+
+            <div id="search.list.view"></div>
+        </td>
+        <td width="80%" valign="top">
+
+            <div id="detail.view" class="detailPage">
+               <div class="titleBlock">
+                 <h3>Customer_Part__c: <span id="Customer_Part__c.title"></span></h3>
+               </div>
+
+
+                <table width="100%" valign="top" border="0" cellpadding="0" cellspacing="0">
+                    
+                        <!--<tr><td>Information</td></tr>-->
+                        
+                          <tr>
+                              
+                                <td class="labelCol">CPID</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.Name" dojoType="inlineEditBox" onSave="saveHandler('Name')"></span></td>
+                              
+                                <td class="labelCol"></td>
+                                <td class="detailPageBlock"></td>
+                              
+                          </tr>
+                        
+                    
+                        <!--<tr><td>Customer Information</td></tr>-->
+                        
+                          <tr>
+                              
+                                <td class="labelCol">Part Cust Name</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.CP_Part_Cust_Name__c" dojoType="inlineEditBox" onSave="saveHandler('CP_Part_Cust_Name__c')"></span></td>
+                              
+                                <td class="labelCol">Cust Original ID</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.CP_Cust_Original_ID__c" dojoType="inlineEditBox" onSave="saveHandler('CP_Cust_Original_ID__c')"></span></td>
+                              
+                          </tr>
+                        
+                    
+                        <!--<tr><td>Part Details</td></tr>-->
+                        
+                          <tr>
+                              
+                                <td class="labelCol">Product Number</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.PM_Product_Number__c" dojoType="inlineEditBox" onSave="saveHandler('PM_Product_Number__c')"></span></td>
+                              
+                                <td class="labelCol">Product Line</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.Product_Line__c" dojoType="inlineEditBox" onSave="saveHandler('Product_Line__c')"></span></td>
+                              
+                          </tr>
+                        
+                          <tr>
+                              
+                                <td class="labelCol">Part Description</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.Part_Description__c" dojoType="inlineEditBox" onSave="saveHandler('Part_Description__c')"></span></td>
+                              
+                                <td class="labelCol">Product Family</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.Product_Family__c" dojoType="inlineEditBox" onSave="saveHandler('Product_Family__c')"></span></td>
+                              
+                          </tr>
+                        
+                          <tr>
+                              
+                                <td class="labelCol">Selling Site</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.CP_Selling_Site__c" dojoType="inlineEditBox" onSave="saveHandler('CP_Selling_Site__c')"></span></td>
+                              
+                                <td class="labelCol">Product Sub Family</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.Product_Sub_Family__c" dojoType="inlineEditBox" onSave="saveHandler('Product_Sub_Family__c')"></span></td>
+                              
+                          </tr>
+                        
+                          <tr>
+                              
+                                <td class="labelCol">PKI Mfg Site</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.CP_PKI_Mfg_Site__c" dojoType="inlineEditBox" onSave="saveHandler('CP_PKI_Mfg_Site__c')"></span></td>
+                              
+                                <td class="labelCol">Sales Rep</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.Sales_Rep__c" dojoType="inlineEditBox" onSave="saveHandler('Sales_Rep__c')"></span></td>
+                              
+                          </tr>
+                        
+                    
+                        <!--<tr><td>System Information</td></tr>-->
+                        
+                          <tr>
+                              
+                                <td class="labelCol">Created By</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.CreatedById" dojoType="inlineEditBox" onSave="saveHandler('CreatedById')"></span>, <span id="Customer_Part__c.CreatedDate" dojoType="inlineEditBox" onSave="saveHandler('CreatedDate')"></span></td>
+                              
+                                <td class="labelCol">Last Modified By</td>
+                                <td class="detailPageBlock"><span id="Customer_Part__c.LastModifiedById" dojoType="inlineEditBox" onSave="saveHandler('LastModifiedById')"></span>, <span id="Customer_Part__c.LastModifiedDate" dojoType="inlineEditBox" onSave="saveHandler('LastModifiedDate')"></span></td>
+                              
+                          </tr>
+                        
+                    
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="status"></div>
+
+</body>
+</html>

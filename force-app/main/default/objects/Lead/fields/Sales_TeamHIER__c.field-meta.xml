@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_TeamHIER__c</fullName>
+    <label>Sales Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Division_TeamHIER__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Sales_TeamAnaplan_New</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Advanced Industrial Sensing Sales</controllingFieldValue>
+            <valueName>AIS Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems Sales</controllingFieldValue>
+            <valueName>ALS OEM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems Sales</controllingFieldValue>
+            <valueName>ALS Channel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated Optronics &amp; Avionics Sales</controllingFieldValue>
+            <valueName>IOA Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment Sales</controllingFieldValue>
+            <valueName>Global Semi Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment Sales</controllingFieldValue>
+            <valueName>Precision Manufacturing Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Sciences &amp; Medical Sales</controllingFieldValue>
+            <valueName>LSM Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>WW Channel Sales</controllingFieldValue>
+            <valueName>WW Channel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate Sales</controllingFieldValue>
+            <valueName>Corporate Sales Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unassigned Sales</controllingFieldValue>
+            <valueName>Unassigned Sales Team</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedTech &amp; Life Sciences Sales</controllingFieldValue>
+            <valueName>M&amp;LS Sales</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

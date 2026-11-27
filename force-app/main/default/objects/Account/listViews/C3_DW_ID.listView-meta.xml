@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>C3_DW_ID</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>Data_Warehouse_ID__c</columns>
+    <columns>Client_Side_ID__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Customer Name</value>
+    </filters>
+    <filters>
+        <field>Data_Warehouse_ID__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>C3 DW ID</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

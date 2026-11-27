@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Order_Type__c</fullName>
+    <label>Purchase Order Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ASAP - Deliver ASAP - (ASAP)</fullName>
+                <default>false</default>
+                <label>ASAP - Deliver ASAP - (ASAP)</label>
+            </value>
+            <value>
+                <fullName>DFUE - By telecommunication - (DFUE)</fullName>
+                <default>false</default>
+                <label>DFUE - By telecommunication - (DFUE)</label>
+            </value>
+            <value>
+                <fullName>INSP - Inspection Only - (INSP)</fullName>
+                <default>false</default>
+                <label>INSP - Inspection Only - (INSP)</label>
+            </value>
+            <value>
+                <fullName>MUEN - Orally - (MUEN)</fullName>
+                <default>false</default>
+                <label>MUEN - Orally - (MUEN)</label>
+            </value>
+            <value>
+                <fullName>NRE - Non-Recurring Eng. - (NRE)</fullName>
+                <default>false</default>
+                <label>NRE - Non-Recurring Eng. - (NRE)</label>
+            </value>
+            <value>
+                <fullName>SCHR - Written - (SCHR)</fullName>
+                <default>false</default>
+                <label>SCHR - Written - (SCHR)</label>
+            </value>
+            <value>
+                <fullName>TELE - By telephone - (TELE)</fullName>
+                <default>false</default>
+                <label>TELE - By telephone - (TELE)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Customer_Combination_Data__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to Product Customer Combination object to fill in Market Segment, High Level Application and Product Type.</description>
+    <label>Product Customer Combination Data</label>
+    <referenceTo>Product_Customer_Combination_Data__c</referenceTo>
+    <relationshipLabel>Approvals Custom</relationshipLabel>
+    <relationshipName>Approvals_Custom</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

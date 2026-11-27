@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Salem_Alert</name>
+        <label>Salem Alert</label>
+        <locationX>924</locationX>
+        <locationY>220</locationY>
+        <actionName>Account.Salem_003_Payer_Partner_Function_Notification</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Account.Salem_003_Payer_Partner_Function_Notification</nameSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Payer_0003</name>
+        <label>Payer = 0003</label>
+        <locationX>694</locationX>
+        <locationY>147</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>not_0003</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_PF_Payer.Partner__r.Account_Group__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Payer/Bill-to Entry - 0003</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Salem_Alert</targetReference>
+            </connector>
+            <label>not 0003</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Salem - 003 Payer Partner Function Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Salem - 003 Payer Partner Function Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_PF_Payer</name>
+        <label>Get PF Payer</label>
+        <locationX>552</locationX>
+        <locationY>145</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Payer_0003</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Partner_Function_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>a433K00000178glQAA</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Partner_Function__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>77</locationX>
+        <locationY>37</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Salem</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Group__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sold To/Ship To - 0001</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Client_Side_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Check_PF_Payer</name>
+            <connector>
+                <targetReference>Get_PF_Payer</targetReference>
+            </connector>
+            <label>Check PF Payer</label>
+            <offsetNumber>5</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>LastModifiedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <name>Body</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Your Sold To Account {!$Record.Name} needs to have a 0003 Payer Function. Please update. &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If you haven&apos;t created one, please do. Upon successful sync, update your Sold To&apos;s Payer Partner Function with it.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Link: https://excelitas--produat.sandbox.lightning.force.com/lightning/r/Partner_Function__c/{!Get_PF_Payer.Id}/view?ws=%2Flightning%2Fr%2FAccount%2F{!$Record.Id}%2Fview&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subject</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;{!$Record.Name} ({!$Record.Client_Side_ID__c}) needs a 0003 Payer Function&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

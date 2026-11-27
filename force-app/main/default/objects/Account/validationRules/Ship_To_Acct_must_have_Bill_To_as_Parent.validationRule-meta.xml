@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_To_Acct_must_have_Bill_To_as_Parent</fullName>
+    <active>false</active>
+    <description>All ERP Ship to account must have a bill to account as parent from same site.</description>
+    <errorConditionFormula>AND ( 
+CONTAINS( AccountGroup__r.Name , &quot;SHIP-TO&quot;),
+NOT(ISBLANK(Parent.Name)), 
+NOT(CONTAINS(Parent.AccountGroup__r.Name, &quot;BILL-TO&quot;)),
+TEXT(ERP_Site__c) &lt;&gt; TEXT(Parent.ERP_Site__c)
+)</errorConditionFormula>
+    <errorDisplayField>ParentId</errorDisplayField>
+    <errorMessage>ERP Ship to account must have a bill to account as parent from same site.</errorMessage>
+</ValidationRule>

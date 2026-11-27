@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_Jurisdiction_Is_Required</fullName>
+    <active>false</active>
+    <description>Tax Jurisdiction is required for SAP Montreal if Country is Canada</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP NA Montreal&quot;,
+BillingCountry = &quot;Canada&quot;,
+ISPICKVAL(Tax_Jurisdiction__c, &apos;&apos; )
+)</errorConditionFormula>
+    <errorDisplayField>Tax_Jurisdiction__c</errorDisplayField>
+    <errorMessage>Tax Jurisdiction is required for Canada.</errorMessage>
+</ValidationRule>

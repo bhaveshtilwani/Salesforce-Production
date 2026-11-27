@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- To Do --></label>
+    <name>To_Do__c</name>
+    <picklistValues>
+        <masterLabel>Arrange return</masterLabel>
+        <translation><!-- Arrange return --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibrate product</masterLabel>
+        <translation><!-- Calibrate product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check if customer wants product back</masterLabel>
+        <translation><!-- Check if customer wants product back --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check if customer will scrap product themselves</masterLabel>
+        <translation><!-- Check if customer will scrap product themselves --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Check if customer will send replacement order</masterLabel>
+        <translation><!-- Check if customer will send replacement order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Close case</masterLabel>
+        <translation><!-- Close case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspect returned product</masterLabel>
+        <translation><!-- Inspect returned product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice &amp; close case</masterLabel>
+        <translation><!-- Invoice &amp; close case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Issue credit &amp; close case</masterLabel>
+        <translation><!-- Issue credit &amp; close case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote customer</masterLabel>
+        <translation><!-- Quote customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair product</masterLabel>
+        <translation><!-- Repair product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Respond to question</masterLabel>
+        <translation><!-- Respond to question --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Respond to quotation</masterLabel>
+        <translation><!-- Respond to quotation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return product</masterLabel>
+        <translation><!-- Return product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Review case details</masterLabel>
+        <translation><!-- Review case details --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrap/recycle product</masterLabel>
+        <translation><!-- Scrap/recycle product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send order</masterLabel>
+        <translation><!-- Send order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship back with invoice &amp; close case</masterLabel>
+        <translation><!-- Ship back with invoice &amp; close case --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship back without invoice &amp; close case</masterLabel>
+        <translation><!-- Ship back without invoice &amp; close case --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

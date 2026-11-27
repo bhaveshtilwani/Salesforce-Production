@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email</name>
+        <label>Send Email</label>
+        <locationX>817</locationX>
+        <locationY>457</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Lead_Source_Date</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>Get_Queue_Records.Recipient_Emails__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>DefaultWorkflowUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>BodyTemplate</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>1.0.1</versionString>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_Owner_of_Lead</name>
+        <label>Check Owner of Lead</label>
+        <locationX>551</locationX>
+        <locationY>456</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Queue_Available</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Queue_Records</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner:Group.Id</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email</targetReference>
+            </connector>
+            <label>Is Queue Available?</label>
+        </rules>
+    </decisions>
+    <description>Additional Leads Added - Update Fixed Notif (Direct)</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Subject</name>
+        <dataType>String</dataType>
+        <expression>&quot;New Lead In Queue - &quot; &amp; {!$Record.Company}</expression>
+    </formulas>
+    <formulas>
+        <name>Today</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>New Open Lead {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>New Open Lead</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Queue_Records</name>
+        <label>Get Queue Records</label>
+        <locationX>305</locationX>
+        <locationY>454</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Owner_of_Lead</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Owner:Group.DeveloperName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Lead_Queue_Collection__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Lead_Source_Date</name>
+        <label>Lead Source Date</label>
+        <locationX>1006</locationX>
+        <locationY>457</locationY>
+        <inputAssignments>
+            <field>Lead_Source_Date__c</field>
+            <value>
+                <elementReference>Today</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>179</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Get_Queue_Records</targetReference>
+        </connector>
+        <filterFormula>AND(
+    ISPICKVAL({!$Record.Status}, &apos;Open&apos;),
+    ISNEW()
+)</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>BodyTemplate</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;br/&gt;&lt;br/&gt;
+*** NEW LEAD ASSIGNMENT NOTIFICATION ***&lt;br/&gt;&lt;br/&gt;
+A new lead has been assigned to the queue you are part of.&lt;br/&gt;&lt;br/&gt;
+Lead Name: {!$Record.FirstName} {!$Record.LastName}&lt;br/&gt;
+Company: {!$Record.Company}&lt;br/&gt;
+Country: {!$Record.Country}&lt;br/&gt;
+State: {!$Record.State}&lt;br/&gt;
+Source: {!$Record.LeadSource}&lt;br/&gt;
+Source Detail: {!$Record.Lead_Source_Detail__c}&lt;br/&gt;
+Lead Source Date: {!$Record.Lead_Source_Date__c}&lt;br/&gt;
+Area of Interest: {!$Record.Area_of_Interest__c}&lt;br/&gt;
+Application: {!$Record.Application__c}&lt;br/&gt;
+Product Line: {!$Record.Product_Family__c}&lt;br/&gt;
+Account Engagement Comments: {!$Record.pi__comments__c}&lt;br/&gt;
+iCapture Comments: {!$Record.iCapture_Comments__c}&lt;br/&gt;
+Notes: {!$Record.Notes__c}&lt;br/&gt;
+Email: {!$Record.Email}&lt;br/&gt;
+Phone: {!$Record.Phone}&lt;br/&gt;&lt;br/&gt;
+Update the Lead Status to discontinue the Automated Notifications.&lt;br/&gt;&lt;br/&gt;
+ Click on the link to access the lead directly: &lt;a href=&quot;{!$Label.LeadURL}{!$Record.Id}&quot; target=&quot;_blank&quot;&gt;{!$Label.LeadURL}{!$Record.Id}&lt;/a&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>ToEmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

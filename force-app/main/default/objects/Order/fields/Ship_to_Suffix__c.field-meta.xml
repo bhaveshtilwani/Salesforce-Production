@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_to_Suffix__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND( ISPICKVAL (Order_Type__c , &quot;Warranty/No Charge Billable - W&quot;)) , &quot;&quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ship to Suffix</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

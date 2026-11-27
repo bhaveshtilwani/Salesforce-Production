@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Z_Deletion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ Delete_PF__c = TRUE,
+OR(
+Name = &quot;Customer Service Responsible (ZM)&quot;,
+Name = &quot;Employee resp. (ZW)&quot;,
+Name = &quot;Sales Person resp. (ZT)&quot;
+))</errorConditionFormula>
+    <errorMessage>ZT, ZM, or ZW can&apos;t be deleted. Please update instead.</errorMessage>
+</ValidationRule>

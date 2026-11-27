@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Sales_Person__c</fullName>
+    <label>Assigned Sales Person</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aaron Berry (CISS Americas)</fullName>
+                <default>false</default>
+                <label>Aaron Berry (CISS Americas)</label>
+            </value>
+            <value>
+                <fullName>Aaron Berry (LSA Americas)</fullName>
+                <default>false</default>
+                <label>Aaron Berry (LSA Americas)</label>
+            </value>
+            <value>
+                <fullName>Achim Greiner</fullName>
+                <default>false</default>
+                <label>Achim Greiner</label>
+            </value>
+            <value>
+                <fullName>Achim Greiner (DISTI EMEA)</fullName>
+                <default>false</default>
+                <label>Achim Greiner (DISTI EMEA)</label>
+            </value>
+            <value>
+                <fullName>Alan Tay</fullName>
+                <default>false</default>
+                <label>Alan Tay</label>
+            </value>
+            <value>
+                <fullName>Alex Hornik</fullName>
+                <default>false</default>
+                <label>Alex Hornik</label>
+            </value>
+            <value>
+                <fullName>Amy Stamford</fullName>
+                <default>false</default>
+                <label>Amy Stamford</label>
+            </value>
+            <value>
+                <fullName>Andre Holzer</fullName>
+                <default>false</default>
+                <label>Andre Holzer</label>
+            </value>
+            <value>
+                <fullName>Andreas Haedrich</fullName>
+                <default>false</default>
+                <label>Andreas Haedrich</label>
+            </value>
+            <value>
+                <fullName>Anna Kostic</fullName>
+                <default>false</default>
+                <label>Anna Kostic</label>
+            </value>
+            <value>
+                <fullName>Anton Gaedtke</fullName>
+                <default>false</default>
+                <label>Anton Gaedtke</label>
+            </value>
+            <value>
+                <fullName>Arthur Jong</fullName>
+                <default>false</default>
+                <label>Arthur Jong</label>
+            </value>
+            <value>
+                <fullName>Asia House</fullName>
+                <default>false</default>
+                <label>Asia House</label>
+            </value>
+            <value>
+                <fullName>Asia House Account</fullName>
+                <default>false</default>
+                <label>Asia House Account</label>
+            </value>
+            <value>
+                <fullName>Barry Williams</fullName>
+                <default>false</default>
+                <label>Barry Williams</label>
+            </value>
+            <value>
+                <fullName>Ben Standish</fullName>
+                <default>false</default>
+                <label>Ben Standish</label>
+            </value>
+            <value>
+                <fullName>Bernd Ullmann</fullName>
+                <default>false</default>
+                <label>Bernd Ullmann</label>
+            </value>
+            <value>
+                <fullName>Bernd Ullmann (Defense)</fullName>
+                <default>false</default>
+                <label>Bernd Ullmann (Defense)</label>
+            </value>
+            <value>
+                <fullName>Beth Haskell</fullName>
+                <default>false</default>
+                <label>Beth Haskell</label>
+            </value>
+            <value>
+                <fullName>Beth Haskell (DS_FSS)</fullName>
+                <default>false</default>
+                <label>Beth Haskell (DS_FSS)</label>
+            </value>
+            <value>
+                <fullName>Betsy Hall</fullName>
+                <default>false</default>
+                <label>Betsy Hall</label>
+            </value>
+            <value>
+                <fullName>Betsy Hall (Semi)</fullName>
+                <default>false</default>
+                <label>Betsy Hall (Semi)</label>
+            </value>
+            <value>
+                <fullName>Bob Valdez</fullName>
+                <default>false</default>
+                <label>Bob Valdez</label>
+            </value>
+            <value>
+                <fullName>Brad Tan</fullName>
+                <default>false</default>
+                <label>Brad Tan</label>
+            </value>
+            <value>
+                <fullName>Brian Liu</fullName>
+                <default>false</default>
+                <label>Brian Liu</label>
+            </value>
+            <value>
+                <fullName>Brian Ng</fullName>
+                <default>false</default>
+                <label>Brian Ng</label>
+            </value>
+            <value>
+                <fullName>Brian Ng (Semi)</fullName>
+                <default>false</default>
+                <label>Brian Ng (Semi)</label>
+            </value>
+            <value>
+                <fullName>Brian Taylor</fullName>
+                <default>false</default>
+                <label>Brian Taylor</label>
+            </value>
+            <value>
+                <fullName>Bright Lee</fullName>
+                <default>false</default>
+                <label>Bright Lee</label>
+            </value>
+            <value>
+                <fullName>Bright Lee (Ind Cur)</fullName>
+                <default>false</default>
+                <label>Bright Lee (Ind Cur)</label>
+            </value>
+            <value>
+                <fullName>Bruno Bosser</fullName>
+                <default>false</default>
+                <label>Bruno Bosser</label>
+            </value>
+            <value>
+                <fullName>Bruno Bosser (DISTI)</fullName>
+                <default>false</default>
+                <label>Bruno Bosser (DISTI)</label>
+            </value>
+            <value>
+                <fullName>Carlos Alvarez</fullName>
+                <default>false</default>
+                <label>Carlos Alvarez</label>
+            </value>
+            <value>
+                <fullName>Carlos Alvarez (Latin Amer)</fullName>
+                <default>false</default>
+                <label>Carlos Alvarez (Latin Amer)</label>
+            </value>
+            <value>
+                <fullName>Caroline Duval</fullName>
+                <default>false</default>
+                <label>Caroline Duval</label>
+            </value>
+            <value>
+                <fullName>Caroline Duval (DISTI)</fullName>
+                <default>false</default>
+                <label>Caroline Duval (DISTI)</label>
+            </value>
+            <value>
+                <fullName>Catalog (DISTI)</fullName>
+                <default>false</default>
+                <label>Catalog (DISTI)</label>
+            </value>
+            <value>
+                <fullName>Catalog Team</fullName>
+                <default>false</default>
+                <label>Catalog Team</label>
+            </value>
+            <value>
+                <fullName>China House</fullName>
+                <default>false</default>
+                <label>China House</label>
+            </value>
+            <value>
+                <fullName>Chris Anderson</fullName>
+                <default>false</default>
+                <label>Chris Anderson</label>
+            </value>
+            <value>
+                <fullName>Christine Iannuccilli</fullName>
+                <default>false</default>
+                <label>Christine Iannuccilli</label>
+            </value>
+            <value>
+                <fullName>Christine Iannuccilli (LSA Amer)</fullName>
+                <default>false</default>
+                <label>Christine Iannuccilli (LSA Amer)</label>
+            </value>
+            <value>
+                <fullName>Christoph Polzer</fullName>
+                <default>false</default>
+                <label>Christoph Polzer</label>
+            </value>
+            <value>
+                <fullName>CISS AMERICAS HOUSE</fullName>
+                <default>false</default>
+                <label>CISS AMERICAS HOUSE</label>
+            </value>
+            <value>
+                <fullName>CISS EMEA HOUSE</fullName>
+                <default>false</default>
+                <label>CISS EMEA HOUSE</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Craig Roberts</fullName>
+                <default>false</default>
+                <label>Craig Roberts</label>
+            </value>
+            <value>
+                <fullName>Darren Goh</fullName>
+                <default>false</default>
+                <label>Darren Goh</label>
+            </value>
+            <value>
+                <fullName>Dave Evans</fullName>
+                <default>false</default>
+                <label>Dave Evans</label>
+            </value>
+            <value>
+                <fullName>David Cheung</fullName>
+                <default>false</default>
+                <label>David Cheung</label>
+            </value>
+            <value>
+                <fullName>David Lever</fullName>
+                <default>false</default>
+                <label>David Lever</label>
+            </value>
+            <value>
+                <fullName>David McKibben (Analytical)</fullName>
+                <default>false</default>
+                <label>David McKibben (Analytical)</label>
+            </value>
+            <value>
+                <fullName>Denis Boireau</fullName>
+                <default>false</default>
+                <label>Denis Boireau</label>
+            </value>
+            <value>
+                <fullName>Denis Boireau (DS)</fullName>
+                <default>false</default>
+                <label>Denis Boireau (DS)</label>
+            </value>
+            <value>
+                <fullName>Denis Boireau (FSS)</fullName>
+                <default>false</default>
+                <label>Denis Boireau (FSS)</label>
+            </value>
+            <value>
+                <fullName>Denis Boireau (HVP)</fullName>
+                <default>false</default>
+                <label>Denis Boireau (HVP)</label>
+            </value>
+            <value>
+                <fullName>Denis Boireau (IC)</fullName>
+                <default>false</default>
+                <label>Denis Boireau (IC)</label>
+            </value>
+            <value>
+                <fullName>Dennis Bates</fullName>
+                <default>false</default>
+                <label>Dennis Bates</label>
+            </value>
+            <value>
+                <fullName>Dieter Randel</fullName>
+                <default>false</default>
+                <label>Dieter Randel</label>
+            </value>
+            <value>
+                <fullName>Domenic Bucci</fullName>
+                <default>false</default>
+                <label>Domenic Bucci</label>
+            </value>
+            <value>
+                <fullName>Doris Klapp</fullName>
+                <default>false</default>
+                <label>Doris Klapp</label>
+            </value>
+            <value>
+                <fullName>Drew Jones</fullName>
+                <default>false</default>
+                <label>Drew Jones</label>
+            </value>
+            <value>
+                <fullName>EngSoon Chee</fullName>
+                <default>false</default>
+                <label>EngSoon Chee</label>
+            </value>
+            <value>
+                <fullName>Eric Gelinas</fullName>
+                <default>false</default>
+                <label>Eric Gelinas</label>
+            </value>
+            <value>
+                <fullName>Erick Li</fullName>
+                <default>false</default>
+                <label>Erick Li</label>
+            </value>
+            <value>
+                <fullName>Fanny Calonne</fullName>
+                <default>false</default>
+                <label>Fanny Calonne</label>
+            </value>
+            <value>
+                <fullName>Georg Zeitelhack</fullName>
+                <default>false</default>
+                <label>Georg Zeitelhack</label>
+            </value>
+            <value>
+                <fullName>Georg Zeitelhack (DISTI)</fullName>
+                <default>false</default>
+                <label>Georg Zeitelhack (DISTI)</label>
+            </value>
+            <value>
+                <fullName>Graham Evans</fullName>
+                <default>false</default>
+                <label>Graham Evans</label>
+            </value>
+            <value>
+                <fullName>Gregory Gallinat</fullName>
+                <default>false</default>
+                <label>Gregory Gallinat</label>
+            </value>
+            <value>
+                <fullName>Guy Bittar</fullName>
+                <default>false</default>
+                <label>Guy Bittar</label>
+            </value>
+            <value>
+                <fullName>Guy Cote</fullName>
+                <default>false</default>
+                <label>Guy Cote</label>
+            </value>
+            <value>
+                <fullName>Hans Birzer</fullName>
+                <default>false</default>
+                <label>Hans Birzer</label>
+            </value>
+            <value>
+                <fullName>Harpreet Singh</fullName>
+                <default>false</default>
+                <label>Harpreet Singh</label>
+            </value>
+            <value>
+                <fullName>Hayashi Toru</fullName>
+                <default>false</default>
+                <label>Hayashi Toru</label>
+            </value>
+            <value>
+                <fullName>Hayashi Toru (Ind Cur)</fullName>
+                <default>false</default>
+                <label>Hayashi Toru (Ind Cur)</label>
+            </value>
+            <value>
+                <fullName>Helene Dubois</fullName>
+                <default>false</default>
+                <label>Helene Dubois</label>
+            </value>
+            <value>
+                <fullName>Henry Lazaroo</fullName>
+                <default>false</default>
+                <label>Henry Lazaroo</label>
+            </value>
+            <value>
+                <fullName>Isabel Haackert</fullName>
+                <default>false</default>
+                <label>Isabel Haackert</label>
+            </value>
+            <value>
+                <fullName>Jack Hickman</fullName>
+                <default>false</default>
+                <label>Jack Hickman</label>
+            </value>
+            <value>
+                <fullName>James Clements</fullName>
+                <default>false</default>
+                <label>James Clements</label>
+            </value>
+            <value>
+                <fullName>James Lim</fullName>
+                <default>false</default>
+                <label>James Lim</label>
+            </value>
+            <value>
+                <fullName>Japan House</fullName>
+                <default>false</default>
+                <label>Japan House</label>
+            </value>
+            <value>
+                <fullName>Jaroslaw Czeladzinski</fullName>
+                <default>false</default>
+                <label>Jaroslaw Czeladzinski</label>
+            </value>
+            <value>
+                <fullName>Jaroslaw Czeladzinski (CISS EMEA)</fullName>
+                <default>false</default>
+                <label>Jaroslaw Czeladzinski (CISS EMEA)</label>
+            </value>
+            <value>
+                <fullName>Jaroslaw Czeladzinski (DISTI EMEA)</fullName>
+                <default>false</default>
+                <label>Jaroslaw Czeladzinski (DISTI EMEA)</label>
+            </value>
+            <value>
+                <fullName>Jennifer Melo</fullName>
+                <default>false</default>
+                <label>Jennifer Melo</label>
+            </value>
+            <value>
+                <fullName>Jens Meyer</fullName>
+                <default>false</default>
+                <label>Jens Meyer</label>
+            </value>
+            <value>
+                <fullName>Jochem Sihorsch</fullName>
+                <default>false</default>
+                <label>Jochem Sihorsch</label>
+            </value>
+            <value>
+                <fullName>Jochen Wenk</fullName>
+                <default>false</default>
+                <label>Jochen Wenk</label>
+            </value>
+            <value>
+                <fullName>Joerg Hannig</fullName>
+                <default>false</default>
+                <label>Joerg Hannig</label>
+            </value>
+            <value>
+                <fullName>Josep Tienda</fullName>
+                <default>false</default>
+                <label>Josep Tienda</label>
+            </value>
+            <value>
+                <fullName>Josep Tienda (CISS EMEA)</fullName>
+                <default>false</default>
+                <label>Josep Tienda (CISS EMEA)</label>
+            </value>
+            <value>
+                <fullName>Jürgen Zander</fullName>
+                <default>false</default>
+                <label>Jürgen Zander</label>
+            </value>
+            <value>
+                <fullName>Karsten Fischer</fullName>
+                <default>false</default>
+                <label>Karsten Fischer</label>
+            </value>
+            <value>
+                <fullName>Kevin McBride</fullName>
+                <default>false</default>
+                <label>Kevin McBride</label>
+            </value>
+            <value>
+                <fullName>Kevin Stansilas</fullName>
+                <default>false</default>
+                <label>Kevin Stansilas</label>
+            </value>
+            <value>
+                <fullName>Korea House</fullName>
+                <default>false</default>
+                <label>Korea House</label>
+            </value>
+            <value>
+                <fullName>Kotaro Suzuki</fullName>
+                <default>false</default>
+                <label>Kotaro Suzuki</label>
+            </value>
+            <value>
+                <fullName>Kristian Frazier</fullName>
+                <default>false</default>
+                <label>Kristian Frazier</label>
+            </value>
+            <value>
+                <fullName>Kristian Frazier (CISS EMEA)</fullName>
+                <default>false</default>
+                <label>Kristian Frazier (CISS EMEA)</label>
+            </value>
+            <value>
+                <fullName>Kristian Frazier (DISTI)</fullName>
+                <default>false</default>
+                <label>Kristian Frazier (DISTI)</label>
+            </value>
+            <value>
+                <fullName>Latin America House</fullName>
+                <default>false</default>
+                <label>Latin America House</label>
+            </value>
+            <value>
+                <fullName>Laura Owen</fullName>
+                <default>false</default>
+                <label>Laura Owen</label>
+            </value>
+            <value>
+                <fullName>Leo Lio Hao</fullName>
+                <default>false</default>
+                <label>Leo Lio Hao</label>
+            </value>
+            <value>
+                <fullName>Louise Lemin</fullName>
+                <default>false</default>
+                <label>Louise Lemin</label>
+            </value>
+            <value>
+                <fullName>LSA Americas HOUSE</fullName>
+                <default>false</default>
+                <label>LSA Americas HOUSE</label>
+            </value>
+            <value>
+                <fullName>LSA Americas House (Medical)</fullName>
+                <default>false</default>
+                <label>LSA Americas House (Medical)</label>
+            </value>
+            <value>
+                <fullName>LSA EMEA HOUSE</fullName>
+                <default>false</default>
+                <label>LSA EMEA HOUSE</label>
+            </value>
+            <value>
+                <fullName>Mandy Williams</fullName>
+                <default>false</default>
+                <label>Mandy Williams</label>
+            </value>
+            <value>
+                <fullName>Marion Lingenauer</fullName>
+                <default>false</default>
+                <label>Marion Lingenauer</label>
+            </value>
+            <value>
+                <fullName>Mark Dykstra</fullName>
+                <default>false</default>
+                <label>Mark Dykstra</label>
+            </value>
+            <value>
+                <fullName>Martin Adams</fullName>
+                <default>false</default>
+                <label>Martin Adams</label>
+            </value>
+            <value>
+                <fullName>Matthew Harney</fullName>
+                <default>false</default>
+                <label>Matthew Harney</label>
+            </value>
+            <value>
+                <fullName>Matthew Lynam</fullName>
+                <default>false</default>
+                <label>Matthew Lynam</label>
+            </value>
+            <value>
+                <fullName>Matthias Endig</fullName>
+                <default>false</default>
+                <label>Matthias Endig</label>
+            </value>
+            <value>
+                <fullName>Matthias Endig (DISTI EMEA)</fullName>
+                <default>false</default>
+                <label>Matthias Endig (DISTI EMEA)</label>
+            </value>
+            <value>
+                <fullName>Maun Hughes</fullName>
+                <default>false</default>
+                <label>Maun Hughes</label>
+            </value>
+            <value>
+                <fullName>Mei Li</fullName>
+                <default>false</default>
+                <label>Mei Li</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>Military</label>
+            </value>
+            <value>
+                <fullName>Olaf Meyer</fullName>
+                <default>false</default>
+                <label>Olaf Meyer</label>
+            </value>
+            <value>
+                <fullName>Oliver Giesenberg</fullName>
+                <default>false</default>
+                <label>Oliver Giesenberg</label>
+            </value>
+            <value>
+                <fullName>Operations Munich</fullName>
+                <default>false</default>
+                <label>Operations Munich</label>
+            </value>
+            <value>
+                <fullName>Paul Dustain</fullName>
+                <default>false</default>
+                <label>Paul Dustain</label>
+            </value>
+            <value>
+                <fullName>Paul Wright</fullName>
+                <default>false</default>
+                <label>Paul Wright</label>
+            </value>
+            <value>
+                <fullName>Peter DiMaggio</fullName>
+                <default>false</default>
+                <label>Peter DiMaggio</label>
+            </value>
+            <value>
+                <fullName>Peter DiMaggio (DS_FSS)</fullName>
+                <default>false</default>
+                <label>Peter DiMaggio (DS_FSS)</label>
+            </value>
+            <value>
+                <fullName>Peter DiMaggio (HVP)</fullName>
+                <default>false</default>
+                <label>Peter DiMaggio (HVP)</label>
+            </value>
+            <value>
+                <fullName>Peter Jacobs</fullName>
+                <default>false</default>
+                <label>Peter Jacobs</label>
+            </value>
+            <value>
+                <fullName>Peter Jones</fullName>
+                <default>false</default>
+                <label>Peter Jones</label>
+            </value>
+            <value>
+                <fullName>Peter Jones (DA)</fullName>
+                <default>false</default>
+                <label>Peter Jones (DA)</label>
+            </value>
+            <value>
+                <fullName>Peter Niedzielski</fullName>
+                <default>false</default>
+                <label>Peter Niedzielski</label>
+            </value>
+            <value>
+                <fullName>Petra Arnold</fullName>
+                <default>false</default>
+                <label>Petra Arnold</label>
+            </value>
+            <value>
+                <fullName>Philippe Bardelle</fullName>
+                <default>false</default>
+                <label>Philippe Bardelle</label>
+            </value>
+            <value>
+                <fullName>Rex Hsu</fullName>
+                <default>false</default>
+                <label>Rex Hsu</label>
+            </value>
+            <value>
+                <fullName>Richard Jiang</fullName>
+                <default>false</default>
+                <label>Richard Jiang</label>
+            </value>
+            <value>
+                <fullName>Ricky Wong</fullName>
+                <default>false</default>
+                <label>Ricky Wong</label>
+            </value>
+            <value>
+                <fullName>Rob Robinson</fullName>
+                <default>false</default>
+                <label>Rob Robinson</label>
+            </value>
+            <value>
+                <fullName>Rob Trottini</fullName>
+                <default>false</default>
+                <label>Rob Trottini</label>
+            </value>
+            <value>
+                <fullName>Roy Streetz</fullName>
+                <default>false</default>
+                <label>Roy Streetz</label>
+            </value>
+            <value>
+                <fullName>Sabine Schwarze</fullName>
+                <default>false</default>
+                <label>Sabine Schwarze</label>
+            </value>
+            <value>
+                <fullName>Sabine Weber</fullName>
+                <default>false</default>
+                <label>Sabine Weber</label>
+            </value>
+            <value>
+                <fullName>Scot Davidson</fullName>
+                <default>false</default>
+                <label>Scot Davidson</label>
+            </value>
+            <value>
+                <fullName>Scott Elderkin</fullName>
+                <default>false</default>
+                <label>Scott Elderkin</label>
+            </value>
+            <value>
+                <fullName>Scott Elderkin (Semi)</fullName>
+                <default>false</default>
+                <label>Scott Elderkin (Semi)</label>
+            </value>
+            <value>
+                <fullName>SE ASIA HOUSE</fullName>
+                <default>false</default>
+                <label>SE ASIA HOUSE</label>
+            </value>
+            <value>
+                <fullName>Sean Murphy</fullName>
+                <default>false</default>
+                <label>Sean Murphy</label>
+            </value>
+            <value>
+                <fullName>Serena Loh</fullName>
+                <default>false</default>
+                <label>Serena Loh</label>
+            </value>
+            <value>
+                <fullName>Serena Loh (Semi)</fullName>
+                <default>false</default>
+                <label>Serena Loh (Semi)</label>
+            </value>
+            <value>
+                <fullName>Shawn Eaton</fullName>
+                <default>false</default>
+                <label>Shawn Eaton</label>
+            </value>
+            <value>
+                <fullName>Steffi Petropoulos</fullName>
+                <default>false</default>
+                <label>Steffi Petropoulos</label>
+            </value>
+            <value>
+                <fullName>Stephan Fritsch</fullName>
+                <default>false</default>
+                <label>Stephan Fritsch</label>
+            </value>
+            <value>
+                <fullName>Stephan Fritsch (LSA EMEA)</fullName>
+                <default>false</default>
+                <label>Stephan Fritsch (LSA EMEA)</label>
+            </value>
+            <value>
+                <fullName>Stephan Schmall</fullName>
+                <default>false</default>
+                <label>Stephan Schmall</label>
+            </value>
+            <value>
+                <fullName>Stephan Schmall (CISS EMEA)</fullName>
+                <default>false</default>
+                <label>Stephan Schmall (CISS EMEA)</label>
+            </value>
+            <value>
+                <fullName>Steve Bowes</fullName>
+                <default>false</default>
+                <label>Steve Bowes</label>
+            </value>
+            <value>
+                <fullName>Steve Rickard</fullName>
+                <default>false</default>
+                <label>Steve Rickard</label>
+            </value>
+            <value>
+                <fullName>Steven Zhou</fullName>
+                <default>false</default>
+                <label>Steven Zhou</label>
+            </value>
+            <value>
+                <fullName>Tanja Bizjak</fullName>
+                <default>false</default>
+                <label>Tanja Bizjak</label>
+            </value>
+            <value>
+                <fullName>Thomas Grahmann</fullName>
+                <default>false</default>
+                <label>Thomas Grahmann</label>
+            </value>
+            <value>
+                <fullName>Thomas Williams</fullName>
+                <default>false</default>
+                <label>Thomas Williams</label>
+            </value>
+            <value>
+                <fullName>Thorsten Hirsch</fullName>
+                <default>false</default>
+                <label>Thorsten Hirsch</label>
+            </value>
+            <value>
+                <fullName>Thorsten Hirsch (Ind Cur)</fullName>
+                <default>false</default>
+                <label>Thorsten Hirsch (Ind Cur)</label>
+            </value>
+            <value>
+                <fullName>Todd Brainard</fullName>
+                <default>false</default>
+                <label>Todd Brainard</label>
+            </value>
+            <value>
+                <fullName>Tom Ridino</fullName>
+                <default>false</default>
+                <label>Tom Ridino</label>
+            </value>
+            <value>
+                <fullName>Tucker Pearson</fullName>
+                <default>false</default>
+                <label>Tucker Pearson</label>
+            </value>
+            <value>
+                <fullName>Udo Kirchner</fullName>
+                <default>false</default>
+                <label>Udo Kirchner</label>
+            </value>
+            <value>
+                <fullName>Unknown Aerospace</fullName>
+                <default>false</default>
+                <label>Unknown Aerospace</label>
+            </value>
+            <value>
+                <fullName>Unknown Industrial Sensors</fullName>
+                <default>false</default>
+                <label>Unknown Industrial Sensors</label>
+            </value>
+            <value>
+                <fullName>Unknown Lighting</fullName>
+                <default>false</default>
+                <label>Unknown Lighting</label>
+            </value>
+            <value>
+                <fullName>Unknown Salesperson</fullName>
+                <default>false</default>
+                <label>Unknown Salesperson</label>
+            </value>
+            <value>
+                <fullName>Uwe Helwig</fullName>
+                <default>false</default>
+                <label>Uwe Helwig</label>
+            </value>
+            <value>
+                <fullName>Uwe Helwig (CISS EMEA)</fullName>
+                <default>false</default>
+                <label>Uwe Helwig (CISS EMEA)</label>
+            </value>
+            <value>
+                <fullName>Uwe Helwig(Analytical)</fullName>
+                <default>false</default>
+                <label>Uwe Helwig(Analytical)</label>
+            </value>
+            <value>
+                <fullName>Wayne Jones</fullName>
+                <default>false</default>
+                <label>Wayne Jones</label>
+            </value>
+            <value>
+                <fullName>Wayne Stoner</fullName>
+                <default>false</default>
+                <label>Wayne Stoner</label>
+            </value>
+            <value>
+                <fullName>Werner Hartmann</fullName>
+                <default>false</default>
+                <label>Werner Hartmann</label>
+            </value>
+            <value>
+                <fullName>Yacine Talji</fullName>
+                <default>false</default>
+                <label>Yacine Talji</label>
+            </value>
+            <value>
+                <fullName>Yacine Talji (CISS EMEA)</fullName>
+                <default>false</default>
+                <label>Yacine Talji (CISS EMEA)</label>
+            </value>
+            <value>
+                <fullName>Yvonne Reinl</fullName>
+                <default>false</default>
+                <label>Yvonne Reinl</label>
+            </value>
+            <value>
+                <fullName>Yvonne Reinl (CISS EMEA)</fullName>
+                <default>false</default>
+                <label>Yvonne Reinl (CISS EMEA)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

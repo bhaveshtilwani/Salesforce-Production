@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>#INC-269908 Salesforce: Creation of ZBIL Account</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>NOWFormula</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <interviewLabel>Account - Auto Sync ZBIL Account Group {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account - Auto Sync ZBIL Account Group</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_ZBIL_Account</name>
+        <label>Update ZBIL Account</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Account_Approval_Status__c</field>
+            <value>
+                <stringValue>Approved</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>AutomationBypassDateTime__c</field>
+            <value>
+                <elementReference>NOWFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SFDC_Integration_Status__c</field>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_ZBIL_Account</targetReference>
+        </connector>
+        <filterFormula>AND(
+{!$Record.LastModifiedBy.Profile.Name} = &apos;Central Finance&apos;,
+ISPICKVAL({!$Record.Account_Group__c}, &apos;Billing email address - ZBIL&apos;),
+NOT(ISPICKVAL({!$Record.SFDC_Integration_Status__c}, &apos;In Progress&apos;)),
+NOT(ISPICKVAL({!$Record.SFDC_Integration_Status__c}, &apos;In Process&apos;))
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <triggerOrder>200</triggerOrder>
+</Flow>

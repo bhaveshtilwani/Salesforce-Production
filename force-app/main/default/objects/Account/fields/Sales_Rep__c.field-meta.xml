@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Rep__c</fullName>
+    <label>Sales Rep</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A01-William Ahern</fullName>
+                <default>true</default>
+                <label>A01-William Ahern</label>
+            </value>
+            <value>
+                <fullName>A02-William Ahern</fullName>
+                <default>false</default>
+                <label>A02-William Ahern</label>
+            </value>
+            <value>
+                <fullName>A03-Nate Kemp</fullName>
+                <default>false</default>
+                <label>A03-Nate Kemp</label>
+            </value>
+            <value>
+                <fullName>A04-Aaron Berry</fullName>
+                <default>false</default>
+                <label>A04-Aaron Berry</label>
+            </value>
+            <value>
+                <fullName>A05 - Klibansky, Stephen J.</fullName>
+                <default>false</default>
+                <label>A05 - Klibansky, Stephen J.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

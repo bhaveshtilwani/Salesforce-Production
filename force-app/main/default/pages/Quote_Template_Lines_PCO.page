@@ -1,0 +1,78 @@
+<apex:page showHeader="false" sidebar="false" cache="false" contentType="text/xml" controller="Quote_Template_Lines_Controller" >
+    <block font-size="9px"  margin-top="1mm">
+        <apex:repeat var="site" value="{!sites}">
+            <block>
+                <block font-size="9px"  font-weight="bold">
+                    {!HTMLENCODE(siteById[site].Legal_Company_Name__c)}
+                </block>    
+                <block font-size="9px" >
+                    {!HTMLENCODE(siteById[site].Site_Address_Line_1__c)}
+                </block> 
+                <block font-size="9px" >
+                    {!HTMLENCODE(siteById[site].Site_City__c)}, {!HTMLENCODE(siteById[site].Site_State_Province__c)} {!HTMLENCODE(siteById[site].Site_Zip_Postal_Code__c)}
+                </block>
+                <block font-size="9px" >
+                    {!HTMLENCODE(siteById[site].Site_Country__c)}
+                </block>  
+                <block font-size="9px" >
+                    &nbsp;    
+                </block> 
+                <block font-size="9px" >
+                    <inline text-decoration="underline" font-weight="bold">Order Instructions:</inline> {!HTMLENCODE(siteById[site].Order_Instructions__c)}
+                </block>   
+                <apex:outputPanel layout="none" rendered="{!NOT(q.Incoterm_Override__c)}"> 
+                    <block font-size="9px" >
+                        <inline text-decoration="underline" font-weight="bold">IncoTerms:</inline> {!HTMLENCODE(siteById[site].Shipping_Terms__c)}, {!HTMLENCODE(siteById[site].Shipping_Terms_2__c)} 
+                    </block>
+                </apex:outputPanel>
+                <apex:outputPanel layout="none" rendered="{!q.Incoterm_Override__c}">
+                     <block font-size="9px" >
+                        <inline text-decoration="underline" font-weight="bold">IncoTerms:</inline> {!q.Override_IncoTerm_Name__c}, {!HTMLENCODE(siteById[site].Shipping_Terms_2__c)}  
+                     </block>   
+                </apex:outputPanel>
+                <apex:outputPanel layout="none" rendered="{!NOT(q.Credit_Terms_Override__c)}"> 
+                    <block font-size="9px" >
+                        <inline text-decoration="underline" font-weight="bold">Credit Terms:</inline> {!HTMLENCODE(siteById[site].Payment_Details__c)} 
+                    </block>   
+                </apex:outputPanel>
+                <apex:outputPanel layout="none" rendered="{!q.Credit_Terms_Override__c}"> 
+                    <block font-size="9px" >
+                        <inline text-decoration="underline" font-weight="bold">Credit Terms:</inline> {!q.Override_Credit_Terms_Name__c} 
+                    </block>   
+                </apex:outputPanel>
+                </block>
+                <block font-size="9px" margin-top="2mm" text-align="right" font-weight="bold">
+                    Total: {!if(q.CurrencyIsoCode == 'USD', '$', q.CurrencyIsoCode)}
+                    <apex:outputText value=" {0, number, ###,##0.00}" >
+                        <apex:param value="{!netTotalById[site]}" />
+                    </apex:outputText>
+                </block>   
+                <apex:outputPanel layout="none" rendered="{! vatShouldBeDisplayedforQuote && siteHaveVat[site] == true}">
+                    <block font-size="9px" text-align="right" font-weight="bold">
+                        {!vatRateById[site]}% VAT: {!if(q.CurrencyIsoCode == 'USD', '$', q.CurrencyIsoCode)}
+                        <apex:outputText value=" {0, number, ###,##0.00}" >
+                            <apex:param value="{!vatTotalById[site]}" />
+                        </apex:outputText>
+                    </block>
+                    <block font-size="9px" text-align="right" font-weight="bold">
+                        Total with VAT: {!if(q.CurrencyIsoCode == 'USD', '$', q.CurrencyIsoCode)}
+                        <apex:outputText value=" {0, number, ###,##0.00}" >
+                            <apex:param value="{!vatTotalById[site] + netTotalById[site]}" />
+                        </apex:outputText>
+                    </block>
+                </apex:outputPanel> 
+                <block font-size="6px" text-align="left" border-after-style="solid" border-after-width="2px" border-after-color="#000000">
+                    {!HTMLENCODE(siteById[site].Site_Information__c)}
+                </block>
+  <block font-size="8px"  text-decoration="underline" font-weight="bold">
+                    Legal Terms:
+                </block> 
+                <block font-size="6px" >
+                    {!siteById[site].Legal_Verbiage__c}
+                            </block> 
+            <apex:outputPanel layout="none" rendered="{!numberBySite[site] < sitesSize}">
+                <block break-after="page" />
+            </apex:outputPanel>                                
+        </apex:repeat>          
+    </block>
+</apex:page>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Anti-Laser </fullName>
+        <default>false</default>
+        <label>Anti-Laser </label>
+    </customValue>
+    <customValue>
+        <fullName>Automated Test Equipment</fullName>
+        <default>false</default>
+        <label>Automated Test Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Avionics</fullName>
+        <default>false</default>
+        <label>Avionics</label>
+    </customValue>
+    <customValue>
+        <fullName>Ballistic Missile</fullName>
+        <default>false</default>
+        <label>Ballistic Missile</label>
+    </customValue>
+    <customValue>
+        <fullName>Beam Rider (2x)</fullName>
+        <default>false</default>
+        <label>Beam Rider (2x)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bomb</fullName>
+        <default>false</default>
+        <label>Bomb</label>
+    </customValue>
+    <customValue>
+        <fullName>Cabin Systems</fullName>
+        <default>false</default>
+        <label>Cabin Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>CAD/PAD</fullName>
+        <default>false</default>
+        <label>CAD/PAD</label>
+    </customValue>
+    <customValue>
+        <fullName>Command and Control Systems</fullName>
+        <default>false</default>
+        <label>Command and Control Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Countermeasure</fullName>
+        <default>false</default>
+        <label>Countermeasure</label>
+    </customValue>
+    <customValue>
+        <fullName>Cruise Missile</fullName>
+        <default>false</default>
+        <label>Cruise Missile</label>
+    </customValue>
+    <customValue>
+        <fullName>Depot</fullName>
+        <default>false</default>
+        <label>Depot</label>
+    </customValue>
+    <customValue>
+        <fullName>Display</fullName>
+        <default>false</default>
+        <label>Display</label>
+    </customValue>
+    <customValue>
+        <fullName>Driver Vision Enhancers</fullName>
+        <default>false</default>
+        <label>Driver Vision Enhancers</label>
+    </customValue>
+    <customValue>
+        <fullName>Electronic Warfare</fullName>
+        <default>false</default>
+        <label>Electronic Warfare</label>
+    </customValue>
+    <customValue>
+        <fullName>GPS</fullName>
+        <default>false</default>
+        <label>GPS</label>
+    </customValue>
+    <customValue>
+        <fullName>Ground Vehicle</fullName>
+        <default>false</default>
+        <label>Ground Vehicle</label>
+    </customValue>
+    <customValue>
+        <fullName>Heads Up Display</fullName>
+        <default>false</default>
+        <label>Heads Up Display</label>
+    </customValue>
+    <customValue>
+        <fullName>Helmet Mounted Display</fullName>
+        <default>false</default>
+        <label>Helmet Mounted Display</label>
+    </customValue>
+    <customValue>
+        <fullName>IFF Transponder</fullName>
+        <default>false</default>
+        <label>IFF Transponder</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser Range Finding</fullName>
+        <default>false</default>
+        <label>Laser Range Finding</label>
+    </customValue>
+    <customValue>
+        <fullName>Laser Warning</fullName>
+        <default>false</default>
+        <label>Laser Warning</label>
+    </customValue>
+    <customValue>
+        <fullName>LEP</fullName>
+        <default>false</default>
+        <label>LEP</label>
+    </customValue>
+    <customValue>
+        <fullName>LIDAR</fullName>
+        <default>false</default>
+        <label>LIDAR</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Therapeutic</fullName>
+        <default>false</default>
+        <label>Medical Therapeutic</label>
+    </customValue>
+    <customValue>
+        <fullName>Military</fullName>
+        <default>false</default>
+        <label>Military</label>
+    </customValue>
+    <customValue>
+        <fullName>Miscellaneous</fullName>
+        <default>false</default>
+        <label>Miscellaneous</label>
+    </customValue>
+    <customValue>
+        <fullName>Missile Defense System</fullName>
+        <default>false</default>
+        <label>Missile Defense System</label>
+    </customValue>
+    <customValue>
+        <fullName>Missile Warning</fullName>
+        <default>false</default>
+        <label>Missile Warning</label>
+    </customValue>
+    <customValue>
+        <fullName>Missile Warning &amp; Targeting</fullName>
+        <default>false</default>
+        <label>Missile Warning &amp; Targeting</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi-function sonar</fullName>
+        <default>false</default>
+        <label>Multi-function sonar</label>
+    </customValue>
+    <customValue>
+        <fullName>MWS&amp;T</fullName>
+        <default>false</default>
+        <label>MWS&amp;T</label>
+    </customValue>
+    <customValue>
+        <fullName>Navigation</fullName>
+        <default>false</default>
+        <label>Navigation</label>
+    </customValue>
+    <customValue>
+        <fullName>Night vision</fullName>
+        <default>false</default>
+        <label>Night vision</label>
+    </customValue>
+    <customValue>
+        <fullName>PGM</fullName>
+        <default>false</default>
+        <label>PGM</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Grid Crowbar</fullName>
+        <default>false</default>
+        <label>Power Grid Crowbar</label>
+    </customValue>
+    <customValue>
+        <fullName>Precision Guided Munition</fullName>
+        <default>false</default>
+        <label>Precision Guided Munition</label>
+    </customValue>
+    <customValue>
+        <fullName>Proximity Sensing</fullName>
+        <default>false</default>
+        <label>Proximity Sensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Radar</fullName>
+        <default>false</default>
+        <label>Radar</label>
+    </customValue>
+    <customValue>
+        <fullName>Research</fullName>
+        <default>false</default>
+        <label>Research</label>
+    </customValue>
+    <customValue>
+        <fullName>Ring Laser Gyros (RLGs)</fullName>
+        <default>false</default>
+        <label>Ring Laser Gyros (RLGs)</label>
+    </customValue>
+    <customValue>
+        <fullName>SAL Seeker for 2.75&quot; rocket</fullName>
+        <default>false</default>
+        <label>SAL Seeker for 2.75&quot; rocket</label>
+    </customValue>
+    <customValue>
+        <fullName>SatComm/  Payload</fullName>
+        <default>false</default>
+        <label>SatComm/  Payload</label>
+    </customValue>
+    <customValue>
+        <fullName>Scientific &amp; Earth Observation</fullName>
+        <default>false</default>
+        <label>Scientific &amp; Earth Observation</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipboard Electronics</fullName>
+        <default>false</default>
+        <label>Shipboard Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Simulation</fullName>
+        <default>false</default>
+        <label>Simulation</label>
+    </customValue>
+    <customValue>
+        <fullName>Sonar</fullName>
+        <default>false</default>
+        <label>Sonar</label>
+    </customValue>
+    <customValue>
+        <fullName>STA</fullName>
+        <default>false</default>
+        <label>STA</label>
+    </customValue>
+    <customValue>
+        <fullName>Stand Alone</fullName>
+        <default>false</default>
+        <label>Stand Alone</label>
+    </customValue>
+    <customValue>
+        <fullName>Surveillance</fullName>
+        <default>false</default>
+        <label>Surveillance</label>
+    </customValue>
+    <customValue>
+        <fullName>Tactical Communications</fullName>
+        <default>false</default>
+        <label>Tactical Communications</label>
+    </customValue>
+    <customValue>
+        <fullName>Tactical Missile</fullName>
+        <default>false</default>
+        <label>Tactical Missile</label>
+    </customValue>
+    <customValue>
+        <fullName>Tactical Weapon</fullName>
+        <default>false</default>
+        <label>Tactical Weapon</label>
+    </customValue>
+    <customValue>
+        <fullName>Tanks</fullName>
+        <default>false</default>
+        <label>Tanks</label>
+    </customValue>
+    <customValue>
+        <fullName>Target Acquisition</fullName>
+        <default>false</default>
+        <label>Target Acquisition</label>
+    </customValue>
+    <customValue>
+        <fullName>Telecom</fullName>
+        <default>false</default>
+        <label>Telecom</label>
+    </customValue>
+    <customValue>
+        <fullName>Unidentified</fullName>
+        <default>false</default>
+        <label>Unidentified</label>
+    </customValue>
+    <customValue>
+        <fullName>Vetronics</fullName>
+        <default>false</default>
+        <label>Vetronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Weapon Sights</fullName>
+        <default>false</default>
+        <label>Weapon Sights</label>
+    </customValue>
+    <masterLabel>Sub-Application</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

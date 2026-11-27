@@ -1,0 +1,50 @@
+<apex:page standardController="Account" extensions="OverrideSAVE">
+
+<apex:form >
+
+  <apex:pageBlock title="CFIN Completion and Confirmation">
+
+        <apex:pageBlockSection title="Confirm" columns="1">
+            All details below are correct and confirmed.
+      <apex:outputField value="{! Account.BP_Action__c }"/>       
+      <apex:inputCheckbox value="{! Account.CFIN_Completed_and_Confirmed__c}"/>
+    </apex:pageBlockSection>
+    
+    <apex:pageBlockSection title="DETAILS" columns="2">
+      <apex:outputField value="{! Account.CFIN_Company_Code__c  }"/>
+      <apex:outputField value="{! Account.UKMPB_CMS_CHECK_RULE__c}"/>
+      <apex:outputField value="{! Account.KNB1_XZVER__c}"/>
+      <apex:outputField value="{! Account.UKMBP_CMS_SGM_CREDIT_LIMIT__c}"/>
+      <apex:outputField value="{! Account.Payment_Term__c}"/>
+      <apex:outputField value="{! Account.UKMBP_CMS_SGM_CREDIT_SGMNT__c}"/>
+      <apex:outputField value="{! Account.KNB5_MANSP__c}"/>
+      <apex:outputField value="{! Account.UKMBP_CMS_SGM_LIMIT_VALID_DATE__c}"/>
+      <apex:outputField value="{! Account.KNB5_MAHNA__c}"/>
+      <apex:outputField value="{! Account.KNB1_ZUAWA__c}"/>
+      <apex:outputField value="{! Account.KNB1_FDGRV__c}"/>
+      <apex:outputField value="{! Account.Source_Company_Code__c}"/>
+      <apex:outputField value="{! Account.Account_Group__c}"/>
+      <apex:outputField value="{! Account.BP_GROUP__c}"/>
+      <apex:outputField value="{! Account.CFIN_Reconciliation_Account__c}"/>
+      <apex:outputField value="{! Account.BP_ROLE__c}"/>
+    </apex:pageBlockSection>
+    
+       <apex:pageBlockSection title="ERP SITE (FINANCE)" columns="2">
+      <apex:outputField value="{! Account.Account_Group__c  }"/>
+      <apex:outputField value="{! Account.Dunning_Clerk__c}"/>
+      <apex:outputField value="{! Account.ERP_Site__c}"/>
+      <apex:outputField value="{! Account.Dunning_Procedure__c}"/>
+      <apex:outputField value="{! Account.PaymentTerm__c}"/>
+      <apex:outputField value="{! Account.Dunning_Block__c}"/>
+      <apex:outputField value="{! Account.Sort_Key__c}"/>
+    </apex:pageBlockSection>
+        
+    <apex:pageBlockButtons location="bottom">
+      <apex:commandButton action="{!dosave}" value="Complete and Confirmed"/>
+    </apex:pageBlockButtons>
+    
+  </apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

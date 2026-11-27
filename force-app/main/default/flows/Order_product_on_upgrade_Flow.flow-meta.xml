@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Indicates whether the bypass mechanism is active for this process. When enabled, certain validations or automation rules are skipped to allow exceptional processing or troubleshooting scenarios</description>
+        <name>If_Bypass_Enabled</name>
+        <label>If Bypass Enabled?</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <defaultConnector>
+            <targetReference>When_quantity_and_reason_code_type</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Enabled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Bypass_Record.Bypass_Flow_c__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>If Enabled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Run when Quantity = 0 and Reason Code is not null.</description>
+        <name>When_quantity_and_reason_code_type</name>
+        <label>When quantity and reason code type</label>
+        <locationX>374</locationX>
+        <locationY>503</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>if_yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Quantity</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Is_Reason_Code_Not_Blank</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>update_rejection_code</targetReference>
+            </connector>
+            <label>if yes</label>
+        </rules>
+    </decisions>
+    <description>When Order Item Quantity is &quot;ZERO&quot; and &apos;Reason Code&apos; is &apos;not null&apos;, update the Order Product’s &quot;Reason for Rejection&quot; with the related &apos;Rejection Code&apos;.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>Is_Reason_Code_Not_Blank</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT(ISBLANK({!$Record.Order.Excelitas_Site__r.Reason_Code__c}))</expression>
+    </formulas>
+    <interviewLabel>Order product on upgrade {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Order product on upgrade</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>This record determines whether bypassing standard validations or logic is permitted.</description>
+        <name>Get_Bypass_Record</name>
+        <label>Get Bypass Record</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>If_Bypass_Enabled</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Order_Product_Bypass</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Flow_Bypass__mdt</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Set Reason for Rejection to related Reason Code when Quantity = 0 and Reason Code is not null.</description>
+        <name>update_rejection_code</name>
+        <label>update rejection code</label>
+        <locationX>242</locationX>
+        <locationY>611</locationY>
+        <inputAssignments>
+            <field>Reason_For_Rejection__c</field>
+            <value>
+                <elementReference>$Record.Order.Excelitas_Site__r.Reason_Code__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Bypass_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Site__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>ESG L&amp;D</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Site__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>ESG Optics</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Site__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Shenzhen</stringValue>
+            </value>
+        </filters>
+        <object>OrderItem</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

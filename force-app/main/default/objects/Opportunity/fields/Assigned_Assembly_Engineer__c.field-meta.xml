@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Assembly_Engineer__c</fullName>
+    <description>Vertiba 4/25/14 - requested by REO to match existing functionality in RFQ Tracking sheet</description>
+    <label>Assigned Assembly Engineer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chris Moler</fullName>
+                <default>false</default>
+                <label>Chris Moler</label>
+            </value>
+            <value>
+                <fullName>Corbett Crook</fullName>
+                <default>false</default>
+                <label>Corbett Crook</label>
+            </value>
+            <value>
+                <fullName>Chirs Moler</fullName>
+                <default>false</default>
+                <label>Chirs Moler</label>
+            </value>
+            <value>
+                <fullName>Drew Hunt</fullName>
+                <default>false</default>
+                <label>Drew Hunt</label>
+            </value>
+            <value>
+                <fullName>Matt Lachapelle</fullName>
+                <default>false</default>
+                <label>Matt Lachapelle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

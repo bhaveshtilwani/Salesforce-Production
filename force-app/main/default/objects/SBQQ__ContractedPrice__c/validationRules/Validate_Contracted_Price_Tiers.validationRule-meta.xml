@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Contracted_Price_Tiers</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    /* Tier 1 incomplete */
+    AND(
+        OR(
+            NOT(ISBLANK(Tier_1_Minimum_Qty__c)),
+            NOT(ISBLANK(Tier_1_Maximum_Qty__c)),
+            NOT(ISBLANK(Tier_1_Unit_Price__c))
+        ),
+        OR(
+            ISBLANK(Tier_1_Minimum_Qty__c),
+            ISBLANK(Tier_1_Maximum_Qty__c),
+            ISBLANK(Tier_1_Unit_Price__c)
+        )
+    ),
+
+    /* Tier 2 incomplete */
+    AND(
+        OR(
+            NOT(ISBLANK(Tier_2_Minimum_Qty__c)),
+            NOT(ISBLANK(Tier_2_Maximum_Qty__c)),
+            NOT(ISBLANK(Tier_2_Unit_Price__c))
+        ),
+        OR(
+            ISBLANK(Tier_2_Minimum_Qty__c),
+            ISBLANK(Tier_2_Maximum_Qty__c),
+            ISBLANK(Tier_2_Unit_Price__c)
+        )
+    ),
+
+    /* Tier 3 incomplete */
+    AND(
+        OR(
+            NOT(ISBLANK(Tier_3_Minimum_Qty__c)),
+            NOT(ISBLANK(Tier_3_Maximum_Qty__c)),
+            NOT(ISBLANK(Tier_3_Unit_Price__c))
+        ),
+        OR(
+            ISBLANK(Tier_3_Minimum_Qty__c),
+            ISBLANK(Tier_3_Maximum_Qty__c),
+            ISBLANK(Tier_3_Unit_Price__c)
+        )
+    ),
+
+    /* Tier 4 incomplete */
+    AND(
+        OR(
+            NOT(ISBLANK(Tier_4_Minimum_Qty__c)),
+            NOT(ISBLANK(Tier_4_Maximum_Qty__c)),
+            NOT(ISBLANK(Tier_4_Unit_Price__c))
+        ),
+        OR(
+            ISBLANK(Tier_4_Minimum_Qty__c),
+            ISBLANK(Tier_4_Maximum_Qty__c),
+            ISBLANK(Tier_4_Unit_Price__c)
+        )
+    ),
+
+    /* Invalid ranges */
+    AND(
+        NOT(ISBLANK(Tier_1_Minimum_Qty__c)),
+        OR(
+            Tier_1_Minimum_Qty__c &lt;= 0,
+            Tier_1_Minimum_Qty__c &gt; Tier_1_Maximum_Qty__c
+        )
+    ),
+    AND(
+        NOT(ISBLANK(Tier_2_Minimum_Qty__c)),
+        OR(
+            Tier_2_Minimum_Qty__c &lt;= 0,
+            Tier_2_Minimum_Qty__c &gt; Tier_2_Maximum_Qty__c
+        )
+    ),
+    AND(
+        NOT(ISBLANK(Tier_3_Minimum_Qty__c)),
+        OR(
+            Tier_3_Minimum_Qty__c &lt;= 0,
+            Tier_3_Minimum_Qty__c &gt; Tier_3_Maximum_Qty__c
+        )
+    ),
+    AND(
+        NOT(ISBLANK(Tier_4_Minimum_Qty__c)),
+        OR(
+            Tier_4_Minimum_Qty__c &lt;= 0,
+            Tier_4_Minimum_Qty__c &gt; Tier_4_Maximum_Qty__c
+        )
+    ),
+
+    /* Gaps or overlaps between configured tiers */
+    AND(
+        NOT(ISBLANK(Tier_1_Minimum_Qty__c)),
+        NOT(ISBLANK(Tier_2_Minimum_Qty__c)),
+        Tier_2_Minimum_Qty__c &lt;&gt; Tier_1_Maximum_Qty__c + 1
+    ),
+    AND(
+        NOT(ISBLANK(Tier_1_Minimum_Qty__c)),
+        ISBLANK(Tier_2_Minimum_Qty__c),
+        NOT(ISBLANK(Tier_3_Minimum_Qty__c)),
+        Tier_3_Minimum_Qty__c &lt;&gt; Tier_1_Maximum_Qty__c + 1
+    ),
+    AND(
+        NOT(ISBLANK(Tier_1_Minimum_Qty__c)),
+        ISBLANK(Tier_2_Minimum_Qty__c),
+        ISBLANK(Tier_3_Minimum_Qty__c),
+        NOT(ISBLANK(Tier_4_Minimum_Qty__c)),
+        Tier_4_Minimum_Qty__c &lt;&gt; Tier_1_Maximum_Qty__c + 1
+    ),
+    AND(
+        NOT(ISBLANK(Tier_2_Minimum_Qty__c)),
+        NOT(ISBLANK(Tier_3_Minimum_Qty__c)),
+        Tier_3_Minimum_Qty__c &lt;&gt; Tier_2_Maximum_Qty__c + 1
+    ),
+    AND(
+        NOT(ISBLANK(Tier_2_Minimum_Qty__c)),
+        ISBLANK(Tier_3_Minimum_Qty__c),
+        NOT(ISBLANK(Tier_4_Minimum_Qty__c)),
+        Tier_4_Minimum_Qty__c &lt;&gt; Tier_2_Maximum_Qty__c + 1
+    ),
+    AND(
+        NOT(ISBLANK(Tier_3_Minimum_Qty__c)),
+        NOT(ISBLANK(Tier_4_Minimum_Qty__c)),
+        Tier_4_Minimum_Qty__c &lt;&gt; Tier_3_Maximum_Qty__c + 1
+    )
+)</errorConditionFormula>
+    <errorMessage>Please enter valid quantity ranges for all four tiers. Each tier must have a minimum and maximum quantity, and the ranges must be consecutive without overlaps or gaps.</errorMessage>
+</ValidationRule>

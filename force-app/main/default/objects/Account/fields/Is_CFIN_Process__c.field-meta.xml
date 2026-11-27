@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_CFIN_Process__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+TEXT(Account_Group__c) = &apos;Bill To - W004&apos;  || 
+TEXT(Account_Group__c) = &apos;Bill To - 0001&apos;  || 
+TEXT(Account_Group__c) = &apos;Customer int number assgnmnt - DEBI&apos;  ||
+TEXT(Account_Group__c) = &apos;Payer/Bill-to Entry - 0003&apos;  ||
+TEXT(Account_Group__c) = &apos;Bill To - H004&apos;  ||
+TEXT(Account_Group__c) = &apos;Sold to - W001&apos;  ||
+TEXT(Account_Group__c) = &apos;ZT and ZM Partners - Z001&apos;  ||
+TEXT(Account_Group__c) = &apos;Sold to - H001&apos;   || 
+TEXT(Account_Group__c) = &apos;QioDebitoren Europäische Union - DEEU&apos;   ||
+TEXT(Account_Group__c) = &apos;Sold-to party - ZCUS&apos;   ||
+TEXT(Account_Group__c) = &apos;Intra-Div &amp; Inter-Co. - ZINT&apos;   ||
+TEXT(Account_Group__c) = &apos;Sold-to party (OPSL) - 0001&apos;   ||
+TEXT(Account_Group__c) = &apos;Customer-Sold To Role&apos;   ||
+TEXT(Account_Group__c) = &apos;Customer-Bill To&apos; ||
+TEXT(Account_Group__c) = &apos;Bill To - QAD&apos; ||		
+RecordType.Name = &apos;Ax Billerica&apos;
+, 1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is CFIN Process</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Assigned_Quality_cannot_be_blank</fullName>
+    <active>false</active>
+    <description>The Assigned Quality/Service Contact field is mandatory when the Case Status is set to &apos;With Quality</description>
+    <errorConditionFormula>AND(
+Site__c = &quot;Toronto&quot;,
+ISPICKVAL( Status__c , &quot;With Quality&quot;),
+ISBLANK( Case__r.Assigned_Quality_Service_Contact__c )
+)</errorConditionFormula>
+    <errorMessage>The Assigned Quality/Service Contact field is required.</errorMessage>
+</ValidationRule>

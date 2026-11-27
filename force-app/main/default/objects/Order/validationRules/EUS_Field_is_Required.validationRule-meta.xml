@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EUS_Field_is_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Site__c, &quot;QSG&quot;),(ISPICKVAL(Usage__c, &quot;(DEF) Defence&quot;))
+&amp;&amp;
+ISBLANK( EUS__c))</errorConditionFormula>
+    <errorDisplayField>EUS__c</errorDisplayField>
+    <errorMessage>EUS # Field is Required</errorMessage>
+</ValidationRule>

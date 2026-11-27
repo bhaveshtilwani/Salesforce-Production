@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Noblelight_Profit_Center__c</fullName>
+    <label>Noblelight Profit Centers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HCA Photonics</fullName>
+                <default>false</default>
+                <label>HCA Photonics</label>
+            </value>
+            <value>
+                <fullName>Heraeus not assigned</fullName>
+                <default>false</default>
+                <label>Heraeus not assigned</label>
+            </value>
+            <value>
+                <fullName>HNG E.IR</fullName>
+                <default>false</default>
+                <label>HNG E.IR</label>
+            </value>
+            <value>
+                <fullName>HNG ED</fullName>
+                <default>false</default>
+                <label>HNG ED</label>
+            </value>
+            <value>
+                <fullName>HNG FLASH</fullName>
+                <default>false</default>
+                <label>HNG FLASH</label>
+            </value>
+            <value>
+                <fullName>HNG G.IR</fullName>
+                <default>false</default>
+                <label>HNG G.IR</label>
+            </value>
+            <value>
+                <fullName>HNG LED</fullName>
+                <default>false</default>
+                <label>HNG LED</label>
+            </value>
+            <value>
+                <fullName>HNG MW</fullName>
+                <default>false</default>
+                <label>HNG MW</label>
+            </value>
+            <value>
+                <fullName>HNG OPT</fullName>
+                <default>false</default>
+                <label>HNG OPT</label>
+            </value>
+            <value>
+                <fullName>HNG TS</fullName>
+                <default>false</default>
+                <label>HNG TS</label>
+            </value>
+            <value>
+                <fullName>HNG ZZ-HNG Other</fullName>
+                <default>false</default>
+                <label>HNG ZZ-HNG Other</label>
+            </value>
+            <value>
+                <fullName>Soluva</fullName>
+                <default>false</default>
+                <label>Soluva</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

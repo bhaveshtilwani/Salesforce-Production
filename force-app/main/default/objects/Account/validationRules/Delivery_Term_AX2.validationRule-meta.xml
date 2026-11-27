@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Term_AX2</fullName>
+    <active>true</active>
+    <description>Carrier Account Number is only required for DAP-C and EXW-C.</description>
+    <errorConditionFormula>AND(
+NOT(OR( Delivery_Term__r.Id__c = &quot;DAP-C&quot;, Delivery_Term__r.Id__c = &quot;EXW-C&quot;)), NOT(ISBLANK(Carrier_account_number__c )))</errorConditionFormula>
+    <errorDisplayField>Carrier_account_number__c</errorDisplayField>
+    <errorMessage>Carrier Account Number is only required for DAP-C and EXW-C.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit__c</fullName>
+    <label>Business Unit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Product_Division__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>IR Sensing</fullName>
+                <default>false</default>
+                <label>IR Sensing</label>
+            </value>
+            <value>
+                <fullName>Photon Detection</fullName>
+                <default>false</default>
+                <label>Photon Detection</label>
+            </value>
+            <value>
+                <fullName>Customized Systems</fullName>
+                <default>false</default>
+                <label>Customized Systems</label>
+            </value>
+            <value>
+                <fullName>Disinfection</fullName>
+                <default>false</default>
+                <label>Disinfection</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing</fullName>
+                <default>false</default>
+                <label>Industrial Curing</label>
+            </value>
+            <value>
+                <fullName>Thermal Processing</fullName>
+                <default>false</default>
+                <label>Thermal Processing</label>
+            </value>
+            <value>
+                <fullName>Precision Manufacturing</fullName>
+                <default>false</default>
+                <label>Precision Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Semiconductor Equipment</fullName>
+                <default>false</default>
+                <label>Semiconductor Equipment</label>
+            </value>
+            <value>
+                <fullName>Holistic Lithography</fullName>
+                <default>false</default>
+                <label>Holistic Lithography</label>
+            </value>
+            <value>
+                <fullName>Metrology &amp; Inspection</fullName>
+                <default>false</default>
+                <label>Metrology &amp; Inspection</label>
+            </value>
+            <value>
+                <fullName>Imaging &amp; Laser Systems</fullName>
+                <default>false</default>
+                <label>Imaging &amp; Laser Systems</label>
+            </value>
+            <value>
+                <fullName>HNG</fullName>
+                <default>true</default>
+                <label>HNG</label>
+            </value>
+            <value>
+                <fullName>Plasma Light Sources</fullName>
+                <default>false</default>
+                <label>Plasma Light Sources</label>
+            </value>
+            <value>
+                <fullName>Solutions</fullName>
+                <default>false</default>
+                <label>Solutions</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Advanced Industrial Sensing</controllingFieldValue>
+            <valueName>IR Sensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Industrial Sensing</controllingFieldValue>
+            <valueName>Photon Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems</controllingFieldValue>
+            <valueName>Customized Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems</controllingFieldValue>
+            <valueName>Disinfection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems</controllingFieldValue>
+            <valueName>Industrial Curing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Lighting Systems</controllingFieldValue>
+            <valueName>Thermal Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedTech &amp; Life Sciences</controllingFieldValue>
+            <valueName>Plasma Light Sources</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Precision Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Semiconductor Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Holistic Lithography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Metrology &amp; Inspection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Semiconductor Equipment</controllingFieldValue>
+            <valueName>Imaging &amp; Laser Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General</controllingFieldValue>
+            <valueName>HNG</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

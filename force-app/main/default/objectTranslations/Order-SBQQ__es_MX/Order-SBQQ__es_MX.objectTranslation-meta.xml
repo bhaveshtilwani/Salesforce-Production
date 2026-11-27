@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- Ax Billerica --></label>
+        <name>Ax_Billerica</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- QAD - LDGI --></label>
+        <name>QAD_LDGI</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- S4 Hana - Boulder --></description>
+        <label><!-- S4 Boulder --></label>
+        <name>S4_Boulder</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- ESG, Manila, QSG, Shenzhen, St Louis --></description>
+        <label><!-- SAP Asia --></label>
+        <name>SAP_Asia</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAP Germany --></label>
+        <name>SAP_Germany</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAP NA Montreal --></label>
+        <name>SAP_NA_Montreal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SAP NA Salem/MIA --></label>
+        <name>SAP_NA_Salem_MIA</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- RMA Number required for Customer Returns --></errorMessage>
+        <name>AX_Returns_RMA_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- RMA Site required for Customer Returns --></errorMessage>
+        <name>AX_Returns_RMA_Site</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Return Reason Code required for Customer Returns --></errorMessage>
+        <name>AX_Returns_Return_Reason_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Warehouse required for Customer Returns --></errorMessage>
+        <name>AX_Returns_Warehouse</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Agreement # / License # Field is Required --></errorMessage>
+        <name>Agreement_License_Field_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Sold to and Ship to account code prefix&apos;s must match
+(EX with EX, EO with EO, EU with EU)
+
+- Neither Sold to Code, Bill to Code or Ship to Code can be blank. -->
+        </errorMessage>
+        <name>BilltoCode</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Dates required. --></errorMessage>
+        <name>Contract_Dates_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Region for cost center is required for Billerica --></errorMessage>
+        <name>Cost_Center_Region_is_Required_for_AX</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cost Center Is Required for Billerica --></errorMessage>
+        <name>Cost_Center_is_required_for_AX</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Group 1 is Not Applicable for selected Site. --></errorMessage>
+        <name>Customer_Group_1_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Group 2 is Not Applicable for selected Site. --></errorMessage>
+        <name>Customer_Group_2_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EUS Expiry Date and EUS Quantity are required for (DEF) Defence. --></errorMessage>
+        <name>DEF_Date_and_Quantity_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Indicate (DEF) Defence otherwise, remove EUS Expiry Date and EUS Quantity values --></errorMessage>
+        <name>DEF_as_Usage_or_Remove_EUS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EUS Expiry Date Field is Required --></errorMessage>
+        <name>EUS_Expiry_Date_Field_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EUS Expiry Date Field is not Required --></errorMessage>
+        <name>EUS_Expiry_Date_Field_is_not_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EUS # Field is Required --></errorMessage>
+        <name>EUS_Field_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EUS Quantity Field is Required --></errorMessage>
+        <name>EUS_Quantity_Field_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EUS Quantity Field is not Required --></errorMessage>
+        <name>EUS_Quantity_Field_is_not_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account not extended to Vendor Site. Please extend. --></errorMessage>
+        <name>Extended_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterm 1 Not Needed, please remove. --></errorMessage>
+        <name>Incoterm1_not_needed_in_DebitCredit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterm 2 Not Needed, please remove. --></errorMessage>
+        <name>Incoterm2_not_needed_in_DebitCredit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterms 2 is not applicable for selected Site. --></errorMessage>
+        <name>Incoterms_2_Not_Applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Incoterms part 1 is not required for selected Site and Order Type. --></errorMessage>
+        <name>Incoterms_part_1_is_not_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update the Interco Bill/Sold To Account to the corresponding Vendor Site. --></errorMessage>
+        <name>Interco_Bill_Sold_To_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Interco Bill To Should be from the Assigned Vendor Site. --></errorMessage>
+        <name>Interco_Bill_to_Same_as_Vendor_Site</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update the Interco Ship To Account to the corresponding Vendor Site. --></errorMessage>
+        <name>Interco_Ship_To_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Interco Ship To Should be from the Assigned Vendor Site. --></errorMessage>
+        <name>Interco_Ship_to_Same_as_Vendor_Site</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter an ERP Part Number for all products on this order before you can activate it. --></errorMessage>
+        <name>Must_have_all_ERP_Part_Numbers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Division. --></errorMessage>
+        <name>Order_Division_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Order Product Delete Not Allowed. --></errorMessage>
+        <name>Order_Product_Delete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Order Reason is required for selected Order Type. --></errorMessage>
+        <name>Order_Reason_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Order Reason is not applicable for selected Order Type. --></errorMessage>
+        <name>Order_Reason_is_not_applicable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Sales Group. --></errorMessage>
+        <name>Order_Sales_Group_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Order - Sales Office is required for selected Order Type. --></errorMessage>
+        <name>Order_Sales_Group_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Sales Office. --></errorMessage>
+        <name>Order_Sales_Office_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Order - Sales Office is required for selected Order Type. --></errorMessage>
+        <name>Order_Sales_Office_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Override Order Number is required for order type Customer return for a repair. --></errorMessage>
+        <name>Override_Order_Number_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PO Date cannot be blank --></errorMessage>
+        <name>PO_Date_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PO Number cannot be blank --></errorMessage>
+        <name>PO_Number_cannot_be_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PO Number can&apos;t exceed 35 characters --></errorMessage>
+        <name>PO_Number_up_to_35</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment Term Not Needed, please remove. --></errorMessage>
+        <name>PaymentTerm_not_needed_in_DebitCredit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Payment term is not required for selected Site and Order Type combination. --></errorMessage>
+        <name>Payment_Term_Is_Not_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please review the products special information and then check the Product Information Reviewed box if you want to move forward in the process. --></errorMessage>
+        <name>Product_Special_Information_Review</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Orders with record type SAP Asia are read-only for your profile. --></errorMessage>
+        <name>ReadOnly_SAP_Asia_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se puede contratar el pedido. Active el pedido e inténtelo de nuevo.</errorMessage>
+        <name>SBQQ__Cannot_Contract_New_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Condition Not Needed, please remove. --></errorMessage>
+        <name>ShippingCondi_not_needed_in_DebitCredit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Shipping Condition is not required for selected Site and Order Type combination. --></errorMessage>
+        <name>Shipping_Condition_Is_Not_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ship-to Party&apos;s Purchase Order Date is not require for selected site. --></errorMessage>
+        <name>Shipto_Partys_PO_Date_is_not_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ship-to Party&apos;s Purchase Order Number is not require for selected site. --></errorMessage>
+        <name>Shipto_Partys_PO_Number_is_not_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sync in Progress. Creating and Editing not allowed. Wait for the sync to finish to continue. --></errorMessage>
+        <name>Sync_in_Progress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Transaction Order Comment fields cannot be &gt; 75 Characters
+Split comment so that each comment field is no more than 75 characters -->
+        </errorMessage>
+        <name>TR_Comment_greater_75</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please ensure all lines have Drop Ship Prices. --></errorMessage>
+        <name>ZPR3_for_FOC</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_Composer_SP_Order_Invoice --></label>
+        <name>Conga_Composer_Composer_SP_Order_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Composer_SP_Order_Invoice1 --></label>
+        <name>Conga_Composer_Composer_SP_Order_Invoice1</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Order_Confirmation_2 --></label>
+        <name>Conga_Composer_Order_Confirmation_2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Order_Confirmation_All_Sites --></label>
+        <name>Conga_Composer_Order_Confirmation_All_Sites</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Order_Confirmation_All_Sites1 --></label>
+        <name>Conga_Composer_Order_Confirmation_All_Sites1</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Composer_Order_Confirmation_Montreal --></label>
+        <name>Conga_Composer_Order_Confirmation_Montreal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Interco_Order --></label>
+        <name>Interco_Order</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Preview_Approval --></label>
+        <name>Preview_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recall_Approval --></label>
+        <name>Recall_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label>Modificar productos de pedido</label>
+        <name>SBQQ__EditOrderProducts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_for_Approval --></label>
+        <name>Submit_for_Approval</name>
+    </webLinks>
+</CustomObjectTranslation>

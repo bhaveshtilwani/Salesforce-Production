@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Order_Type__c</fullName>
+    <label>Purchase Order Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ZSNB - Standard PO (QSG)</fullName>
+                <default>false</default>
+                <label>ZSNB - Standard PO (QSG)</label>
+            </value>
+            <value>
+                <fullName>ZS - Standard PO(ZS)</fullName>
+                <default>false</default>
+                <label>ZS - Standard PO(ZS)</label>
+            </value>
+            <value>
+                <fullName>ZR - Return PO(ZR)</fullName>
+                <default>false</default>
+                <label>ZR - Return PO(ZR)</label>
+            </value>
+            <value>
+                <fullName>ZPR - Return PO - PE(ZPR)</fullName>
+                <default>false</default>
+                <label>ZPR - Return PO - PE(ZPR)</label>
+            </value>
+            <value>
+                <fullName>ZPNB - Std PO - PE (ZPNB)</fullName>
+                <default>false</default>
+                <label>ZPNB - Std PO - PE (ZPNB)</label>
+            </value>
+            <value>
+                <fullName>ZNB - Standard PO (MN/SL)</fullName>
+                <default>false</default>
+                <label>ZNB - Standard PO (MN/SL)</label>
+            </value>
+            <value>
+                <fullName>ZGIT - Return PO (ZGIT)</fullName>
+                <default>false</default>
+                <label>ZGIT - Return PO (ZGIT)</label>
+            </value>
+            <value>
+                <fullName>ZB - Standard PO (ZB)</fullName>
+                <default>false</default>
+                <label>ZB - Standard PO (ZB)</label>
+            </value>
+            <value>
+                <fullName>Z3 - for 3rd Party Ord PO</fullName>
+                <default>false</default>
+                <label>Z3 - for 3rd Party Ord PO</label>
+            </value>
+            <value>
+                <fullName>PEB1 - Batam Exp PO (PEB1)</fullName>
+                <default>false</default>
+                <label>PEB1 - Batam Exp PO (PEB1)</label>
+            </value>
+            <value>
+                <fullName>XZR - Return PO(ZR) - XT</fullName>
+                <default>false</default>
+                <label>XZR - Return PO(ZR) - XT</label>
+            </value>
+            <value>
+                <fullName>XNB - Standard PO (XT)</fullName>
+                <default>false</default>
+                <label>XNB - Standard PO (XT)</label>
+            </value>
+            <value>
+                <fullName>UB - Stock transport ord.</fullName>
+                <default>false</default>
+                <label>UB - Stock transport ord.</label>
+            </value>
+            <value>
+                <fullName>NB - Standard PO</fullName>
+                <default>false</default>
+                <label>NB - Standard PO</label>
+            </value>
+            <value>
+                <fullName>FO - Framework order</fullName>
+                <default>false</default>
+                <label>FO - Framework order</label>
+            </value>
+            <value>
+                <fullName>EUB - DFPS, Int. Ord. Type</fullName>
+                <default>false</default>
+                <label>EUB - DFPS, Int. Ord. Type</label>
+            </value>
+            <value>
+                <fullName>ENB - Standard PO DFPS</fullName>
+                <default>false</default>
+                <label>ENB - Standard PO DFPS</label>
+            </value>
+            <value>
+                <fullName>DB - Dummy purchase order</fullName>
+                <default>false</default>
+                <label>DB - Dummy purchase order</label>
+            </value>
+            <value>
+                <fullName>ASAP</fullName>
+                <default>false</default>
+                <label>ASAP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

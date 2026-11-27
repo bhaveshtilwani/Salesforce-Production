@@ -1,0 +1,800 @@
+<apex:page showHeader="false" 
+    sidebar="false" 
+    cache="false" 
+    contentType="text/xml" 
+    controller="Quote_Template_Lines_Controller">
+    <block font-size="9px" margin-top="1mm">
+        <apex:repeat var="site" value="{!sites}">
+            <block>
+                <!-- SITE ADDRESS -->
+                <block font-size="9px" font-weight="bold">
+                    {!HTMLENCODE(siteById[site].Legal_Company_Name__c)}
+                </block>
+                <block font-size="9px">
+                    {!HTMLENCODE(siteById[site].Site_Address_Line_1__c)}
+                </block>
+                <block font-size="9px">
+                    {!HTMLENCODE(siteById[site].Site_City__c)},
+                    {!HTMLENCODE(siteById[site].Site_State_Province__c)}
+                    {!HTMLENCODE(siteById[site].Site_Zip_Postal_Code__c)}
+                </block>
+                <block font-size="9px">
+                    {!HTMLENCODE(siteById[site].Site_Country__c)}
+                </block>
+<!-- BP and ERP ID -->
+                <apex:outputPanel layout="none"
+            rendered="{!
+                LEN(siteBPNumberBySite[site]) > 0 ||
+                LEN(siteERPIdBySite[site]) > 0
+            }">
+                            <apex:outputPanel layout="none"
+            rendered="{!LEN(siteBPNumberBySite[site]) > 0}">
+
+                        <block font-size="9px">
+                            <inline text-decoration="underline" font-weight="bold">
+                                BP Number:
+                            </inline>
+                            {!HTMLENCODE(siteBPNumberBySite[site])}
+            </block>
+        
+        </apex:outputPanel>
+        
+        <apex:outputPanel layout="none"
+            rendered="{!LEN(siteERPIdBySite[site]) > 0}">
+        
+            <block font-size="9px">
+                <inline text-decoration="underline" font-weight="bold">
+                    ERP ID:
+                </inline>
+                {!HTMLENCODE(siteERPIdBySite[site])}
+            </block>
+        
+        </apex:outputPanel>
+                </apex:outputPanel>
+                <!-- ORDER INSTRUCTIONS -->
+              <block font-size="9px">
+                    <inline 
+                        text-decoration="underline" 
+                        font-weight="bold">
+                        Order Instructions:
+                    </inline>
+                    {!HTMLENCODE(siteById[site].Order_Instructions__c)}
+                </block>
+                <!-- INCOTERMS -->
+           <apex:outputPanel layout="none" 
+                    rendered="{!NOT(q.Incoterm_Override__c)}">
+                    <block font-size="9px">
+                        <inline 
+                            text-decoration="underline" 
+                            font-weight="bold">
+                            IncoTerms:
+                        </inline>
+                        {!HTMLENCODE(siteById[site].Shipping_Terms__c)},
+                        {!HTMLENCODE(siteById[site].Shipping_Terms_2__c)}
+                    </block>
+                </apex:outputPanel>
+      <apex:outputPanel layout="none" 
+                    rendered="{!q.Incoterm_Override__c}">
+                    <block font-size="9px">
+                        <inline 
+                            text-decoration="underline" 
+                            font-weight="bold">
+                            IncoTerms:
+                        </inline>
+                        {!q.Override_IncoTerm_Name__c},
+                        {!HTMLENCODE(siteById[site].Shipping_Terms_2__c)}
+                    </block>
+                </apex:outputPanel>
+                <!-- CREDIT TERMS -->
+                <apex:outputPanel layout="none" 
+                    rendered="{!NOT(q.Credit_Terms_Override__c)}">
+              <block font-size="9px">
+                    <inline 
+                        text-decoration="underline" 
+                        font-weight="bold">
+                            Credit Terms:
+                        </inline>
+                        {!HTMLENCODE(siteById[site].Payment_Details__c)}
+                    </block>
+                </apex:outputPanel>
+                <apex:outputPanel layout="none" 
+                    rendered="{!q.Credit_Terms_Override__c}">
+                    <block font-size="9px">
+                        <inline 
+                            text-decoration="underline" 
+                            font-weight="bold">
+                            Credit Terms:
+                        </inline>
+                        {!q.Override_Credit_Terms_Name__c}
+                    </block>
+                </apex:outputPanel>
+                <!-- FRAME CONTRACT - ENGLISH -->
+                <apex:outputPanel layout="none"
+                    rendered="{!IF(
+                        AND(
+                            NOT(CONTAINS(ACCC.Language_ID__r.Name,'German (DE)')),
+                            q.Frame_Contract__c
+                        ),
+                        true,
+                        false
+                    )}">
+                    <block font-size="9px">
+                        <inline 
+                            text-decoration="underline" 
+                            font-weight="bold">
+                            Frame Contract Language:
+                        </inline>
+                        {!HTMLENCODE(
+                            siteById[site].Frame_Contract_Language_English_TEST__c
+                        )}
+                    </block>
+                </apex:outputPanel>
+                <!-- FRAME CONTRACT - GERMAN -->
+                <apex:outputPanel layout="none"
+                    rendered="{!IF(
+                        AND(
+                            CONTAINS(ACCC.Language_ID__r.Name,'German (DE)'),
+                            q.Frame_Contract__c
+                        ),
+                        true,
+                        false
+                    )}">
+                    <block font-size="9px">
+                        <inline 
+                            text-decoration="underline" 
+                            font-weight="bold">
+                            Frame Contract Language:
+                        </inline>
+                        {!HTMLENCODE(
+                            siteById[site].Frame_Contract_Language_German__c
+                        )}
+                    </block>
+                </apex:outputPanel>
+                <!-- QUOTE LINES -->
+                <block font-size="9px" margin-top="5mm">
+                    <table 
+                        table-layout="fixed" 
+                        width="100%" 
+                        border-color="#000000">
+                        <table-column column-width="5%" />
+                        <table-column column-width="95%" />
+                        <table-body>
+                            <apex:repeat var="lines" 
+                                value="{!quoteLinesBySite[site]}">
+                                <!-- APPROVED QUOTE LINE -->
+                                  <apex:outputPanel layout="none" 
+                                    rendered="{!lines.PM_Approved__c}">
+                                    <table-row 
+                                        background-color="#EEFDDB" 
+                                        keep-together="always">
+                                        <table-cell 
+                                            border-after-width="1px"
+                                            border-after-style="solid"
+                                            border-before-width="1px"
+                                            border-before-style="solid"
+                                            border-left-width="1px"
+                                            border-left-style="solid">
+                                            <block>&nbsp;</block>
+                                            <block>&nbsp;</block>
+                                            <block>&nbsp;</block>
+                                            <block>&nbsp;</block>
+                                            <block 
+                                                text-align="center" 
+                                                font-size="9px" 
+                                                font-weight="bold">
+                                                <apex:outputText value="{0, number, ###,###,##0}">
+                                                    <apex:param value="{!lines.SBQQ__Number__c}" />
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                        <table-cell>
+                                            <!-- Product Information -->
+                                            <table 
+                                                table-layout="fixed" 
+                                                width="100%" 
+                                                border-color="#000000">
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="25%" />
+                                                <table-body>
+                                                    <table-row 
+                                                        background-color="#EEFDDB"
+                                                        keep-together.within-column="always">
+                                                        <table-cell 
+                                                            border-right-width="1px"
+                                                            border-right-style="solid"
+                                                            border-before-width="1px"
+                                                            border-before-style="solid"
+                                                            border-left-width="1px"
+                                                            border-left-style="solid">
+                                                            <block 
+                                                                text-align="center"
+                                                                font-size="9px"
+                                                                font-weight="bold"
+                                                                padding-before="4pt">
+                                                                Part Number
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell 
+                                                            border-right-width="1px"
+                                                            border-right-style="solid"
+                                                            border-before-width="1px"
+                                                            border-before-style="solid"
+                                                            border-left-width="1px"
+                                                            border-left-style="solid">
+                                                            <block 
+                                                                text-align="center"
+                                                                font-size="9px"
+                                                                padding-before="4pt"
+                                                                wrap-option="wrap">
+                                                                {!IF(ISBLANK(lines.SBQQ__Product__r.QAD_Micromove_product_code__c),
+                                                                 HTMLENCODE(lines.Product_Name__c),
+                                                                 HTMLENCODE(lines.SBQQ__Product__r.QAD_Micromove_product_code__c))}
+                                                            </block>
+                                                            <!-- {!HTMLENCODE(lines.Product_Name__c)} <apex:outputPanel layout="none"
+                                                                rendered="{!LEN(lines.SBQQ__Product__r.QAD_Micromove_product_code__c) > 0}"> 
+                                                                <block text-align="center" font-size="9px" wrap-option="wrap">
+                                                                    {!HTMLENCODE(lines.SBQQ__Product__r.QAD_Micromove_product_code__c)}
+                                                                </block> -->
+                                                            <!-- </apex:outputPanel> -->
+                                                        </table-cell>
+                                                        <table-cell 
+                                                            border-right-width="1px"
+                                                            border-right-style="solid"
+                                                            border-before-width="1px"
+                                                            border-before-style="solid"
+                                                            border-left-width="1px"
+                                                            border-left-style="solid">
+                                                            <block 
+                                                                text-align="center"
+                                                                font-size="9px"
+                                                                font-weight="bold"
+                                                                padding-before="4pt">
+                                                                Customer Part
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell 
+                                                            border-right-width="1px"
+                                                            border-right-style="solid"
+                                                            border-before-width="1px"
+                                                            border-before-style="solid"
+                                                            border-left-width="1px"
+                                                            border-left-style="solid">
+                                                            <block 
+                                                                text-align="center"
+                                                                font-size="9px"
+                                                                padding-before="4pt"
+                                                                wrap-option="wrap">
+                                                                {!HTMLENCODE(lines.Customer_Part__c)}
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell 
+                                                            border-right-width="1px"
+                                                            border-right-style="solid"
+                                                            border-before-width="1px"
+                                                            border-before-style="solid"
+                                                            border-left-width="1px"
+                                                            border-left-style="solid">
+                                                            <block 
+                                                                text-align="center"
+                                                                font-size="9px"
+                                                                font-weight="bold"
+                                                                padding-before="4pt">
+                                                                Description:
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell 
+                                                            border-right-width="1px"
+                                                            border-right-style="solid"
+                                                            border-before-width="1px"
+                                                            border-before-style="solid"
+                                                            border-left-width="1px"
+                                                            border-left-style="solid">
+                                                            <block 
+                                                                text-align="left"
+                                                                font-size="9px"
+                                                                wrap-option="wrap">
+                                                                {!HTMLENCODE(lines.Product_Description__c)}
+                                                            </block>
+                                                        </table-cell>
+                                                    </table-row>
+                                                </table-body>
+                                            </table>
+                                            <!-- MOQ / MPQ / HTC / ECCN -->
+                                            <table 
+                                                table-layout="fixed"
+                                                width="100%"
+                                                border-color="#000000">
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="11%" />
+                                                <table-column column-width="6%" />
+                                                <table-column column-width="8%" />
+                                                <table-body>
+                                                    <table-row 
+                                                        background-color="#EEFDDB"
+                                                        keep-together.within-column="always">
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                MOQ
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" wrap-option="wrap">
+                                                                {!lines.MOQ__c}
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                MPQ
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" wrap-option="wrap">
+                                                                {!lines.MPQ__c}
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                HTC
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" wrap-option="wrap">
+                                                                {!HTMLENCODE(lines.Harmonized_Tariff_Code__c)}
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                ECCN
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" wrap-option="wrap">
+                                                                {!lines.ECCN_Code__c}
+                                                            </block>
+                                                        </table-cell>
+                                                    </table-row>
+                                                </table-body>
+                                            </table>
+                                            <!-- Quantity / Pricing -->
+                                            <table 
+                                                table-layout="fixed"
+                                                width="100%"
+                                                border-color="#000000">
+                                                <table-column column-width="30%" />
+                                                <table-column column-width="30%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="25%" />
+                                           <table-body>
+                                                    <table-row background-color="#EEFDDB">
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                Quantity
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                Unit Price
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                Line Total
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                Lead Time
+                                                            </block>
+                                                        </table-cell>
+                                                    </table-row>
+                                                    <apex:variable var="rowcount" value="{!0}" />
+                                                    <apex:repeat var="options" value="{!lineQuantities[lines]}">
+                                                        <table-row 
+                                                            background-color="#EEFDDB"
+                                                            keep-together.within-column="always">
+                                                            <table-cell border-width="1px" border-style="solid">
+                                                                <block 
+                                                                    text-align="center"
+                                                                    font-size="9px"
+                                                                    wrap-option="wrap">
+                                                                    <apex:outputText value="{0,number,###,##0.0}">
+                                                                        <apex:param value="{!options}" />
+                                                                    </apex:outputText>
+                                                                </block>
+                                                            </table-cell>
+                                                            <table-cell border-width="1px" border-style="solid">
+                                                                <block 
+                                                                    text-align="center"
+                                                                    font-size="9px"
+                                                                    wrap-option="wrap">
+                                                                    {!IF(
+                                                                        q.CurrencyIsoCode == 'USD',
+                                                                        '$',
+                                                                        q.CurrencyIsoCode
+                                                                    )}
+                                                                    <apex:outputText rendered="{!unitPriceByQuantity[lines][options] > 3}"
+                                                                        value=" {0, number, ###,##0.00}">
+                                                                        <apex:param value="{!unitPriceByQuantity[lines][options]}" />
+                                                                    </apex:outputText>
+                                                                    <apex:outputText rendered="{!unitPriceByQuantity[lines][options] <= 3}"
+                                                                        value=" {0, number, ###,##0.000}">
+                                                                        <apex:param value="{!unitPriceByQuantity[lines][options]}" />
+                                                                    </apex:outputText>
+                                                                </block>
+                                                            </table-cell>
+                                                            <table-cell border-width="1px" border-style="solid">
+                                                                <block 
+                                                                    text-align="right"
+                                                                    font-size="9px"
+                                                                    wrap-option="wrap">
+                                                                    {!IF(
+                                                                        q.CurrencyIsoCode == 'USD',
+                                                                        '$',
+                                                                        q.CurrencyIsoCode
+                                                                    )}
+                                                                    <apex:outputText value=" {0, number, ###,##0.00}">
+                                                                        <apex:param value="{!totalPriceByQuantity[lines][options]}" />
+                                                                    </apex:outputText>
+                                                                </block>
+                                                            </table-cell>
+                                                            <apex:outputPanel layout="none"
+                                                                rendered="{!rowcount == 0}">
+                                                                <table-cell 
+                                                                    number-rows-spanned="{!lineQuantitiesSize[lines]}"
+                                                                    border-width="1px"
+                                                                    border-style="solid">
+                                                                    <block 
+                                                                        text-align="center"
+                                                                        font-size="9px"
+                                                                        wrap-option="wrap">
+                                                                        {!IF(
+                                                                            ISBLANK(lines.Standard_Lead_Time__c),
+                                                                            ' ',
+                                                                            HTMLENCODE(lines.Standard_Lead_Time__c) & ' wks. Subject to change.'
+                                                                        )}
+                                                                    </block>
+                                                                </table-cell>
+                                                            </apex:outputPanel>
+                                                        </table-row>
+                                                        <apex:variable var="rowcount"
+                                                            value="{!rowcount + 1}" />
+                                                    </apex:repeat>
+                                                    <!-- Comments -->
+                                                    <table-row 
+                                                        background-color="#EEFDDB"
+                                                        keep-together.within-column="always">
+                                                        <table-cell 
+                                                            number-columns-spanned="4"
+                                                            border-right-width="1px"
+                                                            border-right-style="solid"
+                                                            border-left-width="1px"
+                                                            border-left-style="solid"
+                                                            border-after-width="1px"
+                                                            border-after-style="solid">
+                                                            <block wrap-option="wrap">
+                                                                <inline font-weight="bold">
+                                                                    &nbsp; Comments:
+                                                                </inline>
+                                                                {!HTMLENCODE(lines.Comments__c)}
+                                                            </block>
+                                                        </table-cell>
+                                                    </table-row>
+                                                </table-body>
+                                            </table>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <!-- PENDING APPROVAL QUOTE LINE -->
+                                <apex:outputPanel layout="none"
+                                    rendered="{!NOT(lines.PM_Approved__c)}">
+                                    <table-row 
+                                        background-color="#A6A3A2"
+                                        keep-together="always">
+                                        <table-cell 
+                                            border-after-width="1px"
+                                            border-after-style="solid"
+                                            border-before-width="1px"
+                                            border-before-style="solid"
+                                            border-left-width="1px"
+                                            border-left-style="solid">
+                                            <block>&nbsp;</block>
+                                            <block>&nbsp;</block>
+                                            <block>&nbsp;</block>
+                                            <block>&nbsp;</block>
+                                            <block 
+                                                text-align="center"
+                                                font-size="9px"
+                                                font-weight="bold">
+                                                <apex:outputText value="{0, number, ###,###,##0}">
+                                                    <apex:param value="{!lines.SBQQ__Number__c}" />
+                                                </apex:outputText>
+                                            </block>
+                                        </table-cell>
+                                        <table-cell>
+                                            <!-- Pending Product Information -->
+                                            <table 
+                                                table-layout="fixed"
+                                                width="100%"
+                                                border-color="#000000">
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="25%" />
+                                                <table-body>
+                                                    <table-row 
+                                                        background-color="#A6A3A2"
+                                                        keep-together.within-column="always">
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="left" font-size="9px" font-weight="bold">
+                                                                Part Number
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="left" font-size="9px" wrap-option="wrap">
+                                                                {!IF(ISBLANK(lines.SBQQ__Product__r.QAD_Micromove_product_code__c),
+                                                                 HTMLENCODE(lines.Product_Name__c),
+                                                                 HTMLENCODE(lines.SBQQ__Product__r.QAD_Micromove_product_code__c))}
+                                                            </block>
+                                                            <!--  {!HTMLENCODE(lines.Product_Name__c)} <apex:outputPanel layout="none" 
+                                                                rendered="{!NOT(ISBLANK(lines.SBQQ__Product__r.QAD_Micromove_product_code__c))}"> -->
+                                                               <!-- <block text-align="left" font-size="9px" wrap-option="wrap">
+                                                                    {!HTMLENCODE(lines.SBQQ__Product__r.QAD_Micromove_product_code__c)}
+                                                                </block> -->
+                                                             <!-- </apex:outputPanel> -->
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="left" font-size="9px" font-weight="bold">
+                                                                Customer Part
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="left" font-size="9px" wrap-option="wrap">
+                                                                {!HTMLENCODE(lines.Customer_Part__c)}
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="left" font-size="9px" font-weight="bold">
+                                                                Description:
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="left" font-size="9px" wrap-option="wrap">
+                                                                {!HTMLENCODE(lines.Product_Description__c)}
+                                                            </block>
+                                                        </table-cell>
+                                                    </table-row>
+                                                </table-body>
+                                            </table>
+                                            <!-- Pending Approval Pricing -->
+                                            <table 
+                                                table-layout="fixed"
+                                                width="100%"
+                                                border-color="#000000">
+                                                <table-column column-width="30%" />
+                                                <table-column column-width="30%" />
+                                                <table-column column-width="15%" />
+                                                <table-column column-width="25%" />
+                                                <table-body>
+                                                    <table-row 
+                                                        background-color="#A6A3A2"
+                                                        keep-together.within-column="always">
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                Quantity
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                Unit Price
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                Line Total
+                                                            </block>
+                                                        </table-cell>
+                                                        <table-cell border-width="1px" border-style="solid">
+                                                            <block text-align="center" font-size="9px" font-weight="bold">
+                                                                Lead Time
+                                                            </block>
+                                                        </table-cell>
+                                                    </table-row>
+                                                    <apex:repeat var="options"
+                                                        value="{!lineQuantities[lines]}">
+                                                        <table-row 
+                                                            background-color="#A6A3A2"
+                                                            keep-together.within-column="always">
+                                                            <table-cell border-width="1px" border-style="solid">
+                                                                <block 
+                                                                    text-align="center"
+                                                                    font-size="9px">
+                                                                    <apex:outputText value="{0, number, ###,###}">
+                                                                        <apex:param value="{!options}" />
+                                                                    </apex:outputText>
+                                                                </block>
+                                                            </table-cell>
+                                                            <table-cell border-width="1px" border-style="solid">
+                                                                <block 
+                                                                    text-align="center"
+                                                                    font-size="9px">
+                                                                    &nbsp;
+                                                                </block>
+                                                            </table-cell>
+                                                            <table-cell border-width="1px" border-style="solid">
+                                                                <block 
+                                                                    text-align="right"
+                                                                    font-size="9px">
+                                                                    Pending Approval
+                                                                </block>
+                                                            </table-cell>
+                                                            <table-cell border-width="1px" border-style="solid">
+                                                                <block 
+                                                                    text-align="center"
+                                                                    font-size="9px"
+                                                                    wrap-option="wrap">
+                                                                    {!IF(
+                                                                        ISBLANK(lines.Standard_Lead_Time__c),
+                                                                        ' ',
+                                                                        HTMLENCODE(lines.Standard_Lead_Time__c) & ' wks. Subject to change.'
+                                                                    )}
+                                                                </block>
+                                                            </table-cell>
+                                                        </table-row>
+                                                    </apex:repeat>
+                                                    <!-- Comments -->
+                                                    <table-row 
+                                                        background-color="#A6A3A2"
+                                                        keep-together.within-column="always">
+                                                        <table-cell 
+                                                            number-columns-spanned="4"
+                                                            border-right-width="1px"
+                                                            border-right-style="solid"
+                                                            border-left-width="1px"
+                                                            border-left-style="solid"
+                                                            border-after-width="1px"
+                                                            border-after-style="solid">
+                                                            <block wrap-option="wrap">
+                                                                <inline font-weight="bold">
+                                                                    &nbsp; Comments:
+                                                                </inline>
+                                                                {!HTMLENCODE(lines.Comments__c)}
+                                                            </block>
+                                                        </table-cell>
+                                                    </table-row>
+                                                </table-body>
+                                            </table>
+                                        </table-cell>
+                                    </table-row>
+                                </apex:outputPanel>
+                                <!-- Space Between Quote Lines -->
+                                <table-row>
+                                    <table-cell 
+                                        number-columns-spanned="2"
+                                        border-right-width="1px"
+                                        border-right-style="solid"
+                                        border-left-width="1px"
+                                        border-left-style="solid">
+                                        <block>&nbsp;</block>
+                                    </table-cell>
+                                </table-row>
+                            </apex:repeat>
+                        </table-body>
+                    </table>
+                </block>
+                <!-- PRODUCT NET TOTAL -->
+                <block 
+                    font-size="9px"
+                    margin-top="2mm"
+                    text-align="right"
+                    font-weight="bold">
+                    Net Total:
+                    {!IF(q.CurrencyIsoCode == 'USD', '$', q.CurrencyIsoCode)}
+                    <apex:outputText value=" {0, number, ###,##0.00}">
+                        <apex:param value="{!netTotalById[site]}" />
+                    </apex:outputText>
+                </block>
+                <!-- ENERGY SURCHARGE -->
+                <apex:outputPanel layout="none"
+                    rendered="{!q.Fuel_Surcharge_Amount__c != null && q.Fuel_Surcharge_Amount__c > 0}">
+                    <block 
+                        font-size="9px"
+                        text-align="right"
+                        font-weight="bold">
+                        Energy Surcharge:
+                        {!IF(q.CurrencyIsoCode == 'USD', '$', q.CurrencyIsoCode)}
+                        <apex:outputText value=" {0, number, ###,##0.00}">
+                            <apex:param value="{!q.Fuel_Surcharge_Amount__c}" />
+                        </apex:outputText>
+                    </block>
+                </apex:outputPanel>
+                <!-- GRAND TOTAL -->
+                <apex:outputPanel layout="none"
+                    rendered="{!q.Fuel_Surcharge_Amount__c != null && q.Fuel_Surcharge_Amount__c > 0}">
+                    <block 
+                        font-size="10px"
+                        margin-top="1mm"
+                        text-align="right"
+                        font-weight="bold">
+                        Grand Total:
+                        {!IF(q.CurrencyIsoCode == 'USD', '$', q.CurrencyIsoCode)}
+                        <apex:outputText value=" {0, number, ###,##0.00}">
+                            <apex:param value="{!q.Grand_Total__c}" />
+                        </apex:outputText>
+                    </block>
+                </apex:outputPanel>
+                <!-- VAT -->
+                <apex:outputPanel layout="none"
+                    rendered="{!vatShouldBeDisplayedforQuote && siteHaveVat[site] == true}">
+                    <block 
+                        font-size="9px"
+                        text-align="right"
+                        font-weight="bold">
+                        {!vatRateById[site]}% VAT:
+                        {!IF(q.CurrencyIsoCode == 'USD', '$', q.CurrencyIsoCode)}
+                        <apex:outputText value=" {0, number, ###,##0.00}">
+                            <apex:param value="{!vatTotalById[site]}" />
+                        </apex:outputText>
+                    </block>
+                    <block 
+                        font-size="9px"
+                        text-align="right"
+                        font-weight="bold">
+                        Total with VAT:
+                        {!IF(q.CurrencyIsoCode == 'USD', '$', q.CurrencyIsoCode)}
+                        <apex:outputText value=" {0, number, ###,##0.00}">
+                            <apex:param value="{!vatTotalById[site] + netTotalById[site]}" />
+                        </apex:outputText>
+                    </block>
+                </apex:outputPanel>
+                <!-- SITE INFORMATION -->
+                <block 
+                    font-size="6px"
+                    text-align="left"
+                    border-after-style="solid"
+                    border-after-width="2px"
+                    border-after-color="#000000">
+                    {!HTMLENCODE(siteById[site].Site_Information__c)}
+                </block>
+                <!-- LEGAL TERMS -->
+                <block 
+                    font-size="8px"
+                    text-decoration="underline"
+                    font-weight="bold">
+                    Legal Terms:
+                </block>
+                <block font-size="6px">
+                    {!siteById[site].Legal_Verbiage__c}
+                </block>
+            </block>
+            
+            <!-- ENERGY SURCHARGE TERMS -->
+            <apex:outputPanel layout="none"
+                rendered="{!q.Fuel_Surcharge_Amount__c != null && q.Fuel_Surcharge_Amount__c > 0}">
+                <block 
+                    font-size="8px"
+                    text-decoration="underline"
+                    font-weight="bold">
+                    Energy Surcharge Terms:
+                </block>
+                <block font-size="6px">
+                    {!siteById[site].Energy_Surcharge_Terms__c}
+                </block>
+            </apex:outputPanel>
+            <!--PAGE BREAK -->
+             <apex:outputPanel layout="none"
+                rendered="{!numberBySite[site] < sitesSize}">
+                <block break-after="page" />
+            </apex:outputPanel> 
+        </apex:repeat>
+    </block>
+</apex:page>

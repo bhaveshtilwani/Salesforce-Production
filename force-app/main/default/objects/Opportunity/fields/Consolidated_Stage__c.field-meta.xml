@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consolidated_Stage__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISPICKVAL( StageName , &quot;4 - Commercial Negotiation&quot;),
+ISPICKVAL( StageName , &quot;4 - We are ahead&quot;),
+ISPICKVAL( StageName , &quot;5 - Order Pending&quot;),
+ISPICKVAL( StageName , &quot;Proposal&quot;),
+ISPICKVAL( StageName , &quot;Quote&quot;),
+ISPICKVAL( StageName , &quot;Quote Sent&quot;),
+ISPICKVAL( StageName , &quot;Quote Sent for Tech Supp&quot;)),&quot;Quoted&quot;,
+IF(
+OR(
+ISPICKVAL( StageName , &quot;1 - Opportunity Validation&quot;),
+ISPICKVAL( StageName , &quot;1 - Preliminary Discussions&quot;),
+ISPICKVAL( StageName , &quot;2 - Budgetary Proposal&quot;),
+ISPICKVAL( StageName , &quot;2 - Requirement Definition/Technical Evl&quot;),
+ISPICKVAL( StageName , &quot;3 - Proposal Delivered&quot;),
+ISPICKVAL( StageName , &quot;3 - Technical Qualification/Approval&quot;),
+ISPICKVAL( StageName , &quot;Qualification&quot;)), &quot;In Progress&quot;,
+IF(
+OR(
+ISPICKVAL( StageName , &quot;5 - Business Award – Won&quot;),
+ISPICKVAL( StageName , &quot;6 - Production Order on Backlog&quot;),
+ISPICKVAL( StageName , &quot;Quote Won&quot;),
+ISPICKVAL( StageName , &quot;6 - Closed&quot;),
+ISPICKVAL( StageName , &quot;6 - PO Received&quot;)), &quot;Closed Won&quot;,
+IF(
+OR(
+ISPICKVAL( StageName , &quot;Closed Lost&quot;),
+ISPICKVAL( StageName , &apos;Closed &quot;Other&quot;&apos;),
+ISPICKVAL( StageName , &quot;Closed - No Response&quot;),
+ISPICKVAL( StageName , &quot;Closed - Expired&quot;),
+ISPICKVAL( StageName , &quot;5 - No Action&quot;),
+ISPICKVAL( StageName , &quot;Closed - Invalid Duplicate or Error&quot;)), &quot;Closed Lost&quot;, null))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Consolidated Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

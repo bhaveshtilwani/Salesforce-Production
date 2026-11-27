@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Release_by_BAFA_Limit</fullName>
+    <active>false</active>
+    <errorConditionFormula>LEN( Release_by_BAFA__c )&gt; 30</errorConditionFormula>
+    <errorDisplayField>Release_by_BAFA__c</errorDisplayField>
+    <errorMessage>Max Length Acceptable is only up to 30 Characters</errorMessage>
+</ValidationRule>

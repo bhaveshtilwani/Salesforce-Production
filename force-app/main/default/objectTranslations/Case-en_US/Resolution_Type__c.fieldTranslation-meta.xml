@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Resolution Type --></label>
+    <name>Resolution_Type__c</name>
+    <picklistValues>
+        <masterLabel>Consignment process completed</masterLabel>
+        <translation><!-- Consignment process completed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>accepted: send credit note</masterLabel>
+        <translation><!-- accepted: send credit note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>accepted: send replacement</masterLabel>
+        <translation><!-- accepted: send replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>partially accepted: send credit note</masterLabel>
+        <translation><!-- partially accepted: send credit note --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>partially accepted: send replacement</masterLabel>
+        <translation><!-- partially accepted: send replacement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>rejected</masterLabel>
+        <translation><!-- rejected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>repair process completed</masterLabel>
+        <translation><!-- repair process completed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Character_Count_80_max</fullName>
+    <active>true</active>
+    <description>Counts characters. Nothing more than 80 characters permitted as this is brought into the quote document which has limitations.</description>
+    <errorConditionFormula>IF(LEN(SBQQ__Description__c)&gt;= 80,TRUE,FALSE)</errorConditionFormula>
+    <errorDisplayField>SBQQ__Description__c</errorDisplayField>
+    <errorMessage>Character count cannot exceed 80 characters</errorMessage>
+</ValidationRule>

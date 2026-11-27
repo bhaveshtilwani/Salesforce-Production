@@ -1,0 +1,2719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAP_NA_Montreal</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Excelitas_Compact_Layouts</compactLayoutAssignment>
+    <label>SAP NA Montreal</label>
+    <picklistValues>
+        <picklist>ApprovalStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Date_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Expedite_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Price_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Quantity_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Block_For_Delivery__c</picklist>
+        <values>
+            <fullName>Bottleneck material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash on Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check free of ch%2Edlv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit limit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export papers needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hamble block all</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Political reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quantity Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>unconfirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>waiting for return i</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Block_For_Invoice__c</picklist>
+        <values>
+            <fullName>Calculation Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Credit Memo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Debit Memo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Terms of Dlv</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Terms of Paymt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compl Confirm Missng</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Down Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prices Incomplete</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Billing_Status__c</picklist>
+        <values>
+            <fullName>Fully Invoiced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Invoiced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Invoiced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CS_Hold__c</picklist>
+        <values>
+            <fullName>SP- Split Shipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z2- Tax Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z3- Confirm Shipment Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z4- Awaiting Revised PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z5- Letter of Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z6- Customer Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z7- Prepaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z8- Waiting for info from Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z9- Hold - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZC- Credit Card Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZD- Pending Clarifications of Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZE- Pricing Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZH- Part %23 hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZP - Pending Terms Re-Submit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZS- Stop Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ- Waiting for Lead Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Comments__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Group_4__c</picklist>
+        <values>
+            <fullName>Standard EXC TuC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>keine Stand EXCTuC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Group_5__c</picklist>
+        <values>
+            <fullName>ZICP%2C Kdmat aus WE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Grouppick__c</picklist>
+        <values>
+            <fullName>%2801%29 OEM regular customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2802%29 PKI Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2803%29 InterCompany%2C PKI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2804%29 Intra-SBU%2C Opto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2805%29 Intra-SBE%2C Tel%2FSens</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2806%29 Intra-Div%2C Canada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivery_Date_Control__c</picklist>
+        <values>
+            <fullName>ATP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales lead time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivery_Status__c</picklist>
+        <values>
+            <fullName>Completely processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not yet processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially processed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ERP_Order_Status__c</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completely Processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoiced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Yet Processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Processed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Embargo_Status__c</picklist>
+        <values>
+            <fullName>Blocked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Blocked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending - Not yet checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Freight_Code__c</picklist>
+        <values>
+            <fullName>10-Freight</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>20-Admin Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30-Admin Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40-Freight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50-Freight</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60-Admin Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70-Freight</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fuel_Surcharge__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Interco_Order_Status__c</picklist>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Internal_PO_Currency__c</picklist>
+        <values>
+            <fullName>AUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GBP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JPY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_Multi_System_Order__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legacy_System__c</picklist>
+        <values>
+            <fullName>SALESFORCE - Lumen Dynamics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legal_Control_Status__c</picklist>
+        <values>
+            <fullName>Blocked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Blocked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending - Not yet checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Method_of_Payment__c</picklist>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Multiple__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Division__c</picklist>
+        <values>
+            <fullName>%2800%29 Common Channel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AI%29 Advanced Imaging Sys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AP%29 Avalanche Photodiode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AS%29 Avionics %26 Space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28BS%29 Biomedical Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28CO%29 Catalog %26 Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28CP%29 CPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FI%29 ILC Flash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FQ%29 Q-ARC %28Photonics%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FT%29 Flashtubes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28HE%29 HeNe Lasers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28IC%29 IC Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28IL%29 ILC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LE%29 Land Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LS%29 LED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LT%29 Laser Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28ME%29 Medical Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28MI%29 Medical Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28OI%29 Optical Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28OR%29 ORC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PA%29 Photodiode Array</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PD%29 Photodiode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PE%29 Pekin Elmer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PO%29 Precision Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28RT%29 Reticon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SC%29 Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SL%29 Salem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SM%29 Sensors Salems Trad%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SS%29 Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28ST%29 Surv %26 Target Acq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28TE%29 Telecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28TP%29 Thermopiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28UV%29 Biomedical Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28VT%29 Voltarc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Sales_Group__c</picklist>
+        <values>
+            <fullName>%2810%29 Triggercoil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28100%29 NA PKI Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28110%29 EU PKI Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28110%29 ILC Flash Mfg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28120%29 AS PKI Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28121%29 Q-ARC %28Phontonics%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2820%29 QUSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28200%29 NA West Griot Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28202%29 Qubitekk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28207%29 CASE-NORTHSTAR MN%2CSD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2821%29 QUSA %26 TC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28210%29 C%2EW%2EBeach Company-NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28212%29 S%2EStates Mktg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28214%29 RepTek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28219%29 ALLIANCE GROUP ONE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28251%29 Sensors Salem Trad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28266%29 Other Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2830%29 PFL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28309%29 Pacer Components Plc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28310%29 ORC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28311%29 ORC Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28312%29 HTDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28314%29 Tech Niko Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2840%29 LEGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28400%29 PKI China %2F X%2EC%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28402%29 NOK PKI %28NEopt%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28404%29 B%26B Corp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2841%29 A90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28410%29 Cermax Lamp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28411%29 Cermax Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2843%29 Vactec Trading - PC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2844%29 UV Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28450%29 ILC-HPG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28460%29 Cermax Video</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2850%29 IRD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28503%29 Warsash Pty Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28504%29 ADM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28510%29 PE-Photovac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28520%29 PE-Lamps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28530%29 PE-Nelson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28540%29 PE-AA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28552%29 Telecom Minidil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2860%29 Diode Array</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28610%29 Salem%28HPG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2862%29 PDA Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28620%29 Salem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28621%29 Salem Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2866%29 PD Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2870%29 Accelerometer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28710%29 Reticon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28711%29 Reticon Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28751%29 CPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2880%29 Thermopile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28800%29 Pressure Sensors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28811%29 Voltarc Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2890%29 PCB Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28A00%29 NA PKI Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28A01%29 Azpect Photonics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AI2%29 AI Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28APD%29 Avalanche Photodiode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AS0%29 AS Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AS1%29 AS Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B00%29 NA West Griot Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B01%29 MAX TECH SALES-IL%2CWI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B02%29 MARATHON-GA%2CAL%2CMS%2CTN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B03%29 MAXTECH%3BOH%2CIN%2CKY%2CWV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B04%29 Ciontek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B05%29 TRILOGY%3BMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B06%29 HAWKINS%3BFL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B07%29 CASE-NORTHSTAR MN%2CSD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B08%29 ACORN ELEC%3B MO%2CAR%2CIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B09%29 HOUSE%3BTX%2COK%2CLA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B10%29 C%2EW%2EBeach Company-NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B11%29 MACINNIS%3B MA%2CCT%2CVT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B12%29 S%2EStates Mktg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B13%29 Adv%2ETech%2EServices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B14%29 RepTek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B15%29 Sales Eng%2E Concepts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B17%29 Trilogy Tech Inc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B18%29 Omega Sales%3BDE%2CNJ%2CPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B19%29 ATM Mid-Atlantic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B20%29 AS PKI Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B21%29 Alliance Group One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B22%29 KMA Consulting%3B BR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B50%29 NA House Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B51%29 B %26 B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B52%29 Shinkoh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B54%29 Blue Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B57%29 OTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B59%29 Fast Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B61%29 Martinsson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B62%29 ATYS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B63%29 Pacer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B64%29 Holst %26 Fleischer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B66%29 Other Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B67%29 Dalma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B71%29 Toptronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B75%29 PerkinElmer Opto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B76%29 PKI Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B77%29 Other Asia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B79%29 Laser Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B83%29 Seraphim %28Hong Kong%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B84%29 Seraphim %28Taiwan%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B85%29 Lober</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B86%29 K %26 K Far East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B87%29 Dae Huang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B88%29 Anchor Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B90%29 Neopt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28B93%29 Kevin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28BS0%29 BS Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28BS1%29 BS Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28BS2%29 BS Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28C00%29 PKI China %2F X%2EC%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28C01%29 PKI China MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28CO2%29 CO Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28D00%29 analytical system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28D01%29 analytical component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28HNL%29 HeNe Lasers Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LE0%29 LE Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LE1%29 LE Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LE2%29 LE Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LS1%29 LED Solution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LS2%29 LED Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LT0%29 LT Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LT1%29 LT Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LT2%29 LT Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28MI0%29 MI Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28MI1%29 MI Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28MI2%29 MI Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28OI0%29 OI Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28OI1%29 OI Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28OI2%29 OI Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PO0%29 PO Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PO1%29 PO Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PO2%29 PO Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SC0%29 SC Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SC1%29 SC Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SC2%29 SC Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28ST0%29 ST Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28ST1%29 ST Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28UV1%29 BL Assembly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Sales_Office__c</picklist>
+        <values>
+            <fullName>%281000%29 Americas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%282000%29 Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%283000%29 Asia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AI%29 Advanced Imaging Sys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AP%29 Avalanche Photodiode</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28AS%29 Avionics %26 Space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28BS%29 Biomedical Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28CO%29 Catalog %26 Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28CP%29 CPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FQ%29 Q-ARC %28Phontonics%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FT%29 Flashtubes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28HE%29 HeNe Lasers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28IC%29 IC Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28IL%29 ILC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LE%29 Land Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LS%29 LED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28LT%29 Laser Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28ME%29 Medical Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28MI%29 Medical Imaging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28OI%29 Optical Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28OR%29 ORC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PA%29 PDA Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PD%29 PD Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PE%29 Pekin Elmer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28PO%29 Precision Optics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28RT%29 Reticon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SC%29 Semiconductor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SL%29 Salem%28HPG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SM%29 Sensors Salem Trad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28SS%29 Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28ST%29 Surv %26 Target Acq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28TE%29 Telecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28TP%29 Thermopiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28UV%29 Biomedical Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28VT%29 Voltarc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Type__c</picklist>
+        <values>
+            <fullName>Append Order Lines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Call Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Memo Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer return for a repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debit Memo%2FBill only Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loan Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opto Return no Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opto Return to Stock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opto Return w%2FCredit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Stock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samples</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Sales Order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Overall_Credit_Status__c</picklist>
+        <values>
+            <fullName>Not Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Price_Group__c</picklist>
+        <values>
+            <fullName>%2800%29 No Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2801%29 Seraphim Eng%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2802%29 Seraphim Co%2E Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2803%29 Siemens Bangalore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2804%29 CW Beach Co%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2805%29 NEopt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2806%29 B%26B Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2807%29 EG%26G CRO Beijing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2808%29 Supaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2811%29 Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2812%29 Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2813%29 Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2814%29 Instruments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2815%29 Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2816%29 US Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2817%29 Non-US Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2818%29 Photocell-Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2819%29 Photocell-Misc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Price_List__c</picklist>
+        <values>
+            <fullName>%2801%29 OEM Price List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2802%29 Distributor Net List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2811%29 Agricultral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2812%29 Audio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2813%29 Automotive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2814%29 Bar Code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2815%29 Business Machine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2816%29 Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2817%29 Computer %26 Periphera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2818%29 Consumer Products</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2819%29 Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2820%29 Encoders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2821%29 Industrial Ctrl - G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2822%29 Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2823%29 Lighting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2824%29 Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2825%29 Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2826%29 Photograpic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2827%29 Security%2FSmoke Dete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%2828%29 X Ray Detection</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Print_on_Invoice__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Print_on_Packing_List__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Print_on_Quote__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Print_on_Sales_Order__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Purchase_Order_Type__c</picklist>
+        <values>
+            <fullName>ASAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DB - Dummy purchase order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENB - Standard PO DFPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EUB - DFPS%2C Int%2E Ord%2E Type</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FO - Framework order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NB - Standard PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEB1 - Batam Exp PO %28PEB1%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UB - Stock transport ord%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XNB - Standard PO %28XT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XZR - Return PO%28ZR%29 - XT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z3 - for 3rd Party Ord PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZB - Standard PO %28ZB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZGIT - Return PO %28ZGIT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZNB - Standard PO %28MN%2FSL%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZPNB - Std PO - PE %28ZPNB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZPR - Return PO - PE%28ZPR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZR - Return PO%28ZR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZS - Standard PO%28ZS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZSNB - Standard PO %28QSG%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QAD_Sales_Order_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HD - Credit Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z2 - Tax Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z3 - Confirm Shipment Info</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z4 - Awaiting Revised PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z5 - Letter of Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z6 - Customer Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z7 - Prepaid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z8 - Waiting for info from Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z9 - Hold - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZC - Credit Card Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZD - Pending Clarifications of Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZE - Pricing Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZH - Part %23 Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZP - Pending terms resubmit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZS - Stop Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ - Waiting for Lead Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RMA_Site__c</picklist>
+        <values>
+            <fullName>Main</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zero Cost</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recipient__c</picklist>
+        <values>
+            <fullName>Ahern William</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Berry Aaron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kemp Nate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mooney Kathleen</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rejection_Status__c</picklist>
+        <values>
+            <fullName>Completely processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not yet processed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially processed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_Reason_Code__c</picklist>
+        <values>
+            <fullName>Cust Damag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead on Arrival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retest Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong item shipped</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Return_Status__c</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RevenueRecognitionType__c</picklist>
+        <values>
+            <fullName>NRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OVT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ContractingMethod__c</picklist>
+        <values>
+            <fullName>By Subscription End Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__PaymentTerm__c</picklist>
+        <values>
+            <fullName>Due on receipt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 30</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Net 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Net 90</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__PriceCalcStatus__c</picklist>
+        <values>
+            <fullName>Aborted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Queued</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SFDC_Integration_Status__c</picklist>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_District__c</picklist>
+        <values>
+            <fullName>3rd party customer %2851%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPM-ROW %28751%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discrete Central-NA %28DISC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC-EUROPE %2802%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC-HZ %2804%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC-ROW %2801%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC-SG %2806%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HC-US %2803%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICS-US %2805%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILC Flash - US %2813%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILC-Europe %2842%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILC-ROW %2841%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ILC-USA %2843%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal cust Europe %2852%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal cust ROW %2854%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal cust USA %2853%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not assigned %28000%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR-ROW %2831%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reticon-Europe %2872%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reticon-ROW %2871%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reticon-US %2873%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salem-Europe %2862%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salem-ROW %2861%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salem-US %2863%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors Central %28SC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors East %28SE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors Europe %28SEUR%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors Far East %28SFE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors ROW %28SROW%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors West %28SW%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecom-Canada %28553%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecom-ROW %28551%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Voltarc-ROW %2881%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Group__c</picklist>
+        <values>
+            <fullName>Advanced Endo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avionics %26 Space</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crystal Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defense Türkei</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dental Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flash - Salem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB D%26A Diverse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB HC%26LS Diverse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB IM Diverse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hambles 1sales group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Catalog</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Material Proc%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machine Vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPTEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obsolete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations München</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations Regen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ophtalmology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optical Metrol%2E%26Insp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optotecs Re%2FGö</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photo and Lab Techn%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing Industry M%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Productronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research%26Laboratory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiconductor Techn%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonstige Erlöse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wafer Inspection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warning Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>X-Ray-Imaging</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Responsible__c</picklist>
+        <values>
+            <fullName>Ahern William</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Berry Aaron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kemp Nate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mooney Kathleen</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service__c</picklist>
+        <values>
+            <fullName>Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ground</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pickup</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Vendor__c</picklist>
+        <values>
+            <fullName>FDX 2D %28CAN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX 2D COL %28CAN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX EXP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX EXP COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX EXP COL DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX EXP DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX GD 3rd DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX GD COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX GD COL DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX GD PPD DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX Intl Eco 3rd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX Intl Eco 3rd DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX Intl Eco Col</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX Intl Eco Col DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX Intl Eco PPD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX Intl Eco PPD DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX P1 3rd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX P1 3rd DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX P1 COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX P1 COL DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX P1 PPD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FDX P1 PPD DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LDGI Pays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LDGI Pays DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS 3 Day COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS 3 Day COL DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS Exp COL %3D Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS Expedited COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS Expedited COL DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS GD COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS GD COL DT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS Saver COL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS Saver COL DT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site__c</picklist>
+        <values>
+            <fullName>Boulder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manila</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montreal</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Toronto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entered_in_ERP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting_on_ERP_Entry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Taxable__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Contract Call Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Memo Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debit Memo%2FBill only Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Sales Order</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Usage__c</picklist>
+        <values>
+            <fullName>%28DEF%29 Defence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28E%29 Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FAI%29 First Article Inspec</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FAT%29 First Article Test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FIM%29 Free Issue Material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28FLP%29 First Lot Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28M%29 Sample</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28NRM%29 Norm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28RW%29 ReWork</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28S%29 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28TBA%29 To Be Advised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%28Z01%29 FOC under Warranty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Warehouse__c</picklist>
+        <values>
+            <fullName>RETURNS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

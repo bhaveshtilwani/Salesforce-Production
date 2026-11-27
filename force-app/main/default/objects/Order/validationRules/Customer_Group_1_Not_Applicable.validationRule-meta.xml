@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group_1_Not_Applicable</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Site__c , &quot;Salem&quot;)
+&amp;&amp; ISPICKVAL(SFDC_Integration_Status__c, &apos;In Progress&apos;)
+&amp;&amp; NOT(ISBLANK( Customer_Group_1__c ))) ||
+AND(ISPICKVAL(Site__c , &quot;Miamisburg&quot;)
+&amp;&amp; ISPICKVAL(SFDC_Integration_Status__c, &apos;In Progress&apos;)
+&amp;&amp; NOT(ISBLANK(  Customer_Group_1__c )))</errorConditionFormula>
+    <errorDisplayField>Customer_Group_1__c</errorDisplayField>
+    <errorMessage>Customer Group 1 is Not Applicable for selected Site.</errorMessage>
+</ValidationRule>

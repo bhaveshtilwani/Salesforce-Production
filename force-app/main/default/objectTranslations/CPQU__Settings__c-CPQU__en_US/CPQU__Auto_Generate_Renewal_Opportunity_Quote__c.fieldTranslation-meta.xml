@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Automatically generates renewal Opportunity and Quote when a Contract is marked as Activated, checking the Renewal Forecast and Renewal Quoted checkboxes on the Opportunity. --></help>
+    <label><!-- Auto Generate Renewal Opportunity/Quote --></label>
+    <name>CPQU__Auto_Generate_Renewal_Opportunity_Quote__c</name>
+</CustomFieldTranslation>

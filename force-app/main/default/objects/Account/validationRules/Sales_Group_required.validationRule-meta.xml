@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Group_required</fullName>
+    <active>false</active>
+    <description>Sales Group required for
+Customer (int.number assgnmnt) - DEBI
+QioDebitoren Europäische Union - DEEU 
+Sold to - W001 - Wiesbaden
+Sold to - H001 - Hamble</description>
+    <errorConditionFormula>AND(
+    $User.Alias &lt;&gt; &quot;sconn&quot;,
+
+    $RecordType.Name = &quot;SAP Germany&quot;,
+ NOT(ISPICKVAL(ERP_Site__c ,&quot;Wiesbaden&quot;)),
+
+    OR(
+        ISPICKVAL(Account_Group__c , &quot;Customer int number assgnmnt - DEBI&quot;),
+        ISPICKVAL(Account_Group__c , &quot;QioDebitoren Europäische Union - DEEU&quot;)
+    ),
+
+    ISBLANK(TEXT(Sales_Group__c))
+)</errorConditionFormula>
+    <errorDisplayField>Sales_Group__c</errorDisplayField>
+    <errorMessage>Seles Group is required for selected account group</errorMessage>
+</ValidationRule>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Category__c</fullName>
+    <label>Product Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_LineGlobal__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arming, Fuzing, and Rocket Motor Ignition</fullName>
+                <default>false</default>
+                <label>Arming, Fuzing, and Rocket Motor Ignition</label>
+            </value>
+            <value>
+                <fullName>Assy</fullName>
+                <default>false</default>
+                <label>Assy</label>
+            </value>
+            <value>
+                <fullName>Boresight Optics</fullName>
+                <default>false</default>
+                <label>Boresight Optics</label>
+            </value>
+            <value>
+                <fullName>CAD/PAD</fullName>
+                <default>false</default>
+                <label>CAD/PAD</label>
+            </value>
+            <value>
+                <fullName>Components</fullName>
+                <default>false</default>
+                <label>Components</label>
+            </value>
+            <value>
+                <fullName>Coverglass</fullName>
+                <default>false</default>
+                <label>Coverglass</label>
+            </value>
+            <value>
+                <fullName>Electronic Arming and Fuzing</fullName>
+                <default>false</default>
+                <label>Electronic Arming and Fuzing</label>
+            </value>
+            <value>
+                <fullName>Energetic Components</fullName>
+                <default>false</default>
+                <label>Energetic Components</label>
+            </value>
+            <value>
+                <fullName>EP &amp; Obj</fullName>
+                <default>false</default>
+                <label>EP &amp; Obj</label>
+            </value>
+            <value>
+                <fullName>Eyepiece</fullName>
+                <default>false</default>
+                <label>Eyepiece</label>
+            </value>
+            <value>
+                <fullName>Ground</fullName>
+                <default>false</default>
+                <label>Ground</label>
+            </value>
+            <value>
+                <fullName>Hand Held</fullName>
+                <default>false</default>
+                <label>Hand Held</label>
+            </value>
+            <value>
+                <fullName>Helmet Mounted</fullName>
+                <default>false</default>
+                <label>Helmet Mounted</label>
+            </value>
+            <value>
+                <fullName>High Energy Switching</fullName>
+                <default>false</default>
+                <label>High Energy Switching</label>
+            </value>
+            <value>
+                <fullName>HUD</fullName>
+                <default>false</default>
+                <label>HUD</label>
+            </value>
+            <value>
+                <fullName>ILS</fullName>
+                <default>false</default>
+                <label>ILS</label>
+            </value>
+            <value>
+                <fullName>Increase in fleet of LLM Mk3</fullName>
+                <default>false</default>
+                <label>Increase in fleet of LLM Mk3</label>
+            </value>
+            <value>
+                <fullName>IR assy</fullName>
+                <default>false</default>
+                <label>IR assy</label>
+            </value>
+            <value>
+                <fullName>IR Components</fullName>
+                <default>false</default>
+                <label>IR Components</label>
+            </value>
+            <value>
+                <fullName>IR Goggle</fullName>
+                <default>false</default>
+                <label>IR Goggle</label>
+            </value>
+            <value>
+                <fullName>IR Zoom</fullName>
+                <default>false</default>
+                <label>IR Zoom</label>
+            </value>
+            <value>
+                <fullName>KIL use of GFA II tubes</fullName>
+                <default>false</default>
+                <label>KIL use of GFA II tubes</label>
+            </value>
+            <value>
+                <fullName>Laser Initiated Ordnance</fullName>
+                <default>false</default>
+                <label>Laser Initiated Ordnance</label>
+            </value>
+            <value>
+                <fullName>Laser Warning</fullName>
+                <default>false</default>
+                <label>Laser Warning</label>
+            </value>
+            <value>
+                <fullName>Magnetometers</fullName>
+                <default>false</default>
+                <label>Magnetometers</label>
+            </value>
+            <value>
+                <fullName>Mirrors</fullName>
+                <default>false</default>
+                <label>Mirrors</label>
+            </value>
+            <value>
+                <fullName>Misc</fullName>
+                <default>false</default>
+                <label>Misc</label>
+            </value>
+            <value>
+                <fullName>Munition Guidance</fullName>
+                <default>false</default>
+                <label>Munition Guidance</label>
+            </value>
+            <value>
+                <fullName>NNSA</fullName>
+                <default>false</default>
+                <label>NNSA</label>
+            </value>
+            <value>
+                <fullName>NVG</fullName>
+                <default>false</default>
+                <label>NVG</label>
+            </value>
+            <value>
+                <fullName>Objective</fullName>
+                <default>false</default>
+                <label>Objective</label>
+            </value>
+            <value>
+                <fullName>OSRS</fullName>
+                <default>false</default>
+                <label>OSRS</label>
+            </value>
+            <value>
+                <fullName>Photon Detector</fullName>
+                <default>false</default>
+                <label>Photon Detector</label>
+            </value>
+            <value>
+                <fullName>Power Supply</fullName>
+                <default>false</default>
+                <label>Power Supply</label>
+            </value>
+            <value>
+                <fullName>Precision Navigation and Timing</fullName>
+                <default>false</default>
+                <label>Precision Navigation and Timing</label>
+            </value>
+            <value>
+                <fullName>Pulsed Laser Diode</fullName>
+                <default>false</default>
+                <label>Pulsed Laser Diode</label>
+            </value>
+            <value>
+                <fullName>R&amp;D</fullName>
+                <default>false</default>
+                <label>R&amp;D</label>
+            </value>
+            <value>
+                <fullName>Range Finder</fullName>
+                <default>false</default>
+                <label>Range Finder</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Rocket Motor Ignition</fullName>
+                <default>false</default>
+                <label>Rocket Motor Ignition</label>
+            </value>
+            <value>
+                <fullName>Service Contract</fullName>
+                <default>false</default>
+                <label>Service Contract</label>
+            </value>
+            <value>
+                <fullName>Space Atomic Clocks</fullName>
+                <default>false</default>
+                <label>Space Atomic Clocks</label>
+            </value>
+            <value>
+                <fullName>STAS Ad Hoc task 006</fullName>
+                <default>false</default>
+                <label>STAS Ad Hoc task 006</label>
+            </value>
+            <value>
+                <fullName>Surveillance</fullName>
+                <default>false</default>
+                <label>Surveillance</label>
+            </value>
+            <value>
+                <fullName>Tactical Atomic Clocks</fullName>
+                <default>false</default>
+                <label>Tactical Atomic Clocks</label>
+            </value>
+            <value>
+                <fullName>Terminal guidance</fullName>
+                <default>false</default>
+                <label>Terminal guidance</label>
+            </value>
+            <value>
+                <fullName>TRU</fullName>
+                <default>false</default>
+                <label>TRU</label>
+            </value>
+            <value>
+                <fullName>Various</fullName>
+                <default>false</default>
+                <label>Various</label>
+            </value>
+            <value>
+                <fullName>Vehicle Sight</fullName>
+                <default>false</default>
+                <label>Vehicle Sight</label>
+            </value>
+            <value>
+                <fullName>Warhead Initiation</fullName>
+                <default>false</default>
+                <label>Warhead Initiation</label>
+            </value>
+            <value>
+                <fullName>Weapon Mounted</fullName>
+                <default>false</default>
+                <label>Weapon Mounted</label>
+            </value>
+            <value>
+                <fullName>Weapon Sight</fullName>
+                <default>false</default>
+                <label>Weapon Sight</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <valueName>High Energy Switching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <valueName>Magnetometers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <valueName>Misc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <valueName>Precision Navigation and Timing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <valueName>Space Atomic Clocks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <valueName>Tactical Atomic Clocks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Ground</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Hand Held</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Helmet Mounted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>ILS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Increase in fleet of LLM Mk3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>KIL use of GFA II tubes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>R&amp;D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Service Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>STAS Ad Hoc task 006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Surveillance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Weapon Mounted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Weapon Sight</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

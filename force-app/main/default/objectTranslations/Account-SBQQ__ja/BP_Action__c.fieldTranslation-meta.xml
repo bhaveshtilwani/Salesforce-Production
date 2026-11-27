@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- BP Action I: Creation + Mapping
+BP Action C: Company Code Extension + Mapping
+BP Action U: Only Update - No mapping
+BP Action M: Mapping Only -->
+    </help>
+    <label><!-- BP Action --></label>
+    <name>BP_Action__c</name>
+    <picklistValues>
+        <masterLabel>C</masterLabel>
+        <translation><!-- C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F</masterLabel>
+        <translation><!-- F --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I</masterLabel>
+        <translation><!-- I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M</masterLabel>
+        <translation><!-- M --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U</masterLabel>
+        <translation><!-- U --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

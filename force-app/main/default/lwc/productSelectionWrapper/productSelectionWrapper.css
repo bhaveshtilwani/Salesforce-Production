@@ -1,0 +1,13 @@
+.floating-button-bottom-right {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 99;
+}
+
+.floating-button-top-right {
+    position: fixed;
+    top: 215px;
+    right: 25px;
+    z-index: 99;
+}

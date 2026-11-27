@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>O campo no objeto de Cotação, de Linha de cotação ou de Opção de produto que é avaliado por essa consulta. Exigido se Tipo de correspondência = Valor do campo.</help>
+    <label><!-- Tested Field --></label>
+    <name>SBQQ__TestedField__c</name>
+    <picklistValues>
+        <masterLabel>CurrencyIsoCode</masterLabel>
+        <translation><!-- CurrencyIsoCode --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Excelitas_Site__c</masterLabel>
+        <translation><!-- Excelitas_Site__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKI_Selling_Site__c</masterLabel>
+        <translation><!-- PKI_Selling_Site__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Code</masterLabel>
+        <translation>Código do produto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantity_2__c</masterLabel>
+        <translation><!-- Quantity_2__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantity_3__c</masterLabel>
+        <translation><!-- Quantity_3__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantity_4__c</masterLabel>
+        <translation><!-- Quantity_4__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quantity_5__c</masterLabel>
+        <translation><!-- Quantity_5__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Account__c</masterLabel>
+        <translation><!-- SBQQ__Account__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__BillingCountry__c</masterLabel>
+        <translation><!-- SBQQ__BillingCountry__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Product__c</masterLabel>
+        <translation><!-- SBQQ__Product__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Quantity__c</masterLabel>
+        <translation><!-- SBQQ__Quantity__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__StartDate__c</masterLabel>
+        <translation><!-- SBQQ__StartDate__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

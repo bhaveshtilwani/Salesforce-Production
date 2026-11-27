@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Our Schedule Relative to Competition? --></help>
+    <label><!-- ETC schedule? --></label>
+    <name>ETC_schedule__c</name>
+    <picklistValues>
+        <masterLabel>Better Than (Shorter)</masterLabel>
+        <translation><!-- Better Than (Shorter) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equal To</masterLabel>
+        <translation><!-- Equal To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worse Than (Longer)</masterLabel>
+        <translation><!-- Worse Than (Longer) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

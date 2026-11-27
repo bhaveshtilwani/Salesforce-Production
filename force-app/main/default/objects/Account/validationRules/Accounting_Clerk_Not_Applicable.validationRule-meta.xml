@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounting_Clerk_Not_Applicable</fullName>
+    <active>false</active>
+    <description>Ger Accounts only</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP Germany&quot;,OR( ISPICKVAL( Account_Group__c ,  &quot;Ship To - W002&quot;),( ISPICKVAL( Account_Group__c ,  &quot;Ship To - H002&quot;)))
+&amp;&amp; NOT(ISBLANK(  Accounting_Clerk__c  )))</errorConditionFormula>
+    <errorDisplayField>Accounting_Clerk__c</errorDisplayField>
+    <errorMessage>Accounting Clerk is not applicable for selected Account Group.</errorMessage>
+</ValidationRule>

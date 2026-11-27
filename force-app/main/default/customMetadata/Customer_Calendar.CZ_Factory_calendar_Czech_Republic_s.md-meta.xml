@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>(CZ) - Factory calendar Czech Republic s</label>
+    <protected>false</protected>
+    <values>
+        <field>Customer_Calendar_ID__c</field>
+        <value xsi:type="xsd:string">CZ,CZ,CZ,CZ,CZ</value>
+    </values>
+    <values>
+        <field>Site__c</field>
+        <value xsi:type="xsd:string">ESG L&amp;D,ESG Optics,Shenzhen,St Louis,Manila</value>
+    </values>
+</CustomMetadata>

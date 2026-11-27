@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RECON_ACCT__c</fullName>
+    <defaultValue>&quot;0012001000&quot;</defaultValue>
+    <description>Assign Reconciliation Account based on the Account group (List of values and mapping )</description>
+    <inlineHelpText>C3RD - 0012001000
+CICO - 0012003000
+V3RD - 0021001000
+VICO - 0023008500
+VEMP - 0021001000
+ZOTV - 0021001000
+ZOTC - 0012001000</inlineHelpText>
+    <label>Recon Account</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Account_Group__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0012001000</fullName>
+                <default>true</default>
+                <label>0012001000</label>
+            </value>
+            <value>
+                <fullName>0012003000</fullName>
+                <default>false</default>
+                <label>0012003000</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Payer/Bill-to Entry - 0003</controllingFieldValue>
+            <controllingFieldValue>Customer int number assgnmnt - DEBI</controllingFieldValue>
+            <valueName>0012001000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payer/Bill-to Entry - 0003</controllingFieldValue>
+            <valueName>0012003000</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

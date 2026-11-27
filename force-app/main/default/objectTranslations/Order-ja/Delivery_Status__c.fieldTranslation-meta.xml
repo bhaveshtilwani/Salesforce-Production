@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Delivery Status --></label>
+    <name>Delivery_Status__c</name>
+    <picklistValues>
+        <masterLabel>Completely processed</masterLabel>
+        <translation><!-- Completely processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fully Delivered</masterLabel>
+        <translation><!-- Fully Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Delivered</masterLabel>
+        <translation><!-- Not Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Relev. for Deliv</masterLabel>
+        <translation><!-- Not Relev. for Deliv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not yet processed</masterLabel>
+        <translation><!-- Not yet processed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially Delivered</masterLabel>
+        <translation><!-- Partially Delivered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partially processed</masterLabel>
+        <translation><!-- Partially processed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

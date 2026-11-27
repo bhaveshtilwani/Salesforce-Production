@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Stores profiles excluded from the User Auto Deactivation Flow</description>
+    <label>User Deactivation Exclusion</label>
+    <pluralLabel>User Deactivation Exclusions</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

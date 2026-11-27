@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plant__c</fullName>
+    <label>Plant</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General Vaudreuil (C000)</fullName>
+                <default>false</default>
+                <label>General Vaudreuil (C000)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Tech. Philippines (3000)</fullName>
+                <default>false</default>
+                <label>Excelitas Tech. Philippines (3000)</label>
+            </value>
+            <value>
+                <fullName>SG-Optics Operating Plant (SGP3)</fullName>
+                <default>false</default>
+                <label>SG-Optics Operating Plant (SGP3)</label>
+            </value>
+            <value>
+                <fullName>PT. Excelitas Tech. Batam (IND3)</fullName>
+                <default>false</default>
+                <label>PT. Excelitas Tech. Batam (IND3)</label>
+            </value>
+            <value>
+                <fullName>PT. Excelitas Tech. Batam (IND1)</fullName>
+                <default>false</default>
+                <label>PT. Excelitas Tech. Batam (IND1)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Tech. Singapore (SGP1)</fullName>
+                <default>false</default>
+                <label>Excelitas Tech. Singapore (SGP1)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies OPSL (2000)</fullName>
+                <default>false</default>
+                <label>Excelitas Technologies OPSL (2000)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Tech. Shenzhen (SZN1)</fullName>
+                <default>false</default>
+                <label>Excelitas Tech. Shenzhen (SZN1)</label>
+            </value>
+            <value>
+                <fullName>Boulder (1003)</fullName>
+                <default>false</default>
+                <label>Boulder (1003)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GmbH &amp; Co.KG (0001)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GmbH &amp; Co.KG (0001)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Wiesbaden (0400)</fullName>
+                <default>false</default>
+                <label>Excelitas Wiesbaden (0400)</label>
+            </value>
+            <value>
+                <fullName>Excelitas Technologies Corp. (C000)</fullName>
+                <default>false</default>
+                <label>Excelitas Technologies Corp. (C000)</label>
+            </value>
+            <value>
+                <fullName>Qioptiq Photonics GmbH &amp; Co.KG (0002)</fullName>
+                <default>false</default>
+                <label>Qioptiq Photonics GmbH &amp; Co.KG (0002)</label>
+            </value>
+            <value>
+                <fullName>2000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(2000) Excelitas Technologies</label>
+            </value>
+            <value>
+                <fullName>3000</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(3000) Excelitas Tech. Philippines</label>
+            </value>
+            <value>
+                <fullName>IND1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(IND1) PT. Excelitas Tech. Batam - IND1</label>
+            </value>
+            <value>
+                <fullName>IND3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(IND3) PT. Excelitas Tech. Batam - IND3</label>
+            </value>
+            <value>
+                <fullName>SGP1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(SGP1) Excelitas Tech. Singapore</label>
+            </value>
+            <value>
+                <fullName>SGP3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(SGP3) SG-Optics Operating Plant</label>
+            </value>
+            <value>
+                <fullName>SZN1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>(SZN1) Excelitas Tech. Shenzhen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

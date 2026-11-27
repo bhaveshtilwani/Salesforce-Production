@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ESG</fullName>
+    <columns>Excelitas_Site__c</columns>
+    <columns>Standard_Product__c</columns>
+    <columns>Customer_Region__c</columns>
+    <columns>ERP_Part_Lookup__c</columns>
+    <columns>Product_SKU__c</columns>
+    <columns>ERP_Product_ID__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Excelitas_Site__c</field>
+        <operation>equals</operation>
+        <value>ESG</value>
+    </filters>
+    <label>ESG</label>
+</ListView>

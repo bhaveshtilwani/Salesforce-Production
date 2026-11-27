@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Rabattklasse, die von diesem Belegposten verwendet wird. Dieses Feld wird nur ausgefÃ¼llt, wenn ein Mengenrabatt angewandt wurde und der Rabattregelungstyp &quot;&quot;Bereich&quot;&quot; lautet.&quot;</help>
+    <label><!-- Discount Tier --></label>
+    <name>SBQQ__DiscountTier__c</name>
+    <relationshipLabel><!-- Quote Lines (Volume Discounted) --></relationshipLabel>
+</CustomFieldTranslation>

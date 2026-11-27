@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Credit Check in Progress</fullName>
+                <default>false</default>
+                <label>Credit Check in Progress</label>
+            </value>
+            <value>
+                <fullName>Credit On Hold</fullName>
+                <default>false</default>
+                <label>Credit On Hold</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>Submit to QAD</fullName>
+                <default>false</default>
+                <label>Submit to QAD</label>
+            </value>
+            <value>
+                <fullName>Submit Ship-to to QAD</fullName>
+                <default>false</default>
+                <label>Submit Ship-to to QAD</label>
+            </value>
+            <value>
+                <fullName>Submit to QADDEV</fullName>
+                <default>false</default>
+                <label>Submit to QADDEV</label>
+            </value>
+            <value>
+                <fullName>Submit Ship-to to QADDEV</fullName>
+                <default>false</default>
+                <label>Submit Ship-to to QADDEV</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

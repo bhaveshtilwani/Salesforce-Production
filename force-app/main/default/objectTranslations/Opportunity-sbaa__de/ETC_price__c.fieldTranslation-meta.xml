@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Our Price Relative to Competition? --></help>
+    <label><!-- ETC price? --></label>
+    <name>ETC_price__c</name>
+    <picklistValues>
+        <masterLabel>Better Than (Lower)</masterLabel>
+        <translation><!-- Better Than (Lower) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equal To</masterLabel>
+        <translation><!-- Equal To --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worse Than (Higher)</masterLabel>
+        <translation><!-- Worse Than (Higher) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

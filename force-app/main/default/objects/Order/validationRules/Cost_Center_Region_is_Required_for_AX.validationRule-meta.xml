@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Center_Region_is_Required_for_AX</fullName>
+    <active>true</active>
+    <description>Cost center Region is required for AX Billerica site</description>
+    <errorConditionFormula>AND(ISPICKVAL( Site__c , &quot;Billerica&quot;),ISPICKVAL(SFDC_Integration_Status__c, &apos;In Progress&apos;) &amp;&amp;
+ISBLANK(Cost_Center_Region__c ))</errorConditionFormula>
+    <errorDisplayField>Cost_Center_Region__c</errorDisplayField>
+    <errorMessage>Region for cost center is required for Billerica</errorMessage>
+</ValidationRule>

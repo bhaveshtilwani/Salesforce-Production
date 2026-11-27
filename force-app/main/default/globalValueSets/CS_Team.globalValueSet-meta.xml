@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CS AMER</fullName>
+        <default>false</default>
+        <label>CS AMER</label>
+    </customValue>
+    <customValue>
+        <fullName>CS ASIA</fullName>
+        <default>false</default>
+        <label>CS ASIA</label>
+    </customValue>
+    <customValue>
+        <fullName>CS EMEA</fullName>
+        <default>false</default>
+        <label>CS EMEA</label>
+    </customValue>
+    <customValue>
+        <fullName>CS VP</fullName>
+        <default>false</default>
+        <label>CS VP</label>
+    </customValue>
+    <customValue>
+        <fullName>CS ADMIN</fullName>
+        <default>false</default>
+        <label>CS ADMIN</label>
+    </customValue>
+    <masterLabel>CS-Team</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

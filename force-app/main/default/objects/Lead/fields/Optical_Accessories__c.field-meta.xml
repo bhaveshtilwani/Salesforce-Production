@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Optical_Accessories__c</fullName>
+    <label>Optical Accessories</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adaptor</fullName>
+                <default>false</default>
+                <label>Adaptor</label>
+            </value>
+            <value>
+                <fullName>Cure Ring</fullName>
+                <default>false</default>
+                <label>Cure Ring</label>
+            </value>
+            <value>
+                <fullName>Collimating Lens</fullName>
+                <default>false</default>
+                <label>Collimating Lens</label>
+            </value>
+            <value>
+                <fullName>Flange</fullName>
+                <default>false</default>
+                <label>Flange</label>
+            </value>
+            <value>
+                <fullName>Replacement Lamp X-Cite exacte</fullName>
+                <default>false</default>
+                <label>Replacement Lamp X-Cite exacte</label>
+            </value>
+            <value>
+                <fullName>Replacement Lamp X-Cite 200DC</fullName>
+                <default>false</default>
+                <label>Replacement Lamp X-Cite 200DC</label>
+            </value>
+            <value>
+                <fullName>Replacement Lamp X-Cite 120 Series</fullName>
+                <default>false</default>
+                <label>Replacement Lamp X-Cite 120 Series</label>
+            </value>
+            <value>
+                <fullName>10m Extension Cable</fullName>
+                <default>false</default>
+                <label>10m Extension Cable</label>
+            </value>
+            <value>
+                <fullName>10mm Focusing Lens (365nm &amp; 385nm only)</fullName>
+                <default>false</default>
+                <label>10mm Focusing Lens (365nm &amp; 385nm only)</label>
+            </value>
+            <value>
+                <fullName>10mm Focusing Lens (400nm only)</fullName>
+                <default>false</default>
+                <label>10mm Focusing Lens (400nm only)</label>
+            </value>
+            <value>
+                <fullName>1m Extension Cable</fullName>
+                <default>false</default>
+                <label>1m Extension Cable</label>
+            </value>
+            <value>
+                <fullName>3m Extension Cable</fullName>
+                <default>false</default>
+                <label>3m Extension Cable</label>
+            </value>
+            <value>
+                <fullName>3mm Focusing Lens (365nm &amp; 385nm only)</fullName>
+                <default>false</default>
+                <label>3mm Focusing Lens (365nm &amp; 385nm only)</label>
+            </value>
+            <value>
+                <fullName>3mm Focusing Lens (400nm only)</fullName>
+                <default>false</default>
+                <label>3mm Focusing Lens (400nm only)</label>
+            </value>
+            <value>
+                <fullName>5m, 5W5 DC power cable</fullName>
+                <default>false</default>
+                <label>5m, 5W5 DC power cable</label>
+            </value>
+            <value>
+                <fullName>6mm Focusing Lens (365nm &amp; 385nm only)</fullName>
+                <default>false</default>
+                <label>6mm Focusing Lens (365nm &amp; 385nm only)</label>
+            </value>
+            <value>
+                <fullName>6mm Focusing Lens (400nm only)</fullName>
+                <default>false</default>
+                <label>6mm Focusing Lens (400nm only)</label>
+            </value>
+            <value>
+                <fullName>8mm Focusing Lens (400nm only)</fullName>
+                <default>false</default>
+                <label>8mm Focusing Lens (400nm only)</label>
+            </value>
+            <value>
+                <fullName>90 Angle Adapters</fullName>
+                <default>false</default>
+                <label>90 Angle Adapters</label>
+            </value>
+            <value>
+                <fullName>CV300 AREA CURING CONVEYOR SYSTEM</fullName>
+                <default>false</default>
+                <label>CV300 AREA CURING CONVEYOR SYSTEM</label>
+            </value>
+            <value>
+                <fullName>Heat Sink</fullName>
+                <default>false</default>
+                <label>Heat Sink</label>
+            </value>
+            <value>
+                <fullName>Horseshoe Adapter</fullName>
+                <default>false</default>
+                <label>Horseshoe Adapter</label>
+            </value>
+            <value>
+                <fullName>Large Area Focusing Lens</fullName>
+                <default>false</default>
+                <label>Large Area Focusing Lens</label>
+            </value>
+            <value>
+                <fullName>Light Line</fullName>
+                <default>false</default>
+                <label>Light Line</label>
+            </value>
+            <value>
+                <fullName>Mirror Cone</fullName>
+                <default>false</default>
+                <label>Mirror Cone</label>
+            </value>
+            <value>
+                <fullName>UV glasses</fullName>
+                <default>false</default>
+                <label>UV glasses</label>
+            </value>
+            <value>
+                <fullName>PLC1000 PLC controller</fullName>
+                <default>false</default>
+                <label>PLC1000 PLC controller</label>
+            </value>
+            <value>
+                <fullName>System Control Unit, 650W SC0650</fullName>
+                <default>false</default>
+                <label>System Control Unit, 650W SC0650</label>
+            </value>
+            <value>
+                <fullName>System Control Unit, 750W SC0750</fullName>
+                <default>false</default>
+                <label>System Control Unit, 750W SC0750</label>
+            </value>
+            <value>
+                <fullName>System Control Unit, 100W SC0100</fullName>
+                <default>false</default>
+                <label>System Control Unit, 100W SC0100</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

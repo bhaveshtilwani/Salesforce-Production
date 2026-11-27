@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Picklist__c</fullName>
+    <description>Application Pcicklist object</description>
+    <label>Application</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_LineGlobal__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adaptive Cruise Control</fullName>
+                <default>false</default>
+                <label>Adaptive Cruise Control</label>
+            </value>
+            <value>
+                <fullName>Adaptive Optics</fullName>
+                <default>false</default>
+                <label>Adaptive Optics</label>
+            </value>
+            <value>
+                <fullName>Air Conditioning</fullName>
+                <default>false</default>
+                <label>Air Conditioning</label>
+            </value>
+            <value>
+                <fullName>Ambient Light Sensing</fullName>
+                <default>false</default>
+                <label>Ambient Light Sensing</label>
+            </value>
+            <value>
+                <fullName>Analytical</fullName>
+                <default>false</default>
+                <label>Analytical</label>
+            </value>
+            <value>
+                <fullName>Anti-Laser</fullName>
+                <default>false</default>
+                <label>Anti-Laser</label>
+            </value>
+            <value>
+                <fullName>Architectural Lighting</fullName>
+                <default>false</default>
+                <label>Architectural Lighting</label>
+            </value>
+            <value>
+                <fullName>Asymmetrical Flow Field-Flow Fractionation</fullName>
+                <default>false</default>
+                <label>Asymmetrical Flow Field-Flow Fractionation</label>
+            </value>
+            <value>
+                <fullName>Audio Control</fullName>
+                <default>false</default>
+                <label>Audio Control</label>
+            </value>
+            <value>
+                <fullName>Automated Test Equipment</fullName>
+                <default>false</default>
+                <label>Automated Test Equipment</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Aviation Lighting</fullName>
+                <default>false</default>
+                <label>Aviation Lighting</label>
+            </value>
+            <value>
+                <fullName>Avionics</fullName>
+                <default>false</default>
+                <label>Avionics</label>
+            </value>
+            <value>
+                <fullName>Ballistic Missile</fullName>
+                <default>false</default>
+                <label>Ballistic Missile</label>
+            </value>
+            <value>
+                <fullName>Barcode Reader</fullName>
+                <default>false</default>
+                <label>Barcode Reader</label>
+            </value>
+            <value>
+                <fullName>Beam Rider (2x)</fullName>
+                <default>false</default>
+                <label>Beam Rider (2x)</label>
+            </value>
+            <value>
+                <fullName>Biotech Instrumentation</fullName>
+                <default>false</default>
+                <label>Biotech Instrumentation</label>
+            </value>
+            <value>
+                <fullName>Blood Analyzers and Immunoassay</fullName>
+                <default>false</default>
+                <label>Blood Analyzers and Immunoassay</label>
+            </value>
+            <value>
+                <fullName>Blood Temperature Measurement</fullName>
+                <default>false</default>
+                <label>Blood Temperature Measurement</label>
+            </value>
+            <value>
+                <fullName>Bomb</fullName>
+                <default>false</default>
+                <label>Bomb</label>
+            </value>
+            <value>
+                <fullName>Burner Control</fullName>
+                <default>false</default>
+                <label>Burner Control</label>
+            </value>
+            <value>
+                <fullName>Cabin Systems</fullName>
+                <default>false</default>
+                <label>Cabin Systems</label>
+            </value>
+            <value>
+                <fullName>CAD/PAD</fullName>
+                <default>false</default>
+                <label>CAD/PAD</label>
+            </value>
+            <value>
+                <fullName>Carbon Analysis</fullName>
+                <default>false</default>
+                <label>Carbon Analysis</label>
+            </value>
+            <value>
+                <fullName>Cargo Inspection</fullName>
+                <default>false</default>
+                <label>Cargo Inspection</label>
+            </value>
+            <value>
+                <fullName>Check Imaging</fullName>
+                <default>false</default>
+                <label>Check Imaging</label>
+            </value>
+            <value>
+                <fullName>Colorimetry</fullName>
+                <default>false</default>
+                <label>Colorimetry</label>
+            </value>
+            <value>
+                <fullName>Color Measurement</fullName>
+                <default>false</default>
+                <label>Color Measurement</label>
+            </value>
+            <value>
+                <fullName>Command and Control Systems</fullName>
+                <default>false</default>
+                <label>Command and Control Systems</label>
+            </value>
+            <value>
+                <fullName>Confocal Microscopy</fullName>
+                <default>false</default>
+                <label>Confocal Microscopy</label>
+            </value>
+            <value>
+                <fullName>Countermeasure</fullName>
+                <default>false</default>
+                <label>Countermeasure</label>
+            </value>
+            <value>
+                <fullName>Cruise Missile</fullName>
+                <default>false</default>
+                <label>Cruise Missile</label>
+            </value>
+            <value>
+                <fullName>Currency Validation</fullName>
+                <default>false</default>
+                <label>Currency Validation</label>
+            </value>
+            <value>
+                <fullName>Data Communication</fullName>
+                <default>false</default>
+                <label>Data Communication</label>
+            </value>
+            <value>
+                <fullName>Dental</fullName>
+                <default>false</default>
+                <label>Dental</label>
+            </value>
+            <value>
+                <fullName>Depot</fullName>
+                <default>false</default>
+                <label>Depot</label>
+            </value>
+            <value>
+                <fullName>Display</fullName>
+                <default>false</default>
+                <label>Display</label>
+            </value>
+            <value>
+                <fullName>DNA Sequencing</fullName>
+                <default>false</default>
+                <label>DNA Sequencing</label>
+            </value>
+            <value>
+                <fullName>Driver Vision Enhancers</fullName>
+                <default>false</default>
+                <label>Driver Vision Enhancers</label>
+            </value>
+            <value>
+                <fullName>Ear Thermometer</fullName>
+                <default>false</default>
+                <label>Ear Thermometer</label>
+            </value>
+            <value>
+                <fullName>Electronic Warfare</fullName>
+                <default>false</default>
+                <label>Electronic Warfare</label>
+            </value>
+            <value>
+                <fullName>Endoscopy</fullName>
+                <default>false</default>
+                <label>Endoscopy</label>
+            </value>
+            <value>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <label>Entertainment</label>
+            </value>
+            <value>
+                <fullName>Entertainment Lighting</fullName>
+                <default>false</default>
+                <label>Entertainment Lighting</label>
+            </value>
+            <value>
+                <fullName>Environmental Analytics</fullName>
+                <default>false</default>
+                <label>Environmental Analytics</label>
+            </value>
+            <value>
+                <fullName>Fiber Optic Temperature Measurement</fullName>
+                <default>false</default>
+                <label>Fiber Optic Temperature Measurement</label>
+            </value>
+            <value>
+                <fullName>Fiber Optic Test Equipment</fullName>
+                <default>false</default>
+                <label>Fiber Optic Test Equipment</label>
+            </value>
+            <value>
+                <fullName>Flow Cytometry / Cell Analysis</fullName>
+                <default>false</default>
+                <label>Flow Cytometry / Cell Analysis</label>
+            </value>
+            <value>
+                <fullName>Fluorescence &amp; Luminescence</fullName>
+                <default>false</default>
+                <label>Fluorescence &amp; Luminescence</label>
+            </value>
+            <value>
+                <fullName>Fluorimetry</fullName>
+                <default>false</default>
+                <label>Fluorimetry</label>
+            </value>
+            <value>
+                <fullName>Fog Detection</fullName>
+                <default>false</default>
+                <label>Fog Detection</label>
+            </value>
+            <value>
+                <fullName>Food/Grain Sorting</fullName>
+                <default>false</default>
+                <label>Food/Grain Sorting</label>
+            </value>
+            <value>
+                <fullName>Food Inspection</fullName>
+                <default>false</default>
+                <label>Food Inspection</label>
+            </value>
+            <value>
+                <fullName>Forehead Thermometer</fullName>
+                <default>false</default>
+                <label>Forehead Thermometer</label>
+            </value>
+            <value>
+                <fullName>Free Space Communication</fullName>
+                <default>false</default>
+                <label>Free Space Communication</label>
+            </value>
+            <value>
+                <fullName>Gas Detection</fullName>
+                <default>false</default>
+                <label>Gas Detection</label>
+            </value>
+            <value>
+                <fullName>Gas Detection and Analysis</fullName>
+                <default>false</default>
+                <label>Gas Detection and Analysis</label>
+            </value>
+            <value>
+                <fullName>Gene Sequencing</fullName>
+                <default>false</default>
+                <label>Gene Sequencing</label>
+            </value>
+            <value>
+                <fullName>GPS</fullName>
+                <default>false</default>
+                <label>GPS</label>
+            </value>
+            <value>
+                <fullName>Ground Vehicle</fullName>
+                <default>false</default>
+                <label>Ground Vehicle</label>
+            </value>
+            <value>
+                <fullName>Hazardous Area</fullName>
+                <default>false</default>
+                <label>Hazardous Area</label>
+            </value>
+            <value>
+                <fullName>Heads Up Display</fullName>
+                <default>false</default>
+                <label>Heads Up Display</label>
+            </value>
+            <value>
+                <fullName>Helmet Mounted Display</fullName>
+                <default>false</default>
+                <label>Helmet Mounted Display</label>
+            </value>
+            <value>
+                <fullName>HPLC</fullName>
+                <default>false</default>
+                <label>HPLC</label>
+            </value>
+            <value>
+                <fullName>IFF Transponder</fullName>
+                <default>false</default>
+                <label>IFF Transponder</label>
+            </value>
+            <value>
+                <fullName>Induction Heater</fullName>
+                <default>false</default>
+                <label>Induction Heater</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Industrial Imaging</fullName>
+                <default>false</default>
+                <label>Industrial Imaging</label>
+            </value>
+            <value>
+                <fullName>Intense Pulsed Light (IPL)</fullName>
+                <default>false</default>
+                <label>Intense Pulsed Light (IPL)</label>
+            </value>
+            <value>
+                <fullName>Intrusion Alarm</fullName>
+                <default>false</default>
+                <label>Intrusion Alarm</label>
+            </value>
+            <value>
+                <fullName>IR Illumination</fullName>
+                <default>false</default>
+                <label>IR Illumination</label>
+            </value>
+            <value>
+                <fullName>Laser Material Processing</fullName>
+                <default>false</default>
+                <label>Laser Material Processing</label>
+            </value>
+            <value>
+                <fullName>Laser Range Finding</fullName>
+                <default>false</default>
+                <label>Laser Range Finding</label>
+            </value>
+            <value>
+                <fullName>Laser Warning</fullName>
+                <default>false</default>
+                <label>Laser Warning</label>
+            </value>
+            <value>
+                <fullName>LEP</fullName>
+                <default>false</default>
+                <label>LEP</label>
+            </value>
+            <value>
+                <fullName>LIDAR</fullName>
+                <default>false</default>
+                <label>LIDAR</label>
+            </value>
+            <value>
+                <fullName>Light Meter</fullName>
+                <default>false</default>
+                <label>Light Meter</label>
+            </value>
+            <value>
+                <fullName>Light Switch</fullName>
+                <default>false</default>
+                <label>Light Switch</label>
+            </value>
+            <value>
+                <fullName>Low Resolution IR Imaging</fullName>
+                <default>false</default>
+                <label>Low Resolution IR Imaging</label>
+            </value>
+            <value>
+                <fullName>Luggage Inspection</fullName>
+                <default>false</default>
+                <label>Luggage Inspection</label>
+            </value>
+            <value>
+                <fullName>Machine Vision</fullName>
+                <default>false</default>
+                <label>Machine Vision</label>
+            </value>
+            <value>
+                <fullName>Mail Sorting</fullName>
+                <default>false</default>
+                <label>Mail Sorting</label>
+            </value>
+            <value>
+                <fullName>Mass Spectroscopy - ICP</fullName>
+                <default>false</default>
+                <label>Mass Spectroscopy - ICP</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Medical analytics</fullName>
+                <default>false</default>
+                <label>Medical analytics</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Medical Lighting</fullName>
+                <default>false</default>
+                <label>Medical Lighting</label>
+            </value>
+            <value>
+                <fullName>Medical Therapeutic</fullName>
+                <default>false</default>
+                <label>Medical Therapeutic</label>
+            </value>
+            <value>
+                <fullName>MicroPlate Readers</fullName>
+                <default>false</default>
+                <label>MicroPlate Readers</label>
+            </value>
+            <value>
+                <fullName>Microscope Power Meter</fullName>
+                <default>false</default>
+                <label>Microscope Power Meter</label>
+            </value>
+            <value>
+                <fullName>Microscopy</fullName>
+                <default>false</default>
+                <label>Microscopy</label>
+            </value>
+            <value>
+                <fullName>Microwave Oven</fullName>
+                <default>false</default>
+                <label>Microwave Oven</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>Military</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+                <label>Miscellaneous</label>
+            </value>
+            <value>
+                <fullName>Missile Defense System</fullName>
+                <default>false</default>
+                <label>Missile Defense System</label>
+            </value>
+            <value>
+                <fullName>Missile Warning</fullName>
+                <default>false</default>
+                <label>Missile Warning</label>
+            </value>
+            <value>
+                <fullName>Missile Warning &amp; Targeting</fullName>
+                <default>false</default>
+                <label>Missile Warning &amp; Targeting</label>
+            </value>
+            <value>
+                <fullName>Molecular Imaging</fullName>
+                <default>false</default>
+                <label>Molecular Imaging</label>
+            </value>
+            <value>
+                <fullName>Motion Detection</fullName>
+                <default>false</default>
+                <label>Motion Detection</label>
+            </value>
+            <value>
+                <fullName>Multi-function sonar</fullName>
+                <default>false</default>
+                <label>Multi-function sonar</label>
+            </value>
+            <value>
+                <fullName>MWS&amp;T</fullName>
+                <default>false</default>
+                <label>MWS&amp;T</label>
+            </value>
+            <value>
+                <fullName>Navigation</fullName>
+                <default>false</default>
+                <label>Navigation</label>
+            </value>
+            <value>
+                <fullName>Night vision</fullName>
+                <default>false</default>
+                <label>Night vision</label>
+            </value>
+            <value>
+                <fullName>Optical Switch</fullName>
+                <default>false</default>
+                <label>Optical Switch</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Particle Sizing and Counting</fullName>
+                <default>false</default>
+                <label>Particle Sizing and Counting</label>
+            </value>
+            <value>
+                <fullName>PCB Inspection</fullName>
+                <default>false</default>
+                <label>PCB Inspection</label>
+            </value>
+            <value>
+                <fullName>PCR</fullName>
+                <default>false</default>
+                <label>PCR</label>
+            </value>
+            <value>
+                <fullName>PGM</fullName>
+                <default>false</default>
+                <label>PGM</label>
+            </value>
+            <value>
+                <fullName>Photo</fullName>
+                <default>false</default>
+                <label>Photo</label>
+            </value>
+            <value>
+                <fullName>Portable Consumer Lighting</fullName>
+                <default>false</default>
+                <label>Portable Consumer Lighting</label>
+            </value>
+            <value>
+                <fullName>Power Grid Crowbar</fullName>
+                <default>false</default>
+                <label>Power Grid Crowbar</label>
+            </value>
+            <value>
+                <fullName>Precision Guided Munition</fullName>
+                <default>false</default>
+                <label>Precision Guided Munition</label>
+            </value>
+            <value>
+                <fullName>Presence Detection</fullName>
+                <default>false</default>
+                <label>Presence Detection</label>
+            </value>
+            <value>
+                <fullName>Printer/Copier</fullName>
+                <default>false</default>
+                <label>Printer/Copier</label>
+            </value>
+            <value>
+                <fullName>Professional Photography</fullName>
+                <default>false</default>
+                <label>Professional Photography</label>
+            </value>
+            <value>
+                <fullName>Proximity Light Switch</fullName>
+                <default>false</default>
+                <label>Proximity Light Switch</label>
+            </value>
+            <value>
+                <fullName>Proximity Sensing</fullName>
+                <default>false</default>
+                <label>Proximity Sensing</label>
+            </value>
+            <value>
+                <fullName>Pulse Oximetry</fullName>
+                <default>false</default>
+                <label>Pulse Oximetry</label>
+            </value>
+            <value>
+                <fullName>Quantum Cryptography</fullName>
+                <default>false</default>
+                <label>Quantum Cryptography</label>
+            </value>
+            <value>
+                <fullName>Radar</fullName>
+                <default>false</default>
+                <label>Radar</label>
+            </value>
+            <value>
+                <fullName>Radiation Detection</fullName>
+                <default>false</default>
+                <label>Radiation Detection</label>
+            </value>
+            <value>
+                <fullName>Range Finding</fullName>
+                <default>false</default>
+                <label>Range Finding</label>
+            </value>
+            <value>
+                <fullName>Remote Temperature Sensing</fullName>
+                <default>false</default>
+                <label>Remote Temperature Sensing</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Retina Scanning</fullName>
+                <default>false</default>
+                <label>Retina Scanning</label>
+            </value>
+            <value>
+                <fullName>Ring Laser Gyros (RLGs)</fullName>
+                <default>false</default>
+                <label>Ring Laser Gyros (RLGs)</label>
+            </value>
+            <value>
+                <fullName>Safety Curtain</fullName>
+                <default>false</default>
+                <label>Safety Curtain</label>
+            </value>
+            <value>
+                <fullName>SAL Seeker for 2.75&quot; rocket</fullName>
+                <default>false</default>
+                <label>SAL Seeker for 2.75&quot; rocket</label>
+            </value>
+            <value>
+                <fullName>SatComm/  Payload</fullName>
+                <default>false</default>
+                <label>SatComm/  Payload</label>
+            </value>
+            <value>
+                <fullName>Satellite</fullName>
+                <default>false</default>
+                <label>Satellite</label>
+            </value>
+            <value>
+                <fullName>Scientific / R&amp;D</fullName>
+                <default>false</default>
+                <label>Scientific / R&amp;D</label>
+            </value>
+            <value>
+                <fullName>Scientific &amp; Earth Observation</fullName>
+                <default>false</default>
+                <label>Scientific &amp; Earth Observation</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Security Laser Scanner</fullName>
+                <default>false</default>
+                <label>Security Laser Scanner</label>
+            </value>
+            <value>
+                <fullName>Shipboard Electronics</fullName>
+                <default>false</default>
+                <label>Shipboard Electronics</label>
+            </value>
+            <value>
+                <fullName>Signal Lighting</fullName>
+                <default>false</default>
+                <label>Signal Lighting</label>
+            </value>
+            <value>
+                <fullName>Signs &amp; Displays</fullName>
+                <default>false</default>
+                <label>Signs &amp; Displays</label>
+            </value>
+            <value>
+                <fullName>Simulation</fullName>
+                <default>false</default>
+                <label>Simulation</label>
+            </value>
+            <value>
+                <fullName>Single Molecule Detection</fullName>
+                <default>false</default>
+                <label>Single Molecule Detection</label>
+            </value>
+            <value>
+                <fullName>Smoke Detection</fullName>
+                <default>false</default>
+                <label>Smoke Detection</label>
+            </value>
+            <value>
+                <fullName>Soldier Systems</fullName>
+                <default>false</default>
+                <label>Soldier Systems</label>
+            </value>
+            <value>
+                <fullName>Sonar</fullName>
+                <default>false</default>
+                <label>Sonar</label>
+            </value>
+            <value>
+                <fullName>Sparc Emmission Spectroscopy</fullName>
+                <default>false</default>
+                <label>Sparc Emmission Spectroscopy</label>
+            </value>
+            <value>
+                <fullName>Spectroscopy</fullName>
+                <default>false</default>
+                <label>Spectroscopy</label>
+            </value>
+            <value>
+                <fullName>Speed Gun</fullName>
+                <default>false</default>
+                <label>Speed Gun</label>
+            </value>
+            <value>
+                <fullName>STA</fullName>
+                <default>false</default>
+                <label>STA</label>
+            </value>
+            <value>
+                <fullName>Stand Alone</fullName>
+                <default>false</default>
+                <label>Stand Alone</label>
+            </value>
+            <value>
+                <fullName>Sunload and DRL Sensor</fullName>
+                <default>false</default>
+                <label>Sunload and DRL Sensor</label>
+            </value>
+            <value>
+                <fullName>Surveillance</fullName>
+                <default>false</default>
+                <label>Surveillance</label>
+            </value>
+            <value>
+                <fullName>Surveying Equipment</fullName>
+                <default>false</default>
+                <label>Surveying Equipment</label>
+            </value>
+            <value>
+                <fullName>Tactical Communications</fullName>
+                <default>false</default>
+                <label>Tactical Communications</label>
+            </value>
+            <value>
+                <fullName>Tactical Missile</fullName>
+                <default>false</default>
+                <label>Tactical Missile</label>
+            </value>
+            <value>
+                <fullName>Tactical Weapon</fullName>
+                <default>false</default>
+                <label>Tactical Weapon</label>
+            </value>
+            <value>
+                <fullName>Tanks</fullName>
+                <default>false</default>
+                <label>Tanks</label>
+            </value>
+            <value>
+                <fullName>Target Acquisition</fullName>
+                <default>false</default>
+                <label>Target Acquisition</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>Test Equipment</fullName>
+                <default>false</default>
+                <label>Test Equipment</label>
+            </value>
+            <value>
+                <fullName>Textile Inspection</fullName>
+                <default>false</default>
+                <label>Textile Inspection</label>
+            </value>
+            <value>
+                <fullName>Through Life Support</fullName>
+                <default>false</default>
+                <label>Through Life Support</label>
+            </value>
+            <value>
+                <fullName>Transportation/Obstruction Warning</fullName>
+                <default>false</default>
+                <label>Transportation/Obstruction Warning</label>
+            </value>
+            <value>
+                <fullName>Unidentified</fullName>
+                <default>false</default>
+                <label>Unidentified</label>
+            </value>
+            <value>
+                <fullName>Vetronics</fullName>
+                <default>false</default>
+                <label>Vetronics</label>
+            </value>
+            <value>
+                <fullName>Wafer Inspection</fullName>
+                <default>false</default>
+                <label>Wafer Inspection</label>
+            </value>
+            <value>
+                <fullName>Warning Beacons</fullName>
+                <default>false</default>
+                <label>Warning Beacons</label>
+            </value>
+            <value>
+                <fullName>Weapon Sights</fullName>
+                <default>false</default>
+                <label>Weapon Sights</label>
+            </value>
+            <value>
+                <fullName>Web Inspection</fullName>
+                <default>false</default>
+                <label>Web Inspection</label>
+            </value>
+            <value>
+                <fullName>X-Ray Detection</fullName>
+                <default>false</default>
+                <label>X-Ray Detection</label>
+            </value>
+            <value>
+                <fullName>HEL</fullName>
+                <default>false</default>
+                <label>HEL</label>
+            </value>
+            <value>
+                <fullName>Ignition</fullName>
+                <default>false</default>
+                <label>Ignition</label>
+            </value>
+            <value>
+                <fullName>Industrial Pulse Power</fullName>
+                <default>false</default>
+                <label>Industrial Pulse Power</label>
+            </value>
+            <value>
+                <fullName>Linear Accelerators</fullName>
+                <default>false</default>
+                <label>Linear Accelerators</label>
+            </value>
+            <value>
+                <fullName>National Laboratories</fullName>
+                <default>false</default>
+                <label>National Laboratories</label>
+            </value>
+            <value>
+                <fullName>Adhesion</fullName>
+                <default>false</default>
+                <label>Adhesion</label>
+            </value>
+            <value>
+                <fullName>Aesthetics</fullName>
+                <default>false</default>
+                <label>Aesthetics</label>
+            </value>
+            <value>
+                <fullName>Analog printing</fullName>
+                <default>false</default>
+                <label>Analog printing</label>
+            </value>
+            <value>
+                <fullName>Analysis, Diagnostics &amp; Detection</fullName>
+                <default>false</default>
+                <label>Analysis, Diagnostics &amp; Detection</label>
+            </value>
+            <value>
+                <fullName>Coatings</fullName>
+                <default>false</default>
+                <label>Coatings</label>
+            </value>
+            <value>
+                <fullName>Composites</fullName>
+                <default>false</default>
+                <label>Composites</label>
+            </value>
+            <value>
+                <fullName>Converting</fullName>
+                <default>false</default>
+                <label>Converting</label>
+            </value>
+            <value>
+                <fullName>Digital printing</fullName>
+                <default>false</default>
+                <label>Digital printing</label>
+            </value>
+            <value>
+                <fullName>Disinfection</fullName>
+                <default>false</default>
+                <label>Disinfection</label>
+            </value>
+            <value>
+                <fullName>Food Processing</fullName>
+                <default>false</default>
+                <label>Food Processing</label>
+            </value>
+            <value>
+                <fullName>Heating &amp; drying</fullName>
+                <default>false</default>
+                <label>Heating &amp; drying</label>
+            </value>
+            <value>
+                <fullName>Laser</fullName>
+                <default>false</default>
+                <label>Laser</label>
+            </value>
+            <value>
+                <fullName>Oxidation</fullName>
+                <default>false</default>
+                <label>Oxidation</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Optical Inspection</controllingFieldValue>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Unidentified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Blood Analyzers and Immunoassay</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Colorimetry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Fluorimetry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Gas Detection and Analysis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>HPLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Machine Vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>MicroPlate Readers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytical</controllingFieldValue>
+            <valueName>Spectroscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <valueName>Adaptive Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <valueName>DNA Sequencing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <controllingFieldValue>Optical Systems</controllingFieldValue>
+            <valueName>Fluorescence &amp; Luminescence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Medical analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Particle Sizing and Counting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <valueName>Quantum Cryptography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SPCM</controllingFieldValue>
+            <valueName>Single Molecule Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Adaptive Cruise Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Barcode Reader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Biotech Instrumentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Data Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Fiber Optic Temperature Measurement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Fiber Optic Test Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Fog Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Free Space Communication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>IR Illumination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Molecular Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Pulse Oximetry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Radiation Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Range Finding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Retina Scanning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Security Laser Scanner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Speed Gun</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Surveying Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Performance</controllingFieldValue>
+            <valueName>Test Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Gas Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <valueName>Intrusion Alarm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <valueName>Motion Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pyroelectric Sensors</controllingFieldValue>
+            <valueName>Proximity Light Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Ambient Light Sensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Color Measurement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Currency Validation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Light Meter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Optical Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Printer/Copier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Safety Curtain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Smoke Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photodiodes</controllingFieldValue>
+            <valueName>Sunload and DRL Sensor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Air Conditioning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Blood Temperature Measurement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Ear Thermometer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Forehead Thermometer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Induction Heater</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Low Resolution IR Imaging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Microwave Oven</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Presence Detection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thermopile</controllingFieldValue>
+            <valueName>Remote Temperature Sensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Anti-Laser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Automated Test Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Avionics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Ballistic Missile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Beam Rider (2x)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Bomb</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Cabin Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>CAD/PAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Command and Control Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Countermeasure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Cruise Missile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Depot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Driver Vision Enhancers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Electronic Warfare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>GPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Ground Vehicle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Laser Range Finding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Laser Warning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>LEP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>LIDAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Medical Therapeutic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Military</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Miscellaneous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Missile Defense System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Missile Warning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Missile Warning &amp; Targeting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Multi-function sonar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>MWS&amp;T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Navigation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Night vision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>PGM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Power Grid Crowbar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Precision Guided Munition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Proximity Sensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Radar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Ring Laser Gyros (RLGs)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>SAL Seeker for 2.75&quot; rocket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>SatComm/  Payload</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Satellite</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Scientific &amp; Earth Observation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Shipboard Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Simulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Soldier Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Sonar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>STA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Stand Alone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Surveillance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Tactical Communications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Tactical Missile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Tactical Weapon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Tanks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Target Acquisition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Telecom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Through Life Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Vetronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Freq Stds and Switches</controllingFieldValue>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Weapon Sights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Heads Up Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>Helmet Mounted Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Land Equipment</controllingFieldValue>
+            <valueName>IFF Transponder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Entertainment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Intense Pulsed Light (IPL)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Professional Photography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flash</controllingFieldValue>
+            <valueName>Warning Beacons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Ignition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Industrial Pulse Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>Linear Accelerators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solidtron</controllingFieldValue>
+            <valueName>National Laboratories</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

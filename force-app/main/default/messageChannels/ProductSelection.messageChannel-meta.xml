@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This is a Lightning Message Channel for the Product Selection LWCs.</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>This field specifies the type of message being processed.</description>
+        <fieldName>type</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This field contains the specific data associated with the message.</description>
+        <fieldName>data</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>This field holds the unique identifier for the order creation process that
+            initiated the product selection.</description>
+        <fieldName>orderCreationId</fieldName>
+    </lightningMessageFields>
+    <masterLabel>ProductSelection</masterLabel>
+</LightningMessageChannel>

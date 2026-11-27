@@ -1,0 +1,42 @@
+<apex:page id="ApprovalsCustomRevokeRecords" standardController="Approval_Custom__c" extensions="ApprovalsCustomApproveRecordsController" tabStyle="Approval_Custom__c" lightningStylesheets="true" showHeader="false" standardStylesheets="false" >
+    <apex:slds />
+
+    <style>
+        .container {
+            margin: 2rem auto;
+            max-width: 50rem;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-field {
+            margin-bottom: 1rem;
+        }
+    </style>
+
+    <div class="slds-scope container">
+        <h1 class="slds-text-heading_large slds-text-align_center slds-m-bottom_medium">Mass Approve Records</h1>
+        <p class="slds-text-align_center slds-m-bottom_medium">Please provide a Rejection Comment before submitting the Rejection.</p>
+        <apex:pageMessages id="showMessage"></apex:pageMessages>
+        <apex:form styleClass="form" id="form">
+            <div class="slds-form-element form-field">
+                <label class="slds-form-element__label" for="comment">Comment</label>
+                <div class="slds-form-element__control">
+                    <apex:inputTextarea id="comment" value="{!approvalComments}" styleClass="slds-textarea"></apex:inputTextarea>
+                </div>
+            </div>
+
+            <div class="slds-grid">
+                <div class="slds-col">
+                    <div class="slds-float_right">
+                        <apex:commandButton value="Cancel" action="{!cancelComment}" styleClass="slds-button" reRender="showMessage"></apex:commandButton>
+                        <apex:commandButton value="Submit" action="{!rejectRecords}" styleClass="slds-button slds-button_brand" reRender="showMessage"></apex:commandButton>
+                    </div>
+                </div>
+            </div>
+        </apex:form>
+    </div>
+</apex:page>

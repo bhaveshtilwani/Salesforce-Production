@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Standard Method --></label>
+    <name>Standard_Method__c</name>
+    <picklistValues>
+        <masterLabel>FAX - Fax</masterLabel>
+        <translation><!-- FAX - Fax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INT - E-Mail</masterLabel>
+        <translation><!-- INT - E-Mail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEL - Telephone</masterLabel>
+        <translation><!-- TEL - Telephone --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

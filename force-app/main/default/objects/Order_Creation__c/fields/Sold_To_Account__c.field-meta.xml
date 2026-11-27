@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sold_To_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Sold To Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Order Creations (Sold To Account)</relationshipLabel>
+    <relationshipName>Order_Creations_Sold_To</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

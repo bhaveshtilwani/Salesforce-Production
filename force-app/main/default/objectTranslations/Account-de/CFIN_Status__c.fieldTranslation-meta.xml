@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CFIN Status --></label>
+    <name>CFIN_Status__c</name>
+    <picklistValues>
+        <masterLabel>CFIN Confirmed</masterLabel>
+        <translation><!-- CFIN Confirmed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CS Confirmed and Forwarded to CFIN</masterLabel>
+        <translation><!-- CS Confirmed and Forwarded to CFIN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>For CS Confirmation</masterLabel>
+        <translation><!-- For CS Confirmation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

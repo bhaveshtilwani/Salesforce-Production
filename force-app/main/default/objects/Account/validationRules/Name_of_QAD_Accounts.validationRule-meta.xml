@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_of_QAD_Accounts</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $RecordType.Name= &quot;QAD - LDGI&quot;,
+    LEN(Name) &gt; 56
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>QAD Account Name cannot exceed 56 characters. Add rest of the name in address fields</errorMessage>
+</ValidationRule>

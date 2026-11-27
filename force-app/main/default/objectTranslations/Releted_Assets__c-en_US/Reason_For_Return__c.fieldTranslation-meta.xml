@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Reason For Return --></label>
+    <name>Reason_For_Return__c</name>
+    <picklistValues>
+        <masterLabel>Calibration</masterLabel>
+        <translation><!-- Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit</masterLabel>
+        <translation><!-- Credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair</masterLabel>
+        <translation><!-- Repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return of Demo</masterLabel>
+        <translation><!-- Return of Demo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return of Loaner</masterLabel>
+        <translation><!-- Return of Loaner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return to Recycle/Scrap</masterLabel>
+        <translation><!-- Return to Recycle/Scrap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade</masterLabel>
+        <translation><!-- Upgrade --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

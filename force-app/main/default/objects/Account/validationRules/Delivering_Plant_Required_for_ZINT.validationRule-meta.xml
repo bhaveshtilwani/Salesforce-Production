@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivering_Plant_Required_for_ZINT</fullName>
+    <active>false</active>
+    <description>For SAP Asia</description>
+    <errorConditionFormula>AND(
+$RecordType.Name = &quot;SAP Asia&quot;,
+ISPICKVAL(Delivering_Plant__c, &quot;&quot;),
+ISPICKVAL(Account_Group__c , &quot;Intra-Div &amp; Inter-Co. - ZINT&quot;))</errorConditionFormula>
+    <errorDisplayField>Delivering_Plant__c</errorDisplayField>
+    <errorMessage>Delivering Plant cannot be blank for Account Group ZINT.</errorMessage>
+</ValidationRule>

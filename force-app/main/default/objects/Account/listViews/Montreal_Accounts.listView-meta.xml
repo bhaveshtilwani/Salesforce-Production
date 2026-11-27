@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Montreal_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Group__c</columns>
+    <columns>Client_Side_ID__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+    <columns>Name_of_GP__c</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PKI_Site__c</field>
+        <operation>contains</operation>
+        <value>Montreal</value>
+    </filters>
+    <filters>
+        <field>Account_Group__c</field>
+        <operation>equals</operation>
+        <value>Bill To - 0001</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.SAP_NA_Montreal</value>
+    </filters>
+    <label>Montreal Accounts</label>
+</ListView>

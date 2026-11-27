@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>SAL-35 Rep Account field - reads the external rep account field</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AccOwner</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Owner.FirstName} + &quot; &quot; + {!$Record.Owner.LastName}</expression>
+    </formulas>
+    <formulas>
+        <name>ExternalFR</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.External_Field_Rep__r.FirstName} + &quot; &quot; + {!$Record.External_Field_Rep__r.LastName}</expression>
+    </formulas>
+    <interviewLabel>Account - Update External Rep Name {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account - Update External Rep Name</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Rep_Account_Name</name>
+        <label>Update Rep/Account Name</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Account_Owner_Lumen__c</field>
+            <value>
+                <elementReference>AccOwner</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>External_Field_Rep_Text__c</field>
+            <value>
+                <elementReference>ExternalFR</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Rep_Account_Name_ID__c</field>
+            <value>
+                <elementReference>$Record.Rep_Account_Name__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Rep_Account_Name</targetReference>
+        </connector>
+        <filterLogic>(1 AND (2 OR 3 OR 4))</filterLogic>
+        <filters>
+            <field>PKI_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Toronto</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>OwnerId</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Rep_Account_Name__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>External_Field_Rep__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

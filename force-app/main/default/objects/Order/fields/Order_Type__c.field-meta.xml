@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Type__c</fullName>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Append Order Lines</fullName>
+                <default>false</default>
+                <label>Append Order Lines</label>
+            </value>
+            <value>
+                <fullName>Billable - R</fullName>
+                <default>false</default>
+                <label>Billable - R</label>
+            </value>
+            <value>
+                <fullName>Consignment Contract</fullName>
+                <default>false</default>
+                <label>Consignment Contract</label>
+            </value>
+            <value>
+                <fullName>Consignment Fillup</fullName>
+                <default>false</default>
+                <label>Consignment Fillup</label>
+            </value>
+            <value>
+                <fullName>Consignment Invoice</fullName>
+                <default>false</default>
+                <label>Consignment Invoice</label>
+            </value>
+            <value>
+                <fullName>Consignment Issue</fullName>
+                <default>false</default>
+                <label>Consignment Issue</label>
+            </value>
+            <value>
+                <fullName>Consignment Pick-up</fullName>
+                <default>false</default>
+                <label>Consignment Pick-Up</label>
+            </value>
+            <value>
+                <fullName>Consignment Pick-up (to cancell a KB)</fullName>
+                <default>false</default>
+                <label>Consignment Pick-up (to cancell a KB)</label>
+            </value>
+            <value>
+                <fullName>Consignment Return</fullName>
+                <default>false</default>
+                <label>Consignment Return</label>
+            </value>
+            <value>
+                <fullName>Contract Call Off</fullName>
+                <default>false</default>
+                <label>Contract Call Off</label>
+            </value>
+            <value>
+                <fullName>Contract Creation</fullName>
+                <default>false</default>
+                <label>Contract Creation</label>
+            </value>
+            <value>
+                <fullName>Credit Memo Request</fullName>
+                <default>false</default>
+                <label>Credit Memo Request</label>
+            </value>
+            <value>
+                <fullName>Customer Return</fullName>
+                <default>false</default>
+                <label>Customer Return</label>
+            </value>
+            <value>
+                <fullName>Customer return for a repair</fullName>
+                <default>false</default>
+                <label>Customer return for a repair</label>
+            </value>
+            <value>
+                <fullName>Debit Memo/Bill only Request</fullName>
+                <default>false</default>
+                <label>Debit Memo/Bill only Request</label>
+            </value>
+            <value>
+                <fullName>Debit Memo - No Order Reference</fullName>
+                <default>false</default>
+                <label>Debit Memo - No Order Reference</label>
+            </value>
+            <value>
+                <fullName>Domest. FOC Order SZ</fullName>
+                <default>false</default>
+                <label>Domest. FOC Order SZ</label>
+            </value>
+            <value>
+                <fullName>Domest.Repl ord  SHZ</fullName>
+                <default>false</default>
+                <label>Domest.Repl ord  SHZ</label>
+            </value>
+            <value>
+                <fullName>FoC sample order</fullName>
+                <default>false</default>
+                <label>FoC sample order</label>
+            </value>
+            <value>
+                <fullName>Free of Charge (ZSDF)</fullName>
+                <default>false</default>
+                <label>Free of Charge (ZSDF)</label>
+            </value>
+            <value>
+                <fullName>Goods Return As Is (ZASI)</fullName>
+                <default>false</default>
+                <label>Goods Return As Is (ZASI)</label>
+            </value>
+            <value>
+                <fullName>Loan Invoice</fullName>
+                <default>false</default>
+                <label>Loan Invoice</label>
+            </value>
+            <value>
+                <fullName>Loan Return</fullName>
+                <default>false</default>
+                <label>Loan Return</label>
+            </value>
+            <value>
+                <fullName>No Charge Billable - R</fullName>
+                <default>false</default>
+                <label>No Charge Billable - R</label>
+            </value>
+            <value>
+                <fullName>NRE Order/Prj Ord (Charged)</fullName>
+                <default>false</default>
+                <label>NRE Order/Prj Ord (Charged)</label>
+            </value>
+            <value>
+                <fullName>NRE Order/Prj Ord (Milestone)</fullName>
+                <default>false</default>
+                <label>NRE Order/Prj Ord (Milestone)</label>
+            </value>
+            <value>
+                <fullName>NRE Order/Prj Orders (ZNRE)</fullName>
+                <default>false</default>
+                <label>NRE Order/Prj Orders (ZNRE)</label>
+            </value>
+            <value>
+                <fullName>NRE Sales Order</fullName>
+                <default>false</default>
+                <label>NRE Sales Order</label>
+            </value>
+            <value>
+                <fullName>Opto Return no Credit</fullName>
+                <default>false</default>
+                <label>Opto Return no Credit</label>
+            </value>
+            <value>
+                <fullName>Opto Return to Stock</fullName>
+                <default>false</default>
+                <label>Opto Return to Stock</label>
+            </value>
+            <value>
+                <fullName>Opto Return w/Credit</fullName>
+                <default>false</default>
+                <label>Opto Return w/Credit</label>
+            </value>
+            <value>
+                <fullName>Project Order</fullName>
+                <default>false</default>
+                <label>Project Order</label>
+            </value>
+            <value>
+                <fullName>Prototype Order</fullName>
+                <default>false</default>
+                <label>Prototype Order</label>
+            </value>
+            <value>
+                <fullName>Qty Contract</fullName>
+                <default>false</default>
+                <label>Qty Contract</label>
+            </value>
+            <value>
+                <fullName>Repair Orders (Charged)</fullName>
+                <default>false</default>
+                <label>Repair Orders (Charged)</label>
+            </value>
+            <value>
+                <fullName>Repair Orders (No charge)</fullName>
+                <default>false</default>
+                <label>Repair Orders (No charge)</label>
+            </value>
+            <value>
+                <fullName>Repair Service Order</fullName>
+                <default>false</default>
+                <label>Repair Service Order</label>
+            </value>
+            <value>
+                <fullName>Replacement Order</fullName>
+                <default>false</default>
+                <label>Replacement Order</label>
+            </value>
+            <value>
+                <fullName>Replacement Order w/ Reference</fullName>
+                <default>false</default>
+                <label>Replacement Order w/ Reference</label>
+            </value>
+            <value>
+                <fullName>Ret. Replacement Scrap</fullName>
+                <default>false</default>
+                <label>Ret. Replacement Scrap</label>
+            </value>
+            <value>
+                <fullName>Safety Stock</fullName>
+                <default>false</default>
+                <label>Safety Stock</label>
+            </value>
+            <value>
+                <fullName>Sales Order - S</fullName>
+                <default>false</default>
+                <label>Sales Order - S</label>
+            </value>
+            <value>
+                <fullName>Samples</fullName>
+                <default>false</default>
+                <label>Samples</label>
+            </value>
+            <value>
+                <fullName>SO for Raw Materials</fullName>
+                <default>false</default>
+                <label>SO for Raw Materials</label>
+            </value>
+            <value>
+                <fullName>Special Revenue STL</fullName>
+                <default>false</default>
+                <label>Special Revenue STL</label>
+            </value>
+            <value>
+                <fullName>Standard Order WEB Shop GOE</fullName>
+                <default>false</default>
+                <label>Standard Order WEB Shop GOE</label>
+            </value>
+            <value>
+                <fullName>Standard Sales Order</fullName>
+                <default>true</default>
+                <label>Standard Sales Order</label>
+            </value>
+            <value>
+                <fullName>St Louis/Mn Ret Ord</fullName>
+                <default>false</default>
+                <label>St Louis/Mn Ret Ord</label>
+            </value>
+            <value>
+                <fullName>Third Party (Drop ship Sales)</fullName>
+                <default>false</default>
+                <label>Third Party (Drop ship Sales)</label>
+            </value>
+            <value>
+                <fullName>Trading Raw Mat. SHZ</fullName>
+                <default>false</default>
+                <label>Trading Raw Mat. SHZ</label>
+            </value>
+            <value>
+                <fullName>Trading Sales SHZ</fullName>
+                <default>false</default>
+                <label>Trading Sales SHZ</label>
+            </value>
+            <value>
+                <fullName>Turn Key Sale-Order</fullName>
+                <default>false</default>
+                <label>Turn Key Sale-Order</label>
+            </value>
+            <value>
+                <fullName>Value Contract (ZWK1)</fullName>
+                <default>false</default>
+                <label>Value Contract (ZWK1)</label>
+            </value>
+            <value>
+                <fullName>Warranty/No Charge Billable - W</fullName>
+                <default>false</default>
+                <label>Warranty/No Charge Billable - W</label>
+            </value>
+            <value>
+                <fullName>Warranty - W</fullName>
+                <default>false</default>
+                <label>Warranty - W</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Consignment Fillup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Consignment Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Asaph</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Credit Memo Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Billerica</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Customer Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Debit Memo/Bill only Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>FoC sample order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>NRE Sales Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>Qty Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Repair Service Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>Replacement Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <valueName>SO for Raw Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Billerica</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Standard Sales Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>Billerica</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Miamisburg</controllingFieldValue>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Append Order Lines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Contract Call Off</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>Domest. FOC Order SZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>Domest.Repl ord  SHZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>Trading Raw Mat. SHZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <valueName>Trading Sales SHZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <controllingFieldValue>Billerica</controllingFieldValue>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Customer return for a repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>Special Revenue STL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>St Louis/Mn Ret Ord</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Consignment Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Consignment Pick-up (to cancell a KB)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Consignment Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Contract Creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Loan Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Loan Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <valueName>Project Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Munich</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Safety Stock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goettingen</controllingFieldValue>
+            <valueName>Standard Order WEB Shop GOE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hamble</controllingFieldValue>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Samples</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <valueName>Debit Memo - No Order Reference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Repair Orders (Charged)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montreal</controllingFieldValue>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Repair Orders (No charge)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <valueName>Opto Return no Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <valueName>Opto Return to Stock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Salem</controllingFieldValue>
+            <valueName>Opto Return w/Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wiesbaden</controllingFieldValue>
+            <valueName>Consignment Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Consignment Pick-up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Free of Charge (ZSDF)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Goods Return As Is (ZASI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>NRE Order/Prj Ord (Charged)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>NRE Order/Prj Ord (Milestone)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Ret. Replacement Scrap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Third Party (Drop ship Sales)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Boulder</controllingFieldValue>
+            <valueName>Value Contract (ZWK1)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

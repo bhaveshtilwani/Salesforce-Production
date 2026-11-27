@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>FollowUpDateFormula</name>
+        <dataType>Date</dataType>
+        <expression>CASE(
+    TEXT($Record.Priority),
+    &quot;Low&quot;, DATEVALUE($Record.CreatedDate) + 28,
+    &quot;Medium&quot;, DATEVALUE($Record.CreatedDate) + 14,
+    &quot;High&quot;, DATEVALUE($Record.CreatedDate) + 7,
+    &quot;Very High&quot;, DATEVALUE($Record.CreatedDate) + 1,
+    DATEVALUE($Record.CreatedDate) + 14
+)</expression>
+    </formulas>
+    <interviewLabel>Follow up date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Follow up date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Follow_Up_Date</name>
+        <label>Update Follow Up Date</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Follow_Up_Date__c</field>
+            <value>
+                <elementReference>FollowUpDateFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Follow_Up_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeName__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Service</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

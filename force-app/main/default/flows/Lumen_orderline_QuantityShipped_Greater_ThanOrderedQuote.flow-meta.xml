@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Quote_Qty_Shipped_Greater_than_Qty_Ordered</name>
+        <label>Quote Qty Shipped Greater than Qty Ordered</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>OrderItem.Notify_when_Qty_Shipped_Greater_than_Qty_Ordered</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>OrderItem.Notify_when_Qty_Shipped_Greater_than_Qty_Ordered</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>It Checks if the Qty Delivered is greater than Quantity</description>
+    <environments>Default</environments>
+    <interviewLabel>Lumen orderline QuantityShipped Greater ThanOrderedQuote {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lumen orderline QuantityShipped Greater ThanOrderedQuote</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Quote_Qty_Shipped_Greater_than_Qty_Ordered</targetReference>
+        </connector>
+        <filterFormula>AND(
+ {!$Record.Quantity} &gt; 0,
+ {!$Record.Delivered_Quantity__c} &gt; {!$Record.Quantity},
+ TEXT({!$Record.Site__c}) = &quot;Toronto&quot;
+)</filterFormula>
+        <object>OrderItem</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

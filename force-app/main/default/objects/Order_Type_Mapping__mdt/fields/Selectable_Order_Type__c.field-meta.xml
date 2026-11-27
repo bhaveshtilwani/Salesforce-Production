@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Selectable_Order_Type__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Selectable Order Type</label>
+    <referenceTo>Order_Type_MD__mdt</referenceTo>
+    <relationshipLabel>Order Type Mappings (Selectable Order Type)</relationshipLabel>
+    <relationshipName>Order_Type_Mappings1</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

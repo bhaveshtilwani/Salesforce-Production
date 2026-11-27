@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehouse__c</fullName>
+    <description>Warehouse for AX Billerica RMA</description>
+    <inlineHelpText>Warehouse for AX Billerica RMA</inlineHelpText>
+    <label>Warehouse (AX RMA)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RETURNS</fullName>
+                <default>false</default>
+                <label>RETURNS</label>
+            </value>
+            <value>
+                <fullName>RMA</fullName>
+                <default>false</default>
+                <label>RMA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

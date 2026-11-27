@@ -1,0 +1,46 @@
+<template>
+    <lightning-card title="BTP Quote Logs" icon-name="standard:logging">
+ 
+        <!-- Data Table -->
+        <template if:true={logs.length}>
+            <lightning-datatable
+                key-field="Id"
+                data={logs}
+                columns={columns}
+                onrowaction={handleRowAction}
+                hide-checkbox-column>
+            </lightning-datatable>
+ 
+            <!-- Pagination Controls -->
+            <div class="slds-m-top_medium slds-align_absolute-center" if:true={showPagination}>
+                <lightning-button
+                    label="Previous"
+                    onclick={handlePrevious}
+                    disabled={isPreviousDisabled}
+                    class="slds-m-right_small">
+                </lightning-button>
+ 
+                <lightning-button
+                    label="Next"
+                    onclick={handleNext}
+                    disabled={isNextDisabled}>
+                </lightning-button>
+            </div>
+        </template>
+ 
+        <!-- No Records Message -->
+        <template if:true={showNoRecords}>
+            <div class="slds-text-align_center slds-p-around_medium">
+                No records found for today
+            </div>
+        </template>
+ 
+        <!-- Error -->
+        <template if:true={error}>
+            <div class="slds-text-color_error slds-p-around_medium">
+                {error}
+            </div>
+        </template>
+ 
+    </lightning-card>
+</template>

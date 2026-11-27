@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Disc Type 2 --></label>
+    <name>Disc_Type_2__c</name>
+    <picklistValues>
+        <masterLabel>Demo</masterLabel>
+        <translation><!-- Demo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Educational</masterLabel>
+        <translation><!-- Educational --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elite</masterLabel>
+        <translation><!-- Elite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Promo</masterLabel>
+        <translation><!-- Promo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-Stocking Fee</masterLabel>
+        <translation><!-- Re-Stocking Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special</masterLabel>
+        <translation><!-- Special --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard</masterLabel>
+        <translation><!-- Standard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Volume</masterLabel>
+        <translation><!-- Volume --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

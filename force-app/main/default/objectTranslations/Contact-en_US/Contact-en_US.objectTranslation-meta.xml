@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CRMC Action Grid Defaults --></label>
+        <name>CRMC_PP__CRMC_Action_Grid_Defaults</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- Create Contact --></label>
+        <name>Create_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inactive Contact --></label>
+        <name>Inactive_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lumen Data --></label>
+        <name>Lumen_Data</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Department can&apos;t be more than 12 characters. --></errorMessage>
+        <name>Department</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter an email --></errorMessage>
+        <name>Email_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fax can&apos;t exceed 30 characters --></errorMessage>
+        <name>Fax_up_to_30</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_CompanyId_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- CompanyId should be a numeric value --></errorMessage>
+        <name>LID__Check_Company_Id_Value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Mobile can&apos;t exceed 30 characters --></errorMessage>
+        <name>Mobile_up_to_30</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone can&apos;t exceed 16 characters --></errorMessage>
+        <name>Phone_up_to_16</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Accepted is PO Box + Postal Code or Company Postal Code Only --></errorMessage>
+        <name>Postal_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postal Code can&apos;t exceed 10 characters --></errorMessage>
+        <name>Postal_Code_up_to_10</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Street can&apos;t exceed 40 characters --></errorMessage>
+        <name>Street_up_to_40</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sync in Progress. Creating and Editing is not allowed. Wait for the sync to finish to continue. --></errorMessage>
+        <name>Sync_in_Progress</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Title can only be up to 35 characters. --></errorMessage>
+        <name>Title_Limit_is_35_Characters</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMap --></label>
+        <name>GoogleMap</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Inactive --></label>
+        <name>Inactive</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Map --></label>
+        <name>Map</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Move --></label>
+        <name>Move</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendWithDocuSign --></label>
+        <name>SendWithDocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Weather --></label>
+        <name>Weather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Email --></label>
+        <name>pi__Send_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_to_Prospect_Insight --></label>
+        <name>pi__Send_to_Prospect_Insight</name>
+    </webLinks>
+</CustomObjectTranslation>

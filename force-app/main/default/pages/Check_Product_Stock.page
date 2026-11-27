@@ -1,0 +1,20 @@
+<apex:page standardController="Product2" lightningStylesheets="true">
+
+<apex:form >
+
+  <apex:pageBlock title="Stock and Trade Compliance">
+
+        <apex:pageBlockSection columns="1">
+      <apex:inputField value="{! Product2.Plant__c}"/>
+      <apex:inputField value="{! Product2.Check_Stock_and_Trade_Compliance__c}"/>      
+    </apex:pageBlockSection>
+        
+    <apex:pageBlockButtons location="bottom">
+      <apex:commandButton action="{!save}" value="Check Now"/>
+    </apex:pageBlockButtons>
+    
+  </apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

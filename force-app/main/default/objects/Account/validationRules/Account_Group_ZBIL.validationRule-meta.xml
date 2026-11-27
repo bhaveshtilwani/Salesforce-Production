@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Group_ZBIL</fullName>
+    <active>false</active>
+    <description>Central Finance are only allowed to choose ZBIL</description>
+    <errorConditionFormula>AND(
+  $Profile.Name = &quot;Central Finance&quot;,
+  NOT(ISPICKVAL(Account_Group__c, &quot;&quot;)),
+  NOT(ISPICKVAL(Account_Group__c, &quot;Billing email address - ZBIL&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Account_Group__c</errorDisplayField>
+    <errorMessage>Sorry, you are only allowed to choose ZBIL Account.</errorMessage>
+</ValidationRule>

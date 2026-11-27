@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Receiver__c</fullName>
+    <label>Receiver</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Kebere Mengesha</fullName>
+                <default>false</default>
+                <label>Kebere Mengesha</label>
+            </value>
+            <value>
+                <fullName>Ton La</fullName>
+                <default>false</default>
+                <label>Ton La</label>
+            </value>
+            <value>
+                <fullName>Ana Bailey</fullName>
+                <default>false</default>
+                <label>Ana Bailey</label>
+            </value>
+            <value>
+                <fullName>Wayne Jenkins</fullName>
+                <default>false</default>
+                <label>Wayne Jenkins</label>
+            </value>
+            <value>
+                <fullName>Chris Burley</fullName>
+                <default>false</default>
+                <label>Chris Burley</label>
+            </value>
+            <value>
+                <fullName>Jeevanjot Singh</fullName>
+                <default>false</default>
+                <label>Jeevanjot Singh</label>
+            </value>
+            <value>
+                <fullName>Robert Shumilak</fullName>
+                <default>false</default>
+                <label>Robert Shumilak</label>
+            </value>
+            <value>
+                <fullName>Abby Russell</fullName>
+                <default>false</default>
+                <label>Abby Russell</label>
+            </value>
+            <value>
+                <fullName>Pitamber Sawal</fullName>
+                <default>false</default>
+                <label>Pitamber Sawal</label>
+            </value>
+            <value>
+                <fullName>Sumiksh Trehan</fullName>
+                <default>false</default>
+                <label>Sumiksh Trehan</label>
+            </value>
+            <value>
+                <fullName>Vincent Analikwu</fullName>
+                <default>false</default>
+                <label>Vincent Analikwu</label>
+            </value>
+            <value>
+                <fullName>Drew Kruspe</fullName>
+                <default>false</default>
+                <label>Drew Kruspe</label>
+            </value>
+            <value>
+                <fullName>Jennifer Melo</fullName>
+                <default>false</default>
+                <label>Jennifer Melo</label>
+            </value>
+            <value>
+                <fullName>Kavita Aswani</fullName>
+                <default>false</default>
+                <label>Kavita Aswani</label>
+            </value>
+            <value>
+                <fullName>Michelle Gal</fullName>
+                <default>false</default>
+                <label>Michelle Gal</label>
+            </value>
+            <value>
+                <fullName>Nathalie Laliberte</fullName>
+                <default>false</default>
+                <label>Nathalie Laliberte</label>
+            </value>
+            <value>
+                <fullName>Sandra Dixon</fullName>
+                <default>false</default>
+                <label>Sandra Dixon</label>
+            </value>
+            <value>
+                <fullName>Service Centre</fullName>
+                <default>false</default>
+                <label>Service Centre</label>
+            </value>
+            <value>
+                <fullName>Not Received</fullName>
+                <default>false</default>
+                <label>Not Received</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

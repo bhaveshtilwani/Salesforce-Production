@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SAP Cause Group --></label>
+    <name>SAP_Cause_Groups__c</name>
+    <picklistValues>
+        <masterLabel>Cause not detectable</masterLabel>
+        <translation><!-- Cause not detectable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation><!-- Customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environment</masterLabel>
+        <translation><!-- Environment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External/Transport</masterLabel>
+        <translation><!-- External/Transport --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machine/Equipment</masterLabel>
+        <translation><!-- Machine/Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Man</masterLabel>
+        <translation><!-- Man --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Management/Documentation</masterLabel>
+        <translation><!-- Management/Documentation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material</masterLabel>
+        <translation><!-- Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Measurement</masterLabel>
+        <translation><!-- Measurement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Method/Process</masterLabel>
+        <translation><!-- Method/Process --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

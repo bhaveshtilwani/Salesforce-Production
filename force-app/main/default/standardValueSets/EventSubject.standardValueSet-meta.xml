@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Call</fullName>
+        <default>false</default>
+        <label>Call</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Letter/Quote</fullName>
+        <default>false</default>
+        <label>Send Letter/Quote</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - District / Regional / National Sales Mtg</fullName>
+        <default>false</default>
+        <label>PH - District / Regional / National Sales Mtg</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - Holiday - Company Designated</fullName>
+        <default>false</default>
+        <label>PH - Holiday - Company Designated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - Leave of Absence (includes: Disability, Medical, Family, Funeral, etc.)</fullName>
+        <default>false</default>
+        <label>PH - Leave of Absence (includes: Disability, Medical, Family, Funeral, etc.)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - Office Day</fullName>
+        <default>false</default>
+        <label>PH - Office Day</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - Product Training</fullName>
+        <default>false</default>
+        <label>PH - Product Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - Vacation</fullName>
+        <default>false</default>
+        <label>PH - Vacation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - Doctor Visit(s)</fullName>
+        <default>false</default>
+        <label>PH - Doctor Visit(s)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - Pharmacy Visit(s)</fullName>
+        <default>false</default>
+        <label>PH - Pharmacy Visit(s)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PH - Congress</fullName>
+        <default>false</default>
+        <label>PH - Congress</label>
+    </standardValue>
+</StandardValueSet>

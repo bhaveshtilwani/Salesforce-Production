@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>QAD_LOB_Cermax</name>
+        <label>QAD LOB = Cermax</label>
+        <locationX>634</locationX>
+        <locationY>71</locationY>
+        <defaultConnector>
+            <targetReference>QAD_LOB_Freight</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Cermax</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.QAD_LOB__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Cermax</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Cermax</targetReference>
+            </connector>
+            <label>Cermax</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QAD_LOB_Freight</name>
+        <label>QAD LOB = Freight</label>
+        <locationX>634</locationX>
+        <locationY>251</locationY>
+        <defaultConnector>
+            <targetReference>QAD_LOB_LASER</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Freight</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.QAD_LOB__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Freight</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Freight</targetReference>
+            </connector>
+            <label>Freight</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QAD_LOB_LASER</name>
+        <label>QAD LOB = LASER</label>
+        <locationX>634</locationX>
+        <locationY>434</locationY>
+        <defaultConnector>
+            <targetReference>QAD_LOB_Omni</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>LASER</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.QAD_LOB__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>LASER</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_LASER</targetReference>
+            </connector>
+            <label>LASER</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QAD_LOB_Omni</name>
+        <label>QAD LOB = Omni</label>
+        <locationX>637</locationX>
+        <locationY>580</locationY>
+        <defaultConnector>
+            <targetReference>QAD_LOB_Service</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Omni</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.QAD_LOB__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Omni</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Omni</targetReference>
+            </connector>
+            <label>Omni</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QAD_LOB_Service</name>
+        <label>QAD LOB = Service</label>
+        <locationX>636</locationX>
+        <locationY>732</locationY>
+        <defaultConnector>
+            <targetReference>QAD_LOB_SSL</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Service</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.QAD_LOB__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Service</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Service</targetReference>
+            </connector>
+            <label>Service</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QAD_LOB_SSL</name>
+        <label>QAD LOB = SSL</label>
+        <locationX>633</locationX>
+        <locationY>869</locationY>
+        <defaultConnector>
+            <targetReference>QAD_LOB_X_Cite</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>SSL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.QAD_LOB__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>SSL</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_SSL</targetReference>
+            </connector>
+            <label>SSL</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>QAD_LOB_X_Cite</name>
+        <label>QAD LOB = X-Cite</label>
+        <locationX>633</locationX>
+        <locationY>1036</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>XCite</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.QAD_LOB__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>X-Cite</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_X_Cite</targetReference>
+            </connector>
+            <label>X-Cite</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>QAD - LOB {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>QAD - LOB</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Cermax</name>
+        <label>Update Cermax</label>
+        <locationX>899</locationX>
+        <locationY>72</locationY>
+        <inputAssignments>
+            <field>PKI_Product_Family__c</field>
+            <value>
+                <stringValue>Cermax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_Line__c</field>
+            <value>
+                <stringValue>Plasma Light Sources BU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_SubFamily__c</field>
+            <value>
+                <stringValue>Modules</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Freight</name>
+        <label>Update Freight</label>
+        <locationX>905</locationX>
+        <locationY>253</locationY>
+        <inputAssignments>
+            <field>PKI_Product_Family__c</field>
+            <value>
+                <stringValue>Analytical</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_Line__c</field>
+            <value>
+                <stringValue>Plasma Light Sources BU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_SubFamily__c</field>
+            <value>
+                <stringValue>Analytical Components</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_LASER</name>
+        <label>Update LASER</label>
+        <locationX>889</locationX>
+        <locationY>433</locationY>
+        <inputAssignments>
+            <field>PKI_Product_Family__c</field>
+            <value>
+                <stringValue>Laser Technology</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_Line__c</field>
+            <value>
+                <stringValue>Semiconductor Equipment</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_SubFamily__c</field>
+            <value>
+                <stringValue>Lasers and Fibers</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Omni</name>
+        <label>Update Omni</label>
+        <locationX>891</locationX>
+        <locationY>584</locationY>
+        <inputAssignments>
+            <field>PKI_Product_Family__c</field>
+            <value>
+                <stringValue>Curing Omnicure</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_Line__c</field>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_SubFamily__c</field>
+            <value>
+                <stringValue>Omni</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Service</name>
+        <label>Update Service</label>
+        <locationX>890</locationX>
+        <locationY>737</locationY>
+        <inputAssignments>
+            <field>PKI_Product_Family__c</field>
+            <value>
+                <stringValue>Curing Omnicure</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_Line__c</field>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_SubFamily__c</field>
+            <value>
+                <stringValue>Service</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_SSL</name>
+        <label>Update SSL</label>
+        <locationX>892</locationX>
+        <locationY>876</locationY>
+        <inputAssignments>
+            <field>PKI_Product_Family__c</field>
+            <value>
+                <stringValue>Solid State Lighting Solutions</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_Line__c</field>
+            <value>
+                <stringValue>Solutions BU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_SubFamily__c</field>
+            <value>
+                <stringValue>LED Solutions</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_X_Cite</name>
+        <label>Update X-Cite</label>
+        <locationX>849</locationX>
+        <locationY>1040</locationY>
+        <inputAssignments>
+            <field>PKI_Product_Family__c</field>
+            <value>
+                <stringValue>Biomedical Light Engines</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_Line__c</field>
+            <value>
+                <stringValue>Solutions BU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PKI_Product_SubFamily__c</field>
+            <value>
+                <stringValue>X-Cite</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>116</locationX>
+        <locationY>69</locationY>
+        <connector>
+            <targetReference>QAD_LOB_Cermax</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>PKI_Mfg_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Toronto</stringValue>
+            </value>
+        </filters>
+        <object>Product2</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

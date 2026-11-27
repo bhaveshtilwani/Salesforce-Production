@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plant__c</fullName>
+    <label>Plant</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(3000) Excelitas Tech. Philippines</fullName>
+                <default>false</default>
+                <label>(3000) Excelitas Tech. Philippines</label>
+            </value>
+            <value>
+                <fullName>(SGP3) SG-Optics Operating Plant</fullName>
+                <default>false</default>
+                <label>(SGP3) SG-Optics Operating Plant</label>
+            </value>
+            <value>
+                <fullName>(IND3) PT. Excelitas Tech. Batam - IND3</fullName>
+                <default>false</default>
+                <label>(IND3) PT. Excelitas Tech. Batam - IND3</label>
+            </value>
+            <value>
+                <fullName>(IND1) PT. Excelitas Tech. Batam - IND1</fullName>
+                <default>false</default>
+                <label>(IND1) PT. Excelitas Tech. Batam - IND1</label>
+            </value>
+            <value>
+                <fullName>(SGP1) Excelitas Tech. Singapore</fullName>
+                <default>false</default>
+                <label>(SGP1) Excelitas Tech. Singapore</label>
+            </value>
+            <value>
+                <fullName>(2000) Excelitas Technologies</fullName>
+                <default>false</default>
+                <label>(2000) Excelitas Technologies</label>
+            </value>
+            <value>
+                <fullName>(SZN1) Excelitas Tech. Shenzhen</fullName>
+                <default>false</default>
+                <label>(SZN1) Excelitas Tech. Shenzhen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

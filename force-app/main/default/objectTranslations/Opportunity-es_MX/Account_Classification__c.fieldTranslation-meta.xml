@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Classification --></label>
+    <name>Account_Classification__c</name>
+    <picklistValues>
+        <masterLabel>AWV Part I A (military list)</masterLabel>
+        <translation><!-- AWV Part I A (military list) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AWV Part I C/EU-Dual Use (Dual Use list)</masterLabel>
+        <translation><!-- AWV Part I C/EU-Dual Use (Dual Use list) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Civil</masterLabel>
+        <translation><!-- Civil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAR</masterLabel>
+        <translation><!-- EAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAR99</masterLabel>
+        <translation><!-- EAR99 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITAR</masterLabel>
+        <translation><!-- ITAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Listed</masterLabel>
+        <translation><!-- Not Listed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standard Plus</masterLabel>
+        <translation><!-- Standard Plus --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>700</frameHeight>
+    <hasSidebar>true</hasSidebar>
+    <label>Campaigner for Salesforce</label>
+    <motif>Custom23: Mail</motif>
+    <url>https://sfa.cforce.com/app/campaigner/salesgot-register-v3.jsp?SF_User_ID={!User_ID}&amp;SF_User_Username={!User_Username}&amp;SF_User_FirstName={!User_FirstName}&amp;SF_User_Lastname={!User_LastName}&amp;SF_User_Email={!User_Email}&amp;SF_User_Phone={!User_Phone}&amp;SF_Org_ID={!Org_ID}&amp;coid=-213</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

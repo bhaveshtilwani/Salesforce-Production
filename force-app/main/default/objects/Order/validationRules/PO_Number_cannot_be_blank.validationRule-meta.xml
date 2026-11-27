@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Number_cannot_be_blank</fullName>
+    <active>true</active>
+    <description>PO Number must be filled in</description>
+    <errorConditionFormula>ISBLANK(PoNumber)</errorConditionFormula>
+    <errorDisplayField>PoNumber</errorDisplayField>
+    <errorMessage>PO Number cannot be blank</errorMessage>
+</ValidationRule>

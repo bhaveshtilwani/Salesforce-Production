@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Release Name --></label>
+    <name>Release_Name__c</name>
+    <picklistValues>
+        <masterLabel>Channel Partner</masterLabel>
+        <translation><!-- Channel Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Competitor</masterLabel>
+        <translation><!-- Competitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Warehouse Integration</masterLabel>
+        <translation><!-- Data Warehouse Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Import</masterLabel>
+        <translation><!-- Import --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Support</masterLabel>
+        <translation><!-- Internal Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Import</masterLabel>
+        <translation><!-- Lead Import --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Localization</masterLabel>
+        <translation><!-- Localization --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maximizer</masterLabel>
+        <translation><!-- Maximizer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offline Integration</masterLabel>
+        <translation><!-- Offline Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outlook Integration</masterLabel>
+        <translation><!-- Outlook Integration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sample &amp; Loaner Migration</masterLabel>
+        <translation><!-- Sample &amp; Loaner Migration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Siebel Migration</masterLabel>
+        <translation><!-- Siebel Migration --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

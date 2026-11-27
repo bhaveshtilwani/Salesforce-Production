@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Terms__c</fullName>
+    <label>Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PENDING</fullName>
+                <default>false</default>
+                <label>PENDING</label>
+            </value>
+            <value>
+                <fullName>CR CARD</fullName>
+                <default>false</default>
+                <label>CR CARD</label>
+            </value>
+            <value>
+                <fullName>NET 30</fullName>
+                <default>false</default>
+                <label>NET 30</label>
+            </value>
+            <value>
+                <fullName>NET 45</fullName>
+                <default>false</default>
+                <label>NET 45</label>
+            </value>
+            <value>
+                <fullName>NET 60</fullName>
+                <default>false</default>
+                <label>NET 60</label>
+            </value>
+            <value>
+                <fullName>PREPAID</fullName>
+                <default>false</default>
+                <label>PREPAID</label>
+            </value>
+            <value>
+                <fullName>*INTERCO</fullName>
+                <default>false</default>
+                <label>*INTERCO</label>
+            </value>
+            <value>
+                <fullName>N001</fullName>
+                <default>false</default>
+                <label>N001</label>
+            </value>
+            <value>
+                <fullName>N003</fullName>
+                <default>false</default>
+                <label>N003</label>
+            </value>
+            <value>
+                <fullName>N007</fullName>
+                <default>false</default>
+                <label>N007</label>
+            </value>
+            <value>
+                <fullName>N012</fullName>
+                <default>false</default>
+                <label>N012</label>
+            </value>
+            <value>
+                <fullName>UCA</fullName>
+                <default>false</default>
+                <label>UCA</label>
+            </value>
+            <value>
+                <fullName>Net 90</fullName>
+                <default>false</default>
+                <label>Net 90</label>
+            </value>
+            <value>
+                <fullName>Net 120</fullName>
+                <default>false</default>
+                <label>Net 120</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

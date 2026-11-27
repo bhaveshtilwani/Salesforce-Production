@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>P - series Linear Sensors</fullName>
+        <default>false</default>
+        <label>P - series Linear Sensors</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipping Product</fullName>
+        <default>false</default>
+        <label>Shipping Product</label>
+    </standardValue>
+</StandardValueSet>

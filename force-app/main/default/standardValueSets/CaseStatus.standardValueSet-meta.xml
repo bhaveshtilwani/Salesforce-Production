@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>false</default>
+        <label>Open</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Approval</fullName>
+        <default>false</default>
+        <label>Pending Approval</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Management Review</fullName>
+        <default>false</default>
+        <label>Management Review</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>true</default>
+        <label>Working</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Feedback Requested</fullName>
+        <default>false</default>
+        <label>Feedback Requested</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduled</fullName>
+        <default>false</default>
+        <label>Scheduled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelled</fullName>
+        <default>false</default>
+        <label>Cancelled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Rejected</fullName>
+        <default>false</default>
+        <label>Closed - Rejected</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Approved</fullName>
+        <default>false</default>
+        <label>Closed - Approved</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Customer Reply</fullName>
+        <default>false</default>
+        <label>Waiting for Customer Reply</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Inspection complete - pending action</fullName>
+        <default>false</default>
+        <label>Inspection complete - pending action</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Action in Progress</fullName>
+        <default>false</default>
+        <label>Action in Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quoted Customer - Pending Response</fullName>
+        <default>false</default>
+        <label>Quoted Customer - Pending Response</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Receipt of Product from Customer</fullName>
+        <default>false</default>
+        <label>Pending Receipt of Product from Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Received from Customer - Pending Inspection</fullName>
+        <default>false</default>
+        <label>Product Received from Customer - Pending Inspection</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Inspection Shows No Fault - Ready to Ship Back to Customer</fullName>
+        <default>false</default>
+        <label>Inspection Shows No Fault - Ready to Ship Back to Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Inspection Complete - In Transit to Germany</fullName>
+        <default>false</default>
+        <label>Inspection Complete - In Transit to Germany</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote Accepted - Pending Action</fullName>
+        <default>false</default>
+        <label>Quote Accepted - Pending Action</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Action Completed - Ready to Ship Back to Customer</fullName>
+        <default>false</default>
+        <label>Action Completed - Ready to Ship Back to Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Action Completed - In transit from Germany</fullName>
+        <default>false</default>
+        <label>Action Completed - In transit from Germany</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote Declined - In Transit from Germany</fullName>
+        <default>false</default>
+        <label>Quote Declined - In Transit from Germany</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Received from Germany - Pending Inspection</fullName>
+        <default>false</default>
+        <label>Product Received from Germany - Pending Inspection</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Inspection from Germany Complete - Ready to Ship Back to Customer</fullName>
+        <default>false</default>
+        <label>Inspection from Germany Complete - Ready to Ship Back to Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Item(s) Received</fullName>
+        <default>false</default>
+        <label>Item(s) Received</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Approved Pending Implementation</fullName>
+        <default>false</default>
+        <label>Approved Pending Implementation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for Unit</fullName>
+        <default>false</default>
+        <label>Waiting for Unit</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Received - Ready to Quote</fullName>
+        <default>false</default>
+        <label>Received - Ready to Quote</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold - More Info Required</fullName>
+        <default>false</default>
+        <label>On Hold - More Info Required</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quoted - Not Repaired</fullName>
+        <default>false</default>
+        <label>Quoted - Not Repaired</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quoted - Repaired Under Risk</fullName>
+        <default>false</default>
+        <label>Quoted - Repaired Under Risk</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Work Completed</fullName>
+        <default>false</default>
+        <label>Work Completed</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ready to Ship</fullName>
+        <default>false</default>
+        <label>Ready to Ship</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Solution Provided</fullName>
+        <default>false</default>
+        <label>Solution Provided</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Collection</fullName>
+        <default>false</default>
+        <label>Data Collection</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Coordination</fullName>
+        <default>false</default>
+        <label>Coordination</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting for details</fullName>
+        <default>false</default>
+        <label>Waiting for details</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Evaluation</fullName>
+        <default>false</default>
+        <label>Technical Evaluation</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Commercial Processing</fullName>
+        <default>false</default>
+        <label>Commercial Processing</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Processing</fullName>
+        <default>false</default>
+        <label>Technical Processing</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Final Processing</fullName>
+        <default>false</default>
+        <label>Final Processing</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

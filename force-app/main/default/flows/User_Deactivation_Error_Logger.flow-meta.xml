@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Starts automatically when a User Deactivation Error Platform Event is received.</description>
+    <environments>Default</environments>
+    <interviewLabel>User Deactivation Error Logger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>User Deactivation Error Logger</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates a log record capturing the affected user, error message, and attempted date/time for auditing and troubleshooting.</description>
+        <name>Create_User_Deactivation_Log</name>
+        <label>Create User Deactivation Log</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Affected_User__c</field>
+            <value>
+                <elementReference>$Record.Affected_User__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Attempted_On__c</field>
+            <value>
+                <elementReference>$Record.Attempted_On__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Error_Message__c</field>
+            <value>
+                <elementReference>$Record.Error_Message__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User_Deactivation_Log__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_User_Deactivation_Log</targetReference>
+        </connector>
+        <flowRunAsUser>TriggeringUser</flowRunAsUser>
+        <object>User_Deactivation_Error__e</object>
+        <triggerType>PlatformEvent</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

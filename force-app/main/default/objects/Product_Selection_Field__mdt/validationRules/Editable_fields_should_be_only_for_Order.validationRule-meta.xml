@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Editable_fields_should_be_only_for_Order</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Product_Selection_Editable__c, NOT(ISPICKVAL(Object__c, &quot;OrderItem&quot;)))</errorConditionFormula>
+    <errorDisplayField>Product_Selection_Editable__c</errorDisplayField>
+    <errorMessage>You cannot set a field as editable if it is not for the OrderItem</errorMessage>
+</ValidationRule>

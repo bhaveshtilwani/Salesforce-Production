@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ship_To_Account_Number_is_Required</fullName>
+    <active>false</active>
+    <description>Ship to account number is required for Montreal account group 002</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP NA Montreal&quot;, ISPICKVAL( Account_Group__c , &quot;Ship To - 0002&quot;), 
+Ship_To_Account_Number__c = &quot;&quot;)</errorConditionFormula>
+    <errorDisplayField>Ship_To_Account_Number__c</errorDisplayField>
+    <errorMessage>Ship To Account number is required for the selected account group.</errorMessage>
+</ValidationRule>

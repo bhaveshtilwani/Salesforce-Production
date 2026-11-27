@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Notification_Team__c</fullName>
+    <inlineHelpText>Semi-colon separated list of Email addresses (e.g. john@domain.com; jane@domain.com)</inlineHelpText>
+    <label>Quote Notification Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

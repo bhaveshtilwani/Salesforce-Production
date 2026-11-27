@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Check if order was previously closed.
+If order was previously shipped and closed, Account codes must be resubmitted to reopen the order.
+Account codes are not resent if the order is still open in QAD and resubmitted (otherwise error if partial shipped) -->
+    </help>
+    <label><!-- Resend Account Codes --></label>
+    <name>Resend_Account_Codes__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,1997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SAP Damage Code Text --></label>
+    <name>SAP_Damage_Code_Texts__c</name>
+    <picklistValues>
+        <masterLabel>A0 AC Line Lo</masterLabel>
+        <translation><!-- A0 AC Line Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A1 AC Line Hi</masterLabel>
+        <translation><!-- A1 AC Line Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A2 PC Short</masterLabel>
+        <translation><!-- A2 PC Short --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A3 No Ignition</masterLabel>
+        <translation><!-- A3 No Ignition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A4 Lamp Out</masterLabel>
+        <translation><!-- A4 Lamp Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A5 Lamp Air Pressure</masterLabel>
+        <translation><!-- A5 Lamp Air Pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A6 Cable Disconnect</masterLabel>
+        <translation><!-- A6 Cable Disconnect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AD PS Overtemp</masterLabel>
+        <translation><!-- AD PS Overtemp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Inlet Temp. Board</masterLabel>
+        <translation><!-- Air Inlet Temp. Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air intake / leaky lamp body</masterLabel>
+        <translation><!-- Air intake / leaky lamp body --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anode defective</masterLabel>
+        <translation><!-- Anode defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anode out of centerline or loose</masterLabel>
+        <translation><!-- Anode out of centerline or loose --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anode voltage or UV-Intensity out of spec</masterLabel>
+        <translation><!-- Anode voltage or UV-Intensity out of spec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appearance – cosmetic deviation</masterLabel>
+        <translation><!-- Appearance – cosmetic deviation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arcing</masterLabel>
+        <translation><!-- Arcing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B0 No Reset (N)</masterLabel>
+        <translation><!-- B0 No Reset (N) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B1 No Reset (W)</masterLabel>
+        <translation><!-- B1 No Reset (W) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B2 No Reset (T)</masterLabel>
+        <translation><!-- B2 No Reset (T) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B3 EXT Interlock</masterLabel>
+        <translation><!-- B3 EXT Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B4 SYS Air Pressure</masterLabel>
+        <translation><!-- B4 SYS Air Pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B5 RF Detector Open</masterLabel>
+        <translation><!-- B5 RF Detector Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B6 RF Detector Shorted</masterLabel>
+        <translation><!-- B6 RF Detector Shorted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B7 RF Detected</masterLabel>
+        <translation><!-- B7 RF Detected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B8 SW4 Configuration</masterLabel>
+        <translation><!-- B8 SW4 Configuration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>B9 SYS Fault</masterLabel>
+        <translation><!-- B9 SYS Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BLOWER PWR MODULE</masterLabel>
+        <translation><!-- BLOWER PWR MODULE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BOM/Packaging Error</masterLabel>
+        <translation><!-- BOM/Packaging Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt Slips</masterLabel>
+        <translation><!-- Belt Slips --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belt Tracking</masterLabel>
+        <translation><!-- Belt Tracking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blower Pressure</masterLabel>
+        <translation><!-- Blower Pressure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Box assembling nok or wrong aperture</masterLabel>
+        <translation><!-- Box assembling nok or wrong aperture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broken Bulb</masterLabel>
+        <translation><!-- Broken Bulb --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bulb</masterLabel>
+        <translation><!-- Bulb --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C0 Fil A Stuck</masterLabel>
+        <translation><!-- C0 Fil A Stuck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C1 Fil A Open</masterLabel>
+        <translation><!-- C1 Fil A Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C2 Fil A Lo</masterLabel>
+        <translation><!-- C2 Fil A Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C3 Fil A Hi</masterLabel>
+        <translation><!-- C3 Fil A Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C4 Fil B Stuck</masterLabel>
+        <translation><!-- C4 Fil B Stuck --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C5 Fil B Open</masterLabel>
+        <translation><!-- C5 Fil B Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C6 Fil B Lo</masterLabel>
+        <translation><!-- C6 Fil B Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>C7 Fil B Hi</masterLabel>
+        <translation><!-- C7 Fil B Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPU PWB</masterLabel>
+        <translation><!-- CPU PWB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cable Disconnect</masterLabel>
+        <translation><!-- Cable Disconnect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cathode defective</masterLabel>
+        <translation><!-- Cathode defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cathode defective / Exhausted</masterLabel>
+        <translation><!-- Cathode defective / Exhausted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collective blocking</masterLabel>
+        <translation><!-- Collective blocking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communication Interface</masterLabel>
+        <translation><!-- Communication Interface --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compressor MPS triggered</masterLabel>
+        <translation><!-- Compressor MPS triggered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connection cable defective</masterLabel>
+        <translation><!-- Connection cable defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connection cable other fault</masterLabel>
+        <translation><!-- Connection cable other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connection coupling defective</masterLabel>
+        <translation><!-- Connection coupling defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connector Fault</masterLabel>
+        <translation><!-- Connector Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connector PWB</masterLabel>
+        <translation><!-- Connector PWB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connector plug/socket faulty</masterLabel>
+        <translation><!-- Connector plug/socket faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control cabinet Cable connections def.</masterLabel>
+        <translation><!-- Control cabinet Cable connections def. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control cabinet Filter mats clogged</masterLabel>
+        <translation><!-- Control cabinet Filter mats clogged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control cabinet Motor prot. switch def.</masterLabel>
+        <translation><!-- Control cabinet Motor prot. switch def. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Control cabinet fuse defective</masterLabel>
+        <translation><!-- Control cabinet fuse defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cooling system other fault</masterLabel>
+        <translation><!-- Cooling system other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cooling, air filter dirty</masterLabel>
+        <translation><!-- Cooling, air filter dirty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cracked Base</masterLabel>
+        <translation><!-- Cracked Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cracked Seal</masterLabel>
+        <translation><!-- Cracked Seal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cure Issue</masterLabel>
+        <translation><!-- Cure Issue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cure Issues</masterLabel>
+        <translation><!-- Cure Issues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D1 T102 On</masterLabel>
+        <translation><!-- D1 T102 On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D2 T103 On</masterLabel>
+        <translation><!-- D2 T103 On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D2 lamp defect</masterLabel>
+        <translation><!-- D2 lamp defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D3 T104 On</masterLabel>
+        <translation><!-- D3 T104 On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D4 T105 On</masterLabel>
+        <translation><!-- D4 T105 On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>D5 T106 On</masterLabel>
+        <translation><!-- D5 T106 On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data cable defective</masterLabel>
+        <translation><!-- Data cable defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data cable other fault</masterLabel>
+        <translation><!-- Data cable other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data cable plug/socket defective</masterLabel>
+        <translation><!-- Data cable plug/socket defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Device Net Fault</masterLabel>
+        <translation><!-- Device Net Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispatch Error</masterLabel>
+        <translation><!-- Dispatch Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Display Locked</masterLabel>
+        <translation><!-- Display Locked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Do T101 On</masterLabel>
+        <translation><!-- Do T101 On --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drift / Noise / unstable</masterLabel>
+        <translation><!-- Drift / Noise / unstable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E0 Initializing</masterLabel>
+        <translation><!-- E0 Initializing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E0 T101 Lo</masterLabel>
+        <translation><!-- E0 T101 Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E1 Mag A Current High</masterLabel>
+        <translation><!-- E1 Mag A Current High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E1 OK</masterLabel>
+        <translation><!-- E1 OK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E1 T102 Lo</masterLabel>
+        <translation><!-- E1 T102 Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E10 Air Pressure Fault</masterLabel>
+        <translation><!-- E10 Air Pressure Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E10 Motor Temp Interlock</masterLabel>
+        <translation><!-- E10 Motor Temp Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E11 No Ignition</masterLabel>
+        <translation><!-- E11 No Ignition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E11 RF Sensor Short</masterLabel>
+        <translation><!-- E11 RF Sensor Short --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E12 Filament Input Voltage High</masterLabel>
+        <translation><!-- E12 Filament Input Voltage High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E12 Lamp Out</masterLabel>
+        <translation><!-- E12 Lamp Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E13 Filament Input Voltage Low</masterLabel>
+        <translation><!-- E13 Filament Input Voltage Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E13 No RF Detector</masterLabel>
+        <translation><!-- E13 No RF Detector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E14 Filament A Current Low</masterLabel>
+        <translation><!-- E14 Filament A Current Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E14 RF Detector A</masterLabel>
+        <translation><!-- E14 RF Detector A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E15 Filament B Current Low</masterLabel>
+        <translation><!-- E15 Filament B Current Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E15 RF Detector B</masterLabel>
+        <translation><!-- E15 RF Detector B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E16 No Line Sync</masterLabel>
+        <translation><!-- E16 No Line Sync --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E16 RMS Filament Voltage Low</masterLabel>
+        <translation><!-- E16 RMS Filament Voltage Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E17 External Interlock A</masterLabel>
+        <translation><!-- E17 External Interlock A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E17 RMS Filament Voltage High</masterLabel>
+        <translation><!-- E17 RMS Filament Voltage High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E18 External Interlock B</masterLabel>
+        <translation><!-- E18 External Interlock B --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E18 Filament A Current High</masterLabel>
+        <translation><!-- E18 Filament A Current High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E19 Filament B Current High</masterLabel>
+        <translation><!-- E19 Filament B Current High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E19 Process Interlock</masterLabel>
+        <translation><!-- E19 Process Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E2 Mag B Current High</masterLabel>
+        <translation><!-- E2 Mag B Current High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E2 Mag Not Set Up</masterLabel>
+        <translation><!-- E2 Mag Not Set Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E2 T103 Lo</masterLabel>
+        <translation><!-- E2 T103 Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E20 Mag Voltage High</masterLabel>
+        <translation><!-- E20 Mag Voltage High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E20 PBA Interlock</masterLabel>
+        <translation><!-- E20 PBA Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E21 Mag Voltage Low</masterLabel>
+        <translation><!-- E21 Mag Voltage Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E21 XBA Interlock</masterLabel>
+        <translation><!-- E21 XBA Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E22 No Confirmation</masterLabel>
+        <translation><!-- E22 No Confirmation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E22 RF Sensor Short/open</masterLabel>
+        <translation><!-- E22 RF Sensor Short/open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E23 Balancer Calibration</masterLabel>
+        <translation><!-- E23 Balancer Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E23 I60xM Test Fail</masterLabel>
+        <translation><!-- E23 I60xM Test Fail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E24 No Bulb Ignition</masterLabel>
+        <translation><!-- E24 No Bulb Ignition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E24 P-Cell Shorted</masterLabel>
+        <translation><!-- E24 P-Cell Shorted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E25 Not used</masterLabel>
+        <translation><!-- E25 Not used --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E25 Photocell Short</masterLabel>
+        <translation><!-- E25 Photocell Short --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E26 Excessive Moding</masterLabel>
+        <translation><!-- E26 Excessive Moding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E26 Photocell Open</masterLabel>
+        <translation><!-- E26 Photocell Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E27 E-Stop Open</masterLabel>
+        <translation><!-- E27 E-Stop Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E27 V Mag Detected</masterLabel>
+        <translation><!-- E27 V Mag Detected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E28 IGBT DS</masterLabel>
+        <translation><!-- E28 IGBT DS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E28 V Mag Low</masterLabel>
+        <translation><!-- E28 V Mag Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E29 IGBT Over Current</masterLabel>
+        <translation><!-- E29 IGBT Over Current --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E29 Open HV Circuit</masterLabel>
+        <translation><!-- E29 Open HV Circuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E3 Cable Interlock</masterLabel>
+        <translation><!-- E3 Cable Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E3 Not Used</masterLabel>
+        <translation><!-- E3 Not Used --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E3 T104 Lo</masterLabel>
+        <translation><!-- E3 T104 Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E30 Air Temp Low</masterLabel>
+        <translation><!-- E30 Air Temp Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E30 Low Control Voltage</masterLabel>
+        <translation><!-- E30 Low Control Voltage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E31 Can&apos;t Stay @ Power</masterLabel>
+        <translation><!-- E31 Can&apos;t Stay @ Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E31 Communication Timeout</masterLabel>
+        <translation><!-- E31 Communication Timeout --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E32 A/D Conversion Error</masterLabel>
+        <translation><!-- E32 A/D Conversion Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E32 K100 Fault</masterLabel>
+        <translation><!-- E32 K100 Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E33 Air Temp High</masterLabel>
+        <translation><!-- E33 Air Temp High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E33 Cable Interlock</masterLabel>
+        <translation><!-- E33 Cable Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E34 Factory Use</masterLabel>
+        <translation><!-- E34 Factory Use --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E34 RAM</masterLabel>
+        <translation><!-- E34 RAM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E35 Comm. Bus Open</masterLabel>
+        <translation><!-- E35 Comm. Bus Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E35 IGBT Temp Sensor</masterLabel>
+        <translation><!-- E35 IGBT Temp Sensor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E36 Invalid Row/Col</masterLabel>
+        <translation><!-- E36 Invalid Row/Col --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E36 Net Work Power Fault</masterLabel>
+        <translation><!-- E36 Net Work Power Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E37 ROM Obsolete</masterLabel>
+        <translation><!-- E37 ROM Obsolete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E38 ROM Defect</masterLabel>
+        <translation><!-- E38 ROM Defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E39 ROM Mismatch</masterLabel>
+        <translation><!-- E39 ROM Mismatch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E4 Air Pressure interlock</masterLabel>
+        <translation><!-- E4 Air Pressure interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E4 Not Used</masterLabel>
+        <translation><!-- E4 Not Used --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E4 T105 Lo</masterLabel>
+        <translation><!-- E4 T105 Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E40 Duplicate I/O ID</masterLabel>
+        <translation><!-- E40 Duplicate I/O ID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E41 I25x Test Fail</masterLabel>
+        <translation><!-- E41 I25x Test Fail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E42 E Stop Open</masterLabel>
+        <translation><!-- E42 E Stop Open --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E43 Xformer Overheat</masterLabel>
+        <translation><!-- E43 Xformer Overheat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E44 Cockroach</masterLabel>
+        <translation><!-- E44 Cockroach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E45 RF Det A Short</masterLabel>
+        <translation><!-- E45 RF Det A Short --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E46 RF Det B Short</masterLabel>
+        <translation><!-- E46 RF Det B Short --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E47 Line Freq. Error</masterLabel>
+        <translation><!-- E47 Line Freq. Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E48 EEPROM Failure</masterLabel>
+        <translation><!-- E48 EEPROM Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E49 Mag Cal Failure</masterLabel>
+        <translation><!-- E49 Mag Cal Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E5 IGBT Over Temp</masterLabel>
+        <translation><!-- E5 IGBT Over Temp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E5 Not Used</masterLabel>
+        <translation><!-- E5 Not Used --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E5 T106 Lo</masterLabel>
+        <translation><!-- E5 T106 Lo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E50 Lamp Test</masterLabel>
+        <translation><!-- E50 Lamp Test --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E51 No Calibration</masterLabel>
+        <translation><!-- E51 No Calibration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E52 Slave Not Ready</masterLabel>
+        <translation><!-- E52 Slave Not Ready --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E53 Turned On Late</masterLabel>
+        <translation><!-- E53 Turned On Late --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E54 Slave Off-Line</masterLabel>
+        <translation><!-- E54 Slave Off-Line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E55 Not With Row</masterLabel>
+        <translation><!-- E55 Not With Row --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E56 No Master</masterLabel>
+        <translation><!-- E56 No Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E57 Mode Manager #1</masterLabel>
+        <translation><!-- E57 Mode Manager #1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E58 Mode Manager #2</masterLabel>
+        <translation><!-- E58 Mode Manager #2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E59 Mode Manager #3</masterLabel>
+        <translation><!-- E59 Mode Manager #3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E6 Power Supply Over Temp</masterLabel>
+        <translation><!-- E6 Power Supply Over Temp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E6 T101 Hi</masterLabel>
+        <translation><!-- E6 T101 Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E6 V Control Low</masterLabel>
+        <translation><!-- E6 V Control Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E60 Mode Manager #4</masterLabel>
+        <translation><!-- E60 Mode Manager #4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E61 Mode Manager #5</masterLabel>
+        <translation><!-- E61 Mode Manager #5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E62 PWR Imbalance</masterLabel>
+        <translation><!-- E62 PWR Imbalance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E7 Power Supply Low Temp</masterLabel>
+        <translation><!-- E7 Power Supply Low Temp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E7 T102 Hi</masterLabel>
+        <translation><!-- E7 T102 Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E7 V Control High</masterLabel>
+        <translation><!-- E7 V Control High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E8 EEPROM Fault</masterLabel>
+        <translation><!-- E8 EEPROM Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E8 I Fil Low</masterLabel>
+        <translation><!-- E8 I Fil Low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E8 T103 Hi</masterLabel>
+        <translation><!-- E8 T103 Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E9 I Fil High</masterLabel>
+        <translation><!-- E9 I Fil High --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E9 Internal Fan Fault</masterLabel>
+        <translation><!-- E9 Internal Fan Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E9 T104 Hi</masterLabel>
+        <translation><!-- E9 T104 Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EA T105 Hi</masterLabel>
+        <translation><!-- EA T105 Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EB T106 Hi</masterLabel>
+        <translation><!-- EB T106 Hi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EC Mag A Failed</masterLabel>
+        <translation><!-- EC Mag A Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ED Mag B Failed</masterLabel>
+        <translation><!-- ED Mag B Failed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EEPROM PWB</masterLabel>
+        <translation><!-- EEPROM PWB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical / Cabling</masterLabel>
+        <translation><!-- Electrical / Cabling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical Assembly</masterLabel>
+        <translation><!-- Electrical Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical Contact</masterLabel>
+        <translation><!-- Electrical Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrode Damaged</masterLabel>
+        <translation><!-- Electrode Damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrode Obstructed</masterLabel>
+        <translation><!-- Electrode Obstructed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emission window damaged</masterLabel>
+        <translation><!-- Emission window damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emission window destroyed</masterLabel>
+        <translation><!-- Emission window destroyed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emission window dirty</masterLabel>
+        <translation><!-- Emission window dirty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emission window other fault</masterLabel>
+        <translation><!-- Emission window other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engine Assy. PWB</masterLabel>
+        <translation><!-- Engine Assy. PWB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Error cused by environment</masterLabel>
+        <translation><!-- Error cused by environment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Blower</masterLabel>
+        <translation><!-- External Blower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Contamination</masterLabel>
+        <translation><!-- External Contamination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Dimensions</masterLabel>
+        <translation><!-- External Dimensions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>External Interlock</masterLabel>
+        <translation><!-- External Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F0 Invalid ID</masterLabel>
+        <translation><!-- F0 Invalid ID --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F1 DUP PS ID #</masterLabel>
+        <translation><!-- F1 DUP PS ID # --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F2 No Master P.S.*</masterLabel>
+        <translation><!-- F2 No Master P.S.* --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F3 No Master P.S.</masterLabel>
+        <translation><!-- F3 No Master P.S. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F4 Missing Status</masterLabel>
+        <translation><!-- F4 Missing Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>F5 Invalid Status</masterLabel>
+        <translation><!-- F5 Invalid Status --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FC SYS Error 1</masterLabel>
+        <translation><!-- FC SYS Error 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FD SYS Error 2</masterLabel>
+        <translation><!-- FD SYS Error 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FE SYS Error 3</masterLabel>
+        <translation><!-- FE SYS Error 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FF Bus Error</masterLabel>
+        <translation><!-- FF Bus Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fan Assembly</masterLabel>
+        <translation><!-- Fan Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filament Distortion</masterLabel>
+        <translation><!-- Filament Distortion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filament Failure</masterLabel>
+        <translation><!-- Filament Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Float defective</masterLabel>
+        <translation><!-- Float defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Float switch insufficient water level</masterLabel>
+        <translation><!-- Float switch insufficient water level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flow monitor alarm</masterLabel>
+        <translation><!-- Flow monitor alarm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Front Control PWB</masterLabel>
+        <translation><!-- Front Control PWB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Leak</masterLabel>
+        <translation><!-- Gas Leak --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Leak - Base</masterLabel>
+        <translation><!-- Gas Leak - Base --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Leak - Frit</masterLabel>
+        <translation><!-- Gas Leak - Frit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Leak - General</masterLabel>
+        <translation><!-- Gas Leak - General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Leak - Seal</masterLabel>
+        <translation><!-- Gas Leak - Seal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas Leak - Tip Off</masterLabel>
+        <translation><!-- Gas Leak - Tip Off --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gas diminiched / Sputtered material / Diffuse discharge</masterLabel>
+        <translation><!-- Gas diminiched / Sputtered material / Diffuse discharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High-pressure malfunction cooling circuit</masterLabel>
+        <translation><!-- High-pressure malfunction cooling circuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing Wiring faulty</masterLabel>
+        <translation><!-- Housing Wiring faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing board faulty</masterLabel>
+        <translation><!-- Housing board faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing connection Lamp damaged</masterLabel>
+        <translation><!-- Housing connection Lamp damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing dirty inside</masterLabel>
+        <translation><!-- Housing dirty inside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing leaky cooling inside</masterLabel>
+        <translation><!-- Housing leaky cooling inside --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing mechanically damaged</masterLabel>
+        <translation><!-- Housing mechanically damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR SW: slice broken / missing</masterLabel>
+        <translation><!-- IR SW: slice broken / missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR SW: slice gap nok</masterLabel>
+        <translation><!-- IR SW: slice gap nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR SW: slice scrolling</masterLabel>
+        <translation><!-- IR SW: slice scrolling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR heating filament: cracked</masterLabel>
+        <translation><!-- IR heating filament: cracked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR heating filament: oxidized</masterLabel>
+        <translation><!-- IR heating filament: oxidized --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR heating filament: rating nok</masterLabel>
+        <translation><!-- IR heating filament: rating nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR heating filament: resistance nok</masterLabel>
+        <translation><!-- IR heating filament: resistance nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR heating filament: sagged</masterLabel>
+        <translation><!-- IR heating filament: sagged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR heating filament: short-circuit</masterLabel>
+        <translation><!-- IR heating filament: short-circuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR heating filament: stretched</masterLabel>
+        <translation><!-- IR heating filament: stretched --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR heating filament: total length nok</masterLabel>
+        <translation><!-- IR heating filament: total length nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: Carbon ribbon: Hot spots</masterLabel>
+        <translation><!-- IR: Carbon ribbon: Hot spots --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: Carbon ribbon: ripply / twisty</masterLabel>
+        <translation><!-- IR: Carbon ribbon: ripply / twisty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: Carbon ribbon: sparks</masterLabel>
+        <translation><!-- IR: Carbon ribbon: sparks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: Carbon ribbon: torn</masterLabel>
+        <translation><!-- IR: Carbon ribbon: torn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: Carbon ribbon: vibrating</masterLabel>
+        <translation><!-- IR: Carbon ribbon: vibrating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: weld between stick and back-up filament</masterLabel>
+        <translation><!-- IR: weld between stick and back-up filament --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: weld between stick and buffer spring nok</masterLabel>
+        <translation><!-- IR: weld between stick and buffer spring nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: weld between stick and heating filament</masterLabel>
+        <translation><!-- IR: weld between stick and heating filament --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: weld joint nok</masterLabel>
+        <translation><!-- IR: weld joint nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR: weld molybdenum nok</masterLabel>
+        <translation><!-- IR: weld molybdenum nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improper Air Flow</masterLabel>
+        <translation><!-- Improper Air Flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improper configuration</masterLabel>
+        <translation><!-- Improper configuration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect gas fill</masterLabel>
+        <translation><!-- Incorrect gas fill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incorrect settings</masterLabel>
+        <translation><!-- Incorrect settings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intensity too low</masterLabel>
+        <translation><!-- Intensity too low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interlock &amp; Safety Circuits</masterLabel>
+        <translation><!-- Interlock &amp; Safety Circuits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Contamination</masterLabel>
+        <translation><!-- Internal Contamination --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inverter Fault</masterLabel>
+        <translation><!-- Inverter Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lamp Out</masterLabel>
+        <translation><!-- Lamp Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead wire / connector / pin assignment - NOK</masterLabel>
+        <translation><!-- Lead wire / connector / pin assignment - NOK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaky connection</masterLabel>
+        <translation><!-- Leaky connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaky lamp body / Crack</masterLabel>
+        <translation><!-- Leaky lamp body / Crack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaky pump</masterLabel>
+        <translation><!-- Leaky pump --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaky return cooling line</masterLabel>
+        <translation><!-- Leaky return cooling line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaky supply cooling line</masterLabel>
+        <translation><!-- Leaky supply cooling line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low sensor faulty</masterLabel>
+        <translation><!-- Low sensor faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low-pressure malfunction cooling circuit</masterLabel>
+        <translation><!-- Low-pressure malfunction cooling circuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCU: Error ON/OFF signal</masterLabel>
+        <translation><!-- MCU: Error ON/OFF signal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCU: Insufficient voltage supply</masterLabel>
+        <translation><!-- MCU: Insufficient voltage supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCU: Malfunction sheet guide plate</masterLabel>
+        <translation><!-- MCU: Malfunction sheet guide plate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Magnetron</masterLabel>
+        <translation><!-- Magnetron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Magnetron Fault</masterLabel>
+        <translation><!-- Magnetron Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mechanics / Housing</masterLabel>
+        <translation><!-- Mechanics / Housing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misaligned Components</masterLabel>
+        <translation><!-- Misaligned Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misalignment - Filament</masterLabel>
+        <translation><!-- Misalignment - Filament --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misalignment - Glass Parts</masterLabel>
+        <translation><!-- Misalignment - Glass Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misalignment - Internal Parts</masterLabel>
+        <translation><!-- Misalignment - Internal Parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Misalignment - Lamp</masterLabel>
+        <translation><!-- Misalignment - Lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modular Blower Assy.</masterLabel>
+        <translation><!-- Modular Blower Assy. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module Connection faulty</masterLabel>
+        <translation><!-- Module Connection faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module Hotspot</masterLabel>
+        <translation><!-- Module Hotspot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module burnt</masterLabel>
+        <translation><!-- Module burnt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module low flow</masterLabel>
+        <translation><!-- Module low flow --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module other fault</masterLabel>
+        <translation><!-- Module other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module overheated</masterLabel>
+        <translation><!-- Module overheated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module partly without function</masterLabel>
+        <translation><!-- Module partly without function --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module without function</masterLabel>
+        <translation><!-- Module without function --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Belt Movement</masterLabel>
+        <translation><!-- No Belt Movement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Display</masterLabel>
+        <translation><!-- No Display --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Exhaust</masterLabel>
+        <translation><!-- No Exhaust --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Power</masterLabel>
+        <translation><!-- No Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Problem Found</masterLabel>
+        <translation><!-- No Problem Found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Speed Control</masterLabel>
+        <translation><!-- No Speed Control --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No fault found</masterLabel>
+        <translation><!-- No fault found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No function</masterLabel>
+        <translation><!-- No function --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No ignition or extinguishes during operation</masterLabel>
+        <translation><!-- No ignition or extinguishes during operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Noise / Drift / unstable baseline</masterLabel>
+        <translation><!-- Noise / Drift / unstable baseline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not suitable for the process</masterLabel>
+        <translation><!-- Not suitable for the process --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other fault</masterLabel>
+        <translation><!-- Other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other faults cooling line</masterLabel>
+        <translation><!-- Other faults cooling line --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Out of Specifications</masterLabel>
+        <translation><!-- Out of Specifications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overcurrent at: [xx]</masterLabel>
+        <translation><!-- Overcurrent at: [xx] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overvoltage at: [xx]</masterLabel>
+        <translation><!-- Overvoltage at: [xx] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCB defect</masterLabel>
+        <translation><!-- PCB defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PCB defect out of specs.</masterLabel>
+        <translation><!-- PCB defect out of specs. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU Emergency stop defective</masterLabel>
+        <translation><!-- PSU Emergency stop defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU End resistance faulty</masterLabel>
+        <translation><!-- PSU End resistance faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU Spring terminals defective</masterLabel>
+        <translation><!-- PSU Spring terminals defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU channel defectice</masterLabel>
+        <translation><!-- PSU channel defectice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU display defective</masterLabel>
+        <translation><!-- PSU display defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU filter mat clogged</masterLabel>
+        <translation><!-- PSU filter mat clogged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU lamp ID faulty</masterLabel>
+        <translation><!-- PSU lamp ID faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU power supply defective</masterLabel>
+        <translation><!-- PSU power supply defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU Case damaged</masterLabel>
+        <translation><!-- PSU/MCU Case damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU Control voltage faulty</masterLabel>
+        <translation><!-- PSU/MCU Control voltage faulty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU Data plug defective</masterLabel>
+        <translation><!-- PSU/MCU Data plug defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU Ethernet-CAN error</masterLabel>
+        <translation><!-- PSU/MCU Ethernet-CAN error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU board defective</masterLabel>
+        <translation><!-- PSU/MCU board defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU fan defective</masterLabel>
+        <translation><!-- PSU/MCU fan defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU incorrect software</masterLabel>
+        <translation><!-- PSU/MCU incorrect software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU loose contact</masterLabel>
+        <translation><!-- PSU/MCU loose contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU other fault</masterLabel>
+        <translation><!-- PSU/MCU other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU short circuit</masterLabel>
+        <translation><!-- PSU/MCU short circuit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU software errors</masterLabel>
+        <translation><!-- PSU/MCU software errors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU/MCU soiled</masterLabel>
+        <translation><!-- PSU/MCU soiled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU: Error AC input voltage at: [xx]</masterLabel>
+        <translation><!-- PSU: Error AC input voltage at: [xx] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU: Error enable signals press centre</masterLabel>
+        <translation><!-- PSU: Error enable signals press centre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU: Overtemperature at: [xx]</masterLabel>
+        <translation><!-- PSU: Overtemperature at: [xx] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU: Plausibility error with hardware ON/OFF signal</masterLabel>
+        <translation><!-- PSU: Plausibility error with hardware ON/OFF signal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSU: Switch-on error at: [xx]</masterLabel>
+        <translation><!-- PSU: Switch-on error at: [xx] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packing incorrect / damaged</masterLabel>
+        <translation><!-- Packing incorrect / damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Packing incorrect/damaged</masterLabel>
+        <translation><!-- Packing incorrect/damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parts Missing</masterLabel>
+        <translation><!-- Parts Missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Performance Failure</masterLabel>
+        <translation><!-- Performance Failure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photocell</masterLabel>
+        <translation><!-- Photocell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor braid connection</masterLabel>
+        <translation><!-- Poor braid connection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor or improper maintenance</masterLabel>
+        <translation><!-- Poor or improper maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Error</masterLabel>
+        <translation><!-- Power Error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Imbalance</masterLabel>
+        <translation><!-- Power Imbalance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Supply Temp</masterLabel>
+        <translation><!-- Power Supply Temp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power, faulty adjustment</masterLabel>
+        <translation><!-- Power, faulty adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power, other fault</masterLabel>
+        <translation><!-- Power, other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power, too low</masterLabel>
+        <translation><!-- Power, too low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pressure shock absorber defective</masterLabel>
+        <translation><!-- Pressure shock absorber defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pressure switch</masterLabel>
+        <translation><!-- Pressure switch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Problem with CAN communication at: [xx]</masterLabel>
+        <translation><!-- Problem with CAN communication at: [xx] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pump MPS triggered</masterLabel>
+        <translation><!-- Pump MPS triggered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pump Running noises</masterLabel>
+        <translation><!-- Pump Running noises --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pump other faults</masterLabel>
+        <translation><!-- Pump other faults --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RF Fault</masterLabel>
+        <translation><!-- RF Fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RF Interlock</masterLabel>
+        <translation><!-- RF Interlock --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reflector</masterLabel>
+        <translation><!-- Reflector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remote Control fault</masterLabel>
+        <translation><!-- Remote Control fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rotary encoder: Not detected</masterLabel>
+        <translation><!-- Rotary encoder: Not detected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rotary encoder: Safety signal error</masterLabel>
+        <translation><!-- Rotary encoder: Safety signal error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rotary encoder: Speed below limit</masterLabel>
+        <translation><!-- Rotary encoder: Speed below limit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Optics Covering</masterLabel>
+        <translation><!-- Secondary Optics Covering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary Optics other fault</masterLabel>
+        <translation><!-- Secondary Optics other fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary optics destroyed</masterLabel>
+        <translation><!-- Secondary optics destroyed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary optics torn</masterLabel>
+        <translation><!-- Secondary optics torn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensor Control Board</masterLabel>
+        <translation><!-- Sensor Control Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short-circuit connection (splice)</masterLabel>
+        <translation><!-- Short-circuit connection (splice) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shutter defect</masterLabel>
+        <translation><!-- Shutter defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software</masterLabel>
+        <translation><!-- Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switch cabinet loose contact</masterLabel>
+        <translation><!-- Switch cabinet loose contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switch cabinet mechanical damage</masterLabel>
+        <translation><!-- Switch cabinet mechanical damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switch cabinet phase error (conn. side)</masterLabel>
+        <translation><!-- Switch cabinet phase error (conn. side) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switch cabinet wiring fault</masterLabel>
+        <translation><!-- Switch cabinet wiring fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Blower</masterLabel>
+        <translation><!-- System Blower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timer NOK</masterLabel>
+        <translation><!-- Timer NOK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV Intensity out of spec</masterLabel>
+        <translation><!-- UV Intensity out of spec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV LED unit x: Insufficient cooling water flow rate</masterLabel>
+        <translation><!-- UV LED unit x: Insufficient cooling water flow rate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV LED unit x: Overheating, emergency cut-out</masterLabel>
+        <translation><!-- UV LED unit x: Overheating, emergency cut-out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV intensity too high</masterLabel>
+        <translation><!-- UV intensity too high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV intensity too low</masterLabel>
+        <translation><!-- UV intensity too low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UV-Thermopile Board</masterLabel>
+        <translation><!-- UV-Thermopile Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unauthorized opening of housing</masterLabel>
+        <translation><!-- Unauthorized opening of housing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undercurrent at: [xx]</masterLabel>
+        <translation><!-- Undercurrent at: [xx] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undervoltage at: [xx]</masterLabel>
+        <translation><!-- Undervoltage at: [xx] --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upgrade Only</masterLabel>
+        <translation><!-- Upgrade Only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vis lamp defect</masterLabel>
+        <translation><!-- Vis lamp defect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visible crack</masterLabel>
+        <translation><!-- Visible crack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wiring / connector / pin assignment - NOK</masterLabel>
+        <translation><!-- Wiring / connector / pin assignment - NOK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong or improper alignment</masterLabel>
+        <translation><!-- Wrong or improper alignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>amalgam, gold spot nok</masterLabel>
+        <translation><!-- amalgam, gold spot nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>assembly error</masterLabel>
+        <translation><!-- assembly error --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>assembly nok</masterLabel>
+        <translation><!-- assembly nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>base nok</masterLabel>
+        <translation><!-- base nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>base not fixed</masterLabel>
+        <translation><!-- base not fixed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>base tilted</masterLabel>
+        <translation><!-- base tilted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>batch size nok</masterLabel>
+        <translation><!-- batch size nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>broken</masterLabel>
+        <translation><!-- broken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>burling stress crack</masterLabel>
+        <translation><!-- burling stress crack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>cement nok</masterLabel>
+        <translation><!-- cement nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>coating dimension fault</masterLabel>
+        <translation><!-- coating dimension fault --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>coating nok</masterLabel>
+        <translation><!-- coating nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>coating scratched</masterLabel>
+        <translation><!-- coating scratched --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>connection incorrect</masterLabel>
+        <translation><!-- connection incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>connector incorrect</masterLabel>
+        <translation><!-- connector incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>contact charred</masterLabel>
+        <translation><!-- contact charred --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>contaminated</masterLabel>
+        <translation><!-- contaminated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>contamination in spectrum</masterLabel>
+        <translation><!-- contamination in spectrum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>control cabinet defective</masterLabel>
+        <translation><!-- control cabinet defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>current too high</masterLabel>
+        <translation><!-- current too high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>current too low</masterLabel>
+        <translation><!-- current too low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>defective contact</masterLabel>
+        <translation><!-- defective contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>devitrification</masterLabel>
+        <translation><!-- devitrification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>diffuse burning</masterLabel>
+        <translation><!-- diffuse burning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>doping nok</masterLabel>
+        <translation><!-- doping nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>drift out of max tolerance</masterLabel>
+        <translation><!-- drift out of max tolerance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>electrode blackened</masterLabel>
+        <translation><!-- electrode blackened --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>electrode missing</masterLabel>
+        <translation><!-- electrode missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>electrode pasting nok</masterLabel>
+        <translation><!-- electrode pasting nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>extinguihes during operation</masterLabel>
+        <translation><!-- extinguihes during operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>false material</masterLabel>
+        <translation><!-- false material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>faulty wiring</masterLabel>
+        <translation><!-- faulty wiring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>flexible stranded wire color nok</masterLabel>
+        <translation><!-- flexible stranded wire color nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>flexible stranded wire diameter nok</masterLabel>
+        <translation><!-- flexible stranded wire diameter nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>flexible stranded wire invert</masterLabel>
+        <translation><!-- flexible stranded wire invert --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>flexible stranded wire length nok</masterLabel>
+        <translation><!-- flexible stranded wire length nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>foil lift</masterLabel>
+        <translation><!-- foil lift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>foreign particle in lamp tube</masterLabel>
+        <translation><!-- foreign particle in lamp tube --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>geometrical dimensions out of tolerance</masterLabel>
+        <translation><!-- geometrical dimensions out of tolerance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>glow discharge</masterLabel>
+        <translation><!-- glow discharge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>housing loose components</masterLabel>
+        <translation><!-- housing loose components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>identification marking nok</masterLabel>
+        <translation><!-- identification marking nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ignition aid wire nok</masterLabel>
+        <translation><!-- ignition aid wire nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ignition delay</masterLabel>
+        <translation><!-- ignition delay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ignition voltage too high</masterLabel>
+        <translation><!-- ignition voltage too high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>insulation  damaged</masterLabel>
+        <translation><!-- insulation  damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>label incorrect / missing</masterLabel>
+        <translation><!-- label incorrect / missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>label missing</masterLabel>
+        <translation><!-- label missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lamp broken</masterLabel>
+        <translation><!-- lamp broken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lamp exploded</masterLabel>
+        <translation><!-- lamp exploded --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>lamp leaky</masterLabel>
+        <translation><!-- lamp leaky --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>leaky  lamp body</masterLabel>
+        <translation><!-- leaky  lamp body --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>liftime to short</masterLabel>
+        <translation><!-- liftime to short --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>marking incorrect / missing</masterLabel>
+        <translation><!-- marking incorrect / missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>material defective</masterLabel>
+        <translation><!-- material defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>material incorrect</masterLabel>
+        <translation><!-- material incorrect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>no ignition</masterLabel>
+        <translation><!-- no ignition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>out of tolerance</masterLabel>
+        <translation><!-- out of tolerance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>packaging damaged</masterLabel>
+        <translation><!-- packaging damaged --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>packaging wrong</masterLabel>
+        <translation><!-- packaging wrong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pinch broken</masterLabel>
+        <translation><!-- pinch broken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pinch cavity</masterLabel>
+        <translation><!-- pinch cavity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pinch contaminated</masterLabel>
+        <translation><!-- pinch contaminated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pinch cracked</masterLabel>
+        <translation><!-- pinch cracked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pinch out of centerline</masterLabel>
+        <translation><!-- pinch out of centerline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pinch partly broken</masterLabel>
+        <translation><!-- pinch partly broken --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pinch stress crack</masterLabel>
+        <translation><!-- pinch stress crack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>power rating too high</masterLabel>
+        <translation><!-- power rating too high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>power rating too low</masterLabel>
+        <translation><!-- power rating too low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>pump stem stress crack</masterLabel>
+        <translation><!-- pump stem stress crack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sealing foil blown</masterLabel>
+        <translation><!-- sealing foil blown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sealing foil cracked</masterLabel>
+        <translation><!-- sealing foil cracked --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sealing foil crinkly</masterLabel>
+        <translation><!-- sealing foil crinkly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>sealing foil oxidised</masterLabel>
+        <translation><!-- sealing foil oxidised --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>shockwatch activ</masterLabel>
+        <translation><!-- shockwatch activ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>surface defective</masterLabel>
+        <translation><!-- surface defective --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>total length nok</masterLabel>
+        <translation><!-- total length nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>transport damage</masterLabel>
+        <translation><!-- transport damage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube bended</masterLabel>
+        <translation><!-- tube bended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube black (laminary)</masterLabel>
+        <translation><!-- tube black (laminary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube black (spot)</masterLabel>
+        <translation><!-- tube black (spot) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube bloated</masterLabel>
+        <translation><!-- tube bloated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube brown</masterLabel>
+        <translation><!-- tube brown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube contaminated (inside)</masterLabel>
+        <translation><!-- tube contaminated (inside) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube contaminated (outside)</masterLabel>
+        <translation><!-- tube contaminated (outside) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube dent</masterLabel>
+        <translation><!-- tube dent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube dimension nok</masterLabel>
+        <translation><!-- tube dimension nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube splintered</masterLabel>
+        <translation><!-- tube splintered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube stress crack</masterLabel>
+        <translation><!-- tube stress crack --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube surface nok</masterLabel>
+        <translation><!-- tube surface nok --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube white</masterLabel>
+        <translation><!-- tube white --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>tube white (spot)</masterLabel>
+        <translation><!-- tube white (spot) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>unascertainable</masterLabel>
+        <translation><!-- unascertainable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>users instruction missing</masterLabel>
+        <translation><!-- users instruction missing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>users instruction wrong</masterLabel>
+        <translation><!-- users instruction wrong --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>voilent arc</masterLabel>
+        <translation><!-- voilent arc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>voltage too high</masterLabel>
+        <translation><!-- voltage too high --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>voltage too low</masterLabel>
+        <translation><!-- voltage too low --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wire dismantled</masterLabel>
+        <translation><!-- wire dismantled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>without operation</masterLabel>
+        <translation><!-- without operation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong - coding, - wiring, - base welding</masterLabel>
+        <translation><!-- wrong - coding, - wiring, - base welding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong material</masterLabel>
+        <translation><!-- wrong material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wrong packaging /wrong label</masterLabel>
+        <translation><!-- wrong packaging /wrong label --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

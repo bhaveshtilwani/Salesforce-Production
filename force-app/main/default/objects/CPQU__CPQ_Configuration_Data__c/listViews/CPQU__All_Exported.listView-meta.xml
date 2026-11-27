@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQU__All_Exported</fullName>
+    <columns>NAME</columns>
+    <columns>CPQU__Status__c</columns>
+    <columns>CPQU__CSV_Line_Sort_Order__c</columns>
+    <columns>CPQU__CSV_Export_Date__c</columns>
+    <columns>CPQU__CSV_Export_ID__c</columns>
+    <columns>CPQU__CSV_Export_Org_ID__c</columns>
+    <columns>CPQU__CSV_Import_Date__c</columns>
+    <columns>CPQU__CSV_Line__c</columns>
+    <columns>CPQU__CSV_Line_Type__c</columns>
+    <columns>CPQU__CSV_Name__c</columns>
+    <columns>CPQU__CSV_Object_Name__c</columns>
+    <columns>CPQU__CSV_Object_Order__c</columns>
+    <columns>CPQU__Deployed_SF_ID__c</columns>
+    <columns>CPQU__Deploy_ID__c</columns>
+    <columns>CPQU__Exported_SF_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CPQU__Status__c</field>
+        <operation>equals</operation>
+        <value>Exported</value>
+    </filters>
+    <label>All (Exported)</label>
+</ListView>

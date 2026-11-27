@@ -1,0 +1,143 @@
+<!--
+    @description       : This Quote Search Result LWC(Child) is called from Quote Search LWC(Parent) for rendering quote result
+    @author            : Jade Global
+    @last modified on  : 02-18-2021
+    @last modified by  : Jade Global
+    Modifications Log
+    Ver   Date         Author        Modification
+    1.0   02-18-2021   Jade Global   Initial Version
+-->
+<template>
+        <header>
+            <div class="slds-text-heading_medium" style="background-color: rgb(243, 242, 242); font-size: medium; padding: 7px;">
+                <p style="font-weight: bold;">  Quote Selection Section </p>
+            </div>
+        </header>
+            <br />
+            <div style="width: 100%; overflow-x: scroll;">  
+            <table class={strTableClass}>
+                <thead>
+                    <tr class="slds-text-heading--label">
+                        <th class="slds-is-sortable" scope="col">
+                            <span class="slds-truncate" style="text-transform: capitalize;font-size: 13px;">Select</span>
+                            <!--<lightning-input onchange={allSelected} type="checkbox"></lightning-input>-->
+                        </th>
+                        <th class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;" title="Quote Number">Quote Number</div>
+                        </th>
+                        <th align="center" class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate"  style="text-transform: capitalize; font-size: 13px;" title="SFDC Account Name">SFDC Account Name</div>
+                        </th>
+                        <th align="center" class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate"  style="text-transform: capitalize; font-size: 13px;" title="Available Amount">Available Amount</div>
+                        </th>
+                        <th  class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate"  style="text-transform: capitalize; font-size: 13px;" title="Quote Type">Quote Type</div>
+                        </th>
+                        <th   class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate"  style="text-transform: capitalize; font-size: 13px;" title="Quote Status">Quote Status</div>
+                        </th>
+                        <th  class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate"  style="text-transform: capitalize; font-size: 13px;" title="Quote Expiration">Quote Expiration</div>
+                        </th>
+                        <th  class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate"  style="text-transform: capitalize; font-size: 13px;" title="Opportunity Stage">Opportunity Stage</div>
+                        </th>
+                        <th  class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate"  style="text-transform: capitalize;font-size: 13px;" title="Currency Code">Currency Code</div>
+                        </th>
+                        <th   class="slds-is-sortable" scope="col">
+                            <div class="slds-truncate"  style="text-transform: capitalize; font-size: 13px;" title="Grand Total">Grand Total</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                <template for:each={tempQuoteOrderResult} for:item="con" for:index="index">
+                        <tr class="slds-hint-parent" key={con.quoteId}>
+                            <td class="slds-truncate" scope="col">
+                                <div class="slds-truncate" style="width: 45%; float: left;">
+                                    <lightning-input type="checkbox" aria value={con.quoteId} onclick={handleSelectedRows}></lightning-input>
+                                </div> 
+                                <div class="slds-truncate"  style="width: 45%; float: left;">
+                                    <template if:false={con.displayLineItems}>
+                                        <lightning-icon icon-name="utility:right" size="x-small" data-value={con.quoteId} onclick={handleDisplayLineItems} ></lightning-icon>
+                                    </template>
+                                    <template if:true={con.displayLineItems}>
+                                        <lightning-icon icon-name="utility:down" size="x-small" data-value={con.quoteId} onclick={handleHideLineItems} ></lightning-icon>
+                                    </template>
+                                </div>
+                            </td>
+                            <td class="slds-truncate" scope="col" data-label="Quote Number">
+                                <div>{con.quoteNumber}</div>
+                            </td>
+                           
+                            <td width="40%" class="slds-truncate" scope="col"  data-label="SFDC Account Name">
+                                <div>{con.qAccountName}</div>
+                            </td>
+                            <td width="40%" class="slds-truncate" scope="col"  data-label="Available Amount">
+                                <div>$ {con.availableAmount}</div>
+                            </td>
+                            <td  width="40%" class="slds-truncate" scope="col"  data-label="Quote Type">
+                                <div>{con.quoteType}</div>
+                            </td>
+                            <td  width="40%" class="slds-truncate" scope="col"  data-label="Quote Status">
+                                <div>{con.quoteStatus}</div>
+                            </td>
+                            <td  width="40%" class="slds-truncate" scope="col"  data-label="Quote Expiration">
+                                <div>{con.quoteExpirationDate}</div>
+                            </td>
+                            <td  width="40%" class="slds-truncate" scope="col"  data-label=">Opportunity Stage">
+                                <div>{con.qOpportunityStage}</div>
+                            </td>
+                            <td  width="40%" class="slds-truncate" scope="col"  data-label="Currency Code">
+                                <div>{con.currencyISOCode}</div>
+                            </td>
+                            <td  width="40%" class="slds-truncate " scope="col"  data-label="Grand Total">
+                                <div>$ {con.quotePrice}</div>
+                            </td>
+                        </tr>
+
+                        <template if:true={con.displayLineItems}>
+                            <tr key={con.childrenKey}>
+                                <td colspan="1">&nbsp;</td>
+                                <td colspan="9" style="background-color: white !important;">
+                                    <table class={strTableClass}>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;" title="Line Name">Line Name</div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;" title="Product Name">Product Name</div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;" title="Product Code">Product Code</div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;" title="Available Quantity">Available Quantity</div>
+                                                </th>
+                                                <th scope="col">
+                                                    <div class="slds-truncate" style="text-transform: capitalize; font-size: 13px;" title="Site">Site</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <template for:each={con.quoteLines} for:item="line">
+                                                <tr key={line.name}>
+                                                    <td scope="col">{line.name}</td>
+                                                    <td scope="col">{line.productName}</td>
+                                                    <td scope="col">{line.productCode}</td>
+                                                    <td scope="col">{line.availableQuantity}</td>
+                                                    <td scope="col">{line.siteName}</td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+            </div>
+</template>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cred_Limit_Action_If_Edit_Not_Insert</fullName>
+    <active>false</active>
+    <description>Credit Limit cannot be changed if BP Action not equal to Insert</description>
+    <errorConditionFormula>ISCHANGED(UKMBP_CMS_SGM_CREDIT_LIMIT__c) 
+&amp;&amp;
+ISPICKVAL(BP_Action__c, &quot;U&quot;)||
+ISCHANGED(UKMBP_CMS_SGM_CREDIT_LIMIT__c) 
+&amp;&amp;
+ISPICKVAL(BP_Action__c, &quot;C&quot;)||
+ISCHANGED(UKMBP_CMS_SGM_CREDIT_LIMIT__c) 
+&amp;&amp;
+ISPICKVAL(BP_Action__c, &quot;M&quot;)</errorConditionFormula>
+    <errorMessage>You cannot change the Credit limit once it has initially been set on BP Insert.
+
+
+Should the Credit Limit be changed, please do so directly in CFIN.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_District__c</fullName>
+    <label>Sales District</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not assigned (000)</fullName>
+                <default>false</default>
+                <label>Not assigned (000)</label>
+            </value>
+            <value>
+                <fullName>HC-ROW (01)</fullName>
+                <default>false</default>
+                <label>HC-ROW (01)</label>
+            </value>
+            <value>
+                <fullName>HC-EUROPE (02)</fullName>
+                <default>false</default>
+                <label>HC-EUROPE (02)</label>
+            </value>
+            <value>
+                <fullName>HC-US (03)</fullName>
+                <default>false</default>
+                <label>HC-US (03)</label>
+            </value>
+            <value>
+                <fullName>HC-HZ (04)</fullName>
+                <default>false</default>
+                <label>HC-HZ (04)</label>
+            </value>
+            <value>
+                <fullName>ICS-US (05)</fullName>
+                <default>false</default>
+                <label>ICS-US (05)</label>
+            </value>
+            <value>
+                <fullName>HC-SG (06)</fullName>
+                <default>false</default>
+                <label>HC-SG (06)</label>
+            </value>
+            <value>
+                <fullName>ILC Flash - US (13)</fullName>
+                <default>false</default>
+                <label>ILC Flash - US (13)</label>
+            </value>
+            <value>
+                <fullName>OR-ROW (31)</fullName>
+                <default>false</default>
+                <label>OR-ROW (31)</label>
+            </value>
+            <value>
+                <fullName>ILC-ROW (41)</fullName>
+                <default>false</default>
+                <label>ILC-ROW (41)</label>
+            </value>
+            <value>
+                <fullName>ILC-Europe (42)</fullName>
+                <default>false</default>
+                <label>ILC-Europe (42)</label>
+            </value>
+            <value>
+                <fullName>ILC-USA (43)</fullName>
+                <default>false</default>
+                <label>ILC-USA (43)</label>
+            </value>
+            <value>
+                <fullName>3rd party customer (51)</fullName>
+                <default>false</default>
+                <label>3rd party customer (51)</label>
+            </value>
+            <value>
+                <fullName>Internal cust Europe (52)</fullName>
+                <default>false</default>
+                <label>Internal cust Europe (52)</label>
+            </value>
+            <value>
+                <fullName>Internal cust USA (53)</fullName>
+                <default>false</default>
+                <label>Internal cust USA (53)</label>
+            </value>
+            <value>
+                <fullName>Internal cust ROW (54)</fullName>
+                <default>false</default>
+                <label>Internal cust ROW (54)</label>
+            </value>
+            <value>
+                <fullName>Telecom-ROW (551)</fullName>
+                <default>false</default>
+                <label>Telecom-ROW (551)</label>
+            </value>
+            <value>
+                <fullName>Telecom-Canada (553)</fullName>
+                <default>false</default>
+                <label>Telecom-Canada (553)</label>
+            </value>
+            <value>
+                <fullName>Salem-ROW (61)</fullName>
+                <default>false</default>
+                <label>Salem-ROW (61)</label>
+            </value>
+            <value>
+                <fullName>Salem-Europe (62)</fullName>
+                <default>false</default>
+                <label>Salem-Europe (62)</label>
+            </value>
+            <value>
+                <fullName>Salem-US (63)</fullName>
+                <default>false</default>
+                <label>Salem-US (63)</label>
+            </value>
+            <value>
+                <fullName>Reticon-ROW (71)</fullName>
+                <default>false</default>
+                <label>Reticon-ROW (71)</label>
+            </value>
+            <value>
+                <fullName>Reticon-Europe (72)</fullName>
+                <default>false</default>
+                <label>Reticon-Europe (72)</label>
+            </value>
+            <value>
+                <fullName>Reticon-US (73)</fullName>
+                <default>false</default>
+                <label>Reticon-US (73)</label>
+            </value>
+            <value>
+                <fullName>CPM-ROW (751)</fullName>
+                <default>false</default>
+                <label>CPM-ROW (751)</label>
+            </value>
+            <value>
+                <fullName>Voltarc-ROW (81)</fullName>
+                <default>false</default>
+                <label>Voltarc-ROW (81)</label>
+            </value>
+            <value>
+                <fullName>Discrete Central-NA (DISC)</fullName>
+                <default>false</default>
+                <label>Discrete Central-NA (DISC)</label>
+            </value>
+            <value>
+                <fullName>Sensors Central (SC)</fullName>
+                <default>false</default>
+                <label>Sensors Central (SC)</label>
+            </value>
+            <value>
+                <fullName>Sensors East (SE)</fullName>
+                <default>false</default>
+                <label>Sensors East (SE)</label>
+            </value>
+            <value>
+                <fullName>Sensors Europe (SEUR)</fullName>
+                <default>false</default>
+                <label>Sensors Europe (SEUR)</label>
+            </value>
+            <value>
+                <fullName>Sensors Far East (SFE)</fullName>
+                <default>false</default>
+                <label>Sensors Far East (SFE)</label>
+            </value>
+            <value>
+                <fullName>Sensors ROW (SROW)</fullName>
+                <default>false</default>
+                <label>Sensors ROW (SROW)</label>
+            </value>
+            <value>
+                <fullName>Sensors West (SW)</fullName>
+                <default>false</default>
+                <label>Sensors West (SW)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

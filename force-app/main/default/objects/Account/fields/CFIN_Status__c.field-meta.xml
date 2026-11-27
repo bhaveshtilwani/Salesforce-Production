@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFIN_Status__c</fullName>
+    <label>CFIN Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>For CS Confirmation</fullName>
+                <default>false</default>
+                <label>For CS Confirmation</label>
+            </value>
+            <value>
+                <fullName>CS Confirmed and Forwarded to CFIN</fullName>
+                <default>false</default>
+                <label>CS Confirmed and Forwarded to CFIN</label>
+            </value>
+            <value>
+                <fullName>CFIN Confirmed</fullName>
+                <default>false</default>
+                <label>CFIN Confirmed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

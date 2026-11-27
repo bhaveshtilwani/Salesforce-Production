@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T_Cs_Template_Selection__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Site__c , &quot;Montreal&quot;,&quot;069Qp00000HC2ykIAD&quot;, &quot;Salem&quot;, &quot;069Qp00000HC2FZIA1&quot;, &quot;Boulder&quot;, &quot;069Qp00000HC2FZIA1&quot;,&quot;Munich&quot;, &quot;a1Q7X00000GZNrWUAX&quot;,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>T&amp;Cs Template Selection</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Family__c</fullName>
+    <label>Product Family</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Advanced Imaging Systems</fullName>
+                <default>false</default>
+                <label>Advanced Imaging Systems</label>
+            </value>
+            <value>
+                <fullName>Advanced Laser Systems</fullName>
+                <default>false</default>
+                <label>Advanced Laser Systems</label>
+            </value>
+            <value>
+                <fullName>Analytical</fullName>
+                <default>false</default>
+                <label>Analytical</label>
+            </value>
+            <value>
+                <fullName>Analytical Subsystems</fullName>
+                <default>false</default>
+                <label>Analytical Subsystems</label>
+            </value>
+            <value>
+                <fullName>Biomedical Lighting</fullName>
+                <default>false</default>
+                <label>Biomedical Lighting</label>
+            </value>
+            <value>
+                <fullName>Biomedical Systems</fullName>
+                <default>false</default>
+                <label>Biomedical Systems</label>
+            </value>
+            <value>
+                <fullName>Catalog and Other</fullName>
+                <default>false</default>
+                <label>Catalog and Other</label>
+            </value>
+            <value>
+                <fullName>Cermax Equipment</fullName>
+                <default>false</default>
+                <label>Cermax Equipment</label>
+            </value>
+            <value>
+                <fullName>Cermax Lamps</fullName>
+                <default>false</default>
+                <label>Cermax Lamps</label>
+            </value>
+            <value>
+                <fullName>Defense Sensor</fullName>
+                <default>false</default>
+                <label>Defense Sensor</label>
+            </value>
+            <value>
+                <fullName>Energetic Systems</fullName>
+                <default>false</default>
+                <label>Energetic Systems</label>
+            </value>
+            <value>
+                <fullName>Flash Modules</fullName>
+                <default>false</default>
+                <label>Flash Modules</label>
+            </value>
+            <value>
+                <fullName>Freq Stds and Switches</fullName>
+                <default>false</default>
+                <label>Freq Stds and Switches</label>
+            </value>
+            <value>
+                <fullName>HeNe Lasers</fullName>
+                <default>false</default>
+                <label>HeNe Lasers</label>
+            </value>
+            <value>
+                <fullName>High Performance</fullName>
+                <default>false</default>
+                <label>High Performance</label>
+            </value>
+            <value>
+                <fullName>High Voltage Power</fullName>
+                <default>false</default>
+                <label>High Voltage Power</label>
+            </value>
+            <value>
+                <fullName>Industrial Cermax</fullName>
+                <default>false</default>
+                <label>Industrial Cermax</label>
+            </value>
+            <value>
+                <fullName>Industrial Components</fullName>
+                <default>false</default>
+                <label>Industrial Components</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing</fullName>
+                <default>false</default>
+                <label>Industrial Curing</label>
+            </value>
+            <value>
+                <fullName>Industrial Flash</fullName>
+                <default>false</default>
+                <label>Industrial Flash</label>
+            </value>
+            <value>
+                <fullName>IRD</fullName>
+                <default>false</default>
+                <label>IRD</label>
+            </value>
+            <value>
+                <fullName>Laser &amp; Optics Technology</fullName>
+                <default>false</default>
+                <label>Laser &amp; Optics Technology</label>
+            </value>
+            <value>
+                <fullName>Laser Technology</fullName>
+                <default>false</default>
+                <label>Laser Technology</label>
+            </value>
+            <value>
+                <fullName>LED Solutions</fullName>
+                <default>false</default>
+                <label>LED Solutions</label>
+            </value>
+            <value>
+                <fullName>Medical Cermax</fullName>
+                <default>false</default>
+                <label>Medical Cermax</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Medical Sensors</fullName>
+                <default>false</default>
+                <label>Medical Sensors</label>
+            </value>
+            <value>
+                <fullName>Mil/Aero/ Sensors</fullName>
+                <default>false</default>
+                <label>Mil/Aero/ Sensors</label>
+            </value>
+            <value>
+                <fullName>Mil/Aero CCD</fullName>
+                <default>false</default>
+                <label>Mil/Aero CCD</label>
+            </value>
+            <value>
+                <fullName>Military Lighting</fullName>
+                <default>false</default>
+                <label>Military Lighting</label>
+            </value>
+            <value>
+                <fullName>Molecular Imaging</fullName>
+                <default>false</default>
+                <label>Molecular Imaging</label>
+            </value>
+            <value>
+                <fullName>Optical Inspection</fullName>
+                <default>false</default>
+                <label>Optical Inspection</label>
+            </value>
+            <value>
+                <fullName>Photodiodes</fullName>
+                <default>false</default>
+                <label>Photodiodes</label>
+            </value>
+            <value>
+                <fullName>Photodiodes Array</fullName>
+                <default>false</default>
+                <label>Photodiodes Array</label>
+            </value>
+            <value>
+                <fullName>Photoflash</fullName>
+                <default>false</default>
+                <label>Photoflash</label>
+            </value>
+            <value>
+                <fullName>Photoflash Digital</fullName>
+                <default>false</default>
+                <label>Photoflash Digital</label>
+            </value>
+            <value>
+                <fullName>Photoflash Film</fullName>
+                <default>false</default>
+                <label>Photoflash Film</label>
+            </value>
+            <value>
+                <fullName>Photonics Flash</fullName>
+                <default>false</default>
+                <label>Photonics Flash</label>
+            </value>
+            <value>
+                <fullName>Photonics Systems</fullName>
+                <default>false</default>
+                <label>Photonics Systems</label>
+            </value>
+            <value>
+                <fullName>Power Supplies</fullName>
+                <default>false</default>
+                <label>Power Supplies</label>
+            </value>
+            <value>
+                <fullName>Precision Optics</fullName>
+                <default>false</default>
+                <label>Precision Optics</label>
+            </value>
+            <value>
+                <fullName>Pyroelectric Sensors</fullName>
+                <default>false</default>
+                <label>Pyroelectric Sensors</label>
+            </value>
+            <value>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+                <label>Semiconductor</label>
+            </value>
+            <value>
+                <fullName>Solid State Lighting</fullName>
+                <default>false</default>
+                <label>Solid State Lighting</label>
+            </value>
+            <value>
+                <fullName>SolidTRON</fullName>
+                <default>false</default>
+                <label>SolidTRON</label>
+            </value>
+            <value>
+                <fullName>SPCM</fullName>
+                <default>false</default>
+                <label>SPCM</label>
+            </value>
+            <value>
+                <fullName>Thermopile</fullName>
+                <default>false</default>
+                <label>Thermopile</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

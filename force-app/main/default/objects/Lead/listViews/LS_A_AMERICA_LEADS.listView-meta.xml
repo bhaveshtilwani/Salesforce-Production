@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LS_A_AMERICA_LEADS</fullName>
+    <columns>Noblelight_Legacy_Id__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.COUNTRY_CODE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Lead_Source_Detail__c</columns>
+    <columns>Lead_Source_Date__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Lead_Source_Detail__c</field>
+        <operation>equals</operation>
+        <value>Automate</value>
+    </filters>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>6/22/2026 12:00 AM</value>
+    </filters>
+    <label>ALL LEADS - Olga - Watertech</label>
+</ListView>

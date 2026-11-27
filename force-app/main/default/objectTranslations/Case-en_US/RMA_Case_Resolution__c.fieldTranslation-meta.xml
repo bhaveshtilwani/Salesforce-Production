@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RMA Case Resolution --></label>
+    <name>RMA_Case_Resolution__c</name>
+    <picklistValues>
+        <masterLabel>Alternative solution found</masterLabel>
+        <translation><!-- Alternative solution found --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beyond repair</masterLabel>
+        <translation><!-- Beyond repair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beyond repair - Customer to scrap</masterLabel>
+        <translation><!-- Beyond repair - Customer to scrap --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beyond repair - Receive product to scrap/recycle and invoice</masterLabel>
+        <translation><!-- Beyond repair - Receive product to scrap/recycle and invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beyond repair - scrap/recycle and invoice</masterLabel>
+        <translation><!-- Beyond repair - scrap/recycle and invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beyond repair - scrap/recycle without invoice</masterLabel>
+        <translation><!-- Beyond repair - scrap/recycle without invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beyond repair - send back and invoice</masterLabel>
+        <translation><!-- Beyond repair - send back and invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calibrate</masterLabel>
+        <translation><!-- Calibrate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correct product delivered - Receive and credit on receipt of replacement order</masterLabel>
+        <translation><!-- Correct product delivered - Receive and credit on receipt of replacement order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correct product delivered - Receive and credit possible if replacement order sent</masterLabel>
+        <translation><!-- Correct product delivered - Receive and credit possible if replacement order sent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correct product delivered - Reject</masterLabel>
+        <translation><!-- Correct product delivered - Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Correct quantity delivered - Reject</masterLabel>
+        <translation><!-- Correct quantity delivered - Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit only</masterLabel>
+        <translation><!-- Credit only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer can scrap themselves - Reject</masterLabel>
+        <translation><!-- Customer can scrap themselves - Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No fault found - send back and invoice</masterLabel>
+        <translation><!-- No fault found - send back and invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not yet time to re-calibrate - Reject</masterLabel>
+        <translation><!-- Not yet time to re-calibrate - Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product delivered on time - Reject</masterLabel>
+        <translation><!-- Product delivered on time - Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receive and credit</masterLabel>
+        <translation><!-- Receive and credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receive and credit; re-activate original order</masterLabel>
+        <translation><!-- Receive and credit; re-activate original order --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receive and replace</masterLabel>
+        <translation><!-- Receive and replace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receive product to scrap / recycle and invoice</masterLabel>
+        <translation><!-- Receive product to scrap / recycle and invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receive without credit</masterLabel>
+        <translation><!-- Receive without credit --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair and invoice</masterLabel>
+        <translation><!-- Repair and invoice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Repair under warranty</masterLabel>
+        <translation><!-- Repair under warranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return for inspection</masterLabel>
+        <translation><!-- Return for inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Undamaged product delivered - Reject</masterLabel>
+        <translation><!-- Undamaged product delivered - Reject --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working product delivered - Reject</masterLabel>
+        <translation><!-- Working product delivered - Reject --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

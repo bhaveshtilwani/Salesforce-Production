@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unlisted_Application_must_be_blank</fullName>
+    <active>false</active>
+    <description>Unlisted Application Should be blank when Application field is not &apos;None&apos;</description>
+    <errorConditionFormula>AND ( 
+
+(( CASE( Application__c , 
+&quot;&quot;,1, 
+&quot;Other&quot;,1, 
+0) = 0 
+) &amp;&amp; 
+
+( Unlisted_Application__c &lt;&gt; &quot;&quot; 
+) 
+) 
+
+)</errorConditionFormula>
+    <errorMessage>Unlisted Application Field must be blank. as Application field is filled in</errorMessage>
+</ValidationRule>

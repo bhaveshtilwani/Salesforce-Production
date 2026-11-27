@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the order referred to in order to create the order. Ex: Repair order will reference the RMA order. The RMA order number will be here automatically. --></help>
+    <label><!-- Reference Order No. --></label>
+    <name>Reference_Contract_No__c</name>
+</CustomFieldTranslation>

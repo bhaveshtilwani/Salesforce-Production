@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- RO Status --></label>
+    <name>RO_Status__c</name>
+    <picklistValues>
+        <masterLabel>Downside (Lower Value)</masterLabel>
+        <translation><!-- Downside (Lower Value) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Downside (Push Out)</masterLabel>
+        <translation><!-- Downside (Push Out) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Downside (Risk to Lose)</masterLabel>
+        <translation><!-- Downside (Risk to Lose) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upside (Overage vs Original Opportunity)</masterLabel>
+        <translation><!-- Upside (Overage vs Original Opportunity) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upside (Promote to A)</masterLabel>
+        <translation><!-- Upside (Promote to A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upside (Pull Forward)</masterLabel>
+        <translation><!-- Upside (Pull Forward) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

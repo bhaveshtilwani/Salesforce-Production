@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_of_Interest__c</fullName>
+    <label>Area of Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Avionic HUDs</fullName>
+                <default>false</default>
+                <label>Avionic HUDs</label>
+            </value>
+            <value>
+                <fullName>BioPhotonics</fullName>
+                <default>false</default>
+                <label>BioPhotonics</label>
+            </value>
+            <value>
+                <fullName>C5iSR (GPS Clocks/RAFS)</fullName>
+                <default>false</default>
+                <label>C5iSR (GPS Clocks/RAFS)</label>
+            </value>
+            <value>
+                <fullName>Cameras – High-Speed</fullName>
+                <default>false</default>
+                <label>Cameras – High-Speed</label>
+            </value>
+            <value>
+                <fullName>Cameras - Industrial</fullName>
+                <default>false</default>
+                <label>Cameras - Industrial</label>
+            </value>
+            <value>
+                <fullName>Cameras – Intensified</fullName>
+                <default>false</default>
+                <label>Cameras – Intensified</label>
+            </value>
+            <value>
+                <fullName>Cameras – Scientific</fullName>
+                <default>false</default>
+                <label>Cameras – Scientific</label>
+            </value>
+            <value>
+                <fullName>Cameras – Thermal MWIR/LWIR</fullName>
+                <default>false</default>
+                <label>Cameras – Thermal MWIR/LWIR</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Defense &amp; Aero - Sensors</fullName>
+                <default>false</default>
+                <label>Defense &amp; Aero - Sensors</label>
+            </value>
+            <value>
+                <fullName>Defense Through-Life Support</fullName>
+                <default>false</default>
+                <label>Defense Through-Life Support</label>
+            </value>
+            <value>
+                <fullName>Dental Imaging</fullName>
+                <default>false</default>
+                <label>Dental Imaging</label>
+            </value>
+            <value>
+                <fullName>Deuterium Lamps &amp; Systems</fullName>
+                <default>false</default>
+                <label>Deuterium Lamps &amp; Systems</label>
+            </value>
+            <value>
+                <fullName>Dismounted Soldier Products</fullName>
+                <default>false</default>
+                <label>Dismounted Soldier Products</label>
+            </value>
+            <value>
+                <fullName>Energetics &amp; Ignition Safety</fullName>
+                <default>false</default>
+                <label>Energetics &amp; Ignition Safety</label>
+            </value>
+            <value>
+                <fullName>Flashlamps</fullName>
+                <default>false</default>
+                <label>Flashlamps</label>
+            </value>
+            <value>
+                <fullName>Fluorescence Illuminators - X-Cite</fullName>
+                <default>false</default>
+                <label>Fluorescence Illuminators - X-Cite</label>
+            </value>
+            <value>
+                <fullName>Frequency Standards</fullName>
+                <default>false</default>
+                <label>Frequency Standards</label>
+            </value>
+            <value>
+                <fullName>High Engergy Switching</fullName>
+                <default>false</default>
+                <label>High Engergy Switching</label>
+            </value>
+            <value>
+                <fullName>High-Voltage Power Supplies &amp; Capacitors</fullName>
+                <default>false</default>
+                <label>High-Voltage Power Supplies &amp; Capacitors</label>
+            </value>
+            <value>
+                <fullName>IREDs</fullName>
+                <default>false</default>
+                <label>IREDs</label>
+            </value>
+            <value>
+                <fullName>IR Heating Emitters &amp; Systems</fullName>
+                <default>false</default>
+                <label>IR Heating Emitters &amp; Systems</label>
+            </value>
+            <value>
+                <fullName>IR Sensors - Thermopile &amp; Pyroelectric</fullName>
+                <default>false</default>
+                <label>IR Sensors - Thermopile &amp; Pyroelectric</label>
+            </value>
+            <value>
+                <fullName>Laser Material Processing Optics/F-Theta Lenses</fullName>
+                <default>false</default>
+                <label>Laser Material Processing Optics/F-Theta Lenses</label>
+            </value>
+            <value>
+                <fullName>Lasers - Axsun OCT Swept</fullName>
+                <default>false</default>
+                <label>Lasers - Axsun OCT Swept</label>
+            </value>
+            <value>
+                <fullName>Lasers - Defense &amp; Aerospace</fullName>
+                <default>false</default>
+                <label>Lasers - Defense &amp; Aerospace</label>
+            </value>
+            <value>
+                <fullName>Lasers - Emitters &amp; Pulsed Diodes</fullName>
+                <default>false</default>
+                <label>Lasers - Emitters &amp; Pulsed Diodes</label>
+            </value>
+            <value>
+                <fullName>Lasers - iFLEX Diode &amp; Fiber-Optic Delivery Systems</fullName>
+                <default>false</default>
+                <label>Lasers - iFLEX Diode &amp; Fiber-Optic Delivery Systems</label>
+            </value>
+            <value>
+                <fullName>Lasers - OPO</fullName>
+                <default>false</default>
+                <label>Lasers - OPO</label>
+            </value>
+            <value>
+                <fullName>Lasers - REO HeNe</fullName>
+                <default>false</default>
+                <label>Lasers - REO HeNe</label>
+            </value>
+            <value>
+                <fullName>LED Illumination</fullName>
+                <default>false</default>
+                <label>LED Illumination</label>
+            </value>
+            <value>
+                <fullName>Machine Vision &amp; Inspection Lenses</fullName>
+                <default>false</default>
+                <label>Machine Vision &amp; Inspection Lenses</label>
+            </value>
+            <value>
+                <fullName>Magneto- and Electro-Optic Modules</fullName>
+                <default>false</default>
+                <label>Magneto- and Electro-Optic Modules</label>
+            </value>
+            <value>
+                <fullName>Medical Imaging</fullName>
+                <default>false</default>
+                <label>Medical Imaging</label>
+            </value>
+            <value>
+                <fullName>Micro-Optics &amp; Endoscopy</fullName>
+                <default>false</default>
+                <label>Micro-Optics &amp; Endoscopy</label>
+            </value>
+            <value>
+                <fullName>Ophthalmic Photonics</fullName>
+                <default>false</default>
+                <label>Ophthalmic Photonics</label>
+            </value>
+            <value>
+                <fullName>Optem Lenses</fullName>
+                <default>false</default>
+                <label>Optem Lenses</label>
+            </value>
+            <value>
+                <fullName>Optics - Custom</fullName>
+                <default>false</default>
+                <label>Optics - Custom</label>
+            </value>
+            <value>
+                <fullName>OptoMechanics - LINOS</fullName>
+                <default>false</default>
+                <label>OptoMechanics - LINOS</label>
+            </value>
+            <value>
+                <fullName>Optronics - Defense</fullName>
+                <default>false</default>
+                <label>Optronics - Defense</label>
+            </value>
+            <value>
+                <fullName>Optronics - Vehicle</fullName>
+                <default>false</default>
+                <label>Optronics - Vehicle</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Photonic Detectors - Photodiodes</fullName>
+                <default>false</default>
+                <label>Photonic Detectors - Photodiodes</label>
+            </value>
+            <value>
+                <fullName>PID Lamps</fullName>
+                <default>false</default>
+                <label>PID Lamps</label>
+            </value>
+            <value>
+                <fullName>Pulsed Xenon Lighting - Analytical Instruments</fullName>
+                <default>false</default>
+                <label>Pulsed Xenon Lighting - Analytical Instruments</label>
+            </value>
+            <value>
+                <fullName>Rodenstock Photographic Lenses</fullName>
+                <default>false</default>
+                <label>Rodenstock Photographic Lenses</label>
+            </value>
+            <value>
+                <fullName>Semiconductor Optics and Imaging</fullName>
+                <default>false</default>
+                <label>Semiconductor Optics and Imaging</label>
+            </value>
+            <value>
+                <fullName>Space Coverglass &amp; OSRs</fullName>
+                <default>false</default>
+                <label>Space Coverglass &amp; OSRs</label>
+            </value>
+            <value>
+                <fullName>SPCMs</fullName>
+                <default>false</default>
+                <label>SPCMs</label>
+            </value>
+            <value>
+                <fullName>Standard Optical Elements &amp; Components</fullName>
+                <default>false</default>
+                <label>Standard Optical Elements &amp; Components</label>
+            </value>
+            <value>
+                <fullName>Surveillance &amp; Target Acquisition</fullName>
+                <default>false</default>
+                <label>Surveillance &amp; Target Acquisition</label>
+            </value>
+            <value>
+                <fullName>Thermal Infrared Detectors</fullName>
+                <default>false</default>
+                <label>Thermal Infrared Detectors</label>
+            </value>
+            <value>
+                <fullName>UVC Disinfection &amp; Oxidation Light Sources</fullName>
+                <default>false</default>
+                <label>UVC Disinfection &amp; Oxidation Light Sources</label>
+            </value>
+            <value>
+                <fullName>UVC Disinfection Light Sources</fullName>
+                <default>false</default>
+                <label>UVC Disinfection Light Sources</label>
+            </value>
+            <value>
+                <fullName>UV Curing Systems</fullName>
+                <default>false</default>
+                <label>UV Curing Systems</label>
+            </value>
+            <value>
+                <fullName>UV Curing Systems - Noblelight</fullName>
+                <default>false</default>
+                <label>UV Curing Systems - Noblelight</label>
+            </value>
+            <value>
+                <fullName>UV Curing Systems - OmniCure</fullName>
+                <default>false</default>
+                <label>UV Curing Systems - OmniCure</label>
+            </value>
+            <value>
+                <fullName>UV Curing Systems - Phoseon</fullName>
+                <default>false</default>
+                <label>UV Curing Systems - Phoseon</label>
+            </value>
+            <value>
+                <fullName>Xenon Lighting - Cermax</fullName>
+                <default>false</default>
+                <label>Xenon Lighting - Cermax</label>
+            </value>
+            <value>
+                <fullName>X-ray Power Supplies and Integrated Sources</fullName>
+                <default>false</default>
+                <label>X-ray Power Supplies and Integrated Sources</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

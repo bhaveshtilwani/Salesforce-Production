@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Warrant_Section</name>
+        <label>Assign Warrant Section</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Purchase_Date2__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Asset__r.PurchaseDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Original_Warranty_End_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Asset__r.Original_Warranty_End_Date__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Related_Asset</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>is_Toronto_RMA</name>
+        <label>is Toronto RMA</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Case__r.Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Toronto</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Warrant_Section</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>#INC-284443 Toronto RMA&apos;s Related Asset</description>
+    <environments>Default</environments>
+    <interviewLabel>Related Asset - Case RMA Auto Population {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Related Asset - Case RMA Auto Population</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Related_Asset</name>
+        <label>Update Related Asset</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>is_Toronto_RMA</targetReference>
+        </connector>
+        <filterFormula>AND(
+{!$Record.Case__r.RecordType.DeveloperName} = &apos;RMA_Request&apos;,
+{!$Record.Asset__c} != null
+)</filterFormula>
+        <object>Releted_Assets__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

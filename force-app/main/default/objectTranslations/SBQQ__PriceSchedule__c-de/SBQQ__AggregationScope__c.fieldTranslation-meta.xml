@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Geben Sie an, wie Mengen von Belegposten fÃ¼r Produkte mit dieser Regelung aggregiert werden sollen. StandardmÃ¤ÃŸig wird die Menge fÃ¼r jeden Belegposten (selbst fÃ¼r dasselbe Produkt) separat berÃ¼cksichtigt.&quot;</help>
+    <label><!-- Aggregation Scope --></label>
+    <name>SBQQ__AggregationScope__c</name>
+    <picklistValues>
+        <masterLabel>Group</masterLabel>
+        <translation>Gruppe</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quote</masterLabel>
+        <translation>Angebot</translation>
+    </picklistValues>
+</CustomFieldTranslation>

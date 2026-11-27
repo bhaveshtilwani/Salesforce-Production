@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Application Type --></label>
+    <name>Application_Type__c</name>
+    <picklistValues>
+        <masterLabel>Adhesive</masterLabel>
+        <translation><!-- Adhesive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clean Room</masterLabel>
+        <translation><!-- Clean Room --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coating</masterLabel>
+        <translation><!-- Coating --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Temperature</masterLabel>
+        <translation><!-- High Temperature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ink</masterLabel>
+        <translation><!-- Ink --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical</masterLabel>
+        <translation><!-- Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Potting</masterLabel>
+        <translation><!-- Potting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vacuum</masterLabel>
+        <translation><!-- Vacuum --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

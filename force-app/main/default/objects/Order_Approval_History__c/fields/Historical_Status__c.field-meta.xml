@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Historical_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( Approval__c ), 
+   IMAGE(&quot;/img/msg_icons/error24.png&quot;,&quot;Inactive&quot;, 24, 24) &amp; &quot; Inactive&quot;, 
+   IMAGE(&quot;/img/msg_icons/confirm24.png&quot;,&quot;Active&quot;, 24, 24) &amp; &quot; Active&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Historical Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

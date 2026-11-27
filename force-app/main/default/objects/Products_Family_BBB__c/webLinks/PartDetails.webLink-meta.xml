@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartDetails</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Part Details</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>http://optfretest001.perkinelmer.net/WebRunner/Run.aspx?app=applicationFolder/ProdFamBBB.aaa&amp;url={!API.Partner_Server_URL_30}&amp;session={!API.Session_ID}&amp;prodFamId={!Products_Family_BBB__c.Id}&amp;prodFamName={!Products_Family_BBB__c.Name}</url>
+</WebLink>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Sub_Team</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Leader_Emails__c</columns>
+    <columns>Sales_Sub_Team__c</columns>
+    <columns>Category__c</columns>
+    <columns>Sales_Region_Team__c</columns>
+    <columns>Sales_Team__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Category__c</field>
+        <operation>equals</operation>
+        <value>Sales Sub Team</value>
+    </filters>
+    <label>Sales Sub Team</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ETC_position__c</fullName>
+    <description>For Pwin calculation (D&amp;A)</description>
+    <inlineHelpText>What is ETC&apos;s position relative to this opportunity?</inlineHelpText>
+    <label>ETC position?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sole Source / Incumbent</fullName>
+                <default>false</default>
+                <label>Sole Source / Incumbent</label>
+            </value>
+            <value>
+                <fullName>Well within our market / Go-To for this capability</fullName>
+                <default>false</default>
+                <label>Well within our market / Go-To for this capability</label>
+            </value>
+            <value>
+                <fullName>ETC actively trying to enter this market / capability</fullName>
+                <default>false</default>
+                <label>ETC actively trying to enter this market / capability</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

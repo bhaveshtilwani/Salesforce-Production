@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Responsibility --></label>
+    <name>Responsibility__c</name>
+    <picklistValues>
+        <masterLabel>Accounting, Purchasing or Finance</masterLabel>
+        <translation><!-- Accounting, Purchasing or Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEO, President, Owner, Managing Director</masterLabel>
+        <translation><!-- CEO, President, Owner, Managing Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineer &amp; Design</masterLabel>
+        <translation><!-- Engineer &amp; Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance &amp; Technical Service</masterLabel>
+        <translation><!-- Maintenance &amp; Technical Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Development</masterLabel>
+        <translation><!-- Process Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production and Manufacturing</masterLabel>
+        <translation><!-- Production and Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality and Health &amp; Safety</masterLabel>
+        <translation><!-- Quality and Health &amp; Safety --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research and Development</masterLabel>
+        <translation><!-- Research and Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales and Marketing</masterLabel>
+        <translation><!-- Sales and Marketing --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

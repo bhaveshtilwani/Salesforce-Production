@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>この見積の品目の支払いに適用される条件。</help>
+    <label><!-- Payment Terms --></label>
+    <name>SBQQ__PaymentTerms__c</name>
+    <picklistValues>
+        <masterLabel>Determined by Site</masterLabel>
+        <translation><!-- Determined by Site --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

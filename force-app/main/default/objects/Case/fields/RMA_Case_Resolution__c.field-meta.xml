@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RMA_Case_Resolution__c</fullName>
+    <label>RMA Case Resolution</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternative solution found</fullName>
+                <default>false</default>
+                <label>Alternative solution found</label>
+            </value>
+            <value>
+                <fullName>Beyond repair</fullName>
+                <default>false</default>
+                <label>Beyond repair</label>
+            </value>
+            <value>
+                <fullName>Beyond repair - Customer to scrap</fullName>
+                <default>false</default>
+                <label>Beyond repair - Customer to scrap</label>
+            </value>
+            <value>
+                <fullName>Beyond repair - Receive product to scrap/recycle and invoice</fullName>
+                <default>false</default>
+                <label>Beyond repair - Receive product to scrap/recycle and invoice</label>
+            </value>
+            <value>
+                <fullName>Beyond repair - scrap/recycle and invoice</fullName>
+                <default>false</default>
+                <label>Beyond repair - scrap/recycle and invoice</label>
+            </value>
+            <value>
+                <fullName>Beyond repair - scrap/recycle without invoice</fullName>
+                <default>false</default>
+                <label>Beyond repair - scrap/recycle without invoice</label>
+            </value>
+            <value>
+                <fullName>Beyond repair - send back and invoice</fullName>
+                <default>false</default>
+                <label>Beyond repair - send back and invoice</label>
+            </value>
+            <value>
+                <fullName>Calibrate</fullName>
+                <default>false</default>
+                <label>Calibrate</label>
+            </value>
+            <value>
+                <fullName>Correct product delivered - Receive and credit on receipt of replacement order</fullName>
+                <default>false</default>
+                <label>Correct product delivered - Receive and credit on receipt of replacement order</label>
+            </value>
+            <value>
+                <fullName>Correct product delivered - Receive and credit possible if replacement order sent</fullName>
+                <default>false</default>
+                <label>Correct product delivered - Receive and credit possible if replacement order sent</label>
+            </value>
+            <value>
+                <fullName>Correct product delivered - Reject</fullName>
+                <default>false</default>
+                <label>Correct product delivered - Reject</label>
+            </value>
+            <value>
+                <fullName>Correct quantity delivered - Reject</fullName>
+                <default>false</default>
+                <label>Correct quantity delivered - Reject</label>
+            </value>
+            <value>
+                <fullName>Credit only</fullName>
+                <default>false</default>
+                <label>Credit only</label>
+            </value>
+            <value>
+                <fullName>Customer can scrap themselves - Reject</fullName>
+                <default>false</default>
+                <label>Customer can scrap themselves - Reject</label>
+            </value>
+            <value>
+                <fullName>No fault found - send back and invoice</fullName>
+                <default>false</default>
+                <label>No fault found - send back and invoice</label>
+            </value>
+            <value>
+                <fullName>Not yet time to re-calibrate - Reject</fullName>
+                <default>false</default>
+                <label>Not yet time to re-calibrate - Reject</label>
+            </value>
+            <value>
+                <fullName>Receive and credit</fullName>
+                <default>false</default>
+                <label>Receive and credit</label>
+            </value>
+            <value>
+                <fullName>Product delivered on time - Reject</fullName>
+                <default>false</default>
+                <label>Product delivered on time - Reject</label>
+            </value>
+            <value>
+                <fullName>Receive and credit; re-activate original order</fullName>
+                <default>false</default>
+                <label>Receive and credit; re-activate original order</label>
+            </value>
+            <value>
+                <fullName>Receive and replace</fullName>
+                <default>false</default>
+                <label>Receive and replace</label>
+            </value>
+            <value>
+                <fullName>Receive product to scrap / recycle and invoice</fullName>
+                <default>false</default>
+                <label>Receive product to scrap / recycle and invoice</label>
+            </value>
+            <value>
+                <fullName>Receive without credit</fullName>
+                <default>false</default>
+                <label>Receive without credit</label>
+            </value>
+            <value>
+                <fullName>Repair and invoice</fullName>
+                <default>false</default>
+                <label>Repair and invoice</label>
+            </value>
+            <value>
+                <fullName>Repair under warranty</fullName>
+                <default>false</default>
+                <label>Repair under warranty</label>
+            </value>
+            <value>
+                <fullName>Return for inspection</fullName>
+                <default>false</default>
+                <label>Return for inspection</label>
+            </value>
+            <value>
+                <fullName>Undamaged product delivered - Reject</fullName>
+                <default>false</default>
+                <label>Undamaged product delivered - Reject</label>
+            </value>
+            <value>
+                <fullName>Working product delivered - Reject</fullName>
+                <default>false</default>
+                <label>Working product delivered - Reject</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

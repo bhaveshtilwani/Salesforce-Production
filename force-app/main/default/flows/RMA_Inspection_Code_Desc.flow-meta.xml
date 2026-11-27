@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>AS01MT01</name>
+        <dataType>String</dataType>
+        <expression>CASE({!$Record.Inspection_Code__c},
+&apos;AS18 - ASSY-Corrosion&apos;, &apos;A surface deterioration on a metal due to an atomic interaction with air or a fluid.&apos;,
+&apos;AS19 - ASSY-Plating or Passivation Defect&apos;, &apos;Any non-conformity related to plating or passivation or anodization which could included non-uniformity, pitting, cracking, contamination, blistering, oxidation, etc.&apos;,
+&apos;CO01 - COAT-Chamber Malfunction&apos;, &apos;Coating chamber problem directly caused defect. If causal relationship is not obvious, use a symptom-based defect code.&apos;,
+&apos;DC04 - DOCS-Process Sheet error&apos;, &apos;Incorrect PS steps so parts are held on NCM rack&apos;,
+&apos;DC06 - DOCS-Part Quantity&apos;, &apos;Quantity at current step does not match process sheet quantity&apos;,
+&apos;DC07 - DOCS-DCP&apos;, &apos;Parts are held up due to issue with DCP.&apos;,
+&apos;DC08 - DOCS-Missed PS Signoff&apos;, &apos;Process sheet has previous steps missing signoff&apos;,
+&apos;DM01 - DIM-Angle&apos;, &apos;Part fails for angle out of spec&apos;,
+&apos;DM02 - DIM-Bevel&apos;, &apos;Part fails for bevel out of spec&apos;,
+&apos;DM03 - DIM-Diameter&apos;, &apos;Part fails for diameter out of spec&apos;,
+&apos;DM05 - DIM-Part Size (Thickness)&apos;, &apos;Part fails for size out of spec. E.g. thickness, length, width&apos;,
+&apos;DM06 - DIM-Undefined&apos;, &apos;Part fails for dimension out of spec not specified in other defect codes. E.g. sag, hole dimensions&apos;,
+&apos;DM07 - DIM-Wedge&apos;, &apos;Part fails for wedge out of spec&apos;,
+&apos;DU05 - DURA-LDT&apos;, &apos;Any Laser Damage measurement failure (tested in-house or subcontracted)&apos;,
+&apos;DU07 - DURA-Part Testing&apos;, &apos;Part sacrificed for durability testing&apos;,
+&apos;DU08 - DURA-Witness Missing&apos;, &apos;No witness available for durability testing&apos;,
+&apos;FT01 - FUNC-Electrical Fault&apos;, &apos;Assign to any non-conformity related to an electrical defect.&apos;,
+&apos;FT02 - FUNC-Test Error&apos;, &apos;Any functional test failure not electrical in nature.&apos;,
+&apos;HA01 - HANDLING-Broken&apos;, &apos;Parts broken due to being dropped. If part is damaged but not known to have been dropped, use appropriate SQ defect code.&apos;,
+&apos;ME02 - MECH-Burrs&apos;, &apos;Any non-conformity related to a burr, rough edge, sharp edge or other edged surface damage usually created by a machining.&apos;,
+&apos;ME04 - MECH-Paint Defect&apos;, &apos;Any non-conformity related to a painted surface due to missing paint, non-uniformity, wrong color, wrong location, etc.&apos;,
+&apos;ME06 - MECH-Thread&apos;, &apos;Any non-conformity related a threaded hole, shaft, screw or nut.  This could included damaged thread, wrong thread type, etc.&apos;,
+&apos;MK06 - MARKING-Other&apos;, &apos;Problem with font, size, or legibility&apos;,
+&apos;MK07 - MARKING-Serialization&apos;, &apos;Serial number is incorrect&apos;,
+&apos;MT01 - MET-Beam Deviation &amp; Wedge&apos;, &apos;Applies to any wedge, parallelism and/or beam deviation failure using an interferometer.&apos;,
+ &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>Combine</name>
+        <dataType>String</dataType>
+        <expression>{!AS01MT01} + {!MT02SQ20} + {!FirstBatch}</expression>
+    </formulas>
+    <formulas>
+        <name>FirstBatch</name>
+        <dataType>String</dataType>
+        <expression>CASE({!$Record.Inspection_Code__c},
+&apos;AS01 - ASSY-Defective Part&apos;, &apos;A part non-conformity which interferes with the parts the assembly and/or performance in a final assembly or sub-assembly.&apos;,
+&apos;AS02 - ASSY-Misaligned&apos;, &apos;Assembled part is incorrectly placed and/or aligned into an assembly or sub-assembly.&apos;,
+&apos;AS03 - ASSY-Missing Part&apos;, &apos;Missing part found in an inspection step after completion of a defined set of processes.&apos;,
+&apos;AS04 - ASSY-No Optical Contact&apos;, &apos;Optical conact bonding of an assembly or sub-assembly has failed.&apos;,
+&apos;AS06 - ASSY-Wrong Part&apos;, &apos;Wrong part assembled into an assembly or sub-assembly.&apos;,
+&apos;AS10 - ASSY-ER&apos;, &apos;Extinction ratio incorrect.&apos;,
+&apos;AS11 - ASSY-CONTACT FAIL - DIG&apos;, &apos;Contact failure due to digs. &apos;,
+&apos;AS12 - ASSY-CONTACT FAIL - DECONTACT DAMAGE&apos;, &apos;Contact failure due to decontact damage.&apos;,
+&apos;AS13 - ASSY-CONTACT FAIL - ER&apos;, &apos;Contact failure due to extinction ratio.&apos;,
+&apos;AS14 - ASSY-CONTACT FAIL - FOD&apos;, &apos;Contact failure due to FOD.&apos;,
+&apos;AS15 - ASSY-CONTACT FAIL - SCRATCH&apos;, &apos;Contact failure due to scratches.&apos;,
+&apos;AS16 - ASSY-CONTACT FAIL - SURFACE FIGURE&apos;, &apos;Contact failure due to surface figure. &apos;,
+&apos;AS17 - ASSY-Incomplete Bonding&apos;, &apos;Bonding or optical contacting could not be completed or does not conform to specification.&apos;,
+ &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>MT02SQ20</name>
+        <dataType>String</dataType>
+        <expression>CASE({!$Record.Inspection_Code__c},
+&apos;MT02 - MET-Irregularity Reflected&apos;, &apos;PV failure with Power removed during a reflected wavefront measurement identified using an interferometer.&apos;,
+&apos;MT03 - MET-Irregularity Transmitted&apos;, &apos;PV failure with Power removed during a transmitted wavefront measurement using an interferometer.&apos;,
+&apos;MT04 - MET-Power Reflected&apos;, &apos;Reflected wavefront power failures identified using an interferometer and not related to a ROC measurent.&apos;,
+&apos;MT05 - MET-Power Transmitted&apos;, &apos;Transmitted wavefront power failures identified using an interferometer and not related to ROC.&apos;,
+&apos;MT06 - MET-PV Reflected&apos;, &apos;PV failure with Power included during a reflected wavefront measurement using an interferometer.&apos;,
+&apos;MT07 - MET-PV Transmitted&apos;, &apos;PV failure with Power included during a transmitted wavefront measurement using an interferometer.&apos;,
+&apos;MT08 - MET-Roughness&apos;, &apos;Any scatter measurement failure measured on Metrology equipment in a Metrology Lab .&apos;,
+&apos;MT09 - MET - ROC&apos;, &apos;Any roughness measurement failure measured as a Root Mean Square (RMS) value (ex. Sq, Rq).  This could include failures on both contact and non-contact profilometers.&apos;,
+&apos;MT10 - MET - Absorption&apos;, &apos;Failures related to the verfication of a ROC specification using an interferometer.   Relates to the Power specification of a non-plano surface.&apos;,
+&apos;MT11 - MET-Transmission&apos;, &apos;Any absorption measurement failure measured on Metrology equipment in a Metrology Lab .&apos;,
+&apos;MT12 - MET - Reflection&apos;, &apos;Any transmission measurement failure measured on Metrology equipment in a Metrology Lab or spectrophotometer&apos;,
+&apos;MT13 - MET-Scatter&apos;, &apos;Any reflection measurement failure measured on Metrology equipment in a Metrology Lab or spectrophotometer&apos;,
+&apos;MT14 - MET - Optical Path Length&apos;, &apos;Any Optical Path Length measurement failure.&apos;,
+&apos;MT15 - MET - Extinction Ratio&apos;, &apos;Any Extinction Ratio (ER) measurement failure as measured on the Assembly ER Benches.&apos;,
+&apos;PA02 - PACK-Label Wrong&apos;, &apos;Label is incorrect on packaging&apos;,
+&apos;PA04 - Pack-Batch Size&apos;, &apos;Extra or missing parts which do not conform to customer specified shipping batch size. An excess of parts that are leftover after completing a specified batch size. Ex. An excess of 2 parts for a job of 22 for batch size of 5&apos;,
+&apos;SP03 - SPECTRAL-Double-coated&apos;, &apos;It is obvious that a surface has been double-coated. If spectral is failing but cause is unknown, use SPECTRAL - Non-Conforming.&apos;,
+&apos;SP06 - SPECTRAL - Coated Wrong Side&apos;, &apos;It is suspected that the coating does not match the intended coating for that surface.&apos;,
+&apos;SP07 - SPECTRAL-Non-conforming&apos;, &apos;Coated response does not meet process sheet specifications&apos;,
+&apos;SQ01 - SQ -Particulate&apos;, &apos;Particulate(s) on surface of part. These can be bursts of many particles that clearly propagated from an edge or point, or flakes on the surface. See example pics. If not an obvious particulate, defect needs to be classified as SQ-Dig&apos;,
+&apos;SQ02 - SQ-Chips/Fractures&apos;, &apos;Localized defects around the periphery of an element. &apos;,
+&apos;SQ03 - SQ-Coating Bubbles&apos;, &apos;An inclusion in the coating&apos;,
+&apos;SQ04 - SQ-Delaminating/Peeling&apos;, &apos;Coating is deteriorating/ or coming off the surface&apos;,
+&apos;SQ05 - SQ-Dig&apos;, &apos;A small rough spot on the polished surface similar to pits in appearance, generally residuals of subsurface damage caused by grinding that didn’t polish out or bubbles that open up.&apos;,
+&apos;SQ07 - SQ-Incomplete Polish&apos;, &apos;Surface does not have a uniform roughness&apos;,
+&apos;SQ09 - SQ-Non-Uniform Coating&apos;, &apos;Visual non-uniformity within the clear aperture that is suspected to not conform spectrally&apos;,
+&apos;SQ13 - SQ-Scratch&apos;, &apos;Any marking or tearing of the surface&apos;,
+&apos;SQ15 - SQ-Sleek&apos;, &apos;Uniform hairline scratches that can only be seen from some angles.&apos;,
+&apos;SQ17 - SQ-Stain/Discolor&apos;, &apos;A spot of color/haze contrasting with the background color.&apos;,
+&apos;SQ20 - SQ-FOD(Trapped Fiber/Debris)&apos;, &apos;Foreign material trapped inside an assembly &apos;,
+&quot;&quot;)</expression>
+    </formulas>
+    <interviewLabel>RMA - Inspection Code Desc {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>RMA - Inspection Code Desc</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update</name>
+        <label>Update</label>
+        <locationX>788</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Inspection_Code_Description2__c</field>
+            <value>
+                <elementReference>Combine</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Update</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Inspection_Code__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Releted_Assets__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

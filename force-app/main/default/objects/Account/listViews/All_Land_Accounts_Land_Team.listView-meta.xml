@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Land_Accounts_Land_Team</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Business Name</value>
+    </filters>
+    <label>All Land Accounts (Land Team)</label>
+    <sharedTo>
+        <role>VP_DA_Land</role>
+    </sharedTo>
+</ListView>

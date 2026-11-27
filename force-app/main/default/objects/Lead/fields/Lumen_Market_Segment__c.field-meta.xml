@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lumen_Market_Segment__c</fullName>
+    <label>Lumen Market Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AA00-Automated Assembly</fullName>
+                <default>false</default>
+                <label>AA00-Automated Assembly</label>
+            </value>
+            <value>
+                <fullName>AD00-Adhesives/Chemicals Omni</fullName>
+                <default>false</default>
+                <label>AD00-Adhesives/Chemicals Omni</label>
+            </value>
+            <value>
+                <fullName>AI00-Analytical Instrumentation Omni</fullName>
+                <default>false</default>
+                <label>AI00-Analytical Instrumentation Omni</label>
+            </value>
+            <value>
+                <fullName>AS00-Aviation/Space</fullName>
+                <default>false</default>
+                <label>AS00-Aviation/Space</label>
+            </value>
+            <value>
+                <fullName>AU00-Automotive</fullName>
+                <default>false</default>
+                <label>AU00-Automotive</label>
+            </value>
+            <value>
+                <fullName>DE00-Defense</fullName>
+                <default>false</default>
+                <label>DE00-Defense</label>
+            </value>
+            <value>
+                <fullName>DP00-Digital Printing</fullName>
+                <default>false</default>
+                <label>DP00-Digital Printing</label>
+            </value>
+            <value>
+                <fullName>DT00-Distributor Omni</fullName>
+                <default>false</default>
+                <label>DT00-Distributor Omni</label>
+            </value>
+            <value>
+                <fullName>DT00-Distributor Omni and X-Cite</fullName>
+                <default>false</default>
+                <label>DT00-Distributor Omni and X-Cite</label>
+            </value>
+            <value>
+                <fullName>DT00-Distributor X-Cite</fullName>
+                <default>false</default>
+                <label>DT00-Distributor X-Cite</label>
+            </value>
+            <value>
+                <fullName>EL00-Electronics Omni</fullName>
+                <default>false</default>
+                <label>EL00-Electronics Omni</label>
+            </value>
+            <value>
+                <fullName>EL00-Electronics Omni and X-Cite</fullName>
+                <default>false</default>
+                <label>EL00-Electronics Omni and X-Cite</label>
+            </value>
+            <value>
+                <fullName>EL00-Electronics X-Cite</fullName>
+                <default>false</default>
+                <label>EL00-Electronics X-Cite</label>
+            </value>
+            <value>
+                <fullName>ILL0-Illumination</fullName>
+                <default>false</default>
+                <label>ILL0-Illumination</label>
+            </value>
+            <value>
+                <fullName>LS00-Life Sciences (Burleigh)</fullName>
+                <default>false</default>
+                <label>LS00-Life Sciences (Burleigh)</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical Omni</fullName>
+                <default>false</default>
+                <label>MD00-Medical Omni</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical Omni &amp; X-Cite</fullName>
+                <default>false</default>
+                <label>MD00-Medical Omni &amp; X-Cite</label>
+            </value>
+            <value>
+                <fullName>MD00-Medical X-Cite</fullName>
+                <default>false</default>
+                <label>MD00-Medical X-Cite</label>
+            </value>
+            <value>
+                <fullName>ML00-Multiple Market Segments Omni</fullName>
+                <default>false</default>
+                <label>ML00-Multiple Market Segments Omni</label>
+            </value>
+            <value>
+                <fullName>ML00-Multiple Market Segments Omni and X-Cite</fullName>
+                <default>false</default>
+                <label>ML00-Multiple Market Segments Omni and X-Cite</label>
+            </value>
+            <value>
+                <fullName>OE00-Optoelectronics Omni</fullName>
+                <default>false</default>
+                <label>OE00-Optoelectronics Omni</label>
+            </value>
+            <value>
+                <fullName>PL00-Plastics</fullName>
+                <default>false</default>
+                <label>PL00-Plastics</label>
+            </value>
+            <value>
+                <fullName>PR00- Analog Printing</fullName>
+                <default>false</default>
+                <label>PR00- Analog Printing</label>
+            </value>
+            <value>
+                <fullName>RS00-Reseller Omni</fullName>
+                <default>false</default>
+                <label>RS00-Reseller Omni</label>
+            </value>
+            <value>
+                <fullName>RS00-Reseller X-Cite</fullName>
+                <default>false</default>
+                <label>RS00-Reseller X-Cite</label>
+            </value>
+            <value>
+                <fullName>SL00-Solar Panels</fullName>
+                <default>false</default>
+                <label>SL00-Solar Panels</label>
+            </value>
+            <value>
+                <fullName>SP00-Suppliers</fullName>
+                <default>false</default>
+                <label>SP00-Suppliers</label>
+            </value>
+            <value>
+                <fullName>SR00-Sales Representative</fullName>
+                <default>false</default>
+                <label>SR00-Sales Representative</label>
+            </value>
+            <value>
+                <fullName>TL00-Telecom</fullName>
+                <default>false</default>
+                <label>TL00-Telecom</label>
+            </value>
+            <value>
+                <fullName>UN00-University Omni &amp; X-Cite</fullName>
+                <default>false</default>
+                <label>UN00-University Omni &amp; X-Cite</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

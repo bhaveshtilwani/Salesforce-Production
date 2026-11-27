@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Bug</fullName>
+        <default>false</default>
+        <label>Bug</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Datasheet request</fullName>
+        <default>false</default>
+        <label>Datasheet request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Enhancement</fullName>
+        <default>false</default>
+        <label>Enhancement</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing order status</fullName>
+        <default>false</default>
+        <label>Existing order status</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Return status request</fullName>
+        <default>false</default>
+        <label>Existing Return status request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Feature Request</fullName>
+        <default>false</default>
+        <label>Feature Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Feedback</fullName>
+        <default>false</default>
+        <label>Feedback</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Follow up existing order status </fullName>
+        <default>false</default>
+        <label>Follow up existing order status </label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>General Issue</fullName>
+        <default>false</default>
+        <label>General Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Help</fullName>
+        <default>false</default>
+        <label>Help</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Merge</fullName>
+        <default>false</default>
+        <label>Merge</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New order submission</fullName>
+        <default>false</default>
+        <label>New order submission</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New quote request</fullName>
+        <default>false</default>
+        <label>New quote request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New Return request</fullName>
+        <default>false</default>
+        <label>New Return request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New User</fullName>
+        <default>false</default>
+        <label>New User</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Owner Change</fullName>
+        <default>false</default>
+        <label>Owner Change</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Password Reset</fullName>
+        <default>false</default>
+        <label>Password Reset</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Project</fullName>
+        <default>false</default>
+        <label>Project</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote status request</fullName>
+        <default>false</default>
+        <label>Quote status request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Quote still valid/ extensions</fullName>
+        <default>false</default>
+        <label>Quote still valid/ extensions</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Remove User</fullName>
+        <default>false</default>
+        <label>Remove User</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Sample request</fullName>
+        <default>false</default>
+        <label>Sample request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipping documents copy request </fullName>
+        <default>false</default>
+        <label>Shipping documents copy request </label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Stock check</fullName>
+        <default>false</default>
+        <label>Stock check</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Support</fullName>
+        <default>false</default>
+        <label>Technical Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User Error</fullName>
+        <default>false</default>
+        <label>User Error</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliment</fullName>
+        <default>false</default>
+        <label>Compliment</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complaint</fullName>
+        <default>false</default>
+        <label>Complaint</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pilot Team</fullName>
+        <default>false</default>
+        <label>Pilot Team</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Portal Request</fullName>
+        <default>false</default>
+        <label>Customer Portal Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Software</fullName>
+        <default>false</default>
+        <label>Software</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Panda Issue</fullName>
+        <default>false</default>
+        <label>Panda Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Critical Error</fullName>
+        <default>false</default>
+        <label>Critical Error</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Edge Issue</fullName>
+        <default>false</default>
+        <label>Edge Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Calibration</fullName>
+        <default>false</default>
+        <label>Calibration</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware</fullName>
+        <default>false</default>
+        <label>Hardware</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>PCO.Camera Issue</fullName>
+        <default>false</default>
+        <label>PCO.Camera Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Dimax Issues</fullName>
+        <default>false</default>
+        <label>Dimax Issues</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pixelfly PCI</fullName>
+        <default>false</default>
+        <label>Pixelfly PCI</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Sensicam Issues</fullName>
+        <default>false</default>
+        <label>Sensicam Issues</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Integration</fullName>
+        <default>false</default>
+        <label>Integration</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

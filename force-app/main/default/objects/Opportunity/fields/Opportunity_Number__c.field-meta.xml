@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Number__c</fullName>
+    <description>Displays an automated number for each opportunity record, starting with O-19000 (starting year 2019)</description>
+    <displayFormat>O-{00000}</displayFormat>
+    <externalId>true</externalId>
+    <inlineHelpText>Displays an automated number for each opportunity record</inlineHelpText>
+    <label>Opportunity Number</label>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>

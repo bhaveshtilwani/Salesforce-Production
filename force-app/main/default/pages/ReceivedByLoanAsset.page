@@ -1,0 +1,1 @@
+<apex:page standardController="Asset" recordSetVar="assets" extensions="ReceivedByLoanAsset" action="{!updateReceivedBy}"/>

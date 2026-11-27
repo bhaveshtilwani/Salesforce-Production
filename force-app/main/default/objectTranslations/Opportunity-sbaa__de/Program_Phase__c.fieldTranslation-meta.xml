@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- QE = Quality Evaluation
+WR = War Reserve (Produciton)
+LRP = Low Rate Produciton
+FRP = Full Rate Produciton
+PPI = Production Prove In -->
+    </help>
+    <label><!-- Program Phase --></label>
+    <name>Program_Phase__c</name>
+    <picklistValues>
+        <masterLabel>Development</masterLabel>
+        <translation><!-- Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRP</masterLabel>
+        <translation><!-- FRP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FRP 1</masterLabel>
+        <translation><!-- FRP 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fiscal year 2 funding</masterLabel>
+        <translation><!-- Fiscal year 2 funding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fiscal year 3 funding</masterLabel>
+        <translation><!-- Fiscal year 3 funding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Initial funding - fiscal year 1</masterLabel>
+        <translation><!-- Initial funding - fiscal year 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRIP</masterLabel>
+        <translation><!-- LRIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRIP 1</masterLabel>
+        <translation><!-- LRIP 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRIP 2</masterLabel>
+        <translation><!-- LRIP 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lot 1 Production (Assembly)</masterLabel>
+        <translation><!-- Lot 1 Production (Assembly) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lot 2 Production (Assembly)</masterLabel>
+        <translation><!-- Lot 2 Production (Assembly) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRE</masterLabel>
+        <translation><!-- NRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase I</masterLabel>
+        <translation><!-- Phase I --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase II</masterLabel>
+        <translation><!-- Phase II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phase III</masterLabel>
+        <translation><!-- Phase III --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production</masterLabel>
+        <translation><!-- Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production II</masterLabel>
+        <translation><!-- Production II --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Qualification</masterLabel>
+        <translation><!-- Qualification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WR3</masterLabel>
+        <translation><!-- WR3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WR4</masterLabel>
+        <translation><!-- WR4 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

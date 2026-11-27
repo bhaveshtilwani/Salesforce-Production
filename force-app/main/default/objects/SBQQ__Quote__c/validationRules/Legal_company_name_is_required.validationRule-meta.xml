@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_company_name_is_required</fullName>
+    <active>true</active>
+    <description>Legal company name is required on business name account</description>
+    <errorConditionFormula>ISBLANK(SBQQ__Account__r.Legal_Company_Name__c)</errorConditionFormula>
+    <errorMessage>Legal Company Name is mandatory on business name account of this quote.</errorMessage>
+</ValidationRule>

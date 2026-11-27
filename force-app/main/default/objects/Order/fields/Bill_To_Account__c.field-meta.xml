@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_To_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>ERP/C3 Billing account for order.</description>
+    <inlineHelpText>This is ERP/C3 Billing account for this order.</inlineHelpText>
+    <label>Sold To Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Bill to Account and Order must be from same Site.</errorMessage>
+        <filterItems>
+            <field>$Source.Site__c</field>
+            <operation>equals</operation>
+            <valueField>Account.ERP_Site__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Orders</relationshipLabel>
+    <relationshipName>Orders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

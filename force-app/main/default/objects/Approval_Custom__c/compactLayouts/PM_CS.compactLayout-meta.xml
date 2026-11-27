@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PM_CS</fullName>
+    <fields>Approval_Type__c</fields>
+    <fields>Status__c</fields>
+    <fields>Order_Number__c</fields>
+    <fields>Order_Line_Number__c</fields>
+    <fields>Business_Account_Name__c</fields>
+    <fields>Change_Amount_USD__c</fields>
+    <label>PM&amp;CS</label>
+</CompactLayout>

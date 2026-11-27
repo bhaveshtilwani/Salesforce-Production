@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_same_as_Billing__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>The address information will be applied to the shipping field upon Save/Submit.</inlineHelpText>
+    <label>Shipping same as Billing</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

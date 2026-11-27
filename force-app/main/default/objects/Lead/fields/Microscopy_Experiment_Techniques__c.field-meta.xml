@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Microscopy_Experiment_Techniques__c</fullName>
+    <label>Microscopy Experiment Techniques</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stained and fixed</fullName>
+                <default>false</default>
+                <label>Stained and fixed</label>
+            </value>
+            <value>
+                <fullName>Live cell, vital stain</fullName>
+                <default>false</default>
+                <label>Live cell, vital stain</label>
+            </value>
+            <value>
+                <fullName>Confocal</fullName>
+                <default>false</default>
+                <label>Confocal</label>
+            </value>
+            <value>
+                <fullName>FRET</fullName>
+                <default>false</default>
+                <label>FRET</label>
+            </value>
+            <value>
+                <fullName>TIRF</fullName>
+                <default>false</default>
+                <label>TIRF</label>
+            </value>
+            <value>
+                <fullName>FISH</fullName>
+                <default>false</default>
+                <label>FISH</label>
+            </value>
+            <value>
+                <fullName>FRAP</fullName>
+                <default>false</default>
+                <label>FRAP</label>
+            </value>
+            <value>
+                <fullName>FLIM</fullName>
+                <default>false</default>
+                <label>FLIM</label>
+            </value>
+            <value>
+                <fullName>Quantitative</fullName>
+                <default>false</default>
+                <label>Quantitative</label>
+            </value>
+            <value>
+                <fullName>Comparative</fullName>
+                <default>false</default>
+                <label>Comparative</label>
+            </value>
+            <value>
+                <fullName>Ratiometric</fullName>
+                <default>false</default>
+                <label>Ratiometric</label>
+            </value>
+            <value>
+                <fullName>High speed acquisition</fullName>
+                <default>false</default>
+                <label>High speed acquisition</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

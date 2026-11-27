@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>M%26A</fullName>
+    <description>For Merger and Acquisition Process</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>0 - On-Dashboard</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>1 - Engaged</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>2 - Approached</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>3 - Hold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>4 - Long Term Follow-up</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>5 - No Action</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>6 - Closed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed - Invalid Duplicate or Error</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

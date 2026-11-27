@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Semiconductor_Approvers</fullName>
+    <columns>NAME</columns>
+    <columns>sbaa__User__c</columns>
+    <columns>sbaa__GroupId__c</columns>
+    <columns>sbaa__DelegatedApprover__c</columns>
+    <columns>sbaa__DelegationEnd__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Semi</value>
+    </filters>
+    <label>Semiconductor Approvers</label>
+</ListView>

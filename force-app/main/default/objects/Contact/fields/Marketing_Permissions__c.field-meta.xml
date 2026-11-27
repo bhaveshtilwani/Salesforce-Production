@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marketing_Permissions__c</fullName>
+    <label>Marketing Permissions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monthly Newsletter</fullName>
+                <default>false</default>
+                <label>Monthly Newsletter</label>
+            </value>
+            <value>
+                <fullName>Annual Tradeshows</fullName>
+                <default>false</default>
+                <label>Annual Tradeshows</label>
+            </value>
+            <value>
+                <fullName>Email Campaigns</fullName>
+                <default>false</default>
+                <label>Email Campaigns</label>
+            </value>
+            <value>
+                <fullName>Partys</fullName>
+                <default>false</default>
+                <label>Partys</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

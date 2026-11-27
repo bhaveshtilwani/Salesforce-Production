@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CARL ZEISS</fullName>
+        <default>false</default>
+        <label>CARL ZEISS</label>
+    </customValue>
+    <customValue>
+        <fullName>LEICA</fullName>
+        <default>false</default>
+        <label>LEICA</label>
+    </customValue>
+    <customValue>
+        <fullName>MOTIC</fullName>
+        <default>false</default>
+        <label>MOTIC</label>
+    </customValue>
+    <customValue>
+        <fullName>NIKON</fullName>
+        <default>false</default>
+        <label>NIKON</label>
+    </customValue>
+    <customValue>
+        <fullName>Olympus</fullName>
+        <default>false</default>
+        <label>Olympus</label>
+    </customValue>
+    <masterLabel>Microscope Manufacturer</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

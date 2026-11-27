@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Bei Auswahl von &quot;&quot;Kein&quot;&quot; oder &quot;&quot;Speichern&quot;&quot; werden die Preisregeln mit dem Evaluierungsumfang &quot;&quot;Konfigurator&quot;&quot; beim Speichern ausgelÃ¶st. Ist &quot;&quot;Bearbeiten&quot;&quot; festgelegt, werden die Preisregeln mit dem Evaluierungsumfang &quot;&quot;Konfigurator&quot;&quot; beim Bearbeiten und Speichern ausgelÃ¶st.&quot;</help>
+    <label><!-- Configurator Evaluation Event --></label>
+    <name>SBQQ__ConfiguratorEvaluationEvent__c</name>
+    <picklistValues>
+        <masterLabel>Edit</masterLabel>
+        <translation>Bearbeiten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Save</masterLabel>
+        <translation>Speichern</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Recall_After_Approval</fullName>
+    <active>false</active>
+    <description>Restrict Quote editing after approval if the Quote is recalled or resubmitted.</description>
+    <errorConditionFormula>AND(
+Has_Bypass_Site__c,
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;,
+$Profile.Name &lt;&gt; &quot;API/ADMIN/NON MFA&quot;,
+ISPICKVAL(PRIORVALUE(ApprovalStatus__c), &quot;Approved&quot;),
+OR (
+ISPICKVAL(ApprovalStatus__c, &quot;Recalled&quot;),
+ISPICKVAL(ApprovalStatus__c, &quot;Pending&quot;)
+)
+)</errorConditionFormula>
+    <errorMessage>Approved Quotes cannot be recalled or Re-submitted again for Approval.</errorMessage>
+</ValidationRule>

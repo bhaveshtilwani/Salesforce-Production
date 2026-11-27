@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deployed</fullName>
+    <columns>NAME</columns>
+    <columns>Deployment_Date__c</columns>
+    <columns>Admin_Developer__c</columns>
+    <columns>Jira_Ticket__c</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>Technical_Status__c</columns>
+    <columns>Business_Status__c</columns>
+    <columns>Strategic_Status__c</columns>
+    <columns>Description_of_Changes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Deployed</value>
+    </filters>
+    <filters>
+        <field>Deployment_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Deployed</label>
+    <sharedTo>
+        <group>Administrators</group>
+    </sharedTo>
+</ListView>

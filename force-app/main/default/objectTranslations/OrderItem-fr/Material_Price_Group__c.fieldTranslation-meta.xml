@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material Price Group --></label>
+    <name>Material_Price_Group__c</name>
+    <picklistValues>
+        <masterLabel>(01) Normal</masterLabel>
+        <translation><!-- (01) Normal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(02) Spare parts</masterLabel>
+        <translation><!-- (02) Spare parts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(03) via EDI</masterLabel>
+        <translation><!-- (03) via EDI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(04) IF SZ Interco price</masterLabel>
+        <translation><!-- (04) IF SZ Interco price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(05) PC SZ Interco price</masterLabel>
+        <translation><!-- (05) PC SZ Interco price --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(06) LED SZ Interco price</masterLabel>
+        <translation><!-- (06) LED SZ Interco price --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

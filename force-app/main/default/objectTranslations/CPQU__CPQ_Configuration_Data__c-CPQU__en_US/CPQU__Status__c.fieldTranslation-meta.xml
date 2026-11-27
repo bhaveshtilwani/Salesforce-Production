@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>CPQU__Status__c</name>
+    <picklistValues>
+        <masterLabel>Deleted</masterLabel>
+        <translation><!-- Deleted --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deleting</masterLabel>
+        <translation><!-- Deleting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deployed</masterLabel>
+        <translation><!-- Deployed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deploying</masterLabel>
+        <translation><!-- Deploying --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exported</masterLabel>
+        <translation><!-- Exported --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Imported</masterLabel>
+        <translation><!-- Imported --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

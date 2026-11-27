@@ -1,0 +1,37 @@
+/* Simple CSS for reminder modal */
+
+:host {
+  --lwc-colorBackgroundInput: #ffffff;
+}
+
+.slds-backdrop_open {
+  display: block;
+  z-index: 9998;
+}
+
+.slds-modal {
+  z-index: 9999;
+}
+
+.slds-modal__container {
+  width: 600px !important;
+  max-width: 90vw !important;
+}
+
+.slds-modal__header {
+  padding: 1rem;
+  border-bottom: 1px solid #d8dce6;
+}
+
+.slds-modal__footer {
+  padding: 1rem;
+  border-top: 1px solid #d8dce6;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.slds-button {
+  margin-left: 0.5rem;
+}

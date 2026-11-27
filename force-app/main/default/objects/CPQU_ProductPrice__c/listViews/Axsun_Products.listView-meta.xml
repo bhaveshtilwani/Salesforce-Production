@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Axsun_Products</fullName>
+    <columns>NAME</columns>
+    <columns>CPQU_Product__c</columns>
+    <columns>Contact_PM_for_Price__c</columns>
+    <columns>CPQU_MinimumQuantity__c</columns>
+    <columns>CPQU_MaximumQuantity__c</columns>
+    <columns>CPQU_Price__c</columns>
+    <columns>Region__c</columns>
+    <columns>Product_Price_Type__c</columns>
+    <columns>Currency__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CPQU_MaximumQuantity__c</field>
+        <operation>equals</operation>
+        <value>999999</value>
+    </filters>
+    <label>Axsun Products</label>
+</ListView>

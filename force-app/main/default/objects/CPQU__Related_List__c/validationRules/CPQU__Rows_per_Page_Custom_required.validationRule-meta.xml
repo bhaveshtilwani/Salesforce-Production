@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQU__Rows_per_Page_Custom_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(CPQU__Rows_per_Page__c) == &quot;Custom&quot; &amp;&amp; ISBLANK(CPQU__Rows_per_Page_Custom__c)</errorConditionFormula>
+    <errorMessage>Rows per Page - Custom field is required if Rows per Page field is &quot;Custom&quot;.</errorMessage>
+</ValidationRule>

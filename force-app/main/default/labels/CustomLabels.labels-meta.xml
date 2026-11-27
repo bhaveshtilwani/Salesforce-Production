@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Allowed_Record_Types</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Allowed Record Types</shortDescription>
+        <value>0123t000000VyCiAAK,0123t000000VyClAAK,0123t0000006mygAAA,0123t000000VyCjAAK,0123t000000VyCkAAK,012Qp000001TrQ9IAK</value>
+    </labels>
+    <labels>
+        <fullName>Excelitas_Area_of_Interest</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Excelitas Area of Interest</shortDescription>
+        <value>UVC Disinfection &amp; Oxidation Light Sources;UV Curing Systems - Phoseon;UV Curing Systems - Noblelight;IR Heating Emitters &amp; Systems;Deuterium Lamps &amp; Systems;Energetics &amp; Ignition Safety;C5iSR (GPS Clocks/RAFS);Frequency Standards;High Energy Switches;Defense &amp; Aero - LASERS;Cameras - Thermal MWIR/LWIR;Optronics - Vehicle;Surveillance &amp; Target Acquisition;Optronics - Defense;Lasers - Defense &amp; Aerospace</value>
+    </labels>
+    <labels>
+        <fullName>LeadCurrentUser</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCurrentUser</shortDescription>
+        <value>salesforce.administrator@excelitas.com</value>
+    </labels>
+    <labels>
+        <fullName>LeadReassignEmailTemplateID</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadReassignEmailTemplateID</shortDescription>
+        <value>00XQp000003OiEH</value>
+    </labels>
+    <labels>
+        <fullName>LeadURL</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadURL</shortDescription>
+        <value>https://excelitas.lightning.force.com/</value>
+    </labels>
+    <labels>
+        <fullName>Monthly_Close_Snapshot</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Monthly Close Snapshot</shortDescription>
+        <value>https://excelitas--sfdcqa.sandbox.lightning.force.com/00OO500000DfCDpMAN</value>
+    </labels>
+    <labels>
+        <fullName>Monthly_Email_Snapshot</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Monthly Email Snapshot</shortDescription>
+        <value>danica.martin@excelitas.com,andrew.goodfellow@excelitas.com</value>
+    </labels>
+    <labels>
+        <fullName>Monthly_Open_Snapshot</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Monthly Open Snapshot</shortDescription>
+        <value>https://excelitas--sfdcqa.sandbox.lightning.force.com/lightning/r/Report/00OO500000DcnFdMAJ/view?queryScope=userFolders</value>
+    </labels>
+    <labels>
+        <fullName>Monthly_Won_Snapshot</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Monthly Won Snapshot</shortDescription>
+        <value>https://excelitas--sfdcqa.sandbox.lightning.force.com/lightning/r/Report/00OO500000DfCDpMAN/view?ws=%2Flightning%2Fr%2FReport%2F00OO500000DfC7NMAV%2Fview</value>
+    </labels>
+    <labels>
+        <fullName>NewLeadEmailTemplateID</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewLeadEmailTemplateID</shortDescription>
+        <value>00XQp000003OhlF</value>
+    </labels>
+    <labels>
+        <fullName>PopUpMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PopUpMessage</shortDescription>
+        <value>--&gt;Extended terms are not allowed for customers with less than $250k annual revenue. You should only proceed if you’re confident that the relevant conversations have taken place to allow the request to be seriously considered
+--&gt; If you DO still wish to proceed, you can click “Submit for Approval” when you’re ready.
+--&gt; If you do NOT wish to proceed, click the pencil to edit the Case Status and select “Closed”.</value>
+    </labels>
+    <labels>
+        <fullName>RecURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RecURL</shortDescription>
+        <value>https://excelitas.lightning.force.com</value>
+    </labels>
+    <labels>
+        <fullName>Revenue_Recognition_Mismatch_Message</fullName>
+        <categories>Custom</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Revenue_Recognition_Mismatch_Message</shortDescription>
+        <value>Revenue Recognition Type — Invalid Combination</value>
+    </labels>
+    <labels>
+        <fullName>lastupdateOwnerID</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lastupdateOwnerID</shortDescription>
+        <value>005Qp000006k7avIAA</value>
+    </labels>
+    <labels>
+        <fullName>refOrgID</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>refOrgID</shortDescription>
+        <value>00DEkaEV7F</value>
+    </labels>
+    <labels>
+        <fullName>scottId</fullName>
+        <categories>Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>scottId</shortDescription>
+        <value>scott.orr@excelitas.com</value>
+    </labels>
+</CustomLabels>

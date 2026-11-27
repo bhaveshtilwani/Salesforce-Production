@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>GDPR_Email</name>
+        <label>GDPR Email</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>Lead.GDPR_Email</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Lead.GDPR_Email</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>#INC-287149 RE: Expanding Countries for Double opt-in/GDPR Email</description>
+    <environments>Default</environments>
+    <interviewLabel>GDPR Email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>GDPR Email</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GDPR_Email</targetReference>
+        </connector>
+        <filterFormula>AND(
+  /* Created “today” */
+  DATEVALUE({!$Record.CreatedDate}) = TODAY(),
+
+  /* Country is in EU / EEA / required list */
+  OR(
+    {!$Record.Country} = &quot;Germany&quot;,
+    {!$Record.Country} = &quot;Austria&quot;,
+    {!$Record.Country} = &quot;Switzerland&quot;,
+    {!$Record.Country} = &quot;United Kingdom&quot;,
+    {!$Record.Country} = &quot;Belgium&quot;,
+    {!$Record.Country} = &quot;Bulgaria&quot;,
+    {!$Record.Country} = &quot;Croatia&quot;,
+    {!$Record.Country} = &quot;Cyprus&quot;,
+    {!$Record.Country} = &quot;Czechia&quot;,
+    {!$Record.Country} = &quot;Denmark&quot;,
+    {!$Record.Country} = &quot;Estonia&quot;,
+    {!$Record.Country} = &quot;Finland&quot;,
+    {!$Record.Country} = &quot;France&quot;,
+    {!$Record.Country} = &quot;Greece&quot;,
+    {!$Record.Country} = &quot;Hungary&quot;,
+    {!$Record.Country} = &quot;Ireland&quot;,
+    {!$Record.Country} = &quot;Italy&quot;,
+    {!$Record.Country} = &quot;Latvia&quot;,
+    {!$Record.Country} = &quot;Lithuania&quot;,
+    {!$Record.Country} = &quot;Luxembourg&quot;,
+    {!$Record.Country} = &quot;Malta&quot;,
+    {!$Record.Country} = &quot;Netherlands&quot;,
+    {!$Record.Country} = &quot;Poland&quot;,
+    {!$Record.Country} = &quot;Portugal&quot;,
+    {!$Record.Country} = &quot;Romania&quot;,
+    {!$Record.Country} = &quot;Slovakia&quot;,
+    {!$Record.Country} = &quot;Slovenia&quot;,
+    {!$Record.Country} = &quot;Spain&quot;,
+    {!$Record.Country} = &quot;Sweden&quot;,
+    {!$Record.Country} = &quot;Norway&quot;,
+    {!$Record.Country} = &quot;Iceland&quot;,
+    {!$Record.Country} = &quot;Liechtenstein&quot;
+  )
+)</filterFormula>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

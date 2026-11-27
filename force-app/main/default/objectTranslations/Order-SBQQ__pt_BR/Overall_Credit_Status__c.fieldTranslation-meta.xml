@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Overall Credit Status --></label>
+    <name>Overall_Credit_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation><!-- Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved, Part Relsd</masterLabel>
+        <translation><!-- Approved, Part Relsd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Approved</masterLabel>
+        <translation><!-- Not Approved --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Performed</masterLabel>
+        <translation><!-- Not Performed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Released</masterLabel>
+        <translation><!-- Released --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

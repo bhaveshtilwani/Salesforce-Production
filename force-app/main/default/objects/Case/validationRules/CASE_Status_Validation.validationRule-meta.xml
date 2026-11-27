@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CASE_Status_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(Status),
+
+OR(
+
+/* Technical Evaluation */
+AND(
+ISPICKVAL(Status , &quot;Technical Evaluation&quot;),
+ISPICKVAL(Waiting_For__c , &quot;&quot;)
+),
+
+/* Commercial Processing */
+AND(
+ISPICKVAL(Status , &quot;Commercial Processing&quot;),
+ISPICKVAL(Waiting_For__c , &quot;&quot;)
+),
+
+/* Technical Processing */
+AND(
+ISPICKVAL(Status , &quot;Technical Processing&quot;),
+ISPICKVAL(Waiting_For__c , &quot;&quot;)
+)
+
+)
+)</errorConditionFormula>
+    <errorDisplayField>Waiting_For__c</errorDisplayField>
+    <errorMessage>Fill the Required Fields: Waiting For</errorMessage>
+</ValidationRule>

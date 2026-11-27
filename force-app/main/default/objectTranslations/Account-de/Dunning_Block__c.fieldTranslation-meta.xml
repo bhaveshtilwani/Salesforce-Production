@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Dunning Block --></label>
+    <name>Dunning_Block__c</name>
+    <picklistValues>
+        <masterLabel>Block reason H (H)</masterLabel>
+        <translation><!-- Block reason H (H) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blocked by invoice verification</masterLabel>
+        <translation><!-- Blocked by invoice verification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer return (C)</masterLabel>
+        <translation><!-- Customer return (C) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E</masterLabel>
+        <translation><!-- E --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freed for dunning</masterLabel>
+        <translation><!-- Freed for dunning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual block reason</masterLabel>
+        <translation><!-- Manual block reason --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual block reason A... (A)</masterLabel>
+        <translation><!-- Manual block reason A... (A) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manual block reason B... (B)</masterLabel>
+        <translation><!-- Manual block reason B... (B) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>gesperrt von Debitoren Ausland</masterLabel>
+        <translation><!-- gesperrt von Debitoren Ausland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>gesperrt von Debitoren Inland</masterLabel>
+        <translation><!-- gesperrt von Debitoren Inland --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>gesperrt von Verkauf</masterLabel>
+        <translation><!-- gesperrt von Verkauf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>manuelle Sperre wg. RMA/Retoure (Exc)</masterLabel>
+        <translation><!-- manuelle Sperre wg. RMA/Retoure (Exc) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>manuelle sonstige Sperre (Exc)</masterLabel>
+        <translation><!-- manuelle sonstige Sperre (Exc) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>wegen Vollstreckung gesperrt</masterLabel>
+        <translation><!-- wegen Vollstreckung gesperrt --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

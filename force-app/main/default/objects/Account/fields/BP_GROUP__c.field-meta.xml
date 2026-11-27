@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BP_GROUP__c</fullName>
+    <defaultValue>&quot;B3RD&quot;</defaultValue>
+    <description>Each business partner is assigned a grouping. 
+The grouping determines the number range. 
+You cannot change the assignment afterwards. 
+You can define the groupings, their descriptions, the associated number range and other attributes in Customizing. 
+You can define standard groupings for the internal and the external number assignment.</description>
+    <label>BP Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>B3RD</fullName>
+                <default>true</default>
+                <label>B3RD</label>
+            </value>
+            <value>
+                <fullName>BEMP</fullName>
+                <default>false</default>
+                <label>BEMP</label>
+            </value>
+            <value>
+                <fullName>BICO</fullName>
+                <default>false</default>
+                <label>BICO</label>
+            </value>
+            <value>
+                <fullName>BP01</fullName>
+                <default>false</default>
+                <label>BP01</label>
+            </value>
+            <value>
+                <fullName>BP02</fullName>
+                <default>false</default>
+                <label>BP02</label>
+            </value>
+            <value>
+                <fullName>BP03</fullName>
+                <default>false</default>
+                <label>BP03</label>
+            </value>
+            <value>
+                <fullName>BP04</fullName>
+                <default>false</default>
+                <label>BP04</label>
+            </value>
+            <value>
+                <fullName>BPAB</fullName>
+                <default>false</default>
+                <label>BPAB</label>
+            </value>
+            <value>
+                <fullName>BPEE</fullName>
+                <default>false</default>
+                <label>BPEE</label>
+            </value>
+            <value>
+                <fullName>BZOT</fullName>
+                <default>false</default>
+                <label>BZOT</label>
+            </value>
+            <value>
+                <fullName>CPD2</fullName>
+                <default>false</default>
+                <label>CPD2</label>
+            </value>
+            <value>
+                <fullName>CPDA</fullName>
+                <default>false</default>
+                <label>CPDA</label>
+            </value>
+            <value>
+                <fullName>CPDN</fullName>
+                <default>false</default>
+                <label>CPDN</label>
+            </value>
+            <value>
+                <fullName>CPDS</fullName>
+                <default>false</default>
+                <label>CPDS</label>
+            </value>
+            <value>
+                <fullName>S170</fullName>
+                <default>false</default>
+                <label>S170</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

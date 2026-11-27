@@ -1,0 +1,54 @@
+<apex:page controller="ProspectForecast">
+<apex:form >
+
+   <!-- <apex:pageBlock title="Hello {!$User.FirstName}!"> --->
+   
+   <apex:pageBlock title="Prospect Forecast" >
+    You are entering Prospect Forecast For {!oppty.name} Opportunity.
+
+       </apex:pageBlock>
+       
+    <apex:pageBlock >          
+        
+<apex:commandButton value="Save" action="{!save}" />
+<apex:commandButton value="Cancel" action="{!cancel}" />
+
+</apex:pageBlock>    
+
+
+
+<apex:pageBlock title="Enter Prospect Forescast">
+          
+        <apex:datatable value="{!pforecast}" var="forecast" cellpadding="10" border="1">
+                        
+            <apex:column >  <apex:facet name="header">Quarter Name</apex:facet> 
+             <apex:outputText value="{!forecast.QtrName__c}"/>
+             </apex:column>
+              <apex:column > 
+              <apex:facet name="header">Forecasted Amount</apex:facet>  
+              <apex:inputField value="{!forecast.ProspectFcastAmt__c}"/>
+              </apex:column>
+              
+           <!-- 
+           <apex:column value="{!forecast.QtrName__c}"/> 
+            <apex:outputLabel value="Quarter Name "  For="qtrname" /> 
+            <apex:inputField id="qtrname" value="{!forecast.QtrName__c}"/>  
+             <apex:column value="{!forecast.ProspectFcastAmt__c}"/> 
+             --->
+             
+
+             
+        </apex:datatable> 
+    </apex:pageBlock> 
+    
+        <apex:pageBlock >          
+        
+<apex:commandButton value="Save" action="{!save}" />
+<apex:commandButton value="Cancel" action="{!cancel}" />
+
+</apex:pageBlock>    
+
+
+</apex:form>
+    
+</apex:page>

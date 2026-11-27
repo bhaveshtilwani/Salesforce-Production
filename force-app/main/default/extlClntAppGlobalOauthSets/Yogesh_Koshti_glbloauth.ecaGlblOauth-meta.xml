@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppGlobalOauthSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+    <certificate>MIIDbDCCAlSgAwIBAgITYT2Qn0pjNB9zUG+K66kWQMjdjjANBgkqhkiG9w0BAQsF
+ADBGMQswCQYDVQQGEwJJTjEQMA4GA1UECAwHR3VqYXJhdDESMBAGA1UEBwwJQWht
+ZWRhYmFkMREwDwYDVQQKDAhTdHJpZGVseTAeFw0yNjA0MDUxNzM4NDNaFw0yNzA0
+MDUxNzM4NDNaMEYxCzAJBgNVBAYTAklOMRAwDgYDVQQIDAdHdWphcmF0MRIwEAYD
+VQQHDAlBaG1lZGFiYWQxETAPBgNVBAoMCFN0cmlkZWx5MIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEAnFhce0yRtdRy2CQMHyrj3rbqM0CaO4EbJeYsMEP7
+fN8jt87UKijgX+pK/u20m+YLmVVicwmevBmrBjDiiZGOcbquS6dbKB3QT5xKKQbz
+rvpJUdA9i10Fv8r9TMfrD7pQ6Tg3HOOZplnIFXms9pl7YEtpUYDNeq6o0FWIVNYZ
+jRljjzLcGS3YLW53m0arR4ZMiKrr9JpftFYVjw7VADE2hzSzMrxwnZ9BOEUJSvc9
+OA34zBHkSc9+DWNTRJjDJ0J9nVNjvjzrbaPQNF6CBuVOk04k1lXG2/DZ80glIIIn
+/znKCFpwciUwOlQYki8YLwRM8Bs/97Vf+DOUk0Qd1IhyvQIDAQABo1MwUTAdBgNV
+HQ4EFgQUrxyb8HNVj8h5RBoSfGWUIZ8pNPgwHwYDVR0jBBgwFoAUrxyb8HNVj8h5
+RBoSfGWUIZ8pNPgwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+dlTnTQaGvpCCIQj6y3lKQM4KrnRf3FlFgmtU5kWrHkMvl3HwySmiMQ/Yj25/+PNW
+qTK/P/5Ol1NPDXz3EzWhLuiYqyStU4EJB2LRMLWypaiRCvcy8ZRewUnfSSOKQbNf
+42TJV5lWefkBwyY97sYBs0jvhrJS4poRIPMUWqSNu501+PwbJqg09dCO3hAh2dsM
+UAG0R5GrgeE4hoMszmaNEC66WlUJmuZPH3w+NfzF0vGd9V+NqSIoTNRb5pam7iJ2
+RcKfM/+bhbhZcVwZ9t48C2UX/WRE5Op+WxQfLZUvub+Q6f7btsW95ZufoAia6Ktb
+PFVKiW9bHEKjYegA0Xs5sw==</certificate>
+    <consumerKey>3MVG99OxTyEMCQ3h0aJuV1P_egrr70bzhA1JMfNV6wDNP.ciPtOEhqoTT_SjQQaUzW3vkfNyOqK.cWXQJ65hQ</consumerKey>
+    <externalClientApplication>Yogesh_Koshti</externalClientApplication>
+    <isClientCredentialsFlowEnabled>true</isClientCredentialsFlowEnabled>
+    <isCodeCredFlowEnabled>true</isCodeCredFlowEnabled>
+    <isCodeCredPostOnly>true</isCodeCredPostOnly>
+    <isConsumerSecretOptional>false</isConsumerSecretOptional>
+    <isDPopEnabled>false</isDPopEnabled>
+    <isDeviceFlowEnabled>false</isDeviceFlowEnabled>
+    <isEnforceRefreshTokenTTL>false</isEnforceRefreshTokenTTL>
+    <isIntrospectAllTokens>false</isIntrospectAllTokens>
+    <isMtlsEnabled>false</isMtlsEnabled>
+    <isNamedUserJwtEnabled>true</isNamedUserJwtEnabled>
+    <isPkceRequired>false</isPkceRequired>
+    <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+    <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+    <isSecretRequiredForTokenExchange>true</isSecretRequiredForTokenExchange>
+    <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+    <label>Yogesh_Koshti_glbloauth</label>
+    <shouldRotateConsumerKey>false</shouldRotateConsumerKey>
+    <shouldRotateConsumerSecret>false</shouldRotateConsumerSecret>
+</ExtlClntAppGlobalOauthSettings>

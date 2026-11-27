@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Regelung fÃ¼r Rabatte, die auf der Abonnementlaufzeit basieren. Bei der Einstellung &quot;&quot;Gruppe&quot;&quot; gilt der Rabattsatz fÃ¼r die Gruppenlaufzeit, wÃ¤hrend bei &quot;&quot;Angebot&quot;&quot; der Rabattsatz fÃ¼r die gesamte Angebotslaufzeit gilt, unabhÃ¤ngig von den unterschiedlichen Laufzeiten Ihrer Gruppen.&quot;</help>
+    <label><!-- Term Discount Schedule --></label>
+    <name>SBQQ__TermDiscountSchedule__c</name>
+    <relationshipLabel>VermÃ¶genswerte (Laufzeitrabatt)</relationshipLabel>
+</CustomFieldTranslation>

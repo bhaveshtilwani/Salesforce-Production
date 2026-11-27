@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Einstein</label>
+    <permissionSets>force__EinsteinActivityCaptureIncluded</permissionSets>
+    <permissionSets>force__EinsteinAgent</permissionSets>
+    <permissionSets>force__EinsteinAgentCWU</permissionSets>
+    <permissionSets>force__EinsteinGPTSalesEmails</permissionSets>
+    <permissionSets>force__EinsteinGPTSalesSummaries</permissionSets>
+    <permissionSets>force__InboxIncluded</permissionSets>
+    <permissionSets>force__PipelineInspectionIncluded</permissionSets>
+    <permissionSets>force__PipelineInspectionUser</permissionSets>
+    <permissionSets>force__SalesCloudEinsteinIncluded</permissionSets>
+    <permissionSets>force__SalesMeetingsIncluded</permissionSets>
+    <permissionSets>force__SalesforceMeetings</permissionSets>
+    <permissionSets>force__StandardEinsteinActivityCapturePsl</permissionSets>
+    <permissionSets>force__TableauEinsteinIncludedAppBusinessUser</permissionSets>
+    <permissionSets>force__TableauIncludedAppManager</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

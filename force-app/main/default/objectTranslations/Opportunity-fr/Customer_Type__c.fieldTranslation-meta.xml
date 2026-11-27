@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Type --></label>
+    <name>Customer_Type__c</name>
+    <picklistValues>
+        <masterLabel>Field Account</masterLabel>
+        <translation><!-- Field Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Account</masterLabel>
+        <translation><!-- Key Account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Major Account</masterLabel>
+        <translation><!-- Major Account --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

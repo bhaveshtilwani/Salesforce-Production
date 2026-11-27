@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BTP_Error_Description__c</fullName>
+    <description>To capture error Description while data coming from BTP to SFDC</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To capture error Description while data coming from BTP to SFDC</inlineHelpText>
+    <label>BTP Error Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_AES_Accounts_AES_Team</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DW_Account_Type__c</field>
+        <operation>equals</operation>
+        <value>Business Name</value>
+    </filters>
+    <label>All AES Accounts (AES Team)</label>
+    <sharedTo>
+        <role>All_DS_FSS_DA</role>
+        <role>All_ES_PS_Access_DA</role>
+        <role>VP_DA_AES</role>
+        <role>VP_DA_FSS_DS</role>
+    </sharedTo>
+</ListView>

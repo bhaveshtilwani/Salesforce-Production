@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Type__c</fullName>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Append Order Lines</fullName>
+                <default>false</default>
+                <label>Append Order Lines</label>
+            </value>
+            <value>
+                <fullName>Consignment Contract</fullName>
+                <default>false</default>
+                <label>Consignment Contract</label>
+            </value>
+            <value>
+                <fullName>Consignment Fillup</fullName>
+                <default>false</default>
+                <label>Consignment Fillup</label>
+            </value>
+            <value>
+                <fullName>Consignment Invoice</fullName>
+                <default>false</default>
+                <label>Consignment Invoice</label>
+            </value>
+            <value>
+                <fullName>Consignment Issue</fullName>
+                <default>false</default>
+                <label>Consignment Issue</label>
+            </value>
+            <value>
+                <fullName>Consignment Pick-up (to cancell a KB)</fullName>
+                <default>false</default>
+                <label>Consignment Pick-up (to cancell a KB)</label>
+            </value>
+            <value>
+                <fullName>Consignment Return</fullName>
+                <default>false</default>
+                <label>Consignment Return</label>
+            </value>
+            <value>
+                <fullName>Contract Call Off</fullName>
+                <default>false</default>
+                <label>Contract Call Off</label>
+            </value>
+            <value>
+                <fullName>Contract Creation</fullName>
+                <default>false</default>
+                <label>Contract Creation</label>
+            </value>
+            <value>
+                <fullName>Credit Memo Request</fullName>
+                <default>false</default>
+                <label>Credit Memo Request</label>
+            </value>
+            <value>
+                <fullName>Customer Furnished Material (ZCFM)</fullName>
+                <default>false</default>
+                <label>Customer Furnished Material (ZCFM)</label>
+            </value>
+            <value>
+                <fullName>Customer Return</fullName>
+                <default>false</default>
+                <label>Customer Return</label>
+            </value>
+            <value>
+                <fullName>Customer return for a repair</fullName>
+                <default>false</default>
+                <label>Customer return for a repair</label>
+            </value>
+            <value>
+                <fullName>Debit Memo/Bill only Request</fullName>
+                <default>false</default>
+                <label>Debit Memo/Bill only Request</label>
+            </value>
+            <value>
+                <fullName>Domest. FOC Order SZ</fullName>
+                <default>false</default>
+                <label>Domest. FOC Order SZ</label>
+            </value>
+            <value>
+                <fullName>Domest.Repl ord SHZ</fullName>
+                <default>false</default>
+                <label>Domest.Repl ord SHZ</label>
+            </value>
+            <value>
+                <fullName>FoC sample order</fullName>
+                <default>false</default>
+                <label>FoC sample order</label>
+            </value>
+            <value>
+                <fullName>Free of Charge (ZSDF)</fullName>
+                <default>false</default>
+                <label>Free of Charge (ZSDF)</label>
+            </value>
+            <value>
+                <fullName>Goods Return As Is (ZASI)</fullName>
+                <default>false</default>
+                <label>Goods Return As Is (ZASI)</label>
+            </value>
+            <value>
+                <fullName>Loan Invoice</fullName>
+                <default>false</default>
+                <label>Loan Invoice</label>
+            </value>
+            <value>
+                <fullName>Loan Return</fullName>
+                <default>false</default>
+                <label>Loan Return</label>
+            </value>
+            <value>
+                <fullName>NRE Order/Prj Orders (ZNRE)</fullName>
+                <default>false</default>
+                <label>NRE Order/Prj Orders (ZNRE)</label>
+            </value>
+            <value>
+                <fullName>NRE Sales Order</fullName>
+                <default>false</default>
+                <label>NRE Sales Order</label>
+            </value>
+            <value>
+                <fullName>Opto Return no Credit</fullName>
+                <default>false</default>
+                <label>Opto Return no Credit</label>
+            </value>
+            <value>
+                <fullName>Opto Return to Stock</fullName>
+                <default>false</default>
+                <label>Opto Return to Stock</label>
+            </value>
+            <value>
+                <fullName>Opto Return w/Credit</fullName>
+                <default>false</default>
+                <label>Opto Return w/Credit</label>
+            </value>
+            <value>
+                <fullName>Project Order</fullName>
+                <default>false</default>
+                <label>Project Order</label>
+            </value>
+            <value>
+                <fullName>Qty Contract</fullName>
+                <default>false</default>
+                <label>Qty Contract</label>
+            </value>
+            <value>
+                <fullName>Repair Service Order</fullName>
+                <default>false</default>
+                <label>Repair Service Order</label>
+            </value>
+            <value>
+                <fullName>Replacement Order</fullName>
+                <default>false</default>
+                <label>Replacement Order</label>
+            </value>
+            <value>
+                <fullName>Safety Stock</fullName>
+                <default>false</default>
+                <label>Safety Stock</label>
+            </value>
+            <value>
+                <fullName>Samples</fullName>
+                <default>false</default>
+                <label>Samples</label>
+            </value>
+            <value>
+                <fullName>SO for Raw Materials</fullName>
+                <default>false</default>
+                <label>SO for Raw Materials</label>
+            </value>
+            <value>
+                <fullName>Special Revenue STL</fullName>
+                <default>false</default>
+                <label>Special Revenue STL</label>
+            </value>
+            <value>
+                <fullName>Standard Order WEB Shop GOE</fullName>
+                <default>false</default>
+                <label>Standard Order WEB Shop GOE</label>
+            </value>
+            <value>
+                <fullName>Standard Sales Order</fullName>
+                <default>false</default>
+                <label>Standard Sales Order</label>
+            </value>
+            <value>
+                <fullName>St Louis/Mn Ret Ord</fullName>
+                <default>false</default>
+                <label>St Louis/Mn Ret Ord</label>
+            </value>
+            <value>
+                <fullName>Trading Raw Mat. SHZ</fullName>
+                <default>false</default>
+                <label>Trading Raw Mat. SHZ</label>
+            </value>
+            <value>
+                <fullName>Trading Sales SHZ</fullName>
+                <default>false</default>
+                <label>Trading Sales SHZ</label>
+            </value>
+            <value>
+                <fullName>Turn Key Sale-Order</fullName>
+                <default>false</default>
+                <label>Turn Key Sale-Order</label>
+            </value>
+            <value>
+                <fullName>Value Contract (ZWK1)</fullName>
+                <default>false</default>
+                <label>Value Contract (ZWK1)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product SubFamily --></label>
+    <name>Product_SubFamily__c</name>
+    <picklistValues>
+        <masterLabel>1 inch</masterLabel>
+        <translation><!-- 1 inch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>&gt; 1 Inch</masterLabel>
+        <translation><!-- &gt; 1 Inch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accessory</masterLabel>
+        <translation><!-- Accessory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advanced Endoscopy</masterLabel>
+        <translation><!-- Advanced Endoscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advanced Imaging Systems</masterLabel>
+        <translation><!-- Advanced Imaging Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aerial Imaging</masterLabel>
+        <translation><!-- Aerial Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aida</masterLabel>
+        <translation><!-- Aida --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical</masterLabel>
+        <translation><!-- Analytical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical Components</masterLabel>
+        <translation><!-- Analytical Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical Light Sources</masterLabel>
+        <translation><!-- Analytical Light Sources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical Systems</masterLabel>
+        <translation><!-- Analytical Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applied Microscopy</masterLabel>
+        <translation><!-- Applied Microscopy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Array Module</masterLabel>
+        <translation><!-- Array Module --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avionics</masterLabel>
+        <translation><!-- Avionics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avionics and Space</masterLabel>
+        <translation><!-- Avionics and Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bases</masterLabel>
+        <translation><!-- Bases --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biophotonics</masterLabel>
+        <translation><!-- Biophotonics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blue Chip Detonators</masterLabel>
+        <translation><!-- Blue Chip Detonators --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCD Commercial</masterLabel>
+        <translation><!-- CCD Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCD Defense</masterLabel>
+        <translation><!-- CCD Defense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEV &gt; 1 Inch</masterLabel>
+        <translation><!-- CEV &gt; 1 Inch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEV Large Cermax Lamps</masterLabel>
+        <translation><!-- CEV Large Cermax Lamps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEV Large Cermax Modules</masterLabel>
+        <translation><!-- CEV Large Cermax Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEV Modules</masterLabel>
+        <translation><!-- CEV Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEV RAW</masterLabel>
+        <translation><!-- CEV RAW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEV Video Cermax-Gen 3 1.4 Inch Lamp</masterLabel>
+        <translation><!-- CEV Video Cermax-Gen 3 1.4 Inch Lamp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEV WIP</masterLabel>
+        <translation><!-- CEV WIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEV XHP</masterLabel>
+        <translation><!-- CEV XHP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COTS Power</masterLabel>
+        <translation><!-- COTS Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CT</masterLabel>
+        <translation><!-- CT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CW</masterLabel>
+        <translation><!-- CW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Camera Systems</masterLabel>
+        <translation><!-- Camera Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cameras</masterLabel>
+        <translation><!-- Cameras --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carsan Power Supply</masterLabel>
+        <translation><!-- Carsan Power Supply --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catalog</masterLabel>
+        <translation><!-- Catalog --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cathode pills</masterLabel>
+        <translation><!-- Cathode pills --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceramic Detectors</masterLabel>
+        <translation><!-- Ceramic Detectors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Photomult</masterLabel>
+        <translation><!-- Channel Photomult --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Components</masterLabel>
+        <translation><!-- Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Components - Fibers&amp;Comp</masterLabel>
+        <translation><!-- Components - Fibers&amp;Comp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Components - Opt&amp;Img</masterLabel>
+        <translation><!-- Components - Opt&amp;Img --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contracts</masterLabel>
+        <translation><!-- Contracts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Controller</masterLabel>
+        <translation><!-- Controller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crystal Technology</masterLabel>
+        <translation><!-- Crystal Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Curing LED Phoseon Adjustment</masterLabel>
+        <translation><!-- Curing LED Phoseon Adjustment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Energetics</masterLabel>
+        <translation><!-- Custom Energetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Custom Power</masterLabel>
+        <translation><!-- Custom Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense</masterLabel>
+        <translation><!-- Defense --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Defense Sensors</masterLabel>
+        <translation><!-- Defense Sensors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dental</masterLabel>
+        <translation><!-- Dental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Depot Services</masterLabel>
+        <translation><!-- Depot Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatology Treatment Optics</masterLabel>
+        <translation><!-- Dermatology Treatment Optics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Detector</masterLabel>
+        <translation><!-- Detector --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E.IR COMPONENT</masterLabel>
+        <translation><!-- E.IR COMPONENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E.IR CUSTOM</masterLabel>
+        <translation><!-- E.IR CUSTOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E.IR SYSTEM</masterLabel>
+        <translation><!-- E.IR SYSTEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E.ir Raw/semi</masterLabel>
+        <translation><!-- E.ir Raw/semi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ED COMPONENT</masterLabel>
+        <translation><!-- ED COMPONENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ED CUSTOM</masterLabel>
+        <translation><!-- ED CUSTOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ED RAW/SEMI</masterLabel>
+        <translation><!-- ED RAW/SEMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ED SYSTEM</masterLabel>
+        <translation><!-- ED SYSTEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESAF</masterLabel>
+        <translation><!-- ESAF --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EUV</masterLabel>
+        <translation><!-- EUV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ed-Lp</masterLabel>
+        <translation><!-- Ed-Lp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrode Assembly</masterLabel>
+        <translation><!-- Electrode Assembly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic Safe and Arm</masterLabel>
+        <translation><!-- Electronic Safe and Arm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrooptics</masterLabel>
+        <translation><!-- Electrooptics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Espros</masterLabel>
+        <translation><!-- Espros --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLASH COMP.</masterLabel>
+        <translation><!-- FLASH COMP. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLASH OTHERS</masterLabel>
+        <translation><!-- FLASH OTHERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLASH RAW/SEMI</masterLabel>
+        <translation><!-- FLASH RAW/SEMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FLASH SYSTEMS</masterLabel>
+        <translation><!-- FLASH SYSTEMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOI</masterLabel>
+        <translation><!-- FOI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fibers</masterLabel>
+        <translation><!-- Fibers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FireEdge</masterLabel>
+        <translation><!-- FireEdge --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FireFlex</masterLabel>
+        <translation><!-- FireFlex --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FireFly</masterLabel>
+        <translation><!-- FireFly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FireJet</masterLabel>
+        <translation><!-- FireJet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FireLine</masterLabel>
+        <translation><!-- FireLine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FirePower</masterLabel>
+        <translation><!-- FirePower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FlexTower</masterLabel>
+        <translation><!-- FlexTower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flexray</masterLabel>
+        <translation><!-- Flexray --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>G.ir Component</masterLabel>
+        <translation><!-- G.ir Component --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gen 3 Medical</masterLabel>
+        <translation><!-- Gen 3 Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glass/Ceramic</masterLabel>
+        <translation><!-- Glass/Ceramic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground Vehicles</masterLabel>
+        <translation><!-- Ground Vehicles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HCA – AA – Lamp Material</masterLabel>
+        <translation><!-- HCA – AA – Lamp Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HPG</masterLabel>
+        <translation><!-- HPG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hcl</masterLabel>
+        <translation><!-- Hcl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HeNe Laser Heads\Systems</masterLabel>
+        <translation><!-- HeNe Laser Heads\Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HeNe Laser Power Supplies</masterLabel>
+        <translation><!-- HeNe Laser Power Supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HeNe Laser Tubes</masterLabel>
+        <translation><!-- HeNe Laser Tubes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heatsinks</masterLabel>
+        <translation><!-- Heatsinks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heimann</masterLabel>
+        <translation><!-- Heimann --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heraeus Not Assigned</masterLabel>
+        <translation><!-- Heraeus Not Assigned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Performance Commercial</masterLabel>
+        <translation><!-- High Performance Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>High Voltage Power</masterLabel>
+        <translation><!-- High Voltage Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hng Zz-Hng Other</masterLabel>
+        <translation><!-- Hng Zz-Hng Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IDF WIP</masterLabel>
+        <translation><!-- IDF WIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT</masterLabel>
+        <translation><!-- IT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ignition Safety Device</masterLabel>
+        <translation><!-- Ignition Safety Device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ipl</masterLabel>
+        <translation><!-- Ipl --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED COMPONENT</masterLabel>
+        <translation><!-- LED COMPONENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED CUSTOM</masterLabel>
+        <translation><!-- LED CUSTOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED Components</masterLabel>
+        <translation><!-- LED Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED RAW/SEMI</masterLabel>
+        <translation><!-- LED RAW/SEMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED SYSTEM</masterLabel>
+        <translation><!-- LED SYSTEM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LED Solutions</masterLabel>
+        <translation><!-- LED Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LMP</masterLabel>
+        <translation><!-- LMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Land Equipment</masterLabel>
+        <translation><!-- Land Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laser Components</masterLabel>
+        <translation><!-- Laser Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lasers</masterLabel>
+        <translation><!-- Lasers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lasers and Fiber</masterLabel>
+        <translation><!-- Lasers and Fiber --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Led Other</masterLabel>
+        <translation><!-- Led Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Levelsensor</masterLabel>
+        <translation><!-- Levelsensor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LiTa Detectors</masterLabel>
+        <translation><!-- LiTa Detectors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Linear Beacons</masterLabel>
+        <translation><!-- Linear Beacons --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAGL IR Source</masterLabel>
+        <translation><!-- MAGL IR Source --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAGL Space Lighting</masterLabel>
+        <translation><!-- MAGL Space Lighting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MOTS Power</masterLabel>
+        <translation><!-- MOTS Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MVS</masterLabel>
+        <translation><!-- MVS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW COMPONENT</masterLabel>
+        <translation><!-- MW COMPONENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW CUSTOM</masterLabel>
+        <translation><!-- MW CUSTOM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW OTHER</masterLabel>
+        <translation><!-- MW OTHER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW RAW/SEMI</masterLabel>
+        <translation><!-- MW RAW/SEMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MW SYSTEMS</masterLabel>
+        <translation><!-- MW SYSTEMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Materials</masterLabel>
+        <translation><!-- Materials --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical</masterLabel>
+        <translation><!-- Medical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Sensors</masterLabel>
+        <translation><!-- Medical Sensors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metrology &amp; Inspection</masterLabel>
+        <translation><!-- Metrology &amp; Inspection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Micro Optics</masterLabel>
+        <translation><!-- Micro Optics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microwave bulbs</masterLabel>
+        <translation><!-- Microwave bulbs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microwave systems</masterLabel>
+        <translation><!-- Microwave systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mini-Cermax</masterLabel>
+        <translation><!-- Mini-Cermax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missile Warning &amp; Targeting Sys</masterLabel>
+        <translation><!-- Missile Warning &amp; Targeting Sys --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modular Vessel</masterLabel>
+        <translation><!-- Modular Vessel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Module</masterLabel>
+        <translation><!-- Module --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modules</masterLabel>
+        <translation><!-- Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multipoint Device</masterLabel>
+        <translation><!-- Multipoint Device --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NIR</masterLabel>
+        <translation><!-- NIR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NNSA Products</masterLabel>
+        <translation><!-- NNSA Products --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NRE</masterLabel>
+        <translation><!-- NRE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nexus</masterLabel>
+        <translation><!-- Nexus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nexustower</masterLabel>
+        <translation><!-- Nexustower --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPT COMPONENTS</masterLabel>
+        <translation><!-- OPT COMPONENTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPT RAW/SEMI</masterLabel>
+        <translation><!-- OPT RAW/SEMI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPT SYSTEMS</masterLabel>
+        <translation><!-- OPT SYSTEMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Omni</masterLabel>
+        <translation><!-- Omni --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmology</masterLabel>
+        <translation><!-- Ophthalmology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ops Munich</masterLabel>
+        <translation><!-- Ops Munich --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ops Regen</masterLabel>
+        <translation><!-- Ops Regen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optem</masterLabel>
+        <translation><!-- Optem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optical Components</masterLabel>
+        <translation><!-- Optical Components --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Opto Others</masterLabel>
+        <translation><!-- Opto Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others</masterLabel>
+        <translation><!-- Others --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHOSEON COMPONENTS</masterLabel>
+        <translation><!-- PHOSEON COMPONENTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHOSEON Custom</masterLabel>
+        <translation><!-- PHOSEON Custom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHOSEON System</masterLabel>
+        <translation><!-- PHOSEON System --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHS Custom</masterLabel>
+        <translation><!-- PHS Custom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PID DC</masterLabel>
+        <translation><!-- PID DC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PID RF Auto</masterLabel>
+        <translation><!-- PID RF Auto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PID RF Manual</masterLabel>
+        <translation><!-- PID RF Manual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photo</masterLabel>
+        <translation><!-- Photo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photodiode Arrays</masterLabel>
+        <translation><!-- Photodiode Arrays --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photodiodes</masterLabel>
+        <translation><!-- Photodiodes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photonics Flash - Noblelight</masterLabel>
+        <translation><!-- Photonics Flash - Noblelight --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pid Rd Manual</masterLabel>
+        <translation><!-- Pid Rd Manual --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Supply &amp; Accessories</masterLabel>
+        <translation><!-- Power Supply &amp; Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pulsed</masterLabel>
+        <translation><!-- Pulsed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pulsed Power</masterLabel>
+        <translation><!-- Pulsed Power --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quartz Linear</masterLabel>
+        <translation><!-- Quartz Linear --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAW</masterLabel>
+        <translation><!-- RAW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SF MAX</masterLabel>
+        <translation><!-- SF MAX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SO Other</masterLabel>
+        <translation><!-- SO Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPCM</masterLabel>
+        <translation><!-- SPCM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semiconductor Technology</masterLabel>
+        <translation><!-- Semiconductor Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensor</masterLabel>
+        <translation><!-- Sensor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service</masterLabel>
+        <translation><!-- Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SiPM</masterLabel>
+        <translation><!-- SiPM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solder seal</masterLabel>
+        <translation><!-- Solder seal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Soldier - Man Portable</masterLabel>
+        <translation><!-- Soldier - Man Portable --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solid State Lighting Solutions</masterLabel>
+        <translation><!-- Solid State Lighting Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solid State Switches</masterLabel>
+        <translation><!-- Solid State Switches --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Space</masterLabel>
+        <translation><!-- Space --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Tube</masterLabel>
+        <translation><!-- Special Tube --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgical Optics</masterLabel>
+        <translation><!-- Surgical Optics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surv and Target Acq</masterLabel>
+        <translation><!-- Surv and Target Acq --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surveillance</masterLabel>
+        <translation><!-- Surveillance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switches</masterLabel>
+        <translation><!-- Switches --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Systems</masterLabel>
+        <translation><!-- Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TECHNICAL SERVICE</masterLabel>
+        <translation><!-- TECHNICAL SERVICE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tactical Missiles</masterLabel>
+        <translation><!-- Tactical Missiles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecom</masterLabel>
+        <translation><!-- Telecom --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trigger Coil</masterLabel>
+        <translation><!-- Trigger Coil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trigger Transformer</masterLabel>
+        <translation><!-- Trigger Transformer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>U Tube (+ H 3rd Gen)</masterLabel>
+        <translation><!-- U Tube (+ H 3rd Gen) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vaconics</masterLabel>
+        <translation><!-- Vaconics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vactec</masterLabel>
+        <translation><!-- Vactec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vision Technology</masterLabel>
+        <translation><!-- Vision Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WIP</masterLabel>
+        <translation><!-- WIP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X-Cite</masterLabel>
+        <translation><!-- X-Cite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X-Ray Imaging</masterLabel>
+        <translation><!-- X-Ray Imaging --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XWarranty</masterLabel>
+        <translation><!-- XWarranty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yieldstar</masterLabel>
+        <translation><!-- Yieldstar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yieldstar - Lightsources</masterLabel>
+        <translation><!-- Yieldstar - Lightsources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yieldstar - Mod&amp;Obj</masterLabel>
+        <translation><!-- Yieldstar - Mod&amp;Obj --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

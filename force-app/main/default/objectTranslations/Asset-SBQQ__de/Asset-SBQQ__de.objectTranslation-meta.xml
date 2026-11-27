@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Suchfilter</label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Suchergebnisse</label>
+        <name>SBQQ__SearchResults</name>
+    </fieldSets>
+    <webLinks>
+        <label><!-- Conga_Composer_LDGI_Asset_Ext_Warranty_Agreement --></label>
+        <name>Conga_Composer_LDGI_Asset_Ext_Warranty_Agreement</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mark_As_Received --></label>
+        <name>Mark_As_Received</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Move_Asset --></label>
+        <name>Move_Asset</name>
+    </webLinks>
+</CustomObjectTranslation>

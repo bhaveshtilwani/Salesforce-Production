@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Bestimmt, wie Service- und AbonnementvertrÃ¤ge fÃ¼r diesen Kunden gemeinsam beendet werden.&quot;</help>
+    <label><!-- Contract Co-Termination --></label>
+    <name>SBQQ__ContractCoTermination__c</name>
+    <picklistValues>
+        <masterLabel>Always</masterLabel>
+        <translation>Immer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Never</masterLabel>
+        <translation>Nie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prompt</masterLabel>
+        <translation>Eingabeaufforderung</translation>
+    </picklistValues>
+</CustomFieldTranslation>

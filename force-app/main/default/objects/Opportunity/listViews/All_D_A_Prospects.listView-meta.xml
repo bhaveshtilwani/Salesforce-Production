@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_D_A_Prospects</fullName>
+    <columns>Product_Line__c</columns>
+    <columns>Site__c</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Full_Production_Annual_Value__c</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <columns>Program_Object__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Product_Line__c</field>
+        <operation>equals</operation>
+        <value>Advanced Electronic Systems,Advanced Optronics,Land Equipment</value>
+    </filters>
+    <label>All D&amp;A Prospects</label>
+    <sharedTo>
+        <role>Global_EVP_D_A</role>
+    </sharedTo>
+</ListView>

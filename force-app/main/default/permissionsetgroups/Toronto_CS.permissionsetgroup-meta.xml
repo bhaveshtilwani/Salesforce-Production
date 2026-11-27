@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grouped Permission Sets based on assigned to Nathalie Laliberte in SFDCQA on the time of testing</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Toronto CS</label>
+    <permissionSets>APXTConga4__Composer_User</permissionSets>
+    <permissionSets>Ability_to_Edit_Lead_Source</permissionSets>
+    <permissionSets>CPQ_User</permissionSets>
+    <permissionSets>Create_and_Update_Products</permissionSets>
+    <permissionSets>Edit_Product_Country_of_Origin</permissionSets>
+    <permissionSets>Edit_access_to_ERP_Sync_Status</permissionSets>
+    <permissionSets>Email_Template_Builder</permissionSets>
+    <permissionSets>For_Special_Approval_Request</permissionSets>
+    <permissionSets>LDGI_Product_access</permissionSets>
+    <permissionSets>Lightning_Permission_Sets</permissionSets>
+    <permissionSets>Product_Management_Access</permissionSets>
+    <permissionSets>Product_Prices_Visibility</permissionSets>
+    <permissionSets>Quote_Line_Excelitas_Site_Edit</permissionSets>
+    <permissionSets>Related_Asset_Mark_As_Received</permissionSets>
+    <permissionSets>SBQQ__SteelBrickCPQUser</permissionSets>
+    <permissionSets>SR_Process</permissionSets>
+    <permissionSets>Service_Repair_Opportunity_Record_Type_Access</permissionSets>
+    <permissionSets>Standard_Salesforce_CPQ_User</permissionSets>
+    <permissionSets>Toronto_QAD_Field_Access</permissionSets>
+    <permissionSets>force__CRMUserPsl</permissionSets>
+    <permissionSets>force__SalesConsoleUser</permissionSets>
+    <permissionSets>sbaa__AdvancedApprovalsUser</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Order Creation Line</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Order Creation Lines</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Item Category Required for Customer Return for a Repair --></errorMessage>
+        <name>Item_Category_Required_for_Repair</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This order type and product are not eligible for pricing. --></errorMessage>
+        <name>RMA_Order_Type_Price_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Location is required for Negative Quantities --></errorMessage>
+        <name>Storage_Location_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

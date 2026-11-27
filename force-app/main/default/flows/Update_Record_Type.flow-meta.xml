@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_RecordType</name>
+        <label>Check RecordType</label>
+        <locationX>446</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>YesXCite</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Lumen_Record_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>X-Cite</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Record_TypeXcite</targetReference>
+            </connector>
+            <label>Yes X-Cite</label>
+        </rules>
+        <rules>
+            <name>Yes_OmniCure</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Lumen_Record_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Omnicure</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Record_Type_Omnicure</targetReference>
+            </connector>
+            <label>Yes OmniCure</label>
+        </rules>
+        <rules>
+            <name>No_RecordType</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Lumen_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Record_Type</targetReference>
+            </connector>
+            <label>No RecordType</label>
+        </rules>
+    </decisions>
+    <description>#INC-278733 Lumen Leads into Excelitas instance
+Update based on this ticket: #INC-261877
+Product HierarChy Update</description>
+    <environments>Default</environments>
+    <interviewLabel>Update Record Type {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Record Type - Lead</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Record_Type</name>
+        <label>Update Record Type</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012Qp000003Mpa3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Record_Type_Omnicure</name>
+        <label>Update Record Type Omnicure</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Product_Family__c</field>
+            <value>
+                <stringValue>Curing Omnicure</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_Line__c</field>
+            <value>
+                <stringValue>Industrial Curing</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012Qp000003Mpa3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Record_TypeXcite</name>
+        <label>Update Record Type X Cite</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Product_Family__c</field>
+            <value>
+                <stringValue>Biomedical Lighting</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product_Line__c</field>
+            <value>
+                <stringValue>Solutions BU</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012Qp000003Mpa3</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_RecordType</targetReference>
+        </connector>
+        <filterLogic>(((1 OR 2) AND (3 OR 4)) OR (1 OR 2))</filterLogic>
+        <filters>
+            <field>CreatedById</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>005Qp00000EUdzyIAD</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Lumen_ID__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Lumen_Record_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>X-Cite</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Lumen_Record_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Omnicure</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>10</triggerOrder>
+</Flow>

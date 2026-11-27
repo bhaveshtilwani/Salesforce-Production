@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Existing Cust - Existing Prod (Comp Bid or LTA)</fullName>
+        <default>false</default>
+        <label>Existing Cust - Existing Prod (Comp Bid or LTA)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Cust - Existing Product 1st X</fullName>
+        <default>false</default>
+        <label>Existing Cust - Existing Product 1st X</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Cust - NPI</fullName>
+        <default>false</default>
+        <label>Existing Cust - NPI</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Customer / add-on order</fullName>
+        <default>false</default>
+        <label>Existing Customer / add-on order</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Customer / Competitive Win</fullName>
+        <default>false</default>
+        <label>Existing Customer / Competitive Win</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Customer / New Product / New Platform</fullName>
+        <default>false</default>
+        <label>Existing Customer / New Product / New Platform</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Customer / Upgrade to Existing Platform</fullName>
+        <default>false</default>
+        <label>Existing Customer / Upgrade to Existing Platform</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Cust - Recurring Business</fullName>
+        <default>false</default>
+        <label>Existing Cust - Recurring Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Cust - Existing Product</fullName>
+        <default>false</default>
+        <label>New Cust - Existing Product</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Cust - NPI</fullName>
+        <default>false</default>
+        <label>New Cust - NPI</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Customer / NPI</fullName>
+        <default>false</default>
+        <label>New Customer / NPI</label>
+    </standardValue>
+</StandardValueSet>

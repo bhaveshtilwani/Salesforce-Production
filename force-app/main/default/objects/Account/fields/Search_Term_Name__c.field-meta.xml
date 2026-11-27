@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Search_Term_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    $RecordType.DeveloperName = &quot;Business_Account_Name&quot;,
+    LEFT( Legal_Company_Name__c, 20),
+    &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Search Term/Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

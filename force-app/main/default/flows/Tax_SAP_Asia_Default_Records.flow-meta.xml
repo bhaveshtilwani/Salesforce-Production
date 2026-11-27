@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Billing_Country</name>
+        <label>Billing Country</label>
+        <locationX>881</locationX>
+        <locationY>254</locationY>
+        <defaultConnector>
+            <targetReference>ESGQSG_ID</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Singapore</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.BillingCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Singapore</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ESGQSG_ID_0</targetReference>
+            </connector>
+            <label>Singapore</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ESGQSG_Acct_Grp</name>
+        <label>ESGQSG Acct Grp</label>
+        <locationX>691</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>X0002_CPD_ZCUX_ZINT</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ship-to party - 0002</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>One-time cust.(int.no.assgnmt) - CPD</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-to party - ZCUS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Intra-Div &amp; Inter-Co. - ZINT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hierarchy Node - 0012</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>3rd Party Agent - ZAGT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Billing_Country</targetReference>
+            </connector>
+            <label>0002 | CPD | ZCUX | ZINT</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Manila</name>
+        <label>Manila</label>
+        <locationX>512</locationX>
+        <locationY>590</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>is_Manila</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Manila</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ManilaSite</targetReference>
+            </connector>
+            <label>is Manila</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>OPSL_Acct_Grp</name>
+        <label>OPSL Acct Grp</label>
+        <locationX>674</locationX>
+        <locationY>49</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>X0001_0002_CPD</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-to party (OPSL) - 0001</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ship-to party - 0002</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>One-time cust.(int.no.assgnmt) - CPD</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Intra-Div &amp; Inter-Co. - ZINT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>OPSL_ID</targetReference>
+            </connector>
+            <label>0001 + 0002 + CPD + ZINT</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Shenzhen_Account_Group</name>
+        <label>Shenzhen Account Group</label>
+        <locationX>697</locationX>
+        <locationY>402</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ZCUS_0002_ZINT</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ship-to party - 0002</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Sold-to party - ZCUS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Intra-Div &amp; Inter-Co. - ZINT</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>One-time cust.(int.no.assgnmt) - CPD</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Third-Party - Cus. For Trade - Z003</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Intra-Div &amp; Inter-Co For Trade - Z004</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Hierarchy Node - 0012</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account_Group__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>3rd Party Agent - ZAGT</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SZN_CN</targetReference>
+            </connector>
+            <label>ZCUS+0002+ZINT</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Site_ESG_QSG</name>
+        <label>Site = ESG - QSG</label>
+        <locationX>519</locationX>
+        <locationY>253</locationY>
+        <defaultConnector>
+            <targetReference>Site_Shenzhen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ESG_QSG</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ESG L&amp;D</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ESG Optics</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ESGQSG_Acct_Grp</targetReference>
+            </connector>
+            <label>ESG/QSG</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Site_Shenzhen</name>
+        <label>Site = Shenzhen</label>
+        <locationX>520</locationX>
+        <locationY>408</locationY>
+        <defaultConnector>
+            <targetReference>Manila</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Shenzhen</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Shenzhen</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Shenzhen_Account_Group</targetReference>
+            </connector>
+            <label>Shenzhen</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Site_St_Louis</name>
+        <label>Site = St Louis</label>
+        <locationX>518</locationX>
+        <locationY>50</locationY>
+        <defaultConnector>
+            <targetReference>Site_ESG_QSG</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>St_Louis</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ERP_Site__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>St Louis</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>OPSL_Acct_Grp</targetReference>
+            </connector>
+            <label>St Louis</label>
+        </rules>
+    </decisions>
+    <description>Extend Tax to Manila Site</description>
+    <environments>Default</environments>
+    <interviewLabel>Tax - SAP Asia - Default Records {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Tax - SAP Asia - Default Records</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>ESGQSG_ID</name>
+        <label>ESGQSG - ID</label>
+        <locationX>1105</locationX>
+        <locationY>171</locationY>
+        <connector>
+            <targetReference>ESGQSG_SG</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>ID - Indonesia</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Output Tax at 0%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>ESGQSG_ID_0</name>
+        <label>ESGQSG - ID</label>
+        <locationX>1104</locationX>
+        <locationY>302</locationY>
+        <connector>
+            <targetReference>ESGQSG_SG_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>ID - Indonesia</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Output Tax at 0%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>ESGQSG_SG</name>
+        <label>ESGQSG - SG</label>
+        <locationX>1239</locationX>
+        <locationY>171</locationY>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>SG - Singapore</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Output Tax at 0%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>ESGQSG_SG_0</name>
+        <label>ESGQSG - SG</label>
+        <locationX>1244</locationX>
+        <locationY>302</locationY>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>SG - Singapore</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>6 - Output Tax 8%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>ManilaSite</name>
+        <label>Manila Site</label>
+        <locationX>721</locationX>
+        <locationY>582</locationY>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>PH - Philippines</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Output Tax at 0%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>OPSL_ID</name>
+        <label>OPSL - ID</label>
+        <locationX>877</locationX>
+        <locationY>44</locationY>
+        <connector>
+            <targetReference>OPSL_PH</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>ID - Indonesia</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Output Tax at 0%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>OPSL_PH</name>
+        <label>OPSL - PH</label>
+        <locationX>999</locationX>
+        <locationY>44</locationY>
+        <connector>
+            <targetReference>OPSL_SG</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>PH - Philippines</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Output Tax at 0%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>OPSL_SG</name>
+        <label>OPSL - SG</label>
+        <locationX>1110</locationX>
+        <locationY>44</locationY>
+        <connector>
+            <targetReference>OPSL_US</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>SG - Singapore</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Output Tax at 0%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>OPSL_US</name>
+        <label>OPSL - US</label>
+        <locationX>1228</locationX>
+        <locationY>44</locationY>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>US - USA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>UTXJ - Tax Jurisdict.Code</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Exempt</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>SZN_CN</name>
+        <label>SZN - CN</label>
+        <locationX>951</locationX>
+        <locationY>404</locationY>
+        <inputAssignments>
+            <field>Account_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country__c</field>
+            <value>
+                <stringValue>CN - China</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ERP_Site__c</field>
+            <value>
+                <elementReference>$Record.ERP_Site__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Category__c</field>
+            <value>
+                <stringValue>MWST - Output Tax</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Classification__c</field>
+            <value>
+                <stringValue>0 - Output Tax at 0%</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Tax__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>47</locationX>
+        <locationY>45</locationY>
+        <connector>
+            <targetReference>Site_St_Louis</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ESG L&amp;D</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ESG Optics</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Shenzhen</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>St Louis</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ERP_Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Manila</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Grouppick__c</fullName>
+    <label>Customer Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Site__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>(01) OEM regular customer</fullName>
+                <default>false</default>
+                <label>(01) OEM regular customer</label>
+            </value>
+            <value>
+                <fullName>(02) PKI Distributor</fullName>
+                <default>false</default>
+                <label>(02) PKI Distributor</label>
+            </value>
+            <value>
+                <fullName>(03) InterCompany, PKI</fullName>
+                <default>false</default>
+                <label>(03) InterCompany, PKI</label>
+            </value>
+            <value>
+                <fullName>(04) Intra-SBU, Opto</fullName>
+                <default>false</default>
+                <label>(04) Intra-SBU, Opto</label>
+            </value>
+            <value>
+                <fullName>(05) Intra-SBE, Tel/Sens</fullName>
+                <default>false</default>
+                <label>(05) Intra-SBE, Tel/Sens</label>
+            </value>
+            <value>
+                <fullName>(06) Intra-Div, Canada</fullName>
+                <default>false</default>
+                <label>(06) Intra-Div, Canada</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(01) OEM regular customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(02) PKI Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(03) InterCompany, PKI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(04) Intra-SBU, Opto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(05) Intra-SBE, Tel/Sens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ESG L&amp;D</controllingFieldValue>
+            <controllingFieldValue>ESG Optics</controllingFieldValue>
+            <controllingFieldValue>Shenzhen</controllingFieldValue>
+            <controllingFieldValue>St Louis</controllingFieldValue>
+            <valueName>(06) Intra-Div, Canada</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

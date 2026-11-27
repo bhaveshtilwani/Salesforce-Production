@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SAP NA Montreal</fullName>
+        <default>false</default>
+        <label>SAP NA Montreal</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP NA Salem/MIA</fullName>
+        <default>false</default>
+        <label>SAP NA Salem/MIA</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP Germany</fullName>
+        <default>false</default>
+        <label>SAP Germany</label>
+    </customValue>
+    <customValue>
+        <fullName>AX Billerica</fullName>
+        <default>false</default>
+        <label>AX Billerica</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP Asia</fullName>
+        <default>false</default>
+        <label>SAP Asia</label>
+    </customValue>
+    <customValue>
+        <fullName>S4 Hana - Boulder</fullName>
+        <default>false</default>
+        <label>S4 Hana - Boulder</label>
+    </customValue>
+    <customValue>
+        <fullName>QAD Toronto</fullName>
+        <default>false</default>
+        <label>QAD Toronto</label>
+    </customValue>
+    <customValue>
+        <fullName>SAP Noblelight</fullName>
+        <default>false</default>
+        <label>SAP Noblelight</label>
+    </customValue>
+    <description>ERP installations</description>
+    <masterLabel>System</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

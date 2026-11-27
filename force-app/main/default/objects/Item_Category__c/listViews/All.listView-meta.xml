@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Site__c</columns>
+    <columns>Item_Category_ID__c</columns>
+    <columns>Show_On_UI__c</columns>
+    <columns>Free_of_Charge__c</columns>
+    <columns>OBJECT_ID</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Site__c</field>
+        <operation>equals</operation>
+        <value>montreal</value>
+    </filters>
+    <label>All</label>
+</ListView>

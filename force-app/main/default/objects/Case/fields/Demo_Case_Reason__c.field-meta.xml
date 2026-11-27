@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demo_Case_Reason__c</fullName>
+    <label>Case Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Demo Feedback</fullName>
+                <default>false</default>
+                <label>Demo Feedback</label>
+            </value>
+            <value>
+                <fullName>Loaned Demo</fullName>
+                <default>false</default>
+                <label>Loaned Demo</label>
+            </value>
+            <value>
+                <fullName>Opened in Error</fullName>
+                <default>false</default>
+                <label>Opened in Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

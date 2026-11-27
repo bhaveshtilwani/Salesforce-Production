@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bypass_Approval_Sub_Family__c</fullName>
+    <description>Returns the Product Sub Family only for products that are eligible for Advanced Approval evaluation. If the related Product is marked with Approval Bypass, the field returns &quot;Excluded&quot; to prevent the quote line from being included in approval rule calculations.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    SBQQ__Product__r.Approval_Bypass__c,
+    &quot;Excluded&quot;,
+    Product_Sub_Family__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bypass Approval Sub Family</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

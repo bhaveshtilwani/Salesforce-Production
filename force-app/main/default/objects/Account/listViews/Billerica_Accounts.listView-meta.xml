@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billerica_Accounts</fullName>
+    <columns>Client_Side_ID__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>DW_Account_Type__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>SFDC_Integration_Status__c</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ERP_Site__c</field>
+        <operation>equals</operation>
+        <value>Billerica</value>
+    </filters>
+    <label>Billerica Accounts</label>
+</ListView>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_to_CFIN__c</fullName>
+    <formula>AND(
+ISBLANK( Client_Side_ID__c ),
+OR(
+ ISPICKVAL( ERP_Site__c , &quot;Billerica&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Bill To - 0001&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Bill To - H004&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Bill To - W004&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Customer int number assgnmnt - DEBI&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Payer/Bill-to Entry - 0003&quot;),
+ ISPICKVAL( Account_Group__c , &quot;QioDebitoren Europäische Union - DEEU&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Sold to - H001&quot;),
+ ISPICKVAL( Account_Group__c , &quot;Sold to - W001&quot;))) 
+
+||
+
+AND(
+ ISPICKVAL( ERP_Site__c , &quot;Toronto&quot;),
+ ISBLANK(AccountNumber))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Send to CFIN</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

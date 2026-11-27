@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Konfigurationstyp dieses Produkts: WÃ¤hlen Sie &quot;&quot;ZulÃ¤ssig&quot;&quot;, wenn der Benutzer das Produkt/Paket konfigurieren darf, aber nicht muss, &quot;&quot;Deaktiviert&quot;&quot;, wenn Ihr Paket Optionen automatisch auswÃ¤hlt, und &quot;&quot;Erforderlich&quot;&quot;, wenn das Produkt/Paket konfiguriert werden muss.&quot;</help>
+    <label><!-- Configuration Type --></label>
+    <name>SBQQ__ConfigurationType__c</name>
+    <picklistValues>
+        <masterLabel>Allowed</masterLabel>
+        <translation>Zulassig</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disabled</masterLabel>
+        <translation>Deaktiviert</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Required</masterLabel>
+        <translation>Erforderlich</translation>
+    </picklistValues>
+</CustomFieldTranslation>

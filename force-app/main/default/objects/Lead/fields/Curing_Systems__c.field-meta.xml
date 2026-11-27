@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Curing_Systems__c</fullName>
+    <label>Curing Systems</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Omnicure LX500 System</fullName>
+                <default>false</default>
+                <label>Omnicure LX500 System</label>
+            </value>
+            <value>
+                <fullName>Omnicure LX505 System</fullName>
+                <default>false</default>
+                <label>Omnicure LX505 System</label>
+            </value>
+            <value>
+                <fullName>OmniCure S1000 100Watt system</fullName>
+                <default>false</default>
+                <label>OmniCure S1000 100Watt system</label>
+            </value>
+            <value>
+                <fullName>OmniCure S1500 200Watt system</fullName>
+                <default>false</default>
+                <label>OmniCure S1500 200Watt system</label>
+            </value>
+            <value>
+                <fullName>OmniCure S2000 200Watt system</fullName>
+                <default>false</default>
+                <label>OmniCure S2000 200Watt system</label>
+            </value>
+            <value>
+                <fullName>OmniCure S2001 200Watt Tack-free surface</fullName>
+                <default>false</default>
+                <label>OmniCure S2001 200Watt Tack-free surface</label>
+            </value>
+            <value>
+                <fullName>AC450-365 UV LED Curing System</fullName>
+                <default>false</default>
+                <label>AC450-365 UV LED Curing System</label>
+            </value>
+            <value>
+                <fullName>AC450-395 UV LED Curing System</fullName>
+                <default>false</default>
+                <label>AC450-395 UV LED Curing System</label>
+            </value>
+            <value>
+                <fullName>AC475-365 UV LED Curing System</fullName>
+                <default>false</default>
+                <label>AC475-365 UV LED Curing System</label>
+            </value>
+            <value>
+                <fullName>AC475-395 UV LED Curing System</fullName>
+                <default>false</default>
+                <label>AC475-395 UV LED Curing System</label>
+            </value>
+            <value>
+                <fullName>AC7150-365 UV LED Curing System</fullName>
+                <default>false</default>
+                <label>AC7150-365 UV LED Curing System</label>
+            </value>
+            <value>
+                <fullName>AC7150-395 UV LED Curing System</fullName>
+                <default>false</default>
+                <label>AC7150-395 UV LED Curing System</label>
+            </value>
+            <value>
+                <fullName>AC7300-365 UV LED Curing System</fullName>
+                <default>false</default>
+                <label>AC7300-365 UV LED Curing System</label>
+            </value>
+            <value>
+                <fullName>AC7300-395 UV LED Curing System</fullName>
+                <default>false</default>
+                <label>AC7300-395 UV LED Curing System</label>
+            </value>
+            <value>
+                <fullName>UV HEAD LCD LC280</fullName>
+                <default>false</default>
+                <label>UV HEAD LCD LC280</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

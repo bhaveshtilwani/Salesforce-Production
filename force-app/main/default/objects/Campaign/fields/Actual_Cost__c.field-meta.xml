@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Cost__c</fullName>
+    <formula>Booth_Space_Cost__c + Creative_Services_Cost__c + Freight_Cost__c + Hotel_Accommodations_Cost__c + Online_Promotion_Cost__c +  Print_Advertisements_Cost__c  + Promotional_Materials__c + Services_Cost__c + Speaker_Cost__c + Sponsorship_Cost__c + Travel_Cost__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actual Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

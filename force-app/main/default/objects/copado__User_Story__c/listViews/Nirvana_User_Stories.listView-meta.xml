@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nirvana_User_Stories</fullName>
+    <columns>NAME</columns>
+    <columns>copado__User_Story_Title__c</columns>
+    <columns>copado__Environment__c</columns>
+    <columns>copado__Org_Credential__c</columns>
+    <columns>copado__Last_Validation_Deployment__c</columns>
+    <columns>copado__Last_Validation_Deployment_Status__c</columns>
+    <columns>copado__Latest_Commit_Date__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>copado__User_Story_Title__c</field>
+        <operation>startsWith</operation>
+        <value>PN</value>
+    </filters>
+    <filters>
+        <field>copado__Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled</value>
+    </filters>
+    <label>Nirvana User Stories</label>
+</ListView>

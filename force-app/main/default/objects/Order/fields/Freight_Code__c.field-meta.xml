@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Freight_Code__c</fullName>
+    <inlineHelpText>10 - Freight (Taxable)
+40 - freight (Non-Taxable)</inlineHelpText>
+    <label>Freight Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10-Freight</fullName>
+                <default>true</default>
+                <label>10-Freight</label>
+            </value>
+            <value>
+                <fullName>20-Admin Fee</fullName>
+                <default>false</default>
+                <label>20-Admin Fee</label>
+            </value>
+            <value>
+                <fullName>30-Admin Fee</fullName>
+                <default>false</default>
+                <label>30-Admin Fee</label>
+            </value>
+            <value>
+                <fullName>40-Freight</fullName>
+                <default>false</default>
+                <label>40-Freight</label>
+            </value>
+            <value>
+                <fullName>50-Freight</fullName>
+                <default>false</default>
+                <label>50-Freight</label>
+            </value>
+            <value>
+                <fullName>60-Admin Fee</fullName>
+                <default>false</default>
+                <label>60-Admin Fee</label>
+            </value>
+            <value>
+                <fullName>70-Freight</fullName>
+                <default>false</default>
+                <label>70-Freight</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

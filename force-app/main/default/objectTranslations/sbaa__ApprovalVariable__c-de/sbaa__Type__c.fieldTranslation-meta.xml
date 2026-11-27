@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>&quot;Bei der Auswahl von &quot;&quot;Rabatt&quot;&quot; mÃ¼ssen die Felder &quot;&quot;Listenvariable&quot;&quot; und &quot;&quot;Nettovariable&quot;&quot; ausgefÃ¼llt werden. Wird &quot;&quot;Zusammenfassung&quot;&quot; ausgewÃ¤hlt, mÃ¼ssen &quot;&quot;Aggregierungsfeld&quot;&quot; und &quot;&quot;Aggregatfunktion&quot;&quot; angegeben werden.&quot;</help>
+    <label><!-- Type --></label>
+    <name>sbaa__Type__c</name>
+    <picklistValues>
+        <masterLabel>Discount</masterLabel>
+        <translation>Rabatt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Summary</masterLabel>
+        <translation>Zusammenfassung</translation>
+    </picklistValues>
+</CustomFieldTranslation>

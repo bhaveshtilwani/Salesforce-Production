@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Semi Opportunity Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Segment__c</fieldNames>
+        <fieldNames>Division__c</fieldNames>
+        <picklistValueName>1 - Opportunity Validation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Business_Unit__c</fieldNames>
+        <fieldNames>Product_LineGlobal__c</fieldNames>
+        <picklistValueName>2 - Requirement Definition/Technical Evl</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Semi_Opportunity</recordTypeName>
+</PathAssistant>

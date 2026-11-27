@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quotes_in_REVIEW</fullName>
+    <columns>NAME</columns>
+    <columns>SBQQ__Account__c</columns>
+    <columns>ApprovalStatus__c</columns>
+    <columns>SBQQ__CustomerAmount__c</columns>
+    <columns>SBQQ__DaysQuoteOpen__c</columns>
+    <columns>SBQQ__ExpirationDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SBQQ__Status__c</field>
+        <operation>equals</operation>
+        <value>In Review</value>
+    </filters>
+    <label>Quotes in REVIEW</label>
+</ListView>

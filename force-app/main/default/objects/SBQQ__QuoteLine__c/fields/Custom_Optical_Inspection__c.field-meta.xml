@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Optical_Inspection__c</fullName>
+    <formula>AND(SBQQ__ProductName__c = &apos;Custom Part&apos;,  TEXT(PKI_Product_Family__c)= &apos;Optical Inspection&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Custom Optical Inspection</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

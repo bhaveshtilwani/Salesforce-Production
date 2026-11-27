@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reconciliation_Account_Required</fullName>
+    <active>false</active>
+    <description>Reconciliation Account Required for
+Customer (int.number assgnmnt) - DEBI
+QioDebitoren Europäische Union - DEEU 
+Sold to - W001 - Wsbdn
+Sold to - H001 - Hamble
+Bill To - W004 - Wies
+Bill To - H004 - Hmbl
+Mtl BillTo 0001
+Slm/Mia Bill&amp;Ship 0003/0002</description>
+    <errorConditionFormula>AND(
+    $User.Alias &lt;&gt; &quot;sconn&quot;,
+
+    OR(
+AND(
+$RecordType.Name = &quot;SAP Germany&quot;,
+$User.ProfileId = &quot;00e3t00000212g0&quot;,
+            ISBLANK(TEXT(Reconciliation_Accountpicklist__c)),
+OR(
+ISPICKVAL( Account_Group__c , &quot;Customer int number assgnmnt - DEBI&quot;),
+ISPICKVAL( Account_Group__c , &quot;QioDebitoren Europäische Union - DEEU&quot;),
+ISPICKVAL( Account_Group__c , &quot;Bill To - W004&quot;),
+                ISPICKVAL(Account_Group__c , &quot;Bill To - H004&quot;)
+            )
+        ),
+
+AND(
+$RecordType.Name = &quot;SAP NA Montreal&quot;,
+            ISBLANK(TEXT(Reconciliation_Accountpicklist__c)),
+            ISPICKVAL(Account_Group__c , &quot;Bill To - 0001&quot;)
+        ),
+
+AND(
+            $RecordType.Name = &quot;SAP NA Salem/MIA&quot;,
+            ISBLANK(TEXT(Reconciliation_Accountpicklist__c)),
+            ISPICKVAL(Account_Group__c , &quot;Payer/Bill-to Entry - 0003&quot;)
+        ),
+
+AND(
+            $RecordType.Name = &quot;SAP Asia&quot;,
+$User.ProfileId = &quot;00e3t00000212g0&quot;,
+            ISBLANK(TEXT(Reconciliation_Accountpicklist__c)),
+OR(
+ISPICKVAL( Account_Group__c , &quot;Intra-Div &amp; Inter-Co. - ZINT&quot;),
+ISPICKVAL( Account_Group__c , &quot;One-time cust.(int.no.assgnmt) - CPD&quot;),
+ISPICKVAL( Account_Group__c , &quot;Third-Party - Cus. For Trade - Z003&quot;),
+                ISPICKVAL(Account_Group__c , &quot;Intra-Div &amp; Inter-Co For Trade - Z004&quot;)
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Reconciliation_Account__c</errorDisplayField>
+    <errorMessage>Reconciliation Account Required for selected account group.</errorMessage>
+</ValidationRule>

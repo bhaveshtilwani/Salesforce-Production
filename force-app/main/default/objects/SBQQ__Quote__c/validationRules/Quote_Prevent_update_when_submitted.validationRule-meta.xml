@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Prevent_update_when_submitted</fullName>
+    <active>true</active>
+    <errorConditionFormula>(
+ISPICKVAL(ApprovalStatus__c, &quot;Pending&quot;)
+|| ISPICKVAL(ApprovalStatus__c, &quot;Approved&quot;)
+)
+&amp;&amp;
+(
+ISCHANGED(SBQQ__PricebookId__c)
+|| ISCHANGED(SBQQ__PaymentTerms__c)
+|| ISCHANGED(Region__c)
+|| ISCHANGED(Product_Price_Type__c)
+/* ISCHANGED(SBQQ__CustomerDiscount__c) || */
+/* ISCHANGED(SBQQ__PartnerDiscount__c) || */
+/*|| ISCHANGED(SBQQ__ExpirationDate__c)*/
+)
+&amp;&amp;
+NOT($User.Locked_Quotes_Editor__c)
+&amp;&amp;
+(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot; ||
+$Profile.Name &lt;&gt; &quot;API/ADMIN/NON MFA&quot;
+)
+&amp;&amp;
+NOT(Has_Bypass_Site__c)</errorConditionFormula>
+    <errorMessage>Quotes that are approved or pending approval cannot be edited unless the approval request is recalled.</errorMessage>
+</ValidationRule>

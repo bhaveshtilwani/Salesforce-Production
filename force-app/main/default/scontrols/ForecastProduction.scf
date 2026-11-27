@@ -1,0 +1,1259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+<link type="text/css" rel="stylesheet" media="handheld,print,projection,screen,tty,tv" href="/sCSS/9.0/1179873921000/Theme2/default/common.css" />
+<link type="text/css" rel="stylesheet" media="handheld,print,projection,screen,tty,tv" href="/sCSS/9.0/1179873921000/Theme2/default/elements.css" />
+<link type="text/css" rel="stylesheet" media="handheld,print,projection,screen,tty,tv" href="/sCSS/9.0/1179873921000/Theme2/default/rlHovers.css" />
+<link type="text/css" rel="stylesheet" media="handheld,print,projection,screen,tty,tv" href="/sCSS/9.0/1179873921000/Theme2/default/rlHovers.css" />
+<link type="text/css" rel="stylesheet" media="aural,braille,embossed" href="/css/assistive.css" />
+<link type="text/css" rel="stylesheet" media="handheld,print,projection,screen,tty,tv" href="/sCSS/9.0/1172698507000/Theme2/dStandard.css" />
+<link type="text/css" rel="stylesheet" media="handheld,print,projection,screen,tty,tv" href="/sCSS/9.0/1181665622000/Theme2/00D300000000W1h/00530000000eIBV/dCustom.css"/>
+
+<!-- stylesheet for javascripttoolbox table
+<link rel="stylesheet" type="text/css" href="https://na3.salesforce.com/servlet/servlet.FileDownload?file=01550000000KRYw" media="all"> -->
+
+	<script language="JavaScript" src="/soap/ajax/9.0/connection.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/js/functions.js"></script>
+	<script type="text/javascript" src="/dJS/en/1177963865000/library.js"></script>
+	<!-- Javascript  for javascripttoolbox table-->
+	<script type="text/javascript" src="/servlet/servlet.FileDownload?file=01550000000KRXP"></script>
+	<script src="/js/dojo/0.4.1/dojo.js"></script>
+	
+	<script type="text/javascript">
+		function twistSection(twisty) 
+		{
+		   var parentDiv = twisty;
+		   while (parentDiv.tagName != 'DIV') { parentDiv = parentDiv.parentNode; }
+		   var headerId = (parentDiv.id.split('_'))[1]; 
+		   var div = parentDiv.nextSibling; 
+		   var elemWasOn = false; 
+		   if (div.style.display != 'none') { 
+			   div.style.display = 'none'; 
+			   twisty.className ='showListButton';
+			   twisty.alt = twisty.title = 'Show Section - '+twisty.name;
+			   elemWasOn = true; 
+		   } else {
+			   div.style.display = 'block'; 
+			   twisty.className = 'hideListButton';
+			   twisty.alt = twisty.title = 'Hide Section - '+twisty.name;
+		   } 
+		addTwistCookie('Twister', headerId, elemWasOn);
+		}
+		
+		var registeredSections = new Array();
+		
+		function registerTwistableSection(headerId, mainTableId) 
+		{
+		   var obj = new Object();
+		   obj.headerId = headerId;
+		   obj.mainTableId = mainTableId;
+		   registeredSections[registeredSections.length] = obj;
+		}
+		
+		function twistAllSections(on) 
+		{
+		   for (var i = 0; i < registeredSections.length; i++) 
+		   {
+			  var obj = registeredSections[i];
+			  var img;
+			  img = document.getElementById('img_' + obj.headerId);
+			if (on && 'showListButton' == img.className) 
+			{
+				 twistSection(img, obj.headerId, obj.mainTableId);
+			} 
+			else if (!on && 'hideListButton' == img.className) 
+			{
+				 twistSection(img, obj.headerId, obj.mainTableId);
+			}
+		   }
+		}
+		
+		function toggleSection(headerId, on)
+		{
+			var sectionHead = document.getElementById('head_'+headerId+'_ep');
+			var body = sectionHead.nextSibling;
+			var disp = on ? 'block' : 'none';
+			sectionHead.style.display = disp;
+			body.style.display = disp;
+		}
+		
+		function registerTwistableSections_ep() 
+		{
+		registerTwistableSection('01B50000002Wzu5', 'ep');
+		registerTwistableSection('01B50000002QXeU', 'ep');
+		registerTwistableSection('01B50000002QQUE', 'ep');
+		}
+		
+		registerTwistableSections_ep();
+	</script>
+
+	<script language="JavaScript1.2" type="text/javascript">
+
+	sforce.connection.init("{!API.Session_ID}","{!API.Partner_Server_URL_90}"); 
+	
+	function initcode() 
+	{
+		  var callback = 
+			{
+			    onSuccess : displayResultnew,
+			    onFailure : displayError
+			};
+			
+			var keyprod,allsp,allpf;
+			
+			if (document.AccountSearchForm.SalesPerson.value=='All')
+			{
+				allsp = '%';
+			}
+			else
+			{
+				allsp = "%" + document.AccountSearchForm.SalesPerson.value + "%" ;
+			}
+			
+			if (document.AccountSearchForm.ProductFamily.value=='All')
+			{
+				allpf = '%';
+			}
+			else
+			{
+				allpf =  document.AccountSearchForm.ProductFamily.value  ;
+			}
+			
+			if (document.AccountSearchForm.Included.checked==true)
+			{
+				keyprod="true";
+				sforce.connection.query("SELECT Id,Name, Part_Description__c, CP_Include_in_Forecast__c, Sales_Rep__c,Product_Family__c, PM_Product_Number__r.Name, CP_Part_Cust_Name__r.Name,CP_Part_Cust_Name__r.Id FROM Customer_Part__c where Sales_Rep__c like '"+ allsp +"'  and CP_Include_in_Forecast__c = "+ keyprod +" and Product_Family__c like '"+ allpf +"' and  CP_Part_Cust_Name__r.Name like '%" + document.AccountSearchForm.AccountName.value + "%' and  PM_Product_Number__r.Name like '%" + document.AccountSearchForm.ProductNumber.value + "%' order by CP_Part_Cust_Name__r.Name LIMIT 100", callback);
+			}
+			else
+			{
+				//keyprod="false";
+			sforce.connection.query("SELECT Id,Name, Part_Description__c, CP_Include_in_Forecast__c, Sales_Rep__c,Product_Family__c, PM_Product_Number__r.Name, CP_Part_Cust_Name__r.Name,CP_Part_Cust_Name__r.Id FROM Customer_Part__c where Sales_Rep__c like '"+ allsp +"'and Product_Family__c like '"+ allpf +"' and  CP_Part_Cust_Name__r.Name like '%" + document.AccountSearchForm.AccountName.value + "%' and  PM_Product_Number__r.Name like '%" + document.AccountSearchForm.ProductNumber.value + "%' order by CP_Part_Cust_Name__r.Name  LIMIT 100", callback);
+			} 
+			
+			
+		  //sforce.connection.query("SELECT Id,Name, Part_Description__c, CP_Include_in_Forecast__c, Sales_Rep__c, PM_Product_Number__r.Name, CP_Part_Cust_Name__r.Name,CP_Part_Cust_Name__r.Id FROM Customer_Part__c where Sales_Rep__c like '"+ allsp +"'  and CP_Include_in_Forecast__c = "+ keyprod +" and Product_Family__c like '"+ allpf +"' and  CP_Part_Cust_Name__r.Name like '%" + document.AccountSearchForm.AccountName.value + "%' and  PM_Product_Number__r.Name like '%" + document.AccountSearchForm.ProductNumber.value + "%' LIMIT 100", callback);
+		  
+		  npow();
+	}
+
+	function displayError(error) 
+		{
+			document.getElementById("ResultsHolder").innerHTML =  "oops something went wrong ... " + error;
+		}
+
+	function displayErrorPow(error) 
+		{
+			document.getElementById("outputpow-div").innerHTML =  "oops something went wrong ... " + error;
+		}
+		
+	function displayErrorPowT(error) 
+		{
+			document.getElementById("outputpowT-div").innerHTML =  "oops something went wrong ... " + error;
+		}
+	
+		function pageexample(page) 
+		{     
+			
+			npow();
+			
+			for(var k = 0 ; k < document.getElementsByTagName("a").length ; k++)
+			{
+				var pageID = document.getElementsByTagName("a")[k].id;
+				
+				if(pageID.indexOf("page") == 0)
+				{
+					var pageClass = document.getElementsByTagName("a")[k].className;
+					pageClass = pageClass.replace(/currentpage/, " ");
+					document.getElementsByTagName("a")[k].className = pageClass;    
+				}
+			}
+
+			var t = document.getElementById("t1");
+			var res;
+			
+			if (page=="previous") 
+			{
+				res=Table.pagePrevious(t);
+			}
+			else if (page=="next") 
+			{
+				res=Table.pageNext(t);
+			}
+			else 
+			{
+				res=Table.page(t,page);
+			}
+			
+			var currentPage = parseInt(res.page + 1);  
+
+			document.getElementById("page"+currentPage).className += "currentpage";
+			
+		}
+		
+		function clearTable(tbody) 
+		{
+			while (tbody.rows.length > 0) 
+			{
+			tbody.deleteRow(0);	
+			}
+		}
+		
+		function displayResultnew(Results)
+		{
+			var Id,ProdName,PartDesc,CustName,incInFcast,salesrep,custid,prodfam;
+			
+			try
+			{
+				
+				var mTableBody = document.getElementById("mtblBody");
+			
+				clearTable(mTableBody);
+				
+				if(Results.size <= 0)
+					{
+						alert("No records found. Please modify search criteria");
+					}
+				
+				if(Results.size > 0)
+				{
+
+				var records = Results.getArray("records");
+					
+					for(var j=0; j<records.length; j++)
+					{
+						Id    =  records[j].Id;
+						ProdName = records[j].PM_Product_Number__r.Name;
+						PartDesc = records[j].Part_Description__c ;
+						CustName  = records[j].CP_Part_Cust_Name__r.Name ;
+						prodfam = records[j].Product_Family__c;
+						incInFcast   = records[j].CP_Include_in_Forecast__c ;
+						salesrep   =  records[j].Sales_Rep__c;
+						custid = records[j].CP_Part_Cust_Name__r.Id;
+						
+						mTableBody.appendChild(addDBRow(Id,ProdName,PartDesc, CustName,prodfam,incInFcast,salesrep,custid,j));
+					}
+
+					pages = records.length/10;
+					if(records.length%10 >0)
+					pages++;
+					
+					document.getElementById("tfootPages").innerHTML = "";
+					
+					var aLink= "";
+					
+					for(var d=1 ; d<=pages ; d++)
+					{
+					
+						if(d==1)
+						{
+							aLink = "<a href='#' id='page"+d+"' class='pagelink currentpage' onclick='pageexample("+parseInt(d-1)+"); return false;'>"+d+"</a>" ;
+						}
+						else
+						{
+							aLink = "<a href='#' id='page"+d+"' class='pagelink' onclick='pageexample("+parseInt(d-1)+"); return false;'>"+d+"</a>" ;
+						}
+
+						document.getElementById("tfootPages").innerHTML += aLink + "\r";
+					}           
+					pageexample("0");
+				}
+			}  
+			catch(e) 
+			{ 
+				alert(e + "-" + e.message); 
+			}
+		}
+
+
+		function addDBRow(Id1,ProdName1,PartDesc1, CustName1,prodfam1,incInFcast1,salesrep1,custid1,index, mTableBody1)
+		{
+			
+			var Row = document.createElement("tr");
+			
+			if(index%2 == 0)
+				Row.className = "dataRows alternate";
+			else
+				Row.className = "dataRows";
+			
+			Row.Style = " ";
+
+			Row.id = "tr"+ index;
+
+			var Cell1 = document.createElement("td");
+			var Cell2 = document.createElement("td");
+			var Cell3 = document.createElement("td");
+			var Cell4 = document.createElement("td");
+			var Cell5 = document.createElement("td");
+			var Cell6 = document.createElement("td");
+			var Cell7 = document.createElement("td");
+			
+			Cell1.Style = "width = 120";
+			Cell2.Style = "width = 300";
+			Cell3.Style = "width = 300";
+			Cell4.Style = "width = 300";
+			Cell5.Style = "width = 25";
+			Cell6.Style = "width = 300";
+			Cell7.Style = "width = 300";
+			
+			Cell1.innerHTML = "<input class=mth value=Forecast onClick=npow('"+Id1+"','"+ escape(ProdName1) + "','" + escape(CustName1) + "')></input>"; 
+			Cell2.innerHTML = "<a href='/"+ Id1 +"' target=_blank>"+ ProdName1 +"</a>"; 
+			Cell3.innerHTML = PartDesc1;  
+			Cell4.innerHTML = "<a href='/"+ custid1 +"' target=_blank>" + CustName1 + "</a>";
+			Cell5.innerHTML = prodfam1;			
+			Cell6.innerHTML = incInFcast1; 
+			Cell7.innerHTML = salesrep1; 
+			
+			Row.appendChild(Cell1);
+			Row.appendChild(Cell2);
+			Row.appendChild(Cell3);
+			Row.appendChild(Cell4);
+			Row.appendChild(Cell5);	
+			Row.appendChild(Cell6);	
+			Row.appendChild(Cell7);
+			
+			return Row;
+			
+		}				
+					
+					
+	function pki_showCells()
+			{
+			   // *** Setup the variables to be used.  They will all be strings.
+			   var strProb = "";
+			   var strQty   = "";
+			   var strPrice = "";
+			   var strReturn = "";
+			   var strRecid = "";
+			   
+			   var sobj = new sforce.SObject("Monthly_Forecast_Analysis__c");
+			   
+			   /*  Loop through the table rows.  By repeating the dqc input name you in effect created an
+			        array and I use that array count as my counter here for the loop so if you decide to display
+					more rows this will automatically expand to accomodate.  Remember that Javascrip arrays
+					are zero based thus the reason to start i (increment) at zero.  
+			  */
+		 	   for(i=0;i <= document.frmTable.dqc.length - 1;i++)
+		   			{
+							strProb  = document.frmTable.prob[i].value;  
+							strQty   = document.frmTable.dqc[i].value;
+							strPrice = document.frmTable.fupc[i].value;
+							strRecid = document.frmTable.recid[i].value;
+/*alert (strQty.replace(/,/, ''));*/
+
+strQty = strQty.replace(/,/, '');
+							var checknum = valnumin(strQty);
+/*alert (strQty.replace(/,/, ''));*/
+
+
+							var checkcur = valnumin(strPrice);
+							
+							if (checknum == false && checkcur == false)
+							{
+								sobj.Id = strRecid;
+								sobj.MFA_Probability__c = strProb;
+								sobj.MFA_Additional_Demand_QTY__c = strQty;
+								sobj.MFA_Forecast_Unit_Price__c = strPrice;
+								sforce.connection.update([sobj]);
+							}
+							else
+							{
+								if (checknum ==true && checkcur == false)
+								{
+									alert("Additional demand value "+"'"+strQty+"'"+" is not valid. Please enter number .. !!");
+								}
+								else if (checkcur == true && checknum ==false)
+								{
+									alert("Forecast price value "+"'"+strPrice+"'"+" is not valid. Please enter number .. !!");
+								}
+								else
+								{
+									alert("Additional demand quantity "+"'"+strQty+"'"+" and "+"Forecast price "+"'"+strPrice+"'"+" is not valid. Please enter appropriate value .. !!");
+								}	
+							}
+							
+		   			}
+					document.frmTop.status.value = "..Done";
+					npow(document.frmTop.reqid.value,document.frmTop.reqpnum.value,document.frmTop.reqcid.value,document.frmTop.status.value);
+			}
+
+	function valnumin(field) 
+	{ 
+	                    /*field = field.replace(/,/, ''); */	
+                                         if(isNaN(field)) 
+		{ 
+			return true; 
+		} 
+		else 
+		{ 
+			return false;	
+		} 
+	}
+		
+	function npow(strId,pnum,cid,sta)
+	{
+	
+		function setup() 
+			{
+				if (!sforce.connection.sessionId) 
+				{
+				var sid = getCookie("sid");
+					if (sid) 
+					{
+					sforce.connection.sessionId = sid;
+					} 
+					else 
+					{
+					window.location = "/?startURL=" + window.location;
+					return;
+					}
+				}
+			}
+
+		
+				
+		var callbackPow = 
+		{
+		onSuccess : displayResultPow,
+	    onFailure : displayErrorPow
+		};
+		
+		var callbackPowT = 
+			{
+			onSuccess : displayResultPowT,
+		    onFailure : displayErrorPowT
+			};
+	
+	
+		sforce.connection.query("SELECT Id, MFA_Sales_To_Date__c, MFA_Month__c, MFA_Probability__c,MFA_Forecast_Unit_Price__c,MFA_Total_Forecast_QTY__c, MFA_Total_Forecast__c, MFA_Average_Selling_Price__c, MFA_Backlog_To_Date__c, MFA_Additional_Demand__c, MFA_Backlog_To_Date_QTY__c, MFA_Additional_Demand_QTY__c, MFA_Actual_Sales_QTY__c, MFA_Past_Period__c, MFA_Year__c, MFACPID__r.Name FROM Monthly_Forecast_Analysis__c where MFACPID__r.Id = '"+ strId +"' and MFA_Past_Period__c = false order by MFA_Year__c asc LIMIT 50",callbackPow);
+	
+
+
+		sforce.connection.query("SELECT Id, MFA_Sales_To_Date__c, MFA_Month__c,MFA_Probability__c,MFA_Forecast_Unit_Price__c,MFA_Total_Forecast_QTY__c, MFA_Total_Forecast__c,MFA_Average_Selling_Price__c, MFA_Backlog_To_Date__c, MFA_Additional_Demand__c, MFA_Backlog_To_Date_QTY__c, MFA_Additional_Demand_QTY__c, MFA_Actual_Sales_QTY__c, MFA_Past_Period__c, MFA_Year__c, MFACPID__r.Name FROM Monthly_Forecast_Analysis__c where MFACPID__r.Id = '"+ strId +"' and MFA_Past_Period__c = true order by MFA_Year__c desc LIMIT 50",callbackPowT);
+
+	
+		function formatCurrency(num) 
+		{
+			num = num.toString().replace(/\$|\,/g,'');
+			if(isNaN(num))
+			num = "0";
+			sign = (num == (num = Math.abs(num)));
+			num = Math.floor(num*100+0.50000000001);
+			cents = num%100;
+			num = Math.floor(num/100).toString();
+			if(cents<10)
+			cents = "0" + cents;
+			for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+			num = num.substring(0,num.length-(4*i+3))+','+
+			num.substring(num.length-(4*i+3));
+			return (((sign)?'':'-') + '$' + num + '.' + cents);
+		}
+	
+		function formatNumber(num) 
+		{
+			num = num.toString().replace(/\$|\,/g,'');
+			if(isNaN(num))
+			num = "0";
+			sign = (num == (num = Math.abs(num)));
+			num = Math.floor(num*100+0.50000000001);
+			cents = num%100;
+			num = Math.floor(num/100).toString();
+			if(cents<10)
+			cents = "0" + cents;
+			for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+			num = num.substring(0,num.length-(4*i+3))+','+
+			num.substring(num.length-(4*i+3));
+			return (((sign)?'':'-') + num);
+		}
+
+		function formatCurrencyNoSign(num) 
+		{
+			num = num.toString().replace(/\$|\,/g,'');
+			if(isNaN(num))
+			num = "0";
+			sign = (num == (num = Math.abs(num)));
+			num = Math.floor(num*100+0.50000000001);
+			cents = num%100;
+			num = Math.floor(num/100).toString();
+			if(cents<10)
+			cents = "0" + cents;
+			for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+			//num = num.substring(0,num.length-(4*i+3))+','+
+			num = num.substring(0,num.length-(4*i+3))+
+			num.substring(num.length-(4*i+3));
+			return (((sign)?'':'-') + num + '.' + cents);
+		}
+		
+		//probability function to pre-populate the correct values
+		
+		function probPopulate(probper)
+		{
+			var hold = probper;
+			var v1,v2,v3,v4,v5,v6;
+			
+			v1=100;
+			v2=90;
+			v3=80;
+			v4=70;
+			v5=60;
+			v6=50;
+			
+			if (v1==hold)
+			{
+				var probstring = "<OPTION selected VALUE='"+ v1 + "'>"+ v1 + "</OPTION><OPTION VALUE='"+ v2 + "'>"+ v2 + "</OPTION><OPTION VALUE='"+ v3 + "'>"+ v3 + "</OPTION><OPTION VALUE='"+ v4 + "'>"+ v4 + "</OPTION><OPTION VALUE='"+ v5 + "'>"+ v5 + "</OPTION><OPTION VALUE='"+ v6 + "'>"+ v6 + "</OPTION>";
+				
+				return probstring; 
+			}
+			
+			if (v2==hold)
+			{
+				var probstring = "<OPTION VALUE='"+ v1 + "'>"+ v1 + "</OPTION><OPTION selected VALUE='"+ v2 + "'>"+ v2 + "</OPTION><OPTION VALUE='"+ v3 + "'>"+ v3 + "</OPTION><OPTION VALUE='"+ v4 + "'>"+ v4 + "</OPTION><OPTION VALUE='"+ v5 + "'>"+ v5 + "</OPTION><OPTION VALUE='"+ v6 + "'>"+ v6 + "</OPTION>";
+				
+				return probstring; 
+			}
+			
+			if (v3==hold)
+			{
+				var probstring = "<OPTION VALUE='"+ v1 + "'>"+ v1 + "</OPTION><OPTION VALUE='"+ v2 + "'>"+ v2 + "</OPTION><OPTION selected VALUE='"+ v3 + "'>"+ v3 + "</OPTION><OPTION VALUE='"+ v4 + "'>"+ v4 + "</OPTION><OPTION VALUE='"+ v5 + "'>"+ v5 + "</OPTION><OPTION VALUE='"+ v6 + "'>"+ v6 + "</OPTION>";
+				
+				return probstring; 
+			}
+			
+			if (v4==hold)
+			{
+				var probstring = "<OPTION VALUE='"+ v1 + "'>"+ v1 + "</OPTION><OPTION VALUE='"+ v2 + "'>"+ v2 + "</OPTION><OPTION VALUE='"+ v3 + "'>"+ v3 + "</OPTION><OPTION selected VALUE='"+ v4 + "'>"+ v4 + "</OPTION><OPTION VALUE='"+ v5 + "'>"+ v5 + "</OPTION><OPTION VALUE='"+ v6 + "'>"+ v6 + "</OPTION>";
+				
+				return probstring; 
+			}
+			
+			if (v5==hold)
+			{
+				var probstring = "<OPTION VALUE='"+ v1 + "'>"+ v1 + "</OPTION><OPTION VALUE='"+ v2 + "'>"+ v2 + "</OPTION><OPTION VALUE='"+ v3 + "'>"+ v3 + "</OPTION><OPTION VALUE='"+ v4 + "'>"+ v4 + "</OPTION><OPTION selected VALUE='"+ v5 + "'>"+ v5 + "</OPTION><OPTION VALUE='"+ v6 + "'>"+ v6 + "</OPTION>";
+				
+				return probstring; 
+			}
+			
+			if (v6==hold)
+			{
+				var probstring = "<OPTION VALUE='"+ v1 + "'>"+ v1 + "</OPTION><OPTION VALUE='"+ v2 + "'>"+ v2 + "</OPTION><OPTION VALUE='"+ v3 + "'>"+ v3 + "</OPTION><OPTION VALUE='"+ v4 + "'>"+ v4 + "</OPTION><OPTION VALUE='"+ v5 + "'>"+ v5 + "</OPTION><OPTION selected VALUE='"+ v6 + "'>"+ v6 + "</OPTION>";
+				
+				return probstring; 
+			}
+		}
+
+		//Heart of the page. This function creates table with editable columns.
+		
+		function displayResultPow(result) 
+		{
+		
+			var outputpow = "<form id=frmTop name=frmTop method=post action=''>";
+			outputpow += " <table title = Months width='100%' class=list border='0' cellspacing='0' cellpading='0'>";
+			
+			if (sta ==undefined)
+			{
+				sta="";
+			}
+			
+			if (pnum ==undefined)
+			{
+				outputpow += "<tr nowrap' align=center><B><font size=4 color=blue>Please Select product to forecast</font></B><tr>";
+			}
+			else
+			{
+			
+			outputpow += "<tr nowrap' align=left><td><input class=mth value=Save onclick = pki_showCells() /></td><td><input class=udlabel id=status value ='"+sta+"'></input><input type=hidden id=reqid value ='"+strId+"'></input><input type=hidden id=reqpnum value ='"+pnum+"'></input><input type=hidden id=reqcid value ='"+cid+"'></input></td><td align=right>Selected Product : <B><font size=4 color=blue>"+ unescape(pnum) +"</font></B> and Customer Name : <B><font size=3 color=blue>"+ unescape(cid) +"</font></B></td></tr>";
+			
+			}
+			
+			outputpow += " </table>";
+			outputpow += " </form>";
+			outputpow += "<form id=frmTable name=frmTable method=post action=''>";
+			outputpow += " <table title = Months width='100%' class=list border='0' cellspacing='0' cellpading='0'>";
+			outputpow += "<tr class=headerRow height=20><td><b>Month</b></td>";
+			outputpow += "<td><b>Probability<BR>%</b></td>";
+			outputpow += "<td align=center><b>Additional<br>Demand(QTY)</b></td>";
+			outputpow += "<td align=right><b>Forecast<br>Unit Price($)</b></td>";
+			outputpow += "<td align=right><b>Last Sold<BR>Price($)</b></td>";
+			outputpow += "<td align=right><b>Additional<BR>Demand($)</b></td>"; 
+			outputpow += "<td align=center><b>Backlog<BR>to Date(QTY)</b></td>"; 
+			outputpow += "<td align=right><b>Backlog<BR>to Date($)</b></td>"; 
+			outputpow += "<td align=center><b>Sales<BR>to Date(QTY)</b></td>";
+			outputpow += "<td align=right><b>Sales<BR>to Date($)</b></td>";
+			outputpow += "<td align=center><b>Total<BR>Forecast(QTY)</b></td>";
+			outputpow += "<td align=right><b>Total<BR>Forecast($)</b></td>";
+			
+			
+		
+		  var itpow = new sforce.QueryResultIterator(result);
+		  var htmlpow = [];
+		  while(itpow.hasNext()) 
+		  {
+		    var recordpow = itpow.next();
+			
+				outputpow += "<tr onmouseover=hiOn(this) onmouseout=hiOff(this)>" ;				
+				outputpow += "<td><input class=mth value='"+ recordpow.MFA_Month__c +"' onClick=window.open('/"+ recordpow.Id +"','_blank')></input></td>";
+				outputpow += "<td nowrap'><SELECT id=prob NAME=probabilty>'"+probPopulate(recordpow.MFA_Probability__c )+"';</SELECT> </td>";
+				outputpow += "<td nowrap' align=center><input type=text id=dqc class=editPrompt value = '"+formatNumber(recordpow.MFA_Additional_Demand_QTY__c)+"' size=10></input></td>";
+				outputpow += "<td nowrap' align=right><input id=fupc class=editPrompt value = '"+formatCurrencyNoSign(recordpow.MFA_Forecast_Unit_Price__c)+"' size=10></input></td>";
+				outputpow += "<td align=right>" + formatCurrency(recordpow.MFA_Average_Selling_Price__c) +"</td>";
+				outputpow += "<td align=right>" + formatCurrency(recordpow.MFA_Additional_Demand__c) +"</td>";
+				outputpow += "<td align=center>" + formatNumber(recordpow.MFA_Backlog_To_Date_QTY__c) +"</td>";
+				outputpow += "<td align=right>" + formatCurrency(recordpow.MFA_Backlog_To_Date__c) +"</td>";
+				outputpow += "<td align=center>" + formatNumber(recordpow.MFA_Actual_Sales_QTY__c) +"</td>";
+				outputpow += "<td align=right>" + formatCurrency(recordpow.MFA_Sales_To_Date__c) +"</td>";
+				outputpow += "<td align=center>" + formatNumber(recordpow.MFA_Total_Forecast_QTY__c) +"</td>";
+				outputpow += "<td align=right>" + formatCurrency(recordpow.MFA_Total_Forecast__c) +"</td>";
+				outputpow += "<td nowrap' align=center><input type=hidden id=recid value ='"+recordpow.Id+"'></input></td>";
+				
+		  }
+		 outputpow += "</table>";
+		 //******* SBURROW - add the form close entry
+		 outputpow += " </form>"
+		 //******* SBURROW - end of my mod
+		 document.getElementById("outputpow-div").innerHTML = outputpow;
+		
+		}	
+	
+	//Routine for past period. This function creates the readonly and collapsable table Section 4 on the page.
+	
+	function displayResultPowT(result) 
+		{
+		
+		var outputpowT = " <table title = '"+ strId +"' width='100%' class=list border='0' cellspacing='0' cellpading='0'><tr class=headerRow height=20>";
+		outputpowT += "<td><b>Month</b></td>";
+		outputpowT += "<td><b>Probability<BR>%</b></td>";
+		outputpowT += "<td align=center><b>Additional<BR>Demand(QTY)</b></td>";
+		outputpowT += "<td align=right><b>Forecast<br>Unit Price($)</b></td>";
+		outputpowT += "<td align=right><b>Last Sold<BR>Price($)</b></td>";
+		outputpowT += "<td align=right><b>Additional<BR>Demand($)</b></td>"; 
+		outputpowT += "<td align=center><b>Backlog<BR>to Date(QTY)</b></td>"; 
+		outputpowT += "<td align=right><b>Backlog<BR>to Date($)</b></td>"; 
+		outputpowT += "<td align=center><b>Sales<BR>to Date(QTY)</b></td>";
+		outputpowT += "<td align=right><b>Sales<BR>to Date($)</b></td>";
+		outputpowT += "<td align=center><b>Total<BR>Forecast(QTY)</b></td>";
+		outputpowT += "<td align=right><b>Total<BR>Forecast($)</b></td>";
+		
+		
+		
+		  var itpowT = new sforce.QueryResultIterator(result);
+		  var htmlpowT = [];
+		  while(itpowT.hasNext()) 
+		  {
+		    var recordpowT = itpowT.next();
+				
+				outputpowT += "<tr onmouseover=hiOn(this) onmouseout=hiOff(this)>" ;				
+				
+				outputpowT += "<td><input class=mth value='"+ recordpowT.MFA_Month__c +"' onClick=window.open('/"+ recordpowT.Id +"','_blank') size=50 ></input></td>";
+				outputpowT += "<td>" + recordpowT.MFA_Probability__c +"</td>";
+				
+				outputpowT += "<td align=center>" + formatNumber(recordpowT.MFA_Additional_Demand_QTY__c) +"</td>";
+				outputpowT += "<td align=right>" + formatCurrencyNoSign(recordpowT.MFA_Forecast_Unit_Price__c) +"</td>";				
+				outputpowT += "<td align=right>" + formatCurrency(recordpowT.MFA_Average_Selling_Price__c) +"</td>";
+				outputpowT += "<td align=right>" + formatCurrency(recordpowT.MFA_Additional_Demand__c) +"</td>";
+				outputpowT += "<td align=center>" + formatNumber(recordpowT.MFA_Backlog_To_Date_QTY__c) +"</td>";
+				outputpowT += "<td align=right>" + formatCurrency(recordpowT.MFA_Backlog_To_Date__c) +"</td>";
+				outputpowT += "<td align=center>" + formatNumber(recordpowT.MFA_Actual_Sales_QTY__c) +"</td>";
+				outputpowT += "<td align=right>" + formatCurrency(recordpowT.MFA_Sales_To_Date__c) +"</td>";		
+				outputpowT += "<td align=center>" + formatNumber(recordpowT.MFA_Total_Forecast_QTY__c) +"</td>";
+				outputpowT += "<td align=right>" + formatCurrency(recordpowT.MFA_Total_Forecast__c) +"</td>";				
+
+		  }
+		outputpowT += "</table>"; 
+		document.getElementById("outputpowT-div").innerHTML = outputpowT;
+		}
+	
+	}
+	
+	</script> 
+
+	<style type="text/css">
+        .msgDIV {
+     color: #003366;
+     font-weight: bold;
+     font-size: 12px;
+     font-family: Arial, Helvetica, sans-serif;
+        }
+        table.external td
+        {
+            padding-right: 15px; 
+            padding-left: 15px; 
+            padding-bottom: 0px; 
+            padding-top: 0px;
+        }
+        table.external
+        {
+            font-size:10pt;
+            border-top: #e5c130 4px solid;  /*#b4a066 Company Border Color*/
+            border-right: #e5c130 2px solid;
+            border-bottom: #e5c130 2px solid;
+            background-color:#f1f0e6;
+            border-collapse: collapse;
+            width:100%;
+
+        }
+        table.example        
+        {   
+            font-size:100%;
+            border-collapse: collapse;            
+            width:100%;            
+        }
+        table.external a.pagelink {
+         padding-left:5px;
+         padding-right:5px;
+         color: Brown;
+        }
+        table.external a.OpportunityLink {
+         padding-left:5px;
+         padding-right:5px;
+         color: Chocolate;
+        }
+        table.external a.AccountLink{
+         padding-left:5px;
+         padding-right:5px;
+         color: DarkBlue;
+        }
+        table.external a.currentpage
+        {
+         font-weight: bold;
+         color: Brown;
+        }
+        /* Striping */
+        tr.alternate
+        {
+         background-color: #eeeeee;
+        }
+
+        /* Sorting */
+        th.table-sortable {
+         cursor:pointer;
+         background-image:url("sort_icon/sortable.gif");
+         background-position:center left;
+         background-repeat:no-repeat;
+         padding-left:12px;
+        }
+        th.table-sorted-asc {
+         background-image:url("sort_icon/sorted_up.gif");
+         background-position:center left;
+         background-repeat:no-repeat;
+        }
+        th.table-sorted-desc {
+         background-image:url("sort_icon/sorted_down.gif");
+         background-position:center left;
+         background-repeat:no-repeat;
+        }
+        th.table-filtered {
+         background-image:url("sort_icon/filter.gif");
+         background-position:center left;
+         background-repeat:no-repeat;
+        }
+        select.table-autofilter {
+         font-size:smaller;
+        }
+
+
+        /* Sort Icon Styles */
+        table.sort02 th.table-sortable { background-image:none; padding-left:16px; }
+        table.sort02 th.table-sorted-asc { background-image:url("/servlet/servlet.ImageServer—oid=00D00000000hZdH&id=015T00000000vAY"); vertical-align: top; }
+        table.sort02 th.table-sorted-desc { background-image:url("/servlet/servlet.ImageServer–oid=00D00000000hZdH&id=015T00000000vAd"); vertical-align: top; }
+        
+        /* Icons box */
+        .iconset {
+         margin:5px;
+         text-align:center;
+         cursor:pointer;
+         width:100px;
+        }
+        .iconset img {
+         margin:3px;
+        }
+
+        /* Documentation */
+        tr.doc_section {
+         font-weight:bold;
+         text-align:center;
+         background-color:#dddddd;
+        }
+        .headerRow th
+        {
+         border-bottom: #cccccc 2px solid;
+         text-align: left;
+         vertical-align: top;
+         white-space: nowrap;
+         height:20px;
+        }
+        .dataRows td
+        {
+         vertical-align: top;
+         border-bottom: #e3deb8 1px solid;
+         text-align: left;
+         height:20px;
+         padding-top:5px;
+         padding-bottom:5px;
+        }
+        .titleRow th
+        {
+         border-bottom: white 1px solid;/*#e5c130 3px solid;*/
+         vertical-align: middle;
+         background-color: #eeecd1;
+         text-align: left;
+         font-size: 12pt;
+         padding-left:10px;
+        }
+
+    </style>
+	
+	<style type="text/css">
+		body, td 
+		{
+			margin:0px;
+			color:#333;
+		}
+
+		body 
+		{
+			background-repeat: repeat-x;
+			background-position: left top;
+			font-size: 75%;
+			font-family: 'Arial', 'Helvetica', sans-serif;
+			background-color: #FFF;
+		}
+
+		.searchBox 
+		{
+			padding:12px 8px 2px 8px;
+			background-color:#E8E8E8;
+			border-top:2px #FFF solid;
+			margin-bottom:10px;
+			font-size: 60%;
+		}
+
+		.detailPage 
+		{
+			margin-right:2px;
+			padding:6px 20px 0 20px;
+			background-color:#F3F3EC;
+		}
+
+		.detailPageBlock 
+		{
+			border-bottom:1px solid #E3DEB8;
+			width: 30%;
+		}
+
+		.labelCol 
+		{
+			padding:2px 10px 2px 2px;
+			text-align:right;
+			font-size: 75%;
+			font-weight: bold;
+			color:#333;
+			width: 20%;
+			border-bottom:1px solid #E3DEB8;
+		}
+
+		.titleBlock 
+		{
+			background-color: #4579B5;
+			border-color: #4579B5;
+			font-size: 100%;
+		}
+		.editPrompt 
+		{
+			font-size: 85%;
+			font-weight: bold;
+			color: red;
+		}
+
+		.tblHead
+		{
+			font-size: 120%;
+			font-weight: bold;
+			color: red;
+		}
+		
+		.mth
+		{
+			font-family: 'Verdana', 'Geneva', sans-serif;
+			background-image:  url("/img/bgButton.gif");
+			background-repeat: repeat-x;
+			background-position: left top;
+			border-right:1px solid #5C5D61;
+			border-bottom:1px solid #5C5D61;
+			border-top:none;
+			border-left:none;
+			font-size: 80%;
+			color:#FFFFFF;
+			padding:1px 3px;
+			cursor:pointer;
+			font-weight:bold;
+			display:inline;
+			width:55px;
+			margin: 0 2px;
+		}
+		
+		.pnum
+		{
+			font-family: 'Verdana', 'Geneva', sans-serif;
+			background-image:  url("/img/bgButton.gif");
+			background-repeat: repeat-x;
+			background-position: left top;
+			border-right:1px solid #5C5D61;
+			border-bottom:1px solid #5C5D61;
+			border-top:none;
+			border-left:none;
+			font-size: 80%;
+			color:#FFFFFF;
+			padding:1px 3px;
+			cursor:pointer;
+			font-weight:bold;
+			display:inline;
+			margin: 0 2px;
+			text-decoration: underline
+		}
+		
+		.udlabel
+		{
+			font-family: 'Verdana', 'Geneva', sans-serif;
+			border-right:none;
+			border-bottom:none;
+			border-top:none;
+			border-left:none;
+			font-size: 90%;
+			color: #f00f07;
+/*			padding:1px 3px;*/
+			cursor:pointer;
+			font-weight:bold;
+			display:inline;
+			width:100px;
+			margin: 0 2px;
+		}
+	</style>
+
+	
+	<BODY class ="Custom20Tab listPage">
+
+		<DIV class = bPageTitle>
+			<DIV class ="ptBody secondaryPalette">
+				<DIV class = content>
+					<IMG class=pageTitleIcon alt=custom20 src="/s.gif" />
+					<h1 class="pageType noSecondHeader">Forecast : Search and Update</h1>
+				</DIV>
+				<DIV align=right valign=center>
+					<font color=yellow size=2>Optimized for <I><B>Internet Explorer 6.0.</B></I><BR /> Best Viewed at Resolution 1024x768			   </font>
+
+				</DIV>
+			</DIV>
+		</DIV>
+		<DIV class="bPageBlock secondaryPalette">
+			<DIV class=pbBody>
+				<DIV class=pbSubsection> 
+					<form name=AccountSearchForm method="post" Action = "javascript:initcode()"> 
+					
+					<!--	Code for Header and Help file -->
+
+							<div class="pbHeader">
+								<table cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td class="pbTitle">
+												<img width="1" height="1" title="" class="minWidth" alt="" src="/s.gif"/>
+												<img title="Custom" class="relatedListIcon" alt="Custom" src="/s.gif"/>
+												<h3>Product and Customer Search</h3>
+											</td>
+											<td class="pbButton"></td>
+											<td class="pbHelp">
+												<span title="Search Layout Help (New Window)" class="help">
+													<a class="linkCol" href="javascript:openPopupFocusEscapePounds('https://na3.salesforce.com/servlet/servlet.FileDownload?file=01550000000KV5y', 'Help', 700, 600, 'width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no', false, false);">
+													<span class="linkSpan">Search Layout Help</span>
+													<img title="Search Layout Help (New Window)" class="helpImage" alt="Search Layout Help (New Window)" src="/s.gif"/>
+													</a>
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>		
+
+					<!-- Code Finish -->
+					
+						<table width="50%" align=center cellspacing=5 cellpadding=0 border=0 >
+							
+							<tr align=left>
+								<td class=labelcol nowrap>Sales Person :
+								<select name="SalesPerson">
+
+									<option value="All">All</option>							
+<option value="Achim Greiner">Achim Greiner</option>
+<option value="Anna Kostic (Commercial)"> Anna Kostic (Commercial)</option>
+<option value="Antonio Maia (Commercial)"> Antonio Maia (Commercial)</option>
+ <option value="Arthur Jong">Arthur Jong</option>
+<option value="Ben Standish">Ben Standish</option>
+<option value="Bernd Ullmann">Bernd Ullmann</option>
+<option value="Beth Haskell"> Beth Haskell</option>
+<option value="Brian Liu (Commercial)"> Brian Liu (Commercial)</option>
+<option value="Brian Ng">Brian Ng</option>
+<option value="Bright Lee">Bright Lee</option>
+<option value="Bruno Bosser">Bruno Bosser</option>
+<option value="Carlos Alvarez">Carlos Alvarez</option>
+<option value="Catalog Team">Catalog Team</option>
+<option value="Chad Niday">Chad Niday</option>	
+<option value="Christian Nömeier">Christian Nömeier</option>
+<option value="David Cheung">David Cheung</option>
+<option value="David House">David House</option>
+<option value="David McKibben (Analytical)">David McKibben (Analytical)</option>
+<option value="Denis Boireau">Denis Boireau</option>
+<option value="Dennis Chepulis">Dennis Chepulis</option>
+<option value="Dieter Randel">Dieter Randel</option>
+<option value="Dirk Huggle">Dirk Huggle</option>
+<option value="Erick Li">Erick Li</option>
+<option value="Eric Wang">Eric Wang</option>
+<option value="Frank Reissmann">Frank Reissmann</option>
+<option value="Georg Zeitelhack">Georg Zeitelhack</option>
+<option value="Gregory Gallinat ">Gregory Gallinat </option>
+<option value="Guy Antley">Guy Antley</option>
+<option value="Guy Cote">Guy Cote</option>
+<option value="Hans Birzer">Hans Birzer</option>
+<option value="Harpreet Singh">Harpreet Singh</option>
+<option value="Hayashi Toru">Hayashi Toru</option>
+<option value="Henning Gritz">Henning Gritz</option>
+<option value="Isabel Haackert">Isabel Haackert</option>	
+<option value="James Clements">James Clements </option>			
+<option value="James Lim">James Lim</option>
+<option value="Jaroslaw Czeladzinski">Jaroslaw Czeladzinski</option>
+<option value="Jennifer Melo">Jennifer Melo</option>
+<option value="Jens Meyer">Jens Meyer</option>
+<option value="Jochem Sihorsch">Jochem Sihorsch</option>
+<option value="Jochen Wenk">Jochen Wenk</option>
+<option value="Joe Delfino">Joe Delfino</option>
+<option value="Joerg Hannig">Joerg Hannig</option>
+<option value="Josep Tienda">Josep Tienda</option>							
+<option value="Jürgen Zander">Jürgen Zander</option>
+<option value="Judith Pennington">Judith Pennington</option>
+<option value="Karsten Fischer">Karsten Fischer</option>
+<option value="Kotaro Suzuki">Kotaro Suzuki</option>
+<option value="Kristian Harvey">Kristian Harvey</option>
+<option value="Kristen Wright">Kristen Wright</option>
+<option value="Mark Gaston">Mark Gaston</option>
+<option value="Markus Schütz">Markus Schütz</option>
+<option value="Mei Li">Mei Li</option>
+<option value="Mic Chaudoir">Mic Chaudoir</option>						
+<option value="Nidal Abbas">Nidal Abbas</option>
+<option value="Olaf Meyer">Olaf Meyer</option>
+<option value="Oliver Scheuss">Oliver Scheuss</option>
+<option value="Peter Jacobs">Peter Jacobs</option>
+<option value="Peter Niedzielski">Peter Niedzielski</option>
+<option value="Philippe Bardelle">Philippe Bardelle</option>
+<option value="Ramin Sattari">Ramin Sattari</option>
+<option value="Ricky Wong">Ricky Wong</option>
+<option value="Rob Trottini">Rob Trottini</option>
+<option value="Robert Wegard">Robert Wegard</option>
+<option value="Sabine Weber">Sabine Weber</option>
+<option value="Shawn Eaton">Shawn Eaton</option>
+<option value="Scott Elderkin">Scott Elderkin</option>
+<option value="Scott Kelsall">Scott Kelsall</option>
+<option value="Serena Loh">Serena Loh</option>
+<option value="Steffi Wagener">Steffi Wagener</option>
+<option value="Steffi Petropoulos">Steffi Petropoulos</option>
+<option value="Stephan Fritsch">Stephan Fritsch</option>
+<option value="Stephan Schmall">Stephan Schmall</option>
+<option value="Steve Klibansky">Steve Klibansky</option>
+<option value="Thomas Lambrecht">Thomas Lambrecht</option>
+<option value="Thorsten Hirsch">Thorsten Hirsch</option>
+<option value="Todd Brainard">Todd Brainard</option>
+<option value="Trey Freels">Trey Freels</option>
+<option value="Udo Kirchner">Udo Kirchner</option>
+<option value="Uwe Helwig(Analytical)"> Uwe Helwig(Analytical)</option>
+<option value="William Bailey">William Bailey</option>
+<option value="Yacine Talji">Yacine Talji</option>
+<option value="Yvonne Reinl">Yvonne Reinl</option>
+									
+								</select>
+								</td>
+								<td class=labelcol nowrap>Product Family :
+								<select name="ProductFamily">
+								<option value="All">All</option>
+					<option value="Advanced Imaging">Advanced Imaging</option>
+					<option value="Analytical">Analytical</option>
+					<option value="Biomed-Laser">Biomed-Laser</option>
+					<option value="High Performance">High Performance</option>
+					<option value="Industrial Cermax">Industrial Cermax</option>
+					<option value="Industrial Flash">Industrial Flash</option>
+					<option value="Medical Cermax">Medical Cermax</option>
+					<option value="Photocells">Photocells</option>
+					<option value="Photodiodes">Photodiodes</option>
+ 				    <option value="Photonics Flash">Photonics Flash</option>
+				<option value="Pyroelectric Sensors">Pyroelectric Sensors</option>
+				<option value="Semicon-Inspection">Semicon-Inspection</option>
+				<option value="Solid State Lighting">Solid State Lighting</option>
+				<option value="SPCM">SPCM</option>
+				<option value="Thermopile">Thermopile</option>
+				<option value="UV and Microscopy">UV and Microscopy</option>
+				<option value="Avionics And Space">Avionics And Space</option>
+				<option value="Energetic Systems">Energetic Systems</option>
+				<option value="High Voltage Power">High Voltage Power</option>
+				<option value="Land Equipment">Land Equipment</option>
+				<option value="Power Supplies">Power Supplies</option>
+<option value="Surv and Target Acq">Surv and Target Acq</option>
+						</select>
+								</td>
+								<td class=labelcol nowrap>Only Key Products : <input name="Included" type="checkbox" size="25" /></td>
+							</tr>
+							<tr>
+								<td class=labelcol nowrap>Product Number : <input name="ProductNumber" type="text" size="25" /></td>	
+								<td class=labelcol nowrap>Account Name : <input name="AccountName" type="text" size="25" /></td>
+
+								<td align=center>
+									<input class=btn type="submit" name="submit" value=" Search " />
+								</td>
+							</tr>
+						</table> 
+					</form>
+					<BR />
+				</DIV>
+				
+				<div class="listRelatedObject customnotabBlock">
+
+						<div class="bPageBlock secondaryPalette">
+							<div class="pbHeader">
+								<table cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td class="pbTitle">
+												<img width="1" height="1" title="" class="minWidth" alt="" src="/s.gif"/>
+												<img title="Custom" class="relatedListIcon" alt="Custom" src="/s.gif"/>
+												<h3>Parts : By Sales Manager and Customer</h3>
+
+											</td>
+											
+											<td class="pbButton"></td>
+											
+											<td class="pbHelp">
+												<span title="Monthly Forecast Analysis Help (New Window)" class="help">
+													<a class="linkCol" href="javascript:openPopupFocusEscapePounds('https://na3.salesforce.com/servlet/servlet.FileDownload?file=01550000000KV5q', 'Help', 700, 600, 'width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no', false, false);">
+													
+													<span class="linkSpan">Results Layout Help</span>
+													
+													<img title="Results Layout Help (New Window)" class="helpImage" alt="Results Layout Help (New Window)" src="/s.gif"/>
+													</a>
+
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>		
+											<div class="pbBody">
+												<div id="ResultsHolder"></div>
+												
+				<table id="t1" class="example table-autosort sort02 table-autofilter table-autopage:10 table-stripeclass:alternate table-page-number:t1page table-page-count:t1pages">
+			 		<thead>                            
+						<tr class="headerRow">
+							<th style="width = 120" title="Click to sort" >Action</th>
+							<th style="width = 300" title="Click to sort" class="table-sortable:default table-sortable">Product Number</th>
+							<th style="width = 300" title="Click to sort" class="table-filterable table-sortable:default table-sortable ">Part Description</th>
+							<th style="width = 300" title="Click to sort" class="table-filterable table-sortable:default table-sortable ">Customer Name</th>
+							<th style="width = 300" title="Click to sort" class="table-filterable table-sortable:default table-sortable ">Product Family</th>
+							<th style="width = 25" title="Click to sort" class="table-filterable table-sortable:default table-sortable ">Key ?</th>
+							<th style="width = 300" title="Click to sort" class="table-filterable table-sortable:default table-sortable ">Sales Rep</th>	
+						</tr>
+					</thead>
+					
+					<tbody id="mtblBody"></tbody>
+
+					<tfoot>
+					<tr>
+						<td colspan="2" style="text-align: left;" id="tfootPages"></td>
+							<td colspan="4" style="text-align: left">
+							<!--<td colspan="3" style="text-align: left; border-bottom: #e5c130 1px solid">
+							<a href="#" class="pagelink" id="pageprevious" onclick="pageexample('previous'); return false;"><b>&lt;&lt;&nbsp;</b></a>--><b>Page 
+								<span id="t1page"></b><!--</span>&nbsp;of <span id="t1pages"></span>
+							<a href="#" class="pagelink" id="pagenext" onclick="pageexample('next'); return false;"><b>&nbsp;&gt;&gt;</b></a>-->
+						</td>
+					</tr>	
+					</tfoot>
+				</table>
+								</div>	
+						</div>
+
+				</DIV>	
+				<div class="listRelatedObject customnotabBlock">
+						<div class="bPageBlock secondaryPalette">
+							<div class="pbHeader">
+								<table cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td class="pbTitle">
+												<img width="1" height="1" title="" class="minWidth" alt="" src="/s.gif"/>
+
+												<img title="Custom" class="relatedListIcon" alt="Custom" src="/s.gif"/>
+												<h3>Monthly Forecast : Rolling 12 Months</h3>
+											</td>
+											
+											<td class="pbButton"></td>
+											
+											<td class="pbHelp">
+												<span title="Update Layout Help (New Window)" class="help">
+													<a class="linkCol" href="javascript:openPopupFocusEscapePounds('https://na3.salesforce.com/servlet/servlet.FileDownload?file=01550000000KV63', 'Help', 700, 600, 'width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no', false, false);">
+													
+													<span class="linkSpan">Update Layout Help</span>
+
+													
+													<img title="Update Layout Help (New Window)" class="helpImage" alt="Update Layout Help (New Window)" src="/s.gif"/>
+													</a>
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>		
+											<div class="pbBody">
+
+												<div id="outputpow-div"></div>
+											</div>	
+						</div>
+				</DIV>
+				<div class="listRelatedObject customnotabBlock">
+				<div id="ep" class="bPageBlock secondaryPalette">
+					<div class="pbHeader">
+						<table cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+
+								<tr>
+									<td class="pbTitle">
+										<img width="1" height="1" title="" class="minWidth" alt="" src="/s.gif"/>
+										<img title="Custom" class="relatedListIcon" alt="Custom" src="/s.gif"/>
+										<h3>History : Previous Months</h3>
+									</td>
+									
+									<td class="pbButton"></td>
+									
+									<td class="pbHelp">
+
+										<span title="History Layout Help (New Window)" class="help">
+											<a class="linkCol" href="javascript:openPopupFocusEscapePounds('', 'Help', 700, 600, 'width=700,height=600,resizable=yes,toolbar=yes,status=no,scrollbars=yes,menubar=yes,directories=no,location=no,dependant=no', false, false);">
+											
+											<span class="linkSpan">History Layout Help</span>
+											
+											<img title="Monthly Forecast Analysis Help (New Window)" class="helpImage" alt="History Layout Help (New Window)" src="/s.gif"/>
+											</a>
+										</span>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>		
+					<div class="pbBody">			
+							<div id="head_01B50000002QXeU_ep" class="pbSubheader first tertiaryPalette">
+								<img id="img_01B50000002QXeU" class="hideListButton" title="Part History Details" style="cursor: pointer;" onClick="twistSection(this);" name="Part History Details" alt="Part History Details" src="/s.gif"/>
+								<h3>Part History Details<span class="titleSeparatingColon">:</span></h3>
+							</div>
+							
+							<div class="pbSubsection" style="display: block;">
+
+								<div id="outputpowT-div"></div>
+							</div>
+					</div>
+				</div>	
+			</DIV>			
+			</DIV>
+		</DIV>
+	</BODY>
+</html>

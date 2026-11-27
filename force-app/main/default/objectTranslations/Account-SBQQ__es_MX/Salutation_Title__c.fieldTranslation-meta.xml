@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Salutation/Title --></label>
+    <name>Salutation_Title__c</name>
+    <picklistValues>
+        <masterLabel>Company</masterLabel>
+        <translation><!-- Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dr.</masterLabel>
+        <translation><!-- Dr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firma</masterLabel>
+        <translation><!-- Firma --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frau</masterLabel>
+        <translation><!-- Frau --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frau Dipl. Ing.</masterLabel>
+        <translation><!-- Frau Dipl. Ing. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frau Dr.</masterLabel>
+        <translation><!-- Frau Dr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frau Prof. Dr.</masterLabel>
+        <translation><!-- Frau Prof. Dr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frau Professor</masterLabel>
+        <translation><!-- Frau Professor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Herr</masterLabel>
+        <translation><!-- Herr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Herr Dipl. Ing.</masterLabel>
+        <translation><!-- Herr Dipl. Ing. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Herr Dr.</masterLabel>
+        <translation><!-- Herr Dr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Herr Prof. Dr.</masterLabel>
+        <translation><!-- Herr Prof. Dr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Herr Professor</masterLabel>
+        <translation><!-- Herr Professor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mr.</masterLabel>
+        <translation><!-- Mr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ms.</masterLabel>
+        <translation><!-- Ms. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prof. Dr.</masterLabel>
+        <translation><!-- Prof. Dr. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professor</masterLabel>
+        <translation><!-- Professor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

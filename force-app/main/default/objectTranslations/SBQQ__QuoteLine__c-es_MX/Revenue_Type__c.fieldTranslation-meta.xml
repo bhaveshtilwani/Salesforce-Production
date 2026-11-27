@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Type --></label>
+    <name>Revenue_Type__c</name>
+    <picklistValues>
+        <masterLabel>NRE / Prototype</masterLabel>
+        <translation><!-- NRE / Prototype --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Serial Product</masterLabel>
+        <translation><!-- Serial Product --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service / Fee</masterLabel>
+        <translation><!-- Service / Fee --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

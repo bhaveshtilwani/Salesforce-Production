@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Classification__c</fullName>
+    <label>Account Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AWV Part I A (military list)</fullName>
+                <default>false</default>
+                <label>AWV Part I A (military list)</label>
+            </value>
+            <value>
+                <fullName>AWV Part I C/EU-Dual Use (Dual Use list)</fullName>
+                <default>false</default>
+                <label>AWV Part I C/EU-Dual Use (Dual Use list)</label>
+            </value>
+            <value>
+                <fullName>Civil</fullName>
+                <default>false</default>
+                <label>Civil</label>
+            </value>
+            <value>
+                <fullName>EAR</fullName>
+                <default>false</default>
+                <label>EAR</label>
+            </value>
+            <value>
+                <fullName>EAR99</fullName>
+                <default>false</default>
+                <label>EAR99</label>
+            </value>
+            <value>
+                <fullName>ITAR</fullName>
+                <default>false</default>
+                <label>ITAR</label>
+            </value>
+            <value>
+                <fullName>Not Listed</fullName>
+                <default>false</default>
+                <label>Not Listed</label>
+            </value>
+            <value>
+                <fullName>Standard Plus</fullName>
+                <default>false</default>
+                <label>Standard Plus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

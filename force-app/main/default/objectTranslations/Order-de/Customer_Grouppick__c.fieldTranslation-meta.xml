@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Customer Group --></label>
+    <name>Customer_Grouppick__c</name>
+    <picklistValues>
+        <masterLabel>(01) OEM regular customer</masterLabel>
+        <translation><!-- (01) OEM regular customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(02) PKI Distributor</masterLabel>
+        <translation><!-- (02) PKI Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(03) InterCompany, PKI</masterLabel>
+        <translation><!-- (03) InterCompany, PKI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(04) Intra-SBU, Opto</masterLabel>
+        <translation><!-- (04) Intra-SBU, Opto --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(05) Intra-SBE, Tel/Sens</masterLabel>
+        <translation><!-- (05) Intra-SBE, Tel/Sens --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>(06) Intra-Div, Canada</masterLabel>
+        <translation><!-- (06) Intra-Div, Canada --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

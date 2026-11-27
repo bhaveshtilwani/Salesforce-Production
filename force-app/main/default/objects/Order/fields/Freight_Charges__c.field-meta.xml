@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Freight_Charges__c</fullName>
+    <description>Note: This amount is already converted to USD.</description>
+    <inlineHelpText>Sum of freight charges in Freight object
+Note: This amount is already converted to USD.</inlineHelpText>
+    <label>Freight Charges</label>
+    <summarizedField>Freight__c.QAD_Freight_Amount_Converted__c</summarizedField>
+    <summaryForeignKey>Freight__c.Order_Ref__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

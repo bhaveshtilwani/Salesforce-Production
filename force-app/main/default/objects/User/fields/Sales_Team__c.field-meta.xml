@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Team__c</fullName>
+    <label>Sales TeamOLD</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asia Sales Team</fullName>
+                <default>false</default>
+                <label>Asia Sales Team</label>
+            </value>
+            <value>
+                <fullName>CISS Americas</fullName>
+                <default>false</default>
+                <label>CISS Americas</label>
+            </value>
+            <value>
+                <fullName>CISS EMEA</fullName>
+                <default>false</default>
+                <label>CISS EMEA</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Industrial Curing WW</fullName>
+                <default>false</default>
+                <label>Industrial Curing WW</label>
+            </value>
+            <value>
+                <fullName>LSA and Semi Americas</fullName>
+                <default>false</default>
+                <label>LSA and Semi Americas</label>
+            </value>
+            <value>
+                <fullName>LSA and Semi EMEA</fullName>
+                <default>false</default>
+                <label>LSA and Semi EMEA</label>
+            </value>
+            <value>
+                <fullName>Unassigned Sales Team</fullName>
+                <default>false</default>
+                <label>Unassigned Sales Team</label>
+            </value>
+            <value>
+                <fullName>WW Channel Sales</fullName>
+                <default>false</default>
+                <label>WW Channel Sales</label>
+            </value>
+            <value>
+                <fullName>Latin America Sales</fullName>
+                <default>false</default>
+                <label>Latin America Sales</label>
+            </value>
+            <value>
+                <fullName>AO</fullName>
+                <default>false</default>
+                <label>AO</label>
+            </value>
+            <value>
+                <fullName>AES</fullName>
+                <default>false</default>
+                <label>AES</label>
+            </value>
+            <value>
+                <fullName>LAND</fullName>
+                <default>false</default>
+                <label>LAND</label>
+            </value>
+            <value>
+                <fullName>AXSUN</fullName>
+                <default>false</default>
+                <label>AXSUN</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

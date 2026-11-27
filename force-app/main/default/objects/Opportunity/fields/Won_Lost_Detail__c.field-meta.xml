@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Won_Lost_Detail__c</fullName>
+    <label>Won/Lost Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>After sales and/or support</fullName>
+                <default>false</default>
+                <label>After sales and/or support</label>
+            </value>
+            <value>
+                <fullName>Been requoted</fullName>
+                <default>false</default>
+                <label>Been requoted</label>
+            </value>
+            <value>
+                <fullName>Brand name</fullName>
+                <default>false</default>
+                <label>Brand name</label>
+            </value>
+            <value>
+                <fullName>Closed Automatically do to no Activity</fullName>
+                <default>false</default>
+                <label>Closed Automatically do to no Activity</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Ease of use</fullName>
+                <default>false</default>
+                <label>Ease of use</label>
+            </value>
+            <value>
+                <fullName>Incumbent position of EXFO</fullName>
+                <default>false</default>
+                <label>Incumbent position of EXFO</label>
+            </value>
+            <value>
+                <fullName>Lack of Customer Response</fullName>
+                <default>false</default>
+                <label>Lack of Customer Response</label>
+            </value>
+            <value>
+                <fullName>Lost Competitor Spare found</fullName>
+                <default>false</default>
+                <label>Lost Competitor Spare found</label>
+            </value>
+            <value>
+                <fullName>Loss Due to Long Lead Time</fullName>
+                <default>false</default>
+                <label>Loss Due to Long Lead Time</label>
+            </value>
+            <value>
+                <fullName>Lost due to lack of budget</fullName>
+                <default>false</default>
+                <label>Lost due to lack of budget</label>
+            </value>
+            <value>
+                <fullName>Lost due to project cancellation</fullName>
+                <default>false</default>
+                <label>Lost due to project cancellation</label>
+            </value>
+            <value>
+                <fullName>Loss no UV/LED application</fullName>
+                <default>false</default>
+                <label>Loss no UV/LED application</label>
+            </value>
+            <value>
+                <fullName>Lost Lumen Spare Unit Found</fullName>
+                <default>false</default>
+                <label>Lost Lumen Spare Unit Found</label>
+            </value>
+            <value>
+                <fullName>Lost on bad customer experience</fullName>
+                <default>false</default>
+                <label>Lost on bad customer experience</label>
+            </value>
+            <value>
+                <fullName>Lost on payment or delivery terms</fullName>
+                <default>false</default>
+                <label>Lost on payment or delivery terms</label>
+            </value>
+            <value>
+                <fullName>Lost on price</fullName>
+                <default>false</default>
+                <label>Lost on price</label>
+            </value>
+            <value>
+                <fullName>Lost on product - missing features</fullName>
+                <default>false</default>
+                <label>Lost on product - missing features</label>
+            </value>
+            <value>
+                <fullName>Lost on product – too feature rich</fullName>
+                <default>false</default>
+                <label>Lost on product – too feature rich</label>
+            </value>
+            <value>
+                <fullName>Lost on relationship</fullName>
+                <default>false</default>
+                <label>Lost on relationship</label>
+            </value>
+            <value>
+                <fullName>Lost to Competitor</fullName>
+                <default>false</default>
+                <label>Lost to Competitor</label>
+            </value>
+            <value>
+                <fullName>Lost to incumbent competitor</fullName>
+                <default>false</default>
+                <label>Lost to incumbent competitor</label>
+            </value>
+            <value>
+                <fullName>Opportunity Duplicated</fullName>
+                <default>false</default>
+                <label>Opportunity Duplicated</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Product compatibility</fullName>
+                <default>false</default>
+                <label>Product compatibility</label>
+            </value>
+            <value>
+                <fullName>Product Not in Portfolio</fullName>
+                <default>false</default>
+                <label>Product Not in Portfolio</label>
+            </value>
+            <value>
+                <fullName>Purchased through our Distributor Channel</fullName>
+                <default>false</default>
+                <label>Purchased through our Distributor Channel</label>
+            </value>
+            <value>
+                <fullName>Purchasing Via Partner</fullName>
+                <default>false</default>
+                <label>Purchasing Via Partner</label>
+            </value>
+            <value>
+                <fullName>Quality of pre-sales support</fullName>
+                <default>false</default>
+                <label>Quality of pre-sales support</label>
+            </value>
+            <value>
+                <fullName>Relationship with customer</fullName>
+                <default>false</default>
+                <label>Relationship with customer</label>
+            </value>
+            <value>
+                <fullName>Sent to Our Distributor</fullName>
+                <default>false</default>
+                <label>Sent to Our Distributor</label>
+            </value>
+            <value>
+                <fullName>SR Rejected</fullName>
+                <default>false</default>
+                <label>SR Rejected</label>
+            </value>
+            <value>
+                <fullName>Technical Specifications</fullName>
+                <default>false</default>
+                <label>Technical Specifications</label>
+            </value>
+            <value>
+                <fullName>Warranty</fullName>
+                <default>false</default>
+                <label>Warranty</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,63 @@
+<apex:page tabstyle="Product2">
+
+<script>
+
+    var newWin=null;
+
+    function openLookupPopup(name, id)
+
+    {
+
+        var url="/apex/ProductcustomLookuppage?namefield=" + name + "&idfield=" + id;
+
+        newWin=window.open(url, 'Popup','height=500,width=600,left=100,top=100,resizable=no,scrollbars=yes,toolbar=no,status=no');
+
+        if (window.focus)
+
+        {
+
+            newWin.focus();
+
+        }
+
+             
+
+        return false;
+
+    } 
+
+</script>                 
+
+  <apex:form >
+
+  <apex:pageBlock title=""> 
+
+      <apex:pageBlockSection columns="1">
+
+        <apex:pageBlockSectionitem >
+
+          <apex:outputLabel value="Product"/>
+
+          <apex:outputPanel >
+
+            <apex:inputHidden id="targetId" />
+
+            <apex:inputText size="20" id="targetName" onFocus="this.blur()" disabled="false"/>
+
+            <img src="/s.gif" class="lookupIcon" 
+            onmouseout="this.className='lookupIcon';" alt="Product Name Lookup (New Window)" onmouseover="this.className='lookupIconOn';"/>          
+
+          </apex:outputPanel>
+
+        </apex:pageBlockSectionitem>
+
+      </apex:pageBlockSection>
+
+    
+    </apex:pageBlock>
+
+  </apex:form> 
+
+  
+
+</apex:page>

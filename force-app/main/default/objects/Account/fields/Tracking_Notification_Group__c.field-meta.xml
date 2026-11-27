@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tracking_Notification_Group__c</fullName>
+    <inlineHelpText>semi-colong separated list of email addresses (e.g. john.domain.com;jane@domain.com)</inlineHelpText>
+    <label>Tracking Notification Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

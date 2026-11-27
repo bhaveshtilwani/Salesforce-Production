@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RMA_Site__c</fullName>
+    <description>AX Billerica RMA Site</description>
+    <inlineHelpText>AX Billerica RMA Site</inlineHelpText>
+    <label>RMA Site (AX Billerica)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Main</fullName>
+                <default>false</default>
+                <label>Main</label>
+            </value>
+            <value>
+                <fullName>Zero Cost</fullName>
+                <default>false</default>
+                <label>Zero Cost</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

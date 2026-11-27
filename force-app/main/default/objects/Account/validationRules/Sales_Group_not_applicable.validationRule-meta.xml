@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Group_not_applicable</fullName>
+    <active>false</active>
+    <description>Sales Group not applicable for
+Ship To - W002  - Wiesbaden
+Ship To - H002  - Hamble 
+Bill To - W004 - Wiesbaden
+Bill To - H004 - Hamble</description>
+    <errorConditionFormula>AND($RecordType.Name = &quot;SAP Germany&quot;,OR( ISPICKVAL( Account_Group__c , &quot;Ship To - W002&quot;), ISPICKVAL( Account_Group__c , &quot;Ship To - H002&quot;),
+ISPICKVAL( Account_Group__c , &quot;Bill To - W004&quot;), ISPICKVAL( Account_Group__c , &quot;Bill To - H004&quot;)))
+&amp;&amp; TEXT(Sales_Group__c)&lt;&gt; &apos;&apos;</errorConditionFormula>
+    <errorDisplayField>Sales_Group__c</errorDisplayField>
+    <errorMessage>Sales Group is not applicable for selected Account Group.</errorMessage>
+</ValidationRule>

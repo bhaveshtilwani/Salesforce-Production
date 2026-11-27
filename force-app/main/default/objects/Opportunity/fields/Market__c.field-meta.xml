@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market__c</fullName>
+    <label>Market</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aircraft</fullName>
+                <default>false</default>
+                <label>Aircraft</label>
+            </value>
+            <value>
+                <fullName>Avionics</fullName>
+                <default>false</default>
+                <label>Avionics</label>
+            </value>
+            <value>
+                <fullName>Bombs</fullName>
+                <default>false</default>
+                <label>Bombs</label>
+            </value>
+            <value>
+                <fullName>Communications</fullName>
+                <default>false</default>
+                <label>Communications</label>
+            </value>
+            <value>
+                <fullName>Energetic Components</fullName>
+                <default>false</default>
+                <label>Energetic Components</label>
+            </value>
+            <value>
+                <fullName>Ground Vehicle</fullName>
+                <default>false</default>
+                <label>Ground Vehicle</label>
+            </value>
+            <value>
+                <fullName>Military Communications</fullName>
+                <default>false</default>
+                <label>Military Communications</label>
+            </value>
+            <value>
+                <fullName>Missiles</fullName>
+                <default>false</default>
+                <label>Missiles</label>
+            </value>
+            <value>
+                <fullName>Mortar</fullName>
+                <default>false</default>
+                <label>Mortar</label>
+            </value>
+            <value>
+                <fullName>Nuclear Stockpile</fullName>
+                <default>false</default>
+                <label>Nuclear Stockpile</label>
+            </value>
+            <value>
+                <fullName>PGW</fullName>
+                <default>false</default>
+                <label>PGW</label>
+            </value>
+            <value>
+                <fullName>Sonar</fullName>
+                <default>false</default>
+                <label>Sonar</label>
+            </value>
+            <value>
+                <fullName>Space</fullName>
+                <default>false</default>
+                <label>Space</label>
+            </value>
+            <value>
+                <fullName>Targeting Pod</fullName>
+                <default>false</default>
+                <label>Targeting Pod</label>
+            </value>
+            <value>
+                <fullName>UAV</fullName>
+                <default>false</default>
+                <label>UAV</label>
+            </value>
+            <value>
+                <fullName>Air</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Air</label>
+            </value>
+            <value>
+                <fullName>EOIR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EOIR</label>
+            </value>
+            <value>
+                <fullName>Ground</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ground</label>
+            </value>
+            <value>
+                <fullName>Ground &amp; Air</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ground &amp; Air</label>
+            </value>
+            <value>
+                <fullName>Sea</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sea</label>
+            </value>
+            <value>
+                <fullName>Surveillance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Surveillance</label>
+            </value>
+            <value>
+                <fullName>Target Acquisition</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Target Acquisition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Case_Reason__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General Support</fullName>
+                <default>false</default>
+                <label>General Support</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>true</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Responsiveness</fullName>
+                <default>false</default>
+                <label>Responsiveness</label>
+            </value>
+            <value>
+                <fullName>Return RMA process</fullName>
+                <default>false</default>
+                <label>Return RMA process</label>
+            </value>
+            <value>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+                <label>Shipping</label>
+            </value>
+            <value>
+                <fullName>Technical / Design support</fullName>
+                <default>false</default>
+                <label>Technical / Design support</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Stock check</controllingFieldValue>
+            <controllingFieldValue>Technical Support</controllingFieldValue>
+            <controllingFieldValue>ITC / Trade Compliance related</controllingFieldValue>
+            <controllingFieldValue>Lead Time</controllingFieldValue>
+            <controllingFieldValue>New order submission</controllingFieldValue>
+            <controllingFieldValue>New quote request</controllingFieldValue>
+            <controllingFieldValue>New Return request</controllingFieldValue>
+            <controllingFieldValue>Problem</controllingFieldValue>
+            <controllingFieldValue>Question</controllingFieldValue>
+            <controllingFieldValue>Quote status request</controllingFieldValue>
+            <controllingFieldValue>Quote still valid/ extensions</controllingFieldValue>
+            <controllingFieldValue>RoHs Certificate request</controllingFieldValue>
+            <controllingFieldValue>Collections</controllingFieldValue>
+            <controllingFieldValue>Conflict Minerals document copies</controllingFieldValue>
+            <controllingFieldValue>Datasheet request</controllingFieldValue>
+            <controllingFieldValue>Order Confirmation</controllingFieldValue>
+            <controllingFieldValue>Existing Return status request</controllingFieldValue>
+            <controllingFieldValue>Feedback</controllingFieldValue>
+            <controllingFieldValue>Follow up existing order status</controllingFieldValue>
+            <controllingFieldValue>Internal Request - Various</controllingFieldValue>
+            <controllingFieldValue>Compliance_Documents</controllingFieldValue>
+            <controllingFieldValue>Sample request</controllingFieldValue>
+            <controllingFieldValue>Shipping documents copy request</controllingFieldValue>
+            <valueName>N/A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Compliment</controllingFieldValue>
+            <valueName>General Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Compliment</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Compliment</controllingFieldValue>
+            <valueName>Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Compliment</controllingFieldValue>
+            <valueName>Responsiveness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Compliment</controllingFieldValue>
+            <valueName>Return RMA process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Compliment</controllingFieldValue>
+            <valueName>Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Complaint</controllingFieldValue>
+            <controllingFieldValue>Compliment</controllingFieldValue>
+            <valueName>Technical / Design support</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

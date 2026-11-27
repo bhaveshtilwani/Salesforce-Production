@@ -1,0 +1,31 @@
+<template>
+    <lightning-modal-header label="Pricing Conditions"></lightning-modal-header>
+    <lightning-modal-body>
+        <template for:each={pricingConditions} for:item="pricingCondition">
+            <c-product-selection-pricing-conditions-unit
+                key={pricingCondition.uiId}
+                pricing-conditions-fields={PRICING_CONDITIONS_FIELDS}
+                original-pricing-conditions={pricingCondition}
+                ondeletepricingcondition={handleDeletePricingCondition}
+            ></c-product-selection-pricing-conditions-unit>
+        </template>
+        <div class="slds-align_absolute-center slds-var-m-top_medium">
+            <lightning-button
+                variant="base"
+                label="Add Pricing Conditions"
+                title="Add Pricing Conditions"
+                icon-name="utility:add"
+                onclick={handleAddPricingConditions}
+            ></lightning-button>
+        </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button
+            variant="destructive-text"
+            label="Cancel"
+            class="slds-var-m-right_medium"
+            onclick={handleCancel}
+        ></lightning-button>
+        <lightning-button variant="brand" label="Save Selection" onclick={handleSaveSelection}></lightning-button>
+    </lightning-modal-footer>
+</template>

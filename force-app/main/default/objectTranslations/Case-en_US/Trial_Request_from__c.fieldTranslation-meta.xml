@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Trial Requested From --></label>
+    <name>Trial_Request_from__c</name>
+    <picklistValues>
+        <masterLabel>3rd internal parties</masterLabel>
+        <translation><!-- 3rd internal parties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer via sales</masterLabel>
+        <translation><!-- Customer via sales --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,80 @@
+<apex:page StandardController="OrderItem" standardStylesheets="false"  extensions="OrderItem_SplitQuantityController" >
+    <apex:outputPanel rendered="{!$User.UIThemeDisplayed != 'Theme3'}">
+    <apex:slds />
+    <apex:includeLightning />
+    <div id="orderLineSplitQuantityDiv" />
+    <script>
+
+    var recordId = "{!$CurrentPage.parameters.id}";
+    //creating Ligtning Component
+    $Lightning.use("c:orderItemSplitQuantityApp", function() {
+        $Lightning.createComponent(
+            "c:orderLineSplitQuantityCMP",
+            {'recordId':recordId },
+            "orderLineSplitQuantityDiv",
+            function(cmp) {
+            console.log("Component is created!");
+            // Event Service hander to handle the lightning component custom event
+            $A.eventService.addHandler({ "event": "c:sendMessageToVFPageEVT", "handler": retriveEventData });
+        });
+    });
+    function retriveEventData (event){
+        console.log('This message is from visualforce function');
+        console.log('Data which is coming from lightning component',event.getParam('message'));
+        if(event.getParam('message') != '') {
+            showToast(event.getParam('message'));
+        } else {
+            navigateObject(event.getParam('obj'));
+        }
+    }
+    function showToast(errmessage) {
+        sforce.one.showToast({
+            "title": "Error!",
+            "message": errmessage,
+            "type": "error",
+            "mode": "sticky"
+        });
+    }
+    function navigateObject(obj){
+        sforce.one.navigateToSObject(obj, 'detail');
+    }
+    </script>
+</apex:outputPanel>
+<apex:outputPanel rendered="{!$User.UIThemeDisplayed == 'Theme3'}">
+    <apex:pageBlock id="selectBlock" title="Split Quantity">
+    <apex:form id="selectform">
+        <Table>
+            <tr><td colspan="3" align="center">
+                <apex:outputLabel id="userMsg" style="color:red" >{!userMsg}</apex:outputLabel>
+            </td></tr>
+        </table>
+        Enter New Quantity: <apex:inputText id="OLQuant" value="{!newQuantity}" />&nbsp;
+        <apex:commandButton value="Split Quantity" action="{!splitQuantityOrderLine}" status="status" reRender="selectform"/>
+    </apex:form>
+    </apex:pageBlock>
+   </apex:outputPanel>
+   
+       
+
+<apex:form style="width: 30%;color:black;border-style:solid;border-width:2px;
+                      border-color:slategray;background-color:whitesmoke">
+                      <H1 style="text-align:center;font-size:20px;">
+            Original Line - For Reference
+        </H1><br/>
+        <apex:outputLabel style="color:black;font-size:14px;text-algn:center;border:2px;">
+<center>
+  <apex:pageBlock >
+  <apex:pageBlockSection id="section1" Columns="1" >
+      <apex:outputField value="{! OrderItem.Quantity}"/>
+      <apex:outputField value="{! OrderItem.ERP_Order_Line_Status__c}"/>
+      <apex:outputField value="{! OrderItem.ERP_Sales_Order_Number__c}"/>
+      <apex:outputField value="{! OrderItem.ERP_Line_Number__c}"/>
+      <apex:outputField value="{! OrderItem.Customer_Requested_Date__c}"/>
+      <apex:outputField value="{! OrderItem.Scheduled_Ship_Date__c}"/>
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    </center>
+    </apex:outputLabel>
+</apex:form>
+
+</apex:page>

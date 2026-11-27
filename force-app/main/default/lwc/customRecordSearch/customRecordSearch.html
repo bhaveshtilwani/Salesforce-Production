@@ -1,0 +1,74 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="spinnerContainer">
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </div>
+    </template>
+    <lightning-card variant="Narrow" title="New Account" icon-name="standard:account">
+        <div class="slds-p-around_small">
+            <template if:false={showCreateForm}>
+                <lightning-input
+                    type="search"
+                    variant="standard"
+                    name="Account Name"
+                    label="Account Name"
+                    value={searchString}
+                    onchange={handleInputChange}
+                ></lightning-input>
+
+                <div style="height: 300px" if:true={displayDatatable}>
+                    <lightning-datatable key-field="key" data={data} max-row-selection="1" onrowselection={handleRowSelected} columns={columns}>
+                    </lightning-datatable>
+                </div>
+            </template>
+
+            <template if:true={showCreateForm}>
+                <lightning-record-edit-form
+                    id="recordViewForm"
+                    record-type-id={recordTypeId}
+                    object-api-name="Account"
+                    onsuccess={handleSuccess}
+                    onerror={handleFormError}
+                >
+                    <!-- <lightning-messages></lightning-messages> -->
+                    <div class="slds-grid slds-wrap">
+                        <template for:each={pageLayoutData} for:item="pageItem">
+                            <div key={pageItem.Section} class="slds-size_1-of-1 slds-page-header slds-p-around_x-small">
+                                <div class="slds-page-header__name-title">
+                                    <Strong class="slds-truncate" title="">{pageItem.Section}</Strong>
+                                </div>
+                            </div>
+                            <div key={pageItem.Section} class="slds-size_1-of-2">
+                                <template for:each={pageItem.Fields.Col1} for:item="col1">
+                                    <div key={col1.APIName}>
+                                        <lightning-input-field field-name={col1.APIName} disabled={col1.Disabled} value={col1.Value}> </lightning-input-field>
+                                    </div>
+                                </template>
+                            </div>
+                            <div key={pageItem.Section} class="slds-size_1-of-2">
+                                <template for:each={pageItem.Fields.Col2} for:item="col1">
+                                    <div key={col1.APIName}>
+                                        <lightning-input-field field-name={col1.APIName} disabled={col1.Disabled} value={col1.Value}> </lightning-input-field>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                    <div slot="footer"></div>
+                </lightning-record-edit-form>
+            </template>
+        </div>
+
+        <div slot="footer">
+            <template if:false={showCreateForm}>
+                <lightning-button variant="brand" label="Search" title="Search" onclick={handleSearch} class="slds-var-p-right_small"> </lightning-button>
+                <lightning-button disabled={continueDisabled} variant="neutral" label="Continue" title="Continue" onclick={handleContinue}> </lightning-button>
+            </template>
+            <template if:true={showCreateForm}>
+                <lightning-button class="slds-var-p-right_small" label="Submit" title="Submit" variant="brand" onclick={handleSubmit}></lightning-button>
+                <lightning-button class="slds-var-p-right_small" label="Back" title="Back" onclick={handleBack}></lightning-button>
+                <lightning-button label="Cancel" title="Cancel" onclick={handleCancel}></lightning-button>
+            </template>
+        </div>
+    </lightning-card>
+</template>

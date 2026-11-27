@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Feedback_TypeREO__c</fullName>
+    <inlineHelpText>Select the reason(s) why the customer case is being opened.</inlineHelpText>
+    <label>Customer Feedback Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Document – Commercial Invoice</fullName>
+                <default>false</default>
+                <label>Document – Commercial Invoice</label>
+            </value>
+            <value>
+                <fullName>Document – Label</fullName>
+                <default>false</default>
+                <label>Document – Label</label>
+            </value>
+            <value>
+                <fullName>Document - OTHER</fullName>
+                <default>false</default>
+                <label>Document - OTHER</label>
+            </value>
+            <value>
+                <fullName>Document - Packing List</fullName>
+                <default>false</default>
+                <label>Document - Packing List</label>
+            </value>
+            <value>
+                <fullName>Document – Raw material C of C</fullName>
+                <default>false</default>
+                <label>Document – Raw material C of C</label>
+            </value>
+            <value>
+                <fullName>Document – REO C of C</fullName>
+                <default>false</default>
+                <label>Document – REO C of C</label>
+            </value>
+            <value>
+                <fullName>Document – REO Invoice</fullName>
+                <default>false</default>
+                <label>Document – REO Invoice</label>
+            </value>
+            <value>
+                <fullName>Document – REO Quality report</fullName>
+                <default>false</default>
+                <label>Document – REO Quality report</label>
+            </value>
+            <value>
+                <fullName>Document - Scans</fullName>
+                <default>false</default>
+                <label>Document - Scans</label>
+            </value>
+            <value>
+                <fullName>Document - Test data</fullName>
+                <default>false</default>
+                <label>Document - Test data</label>
+            </value>
+            <value>
+                <fullName>Order Acknowledgment delay/Missing</fullName>
+                <default>false</default>
+                <label>Order Acknowledgment delay/Missing</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Shipped to wrong address</fullName>
+                <default>false</default>
+                <label>Shipped to wrong address</label>
+            </value>
+            <value>
+                <fullName>Shipped with wrong method</fullName>
+                <default>false</default>
+                <label>Shipped with wrong method</label>
+            </value>
+            <value>
+                <fullName>Shipped wrong quantity</fullName>
+                <default>false</default>
+                <label>Shipped wrong quantity</label>
+            </value>
+            <value>
+                <fullName>Shipping OTHER</fullName>
+                <default>false</default>
+                <label>Shipping OTHER</label>
+            </value>
+            <value>
+                <fullName>Shipped wrong item(s)</fullName>
+                <default>false</default>
+                <label>Shipped wrong item(s)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

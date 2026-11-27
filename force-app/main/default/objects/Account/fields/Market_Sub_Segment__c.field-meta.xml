@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Sub_Segment__c</fullName>
+    <label>Market Sub-Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Market_Segment__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adhesives/Chemicals</fullName>
+                <default>false</default>
+                <label>Adhesives/Chemicals</label>
+            </value>
+            <value>
+                <fullName>Analytical Instrumentation</fullName>
+                <default>false</default>
+                <label>Analytical Instrumentation</label>
+            </value>
+            <value>
+                <fullName>Automated Assembly</fullName>
+                <default>false</default>
+                <label>Automated Assembly</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Aviation/Space</fullName>
+                <default>false</default>
+                <label>Aviation/Space</label>
+            </value>
+            <value>
+                <fullName>Biomedical</fullName>
+                <default>false</default>
+                <label>Biomedical</label>
+            </value>
+            <value>
+                <fullName>Blue-Ray DVD</fullName>
+                <default>false</default>
+                <label>Blue-Ray DVD</label>
+            </value>
+            <value>
+                <fullName>Bluetooth headsets</fullName>
+                <default>false</default>
+                <label>Bluetooth headsets</label>
+            </value>
+            <value>
+                <fullName>Calibration</fullName>
+                <default>false</default>
+                <label>Calibration</label>
+            </value>
+            <value>
+                <fullName>Cannula/Needle Assembly</fullName>
+                <default>false</default>
+                <label>Cannula/Needle Assembly</label>
+            </value>
+            <value>
+                <fullName>Catheters</fullName>
+                <default>false</default>
+                <label>Catheters</label>
+            </value>
+            <value>
+                <fullName>CCM (Compact Camera Module)</fullName>
+                <default>false</default>
+                <label>CCM (Compact Camera Module)</label>
+            </value>
+            <value>
+                <fullName>Cellular Manipulation</fullName>
+                <default>false</default>
+                <label>Cellular Manipulation</label>
+            </value>
+            <value>
+                <fullName>Defense</fullName>
+                <default>false</default>
+                <label>Defense</label>
+            </value>
+            <value>
+                <fullName>Digital Printing</fullName>
+                <default>false</default>
+                <label>Digital Printing</label>
+            </value>
+            <value>
+                <fullName>Display</fullName>
+                <default>false</default>
+                <label>Display</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>DSC/Rheology</fullName>
+                <default>false</default>
+                <label>DSC/Rheology</label>
+            </value>
+            <value>
+                <fullName>Electronic Contract Manufacturers</fullName>
+                <default>false</default>
+                <label>Electronic Contract Manufacturers</label>
+            </value>
+            <value>
+                <fullName>Electronic Encoders</fullName>
+                <default>false</default>
+                <label>Electronic Encoders</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Electrophysiology</fullName>
+                <default>false</default>
+                <label>Electrophysiology</label>
+            </value>
+            <value>
+                <fullName>Equipment Manufacturers</fullName>
+                <default>false</default>
+                <label>Equipment Manufacturers</label>
+            </value>
+            <value>
+                <fullName>Ex Distributor</fullName>
+                <default>false</default>
+                <label>Ex Distributor</label>
+            </value>
+            <value>
+                <fullName>Fiber Coating</fullName>
+                <default>false</default>
+                <label>Fiber Coating</label>
+            </value>
+            <value>
+                <fullName>Fiber Optics</fullName>
+                <default>false</default>
+                <label>Fiber Optics</label>
+            </value>
+            <value>
+                <fullName>Full Cure - Multiple Pass</fullName>
+                <default>false</default>
+                <label>Full Cure - Multiple Pass</label>
+            </value>
+            <value>
+                <fullName>Full Cure - Single Pass-Labels</fullName>
+                <default>false</default>
+                <label>Full Cure - Single Pass-Labels</label>
+            </value>
+            <value>
+                <fullName>Full Cure - Single Pass-Marking &amp; Coding</fullName>
+                <default>false</default>
+                <label>Full Cure - Single Pass-Marking &amp; Coding</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>General Bonding</fullName>
+                <default>false</default>
+                <label>General Bonding</label>
+            </value>
+            <value>
+                <fullName>General Fluorescence</fullName>
+                <default>false</default>
+                <label>General Fluorescence</label>
+            </value>
+            <value>
+                <fullName>Glass Bonding</fullName>
+                <default>false</default>
+                <label>Glass Bonding</label>
+            </value>
+            <value>
+                <fullName>HDD/Storage Device</fullName>
+                <default>false</default>
+                <label>HDD/Storage Device</label>
+            </value>
+            <value>
+                <fullName>Hearing Aid Assembly</fullName>
+                <default>false</default>
+                <label>Hearing Aid Assembly</label>
+            </value>
+            <value>
+                <fullName>Heart Surgery Device</fullName>
+                <default>false</default>
+                <label>Heart Surgery Device</label>
+            </value>
+            <value>
+                <fullName>Illumination</fullName>
+                <default>false</default>
+                <label>Illumination</label>
+            </value>
+            <value>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+                <label>Industrial</label>
+            </value>
+            <value>
+                <fullName>Ink-Jet Cartridge</fullName>
+                <default>false</default>
+                <label>Ink-Jet Cartridge</label>
+            </value>
+            <value>
+                <fullName>Insulin Pens</fullName>
+                <default>false</default>
+                <label>Insulin Pens</label>
+            </value>
+            <value>
+                <fullName>Laser Device</fullName>
+                <default>false</default>
+                <label>Laser Device</label>
+            </value>
+            <value>
+                <fullName>LCD/LCM displays (COG,COF)</fullName>
+                <default>false</default>
+                <label>LCD/LCM displays (COG,COF)</label>
+            </value>
+            <value>
+                <fullName>Life Sciences (Burleigh)</fullName>
+                <default>false</default>
+                <label>Life Sciences (Burleigh)</label>
+            </value>
+            <value>
+                <fullName>Live Cell Fluorescence</fullName>
+                <default>false</default>
+                <label>Live Cell Fluorescence</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Medical/Endoscopes</fullName>
+                <default>false</default>
+                <label>Medical/Endoscopes</label>
+            </value>
+            <value>
+                <fullName>Medical Contract Manufacturers</fullName>
+                <default>false</default>
+                <label>Medical Contract Manufacturers</label>
+            </value>
+            <value>
+                <fullName>Medical Instruments</fullName>
+                <default>false</default>
+                <label>Medical Instruments</label>
+            </value>
+            <value>
+                <fullName>Mems</fullName>
+                <default>false</default>
+                <label>Mems</label>
+            </value>
+            <value>
+                <fullName>Micromanipulation</fullName>
+                <default>false</default>
+                <label>Micromanipulation</label>
+            </value>
+            <value>
+                <fullName>Mobile Phone – Microspeaker</fullName>
+                <default>false</default>
+                <label>Mobile Phone – Microspeaker</label>
+            </value>
+            <value>
+                <fullName>Motor Winding/Balancing</fullName>
+                <default>false</default>
+                <label>Motor Winding/Balancing</label>
+            </value>
+            <value>
+                <fullName>OLED</fullName>
+                <default>false</default>
+                <label>OLED</label>
+            </value>
+            <value>
+                <fullName>Optical</fullName>
+                <default>false</default>
+                <label>Optical</label>
+            </value>
+            <value>
+                <fullName>Optical/Contact Lens Assembly</fullName>
+                <default>false</default>
+                <label>Optical/Contact Lens Assembly</label>
+            </value>
+            <value>
+                <fullName>Optical Lens</fullName>
+                <default>false</default>
+                <label>Optical Lens</label>
+            </value>
+            <value>
+                <fullName>Optical Lens Assembly</fullName>
+                <default>false</default>
+                <label>Optical Lens Assembly</label>
+            </value>
+            <value>
+                <fullName>Optical Switch</fullName>
+                <default>false</default>
+                <label>Optical Switch</label>
+            </value>
+            <value>
+                <fullName>Optoelectronics</fullName>
+                <default>false</default>
+                <label>Optoelectronics</label>
+            </value>
+            <value>
+                <fullName>Optogenetics</fullName>
+                <default>false</default>
+                <label>Optogenetics</label>
+            </value>
+            <value>
+                <fullName>OPU (Optical Pick Up)</fullName>
+                <default>false</default>
+                <label>OPU (Optical Pick Up)</label>
+            </value>
+            <value>
+                <fullName>Otoscope</fullName>
+                <default>false</default>
+                <label>Otoscope</label>
+            </value>
+            <value>
+                <fullName>Oxygen Masks</fullName>
+                <default>false</default>
+                <label>Oxygen Masks</label>
+            </value>
+            <value>
+                <fullName>Pathology</fullName>
+                <default>false</default>
+                <label>Pathology</label>
+            </value>
+            <value>
+                <fullName>PCB Assembly</fullName>
+                <default>false</default>
+                <label>PCB Assembly</label>
+            </value>
+            <value>
+                <fullName>Photo-Resist</fullName>
+                <default>false</default>
+                <label>Photo-Resist</label>
+            </value>
+            <value>
+                <fullName>Pinning - Single Pass</fullName>
+                <default>false</default>
+                <label>Pinning - Single Pass</label>
+            </value>
+            <value>
+                <fullName>Plastics (ie. Injection Moulding)</fullName>
+                <default>false</default>
+                <label>Plastics (ie. Injection Moulding)</label>
+            </value>
+            <value>
+                <fullName>Quantitative Microscopy</fullName>
+                <default>false</default>
+                <label>Quantitative Microscopy</label>
+            </value>
+            <value>
+                <fullName>R&amp;D</fullName>
+                <default>false</default>
+                <label>R&amp;D</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Research &amp; Development</fullName>
+                <default>false</default>
+                <label>Research &amp; Development</label>
+            </value>
+            <value>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+                <label>Reseller</label>
+            </value>
+            <value>
+                <fullName>Sales Representative</fullName>
+                <default>false</default>
+                <label>Sales Representative</label>
+            </value>
+            <value>
+                <fullName>Sensors</fullName>
+                <default>false</default>
+                <label>Sensors</label>
+            </value>
+            <value>
+                <fullName>Speakers</fullName>
+                <default>false</default>
+                <label>Speakers</label>
+            </value>
+            <value>
+                <fullName>Stent</fullName>
+                <default>false</default>
+                <label>Stent</label>
+            </value>
+            <value>
+                <fullName>Stereolithography</fullName>
+                <default>false</default>
+                <label>Stereolithography</label>
+            </value>
+            <value>
+                <fullName>Suppliers</fullName>
+                <default>false</default>
+                <label>Suppliers</label>
+            </value>
+            <value>
+                <fullName>Surgical Instruments</fullName>
+                <default>false</default>
+                <label>Surgical Instruments</label>
+            </value>
+            <value>
+                <fullName>Telecom</fullName>
+                <default>false</default>
+                <label>Telecom</label>
+            </value>
+            <value>
+                <fullName>TOSA/ROSA</fullName>
+                <default>false</default>
+                <label>TOSA/ROSA</label>
+            </value>
+            <value>
+                <fullName>Tube Sets/IV/Fluid Delivery</fullName>
+                <default>false</default>
+                <label>Tube Sets/IV/Fluid Delivery</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <label>University</label>
+            </value>
+            <value>
+                <fullName>VCSELS</fullName>
+                <default>false</default>
+                <label>VCSELS</label>
+            </value>
+            <value>
+                <fullName>WDM Modules</fullName>
+                <default>false</default>
+                <label>WDM Modules</label>
+            </value>
+            <value>
+                <fullName>Windshield</fullName>
+                <default>false</default>
+                <label>Windshield</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>ILL0-Illumination</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Biomedical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ILL0-Illumination</controllingFieldValue>
+            <valueName>Ex Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ILL0-Illumination</controllingFieldValue>
+            <controllingFieldValue>UN00-University Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>General Fluorescence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ILL0-Illumination</controllingFieldValue>
+            <valueName>Industrial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ILL0-Illumination</controllingFieldValue>
+            <controllingFieldValue>UN00-University Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Live Cell Fluorescence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ILL0-Illumination</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Optogenetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ILL0-Illumination</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Pathology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ILL0-Illumination</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Quantitative Microscopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Cannula/Needle Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>UN00-University Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AS00-Aviation/Space</controllingFieldValue>
+            <controllingFieldValue>DE00-Defense</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Hearing Aid Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Heart Surgery Device</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Insulin Pens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Medical/Endoscopes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Medical Contract Manufacturers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Mems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Otoscope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Oxygen Masks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Research &amp; Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Stent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Surgical Instruments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD00-Medical Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Tube Sets/IV/Fluid Delivery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UN00-University Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>DP00-Digital Printing</controllingFieldValue>
+            <controllingFieldValue>AD00-Adhesives/Chemicals Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Adhesives/Chemicals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UN00-University Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>LS00-Life Sciences (Burleigh)</controllingFieldValue>
+            <valueName>Cellular Manipulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UN00-University Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>DE00-Defense</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>General Bonding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UN00-University Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Illumination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UN00-University Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical Omni &amp; X-Cite</controllingFieldValue>
+            <controllingFieldValue>MD00-Medical X-Cite</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Micromanipulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DP00-Digital Printing</controllingFieldValue>
+            <controllingFieldValue>PR00- Analog Printing</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Full Cure - Multiple Pass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DP00-Digital Printing</controllingFieldValue>
+            <controllingFieldValue>PR00- Analog Printing</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Full Cure - Single Pass-Labels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DP00-Digital Printing</controllingFieldValue>
+            <controllingFieldValue>PR00- Analog Printing</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Full Cure - Single Pass-Marking &amp; Coding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DP00-Digital Printing</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Ink-Jet Cartridge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DP00-Digital Printing</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Pinning - Single Pass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Blue-Ray DVD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Bluetooth headsets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>CCM (Compact Camera Module)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>DE00-Defense</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>Electronic Contract Manufacturers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Electronic Encoders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>HDD/Storage Device</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AS00-Aviation/Space</controllingFieldValue>
+            <valueName>LCD/LCM displays (COG,COF)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Mobile Phone – Microspeaker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Motor Winding/Balancing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AS00-Aviation/Space</controllingFieldValue>
+            <valueName>Optical Lens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>DE00-Defense</controllingFieldValue>
+            <valueName>Optical Lens Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>PCB Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EL00-Electronics Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>EL00-Electronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>Speakers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AI00-Analytical Instrumentation Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Calibration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AI00-Analytical Instrumentation Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>DSC/Rheology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Analytical Instrumentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>AA00-Automated Assembly</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>Automated Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Aviation/Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Defense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Digital Printing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <valueName>Life Sciences (Burleigh)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Medical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Optoelectronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Reseller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Sales Representative</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Suppliers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Telecom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AA00-Automated Assembly</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Equipment Manufacturers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Fiber Coating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Fiber Optics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>DE00-Defense</controllingFieldValue>
+            <valueName>Laser Device</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>DE00-Defense</controllingFieldValue>
+            <valueName>Optical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AS00-Aviation/Space</controllingFieldValue>
+            <valueName>Optical Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>TOSA/ROSA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>VCSELS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TL00-Telecom</controllingFieldValue>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>WDM Modules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>OLED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>OPU (Optical Pick Up)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Photo-Resist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OE00-Optoelectronics Omni</controllingFieldValue>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>Sensors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Catheters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>LS00-Life Sciences (Burleigh)</controllingFieldValue>
+            <valueName>Electrophysiology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>Glass Bonding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Medical Instruments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Optical/Contact Lens Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Plastics (ie. Injection Moulding)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>R&amp;D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <valueName>Stereolithography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ML00-Multiple Market Segments Omni and X-Cite</controllingFieldValue>
+            <controllingFieldValue>AU00-Automotive</controllingFieldValue>
+            <valueName>Windshield</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

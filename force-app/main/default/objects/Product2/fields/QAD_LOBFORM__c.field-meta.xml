@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QAD_LOBFORM__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(LDGIPartNumberRef__r.Product_Group__c&lt;&gt;&quot;&quot;,LDGIPartNumberRef__r.Product_Group__c, Product_Group__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>QAD-LOB</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

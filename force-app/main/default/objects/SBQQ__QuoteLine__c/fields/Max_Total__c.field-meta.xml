@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Total__c</fullName>
+    <formula>MAX( SBQQ__NetTotal__c,  SBQQ__Quantity__c *  SBQQ__ListPrice__c,  Quantity_2__c* Price_2__c, Quantity_3__c*Price_3__c, Quantity_4__c*Price_4__c, Quantity_5__c*Price_5__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Max Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

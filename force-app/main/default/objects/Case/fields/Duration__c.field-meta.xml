@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration__c</fullName>
+    <description>Do not use-as we are using this in reports for calculating the duration as per the status changes</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ISBLANK(last_Status_Changed_Time__c),
+&quot;&quot;,
+IF(
+(NOW() - last_Status_Changed_Time__c) &lt; 1,
+TEXT(ROUND((NOW() - last_Status_Changed_Time__c) * 24, 2)) &amp; &quot; hours&quot;,
+TEXT(ROUND((NOW() - last_Status_Changed_Time__c), 2)) &amp; &quot; days&quot;
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Duration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

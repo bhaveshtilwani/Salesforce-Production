@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_Name__c</fullName>
+    <description>Name of the Account for the Address for Billerica Address records.
+In some cases, the related address may not be the address of the parent account record, it could be another account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the customer account at this address.</inlineHelpText>
+    <label>Address Name</label>
+    <length>125</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
