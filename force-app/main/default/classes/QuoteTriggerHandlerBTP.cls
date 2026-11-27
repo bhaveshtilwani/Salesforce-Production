@@ -1,3 +1,5 @@
+//Changed Request send Logic from Primary+Approved to Primary
+
 public class QuoteTriggerHandlerBTP {
     
     private static Boolean hasRun = false;
@@ -18,28 +20,29 @@ public class QuoteTriggerHandlerBTP {
             if (oldQuote == null) continue;
             
             Boolean isStatusChanged = oldQuote.SBQQ__Status__c != quote.SBQQ__Status__c;
-            Boolean isPrimaryChanged = oldQuote.SBQQ__Primary__c != quote.SBQQ__Primary__c;
+            //Boolean isPrimaryChanged = oldQuote.SBQQ__Primary__c != quote.SBQQ__Primary__c;
             
             if (isStatusChanged) {
                 
                 if ((oldQuote.SBQQ__Status__c == 'In Review'
                     && quote.SBQQ__Status__c == 'Approved' 
-                    && quote.SBQQ__Primary__c == true) ||
+                    ) ||
                     
                     (oldQuote.SBQQ__Status__c == 'Draft'
                     && quote.SBQQ__Status__c == 'Approved' 
-                    && quote.SBQQ__Primary__c == true)) {
+                    )) {
                         
                         approvedPrimaryQuotes.add(quote);
                 }
-            }if(isPrimaryChanged && oldQuote.SBQQ__Primary__c == false){
+            }
+            
+            /*if(isPrimaryChanged && oldQuote.SBQQ__Primary__c == false){
                 system.debug('Primary field Value'+ quote.SBQQ__Primary__c);
                 if(quote.SBQQ__Status__c == 'Approved'
-                   && quote.SBQQ__Primary__c == true){
+                   /*&& quote.SBQQ__Primary__c == true){
                        approvedPrimaryQuotes.add(quote);
-                   }
+                   }*/
             }
-        }
         
         if (approvedPrimaryQuotes.isEmpty()) {
             System.debug('No approved primary quotes found. Exiting handler.');

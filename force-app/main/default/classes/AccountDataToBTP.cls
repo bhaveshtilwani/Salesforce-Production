@@ -3,6 +3,11 @@ public class AccountDataToBTP {
     public static Integer sendAccountToBTP(Id accountId, Id oppId, Id userId, Id quoteId, String selectedErpSite) {
         Set<String> allowedAccountTypes = new Set<String>{ 'Business Name' };
             
+            system.debug('Account Id ==>' + accountId);
+        system.debug('Opp Id ==>' + OppId);
+        system.debug('User Id ==>' + UserId);
+        system.debug('QUote Id ==>' + quoteId);
+        system.debug('Selected Site ==>' + selectedErpSite);
             //List<Log_Customer_Requests__c> logsToInsert = new List<Log_Customer_Requests__c>();
             Map<String, Excelitas_Site_Config__mdt> siteConfigMap = 
             new Map<String, Excelitas_Site_Config__mdt>();
@@ -101,21 +106,25 @@ public class AccountDataToBTP {
         // --- Fetch Quote Lines for the primary quote ---
         List<SBQQ__QuoteLine__c> quoteLines = new List<SBQQ__QuoteLine__c>();
         
-        if (oppId != null) {
-            String safeOppId = String.escapeSingleQuotes(String.valueOf(oppId));
-            String query = 'SELECT Excelitas_Site__r.Name, Excelitas_Site__c ' +
-                'FROM SBQQ__QuoteLine__c ' +
-                'WHERE SBQQ__Quote__r.' + oppFieldName + ' = \'' + safeOppId + '\'' +
-                ' AND SBQQ__Quote__r.SBQQ__Primary__c = true';
-            
-            try {
-                quoteLines = Database.query(query);
-            } catch (Exception e) {
-                System.debug('Error querying Quote Lines: ' + e.getMessage());
-            }
-        } else {
-            System.debug('oppId is null — skipping Quote Line lookup');
-        }
+        if (quoteId != null) {
+    try {
+        quoteLines = [
+            SELECT Excelitas_Site__r.Name, Excelitas_Site__c
+            FROM SBQQ__QuoteLine__c
+            WHERE SBQQ__Quote__c = :quoteId
+        ];
+
+        System.debug(
+            'Quote Lines fetched for Quote Id: ' + quoteId +
+            ' | Count: ' + quoteLines.size()
+        );
+
+    } catch (Exception e) {
+        System.debug('Error querying Quote Lines: ' + e.getMessage());
+    }
+} else {
+    System.debug('quoteId is null — skipping Quote Line lookup');
+}
         Set<String> siteNames = new Set<String>();
         for (SBQQ__QuoteLine__c ql : quoteLines) {
             if (ql.Excelitas_Site__c != null && ql.Excelitas_Site__r != null && String.isNotBlank(ql.Excelitas_Site__r.Name)) {
