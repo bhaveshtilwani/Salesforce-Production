@@ -129,7 +129,7 @@
      <!--   <apex:column headerValue="Subtotal" value=" {!qli.Subtotal}"/>
             <apex:column headerValue="Discount" value="{!qli.Discount}"/>  --> 
             <apex:column headerValue="Total Price" value="{!oli.Line_Total_Price__c}"/>
-            <apex:column headerValue="Ship Date (d/m/y)" value="{!oli.QAD_Due_Date__c}"/>
+            <apex:column headerValue="Ship Date (d/m/y)" value="{!oli.Scheduled_Ship_Date__c}"/>
             <apex:column headerValue="Cst Rev" value="{!oli.Cst_Rev__c}"/>
             <apex:column headerValue="Current Rev" value="{!oli.Current_Rev__c}"/>
         </apex:dataTable>
