@@ -18,5 +18,10 @@
         <operation>equals</operation>
         <value>Quote</value>
     </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Success</value>
+    </filters>
     <label>Quote Integration Monitoring Logs</label>
 </ListView>
