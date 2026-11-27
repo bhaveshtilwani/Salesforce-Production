@@ -782,15 +782,7 @@
         <description>Send Email when the product price approval is approved</description>
         <protected>false</protected>
         <recipients>
-            <recipient>akshay.dukare@excelitas.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
             <recipient>consult.psonare@excelitas.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>pooja.chauhan@excelitas.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -801,15 +793,7 @@
         <description>Sends email when the product pricre approval is rejected</description>
         <protected>false</protected>
         <recipients>
-            <recipient>akshay.dukare@excelitas.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
             <recipient>consult.psonare@excelitas.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>pooja.chauhan@excelitas.com</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
