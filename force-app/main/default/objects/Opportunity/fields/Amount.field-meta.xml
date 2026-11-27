@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Amount</fullName>
-    <inlineHelpText>Value of 1st full year production</inlineHelpText>
+    <inlineHelpText>Value of all related Opportunity Products, or of the Primary Quote</inlineHelpText>
     <trackFeedHistory>true</trackFeedHistory>
-    <trackHistory>true</trackHistory>
+    <trackHistory>false</trackHistory>
     <trackTrending>true</trackTrending>
 </CustomField>

@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Product_4__c</fullName>
     <externalId>false</externalId>
-    <inlineHelpText>Insert product related to this NPI. (Existing or new product)</inlineHelpText>
+    <inlineHelpText>Enter product requested by the customer</inlineHelpText>
     <label>Product - 4</label>
     <length>50</length>
     <required>false</required>

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Corp_Dev_Opp_Description_cannot_be_blank</fullName>
-    <active>true</active>
+    <active>false</active>
     <description>Corp Dev Opp Description cannot be blank</description>
     <errorConditionFormula>AND(
-$RecordType.DeveloperName = &quot;Corp_Dev&quot;,
-$RecordType.DeveloperName != &quot;NPI_Opportunity&quot;,
+OR(
+   $RecordType.DeveloperName = &quot;Corp_Dev&quot;,
+   $RecordType.DeveloperName != &quot;Excelitas_Sales_Opportunity&quot;
+),
+
   OR(
     LEN(Description) &lt;= 0,
     LEN(Description) &gt;= 500
