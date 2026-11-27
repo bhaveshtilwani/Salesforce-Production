@@ -649,17 +649,14 @@
             <targetReference>Update_CFIN_Status</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
-        <filterFormula>AND(
-   {!$Record.CS_Confirmed_and_Forward_to_CFIN__c} = true,
-   NOT(
-      OR(
-         {!$Record.RecordType.DeveloperName} = &quot;SAP_Asia&quot;,
-         {!$Record.RecordType.DeveloperName} = &quot;SAP_Germany&quot;,
-         {!$Record.RecordType.DeveloperName} = &quot;SAP_NA_Montreal&quot;,
-         {!$Record.RecordType.DeveloperName} = &quot;S4_Boulder&quot;
-      )
-   )
-)</filterFormula>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CS_Confirmed_and_Forward_to_CFIN__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <object>Account</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
