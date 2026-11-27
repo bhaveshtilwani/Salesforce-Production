@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Manager_profile_GrossMargin</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISCLONE()),
+    NOT(ISNEW()),
+    ISCHANGED(Forecasted_Gross_Margin__c),
+    $Profile.Name &lt;&gt; &quot;P3-Product Manager&quot;,
+    $User.Username &lt;&gt; &quot;nicole.chan@excelitas.com.sfdcqa&quot;,
+    SBQQ__Quote__r.Has_Bypass_Site__c
+)</errorConditionFormula>
+    <errorDisplayField>Forecasted_Gross_Margin__c</errorDisplayField>
+    <errorMessage>Only users with the P3 Product Manager profile can modify Gross Margin.</errorMessage>
+</ValidationRule>
