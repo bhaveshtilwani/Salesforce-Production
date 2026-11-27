@@ -3,17 +3,17 @@
     <fullName>Closed_Lost_Comments_Required</fullName>
     <active>true</active>
     <errorConditionFormula>AND(
-    $RecordType.DeveloperName = &quot;Excelitas_Sales_Opportunity&quot;,
+$RecordType.DeveloperName = &quot;Excelitas_Sales_Opportunity&quot;,
 
-    
 
-    OR(
-        ISPICKVAL(StageName, &quot;Closed Lost&quot;),
-        Opportunity_Status__c = &quot;Closed Lost&quot;
-        
-    ),
 
-    ISBLANK(Closed_Other_Explanation__c)
+OR(
+ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+Opportunity_Status__c = &quot;Closed Lost&quot;
+
+),
+
+ISBLANK(Closed_Other_Explanation__c)
 )</errorConditionFormula>
     <errorMessage>Please complete Closed Comments before updating the Stage.</errorMessage>
 </ValidationRule>
