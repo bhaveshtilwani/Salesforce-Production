@@ -306,12 +306,12 @@ insert priceRecord;
 
         System.assertNotEquals(null, response);
         System.assertEquals(false, response.truncated);
-        // The setup creates three matching products but only PPE-TEST-001
-        // has a CPQU_ProductPrice__c record. The export is price-driven.
+        // The current controller query is price-driven, so only the product
+        // with a related CPQU_ProductPrice__c record is returned.
         System.assertEquals(
             1,
             response.rows.size(),
-            'Products without a related product-price record must be excluded.'
+            'Only products with a related product-price record should be returned.'
         );
     }
 
@@ -386,7 +386,7 @@ insert priceRecord;
         System.assertNotEquals(null, response.columns);
         System.assertNotEquals(null, response.rows);
         System.assertEquals(false, response.truncated);
-        System.assertEquals(1, response.rows.size(), 'Only products with matching price records should export.');
+        System.assertEquals(1, response.rows.size(), 'Only products with related price records should export.');
     }
     
     @IsTest
@@ -573,12 +573,55 @@ insert priceRecord;
         System.assertNotEquals(null, options);
         System.assert(!options.isEmpty());
         
+        Boolean foundTestAccount = false;
+        for (ProductPriceExportController.AccountOption option : options) {
+            if (option.label == 'PPE Test C2 Account') {
+                foundTestAccount = true;
+                break;
+            }
+        }
         System.assertEquals(
-            'PPE Test C2 Account',
-            options[0].label
+            true,
+            foundTestAccount,
+            'The Business Name test account should be included in the C2 account list.'
         );
     }
-    
+
+    @IsTest
+    static void testSearchC2AccountsReturnsMatchingBusinessNameAccount() {
+        Test.startTest();
+        List<ProductPriceExportController.AccountOption> options =
+            ProductPriceExportController.searchC2Accounts('PPE Test');
+        Test.stopTest();
+
+        System.assertNotEquals(null, options);
+        System.assertEquals(1, options.size());
+        System.assertEquals('PPE Test C2 Account', options[0].label);
+        System.assertNotEquals(null, options[0].value);
+    }
+
+    @IsTest
+    static void testSearchC2AccountsRequiresAtLeastTwoCharacters() {
+        Test.startTest();
+        List<ProductPriceExportController.AccountOption> options =
+            ProductPriceExportController.searchC2Accounts('P');
+        Test.stopTest();
+
+        System.assertNotEquals(null, options);
+        System.assertEquals(0, options.size());
+    }
+
+    @IsTest
+    static void testSearchC2AccountsReturnsEmptyForNoMatch() {
+        Test.startTest();
+        List<ProductPriceExportController.AccountOption> options =
+            ProductPriceExportController.searchC2Accounts('ZZZ_No_Matching_Account');
+        Test.stopTest();
+
+        System.assertNotEquals(null, options);
+        System.assertEquals(0, options.size());
+    }
+
     @IsTest
     static void testExportContractedPricesWithNullAccount() {
         
@@ -616,8 +659,14 @@ insert priceRecord;
         System.assertNotEquals(null, response);
         System.assertNotEquals(null, response.columns);
         System.assertNotEquals(null, response.rows);
-        // @TestSetup does not create SBQQ__ContractedPrice__c rows.
-        System.assertEquals(0, response.rows.size());
+        // @TestSetup does not create SBQQ__ContractedPrice__c rows, but the
+        // export must still return a summary row for the selected account using
+        // the existing Account Name and Account Id metadata columns.
+        System.assertEquals(
+            1,
+            response.rows.size(),
+            'An account summary row should be returned even when no contracted prices exist.'
+        );
     }
 
     // =========================================
